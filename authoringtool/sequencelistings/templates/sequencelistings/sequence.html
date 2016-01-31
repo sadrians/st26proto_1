@@ -2,7 +2,8 @@
 
 {% extends 'sequencelistings/child.html' %}
 {% load my_filters %}
-{% block child_content %}
+
+{% block body_block %}
 <a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/'>Back to sequence listing</a>
 <h1>SEQ ID NO {{seq.sequenceIdNo}}</h1>
 <form action="" method="post">
@@ -12,6 +13,7 @@
     </table>
     
     <h2>Feature table</h2>
+    <hr>
     {% for f, ff in featureFormDic.iteritems %}
         <p>{{ff}}</p>
         <ul>
@@ -22,6 +24,7 @@
         <p>
         <a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/seq{{seq.pk}}/f{{f.pk}}/add_qualifier/'><span  class="addQalifierLink">Add new qualifier</span></a>
         </p>
+        <hr>
         
         
     {% endfor %}
@@ -79,4 +82,4 @@
     </table> -->
     <p><input type="submit" value="Submit" /></p>
 </form>
-{% endblock child_content %}
+{% endblock %}

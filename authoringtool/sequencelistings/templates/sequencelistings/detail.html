@@ -3,7 +3,7 @@
 {% load staticfiles %}
 
 
-{% block child_content %}
+{% block body_block %}
 <h1>SEQUENCE LISTING {{ sequencelisting.fileName }}</h1>
 <h1>EXPORT</h1>
 <p><a href="{% url 'sequencelistings:xmloutput' sequencelisting.pk %}">Generate XML</a></p>
@@ -149,4 +149,4 @@
     {% endfor %}
 </table>
 <p><a href="{% url 'sequencelistings:add_seq' sequencelisting.pk %}">Add new sequence</a></p>
-{% endblock child_content %}
+{% endblock %}

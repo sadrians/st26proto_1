@@ -2,47 +2,47 @@
 <!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "ST26SequenceListing_V1_0.dtd">
 <?xml-stylesheet type="text/xsl" href="st26.xsl"?>
 <ST26SequenceListing dtdVersion="1.0" 
-                    fileName="file1"
+                    fileName="file2"
                     softwareName="ST26 authoring tool prototype" 
                     softwareVersion="0.1"
                     productionDate="Jan. 31, 2016">
 <!-- <ST26SequenceListing dtdVersion="1.0" 
-                    fileName="file1"
+                    fileName="file2"
                     softwareName="ST26 authoring tool prototype" 
                     softwareVersion="0.1"
-                    productionDate="Jan. 31, 2016, 11:55 p.m."
+                    productionDate="Jan. 31, 2016, 11:54 p.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
         <IPOfficeCode>EP</IPOfficeCode>
-        <ApplicationNumberText>1511223344.5</ApplicationNumberText>
-        <FilingDate>Jan. 29, 2016</FilingDate>
+        <ApplicationNumberText>1299887766.5</ApplicationNumberText>
+        <FilingDate>Aug. 3, 2014</FilingDate>
     </ApplicationIdentification>
-    <ApplicantFileReference>EP123</ApplicantFileReference>
+    <ApplicantFileReference>WO123</ApplicantFileReference>
     <EarliestPriorityApplicationIdentification>
-        <IPOfficeCode>US</IPOfficeCode>
-        <ApplicationNumberText>12121212</ApplicationNumberText>
-        <FilingDate>Jan. 29, 2015</FilingDate>
+        <IPOfficeCode>JP</IPOfficeCode>
+        <ApplicationNumberText>54545454</ApplicationNumberText>
+        <FilingDate>Dec. 29, 2013</FilingDate>
     </EarliestPriorityApplicationIdentification>
     <ApplicantName languageCode="EN">
-        applicant1
+        applicant2
     </ApplicantName>
     <ApplicantNameLatin>
-        applicant1
+        applicant2
     </ApplicantNameLatin>
     <InventorName languageCode="EN">
-        inventor1
+        inventor2
     </InventorName>
     <InventorNameLatin>
-        inventor1
+        inventor2
     </InventorNameLatin>
     
         <InventionTitle languageCode="EN">
-            title1
+            title3
         </InventionTitle>
     
-        <InventionTitle languageCode="FR">
-            title2
+        <InventionTitle languageCode="JP">
+            title4
         </InventionTitle>
     
     
@@ -52,7 +52,7 @@
     
         <SequenceData sequenceIDNumber="1">
             <INSDSeq>
-                <INSDSeq_length>17</INSDSeq_length>
+                <INSDSeq_length>30</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
                 <INSDSeq_other-seqids>
@@ -62,7 +62,7 @@
                     
                         <INSDFeature>
                             <INSDFeature_key>source</INSDFeature_key>
-                            <INSDFeature_location>1..20</INSDFeature_location>
+                            <INSDFeature_location>1..30</INSDFeature_location>
                             <INSDFeature_quals>
                                 
                                 <INSDQualifier>
@@ -80,59 +80,20 @@
                     
                         <INSDFeature>
                             <INSDFeature_key>allele</INSDFeature_key>
-                            <INSDFeature_location>7..8</INSDFeature_location>
+                            <INSDFeature_location>4..6</INSDFeature_location>
                             <INSDFeature_quals>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>mutation</INSDFeature_key>
-                            <INSDFeature_location>1</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>note</INSDQualifier_name>
-                                    <INSDQualifier_value>a or g</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>mutation</INSDFeature_key>
-                            <INSDFeature_location>3</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>note</INSDQualifier_name>
-                                    <INSDQualifier_value>a or g</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>mutation</INSDFeature_key>
-                            <INSDFeature_location>5</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>note</INSDQualifier_name>
-                                    <INSDQualifier_value>a or g</INSDQualifier_value>
-                                </INSDQualifier>
                                 
                             </INSDFeature_quals>
                         </INSDFeature>
                     
                 </INSDSeq_feature-table>
-                <INSDSeq_sequence>agtcacactttcattca</INSDSeq_sequence>
+                <INSDSeq_sequence>agtcncttagggacccaacactttcattca</INSDSeq_sequence>
             </INSDSeq>
         </SequenceData>
     
         <SequenceData sequenceIDNumber="2">
             <INSDSeq>
-                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_length>5</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
                 <INSDSeq_other-seqids>
@@ -142,7 +103,7 @@
                     
                         <INSDFeature>
                             <INSDFeature_key>SOURCE</INSDFeature_key>
-                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_location>1..5</INSDFeature_location>
                             <INSDFeature_quals>
                                 
                                 <INSDQualifier>
@@ -160,14 +121,14 @@
                     
                         <INSDFeature>
                             <INSDFeature_key>VARIATION</INSDFeature_key>
-                            <INSDFeature_location>5</INSDFeature_location>
+                            <INSDFeature_location>3</INSDFeature_location>
                             <INSDFeature_quals>
                                 
                             </INSDFeature_quals>
                         </INSDFeature>
                     
                 </INSDSeq_feature-table>
-                <INSDSeq_sequence>MTGGRASERT</INSDSeq_sequence>
+                <INSDSeq_sequence>MTERT</INSDSeq_sequence>
             </INSDSeq>
         </SequenceData>
       

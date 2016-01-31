@@ -2,9 +2,10 @@
 
 {% extends 'sequencelistings/child.html' %}
 {% load staticfiles %}
-{% block child_content %}
+
+{% block body_block %}
 
 xml generated at {{location}}
-<p><a href="{% static outputfilepath %}">see generated sequence listing</a></p>
-
-{% endblock child_content %}
+<p><a href="{% static filePath %}">see generated sequence listing</a></p>
+<br>
+{% endblock %}

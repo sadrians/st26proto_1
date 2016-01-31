@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% extends 'sequencelistings/child.html' %}
 
-{% block child_content %}
+{% block body_block %}
 <h1>Add multiple feature</h1>
 <form action="" method="post">
     {% csrf_token %}
@@ -10,4 +10,4 @@
     </table>
     <p><input type="submit" value="Submit" /></p>
 </form>
-{% endblock child_content %}
+{% endblock %}

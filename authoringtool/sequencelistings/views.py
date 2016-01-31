@@ -1,6 +1,6 @@
 # Create your views here.
 
-from django.shortcuts import get_object_or_404, render, redirect
+from django.shortcuts import get_object_or_404, render, redirect, render_to_response
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 from django.views import generic
@@ -294,11 +294,13 @@ def add_qualifier(request, pk, spk, fpk):
 def generateXml(request, pk):
         sl = SequenceListing.objects.all().get(pk=pk)
         
-        xmlFilePath = helper_generateXml(sl)
+        res = helper_generateXml(sl)
+        
         
         return render(request, 'sequencelistings/xmloutput.html', 
-                      {'outputfilepath': xmlFilePath, 
-                       'location': os.path.abspath(xmlFilePath)})
+                      {'filePath': res[1], 
+                        'location': os.path.abspath(res[0])
+                        })
         
 def helper_generateXml(sl):
         sl.productionDate = timezone.now()
@@ -314,13 +316,30 @@ def helper_generateXml(sl):
                             'static',
                             'sequencelistings',
                             '%s.xml' % sl.fileName)
+
+#         outf = os.path.join(util.PROJECT_DIRECTORY,
+#                             'output_xml',
+#                             '%s.xml' % sl.fileName)
          
         with open(outf, 'w') as gf:
             gf.write(xml) 
          
         xmlFilePath = 'sequencelistings/%s.xml' % sl.fileName
+#         xmlFilePath = os.path.join(util.PROJECT_DIRECTORY, 'output_xml', '%s.xml' % sl.fileName)
          
-        return xmlFilePath
+#         return xmlFilePath
+#         return sl.fileName 
+        return (outf, xmlFilePath) 
+
+@login_required
+def render_xmlFile(request):
+   # Take the user to the xml file.
+#     return HttpResponseRedirect('sequencelistings/output_xml/%s/' % fileName)
+    return HttpResponseRedirect('/sequencelistings/output_xml/')
+#     return HttpResponse('test xml')
+
+
+
 
 # def register(request):
 # 
@@ -416,9 +435,15 @@ def helper_generateXml(sl):
 def restricted(request):
     return HttpResponse("This is a test page. You see this text because you're logged in.")
 
-
-
-
+def about(request):
+    return render_to_response('sequencelistings/about.html', {}, {})
+#     return HttpResponse("This is a test for about page.")
+    
+# @login_required
+# def render_xmlFile(request, fileName):
+#    # Take the user to the xml file.
+#     return HttpResponseRedirect('sequencelistings/output_xml/%s/' % fileName)
+# #     return HttpResponseRedirect('/sequencelistings/')
 
 
 # def add_feature(request, pk, spk):
