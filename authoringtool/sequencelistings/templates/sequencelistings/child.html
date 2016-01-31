@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'sequencelistings/base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <p><a href="{% url 'sequencelistings:index' %}">index</a></p>
+    
+    {% block child_content %}
+    {% endblock child_content %}
+    
+    <p><a href="{% url 'sequencelistings:index' %}">index</a></p>
+
+{% endblock content %}

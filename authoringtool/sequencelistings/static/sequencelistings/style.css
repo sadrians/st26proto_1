@@ -1,0 +1,96 @@
+/* ===================TEMPLATE HEADER ==============================*/
+#prototypeheader{
+    background: #B6EFF2;
+}
+
+/* ===================TABLE STYLE ==============================*/
+table{
+    font-size: 20px;
+    /* border-spacing: 0 10px; */
+    /* border-collapse: separate; */
+}
+table, th, td {
+    border: 1px solid black;
+    /* border-spacing: 0 10px; */
+    /* border-collapse: separate; */
+}
+td {
+    padding: 0px 10px 0px 10px;
+}
+
+th
+{
+    background-color: #B8DBF2;
+}
+
+/* ===================LINK ==============================*/
+.addFeatureLink {
+    background-color: #C4F2EB;
+}
+
+.addQalifierLink {
+    background-color: pink;
+}
+
+/* ===================FEATURE TABLE STYLE ==============================*/
+.featuretable th {
+    background-color: #9acd32;
+
+}
+
+/* ===================QUALIFIER TABLE STYLE ==============================*/
+.qualifiertable th {
+    background-color: pink;
+
+}
+
+.qualifiertable tr:nth-child(odd){
+    background: #E8EDEB;
+    /* table-layout:fixed; */
+}
+
+/* ===================RESIDUES TABLE STYLE ==============================*/
+#residuesTable table, th, td{
+    border: 1px solid black;
+}
+
+#residuesTable {
+    table-layout: fixed;
+    width: 600px;
+}
+
+#residuesTable th{
+    background-color: lavender;
+}
+
+#residuesTable td{
+    font-family: "Courier New", Courier, monospace;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+
+
+
+/* .qualifiertable tr:nth-child(odd){
+    background: #E8EDEB;
+    table-layout:fixed;
+} */
+
+/* #residuesTable td{
+    font-family: "Courier New", Courier, monospace;
+} */
+
+/*#residuesTable td{
+    background-color: grey;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}*/
+
+/* #residuesTable, #featureTable {
+    table-layout: fixed;
+    width: 600px;
+} */

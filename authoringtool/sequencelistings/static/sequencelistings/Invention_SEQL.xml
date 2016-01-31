@@ -1,0 +1,3424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "ST26SequenceListing_V1_0.dtd">
+<?xml-stylesheet type="text/xsl" href="st26.xsl"?>
+<ST26SequenceListing dtdVersion="1" 
+                    fileName="Invention_SEQL"
+                    softwareName="prototype" 
+                    softwareVersion="0.1"
+                    productionDate="May 12, 2015">
+<!-- <ST26SequenceListing dtdVersion="1" 
+                    fileName="Invention_SEQL"
+                    softwareName="prototype" 
+                    softwareVersion="0.1"
+                    productionDate="May 12, 2015, 1:41 p.m."
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:noNamespaceSchemaLocation="st26.xsd"> -->
+    <ApplicationIdentification>
+        <IPOfficeCode>US</IPOfficeCode>
+        <ApplicationNumberText>14/999,999</ApplicationNumberText>
+        <FilingDate>Jan. 4, 2015</FilingDate>
+    </ApplicationIdentification>
+    <ApplicantFileReference>AB123</ApplicantFileReference>
+    <EarliestPriorityApplicationIdentification>
+        <IPOfficeCode>IB</IPOfficeCode>
+        <ApplicationNumberText>PCT/IB2014/099999</ApplicationNumberText>
+        <FilingDate>July 9, 2014</FilingDate>
+    </EarliestPriorityApplicationIdentification>
+    <ApplicantName languageCode="EN">
+        GENOS Co., Inc.
+    </ApplicantName>
+    <ApplicantNameLatin>
+        GENOS Co., Inc.
+    </ApplicantNameLatin>
+    <InventorName languageCode="EN">
+        Keiko Nakamura
+    </InventorName>
+    <InventorNameLatin>
+        Keiko Nakamura
+    </InventorNameLatin>
+    
+        <InventionTitle languageCode="EN">
+            Mus musculus abcd-1 gene for efg protein
+        </InventionTitle>
+    
+        <InventionTitle languageCode="JA">
+            efgタンパク質のためのマウスabcd-1遺伝子
+        </InventionTitle>
+    
+        <InventionTitle languageCode="FR">
+            Gène abcd-1 de Mus musculus pour protéine efg
+        </InventionTitle>
+    
+    
+    <SequenceTotalQuantity>
+        44
+    </SequenceTotalQuantity>
+    
+        <SequenceData sequenceIDNumber="1">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any aminoacid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGG</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="2">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGG</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="3">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>can be absent</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGD</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="4">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGS</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="5">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>S</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGG</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="6">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGB</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="7">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGD</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="8">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGN</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="9">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGJ</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="10">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGI</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="11">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGL</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="12">
+            <INSDSeq>
+                <INSDSeq_length>6</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>2^3</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>undefined gap</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>5..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGGXX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="13">
+            <INSDSeq>
+                <INSDSeq_length>106</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..106</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>3..102</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>LLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXKYMR</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="14">
+            <INSDSeq>
+                <INSDSeq_length>8</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any amino acid as long as it is the same in position 8</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any amino acid as long as it is the same in position 4</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGXGGGX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="15">
+            <INSDSeq>
+                <INSDSeq_length>12</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..12</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any amino acid as long as it is the same in positions 8 and 12</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any amino acid as long as it is the same in positions 4 and 12</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>12</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any amino acid as long as it is the same in positions 4 and 8</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGXGGGXGGGX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="16">
+            <INSDSeq>
+                <INSDSeq_length>400</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..400</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>1..400</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>All &#39;X&#39; denote the same amino acid </INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="17">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGGX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="18">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>synthetic construct</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GLQK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="19">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>NON_TER</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>bound to Lys at position 3 of SEQ ID NO 20 via an amide linkage between the side chain amine of the Lysine and the carboxyl end of the bonded Leu</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>RISL</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="20">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CROSSLNK</INSDFeature_key>
+                            <INSDFeature_location>3</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>bound to Leu at position 4 of SEQ ID NO 19, via an amide linkage between the side chain amine of the Lysine and the carboxyl end of the bonded Leu</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>NON_TER</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>bound via an amide linkage to the side chain of Lys at position 7 of SEQ ID NO 24, and to the Lys of the tri-peptide LLK; wherein the Lys of the tripeptide is further bound, via an amide linkage between the side chain amine of the Lysine and the carboxyl end of the bonded Ala of a tripeptide YFA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>LLKK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="21">
+            <INSDSeq>
+                <INSDSeq_length>6</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>NON_TER</INSDFeature_key>
+                            <INSDFeature_location>6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>bound to Lys at position 6 of SEQ ID NO 24 via an amide linkage between the side chain amine of the Lysine and the carboxyl end of the bonded Ala</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>IPACTA</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="22">
+            <INSDSeq>
+                <INSDSeq_length>6</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>NON_TER</INSDFeature_key>
+                            <INSDFeature_location>6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>bound to Lys at position 6 of SEQ ID NO 24 via an amide linkage between the side chain amine of the Lys of SEQ ID NO 24 and the carboxyl end of the bonded Lys; also bound to to Ala at position 6 of SEQ ID NO 21 via an amide linkage between the side chain amine of the Lys and the carboxyl end of the bonded Ala</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>FRAGGK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="23">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>NON_TER</INSDFeature_key>
+                            <INSDFeature_location>5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>bound to Lys at position 5 of SEQ ID NO 24 via an amide linkage between the side chain amine of the Lysine and the carboxyl end of the bonded Ala</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>HQYFA</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="24">
+            <INSDSeq>
+                <INSDSeq_length>8</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CROSSLNK</INSDFeature_key>
+                            <INSDFeature_location>5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>bound to Ala at position 5 of SEQ ID NO 23 via an amide linkage between the side chain amine of the Lys of SEQ ID NO 24 and the carboxyl end of the bonded Ala</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CROSSLNK</INSDFeature_key>
+                            <INSDFeature_location>6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>bound to Lys at position 6 of SEQ ID NO 22 via an amide linkage between the side chain amine of the Lys of SEQ ID NO 24 and the carboxyl end of the bonded Lys of SEQ ID NO 22</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CROSSLNK</INSDFeature_key>
+                            <INSDFeature_location>7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>bound to Lys at position 4 of SEQ ID NO 20 via an amide linkage between the side chain amine of the Lys of SEQ ID NO 24 and the carboxyl end of the bonded Lys</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>ATFGKKKA</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="25">
+            <INSDSeq>
+                <INSDSeq_length>8</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CROSSLNK</INSDFeature_key>
+                            <INSDFeature_location>5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>bound to Gly at position 5 of SEQ ID NO 26 via a peptide bond between the carboxyl terminus of the Glycine and the amino terminal side chain of the Lysine</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>DGSAKKKK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="26">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>NON_TER</INSDFeature_key>
+                            <INSDFeature_location>5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>bound to Lys at position 5 of SEQ ID NO 25 via a peptide bond between the carboxyl terminus of the Glycine and the amino terminal side chain of the Lysine</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>AASHG</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="27">
+            <INSDSeq>
+                <INSDSeq_length>400</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..400</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 12</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 16</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 20</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 24</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 28</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 32</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 36</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 40</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 44</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 48</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 52</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 56</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 60</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 64</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 68</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 72</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 76</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 80</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 84</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 88</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 92</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 96</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 100</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location> 104</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>108</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>112</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>116</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>120</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>124</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>128</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>132</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>136</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>140</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>144</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>148</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>152</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>156</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>160</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>164</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>168</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>172</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>176</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>180</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>184</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>188</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>192</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>196</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>200</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>204</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>208</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>212</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>216</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>220</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>224</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>228</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>232</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>236</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>240</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>244</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>248</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>252</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>256</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>260</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>264</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>268</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>272</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>276</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>280</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>284</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>288</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>292</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>296</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>300</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>304</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>308</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>312</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>316</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>320</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>324</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>328</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>332</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>336</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>340</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>344</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>348</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>352</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>356</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>360</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>364</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>368</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>372</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>376</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>380</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>384</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>388</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>392</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>396</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>400</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be any amino acid as long as it is the same in all positions</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="28">
+            <INSDSeq>
+                <INSDSeq_length>52</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..52</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>2..3</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>5..24</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>26..28</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>30..48</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>50..51</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>KXXKXXXXXXXXXXXXXXXXXXXXKXXXKXXXXXXXXXXXXXXXXXXXKXXK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="29">
+            <INSDSeq>
+                <INSDSeq_length>53</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..53</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>2..3</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>5..24</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>26..28</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>30..49</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>51..52</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>KXXKXXXXXXXXXXXXXXXXXXXXKXXXKXXXXXXXXXXXXXXXXXXXXKXXK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="30">
+            <INSDSeq>
+                <INSDSeq_length>74</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..74</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>PEPTIDE</INSDFeature_key>
+                            <INSDFeature_location>1-8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>PEPTIDE</INSDFeature_key>
+                            <INSDFeature_location>10-19</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>PEPTIDE</INSDFeature_key>
+                            <INSDFeature_location>21-48</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>PEPTIDE</INSDFeature_key>
+                            <INSDFeature_location>50-68</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>PEPTIDE</INSDFeature_key>
+                            <INSDFeature_location>70-74</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X is any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>XXXXXXXXDXXXXXXXXXXFXXXXXXXXXXXXXXXXXXXXXXXXXXXXAXXXXXXXXXXXXXXXXXXXGXXXXX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="31">
+            <INSDSeq>
+                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>gagktgkggk</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="32">
+            <INSDSeq>
+                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>aatgccggag</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="33">
+            <INSDSeq>
+                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>aatgccggak</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="34">
+            <INSDSeq>
+                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>aatgccggag</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="35">
+            <INSDSeq>
+                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>aatgccggat</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="36">
+            <INSDSeq>
+                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>aatgccggac</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="37">
+            <INSDSeq>
+                <INSDSeq_length>22</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..22</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>acattgaatctcataccacttt</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="38">
+            <INSDSeq>
+                <INSDSeq_length>22</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..22</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>acattggatctcatacgacttt</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="39">
+            <INSDSeq>
+                <INSDSeq_length>22</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..22</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>gtatggcgtcgtatsgtagttt</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="40">
+            <INSDSeq>
+                <INSDSeq_length>76</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..76</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>ttnnnnnnnagnnnnnnnnnnnnnnnnnntnnnnnncccnnnnnnnnncgnnnnnnnnnnnnngnnnnnnnnnnnn</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="41">
+            <INSDSeq>
+                <INSDSeq_length>85</INSDSeq_length>
+                <INSDSeq_moltype>RNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..85</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>other RNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>stem_loop</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>stem_loop</INSDFeature_key>
+                            <INSDFeature_location>10..13</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>stem_loop</INSDFeature_key>
+                            <INSDFeature_location>28..31</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>stem_loop</INSDFeature_key>
+                            <INSDFeature_location>34..37</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>stem_loop</INSDFeature_key>
+                            <INSDFeature_location>47..50</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>stem_loop</INSDFeature_key>
+                            <INSDFeature_location>59..61</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>stem_loop</INSDFeature_key>
+                            <INSDFeature_location>63..69</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>ggagacatcgcttgagcattaagcgagaagccgattcttcgccgaagaatgacagccgcctgccacttcgaaggctgtctccgca</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="42">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>1</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>N-acetyl-L-valine</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>tryptophan-C-alkyl</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>VAFW</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="43">
+            <INSDSeq>
+                <INSDSeq_length>28</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..28</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>synthetic construct</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>misc_difference</INSDFeature_key>
+                            <INSDFeature_location>1</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>5&#39; phosphorothioate</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>cacataggcatctcctagtgcaggaaga</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="44">
+            <INSDSeq>
+                <INSDSeq_length>31</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..31</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>synthetic construct</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>misc_difference</INSDFeature_key>
+                            <INSDFeature_location>1</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>5&#39; phosphorothioate</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>cacacaaaaaaaaaaaaaaaaaaaaaaaaaa</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+      
+</ST26SequenceListing>

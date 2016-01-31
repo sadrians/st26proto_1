@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "ST26SequenceListing_V1_0.dtd">
+<?xml-stylesheet type="text/xsl" href="st26.xsl"?>
+<ST26SequenceListing dtdVersion="V1_0" 
+                    fileName="test2"
+                    softwareName="prototype" 
+                    softwareVersion="0.1"
+                    productionDate="May 12, 2015">
+<!-- <ST26SequenceListing dtdVersion="V1_0" 
+                    fileName="test2"
+                    softwareName="prototype" 
+                    softwareVersion="0.1"
+                    productionDate="May 12, 2015, 1:16 p.m."
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:noNamespaceSchemaLocation="st26.xsd"> -->
+    <ApplicationIdentification>
+        <IPOfficeCode>DE</IPOfficeCode>
+        <ApplicationNumberText>2014888888</ApplicationNumberText>
+        <FilingDate>April 28, 2015</FilingDate>
+    </ApplicationIdentification>
+    <ApplicantFileReference>456</ApplicantFileReference>
+    <EarliestPriorityApplicationIdentification>
+        <IPOfficeCode>GB</IPOfficeCode>
+        <ApplicationNumberText>2233445</ApplicationNumberText>
+        <FilingDate>April 28, 2015</FilingDate>
+    </EarliestPriorityApplicationIdentification>
+    <ApplicantName languageCode="EN">
+        Richard Gore
+    </ApplicantName>
+    <ApplicantNameLatin>
+        the same
+    </ApplicantNameLatin>
+    <InventorName languageCode="FR">
+        Mary Dorio
+    </InventorName>
+    <InventorNameLatin>
+        Mary Dorio
+    </InventorNameLatin>
+    
+        <InventionTitle languageCode="EN">
+            An invention 2
+        </InventionTitle>
+    
+    
+    <SequenceTotalQuantity>
+        3
+    </SequenceTotalQuantity>
+    
+        <SequenceData sequenceIDNumber="1">
+            <INSDSeq>
+                <INSDSeq_length>180</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..180</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Mus musculus</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>example of DNA sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>misc_feature</INSDFeature_key>
+                            <INSDFeature_location>13</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>example of note</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>C_region</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>blah</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>conflict</INSDFeature_key>
+                            <INSDFeature_location>1</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>test for multiple feature</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>conflict</INSDFeature_key>
+                            <INSDFeature_location>2</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>test for multiple feature</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>conflict</INSDFeature_key>
+                            <INSDFeature_location>4..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>test for multiple feature</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>conflict</INSDFeature_key>
+                            <INSDFeature_location>9</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>test for multiple feature</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>conflict</INSDFeature_key>
+                            <INSDFeature_location>12</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>test for multiple feature</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>atgacttgcattagcggcaagccagacatacagtctaacatcatgcacatgtgcataattgttatcagaaggtgattgtacaaaaaatgcttcacttggatgttcatgggatagcacaaagaaggcatgtgcagtttcaacaacacctattgcgttgaagttgacgcatgtaatacatat</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="2">
+            <INSDSeq>
+                <INSDSeq_length>210</INSDSeq_length>
+                <INSDSeq_moltype>RNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..210</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Solanum lycopersicum</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic RNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>misc_feature</INSDFeature_key>
+                            <INSDFeature_location>40</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>example of some annotation</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>acacuuccaugcaccauuucuauaguuucuuaccagagaaguuucucugaacauguggagcaccggaaaccacgaggaggcggcucagcauucacuccugagcaugaagcuggcucuugguggugcuucucugcaauugccuuuugcugcugaugaucacucuucucuuccuuugggagagugaaagggaaaggaagccaucugaagggu</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="3">
+            <INSDSeq>
+                <INSDSeq_length>8</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>mus</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CHAIN</INSDFeature_key>
+                            <INSDFeature_location>2</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>just testing</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CHAIN</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>just testing</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CHAIN</INSDFeature_key>
+                            <INSDFeature_location>6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>just testing</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>NARTSARE</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+      
+</ST26SequenceListing>

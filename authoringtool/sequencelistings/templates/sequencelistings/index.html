@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% extends 'sequencelistings/base.html' %}
+{% block content %}
+{% load staticfiles %}
+
+
+<h2>WELCOME 
+    {% if user.is_authenticated %}
+        {{user.username}}!
+    {% endif %}
+</h2>
+<p>Welcome to the xml sequence listing authoring tool.</p>
+
+{% if user.is_authenticated %}
+    <a href="{% url 'sequencelistings:restricted' %}">Restricted Page</a><br />
+    <a href="{% url 'auth_logout' %}?next=/sequencelistings/">Logout</a><br />
+    <!-- <a href="{% url 'auth_password_change' %}?next=/sequencelistings/password_change_done/">Change password</a><br /> -->
+{% else %}
+    <a href="{% url 'registration_register' %}">Register Here</a><br />
+    <a href="{% url 'auth_login' %}">Login</a><br />
+{% endif %}
+
+<p>This is a prototype (so limited functionality!) built only for demonstration purposes. The tool enables the user to:
+</p>
+<ol>
+        <li>create a sequence listing, i.e. 
+            <ul>
+                <li>create the general information section</li>
+                <li>create the the sequence data section (create sequence, feature, qualifier)</li>
+            </ul>
+        </li>
+        <li>Store and display previously created sequence listings
+        </li>
+        <li>Export the sequence listing as XML file
+        </li>
+        <li>Display in the browser the generated XML file (by using XSLT stylesheet)
+        </li>
+        
+    </ol>
+
+<h2>SEQUENCE LISTING PORTOFOLIO</h2>
+<p>This section enables you to navigate to previously created sequence listings.</p>
+{% if sequencelistings %}
+    <table>
+        <tr>
+            <th>file name</th>
+            <th>invention title</th>
+            <th>number of sequences</th>
+        </tr>
+        {% for sl in sequencelistings %}
+            <tr>
+                <td><a href="{% url 'sequencelistings:detail' sl.id %}">{{ sl.fileName }}</a></td>
+                <td>{{sl.inventionTitle}}</td>
+                <td>{{sl.sequenceTotalQuantity}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    <p>No sequence listings are available.</p>
+{% endif %}
+{% if user.is_authenticated %}
+    <h2>SEQUENCE LISTING GENERATOR</h2>
+    <p>This section enables you to create a new sequence listing.</p>
+    <a href="{% url 'sequencelistings:add_sequencelisting' %}">Add new sequence listing</a>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "ST26SequenceListing_V1_0.dtd">
+<?xml-stylesheet type="text/xsl" href="st26.xsl"?>
+<ST26SequenceListing dtdVersion="1" 
+                    fileName="test_xmlsql"
+                    softwareName="prototype" 
+                    softwareVersion="0.1"
+                    productionDate="May 5, 2015">
+<!-- <ST26SequenceListing dtdVersion="1" 
+                    fileName="test_xmlsql"
+                    softwareName="prototype" 
+                    softwareVersion="0.1"
+                    productionDate="May 6, 2015, 12:43 a.m."
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:noNamespaceSchemaLocation="st26.xsd"> -->
+    <ApplicationIdentification>
+        <IPOfficeCode>EP</IPOfficeCode>
+        <ApplicationNumberText>2015123456</ApplicationNumberText>
+        <FilingDate>May 5, 2015</FilingDate>
+    </ApplicationIdentification>
+    <ApplicantFileReference>123</ApplicantFileReference>
+    <EarliestPriorityApplicationIdentification>
+        <IPOfficeCode>US</IPOfficeCode>
+        <ApplicationNumberText>998877</ApplicationNumberText>
+        <FilingDate>May 5, 2015</FilingDate>
+    </EarliestPriorityApplicationIdentification>
+    <ApplicantName languageCode="EN">
+        John Smith
+    </ApplicantName>
+    <ApplicantNameLatin>
+        same
+    </ApplicantNameLatin>
+    <InventorName languageCode="FR">
+        Mary Dupont
+    </InventorName>
+    <InventorNameLatin>
+        Mary Dupont
+    </InventorNameLatin>
+    
+    
+    <SequenceTotalQuantity>
+        1
+    </SequenceTotalQuantity>
+    
+        <SequenceData sequenceIDNumber="1">
+            <INSDSeq>
+                <INSDSeq_length>29</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>catcatcatcatcatcat</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+      
+</ST26SequenceListing>

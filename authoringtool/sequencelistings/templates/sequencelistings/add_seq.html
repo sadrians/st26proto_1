@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'sequencelistings/child.html' %}
+
+{% block child_content %}
+<form action="{% url 'sequencelistings:add_seq' pk %}" method="post">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+{% endblock child_content %}

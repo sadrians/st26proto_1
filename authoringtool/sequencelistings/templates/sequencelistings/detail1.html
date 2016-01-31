@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+{% extends 'sequencelistings/child.html' %}
+{% load staticfiles %}
+
+
+{% block child_content %}
+<h1>SEQUENCE LISTING {{ sequencelisting.fileName }}</h1>
+<h1>EXPORT</h1>
+<p><a href="{% url 'sequencelistings:xmloutput' sequencelisting.pk %}">Generate XML</a></p>
+
+<h1>File name: {{ sequencelisting.fileName }}</h1>
+
+<h1>GENERAL INFORMATION</h1>
+<table>
+    <tr>
+        <th>File name</th><td>{{sequencelisting.fileName}}</td>
+    </tr>
+    <tr>
+        <th>DTD version</th><td>{{sequencelisting.dtdVersion}}</td>
+    </tr>
+    <tr>
+        <th>Software name</th><td>{{sequencelisting.softwareName}}</td>
+    </tr>
+    <tr>
+        <th>Software version</th><td>{{sequencelisting.softwareVersion}}</td>
+    </tr>
+    <tr>
+        <th>Production date</th><td>{{sequencelisting.productionDate.date}}</td>
+    </tr>
+    <tr>
+        <th>IP office code</th><td>{{sequencelisting.IPOfficeCode}}</td>
+    </tr>
+    <tr>
+        <th>Application number text</th><td>{{sequencelisting.applicationNumberText}}</td>
+    </tr>
+    <tr>
+        <th>Filing date</th><td>{{sequencelisting.filingDate.date}}</td>
+    </tr>
+    <tr>
+        <th>Applicant file reference</th><td>{{sequencelisting.applicantFileReference}}</td>
+    </tr>
+    <tr>
+        <th>Earliest priority IP office code</th><td>{{sequencelisting.earliestPriorityIPOfficeCode}}</td>
+    </tr>
+    <tr>
+        <th>Earliest priority application number text</th><td>{{sequencelisting.earliestPriorityApplicationNumberText}}</td>
+    </tr>
+    <tr>
+        <th>Earliest priority filing date</th><td>{{sequencelisting.earliestPriorityFilingDate.date}}</td>
+    </tr>
+    <tr>
+        <th>Applicant name</th><td>{{sequencelisting.applicantName}}</td>
+    </tr>
+    <tr>
+        <th>Applicant name langugage code</th><td>{{sequencelisting.applicantNameLanguageCode}}</td>
+    </tr>
+    <tr>
+        <th>Applicant name latin</th><td>{{sequencelisting.applicantNameLatin}}</td>
+    </tr>
+    <tr>
+        <th>Inventor name</th><td>{{sequencelisting.inventorName}}</td>
+    </tr>
+    <tr>
+        <th>Inventor name language code</th><td>{{sequencelisting.inventorNameLanguageCode}}</td>
+    </tr>
+    <tr>
+        <th>Inventor name latin</th><td>{{sequencelisting.inventorNameLatin}}</td>
+    </tr>
+    {% for t in sequencelisting.title_set.all %}
+        <tr>
+            <th>Invention title</th><td>{{t.inventionTitle}}</td>
+        </tr>
+        <tr>
+            <th>Invention title language code</th><td>{{t.inventionTitleLanguageCode}}</td>
+        </tr>
+    {% endfor %}
+    <tr>
+        <th>Sequence total quantity</th><td>{{sequencelisting.sequenceTotalQuantity}}</td>
+    </tr>
+</table>
+
+<p><a href='/sequencelistings/sl{{sequencelisting.pk}}/add_title/'>Add new title</a></p>
+
+<h1>SEQUENCE DATA</h1>
+<table>
+    <tr>
+       <th>SEQ.ID.NO.</th>
+       <th>molecule type</th>
+       <th>length</th>
+       <th>features</th>
+       <th>residues</th>
+    </tr>
+    {% for seq in sequencelisting.sequence_set.all %}
+        <tr>
+            <td>{{ seq.sequenceIdNo }}</td>
+            <!-- <td><a href='/sequencelistings/sl{{sequencelisting.pk}}/seq{{seq.pk}}/'>{{ seq.sequenceIdNo }}</a></td> -->
+            <td>{{ seq.moltype }}</td>
+            <td>{{ seq.length }}</td>
+            <td>
+            {% if seq.feature_set.all %}
+                <table class="featuretable">
+                    <tr>
+                        <th>feature key</th>
+                        <th>location</th>
+                        <th>qualifiers</th>
+                    </tr>
+                    {% for f in seq.feature_set.all %}
+                        <tr>
+                            <td>
+                                {{f.featureKey}}
+                            </td>
+                            <td>{{f.location}}</td>
+                            <td>                          
+                                <table class="qualifiertable">
+                                    <tr>
+                                        <th>name</th>
+                                        <th>value</th>
+                                    </tr>
+                                    {% if f.qualifier_set.all %}
+                                    {% for q in f.qualifier_set.all %}
+                                    <tr>
+                                        <td>{{q.qualifierName}}</td>
+                                        <td>{{q.qualifierValue}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                    {% endif %}
+                                    <tr>
+                                        <td class="addQalifierLink" colspan="2">
+                                        <a href='/sequencelistings/sl{{sequencelisting.pk}}/seq{{seq.pk}}/f{{f.pk}}/add_qualifier/'>Add new qualifier</a>
+                                        </td>
+                                    </tr>
+                                </table>                         
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    <tr>
+                        <td class="addFeatureLink" colspan="2">
+                            <a href='/sequencelistings/sl{{sequencelisting.pk}}/seq{{seq.pk}}/add_feature/'>Add new feature</a>
+                        </td>
+                    </tr>                   
+                </table>
+            {% endif %}
+            </td>
+            <td>{{ seq.residues }}</td>
+        </tr>
+    {% endfor %}
+</table>
+<p><a href='/sequencelistings/sl{{sequencelisting.pk}}/add_seq/'>Add new sequence</a></p>
+{% endblock child_content %}

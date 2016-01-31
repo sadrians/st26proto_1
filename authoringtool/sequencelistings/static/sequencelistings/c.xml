@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "ST26SequenceListing_V1_0.dtd">
+<?xml-stylesheet type="text/xsl" href="st26.xsl"?>
+<ST26SequenceListing dtdVersion="1" 
+                    fileName="c"
+                    softwareName="prototype" 
+                    softwareVersion="0.1"
+                    productionDate="April 28, 2015, 10:06 p.m.">
+<!-- <ST26SequenceListing dtdVersion="1" 
+                    fileName="c"
+                    softwareName="prototype" 
+                    softwareVersion="0.1"
+                    productionDate="April 28, 2015, 10:06 p.m."
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:noNamespaceSchemaLocation="st26.xsd"> -->
+    <ApplicationIdentification>
+        <IPOfficeCode>e</IPOfficeCode>
+        <ApplicationNumberText>f</ApplicationNumberText>
+        <FilingDate>April 28, 2015, midnight</FilingDate>
+    </ApplicationIdentification>
+    <ApplicantFileReference>d</ApplicantFileReference>
+    <EarliestPriorityApplicationIdentification>
+        <IPOfficeCode>g</IPOfficeCode>
+        <ApplicationNumberText>h</ApplicationNumberText>
+        <FilingDate>April 28, 2015, midnight</FilingDate>
+    </EarliestPriorityApplicationIdentification>
+    <ApplicantName languageCode="j">
+        i
+    </ApplicantName>
+    <ApplicantNameLatin>
+        k
+    </ApplicantNameLatin>
+    <InventorName languageCode="m">
+        l
+    </InventorName>
+    <InventorNameLatin>
+        n
+    </InventorNameLatin>
+    
+        <InventionTitle languageCode="EN">
+            Invention 3
+        </InventionTitle>
+    
+        <InventionTitle languageCode="FR">
+            Titre supplementaire
+        </InventionTitle>
+    
+    
+    <SequenceTotalQuantity>
+        0
+    </SequenceTotalQuantity>
+      
+</ST26SequenceListing>

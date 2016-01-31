@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'sequencelistings/child.html' %}
+
+{% block child_content %}
+<h1>Login to sequence listing authoring tool prototype</h1>
+
+        <form id="login_form" method="post" action="/sequencelistings/login/">
+            {% csrf_token %}
+            Username: <input type="text" name="username" value="" size="50" />
+            <br />
+            Password: <input type="password" name="password" value="" size="50" />
+            <br />
+
+            <input type="submit" value="submit" />
+        </form>
+        
+{% endblock child_content %}

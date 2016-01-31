@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'sequencelistings/child.html' %}
+{% block child_content %}
+<p>This section enables you to start creating a sequence listing. </p>
+<p>In this page you have to provide data for the general information part of the sequence listing.</p>
+
+<form action="{% url 'sequencelistings:add_sequencelisting' %}" method="post">
+    {% csrf_token %}
+    <table>
+        {{ title_form.as_table }}
+    </table>
+    <p>xx</p>
+    
+    <table>
+        {{ form.as_table }}
+    </table>
+    
+    <p><input type="submit" value="Submit" /></p>
+</form>
+
+{% endblock child_content %}
