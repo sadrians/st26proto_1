@@ -10,12 +10,14 @@
                 {{user.username}}!
             {% endif %}
         </h2>
-        <p>Welcome to the xml sequence listing authoring tool.</p>
     </div>
     
 
-    <p>This is a prototype (so limited functionality!) built only for demonstration purposes. The tool enables the user to:
+    <p>This website is a proof of concept on how to generate a sequence listing in XML format.
+    This is a prototype (so limited functionality!) built only for information and demonstration purposes. 
     </p>
+    
+    <p>The tool enables the user to:</p>
     <ol>
         <li>create a sequence listing, i.e. 
             <ul>
@@ -25,13 +27,13 @@
         </li>
         <li>Store and display previously created sequence listings
         </li>
-        <li>Export the sequence listing as XML file
+        <li>Generate the sequence listing as XML file
         </li>
-        <li>Display in the browser the generated XML file (by using XSLT stylesheet)
+        <li>Display in the browser the generated XML file
         </li>
             
     </ol>
-    
+    <hr>
     <h2>SEQUENCE LISTING PORTOFOLIO</h2>
     <p>This section enables you to navigate to previously created sequence listings.</p>
     {% if sequencelistings %}
@@ -57,5 +59,11 @@
         <p>This section enables you to create a new sequence listing.</p>
         <a href="{% url 'sequencelistings:add_sequencelisting' %}">Add new sequence listing</a>
     {% endif %}
+    <hr>
+    <h3>Disclaimer</h3>
+    <p>This website has been built <strong>only for information purposes</strong>.</p>
+    <p>No rights can be derived from visiting, registering and/or exploring the functionality of this website.</p>
+    <p>This is a prototype. There is no guarantee that a sequence listing you have created today will be available to you in a subsequent session.
+ You should assume that the sequence listing created in one session might be lost once you closed the session.</p> 
 
 {% endblock %}

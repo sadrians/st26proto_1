@@ -5,12 +5,12 @@
                     fileName="file1"
                     softwareName="ST26 authoring tool prototype" 
                     softwareVersion="0.1"
-                    productionDate="Jan. 31, 2016">
+                    productionDate="Feb. 1, 2016">
 <!-- <ST26SequenceListing dtdVersion="1.0" 
                     fileName="file1"
                     softwareName="ST26 authoring tool prototype" 
                     softwareVersion="0.1"
-                    productionDate="Jan. 31, 2016, 11:55 p.m."
+                    productionDate="Feb. 2, 2016, 12:11 a.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>

@@ -3,7 +3,7 @@
 {% extends 'sequencelistings/base.html' %}
 {% load my_filters %}
 
-%block header_block %}
+{%block header_block %}
     <h2>SEQ ID NO {{seq.sequenceIdNo}}</h2>
 {% endblock %}
 
@@ -29,7 +29,6 @@
         <a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/seq{{seq.pk}}/f{{f.pk}}/add_qualifier/'><span  class="addQalifierLink">Add new qualifier</span></a>
         </p>
         <hr>
-        
         
     {% endfor %}
     <p>

@@ -112,7 +112,9 @@ class SequenceListingViewTests(TestCase):
         response = self.client.get(reverse('sequencelistings:detail', args=[sl1.pk]))
 #         print response
         self.assertContains(response, "location")
-        self.assertContains(response, "Add new sequence")
+        self.assertContains(response, "Generate XML")
+#         if the user is logged in:
+#         self.assertContains(response, "Add new sequence")
           
     def test_add_seq_view(self):
         """
