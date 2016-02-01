@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-{% extends 'sequencelistings/child.html' %}
+{% extends 'sequencelistings/base.html' %}
+
+{%block header_block %}
+    <h2>Add new qualifier</h2>
+{% endblock %}
 
 {% block body_block %}
 <form action="{% url 'sequencelistings:add_qualifier' pk spk fpk %}" method="post">
@@ -7,6 +11,7 @@
     <table>
         {{ form.as_table }}
     </table>
+    <br>
     <p><input type="submit" value="Submit" /></p>
 </form>
 {% endblock %}

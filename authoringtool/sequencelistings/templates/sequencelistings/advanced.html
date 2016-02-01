@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-{% extends 'sequencelistings/child.html' %}
+{% extends 'sequencelistings/base.html' %}
+
+{%block header_block %}
+    <h2>Advanced menu</h2>
+{% endblock %}
 
 {% block body_block %}
-<h1>ADVANCED MENU</h1>
 <p><a href='/sequencelistings/sl{{pk}}/add_multiple_features/'>Add multiple features</a></p>
 
 {% endblock %}

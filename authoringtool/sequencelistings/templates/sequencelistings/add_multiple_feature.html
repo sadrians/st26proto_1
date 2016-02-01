@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-{% extends 'sequencelistings/child.html' %}
+{% extends 'sequencelistings/base.html' %}
+
+{%block header_block %}
+    <h2>Add multiple feature</h2>
+{% endblock %}
 
 {% block body_block %}
 <h1>Add multiple feature</h1>
@@ -8,6 +12,7 @@
     <table>
         {{ form.as_table }}
     </table>
+    <br>
     <p><input type="submit" value="Submit" /></p>
 </form>
 {% endblock %}

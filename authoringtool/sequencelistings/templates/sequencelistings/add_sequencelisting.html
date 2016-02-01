@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-{% extends 'sequencelistings/child.html' %}
-{% block body_block %}
+{% extends 'sequencelistings/base.html' %}
 
+{%block header_block %}
+    <h2>Create a sequence listing</h2>
+{% endblock %}
+
+{% block body_block %}
 <p>This section enables you to start creating a sequence listing. </p>
 <p>In this page you have to provide data for the general information part of the sequence listing.</p>
 
@@ -11,12 +15,11 @@
         {{ title_form.as_table }}
     </table>
     <hr>
-    <p>xx</p>
     
     <table>
         {{ form.as_table }}
     </table>
-    
+    <br>
     <p><input type="submit" value="Submit" /></p>
 </form>
 

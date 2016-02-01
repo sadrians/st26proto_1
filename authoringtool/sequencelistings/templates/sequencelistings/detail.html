@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-{% extends 'sequencelistings/child.html' %}
+{% extends 'sequencelistings/base.html' %}
 {% load staticfiles %}
 
+{%block header_block %}
+    <h2>SEQUENCE LISTING {{ sequencelisting.fileName }}</h2>
+{% endblock %}
 
 {% block body_block %}
-<h1>SEQUENCE LISTING {{ sequencelisting.fileName }}</h1>
+
 <h1>EXPORT</h1>
 <p><a href="{% url 'sequencelistings:xmloutput' sequencelisting.pk %}">Generate XML</a></p>
 
-<h1>File name: {{ sequencelisting.fileName }}</h1>
+<hr>
 
 <h1>GENERAL INFORMATION</h1>
 <table>
@@ -78,11 +81,12 @@
         <th>Sequence total quantity</th><td>{{sequencelisting.sequenceTotalQuantity}}</td>
     </tr>
 </table>
+<br>
 <p><a href="{% url 'sequencelistings:add_title' sequencelisting.pk %}">Add new title</a></p>
 
 <!-- <p><a href='/sequencelistings/sl{{sequencelisting.pk}}/advanced/'>Advanced</a></p> -->
 
-
+<hr>
 <h1>SEQUENCE DATA</h1>
 <table>
     <tr>
@@ -148,5 +152,6 @@
         </tr>
     {% endfor %}
 </table>
+<br>
 <p><a href="{% url 'sequencelistings:add_seq' sequencelisting.pk %}">Add new sequence</a></p>
 {% endblock %}
