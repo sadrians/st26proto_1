@@ -46,7 +46,7 @@
             {% for sl in sequencelistings %}
                 <tr>
                     <td><a href="{% url 'sequencelistings:detail' sl.id %}">{{ sl.fileName }}</a></td>
-                    <td>still to be implemented</td>
+                    <td>{{sl.getFirstTitle}}</td>
                     <td>{{sl.sequenceTotalQuantity}}</td>
                 </tr>
             {% endfor %}

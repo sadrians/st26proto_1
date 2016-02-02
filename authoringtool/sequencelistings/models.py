@@ -37,6 +37,9 @@ class SequenceListing(models.Model):
     def __unicode__(self):
         return 'Sequence listing %s' %self.fileName
     
+    def getFirstTitle(self):
+        return self.title_set.all()[0].inventionTitle
+    
 class Title(models.Model):
     sequenceListing = models.ForeignKey(SequenceListing) 
     inventionTitle = models.CharField('Invention title', max_length=200)

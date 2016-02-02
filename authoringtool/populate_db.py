@@ -135,8 +135,17 @@ def add_qualifier(feature, qualifierName, qualifierValue):
     print 'created', q 
     return q 
 
+def mytest():
+    sls = SequenceListing.objects.all()
+    
+    print sls 
+    sl1 = sls[0]
+    print sl1.title_set.all()[0].inventionTitle
+
 # Start execution here!
 if __name__ == '__main__':
     print "Starting Creator population script..."
     populate()
 #     clearData()
+
+#     mytest()
