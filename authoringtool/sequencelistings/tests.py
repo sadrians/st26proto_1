@@ -85,10 +85,12 @@ class SequenceListingViewTests(TestCase):
         The sequence listings index, displays one sequence listing.
         """
         print 'Running %s ...' % getName()
-        create_sequencelisting_instance()
+        sl = create_sequencelisting_instance()
+        create_title_instance(sl)
         response = self.client.get(reverse('sequencelistings:index'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "test_xmlsql")
+        self.assertContains(response, "Invention 1")
         self.assertQuerysetEqual(response.context['sequencelistings'], 
                                  ['<SequenceListing: Sequence listing test_xmlsql>'])
        
