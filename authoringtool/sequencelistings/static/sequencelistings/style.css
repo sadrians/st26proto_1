@@ -69,7 +69,12 @@ th
     overflow-wrap: break-word;
 }
 
-
+#footer {
+   position:absolute;
+   bottom:0;
+   /* width:100%; */
+   height:30px;   /* Height of the footer */
+   background:#D9DDDE;
 
 /* .qualifiertable tr:nth-child(odd){
     background: #E8EDEB;

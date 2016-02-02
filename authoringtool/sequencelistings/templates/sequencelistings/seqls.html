@@ -1,0 +1,11 @@
+{% if seqls %}
+    <ul class="nav nav-sidebar">
+    {% for seql in seqls %}
+        <li><a href="{% url 'sequencelistings:detail'  seql.pk %}">{{ seql.fileName }}</a></li>
+    {% endfor %}
+
+{% else %}
+    <li> <strong >There are no sequence listings present.</strong></li>
+
+    </ul>
+{% endif %}
