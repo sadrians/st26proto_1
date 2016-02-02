@@ -1,0 +1,928 @@
+[
+{
+   "fields": {
+      "model": "logentry",
+      "name": "log entry",
+      "app_label": "admin"
+   },
+   "model": "contenttypes.contenttype",
+   "pk": 1
+},
+{
+   "fields": {
+      "model": "permission",
+      "name": "permission",
+      "app_label": "auth"
+   },
+   "model": "contenttypes.contenttype",
+   "pk": 2
+},
+{
+   "fields": {
+      "model": "group",
+      "name": "group",
+      "app_label": "auth"
+   },
+   "model": "contenttypes.contenttype",
+   "pk": 3
+},
+{
+   "fields": {
+      "model": "user",
+      "name": "user",
+      "app_label": "auth"
+   },
+   "model": "contenttypes.contenttype",
+   "pk": 4
+},
+{
+   "fields": {
+      "model": "contenttype",
+      "name": "content type",
+      "app_label": "contenttypes"
+   },
+   "model": "contenttypes.contenttype",
+   "pk": 5
+},
+{
+   "fields": {
+      "model": "session",
+      "name": "session",
+      "app_label": "sessions"
+   },
+   "model": "contenttypes.contenttype",
+   "pk": 6
+},
+{
+   "fields": {
+      "model": "sequencelisting",
+      "name": "sequence listing",
+      "app_label": "sequencelistings"
+   },
+   "model": "contenttypes.contenttype",
+   "pk": 7
+},
+{
+   "fields": {
+      "model": "title",
+      "name": "title",
+      "app_label": "sequencelistings"
+   },
+   "model": "contenttypes.contenttype",
+   "pk": 8
+},
+{
+   "fields": {
+      "model": "sequence",
+      "name": "sequence",
+      "app_label": "sequencelistings"
+   },
+   "model": "contenttypes.contenttype",
+   "pk": 9
+},
+{
+   "fields": {
+      "model": "feature",
+      "name": "feature",
+      "app_label": "sequencelistings"
+   },
+   "model": "contenttypes.contenttype",
+   "pk": 10
+},
+{
+   "fields": {
+      "model": "qualifier",
+      "name": "qualifier",
+      "app_label": "sequencelistings"
+   },
+   "model": "contenttypes.contenttype",
+   "pk": 11
+},
+{
+   "fields": {
+      "model": "registrationprofile",
+      "name": "registration profile",
+      "app_label": "registration"
+   },
+   "model": "contenttypes.contenttype",
+   "pk": 12
+},
+{
+   "fields": {
+      "expire_date": "2016-02-15T22:53:17.538Z",
+      "session_data": "YzIxYmNhODRlZjA0NjQxMTA5MWIzY2I5NjM4MjViYWIyZjkxYjcxYjp7fQ=="
+   },
+   "model": "sessions.session",
+   "pk": "dir2jcicof936cc121r2k7lvp664ner2"
+},
+{
+   "fields": {
+      "expire_date": "2016-02-13T20:27:30.186Z",
+      "session_data": "YzIxYmNhODRlZjA0NjQxMTA5MWIzY2I5NjM4MjViYWIyZjkxYjcxYjp7fQ=="
+   },
+   "model": "sessions.session",
+   "pk": "i87xeobclfsdei96xqsxw8d6xn9x59qz"
+},
+{
+   "fields": {
+      "expire_date": "2016-02-13T20:33:28.254Z",
+      "session_data": "YzIxYmNhODRlZjA0NjQxMTA5MWIzY2I5NjM4MjViYWIyZjkxYjcxYjp7fQ=="
+   },
+   "model": "sessions.session",
+   "pk": "wrjmfcwfiprheozoghh6m5bnlp1s5ffq"
+},
+{
+   "fields": {
+      "earliestPriorityFilingDate": "2015-01-29",
+      "applicantNameLanguageCode": "EN",
+      "filingDate": "2016-01-29",
+      "earliestPriorityIPOfficeCode": "US",
+      "IPOfficeCode": "EP",
+      "applicantNameLatin": "applicant1",
+      "softwareVersion": "0.1",
+      "softwareName": "ST26 authoring tool prototype",
+      "fileName": "file1",
+      "earliestPriorityApplicationNumberText": "12121212",
+      "applicationNumberText": "1511223344.5",
+      "dtdVersion": "1.0",
+      "inventorNameLanguageCode": "EN",
+      "inventorName": "inventor1",
+      "inventorNameLatin": "inventor1",
+      "applicantFileReference": "EP123",
+      "applicantName": "applicant1",
+      "productionDate": "2016-01-28",
+      "sequenceTotalQuantity": 2
+   },
+   "model": "sequencelistings.sequencelisting",
+   "pk": 11
+},
+{
+   "fields": {
+      "earliestPriorityFilingDate": "2013-12-29",
+      "applicantNameLanguageCode": "EN",
+      "filingDate": "2014-08-03",
+      "earliestPriorityIPOfficeCode": "JP",
+      "IPOfficeCode": "EP",
+      "applicantNameLatin": "applicant2",
+      "softwareVersion": "0.1",
+      "softwareName": "ST26 authoring tool prototype",
+      "fileName": "file2",
+      "earliestPriorityApplicationNumberText": "54545454",
+      "applicationNumberText": "1299887766.5",
+      "dtdVersion": "1.0",
+      "inventorNameLanguageCode": "EN",
+      "inventorName": "inventor2",
+      "inventorNameLatin": "inventor2",
+      "applicantFileReference": "WO123",
+      "applicantName": "applicant2",
+      "productionDate": "2016-01-24",
+      "sequenceTotalQuantity": 2
+   },
+   "model": "sequencelistings.sequencelisting",
+   "pk": 12
+},
+{
+   "fields": {
+      "sequenceListing": 11,
+      "inventionTitle": "title1x",
+      "inventionTitleLanguageCode": "EN"
+   },
+   "model": "sequencelistings.title",
+   "pk": 19
+},
+{
+   "fields": {
+      "sequenceListing": 11,
+      "inventionTitle": "title2",
+      "inventionTitleLanguageCode": "FR"
+   },
+   "model": "sequencelistings.title",
+   "pk": 20
+},
+{
+   "fields": {
+      "sequenceListing": 12,
+      "inventionTitle": "title3",
+      "inventionTitleLanguageCode": "EN"
+   },
+   "model": "sequencelistings.title",
+   "pk": 21
+},
+{
+   "fields": {
+      "sequenceListing": 12,
+      "inventionTitle": "title4",
+      "inventionTitleLanguageCode": "JP"
+   },
+   "model": "sequencelistings.title",
+   "pk": 22
+},
+{
+   "fields": {
+      "sequenceIdNo": 1,
+      "division": "PAT",
+      "length": 17,
+      "residues": "agtcacactttcattca",
+      "sequenceListing": 11,
+      "moltype": "DNA",
+      "otherSeqId": "-"
+   },
+   "model": "sequencelistings.sequence",
+   "pk": 25
+},
+{
+   "fields": {
+      "sequenceIdNo": 2,
+      "division": "PAT",
+      "length": 10,
+      "residues": "MTGGRASERT",
+      "sequenceListing": 11,
+      "moltype": "AA",
+      "otherSeqId": "-"
+   },
+   "model": "sequencelistings.sequence",
+   "pk": 26
+},
+{
+   "fields": {
+      "sequenceIdNo": 1,
+      "division": "PAT",
+      "length": 30,
+      "residues": "agtcncttagggacccaacactttcattca",
+      "sequenceListing": 12,
+      "moltype": "DNA",
+      "otherSeqId": "-"
+   },
+   "model": "sequencelistings.sequence",
+   "pk": 27
+},
+{
+   "fields": {
+      "sequenceIdNo": 2,
+      "division": "PAT",
+      "length": 5,
+      "residues": "MTERT",
+      "sequenceListing": 12,
+      "moltype": "AA",
+      "otherSeqId": "-"
+   },
+   "model": "sequencelistings.sequence",
+   "pk": 28
+},
+{
+   "fields": {
+      "location": "1..20",
+      "featureKey": "source",
+      "sequence": 25
+   },
+   "model": "sequencelistings.feature",
+   "pk": 48
+},
+{
+   "fields": {
+      "location": "7..8",
+      "featureKey": "allele",
+      "sequence": 25
+   },
+   "model": "sequencelistings.feature",
+   "pk": 49
+},
+{
+   "fields": {
+      "location": "1..10",
+      "featureKey": "SOURCE",
+      "sequence": 26
+   },
+   "model": "sequencelistings.feature",
+   "pk": 50
+},
+{
+   "fields": {
+      "location": "5",
+      "featureKey": "VARIATION",
+      "sequence": 26
+   },
+   "model": "sequencelistings.feature",
+   "pk": 51
+},
+{
+   "fields": {
+      "location": "1..30",
+      "featureKey": "source",
+      "sequence": 27
+   },
+   "model": "sequencelistings.feature",
+   "pk": 52
+},
+{
+   "fields": {
+      "location": "4..6",
+      "featureKey": "allele",
+      "sequence": 27
+   },
+   "model": "sequencelistings.feature",
+   "pk": 53
+},
+{
+   "fields": {
+      "location": "1..5",
+      "featureKey": "SOURCE",
+      "sequence": 28
+   },
+   "model": "sequencelistings.feature",
+   "pk": 54
+},
+{
+   "fields": {
+      "location": "3",
+      "featureKey": "VARIATION",
+      "sequence": 28
+   },
+   "model": "sequencelistings.feature",
+   "pk": 55
+},
+{
+   "fields": {
+      "qualifierName": "organism",
+      "qualifierValue": "homo sapiens",
+      "feature": 48
+   },
+   "model": "sequencelistings.qualifier",
+   "pk": 72
+},
+{
+   "fields": {
+      "qualifierName": "mol_type",
+      "qualifierValue": "genomic DNA",
+      "feature": 48
+   },
+   "model": "sequencelistings.qualifier",
+   "pk": 73
+},
+{
+   "fields": {
+      "qualifierName": "ORGANISM",
+      "qualifierValue": "mus",
+      "feature": 50
+   },
+   "model": "sequencelistings.qualifier",
+   "pk": 74
+},
+{
+   "fields": {
+      "qualifierName": "MOL_TYPE",
+      "qualifierValue": "protein",
+      "feature": 50
+   },
+   "model": "sequencelistings.qualifier",
+   "pk": 75
+},
+{
+   "fields": {
+      "qualifierName": "organism",
+      "qualifierValue": "homo sapiens",
+      "feature": 52
+   },
+   "model": "sequencelistings.qualifier",
+   "pk": 76
+},
+{
+   "fields": {
+      "qualifierName": "mol_type",
+      "qualifierValue": "genomic DNA",
+      "feature": 52
+   },
+   "model": "sequencelistings.qualifier",
+   "pk": 77
+},
+{
+   "fields": {
+      "qualifierName": "ORGANISM",
+      "qualifierValue": "mus",
+      "feature": 54
+   },
+   "model": "sequencelistings.qualifier",
+   "pk": 78
+},
+{
+   "fields": {
+      "qualifierName": "MOL_TYPE",
+      "qualifierValue": "protein",
+      "feature": 54
+   },
+   "model": "sequencelistings.qualifier",
+   "pk": 79
+},
+{
+   "fields": {
+      "codename": "add_logentry",
+      "name": "Can add log entry",
+      "content_type": 1
+   },
+   "model": "auth.permission",
+   "pk": 1
+},
+{
+   "fields": {
+      "codename": "change_logentry",
+      "name": "Can change log entry",
+      "content_type": 1
+   },
+   "model": "auth.permission",
+   "pk": 2
+},
+{
+   "fields": {
+      "codename": "delete_logentry",
+      "name": "Can delete log entry",
+      "content_type": 1
+   },
+   "model": "auth.permission",
+   "pk": 3
+},
+{
+   "fields": {
+      "codename": "add_permission",
+      "name": "Can add permission",
+      "content_type": 2
+   },
+   "model": "auth.permission",
+   "pk": 4
+},
+{
+   "fields": {
+      "codename": "change_permission",
+      "name": "Can change permission",
+      "content_type": 2
+   },
+   "model": "auth.permission",
+   "pk": 5
+},
+{
+   "fields": {
+      "codename": "delete_permission",
+      "name": "Can delete permission",
+      "content_type": 2
+   },
+   "model": "auth.permission",
+   "pk": 6
+},
+{
+   "fields": {
+      "codename": "add_group",
+      "name": "Can add group",
+      "content_type": 3
+   },
+   "model": "auth.permission",
+   "pk": 7
+},
+{
+   "fields": {
+      "codename": "change_group",
+      "name": "Can change group",
+      "content_type": 3
+   },
+   "model": "auth.permission",
+   "pk": 8
+},
+{
+   "fields": {
+      "codename": "delete_group",
+      "name": "Can delete group",
+      "content_type": 3
+   },
+   "model": "auth.permission",
+   "pk": 9
+},
+{
+   "fields": {
+      "codename": "add_user",
+      "name": "Can add user",
+      "content_type": 4
+   },
+   "model": "auth.permission",
+   "pk": 10
+},
+{
+   "fields": {
+      "codename": "change_user",
+      "name": "Can change user",
+      "content_type": 4
+   },
+   "model": "auth.permission",
+   "pk": 11
+},
+{
+   "fields": {
+      "codename": "delete_user",
+      "name": "Can delete user",
+      "content_type": 4
+   },
+   "model": "auth.permission",
+   "pk": 12
+},
+{
+   "fields": {
+      "codename": "add_contenttype",
+      "name": "Can add content type",
+      "content_type": 5
+   },
+   "model": "auth.permission",
+   "pk": 13
+},
+{
+   "fields": {
+      "codename": "change_contenttype",
+      "name": "Can change content type",
+      "content_type": 5
+   },
+   "model": "auth.permission",
+   "pk": 14
+},
+{
+   "fields": {
+      "codename": "delete_contenttype",
+      "name": "Can delete content type",
+      "content_type": 5
+   },
+   "model": "auth.permission",
+   "pk": 15
+},
+{
+   "fields": {
+      "codename": "add_session",
+      "name": "Can add session",
+      "content_type": 6
+   },
+   "model": "auth.permission",
+   "pk": 16
+},
+{
+   "fields": {
+      "codename": "change_session",
+      "name": "Can change session",
+      "content_type": 6
+   },
+   "model": "auth.permission",
+   "pk": 17
+},
+{
+   "fields": {
+      "codename": "delete_session",
+      "name": "Can delete session",
+      "content_type": 6
+   },
+   "model": "auth.permission",
+   "pk": 18
+},
+{
+   "fields": {
+      "codename": "add_sequencelisting",
+      "name": "Can add sequence listing",
+      "content_type": 7
+   },
+   "model": "auth.permission",
+   "pk": 19
+},
+{
+   "fields": {
+      "codename": "change_sequencelisting",
+      "name": "Can change sequence listing",
+      "content_type": 7
+   },
+   "model": "auth.permission",
+   "pk": 20
+},
+{
+   "fields": {
+      "codename": "delete_sequencelisting",
+      "name": "Can delete sequence listing",
+      "content_type": 7
+   },
+   "model": "auth.permission",
+   "pk": 21
+},
+{
+   "fields": {
+      "codename": "add_title",
+      "name": "Can add title",
+      "content_type": 8
+   },
+   "model": "auth.permission",
+   "pk": 22
+},
+{
+   "fields": {
+      "codename": "change_title",
+      "name": "Can change title",
+      "content_type": 8
+   },
+   "model": "auth.permission",
+   "pk": 23
+},
+{
+   "fields": {
+      "codename": "delete_title",
+      "name": "Can delete title",
+      "content_type": 8
+   },
+   "model": "auth.permission",
+   "pk": 24
+},
+{
+   "fields": {
+      "codename": "add_sequence",
+      "name": "Can add sequence",
+      "content_type": 9
+   },
+   "model": "auth.permission",
+   "pk": 25
+},
+{
+   "fields": {
+      "codename": "change_sequence",
+      "name": "Can change sequence",
+      "content_type": 9
+   },
+   "model": "auth.permission",
+   "pk": 26
+},
+{
+   "fields": {
+      "codename": "delete_sequence",
+      "name": "Can delete sequence",
+      "content_type": 9
+   },
+   "model": "auth.permission",
+   "pk": 27
+},
+{
+   "fields": {
+      "codename": "add_feature",
+      "name": "Can add feature",
+      "content_type": 10
+   },
+   "model": "auth.permission",
+   "pk": 28
+},
+{
+   "fields": {
+      "codename": "change_feature",
+      "name": "Can change feature",
+      "content_type": 10
+   },
+   "model": "auth.permission",
+   "pk": 29
+},
+{
+   "fields": {
+      "codename": "delete_feature",
+      "name": "Can delete feature",
+      "content_type": 10
+   },
+   "model": "auth.permission",
+   "pk": 30
+},
+{
+   "fields": {
+      "codename": "add_qualifier",
+      "name": "Can add qualifier",
+      "content_type": 11
+   },
+   "model": "auth.permission",
+   "pk": 31
+},
+{
+   "fields": {
+      "codename": "change_qualifier",
+      "name": "Can change qualifier",
+      "content_type": 11
+   },
+   "model": "auth.permission",
+   "pk": 32
+},
+{
+   "fields": {
+      "codename": "delete_qualifier",
+      "name": "Can delete qualifier",
+      "content_type": 11
+   },
+   "model": "auth.permission",
+   "pk": 33
+},
+{
+   "fields": {
+      "codename": "add_registrationprofile",
+      "name": "Can add registration profile",
+      "content_type": 12
+   },
+   "model": "auth.permission",
+   "pk": 34
+},
+{
+   "fields": {
+      "codename": "change_registrationprofile",
+      "name": "Can change registration profile",
+      "content_type": 12
+   },
+   "model": "auth.permission",
+   "pk": 35
+},
+{
+   "fields": {
+      "codename": "delete_registrationprofile",
+      "name": "Can delete registration profile",
+      "content_type": 12
+   },
+   "model": "auth.permission",
+   "pk": 36
+},
+{
+   "fields": {
+      "username": "ad",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": true,
+      "is_staff": true,
+      "last_login": "2016-02-01T22:43:58.196Z",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$12000$wqXtwbO1eKAS$EQc72JLh3AquAggobQE8kYKPrcEC8kDAOzntqQjmL4E=",
+      "email": "sadrians@gmail.com",
+      "date_joined": "2016-01-29T21:30:50.848Z"
+   },
+   "model": "auth.user",
+   "pk": 1
+},
+{
+   "fields": {
+      "username": "user1",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": false,
+      "is_staff": false,
+      "last_login": "2016-01-30T08:14:46.326Z",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$12000$ohF5xhGb55TK$91MX//bFhaflOTa9QNDcFu/YIX40cUpuubsd9mgkCx4=",
+      "email": "user1@email.com",
+      "date_joined": "2016-01-30T07:51:35.108Z"
+   },
+   "model": "auth.user",
+   "pk": 2
+},
+{
+   "fields": {
+      "username": "user2",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": false,
+      "is_staff": false,
+      "last_login": "2016-01-30T20:16:32.199Z",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$12000$BK9y2y9taIKu$1c/cW1vgprmJ5WaAUnk/yQqMifTeKYGV+Q5iy5EkCJc=",
+      "email": "user2@email.com",
+      "date_joined": "2016-01-30T20:16:14.202Z"
+   },
+   "model": "auth.user",
+   "pk": 3
+},
+{
+   "fields": {
+      "username": "user3",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": false,
+      "is_staff": false,
+      "last_login": "2016-01-30T20:34:45.458Z",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$12000$wxZNU8g7M2J7$MEmNt/0aWDkbzm3ow7caYOa53LR9gTDuVG5Ryzkc96o=",
+      "email": "user3@email.com",
+      "date_joined": "2016-01-30T20:27:30.059Z"
+   },
+   "model": "auth.user",
+   "pk": 4
+},
+{
+   "fields": {
+      "username": "user4",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": false,
+      "is_staff": false,
+      "last_login": "2016-01-30T20:33:28.012Z",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$12000$D5XlLJWSgKI8$FT44cfTOdLDPCiM9GwQ/smZNXoBpDhcud5aBhvmWolY=",
+      "email": "user4@email.com",
+      "date_joined": "2016-01-30T20:33:28.012Z"
+   },
+   "model": "auth.user",
+   "pk": 5
+},
+{
+   "fields": {
+      "username": "user5",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": false,
+      "is_staff": false,
+      "last_login": "2016-01-30T20:34:15.536Z",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$12000$9jEIjpTZZhgw$3AYvQhJpsumB3NjvZnZ+HNHn8QBzZHUWKvfKIjPV+ks=",
+      "email": "user5@email.com",
+      "date_joined": "2016-01-30T20:34:15.536Z"
+   },
+   "model": "auth.user",
+   "pk": 6
+},
+{
+   "fields": {
+      "username": "user6",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": false,
+      "is_staff": false,
+      "last_login": "2016-01-30T21:01:59.901Z",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$12000$zPRtrYt4zQqN$qjBTyCLaOyknFF6Kc4p9+WjD1hItdPH1nTHEDYwLhIU=",
+      "email": "user6@email.com",
+      "date_joined": "2016-01-30T20:54:25.690Z"
+   },
+   "model": "auth.user",
+   "pk": 7
+},
+{
+   "fields": {
+      "username": "user7",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": false,
+      "is_staff": false,
+      "last_login": "2016-01-31T14:31:57.875Z",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$12000$NTWqPdhSdt0h$f/66msFMCuNFqWem2utB58xJG0dKH/IFUsE+SArXAZo=",
+      "email": "user7@email.com",
+      "date_joined": "2016-01-30T21:03:04.939Z"
+   },
+   "model": "auth.user",
+   "pk": 8
+},
+{
+   "fields": {
+      "username": "user8",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": false,
+      "is_staff": false,
+      "last_login": "2016-01-31T10:55:07.069Z",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$12000$yBLVfVyq7HAJ$k6KEiGwYZaNaHYR9cAeBc8sivjn/gwCe2eu6wiFRNWo=",
+      "email": "user8@email.com",
+      "date_joined": "2016-01-30T21:09:55.016Z"
+   },
+   "model": "auth.user",
+   "pk": 9
+},
+{
+   "fields": {
+      "action_flag": 2,
+      "action_time": "2016-01-29T23:05:26.007Z",
+      "object_repr": "Sequence listing file1",
+      "object_id": "1",
+      "change_message": "Changed fileName.",
+      "user": 1,
+      "content_type": 7
+   },
+   "model": "admin.logentry",
+   "pk": 1
+},
+{
+   "fields": {
+      "action_flag": 2,
+      "action_time": "2016-01-29T23:05:50.750Z",
+      "object_repr": "Sequence listing file2",
+      "object_id": "2",
+      "change_message": "Changed fileName.",
+      "user": 1,
+      "content_type": 7
+   },
+   "model": "admin.logentry",
+   "pk": 2
+}
+]
