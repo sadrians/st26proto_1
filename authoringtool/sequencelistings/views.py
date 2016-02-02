@@ -4,6 +4,7 @@ from django.shortcuts import get_object_or_404, render, redirect, render_to_resp
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 from django.views import generic
+from django.views.static import serve 
 from django.utils import timezone
 from django.template.loader import render_to_string
 from django.contrib.auth import authenticate, login, logout 
@@ -17,6 +18,7 @@ from forms import SequenceListingForm, TitleForm, SequenceForm, FeatureForm, Qua
 
 from models import SequenceListing, Title, Sequence, Feature, Qualifier
 from forms import MultipleFeatureForm
+from django.utils.encoding import filepath_to_uri
 
 detailTemplate = 'sequencelistings/detail.html'
 # detailTemplate = 'sequencelistings/detail1.html'
@@ -296,10 +298,10 @@ def generateXml(request, pk):
         
         res = helper_generateXml(sl)
         
-        
         return render(request, 'sequencelistings/xmloutput.html', 
                       {'filePath': res[1], 
-                        'location': os.path.abspath(res[0])
+                        'location': os.path.abspath(res[0]), 
+                        'fileName': sl.fileName,
                         })
         
 def helper_generateXml(sl):
@@ -338,9 +340,22 @@ def render_xmlFile(request):
     return HttpResponseRedirect('/sequencelistings/output_xml/')
 #     return HttpResponse('test xml')
 
-
-
-
+# def download(request, fileName):
+#     dir = os.path.join(util.PROJECT_DIRECTORY, 
+#                        'sequencelistings', 'static', 
+#                        'sequencelistings')
+#     return serve(request, '%s.xml' % fileName, dir)
+# 
+# def show_bare_xml(request, fileName):
+#     filePath = dir = os.path.join(util.PROJECT_DIRECTORY, 
+#                        'sequencelistings', 'static', 
+#                        'sequencelistings', 
+#                        '%s.xml' % fileName)
+#     with open(filePath, 'r') as f:
+#         s = f.read()
+#         s = s.replace('<?xml-stylesheet type="text/xsl" href="st26.xsl"?>', '')
+#         
+#         return HttpResponse(s)
 # def register(request):
 # 
 #     # A boolean value for telling the template whether the registration was successful.
