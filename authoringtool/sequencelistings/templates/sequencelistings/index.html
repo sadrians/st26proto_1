@@ -36,6 +36,16 @@
     <hr>
     <h2>SEQUENCE LISTING PORTOFOLIO</h2>
     <p>This section enables you to navigate to previously created sequence listings.</p>
+    <p>
+        Visitors are able to view any sequence listing by following the link in the column 'file name'.</p>
+        <p>In addition, registered users can create sequence listings or add sequences to previously created sequence listings.</p> 
+        
+        {% if not user.is_authenticated %}
+            <p>Follow this link for <a href="{% url 'registration_register' %}">registration</a>.
+        {% endif %}
+        <h3>Note</h3>
+        <p>The sequence listing whose file name is 'Invention_SEQL' is not editable. It is a specimen.</p>
+    </p>
     {% if sequencelistings %}
         <table>
             <tr>
