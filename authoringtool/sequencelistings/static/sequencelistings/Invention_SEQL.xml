@@ -5,12 +5,12 @@
                     fileName="Invention_SEQL"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="May 12, 2015">
+                    productionDate="Feb. 3, 2016">
 <!-- <ST26SequenceListing dtdVersion="1" 
                     fileName="Invention_SEQL"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="May 12, 2015, 1:41 p.m."
+                    productionDate="Feb. 3, 2016, 10:58 p.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
@@ -51,7 +51,7 @@
     
     
     <SequenceTotalQuantity>
-        44
+        42
     </SequenceTotalQuantity>
     
         <SequenceData sequenceIDNumber="1">
@@ -620,249 +620,6 @@
             </INSDSeq>
         </SequenceData>
     
-        <SequenceData sequenceIDNumber="15">
-            <INSDSeq>
-                <INSDSeq_length>12</INSDSeq_length>
-                <INSDSeq_moltype>AA</INSDSeq_moltype>
-                <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
-                <INSDSeq_feature-table>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>SOURCE</INSDFeature_key>
-                            <INSDFeature_location>1..12</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
-                                    <INSDQualifier_value>protein</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>VARIANT</INSDFeature_key>
-                            <INSDFeature_location>4</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
-                                    <INSDQualifier_value>any amino acid as long as it is the same in positions 8 and 12</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>VARIANT</INSDFeature_key>
-                            <INSDFeature_location>8</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
-                                    <INSDQualifier_value>any amino acid as long as it is the same in positions 4 and 12</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>VARIANT</INSDFeature_key>
-                            <INSDFeature_location>12</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
-                                    <INSDQualifier_value>any amino acid as long as it is the same in positions 4 and 8</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                </INSDSeq_feature-table>
-                <INSDSeq_sequence>GGGXGGGXGGGX</INSDSeq_sequence>
-            </INSDSeq>
-        </SequenceData>
-    
-        <SequenceData sequenceIDNumber="16">
-            <INSDSeq>
-                <INSDSeq_length>400</INSDSeq_length>
-                <INSDSeq_moltype>AA</INSDSeq_moltype>
-                <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
-                <INSDSeq_feature-table>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>SOURCE</INSDFeature_key>
-                            <INSDFeature_location>1..400</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
-                                    <INSDQualifier_value>protein</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>VARIANT</INSDFeature_key>
-                            <INSDFeature_location>1..400</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
-                                    <INSDQualifier_value>All &#39;X&#39; denote the same amino acid </INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                </INSDSeq_feature-table>
-                <INSDSeq_sequence>GGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGX</INSDSeq_sequence>
-            </INSDSeq>
-        </SequenceData>
-    
-        <SequenceData sequenceIDNumber="17">
-            <INSDSeq>
-                <INSDSeq_length>5</INSDSeq_length>
-                <INSDSeq_moltype>AA</INSDSeq_moltype>
-                <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
-                <INSDSeq_feature-table>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>SOURCE</INSDFeature_key>
-                            <INSDFeature_location>1..5</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
-                                    <INSDQualifier_value>protein</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>VARIANT</INSDFeature_key>
-                            <INSDFeature_location>5</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
-                                    <INSDQualifier_value>any amino acid</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                </INSDSeq_feature-table>
-                <INSDSeq_sequence>GGGGX</INSDSeq_sequence>
-            </INSDSeq>
-        </SequenceData>
-    
-        <SequenceData sequenceIDNumber="18">
-            <INSDSeq>
-                <INSDSeq_length>4</INSDSeq_length>
-                <INSDSeq_moltype>AA</INSDSeq_moltype>
-                <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
-                <INSDSeq_feature-table>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>SOURCE</INSDFeature_key>
-                            <INSDFeature_location>1..4</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>synthetic construct</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
-                                    <INSDQualifier_value>protein</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                </INSDSeq_feature-table>
-                <INSDSeq_sequence>GLQK</INSDSeq_sequence>
-            </INSDSeq>
-        </SequenceData>
-    
-        <SequenceData sequenceIDNumber="19">
-            <INSDSeq>
-                <INSDSeq_length>4</INSDSeq_length>
-                <INSDSeq_moltype>AA</INSDSeq_moltype>
-                <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
-                <INSDSeq_feature-table>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>SOURCE</INSDFeature_key>
-                            <INSDFeature_location>1..4</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
-                                    <INSDQualifier_value>protein</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>NON_TER</INSDFeature_key>
-                            <INSDFeature_location>4</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
-                                    <INSDQualifier_value>bound to Lys at position 3 of SEQ ID NO 20 via an amide linkage between the side chain amine of the Lysine and the carboxyl end of the bonded Leu</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                </INSDSeq_feature-table>
-                <INSDSeq_sequence>RISL</INSDSeq_sequence>
-            </INSDSeq>
-        </SequenceData>
-    
         <SequenceData sequenceIDNumber="20">
             <INSDSeq>
                 <INSDSeq_length>4</INSDSeq_length>
@@ -872,50 +629,6 @@
                     <INSDSeqid>-</INSDSeqid>
                 </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>SOURCE</INSDFeature_key>
-                            <INSDFeature_location>1..4</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
-                                    <INSDQualifier_value>protein</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>CROSSLNK</INSDFeature_key>
-                            <INSDFeature_location>3</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
-                                    <INSDQualifier_value>bound to Leu at position 4 of SEQ ID NO 19, via an amide linkage between the side chain amine of the Lysine and the carboxyl end of the bonded Leu</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>NON_TER</INSDFeature_key>
-                            <INSDFeature_location>4</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
-                                    <INSDQualifier_value>bound via an amide linkage to the side chain of Lys at position 7 of SEQ ID NO 24, and to the Lys of the tri-peptide LLK; wherein the Lys of the tripeptide is further bound, via an amide linkage between the side chain amine of the Lysine and the carboxyl end of the bonded Ala of a tripeptide YFA</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
                     
                 </INSDSeq_feature-table>
                 <INSDSeq_sequence>LLKK</INSDSeq_sequence>
@@ -932,37 +645,6 @@
                 </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
-                        <INSDFeature>
-                            <INSDFeature_key>SOURCE</INSDFeature_key>
-                            <INSDFeature_location>1..6</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
-                                    <INSDQualifier_value>protein</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>NON_TER</INSDFeature_key>
-                            <INSDFeature_location>6</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
-                                    <INSDQualifier_value>bound to Lys at position 6 of SEQ ID NO 24 via an amide linkage between the side chain amine of the Lysine and the carboxyl end of the bonded Ala</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
                 </INSDSeq_feature-table>
                 <INSDSeq_sequence>IPACTA</INSDSeq_sequence>
             </INSDSeq>
@@ -977,24 +659,6 @@
                     <INSDSeqid>-</INSDSeqid>
                 </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>SOURCE</INSDFeature_key>
-                            <INSDFeature_location>1..6</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
-                                    <INSDQualifier_value>protein</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
                     
                         <INSDFeature>
                             <INSDFeature_key>NON_TER</INSDFeature_key>
@@ -3077,8 +2741,16 @@
                             </INSDFeature_quals>
                         </INSDFeature>
                     
+                        <INSDFeature>
+                            <INSDFeature_key>misc_recomb</INSDFeature_key>
+                            <INSDFeature_location>1</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
                 </INSDSeq_feature-table>
-                <INSDSeq_sequence>acattgaatctcataccacttt</INSDSeq_sequence>
+                <INSDSeq_sequence>acacacacacacacacacacac</INSDSeq_sequence>
             </INSDSeq>
         </SequenceData>
     
@@ -3111,7 +2783,7 @@
                         </INSDFeature>
                     
                 </INSDSeq_feature-table>
-                <INSDSeq_sequence>acattggatctcatacgacttt</INSDSeq_sequence>
+                <INSDSeq_sequence>acattgaatctcataccacttt</INSDSeq_sequence>
             </INSDSeq>
         </SequenceData>
     
@@ -3144,11 +2816,44 @@
                         </INSDFeature>
                     
                 </INSDSeq_feature-table>
-                <INSDSeq_sequence>gtatggcgtcgtatsgtagttt</INSDSeq_sequence>
+                <INSDSeq_sequence>acattggatctcatacgacttt</INSDSeq_sequence>
             </INSDSeq>
         </SequenceData>
     
         <SequenceData sequenceIDNumber="40">
+            <INSDSeq>
+                <INSDSeq_length>22</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..22</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>gtatggcgtcgtatsgtagttt</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="41">
             <INSDSeq>
                 <INSDSeq_length>76</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
@@ -3181,7 +2886,7 @@
             </INSDSeq>
         </SequenceData>
     
-        <SequenceData sequenceIDNumber="41">
+        <SequenceData sequenceIDNumber="42">
             <INSDSeq>
                 <INSDSeq_length>85</INSDSeq_length>
                 <INSDSeq_moltype>RNA</INSDSeq_moltype>
@@ -3266,7 +2971,7 @@
                         </INSDFeature>
                     
                 </INSDSeq_feature-table>
-                <INSDSeq_sequence>ggagacatcgcttgagcattaagcgagaagccgattcttcgccgaagaatgacagccgcctgccacttcgaaggctgtctccgca</INSDSeq_sequence>
+                <INSDSeq_sequence>ggagacaucgcuugagcauuaagcgagaagccgauucuucgccgaagaaugacagccgccugccacuucgaaggcugucuccgca</INSDSeq_sequence>
             </INSDSeq>
         </SequenceData>
     

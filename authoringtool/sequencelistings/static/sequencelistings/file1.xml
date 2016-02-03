@@ -5,12 +5,12 @@
                     fileName="file1"
                     softwareName="ST26 authoring tool prototype" 
                     softwareVersion="0.1"
-                    productionDate="Feb. 1, 2016">
+                    productionDate="Feb. 3, 2016">
 <!-- <ST26SequenceListing dtdVersion="1.0" 
                     fileName="file1"
                     softwareName="ST26 authoring tool prototype" 
                     softwareVersion="0.1"
-                    productionDate="Feb. 2, 2016, 12:35 a.m."
+                    productionDate="Feb. 3, 2016, 11:34 p.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
@@ -61,9 +61,71 @@
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..12</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any amino acid as long as it is the same in positions 8 and 12</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any amino acid as long as it is the same in positions 4 and 12</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>12</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any amino acid as long as it is the same in positions 4 and 8</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
                             <INSDFeature_key>source</INSDFeature_key>
                             <INSDFeature_location>1..20</INSDFeature_location>
                             <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
                                 
                                 <INSDQualifier>
                                     <INSDQualifier_name>organism</INSDQualifier_name>
@@ -120,6 +182,16 @@
                                 <INSDQualifier>
                                     <INSDQualifier_name>note</INSDQualifier_name>
                                     <INSDQualifier_value>a or g</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
                                 </INSDQualifier>
                                 
                             </INSDFeature_quals>

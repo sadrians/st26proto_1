@@ -5,12 +5,12 @@
                     fileName="test2"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="May 12, 2015">
+                    productionDate="Feb. 3, 2016">
 <!-- <ST26SequenceListing dtdVersion="V1_0" 
                     fileName="test2"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="May 12, 2015, 1:16 p.m."
+                    productionDate="Feb. 3, 2016, 10:58 p.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
@@ -43,7 +43,7 @@
     
     
     <SequenceTotalQuantity>
-        3
+        4
     </SequenceTotalQuantity>
     
         <SequenceData sequenceIDNumber="1">
@@ -177,6 +177,39 @@
     
         <SequenceData sequenceIDNumber="2">
             <INSDSeq>
+                <INSDSeq_length>106</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..106</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Solanum lycopersicum</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MSSRKSQYNFIQTNDSKPSNNIYQSQSSEPTTRNKKTKKLDQVETYIQIFETYLKLLIGQEIGLEEEERLNGYQNFDCSDNNNTLDLEQPEAIISLYNPDFVLDTL</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="3">
+            <INSDSeq>
                 <INSDSeq_length>210</INSDSeq_length>
                 <INSDSeq_moltype>RNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
@@ -221,7 +254,7 @@
             </INSDSeq>
         </SequenceData>
     
-        <SequenceData sequenceIDNumber="3">
+        <SequenceData sequenceIDNumber="4">
             <INSDSeq>
                 <INSDSeq_length>8</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
