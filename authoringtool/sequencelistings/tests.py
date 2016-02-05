@@ -14,7 +14,7 @@ def getName():
     return inspect.stack()[1][3]
 
 def create_sequencelisting_instance():
-    return SequenceListing.objects.create(
+    sl = SequenceListing.objects.create(
         fileName = 'test_xmlsql',
         dtdVersion = '1',
         softwareName = 'prototype',
@@ -39,6 +39,9 @@ def create_sequencelisting_instance():
         inventorNameLanguageCode = 'FR',
         inventorNameLatin = 'Mary Dupont',        
         )
+    create_title_instance(sl)
+    
+    return sl 
  
 def create_title_instance(sl):
     return Title.objects.create(
@@ -86,7 +89,6 @@ class SequenceListingViewTests(TestCase):
         """
         print 'Running %s ...' % getName()
         sl = create_sequencelisting_instance()
-        create_title_instance(sl)
         response = self.client.get(reverse('sequencelistings:index'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "test_xmlsql")
@@ -267,17 +269,17 @@ class SequenceListingViewTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "organism")
         self.assertContains(response, "Homo sapiens")
-#          
-#     def test_xmloutput_view(self):
-#         """
-#         The generated xml file (xmloutput) is correctly displayed.
-#         """
-#         sl = create_sequencelisting_instance()
-#         create_sequence_instance(sl)
-#         response = self.client.get(reverse('sequencelistings:xmloutput', args=[sl.pk, ]))
-#         self.assertEqual(response.status_code, 200)
-#         self.assertContains(response, '%s.xml' % sl.fileName)
-#           
+          
+    def test_xmloutput_view(self):
+        """
+        The generated xml file (xmloutput) is correctly displayed.
+        """
+        sl = create_sequencelisting_instance()
+        create_sequence_instance(sl)
+        response = self.client.get(reverse('sequencelistings:xmloutput', args=[sl.pk, ]))
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, '%s.xml' % sl.fileName)
+           
 #     def test_validateXmlDocument(self):
 #         s = 'static/sequencelistings/st26.xsd'
 #         d ='static/sequencelistings/ST26SequenceListing_V1_0.dtd'
