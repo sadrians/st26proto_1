@@ -1,8 +1,16 @@
 from django.db import models
 import util 
-from django.core.exceptions import ObjectDoesNotExist
+from django.core.exceptions import ObjectDoesNotExist, ValidationError 
+from django.core.validators import RegexValidator 
+import re 
 
 # MOLTYPE_CHOICES = [('DNA', 'DNA'), ('RNA', 'RNA'), ('AA', 'AA')]
+
+regex_nuc = '^[a,c,g,t,u,n]{10,}$'
+regex_prt = '^[A,C,D,E,F,G,H,I,K,L,M,N,O,P,Q,R,S,T,U,V,W,Y,X]{4,}$'
+pattern_nuc = re.compile(regex_nuc)
+pattern_prt = re.compile(regex_prt)
+        
 
 class SequenceListing(models.Model):
 #     xml attributes
@@ -72,6 +80,14 @@ class Sequence(models.Model): #good
             self.sequenceListing.save()
         self.length = len(self.residues)
         super(Sequence, self).save(*args, **kwargs)
+        
+    def clean(self):
+        if self.moltype == 'AA':
+            p = pattern_prt  
+        else:
+            p = pattern_nuc
+        if not p.match(self.residues):
+            raise ValidationError('Enter a valid residue symbol.')
     
 #     this method is to be used only temporarily for Berthold    
     def delete(self, *args, **kwargs):
