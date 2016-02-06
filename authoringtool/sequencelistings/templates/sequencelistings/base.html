@@ -24,7 +24,7 @@
   </head>
 
   <body>
-
+    
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -57,7 +57,8 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
                 {% block side_block %}
-                {% get_seqls_list %}
+                {% get_sequenceListing_list sequenceListing %}
+                <!-- from base sequenceListing is {{sequenceListing}} -->
                 {% endblock %}
 
         </div>
@@ -68,7 +69,9 @@
                 </div>
                 
                 {% block body_block %}{% endblock %}
+                
                 <br><br><br>
+                
                 <hr>
                 <div id="footer">
                 <p>&copy; 2016, adrian stoica</p>

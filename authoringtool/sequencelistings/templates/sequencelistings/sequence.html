@@ -4,12 +4,16 @@
 {% load my_filters %}
 
 {%block header_block %}
-    <h2>SEQ ID NO {{seq.sequenceIdNo}}</h2>
+    <h2>SEQ.ID.NO. {{seq.sequenceIdNo}}</h2>
 {% endblock %}
 
 {% block body_block %}
-<a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/'>Back to sequence listing</a>
+<p><a href="{% url 'sequencelistings:index' %}">Home &gt;&gt;</a>
+<a href="{% url 'sequencelistings:detail' seq.sequenceListing.pk %}">{{seq.sequenceListing}} &gt;&gt;</a>
+</p>
+
 <hr>
+
 <form action="" method="post">
     {% csrf_token %}
     <table>
@@ -35,7 +39,9 @@
     <a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/seq{{seq.pk}}/add_feature/'><span  class="addFeatureLink">Add new feature</span></a>
     </p>
     <p>
-    <a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/seq{{seq.pk}}/add_multiple_feature/'><span  class="addFeatureLink">Add multiple feature</span></a>
+<!--     <a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/seq{{seq.pk}}/add_multiple_feature/'><span  class="addFeatureLink">Add multiple feature</span></a> -->
+    <a href="{% url 'sequencelistings:add_multiple_feature' seq.sequenceListing.pk seq.pk %}"><span  class="addFeatureLink">Add multiple feature</span></a>
+
     </p>
     <br>
     <!-- <table class="featuretable">

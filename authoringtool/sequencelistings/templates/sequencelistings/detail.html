@@ -6,7 +6,10 @@
     <h2>SEQUENCE LISTING {{ sequencelisting.fileName }}</h2>
 {% endblock %}
 
+
+
 {% block body_block %}
+<p><a href="{% url 'sequencelistings:index' %}">Home &gt;&gt;</a></p>
 
 <h1>EXPORT</h1>
 <p><a href="{% url 'sequencelistings:xmloutput' sequencelisting.pk %}">Generate XML</a></p>

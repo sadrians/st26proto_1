@@ -2,10 +2,19 @@
 {% extends 'sequencelistings/base.html' %}
 
 {%block header_block %}
+    <h2>SEQ.ID.NO. {{seq.sequenceIdNo}}</h2>
     <h2>Add multiple feature</h2>
 {% endblock %}
 
 {% block body_block %}
+<p><a href="{% url 'sequencelistings:index' %}">Home &gt;&gt;</a>
+<a href="{% url 'sequencelistings:detail' seq.sequenceListing.pk %}">{{seq.sequenceListing}} &gt;&gt;</a>
+<a href="{% url 'sequencelistings:sequence' seq.sequenceListing.pk seq.pk %}">SEQ.ID.NO. {{seq.sequenceIdNo}} &gt;&gt;</a>
+
+</p>
+
+<hr>
+
 <h1>Add multiple feature</h1>
 <form action="" method="post">
     {% csrf_token %}

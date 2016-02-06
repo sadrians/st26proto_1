@@ -10,5 +10,6 @@ from sequencelistings.models import SequenceListing
 register = template.Library()
 
 @register.inclusion_tag('sequencelistings/seqls.html')
-def get_seqls_list():
-    return {'seqls': SequenceListing.objects.all()}
+def get_sequenceListing_list(sequenceListing=None):
+    """used for populating the sidebar with links to sequence listings"""
+    return {'seqls': SequenceListing.objects.all(), 'act_seql': sequenceListing}

@@ -159,7 +159,7 @@ def add_multiple_feature(request, pk, spk):
             return HttpResponseRedirect(reverse('sequencelistings:detail', args=(seq.sequenceListing.pk,)))
     else:
         form = MultipleFeatureForm(request.POST, moltype=seq.moltype)
-    return render(request, 'sequencelistings/add_multiple_feature.html', {'form': form})
+    return render(request, 'sequencelistings/add_multiple_feature.html', {'form': form, 'seq': seq})
 
   
 def add_sequence(request, pk):
@@ -227,7 +227,7 @@ def add_feature(request, pk, spk):
             return HttpResponseRedirect(reverse('sequencelistings:sequence', args=(pk, spk,)))
     else:
         form = FeatureForm(mt=seq.moltype)
-    return render(request, 'sequencelistings/add_feature.html', {'form': form})
+    return render(request, 'sequencelistings/add_feature.html', {'form': form, 'seq': seq})
 
 # def add_qualifier(request, pk, spk, fpk):
 # #     print 'add_qualifier invoked'
@@ -269,7 +269,8 @@ def add_qualifier(request, pk, spk, fpk):
                   {'form': form, 
                    'pk': pk, 
                    'spk': spk, 
-                   'fpk': fpk})
+                   'fpk': fpk, 
+                   'feature': f})
 
 def generateXml(request, pk):
         sl = SequenceListing.objects.all().get(pk=pk)

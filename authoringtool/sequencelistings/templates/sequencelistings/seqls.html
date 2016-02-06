@@ -1,7 +1,12 @@
 {% if seqls %}
     <ul class="nav nav-sidebar">
     {% for seql in seqls %}
-        <li><a href="{% url 'sequencelistings:detail'  seql.pk %}">{{ seql.fileName }}</a></li>
+        {% if seql == act_seql %}
+            <li class="active">
+        {% else %}
+        <li>
+        {% endif %}
+        <a href="{% url 'sequencelistings:detail'  seql.pk %}">{{ seql.fileName }}</a></li>
     {% endfor %}
 
 {% else %}
