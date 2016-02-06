@@ -224,10 +224,30 @@ def add_feature(request, pk, spk):
             fl = cd['location']
             f = Feature.objects.create(sequence=seq, featureKey=fk, location=fl)
             f.save()
-            return HttpResponseRedirect(reverse('sequencelistings:detail', args=(pk,)))
+            return HttpResponseRedirect(reverse('sequencelistings:sequence', args=(pk, spk,)))
     else:
         form = FeatureForm(mt=seq.moltype)
     return render(request, 'sequencelistings/add_feature.html', {'form': form})
+
+# def add_qualifier(request, pk, spk, fpk):
+# #     print 'add_qualifier invoked'
+#     f = Feature.objects.get(pk=fpk)
+#     if request.method == 'POST':
+#         form = QualifierForm(request.POST, feature=f)
+# 
+#         if form.is_valid():
+#             qn = request.POST.get('qualifierName')
+#             qv = request.POST.get('qualifierValue')
+#             q = Qualifier.objects.create(feature=f, qualifierName=qn, qualifierValue=qv)
+#             q.save()
+#             return HttpResponseRedirect(reverse('sequencelistings:detail', args=(pk,)))
+#     else:
+#         form = QualifierForm(feature=f)
+#     return render(request, 'sequencelistings/add_qualifier.html', 
+#                   {'form': form, 
+#                    'pk': pk, 
+#                    'spk': spk, 
+#                    'fpk': fpk})
 
 def add_qualifier(request, pk, spk, fpk):
 #     print 'add_qualifier invoked'
@@ -240,7 +260,9 @@ def add_qualifier(request, pk, spk, fpk):
             qv = request.POST.get('qualifierValue')
             q = Qualifier.objects.create(feature=f, qualifierName=qn, qualifierValue=qv)
             q.save()
-            return HttpResponseRedirect(reverse('sequencelistings:detail', args=(pk,)))
+#             return HttpResponseRedirect(reverse('sequencelistings:detail', args=(pk,)))
+            return HttpResponseRedirect(reverse('sequencelistings:sequence', args=(pk, spk,)))
+
     else:
         form = QualifierForm(feature=f)
     return render(request, 'sequencelistings/add_qualifier.html', 

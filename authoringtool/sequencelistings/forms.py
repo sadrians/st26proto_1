@@ -103,6 +103,7 @@ class QualifierForm(ModelForm):
             self.fields['qualifierName'] = CharField(max_length=100, label='Qualifier name')
             
         self.fields.keyOrder = ['qualifierName', 'qualifierValue']  
+
     class Meta:
         model = Qualifier
         fields = [
