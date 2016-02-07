@@ -37,6 +37,11 @@ QUALIFIER_CHOICE = {'attenuator': [('allele', 'allele'),
                                     ('note', 'note')],
                     }
 
+# regex for formula
+FORMULA_CHARS = '[a-zA-Z]+'
+FORMULA_REGEX = r'(?P<head>%s)\((?P<region>%s)\)(?P<startOccurrence>\d+)(\.\.(?P<endOccurrence>\d+))?(?P<tail>%s)?' % (FORMULA_CHARS, FORMULA_CHARS, FORMULA_CHARS)
+FORMULA_PATTERN = re.compile(FORMULA_REGEX)
+
 def generate_list(inputFilePath):
     lis = []
     with open(inputFilePath, 'r') as f:
@@ -75,6 +80,34 @@ def rangeFromString(s):
             print ve
             
     return result
+
+def expandFormula(aFormula):
+    result = aFormula
+
+    m = FORMULA_PATTERN.match(aFormula)
+    if '(' in aFormula:
+        if m:
+            head = m.group('head')
+            region = m.group('region')
+            startOccurrence = m.group('startOccurrence')
+            endOccurrence = m.group('endOccurrence')
+            tail = m.group('tail')
+            
+            multip = int(startOccurrence)
+            if endOccurrence:
+                multip = int(endOccurrence)
+            result = '%s%s' % (head, region*multip)
+            if tail:
+                result = '%s%s' % (result, tail)
+        else:
+            print 'The residues string contains "(" but does not match formula pattern. Residues: %s.' % aFormula
+        
+    return result 
+    
+
+
+
+
 
 # def validateDocumentWithSchema(afile, aschema):
 #     result = False

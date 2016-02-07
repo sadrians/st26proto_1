@@ -11,7 +11,7 @@ import util
 import os
 
 
-from forms import SequenceListingForm, TitleForm, SequenceForm, FeatureForm, QualifierForm, UserForm
+from forms import SequenceListingForm, TitleForm, SequenceForm, FeatureForm, QualifierForm, FormulaForm
 
 from models import SequenceListing, Title, Sequence, Feature, Qualifier
 from forms import MultipleFeatureForm
@@ -163,12 +163,13 @@ def add_multiple_feature(request, pk, spk):
 
   
 def add_sequence(request, pk):
+    sl = SequenceListing.objects.get(pk=pk)
     if request.method == 'POST':
         organism = request.POST.get('organism')
         form = SequenceForm(request.POST)
 
         if form.is_valid():
-            sl = SequenceListing.objects.get(pk=pk)
+#             sl = SequenceListing.objects.get(pk=pk)
             cd = form.cleaned_data
             
             sequence_instance = Sequence(sequenceListing = sl,
@@ -209,7 +210,7 @@ def add_sequence(request, pk):
             return HttpResponseRedirect(reverse('sequencelistings:detail', args=(pk,)))
     else:
         form = SequenceForm()
-    return render(request, 'sequencelistings/add_seq.html', {'form': form, 'pk': pk})
+    return render(request, 'sequencelistings/add_seq.html', {'form': form, 'pk': pk, 'seql': sl})
 
 def add_feature(request, pk, spk):
     seq = Sequence.objects.get(pk=spk)
@@ -327,3 +328,18 @@ def restricted(request):
 def about(request):
     return render_to_response('sequencelistings/about.html', {}, {})
     
+def formula(request, pk):
+# #     return HttpResponse('formula page for sequence listing %s' % pk)
+# #     return render(request, 'sequencelistings/formula.html', 
+# #                   {'someText': 'formula page for sequence listing ', 'pk': pk})
+    if request.method == 'POST':
+        form = FormulaForm(request.POST)
+        if form.is_valid():
+#             render(request, 'sequencelistings/add_seq.html', {'form': form, 'pk': pk})
+            f = SequenceForm()
+            f.organism = 'aaabbbccc'
+            return render(request, 'sequencelistings/add_seq.html', {'form': f, 'pk': pk}) 
+    else:
+        form = FormulaForm()
+     
+    return render(request, 'sequencelistings/formula.html', {'form': form, 'pk': pk})

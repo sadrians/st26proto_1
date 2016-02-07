@@ -3,9 +3,10 @@
 from django.test import TestCase
 from django.core.urlresolvers import reverse
 from models import SequenceListing, Title, Sequence, Feature, Qualifier
-# 
+from forms import QualifierForm
+ 
 from django.utils import timezone
-# import util 
+import util 
 # import views
 # 
 import inspect 
@@ -125,7 +126,7 @@ class SequenceListingViewTests(TestCase):
         The form add_seq is correctly displayed.
         """
         print 'Running %s ...' % getName()
-        
+        sl = create_sequencelisting_instance()
         response = self.client.get(reverse('sequencelistings:add_seq', args=[1]))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Molecule type")
@@ -326,13 +327,49 @@ class SequenceListingViewTests(TestCase):
 #            
 #         self.assertTrue(util.validateDocumentWithSchema(f, s))
 #         
-#       
-# 
-#           
-#         
-#         
-#         
-#         
-#         
-#         
-#         
+
+class UtilTests(TestCase):
+    def test_rangeFromString(self):
+        """
+        Test that range is correctly returned.
+        """
+        s1 = 'ra(1,11,2)'
+        s2 = 'r(1,11,2)'
+#         print util.rangeFromString(s2)
+        self.assertEqual([1,3,5,7,9], util.rangeFromString(s1))
+        self.assertEqual(None, util.rangeFromString(s2))
+        
+    def test_expandFormula(self):
+        """
+        Test that a formula of type MARRST(ATWQ)2..9TFSRA is correctly expanded.
+        """
+        self.assertEqual('abc', util.expandFormula('abc'))
+        self.assertEqual('abcddd', util.expandFormula('abc(d)3'))
+        self.assertEqual('abcdededede', util.expandFormula('abc(de)4'))
+        self.assertEqual('abcdedededefg', util.expandFormula('abc(de)4fg'))
+        self.assertEqual('abcdededededede', util.expandFormula('abc(de)2..6'))
+        self.assertEqual('abcdedededededefg', util.expandFormula('abc(de)2..6fg'))
+        self.assertEqual('ab(c', util.expandFormula('ab(c'))
+        self.assertEqual('a(b9c', util.expandFormula('a(b9c'))
+
+class FormsTests(TestCase):
+         
+    def test_qualifierForm(self):
+        """
+        Test the qualifier form.
+        """
+        sl = create_sequencelisting_instance()
+        s1 = create_sequence_instance(sl)
+        f1 = create_feature_instance(s1)
+  
+#         q1 = Qualifier.objects.create(feature=f1, 
+#                                       qualifierName='organism', 
+#                                       qualifierValue='Homo sapiens')
+         
+        qf1 = QualifierForm(feature=f1, 
+                            data={'qualifierName': 'note',
+                                  'qualifierValue':'test for value'})
+         
+        self.assertTrue(qf1.is_valid())
+        self.assertEqual('note', qf1.cleaned_data['qualifierName'])      
+        

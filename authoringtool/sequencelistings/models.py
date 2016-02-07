@@ -78,6 +78,7 @@ class Sequence(models.Model): #good
             self.sequenceIdNo = self.sequenceListing.sequenceTotalQuantity + 1
             self.sequenceListing.sequenceTotalQuantity += 1
             self.sequenceListing.save()
+#         self.residues = util.expandFormula(self.residues)
         self.length = len(self.residues)
         super(Sequence, self).save(*args, **kwargs)
         

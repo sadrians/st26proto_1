@@ -118,6 +118,17 @@ class UserForm(ModelForm):
         fields = ('username', 'email', 'password')
 
 
+class FormulaForm(Form):
+    reg1 = CharField(label='region1', max_length=500)
+    x1 = CharField(label='occurence1', max_length=500, help_text='Ex: 4 or 6..20')
+    reg2 = CharField(label='region2', max_length=500)
+    x2 = CharField(label='occurence2', max_length=500, help_text='Ex: 4 or 6..20')
+#     reg3 = CharField(label='region3', max_length=500)
+#     x3 = CharField(label='occurence3', max_length=500, help_text='Ex: 4 or 6..20')
+#     reg4 = CharField(label='region4', max_length=500)
+#     x4 = CharField(label='occurence4', max_length=500, help_text='Ex: 4 or 6..20')
+#     reg5 = CharField(label='region5', max_length=500)
+#     x5 = CharField(label='occurence5', max_length=500, help_text='Ex: 4 or 6..20')
 
 
 

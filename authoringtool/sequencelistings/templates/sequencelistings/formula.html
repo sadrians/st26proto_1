@@ -2,7 +2,7 @@
 {% extends 'sequencelistings/base.html' %}
 
 {%block header_block %}
-    <h2>Add new sequence</h2>
+    <h2>Create residues from formula</h2>
 {% endblock %}
 
 {% block body_block %}
@@ -12,14 +12,11 @@
 
 <hr>
 
-<form action="{% url 'sequencelistings:add_seq' pk %}" method="post">
+<form action="" method="post">
     {% csrf_token %}
-    <table>
-        {{ form.as_table }}
-    </table>
+    <p>Enter the formula for the sequence with repeat regions.</p>
+        {{form.as_p}}
     <br>
     <p><input type="submit" value="Submit" /></p>
-    
 </form>
-<!-- <p><a href="{% url 'sequencelistings:formula' pk %}">Add residues with formula</a></p> -->
 {% endblock %}
