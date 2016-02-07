@@ -11,7 +11,9 @@
 </p>
 
 <hr>
-
+<p>
+<strong>Note:</strong> In addition to the standard residues symbols, <strong>Residues</strong> field accepts formulas. For example, 'cgt(cgta)4..6gt' will be expanded to the longest possible sequence (in this case, 'cgta' group will be repeated 6 times).
+</p>
 <form action="{% url 'sequencelistings:add_seq' pk %}" method="post">
     {% csrf_token %}
     <table>

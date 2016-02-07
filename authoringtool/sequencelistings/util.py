@@ -80,7 +80,7 @@ def rangeFromString(s):
             print ve
             
     return result
-
+# TODO: cgt(ta)4.cg should not be accepted!
 def expandFormula(aFormula):
     result = aFormula
 

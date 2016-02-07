@@ -37,18 +37,19 @@
           <a class="navbar-brand" href="/sequencelistings/">Sequence listings</a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">
                 <li><a href="{% url 'sequencelistings:index' %}">Home</a></li>
-                    {% if user.is_authenticated %}
-                        <li><a href="{% url 'sequencelistings:restricted' %}">Restricted Page</a></li>
-                        <li><a href="{% url 'auth_logout' %}?next=/sequencelistings/">Logout</a></li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'sequencelistings:restricted' %}">Restricted Page</a></li>
+                    <li><a href="{% url 'auth_logout' %}?next=/sequencelistings/">Logout</a></li>
                         
-                    {% else %}
-                        <li><a href="{% url 'registration_register' %}">Register Here</a></li>
-                        <li><a href="{% url 'auth_login' %}">Login</a></li>
-                    {% endif %}
-                    <a href="{% url 'sequencelistings:about' %}">About</a><br />
-              </ul>
+                {% else %}
+                    <li><a href="{% url 'registration_register' %}">Register Here</a></li>
+                    <li><a href="{% url 'auth_login' %}">Login</a></li>
+                {% endif %}
+                <li><a href="{% url 'sequencelistings:about' %}">About</a></li>
+                
+            </ul>
         </div>
       </div>
     </div>
