@@ -78,15 +78,17 @@ class Sequence(models.Model): #good
             self.sequenceIdNo = self.sequenceListing.sequenceTotalQuantity + 1
             self.sequenceListing.sequenceTotalQuantity += 1
             self.sequenceListing.save()
-#         self.residues = util.expandFormula(self.residues)
+        self.residues = util.expandFormula(self.residues)
         self.length = len(self.residues)
         super(Sequence, self).save(*args, **kwargs)
         
     def clean(self):
+        
         if self.moltype == 'AA':
             p = pattern_prt  
         else:
             p = pattern_nuc
+        self.residues = util.expandFormula(self.residues)
         if not p.match(self.residues):
             raise ValidationError('Enter a valid residue symbol.')
     

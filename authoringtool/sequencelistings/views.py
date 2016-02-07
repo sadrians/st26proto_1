@@ -171,6 +171,7 @@ def add_sequence(request, pk):
         if form.is_valid():
 #             sl = SequenceListing.objects.get(pk=pk)
             cd = form.cleaned_data
+            raw_residues = cd['residues']
             
             sequence_instance = Sequence(sequenceListing = sl,
                 length = len(cd['residues']),
@@ -191,6 +192,10 @@ def add_sequence(request, pk):
             value_for_moltype = 'mol_type'
             if cd['moltype'] == 'AA':
                 value_for_moltype = 'MOL_TYPE'
+                
+            value_for_note = 'note'
+            if cd['moltype'] == 'AA':
+                value_for_moltype = 'NOTE'
             
             feature_instance = Feature.objects.create(sequence=sequence_instance, 
                                                       featureKey=value_for_source, 
@@ -206,6 +211,12 @@ def add_sequence(request, pk):
                                                           qualifierName=value_for_moltype, 
                                                           qualifierValue=util.MOL_TYPE_QUALIFIER_VALUES[cd['moltype']])
             mol_type_qualifier_instance.save()
+            
+            if '(' in raw_residues:
+                note_qualifier_instance = Qualifier.objects.create(feature=feature_instance, 
+                                                          qualifierName=value_for_note, 
+                                                          qualifierValue=raw_residues)
+                note_qualifier_instance.save()
             
             return HttpResponseRedirect(reverse('sequencelistings:detail', args=(pk,)))
     else:
