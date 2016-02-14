@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from django.test import TestCase
+from django.test import TestCase, LiveServerTestCase
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from django.core.urlresolvers import reverse
 from models import SequenceListing, Title, Sequence, Feature, Qualifier
 from forms import QualifierForm
@@ -10,6 +11,9 @@ import util
 # import views
 # 
 import inspect 
+import os
+
+from selenium import webdriver 
 
 def getName():
     return inspect.stack()[1][3]
@@ -372,4 +376,63 @@ class FormsTests(TestCase):
          
         self.assertTrue(qf1.is_valid())
         self.assertEqual('note', qf1.cleaned_data['qualifierName'])      
+
+SCREENSHOT_DIR = os.path.join(util.PROJECT_DIRECTORY, 'sequencelistings', 'static', 'screenshots')
+# class HomeTestCase(LiveServerTestCase):
+class HomeTestCase(StaticLiveServerTestCase):
+#     def __init__(self):
+#         self._screenshot_number=1
+    
+    def setUp(self):
+        self.selenium = webdriver.Firefox()
+        self.selenium.maximize_window()
+        self._screenshot_number=1
+        super(HomeTestCase, self).setUp() 
         
+    def tearDown(self):
+        self.selenium.quit()
+        super(HomeTestCase, self).tearDown()
+        
+    def get(self, relative_url):
+        self.selenium.get('%s%s' % (self.live_server_url, relative_url))
+        self.screenshot()
+ 
+    def screenshot(self):
+        if hasattr(self, 'sauce_user_name'):
+            # Sauce Labs is taking screenshots for us
+            return
+        name = '%s_%d.png' % (self._testMethodName, self._screenshot_number)
+        path = os.path.join(SCREENSHOT_DIR, name)
+#         path = 'selenium_screenshot.png'
+        self.selenium.get_screenshot_as_file(path)
+        self._screenshot_number += 1   
+        
+    def test_check_pages(self):
+        print 'Running %s ...' % self._testMethodName
+        self.get('/sequencelistings/')
+        self.assertIn('st26proto - Index', self.selenium.title)
+         
+        self.get('/sequencelistings/about')
+        self.assertIn('st26proto - About', self.selenium.title)
+        
+    def test_register(self):
+        print 'Running %s ...' % self._testMethodName
+        
+        self.get('/accounts/register/')
+        username = self.selenium.find_element_by_id('id_username')
+        email = self.selenium.find_element_by_id('id_email')
+        password1 = self.selenium.find_element_by_id('id_password1')
+        password2 = self.selenium.find_element_by_id('id_password2')
+        
+        username.send_keys('user20')
+        email.send_keys('user20@email.com')
+        password1.send_keys('password20')
+        password2.send_keys('password20')
+        self.screenshot()
+#         self.selenium.find_element_by_xpath('//input[@value="Submit"]').click()
+        self.selenium.find_element_by_class_name("btn").click()
+        self.get('/sequencelistings/')
+        self.assertIn('st26proto - Index', self.selenium.title)
+        
+        self.assertIn('user20', self.selenium.find_element_by_class_name('page-header').text)
+    

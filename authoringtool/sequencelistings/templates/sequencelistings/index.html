@@ -3,14 +3,15 @@
 
 {% block title%}Index{% endblock %}
 
+{%block header_block %}
+    <h2>WELCOME 
+        {% if user.is_authenticated %}
+            {{user.username}}!
+        {% endif %}
+    </h2>
+{% endblock %}
+
 {% block body_block %}
-    <div class="page-header">
-        <h2>WELCOME 
-            {% if user.is_authenticated %}
-                {{user.username}}!
-            {% endif %}
-        </h2>
-    </div>
     
 
     <p>This website is a proof of concept on how to generate a sequence listing in XML format.
