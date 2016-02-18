@@ -22,8 +22,12 @@
     <hr>
     <h2>Feature table</h2>
     <hr>
+    
     {% for f, ff in featureFormDic.iteritems %}
-        <p>{{ff}}</p>
+        <table>
+            {{ff.as_table}}
+        </table>
+        <br>
         <ul>
         {% for qf in qualifierFormDic|access:f %}
             <li><p>{{qf}}</p></li>

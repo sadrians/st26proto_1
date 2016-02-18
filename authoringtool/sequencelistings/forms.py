@@ -68,7 +68,7 @@ class FeatureForm(ModelForm):
          
     class Meta:
         model = Feature
-        fields = ['location']   
+        fields = ['featureKey', 'location']   
         
 class MultipleFeatureForm(Form):
     featureChoice = []
@@ -107,7 +107,7 @@ class QualifierForm(ModelForm):
     class Meta:
         model = Qualifier
         fields = [
-#                   'qualifierName', 
+                'qualifierName', 
                   'qualifierValue']
 
 class UserForm(ModelForm):
