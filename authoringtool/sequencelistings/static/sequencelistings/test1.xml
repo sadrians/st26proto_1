@@ -5,12 +5,12 @@
                     fileName="test1"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="Jan. 29, 2016">
+                    productionDate="Feb. 19, 2016">
 <!-- <ST26SequenceListing dtdVersion="V1_0" 
                     fileName="test1"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="Jan. 29, 2016, 9:32 p.m."
+                    productionDate="Feb. 19, 2016, 8:58 p.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
@@ -107,6 +107,50 @@
                                 <INSDQualifier>
                                     <INSDQualifier_name>mod_base</INSDQualifier_name>
                                     <INSDQualifier_value>m5c</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>attenuator</INSDFeature_key>
+                            <INSDFeature_location>5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>operon</INSDQualifier_name>
+                                    <INSDQualifier_value>test limited choice ok</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CAAT_signal</INSDFeature_key>
+                            <INSDFeature_location>7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>gene</INSDQualifier_name>
+                                    <INSDQualifier_value>abcd gene test</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>gene</INSDQualifier_name>
+                                    <INSDQualifier_value>abcd test gene</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>C_region</INSDFeature_key>
+                            <INSDFeature_location>20</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>map</INSDQualifier_name>
+                                    <INSDQualifier_value>test map value</INSDQualifier_value>
                                 </INSDQualifier>
                                 
                             </INSDFeature_quals>
