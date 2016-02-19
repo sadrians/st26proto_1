@@ -307,13 +307,13 @@ def helper_generateXml(sl):
         outf = os.path.join(util.PROJECT_DIRECTORY,
                             'sequencelistings',
                             'static',
-                            'sequencelistings_output',
+                            'sequencelistings',
                             '%s.xml' % sl.fileName)
          
         with open(outf, 'w') as gf:
             gf.write(xml) 
          
-        xmlFilePath = 'sequencelistings_output/%s.xml' % sl.fileName
+        xmlFilePath = 'sequencelistings/%s.xml' % sl.fileName
         return (outf, xmlFilePath) 
 
 @login_required
@@ -323,7 +323,7 @@ def render_xmlFile(request):
 
 def download(request, fileName):
     s = '%s has not been found.' % fileName 
-    filePath = os.path.join(util.PROJECT_DIRECTORY, 'sequencelistings', 'static', 'sequencelistings_output', '%s.xml' % fileName)
+    filePath = os.path.join(util.PROJECT_DIRECTORY, 'sequencelistings', 'static', 'sequencelistings', '%s.xml' % fileName)
     with open(filePath, 'r') as f:
         s = f.read()
 #     response = HttpResponse(s, content_type='text/plain')

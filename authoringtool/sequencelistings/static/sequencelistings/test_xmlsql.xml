@@ -10,11 +10,7 @@
                     fileName="test_xmlsql"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-<<<<<<< HEAD:authoringtool/sequencelistings/static/sequencelistings/test_xmlsql.xml
-                    productionDate="Feb. 19, 2016, 9 p.m."
-=======
-                    productionDate="Feb. 19, 2016, 8:26 p.m."
->>>>>>> 5c402a599ce958b85149dfa98f1d3f491c83d36b:authoringtool/sequencelistings/static/sequencelistings_output/test_xmlsql.xml
+                    productionDate="Feb. 19, 2016, 9:13 p.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
