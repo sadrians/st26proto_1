@@ -10,6 +10,10 @@ import os, re
 currentDirectory = os.path.abspath(os.path.dirname(__file__))
 PROJECT_DIRECTORY = os.path.abspath(os.path.join(currentDirectory, os.pardir))
 
+MOLTYPE_DNA = 'DNA'
+MOLTYPE_RNA = 'RNA'
+MOLTYPE_AA = 'AA'
+
 MOLTYPE_CHOICES = [('DNA', 'DNA'), ('RNA', 'RNA'), ('AA', 'AA')]
 
 MOL_TYPE_QUALIFIER_VALUES = {'DNA': 'genomic DNA', 'RNA': 'genomic RNA', 'AA': 'protein'}

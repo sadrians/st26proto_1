@@ -4,8 +4,6 @@ from django.core.exceptions import ObjectDoesNotExist, ValidationError
 from django.core.validators import RegexValidator 
 import re 
 
-# MOLTYPE_CHOICES = [('DNA', 'DNA'), ('RNA', 'RNA'), ('AA', 'AA')]
-
 regex_nuc = '^[a,c,g,t,u,n]{10,}$' #TODO: add the full set of valid chars
 regex_prt = '^[A,C,D,E,F,G,H,I,K,L,M,N,O,P,Q,R,S,T,U,V,W,Y,X]{4,}$'
 pattern_nuc = re.compile(regex_nuc)
@@ -47,6 +45,7 @@ class SequenceListing(models.Model):
     
     def getFirstTitle(self):
         return self.title_set.all()[0].inventionTitle
+
     
 class Title(models.Model):
     sequenceListing = models.ForeignKey(SequenceListing) 
@@ -83,12 +82,12 @@ class Sequence(models.Model): #good
         super(Sequence, self).save(*args, **kwargs)
         
     def clean(self):
-        
         if self.moltype == 'AA':
             p = pattern_prt  
         else:
             p = pattern_nuc
         self.residues = util.expandFormula(self.residues)
+        
         if not p.match(self.residues):
             raise ValidationError('Enter a valid residue symbol.')
     
@@ -106,7 +105,6 @@ class Sequence(models.Model): #good
     
         
     def inspectSequence(self):
-#         print 'sequenceTotalQuantity', self.sequenceListing.sequenceTotalQuantity
         print 'sequenceListing', self.sequenceListing 
         print 'sequenceIdNo', self.sequenceIdNo
         print 'length', self.length
@@ -135,62 +133,8 @@ class Sequence(models.Model): #good
             result = organismQualifier.qualifierValue
             
         return result
+     
  
-
-
-# class Sequence(models.Model): #good
-#     sequenceListing = models.ForeignKey(SequenceListing)
-#     
-#     sequenceIdNo = models.IntegerField('SEQ. ID. NO.', default=0)
-#     length = models.IntegerField('Length', default=0)
-#     moltype = models.CharField('Molecule type', max_length=3, choices=util.MOLTYPE_CHOICES)
-#     division = models.CharField('Division', max_length=3, default='PAT')
-#     otherSeqId = models.CharField('Other seq ID', max_length=100, default='-')
-#  
-#     residues = models.TextField()
-#  
-#     def __unicode__(self):
-#         return str(self.sequenceListing) + ' / seq ' + str(self.sequenceIdNo)
-#          
-#     def save(self, *args, **kwargs):
-#         self.sequenceIdNo = self.sequenceListing.sequenceTotalQuantity + 1
-#         self.sequenceListing.sequenceTotalQuantity += 1
-#         self.sequenceListing.save()
-#         super(Sequence, self).save(*args, **kwargs)
-#         
-#     def inspectSequence(self):
-#         print 'sequenceTotalQuantity', self.sequenceListing.sequenceTotalQuantity
-#         print 'sequenceListing', self.sequenceListing 
-#         print 'sequenceIdNo', self.sequenceIdNo
-#         print 'length', self.length
-#         print 'moltype', self.moltype
-#         print 'division', self.division
-#         print 'otherSeqId', self.otherSeqId
-#         print 'residues', self.residues
-#         
-#     def getOrganism(self):
-#         result = None
-#         
-#         sourceFeatureKey = 'source'
-#         organismQualifierName = 'organism'
-#         
-#         if self.moltype == 'AA':
-#             sourceFeatureKey = 'SOURCE'
-#             organismQualifierName = 'ORGANISM'
-#         try:
-#             sourceFeature = self.feature_set.get(featureKey=sourceFeatureKey)
-#             organismQualifier = sourceFeature.qualifier_set.get(qualifierName = organismQualifierName)
-#             
-#         except ObjectDoesNotExist:
-#             organismQualifier = None
-#         
-#         if organismQualifier:
-#             result = organismQualifier.qualifierValue
-#             
-#         return result
- 
-    
-
 class Feature(models.Model):
     sequence = models.ForeignKey(Sequence)
     featureKey = models.CharField('Feature key', max_length=100,
@@ -200,30 +144,6 @@ class Feature(models.Model):
     
     def __unicode__(self):
         return str(self.sequence) + ' / ' + self.featureKey  + ' / ' + self.location
-#         
-
-# class Feature(models.Model):
-#     sequence = models.ForeignKey(Sequence)
-#     featureKey = models.CharField('Feature key', max_length=100,
-# #                                                 choices=DNA_FEATURE_KEY_CHOICES,
-#                                                 )
-#     location = models.CharField('Location', max_length=100)
-#     
-#     @classmethod 
-#     def setChoices(cls):
-#         if molType = 'AA':
-#             choices = 
-#        
-#     def __unicode__(self):
-#         return str(self.sequence) + ' / ' + self.featureKey  + ' / ' + self.location
-#                
-#     def clean(self):
-#         if self.moltype == 'AA':
-#             p = pattern_prt  
-#         else:
-#             p = pattern_nuc
-#         if not p.match(self.residues):
-#             raise ValidationError('Enter a valid residue symbol.')
 
 class Qualifier(models.Model):
     feature = models.ForeignKey(Feature)

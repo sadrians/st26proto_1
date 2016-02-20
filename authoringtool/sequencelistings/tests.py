@@ -8,6 +8,9 @@ from forms import QualifierForm
  
 from django.utils import timezone
 import util 
+
+from rebar.testing import flatten_to_dict 
+
 # import views
 # 
 import inspect 
@@ -375,7 +378,15 @@ class FormsTests(TestCase):
                                   'qualifierValue':'test for value'})
          
         self.assertTrue(qf1.is_valid())
-        self.assertEqual('note', qf1.cleaned_data['qualifierName'])      
+        self.assertEqual('note', qf1.cleaned_data['qualifierName'])  
+        
+        qf2 = QualifierForm(feature=f1, 
+                            data={'qualifierName': 'xxx',
+                                  'qualifierValue':'test for xxx value'})
+         
+        self.assertTrue(qf2.is_valid())
+        
+            
 
 SCREENSHOT_DIR = os.path.join(util.PROJECT_DIRECTORY, 'sequencelistings', 'static', 'screenshots')
 # class HomeTestCase(LiveServerTestCase):
