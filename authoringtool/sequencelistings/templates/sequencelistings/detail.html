@@ -124,8 +124,8 @@
                     {% for f in seq.feature_set.all %}
                         <tr>
                             <td>
-                                {{f.featureKey}}
-                                <!-- <a href='/sequencelistings/sl{{sequencelisting.pk}}/seq{{seq.pk}}/f{{f.pk}}/edit_feature/'>Edit feature</a> -->
+                                {{f.featureKey}}<br>
+                                <a href="{% url 'sequencelistings:edit_feature' sequencelisting.pk seq.pk f.pk %}">{{f.featureKey}}</a>
                             </td>
                             <td>{{f.location}}</td>
                             <td>                          

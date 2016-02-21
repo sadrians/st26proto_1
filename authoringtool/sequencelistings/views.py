@@ -11,7 +11,7 @@ import util
 import os
 
 
-from forms import SequenceListingForm, TitleForm, SequenceForm, FeatureForm, QualifierForm, FormulaForm
+from forms import SequenceListingForm, TitleForm, SequenceForm, FeatureForm, QualifierForm, FormulaForm, EditFeatureForm
 
 from models import SequenceListing, Title, Sequence, Feature, Qualifier
 from forms import MultipleFeatureForm
@@ -240,6 +240,27 @@ def add_feature(request, pk, spk):
     else:
         form = FeatureForm(mt=seq.moltype)
     return render(request, 'sequencelistings/add_feature.html', {'form': form, 'seq': seq})
+
+def edit_feature(request, pk, spk, fpk):
+    seq = Sequence.objects.get(pk=spk)
+    f = Feature.objects.all().get(pk=fpk)
+    
+    featureForm = FeatureForm(instance=f, mt=seq.moltype, initial={'featureKey': f.featureKey})
+
+    if request.method == 'POST':
+        form = FeatureForm(request.POST, mt=seq.moltype)
+  
+        if form.is_valid():
+            cd = form.cleaned_data
+              
+            f.featureKey = cd['featureKey']
+            f.location = cd['location']
+            f.save()
+            return HttpResponseRedirect(reverse('sequencelistings:detail', args=(pk,)))
+    else:
+        form = FeatureForm(mt=seq.moltype)
+    return render(request, 'sequencelistings/edit_feature.html', {'form': featureForm, 'seq': seq})
+
 
 # def add_qualifier(request, pk, spk, fpk):
 # #     print 'add_qualifier invoked'

@@ -69,6 +69,12 @@ class FeatureForm(ModelForm):
     class Meta:
         model = Feature
         fields = ['featureKey', 'location']   
+
+class EditFeatureForm(ModelForm):     
+    class Meta:
+        model = Feature
+        fields = ['featureKey', 'location']   
+
         
 class MultipleFeatureForm(Form):
     featureChoice = []
