@@ -12,6 +12,8 @@ urlpatterns = patterns('',
     url(r'^add_sequencelisting/$', views.add_sequencelisting, name='add_sequencelisting'),
 #     ex: /sequencelistings/5/
     url(r'^sl(?P<pk>\d+)/$', views.detail, name='detail'),
+    url(r'^sl(?P<pk>\d+)/edit_sequence_data/$', views.edit_sequence_data, name='edit_sequence_data'),
+
 #     url(r'^(?P<pk>\d+)/$', views.DetailView.as_view(), name='detail'),
     url(r'^sl(?P<pk>\d+)/add_title/$', views.add_title, name='add_title'),
     url(r'^sl(?P<pk>\d+)/seq(?P<spk>\d+)/$', views.sequence, name='sequence'),

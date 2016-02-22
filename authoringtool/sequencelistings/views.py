@@ -39,6 +39,11 @@ def detail(request, pk): #good
         
     return render(request, detailTemplate, {'sequencelisting': sl})
 
+def edit_sequence_data(request, pk): #good
+    sl = get_object_or_404(SequenceListing, pk=pk)
+        
+    return render(request, 'sequencelistings/edit_sequence_data.html', {'sequencelisting': sl})
+
 @login_required 
 def add_sequencelisting(request):
     if request.method == 'POST':

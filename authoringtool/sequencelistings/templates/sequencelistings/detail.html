@@ -92,6 +92,12 @@
 
 <hr>
 <h1>SEQUENCE DATA</h1>
+<p>
+{% if user.is_authenticated and sequencelisting.fileName != 'Invention_SEQL' %}
+    <a href="{% url 'sequencelistings:edit_sequence_data' sequencelisting.pk %}">Edit</a>
+{% endif %}
+</p>
+
 <table>
     <tr>
        <th>SEQ.ID.NO.</th>
@@ -104,11 +110,7 @@
         <tr>
             
             <td>
-                {% if user.is_authenticated and sequencelisting.fileName != 'Invention_SEQL' %}
-                    <a href="{% url 'sequencelistings:sequence' sequencelisting.pk seq.pk %}">{{ seq.sequenceIdNo }}</a>
-                {% else %}
-                    {{ seq.sequenceIdNo }}
-                {% endif %}
+                {{ seq.sequenceIdNo }}
             </td>
             
             <td>{{ seq.moltype }}</td>
@@ -125,7 +127,6 @@
                         <tr>
                             <td>
                                 {{f.featureKey}}<br>
-                                <a href="{% url 'sequencelistings:edit_feature' sequencelisting.pk seq.pk f.pk %}">{{f.featureKey}}</a>
                             </td>
                             <td>{{f.location}}</td>
                             <td>                          
