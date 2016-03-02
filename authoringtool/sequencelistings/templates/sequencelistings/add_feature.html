@@ -22,4 +22,12 @@
     <br>
     <p><input type="submit" value="Submit" /></p>
 </form>
+
+<br>
+    <p>
+    <a href="{% url 'sequencelistings:add_multiple_feature' seq.sequenceListing.pk seq.pk %}"><span  class="addFeatureLink">Add multiple feature</span></a>
+
+    </p>
+    <br>
+
 {% endblock %}

@@ -19,7 +19,7 @@
     <table>
         {{ form.as_table }}
     </table>
-    <hr>
+    <!-- <hr>
     <h2>Feature table</h2>
     <hr>
     
@@ -41,13 +41,13 @@
     {% endfor %}
     <p>
     <a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/seq{{seq.pk}}/add_feature/'><span  class="addFeatureLink">Add new feature</span></a>
-    </p>
+    </p> -->
+    <!-- <br>
     <p>
-<!--     <a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/seq{{seq.pk}}/add_multiple_feature/'><span  class="addFeatureLink">Add multiple feature</span></a> -->
     <a href="{% url 'sequencelistings:add_multiple_feature' seq.sequenceListing.pk seq.pk %}"><span  class="addFeatureLink">Add multiple feature</span></a>
 
     </p>
-    <br>
+    <br> -->
     <!-- <table class="featuretable">
         <tr>
             <th>feature key</th>
