@@ -17,7 +17,7 @@ from models import SequenceListing, Title, Sequence, Feature, Qualifier
 from forms import MultipleFeatureForm
 from django.utils.encoding import filepath_to_uri
 
-detailTemplate = 'sequencelistings/detail.html'
+detailTemplate = 'sequencelistings/detail_w3.html'
 # detailTemplate = 'sequencelistings/detail1.html'
 
 class IndexView(generic.ListView):
@@ -42,7 +42,7 @@ def detail(request, pk): #good
 def edit_sequence_data(request, pk): #good
     sl = get_object_or_404(SequenceListing, pk=pk)
         
-    return render(request, 'sequencelistings/edit_sequence_data.html', {'sequencelisting': sl})
+    return render(request, 'sequencelistings/edit_sequence_data_w3.html', {'sequencelisting': sl})
 
 @login_required 
 def add_sequencelisting(request):

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% extends 'sequencelistings/base.html' %}
+{% load staticfiles %}
+
+{%block header_block %}
+    <h2>SEQUENCE LISTING {{ sequencelisting.fileName }} w3</h2>
+{% endblock %}
+
+
+{% block body_block %}
+    <p><a href="{% url 'sequencelistings:index' %}">Home &gt;&gt;</a></p>
+    <div class="w3-card w3-yellow" style="width: 600px;">
+        Tip: click on green components to expand/collapse.
+    </div>
+    <hr>
+    <h1>EDIT SEQUENCE DATA</h1>
+    
+    <table>
+        <tr>
+           <th>SEQ.ID.NO.</th>
+           <th>molecule type</th>
+           <th>length</th>
+           <th>feature table</th>
+           <th>residues</th>
+        </tr>
+        {% for seq in sequencelisting.sequence_set.all %}
+            <tr>   
+                <td>
+                    {% if user.is_authenticated and sequencelisting.fileName != 'Invention_SEQL' %}
+                        <a href="{% url 'sequencelistings:sequence' sequencelisting.pk seq.pk %}">{{ seq.sequenceIdNo }}</a>
+                    {% else %}
+                        {{ seq.sequenceIdNo }}
+                    {% endif %}
+                </td>
+                
+                <td>{{ seq.moltype }}</td>
+                <td>{{ seq.length }}</td>
+                <td>
+                <!-- FEATURE TABLE accordion =============================== -->
+                    <div class="w3-accordion">
+                        <button onclick="myFunction('features{{ seq.sequenceIdNo }}')" class="w3-btn-block w3-left-align w3-green">
+                            features
+                        </button>
+                        
+                        <div id="features{{ seq.sequenceIdNo }}" class="w3-accordion-content">    
+                            
+                            {% if seq.feature_set.all %}
+                                <table class="featuretable">
+                                    <tr>
+                                        <th>feature key</th>
+                                        <th>location</th>
+                                        <th>qualifiers</th>
+                                    </tr>
+                                    {% for f in seq.feature_set.all %}
+                                        <tr>
+                                            <td>
+                                                <a href="{% url 'sequencelistings:edit_feature' sequencelisting.pk seq.pk f.pk %}">{{f.featureKey}}</a>
+                                            </td>
+                                            <td>{{f.location}}</td>
+                                            <td>                          
+                                                <table class="qualifiertable">
+                                                    <tr>
+                                                        <th>name</th>
+                                                        <th>value</th>
+                                                    </tr>
+                                                    {% if f.qualifier_set.all %}
+                                                        {% for q in f.qualifier_set.all %}
+                                                        <tr>
+                                                            <td>{{q.qualifierName}}</td>
+                                                            <td>{{q.qualifierValue}}</td>
+                                                        </tr>
+                                                        {% endfor %}
+                                                    {% endif %}
+                                                </table> 
+                                                <br>
+                                                <a href='/sequencelistings/sl{{sequencelisting.pk}}/seq{{seq.pk}}/f{{f.pk}}/add_qualifier/'>Add new qualifier</a>
+                                                
+                                            </td>
+                                        </tr>
+                                        
+                                    {% endfor %}
+                                </table>
+                                <br>
+                                <a href='/sequencelistings/sl{{sequencelisting.pk}}/seq{{seq.pk}}/add_feature/'>Add new feature</a>
+                
+                            {% endif %}
+                        </div>
+                    </div>
+                <!-- end accordion -->
+                </td>
+                <td>{{ seq.residues }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+    {% if user.is_authenticated and sequencelisting.fileName != 'Invention_SEQL' %}
+        <p><a href="{% url 'sequencelistings:add_seq' sequencelisting.pk %}">Add new sequence</a></p>
+    {% endif %}
+{% endblock %}

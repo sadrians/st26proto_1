@@ -5,12 +5,12 @@
                     fileName="test2"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="Feb. 3, 2016">
+                    productionDate="March 16, 2016">
 <!-- <ST26SequenceListing dtdVersion="V1_0" 
                     fileName="test2"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="Feb. 3, 2016, 10:58 p.m."
+                    productionDate="March 16, 2016, 11:40 p.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>

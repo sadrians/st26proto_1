@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+{% extends 'sequencelistings/base.html' %}
+{% load staticfiles %}
+
+{%block header_block %}
+    <h2>SEQUENCE LISTING {{ sequencelisting.fileName }} w3</h2>
+{% endblock %}
+
+{% block body_block %}
+    <p><a href="{% url 'sequencelistings:index' %}">Home &gt;&gt;</a></p>
+    <h1>EXPORT</h1>
+    <p><a href="{% url 'sequencelistings:xmloutput' sequencelisting.pk %}">Generate XML</a></p>
+    <div class="w3-card w3-yellow" style="width: 600px;">
+        Tip: click on green components to expand/collapse.
+    </div>
+    <hr>
+
+<!-- GENERAL INFORMATION accordion =============================== -->
+    <div class="w3-accordion">
+        <button onclick="myFunction('genInfo')" class="w3-btn-block w3-left-align w3-green">
+            GENERAL INFORMATION
+        </button>
+        
+        <div id="genInfo" class="w3-accordion-content">    
+            <table class="w3-table w3-bordered w3-border w3-striped">
+                <tr>
+                    <th>File name</th><td>{{sequencelisting.fileName}}</td>
+                </tr>
+                <tr>
+                    <th>DTD version</th><td>{{sequencelisting.dtdVersion}}</td>
+                </tr>
+                <tr>
+                    <th>Software name</th><td>{{sequencelisting.softwareName}}</td>
+                </tr>
+                <tr>
+                    <th>Software version</th><td>{{sequencelisting.softwareVersion}}</td>
+                </tr>
+                <tr>
+                    <th>Production date</th><td>{{sequencelisting.productionDate}}</td>
+                </tr>
+                <tr>
+                    <th>IP office code</th><td>{{sequencelisting.IPOfficeCode}}</td>
+                </tr>
+                <tr>
+                    <th>Application number text</th><td>{{sequencelisting.applicationNumberText}}</td>
+                </tr>
+                <tr>
+                    <th>Filing date</th><td>{{sequencelisting.filingDate}}</td>
+                </tr>
+                <tr>
+                    <th>Applicant file reference</th><td>{{sequencelisting.applicantFileReference}}</td>
+                </tr>
+                <tr>
+                    <th>Earliest priority IP office code</th><td>{{sequencelisting.earliestPriorityIPOfficeCode}}</td>
+                </tr>
+                <tr>
+                    <th>Earliest priority application number text</th><td>{{sequencelisting.earliestPriorityApplicationNumberText}}</td>
+                </tr>
+                <tr>
+                    <th>Earliest priority filing date</th><td>{{sequencelisting.earliestPriorityFilingDate}}</td>
+                </tr>
+                <tr>
+                    <th>Applicant name</th><td>{{sequencelisting.applicantName}}</td>
+                </tr>
+                <tr>
+                    <th>Applicant name langugage code</th><td>{{sequencelisting.applicantNameLanguageCode}}</td>
+                </tr>
+                <tr>
+                    <th>Applicant name latin</th><td>{{sequencelisting.applicantNameLatin}}</td>
+                </tr>
+                <tr>
+                    <th>Inventor name</th><td>{{sequencelisting.inventorName}}</td>
+                </tr>
+                <tr>
+                    <th>Inventor name language code</th><td>{{sequencelisting.inventorNameLanguageCode}}</td>
+                </tr>
+                <tr>
+                    <th>Inventor name latin</th><td>{{sequencelisting.inventorNameLatin}}</td>
+                </tr>
+                {% for t in sequencelisting.title_set.all %}
+                    <tr>
+                        <th>Invention title</th><td>{{t.inventionTitle}}</td>
+                    </tr>
+                    <tr>
+                        <th>Invention title language code</th><td>{{t.inventionTitleLanguageCode}}</td>
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <th>Sequence total quantity</th><td>{{sequencelisting.sequenceTotalQuantity}}</td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+    
+    <br>
+
+<!-- END GENERAL INFORMATION accordion ========================== -->
+
+    <br>
+    {% if user.is_authenticated and sequencelisting.fileName != 'Invention_SEQL' %}
+        <p><a href="{% url 'sequencelistings:add_title' sequencelisting.pk %}">Add new title</a></p>
+    {% endif %}
+    
+    <hr>
+    
+    <h1>SEQUENCE DATA</h1>
+    <p>
+    {% if user.is_authenticated and sequencelisting.fileName != 'Invention_SEQL' %}
+        <a href="{% url 'sequencelistings:edit_sequence_data' sequencelisting.pk %}">Edit</a>
+    {% endif %}
+    </p>
+    
+    <table>
+        <tr>
+           <th>SEQ.ID.NO.</th>
+           <th>molecule type</th>
+           <th>length</th>
+           <th>feature table</th>
+           <th>residues</th>
+        </tr>
+        {% for seq in sequencelisting.sequence_set.all %}
+            <tr>
+                
+                <td>
+                    {{ seq.sequenceIdNo }}
+                </td>
+                
+                <td>{{ seq.moltype }}</td>
+                <td>{{ seq.length }}</td>
+                <td>
+                
+                <!-- FEATURE TABLE accordion =============================== -->
+                <div class="w3-accordion">
+                    <button onclick="myFunction('features{{ seq.sequenceIdNo }}')" class="w3-btn-block w3-left-align w3-green">
+                        features
+                    </button>
+                    
+                    <div id="features{{ seq.sequenceIdNo }}" class="w3-accordion-content">    
+                        
+                        {% if seq.feature_set.all %}
+                            <table class="featuretable">
+                                <tr>
+                                    <th>feature key</th>
+                                    <th>location</th>
+                                    <th>qualifiers</th>
+                                </tr>
+                                {% for f in seq.feature_set.all %}
+                                    <tr>
+                                        <td>
+                                            {{f.featureKey}}<br>
+                                        </td>
+                                        <td>{{f.location}}</td>
+                                        <td>                          
+                                            <table class="qualifiertable">
+                                                <tr>
+                                                    <th>name</th>
+                                                    <th>value</th>
+                                                </tr>
+                                                {% if f.qualifier_set.all %}
+                                                {% for q in f.qualifier_set.all %}
+                                                <tr>
+                                                    <td>{{q.qualifierName}}</td>
+                                                    <td>{{q.qualifierValue}}</td>
+                                                </tr>
+                                                {% endfor %}
+                                                {% endif %}
+                                                
+                                            </table>                         
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                                   
+                            </table>
+                        {% else %}
+                        no features
+                        {% endif %}   
+                    </div>
+                </div>
+                <!-- END FEATURE TABLE accordion =============================== -->
+        
+                </td>
+                <td>{{ seq.residues }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+    {% if user.is_authenticated and sequencelisting.fileName != 'Invention_SEQL' %}
+    <p><a href="{% url 'sequencelistings:add_seq' sequencelisting.pk %}">Add new sequence</a></p>
+    {% endif %}
+{% endblock %}
