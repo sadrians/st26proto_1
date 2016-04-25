@@ -5,7 +5,7 @@ Created on Apr 17, 2015
 '''
 import os, re
 
-# from lxml import etree
+from lxml import etree 
 
 currentDirectory = os.path.abspath(os.path.dirname(__file__))
 PROJECT_DIRECTORY = os.path.abspath(os.path.join(currentDirectory, os.pardir))
@@ -84,6 +84,7 @@ def rangeFromString(s):
             print ve
             
     return result
+
 # TODO: cgt(ta)4.cg should not be accepted!
 def expandFormula(aFormula):
     result = aFormula
@@ -108,65 +109,55 @@ def expandFormula(aFormula):
         
     return result 
     
-
-
-
-
-
-# def validateDocumentWithSchema(afile, aschema):
-#     result = False
-#     
-#     with open(aschema, 'r') as fs:
-#         try:
-#             doc = etree.parse(fs)
-#     
-#             try:
-#                 schema = etree.XMLSchema(doc)
-#                 with open(afile, 'r') as ff:
-#                     try:
-#                         doc = etree.parse(ff)
-#                         try:
-#                             schema.assertValid(doc)
-#                             result = True
-#                         except etree.DocumentInvalid as e:
-#                             print e
-#                     except etree.XMLSyntaxError as e:
-#                         print e 
-#                 
-#                     
-#             except etree.XMLSchemaParseError as e:
-#                 print e
-#         except etree.XMLSyntaxError as e:
-#             print e
-#     return result
+def validateDocumentWithSchema(afile, aschema):
+    result = False
+     
+    with open(aschema, 'r') as fs:
+        try:
+            doc = etree.parse(fs)
+     
+            try:
+                schema = etree.XMLSchema(doc)
+                with open(afile, 'r') as ff:
+                    try:
+                        doc = etree.parse(ff)
+                        try:
+                            schema.assertValid(doc)
+                            result = True
+                        except etree.DocumentInvalid as e:
+                            print 'File %s' % afile 
+                            print e
+                    except etree.XMLSyntaxError as e:
+                        print e 
+                 
+                     
+            except etree.XMLSchemaParseError as e:
+                print e
+        except etree.XMLSyntaxError as e:
+            print e
+    return result
 # 
-# def validateDocumentWithDtd(afile, adtd):
-#     result = False
-#     with open(adtd, 'r') as d:
-#         dtd = etree.DTD(d)
-#         with open(afile, 'r') as f:
-#             try:
-#                 fi = etree.XML(f.read())
-#                 if dtd.validate(fi):
-#                     result = True
-#     #                 print 'OK: File %s is valid against DTD %s.' %(afile, adtd)
-#                 else:
-#                     print(dtd.error_log.filter_from_errors()[0])
-#             except etree.XMLSyntaxError as e:
-#                         print e 
-#     return result
+def validateDocumentWithDtd(afile, adtd):
+    result = False
+    with open(adtd, 'r') as d:
+        dtd = etree.DTD(d)
+        with open(afile, 'r') as f:
+            try:
+                fi = etree.XML(f.read())
+                if dtd.validate(fi):
+                    result = True
+    #                 print 'OK: File %s is valid against DTD %s.' %(afile, adtd)
+                else:
+                    print(dtd.error_log.filter_from_errors()[0])
+            except etree.XMLSyntaxError as e:
+                        print e 
+    return result
 
-# def validateDocumentWithDtd(afile, adtd):
-#     with open(adtd, 'r') as d:
-#         dtd = etree.DTD(d)
-#         with open(afile, 'r') as f:
-#             fi = etree.XML(f.read())
-#             if dtd.validate(fi):
-#                 print 'OK: File %s is valid against DTD %s.' %(afile, adtd)
-#             else:
-#                 print(dtd.error_log.filter_from_errors()[0])
+def generateXmlSchemaFeatureKeyValuesEnumeration():
+    for fk in fkdna + fkprt:
+        print '<xs:enumeration value="%s"/>' % fk 
 
-
+# generateXmlSchemaFeatureKeyValuesEnumeration()
 
 # FEATURE_KEYS_DNA = [('fkd%d' % fkdna.index(a), a) for a in fkdna] 
 # FEATURE_KEYS_PRT  = [('fkp%d' % fkprt.index(a), a) for a in fkprt] 
@@ -211,61 +202,29 @@ def expandFormula(aFormula):
 #         
 #             print "Document OK" 
 # 
-# QUALIFIER_CHOICE = {'attenuator': ['allele', 
-#                                     'gene', 
-#                                     'gene_synonym', 
-#                                     'map', 
-#                                     'note', 
-#                                     'operon',
-#                                     'phenotype'],
-#                     'C_region': ['allele', 
-#                                     'gene', 
-#                                     'gene_synonym', 
-#                                     'map', 
-#                                     'note', 
-#                                     'product',
-#                                     'pseudo',
-#                                     'pseudogene',
-#                                     'standard_name'],
-#                     'CAAT_signal': ['allele', 
-#                                     'gene', 
-#                                     'gene_synonym', 
-#                                     'map', 
-#                                     'note'],
-#                     }
+
 # def validateDocumentWithSchema1(afile, aschema):
 #     result = False
 #     with open(aschema, 'r') as fs:
 #         doc = etree.parse(fs)
-# 
-#         print "Validating schema %s... " % aschema
+#  
+# #         print "Validating schema %s... " % aschema
 #         try:
 #             schema = etree.XMLSchema(doc)
 #             with open(afile, 'r') as ff:
 #                 doc1 = etree.parse(ff)
-#         
-#                 print "Validating document %s..." % afile
+#          
+# #                 print "Validating document %s..." % afile
 #                 result = schema.validate(doc1)
+#                 if not result:
+#                     print 'File %s' % afile 
+#                     try:
+#                         print schema.assertValid(doc1).error_log()
+#                     except etree.DocumentInvalid as di:
+#                         print di 
 #         except etree.XMLSchemaParseError as e:
 #             print e
 #             exit(1)
-#     
-#         print "Document OK"
-#     return result
-
-# def validateStringWithSchema(astring, aschema):
-#     result = False
-#     with open(aschema, 'r') as fs:
-#         doc = etree.parse(fs)
-# 
-#         print "Validating schema %s... " % aschema
-#         try:
-#             schema = etree.XMLSchema(doc)
-#             doc1 = etree.parse(astring)
-#             result = schema.validate(doc1)
-#         except etree.XMLSchemaParseError as e:
-#             print e
-#             exit(1)
-#     
-#         print "Document OK"
+#      
+#         
 #     return result
