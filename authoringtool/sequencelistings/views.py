@@ -17,9 +17,6 @@ from models import SequenceListing, Title, Sequence, Feature, Qualifier
 from forms import MultipleFeatureForm
 from django.utils.encoding import filepath_to_uri
 
-detailTemplate = 'sequencelistings/detail_w3.html'
-# detailTemplate = 'sequencelistings/detail1.html'
-
 class IndexView(generic.ListView):
     template_name = 'sequencelistings/index.html'
     context_object_name = 'sequencelistings'
@@ -37,7 +34,7 @@ class IndexView(generic.ListView):
 def detail(request, pk): #good
     sl = get_object_or_404(SequenceListing, pk=pk)
         
-    return render(request, detailTemplate, {'sequencelisting': sl})
+    return render(request, 'sequencelistings/detail_w3.html', {'sequencelisting': sl})
 
 def edit_sequence_data(request, pk): #good
     sl = get_object_or_404(SequenceListing, pk=pk)
@@ -136,7 +133,6 @@ def sequence(request, pk, spk):
                                                               'featureFormDic': featureFormDic, 
                                                               'qualifierFormDic': qualifierFormDic,})
 def add_multiple_feature(request, pk, spk):
-    #     print 'add_multiple_feature invoked'
     seq = Sequence.objects.get(pk=spk)
     if request.method == 'POST':
         form = MultipleFeatureForm(request.POST, moltype=seq.moltype)
@@ -174,7 +170,6 @@ def add_sequence(request, pk):
         form = SequenceForm(request.POST)
 
         if form.is_valid():
-#             sl = SequenceListing.objects.get(pk=pk)
             cd = form.cleaned_data
             raw_residues = cd['residues']
             
@@ -266,29 +261,7 @@ def edit_feature(request, pk, spk, fpk):
         form = FeatureForm(mt=seq.moltype)
     return render(request, 'sequencelistings/edit_feature.html', {'form': featureForm, 'seq': seq})
 
-
-# def add_qualifier(request, pk, spk, fpk):
-# #     print 'add_qualifier invoked'
-#     f = Feature.objects.get(pk=fpk)
-#     if request.method == 'POST':
-#         form = QualifierForm(request.POST, feature=f)
-# 
-#         if form.is_valid():
-#             qn = request.POST.get('qualifierName')
-#             qv = request.POST.get('qualifierValue')
-#             q = Qualifier.objects.create(feature=f, qualifierName=qn, qualifierValue=qv)
-#             q.save()
-#             return HttpResponseRedirect(reverse('sequencelistings:detail', args=(pk,)))
-#     else:
-#         form = QualifierForm(feature=f)
-#     return render(request, 'sequencelistings/add_qualifier.html', 
-#                   {'form': form, 
-#                    'pk': pk, 
-#                    'spk': spk, 
-#                    'fpk': fpk})
-
 def add_qualifier(request, pk, spk, fpk):
-#     print 'add_qualifier invoked'
     f = Feature.objects.get(pk=fpk)
     if request.method == 'POST':
         form = QualifierForm(request.POST, feature=f)
@@ -298,8 +271,6 @@ def add_qualifier(request, pk, spk, fpk):
             qv = request.POST.get('qualifierValue')
             q = Qualifier.objects.create(feature=f, qualifierName=qn, qualifierValue=qv)
             q.save()
-#             return HttpResponseRedirect(reverse('sequencelistings:detail', args=(pk,)))
-#             return HttpResponseRedirect(reverse('sequencelistings:sequence', args=(pk, spk,)))
             return HttpResponseRedirect(reverse('sequencelistings:edit_sequence_data', args=(pk, )))
 
     else:
@@ -353,7 +324,6 @@ def download(request, fileName):
     filePath = os.path.join(util.PROJECT_DIRECTORY, 'sequencelistings', 'static', 'sequencelistings', '%s.xml' % fileName)
     with open(filePath, 'r') as f:
         s = f.read()
-#     response = HttpResponse(s, content_type='text/plain')
     response = HttpResponse(s, content_type='application/xml')
     response['Content-Disposition'] = 'attachment; '
     
@@ -367,13 +337,9 @@ def about(request):
     return render_to_response('sequencelistings/about.html', {}, {})
     
 def formula(request, pk):
-# #     return HttpResponse('formula page for sequence listing %s' % pk)
-# #     return render(request, 'sequencelistings/formula.html', 
-# #                   {'someText': 'formula page for sequence listing ', 'pk': pk})
     if request.method == 'POST':
         form = FormulaForm(request.POST)
         if form.is_valid():
-#             render(request, 'sequencelistings/add_seq.html', {'form': form, 'pk': pk})
             f = SequenceForm()
             f.organism = 'aaabbbccc'
             return render(request, 'sequencelistings/add_seq.html', {'form': f, 'pk': pk}) 
