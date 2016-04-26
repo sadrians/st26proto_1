@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version = "1.0">
+    <xs:include schemaLocation = "featureKeyValues.xsd" />
     <xs:group name="applicantNameGroup">
         <xs:sequence>
             <xs:element name="ApplicantName">
@@ -211,7 +211,7 @@
         </xs:complexType>
     </xs:element>
     
-    <xs:simpleType name="featureKeyValue">
+    <!-- <xs:simpleType name="featureKeyValue">
         <xs:restriction base="xs:string">
             <xs:enumeration value="allele"/>
             <xs:enumeration value="attenuator"/>
@@ -316,6 +316,6 @@
             <xs:enumeration value="VAR_SEQ"/>
             <xs:enumeration value="ZN_FING"/>         
         </xs:restriction>
-    </xs:simpleType>
+    </xs:simpleType> -->
 
 </xs:schema>
