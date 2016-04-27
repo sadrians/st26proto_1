@@ -10,7 +10,6 @@ from django.contrib.auth.decorators import login_required
 import util
 import os
 
-
 from forms import SequenceListingForm, TitleForm, SequenceForm, FeatureForm, QualifierForm, FormulaForm, EditFeatureForm
 
 from models import SequenceListing, Title, Sequence, Feature, Qualifier
@@ -25,7 +24,6 @@ class IndexView(generic.ListView):
         """Return all sequence listings."""
         
         return SequenceListing.objects.all()
-
 
 # class DetailView(generic.DetailView):
 #     model = SequenceListing
@@ -132,6 +130,7 @@ def sequence(request, pk, spk):
     return render(request, 'sequencelistings/sequence.html', {'form': form, 'seq': seq, 
                                                               'featureFormDic': featureFormDic, 
                                                               'qualifierFormDic': qualifierFormDic,})
+
 def add_multiple_feature(request, pk, spk):
     seq = Sequence.objects.get(pk=spk)
     if request.method == 'POST':
@@ -162,7 +161,6 @@ def add_multiple_feature(request, pk, spk):
         form = MultipleFeatureForm(request.POST, moltype=seq.moltype)
     return render(request, 'sequencelistings/add_multiple_feature.html', {'form': form, 'seq': seq})
 
-  
 def add_sequence(request, pk):
     sl = SequenceListing.objects.get(pk=pk)
     if request.method == 'POST':
@@ -335,15 +333,3 @@ def restricted(request):
 
 def about(request):
     return render_to_response('sequencelistings/about.html', {}, {})
-    
-def formula(request, pk):
-    if request.method == 'POST':
-        form = FormulaForm(request.POST)
-        if form.is_valid():
-            f = SequenceForm()
-            f.organism = 'aaabbbccc'
-            return render(request, 'sequencelistings/add_seq.html', {'form': f, 'pk': pk}) 
-    else:
-        form = FormulaForm()
-     
-    return render(request, 'sequencelistings/formula.html', {'form': form, 'pk': pk})
