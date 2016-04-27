@@ -418,7 +418,7 @@ class FormsTests(TestCase):
          
              
  
-SCREENSHOT_DIR = os.path.join(util.PROJECT_DIRECTORY, 'sequencelistings', 'static', 'screenshots')
+# SCREENSHOT_DIR = os.path.join(util.PROJECT_DIRECTORY, 'sequencelistings', 'static', 'screenshots')
  
 class HomeTestCase(StaticLiveServerTestCase):
      
@@ -437,11 +437,13 @@ class HomeTestCase(StaticLiveServerTestCase):
         self.screenshot()
   
     def screenshot(self):
+        print 'Running %s ...' % getName() 
         if hasattr(self, 'sauce_user_name'):
             # Sauce Labs is taking screenshots for us
             return
         name = '%s_%d.png' % (self._testMethodName, self._screenshot_number)
-        path = os.path.join(SCREENSHOT_DIR, name)
+        path = os.path.join(util.SCREENSHOT_DIR, name)
+        print r'\tscreenshot path:', path
         self.selenium.get_screenshot_as_file(path)
         self._screenshot_number += 1   
          

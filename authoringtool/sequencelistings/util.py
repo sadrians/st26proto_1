@@ -10,6 +10,9 @@ from lxml import etree
 currentDirectory = os.path.abspath(os.path.dirname(__file__))
 PROJECT_DIRECTORY = os.path.abspath(os.path.join(currentDirectory, os.pardir))
 
+SCREENSHOT_DIR = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
+                               'testData', 'screenshots')
+
 MOLTYPE_DNA = 'DNA'
 MOLTYPE_RNA = 'RNA'
 MOLTYPE_AA = 'AA'

@@ -2,6 +2,7 @@
 Created on Jan 28, 2016
 
 @author: ad
+Used only for testing. Not suitable for real population!!!
 '''
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'authoringtool.settings')

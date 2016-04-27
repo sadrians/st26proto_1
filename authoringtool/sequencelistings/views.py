@@ -1,5 +1,5 @@
 
-from django.shortcuts import get_object_or_404, render, redirect, render_to_response
+from django.shortcuts import get_object_or_404, render, render_to_response
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 from django.views import generic
@@ -10,7 +10,7 @@ from django.contrib.auth.decorators import login_required
 import util
 import os
 
-from forms import SequenceListingForm, TitleForm, SequenceForm, FeatureForm, QualifierForm, FormulaForm, EditFeatureForm
+from forms import SequenceListingForm, TitleForm, SequenceForm, FeatureForm, QualifierForm, EditFeatureForm
 
 from models import SequenceListing, Title, Sequence, Feature, Qualifier
 from forms import MultipleFeatureForm
@@ -317,6 +317,7 @@ def render_xmlFile(request):
 #     Take the user to the xml file.
     return HttpResponseRedirect('/sequencelistings/output_xml/')
 
+# TODO: refactor first line of this function ...
 def download(request, fileName):
     s = '%s has not been found.' % fileName 
     filePath = os.path.join(util.PROJECT_DIRECTORY, 'sequencelistings', 'static', 'sequencelistings', '%s.xml' % fileName)
@@ -333,3 +334,4 @@ def restricted(request):
 
 def about(request):
     return render_to_response('sequencelistings/about.html', {}, {})
+
