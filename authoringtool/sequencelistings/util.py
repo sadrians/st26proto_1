@@ -111,31 +111,19 @@ def expandFormula(aFormula):
             msg = 'The residues string contains "(" but does not match formula pattern. Residues: %s.' % aFormula
             logger.error(msg)
     return result 
-    
-def validateDocumentWithSchema(afile, aschema):
+
+def validateDocumentWithSchema(aFilePath, aSchemaPath):
     result = False
-     
-    with open(aschema, 'r') as fs:
-        try:
-            doc = etree.parse(fs)
-            try:
-                schema = etree.XMLSchema(doc)
-                with open(afile, 'r') as ff:
-                    try:
-                        doc = etree.parse(ff)
-                        try:
-                            schema.assertValid(doc)
-                            result = True
-                        except etree.DocumentInvalid as e:
-                            logger.error('File %s' % afile)
-                            logger.error(e)
-                    except etree.XMLSyntaxError as e:
-                        print e         
-            except etree.XMLSchemaParseError as e:
-                print e
-        except etree.XMLSyntaxError as e:
-            print e
-    return result
+    xmlschema_doc = etree.parse(aSchemaPath)
+    xmlschema = etree.XMLSchema(xmlschema_doc)
+    
+    doc = etree.parse(aFilePath)
+    if xmlschema.validate(doc):
+        result = True
+    else:
+        logger.error(xmlschema.error_log)
+    
+    return result 
 
 def validateDocumentWithDtd(afile, adtd):
     result = False
