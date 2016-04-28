@@ -12,8 +12,12 @@ import util
 
 import inspect 
 import os
+import logging
 
 from selenium import webdriver 
+
+logger = logging.getLogger(__name__)
+logger.info('TEST start.')
 
 def getName():
     return inspect.stack()[1][3]
@@ -415,10 +419,6 @@ class FormsTests(TestCase):
                                   'qualifierValue':'test for xxx value'})
           
         self.assertTrue(qf2.is_valid())
-         
-             
- 
-# SCREENSHOT_DIR = os.path.join(util.PROJECT_DIRECTORY, 'sequencelistings', 'static', 'screenshots')
  
 class HomeTestCase(StaticLiveServerTestCase):
      
@@ -443,7 +443,6 @@ class HomeTestCase(StaticLiveServerTestCase):
             return
         name = '%s_%d.png' % (self._testMethodName, self._screenshot_number)
         path = os.path.join(util.SCREENSHOT_DIR, name)
-        print r'\tscreenshot path:', path
         self.selenium.get_screenshot_as_file(path)
         self._screenshot_number += 1   
          
@@ -475,4 +474,3 @@ class HomeTestCase(StaticLiveServerTestCase):
         self.assertIn('st26proto - Index', self.selenium.title)
          
         self.assertIn('user20', self.selenium.find_element_by_class_name('page-header').text)
-     
