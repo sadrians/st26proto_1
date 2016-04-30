@@ -13,7 +13,8 @@ PROJECT_DIRECTORY = os.path.abspath(os.path.join(currentDirectory, os.pardir))
 
 SCREENSHOT_DIR = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
                                'testData', 'screenshots')
-
+XML_SCHEMA_PATH = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
+                               'static', 'sequencelistings', 'st26.xsd')
 MOLTYPE_DNA = 'DNA'
 MOLTYPE_RNA = 'RNA'
 MOLTYPE_AA = 'AA'
@@ -117,11 +118,16 @@ def validateDocumentWithSchema(aFilePath, aSchemaPath):
     xmlschema_doc = etree.parse(aSchemaPath)
     xmlschema = etree.XMLSchema(xmlschema_doc)
     
-    doc = etree.parse(aFilePath)
-    if xmlschema.validate(doc):
-        result = True
-    else:
-        logger.error(xmlschema.error_log)
+    try:
+        doc = etree.parse(aFilePath)
+#         at this point the input file was successfully parsed
+        
+        if xmlschema.validate(doc):
+            result = True
+        else:
+            logger.error(xmlschema.error_log)
+    except etree.XMLSyntaxError as syntErr:
+        logger.error('%s\n%s' % (aFilePath, syntErr))
     
     return result 
 

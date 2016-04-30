@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "ST26SequenceListing_V1_0.dtd">
+<?xml-stylesheet type="text/xsl" href="st26.xsl"?>
+<ST26SequenceListing dtdVersion="1" 
+                    fileName="test4"
+                    softwareName="prototype" 
+                    softwareVersion="0.1"
+                    productionDate="April 28, 2016">
+    <ApplicationIdentification>
+        <IPOfficeCode>e</IPOfficeCode>
+        <ApplicationNumberText>f</ApplicationNumberText>
+        <FilingDate>April 27, 2015</FilingDate>
+    </ApplicationIdentification>
+    <ApplicantFileReference>d</ApplicantFileReference>
+    <EarliestPriorityApplicationIdentification>
+        <IPOfficeCode>g</IPOfficeCode>
+        <ApplicationNumberText>h</ApplicationNumberText>
+        <FilingDate>April 27, 2015</FilingDate>
+    </EarliestPriorityApplicationIdentification>
+    <ApplicantNamex languageCode="j">
+        i
+    </ApplicantName>
+    <ApplicantNameLatin>
+        k
+    </ApplicantNameLatin>
+    <InventorName languageCode="m">
+        l
+    </InventorName>
+    <InventorNameLatin>
+        n
+    </InventorNameLatin>
+    
+        <InventionTitle languageCode="EN">
+            Invention 3
+        </InventionTitle>
+    
+        <InventionTitle languageCode="FR">
+            Titre supplementaire
+        </InventionTitle>
+    
+    
+    <SequenceTotalQuantity>
+        2
+    </SequenceTotalQuantity>
+    
+        <SequenceData sequenceIDNumber="1">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>mus</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>DOMAIN</INSDFeature_key>
+                            <INSDFeature_location>3</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mmm</INSDQualifier_name>
+                                    <INSDQualifier_value>n</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MART</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="2">
+            <INSDSeq>
+                <INSDSeq_length>8</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MXVVREXA</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+</ST26SequenceListing>

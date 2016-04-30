@@ -6,13 +6,6 @@
                     softwareName="ST26 authoring tool prototype" 
                     softwareVersion="0.1"
                     productionDate="March 16, 2016">
-<!-- <ST26SequenceListing dtdVersion="1.0" 
-                    fileName="file1"
-                    softwareName="ST26 authoring tool prototype" 
-                    softwareVersion="0.1"
-                    productionDate="March 16, 2016, 10:28 p.m."
-                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                    xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
         <IPOfficeCode>EP</IPOfficeCode>
         <ApplicationNumberText>1511223344.5</ApplicationNumberText>
@@ -37,210 +30,210 @@
         inventor1
     </InventorNameLatin>
     
-        <InventionTitle languageCode="EN">
-            title1
-        </InventionTitle>
-    
-        <InventionTitle languageCode="FR">
-            title2
-        </InventionTitle>
+    <InventionTitle languageCode="EN">
+        title1
+    </InventionTitle>
+
+    <InventionTitle languageCode="FR">
+        title2
+    </InventionTitle>
     
     
     <SequenceTotalQuantity>
         2
     </SequenceTotalQuantity>
     
-        <SequenceData sequenceIDNumber="1">
-            <INSDSeq>
-                <INSDSeq_length>17</INSDSeq_length>
-                <INSDSeq_moltype>DNA</INSDSeq_moltype>
-                <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
-                <INSDSeq_feature-table>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>SOURCE</INSDFeature_key>
-                            <INSDFeature_location>1..12</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
-                                    <INSDQualifier_value>protein</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>VARIANT</INSDFeature_key>
-                            <INSDFeature_location>4</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
-                                    <INSDQualifier_value>any amino acid as long as it is the same in positions 8 and 12</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>VARIANT</INSDFeature_key>
-                            <INSDFeature_location>8</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
-                                    <INSDQualifier_value>any amino acid as long as it is the same in positions 4 and 12</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>VARIANT</INSDFeature_key>
-                            <INSDFeature_location>12</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
-                                    <INSDQualifier_value>any amino acid as long as it is the same in positions 4 and 8</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>source</INSDFeature_key>
-                            <INSDFeature_location>1..20</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>organism</INSDQualifier_name>
-                                    <INSDQualifier_value>homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
-                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>allele</INSDFeature_key>
-                            <INSDFeature_location>7..8</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>mutation</INSDFeature_key>
-                            <INSDFeature_location>1</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>note</INSDQualifier_name>
-                                    <INSDQualifier_value>a or g</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>mutation</INSDFeature_key>
-                            <INSDFeature_location>3</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>note</INSDQualifier_name>
-                                    <INSDQualifier_value>a or g</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>mutation</INSDFeature_key>
-                            <INSDFeature_location>5</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>note</INSDQualifier_name>
-                                    <INSDQualifier_value>a or g</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
-                                    <INSDQualifier_value>protein</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                </INSDSeq_feature-table>
-                <INSDSeq_sequence>agtcacactttcattca</INSDSeq_sequence>
-            </INSDSeq>
-        </SequenceData>
-    
-        <SequenceData sequenceIDNumber="2">
-            <INSDSeq>
-                <INSDSeq_length>10</INSDSeq_length>
-                <INSDSeq_moltype>AA</INSDSeq_moltype>
-                <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
-                <INSDSeq_feature-table>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>SOURCE</INSDFeature_key>
-                            <INSDFeature_location>1..10</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>mus</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
-                                    <INSDQualifier_value>protein</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>VARIATION</INSDFeature_key>
-                            <INSDFeature_location>5</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                </INSDSeq_feature-table>
-                <INSDSeq_sequence>MTGGRASERT</INSDSeq_sequence>
-            </INSDSeq>
-        </SequenceData>
+    <SequenceData sequenceIDNumber="1">
+        <INSDSeq>
+            <INSDSeq_length>17</INSDSeq_length>
+            <INSDSeq_moltype>DNA</INSDSeq_moltype>
+            <INSDSeq_division>PAT</INSDSeq_division>
+            <INSDSeq_other-seqids>
+                <INSDSeqid>-</INSDSeqid>
+            </INSDSeq_other-seqids>
+            <INSDSeq_feature-table>
+                
+                    <INSDFeature>
+                        <INSDFeature_key>SOURCE</INSDFeature_key>
+                        <INSDFeature_location>1..12</INSDFeature_location>
+                        <INSDFeature_quals>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                <INSDQualifier_value>protein</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                        </INSDFeature_quals>
+                    </INSDFeature>
+                
+                    <INSDFeature>
+                        <INSDFeature_key>VARIANT</INSDFeature_key>
+                        <INSDFeature_location>4</INSDFeature_location>
+                        <INSDFeature_quals>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                <INSDQualifier_value>any amino acid as long as it is the same in positions 8 and 12</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                        </INSDFeature_quals>
+                    </INSDFeature>
+                
+                    <INSDFeature>
+                        <INSDFeature_key>VARIANT</INSDFeature_key>
+                        <INSDFeature_location>8</INSDFeature_location>
+                        <INSDFeature_quals>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                <INSDQualifier_value>any amino acid as long as it is the same in positions 4 and 12</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                        </INSDFeature_quals>
+                    </INSDFeature>
+                
+                    <INSDFeature>
+                        <INSDFeature_key>VARIANT</INSDFeature_key>
+                        <INSDFeature_location>12</INSDFeature_location>
+                        <INSDFeature_quals>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                <INSDQualifier_value>any amino acid as long as it is the same in positions 4 and 8</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                        </INSDFeature_quals>
+                    </INSDFeature>
+                
+                    <INSDFeature>
+                        <INSDFeature_key>source</INSDFeature_key>
+                        <INSDFeature_location>1..20</INSDFeature_location>
+                        <INSDFeature_quals>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>organism</INSDQualifier_name>
+                                <INSDQualifier_value>homo sapiens</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                        </INSDFeature_quals>
+                    </INSDFeature>
+                
+                    <INSDFeature>
+                        <INSDFeature_key>allele</INSDFeature_key>
+                        <INSDFeature_location>7..8</INSDFeature_location>
+                        <INSDFeature_quals>
+                            
+                        </INSDFeature_quals>
+                    </INSDFeature>
+                
+                    <INSDFeature>
+                        <INSDFeature_key>mutation</INSDFeature_key>
+                        <INSDFeature_location>1</INSDFeature_location>
+                        <INSDFeature_quals>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>note</INSDQualifier_name>
+                                <INSDQualifier_value>a or g</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                        </INSDFeature_quals>
+                    </INSDFeature>
+                
+                    <INSDFeature>
+                        <INSDFeature_key>mutation</INSDFeature_key>
+                        <INSDFeature_location>3</INSDFeature_location>
+                        <INSDFeature_quals>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>note</INSDQualifier_name>
+                                <INSDQualifier_value>a or g</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                        </INSDFeature_quals>
+                    </INSDFeature>
+                
+                    <INSDFeature>
+                        <INSDFeature_key>mutation</INSDFeature_key>
+                        <INSDFeature_location>5</INSDFeature_location>
+                        <INSDFeature_quals>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>note</INSDQualifier_name>
+                                <INSDQualifier_value>a or g</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                <INSDQualifier_value>protein</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                        </INSDFeature_quals>
+                    </INSDFeature>
+                
+            </INSDSeq_feature-table>
+            <INSDSeq_sequence>agtcacactttcattca</INSDSeq_sequence>
+        </INSDSeq>
+    </SequenceData>
+
+    <SequenceData sequenceIDNumber="2">
+        <INSDSeq>
+            <INSDSeq_length>10</INSDSeq_length>
+            <INSDSeq_moltype>AA</INSDSeq_moltype>
+            <INSDSeq_division>PAT</INSDSeq_division>
+            <INSDSeq_other-seqids>
+                <INSDSeqid>-</INSDSeqid>
+            </INSDSeq_other-seqids>
+            <INSDSeq_feature-table>
+                
+                    <INSDFeature>
+                        <INSDFeature_key>SOURCE</INSDFeature_key>
+                        <INSDFeature_location>1..10</INSDFeature_location>
+                        <INSDFeature_quals>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                <INSDQualifier_value>mus</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                            <INSDQualifier>
+                                <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                <INSDQualifier_value>protein</INSDQualifier_value>
+                            </INSDQualifier>
+                            
+                        </INSDFeature_quals>
+                    </INSDFeature>
+                
+                    <INSDFeature>
+                        <INSDFeature_key>VARIATION</INSDFeature_key>
+                        <INSDFeature_location>5</INSDFeature_location>
+                        <INSDFeature_quals>
+                            
+                        </INSDFeature_quals>
+                    </INSDFeature>
+                
+            </INSDSeq_feature-table>
+            <INSDSeq_sequence>MTGGRASERT</INSDSeq_sequence>
+        </INSDSeq>
+    </SequenceData>
       
 </ST26SequenceListing>
