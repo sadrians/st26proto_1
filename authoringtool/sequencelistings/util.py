@@ -15,12 +15,11 @@ SCREENSHOT_DIR = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
                                'testData', 'screenshots')
 OUTPUT_DIR = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
                                'static', 'sequencelistings', 'output')
-XML_SCHEMA_PATH = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
-                               'static', 'sequencelistings', 'st26.xsd')
 
-XML_DTD_PATH = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
-                               'static', 'sequencelistings', 
-                               'ST26SequenceListing_V1_0.dtd')
+XML_SCHEMA_PATH = os.path.join(OUTPUT_DIR, 'st26.xsd')
+
+XML_DTD_PATH = os.path.join(OUTPUT_DIR, 'ST26SequenceListing_V1_0.dtd')
+
 MOLTYPE_DNA = 'DNA'
 MOLTYPE_RNA = 'RNA'
 MOLTYPE_AA = 'AA'
