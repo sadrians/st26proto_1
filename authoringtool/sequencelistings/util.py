@@ -13,6 +13,8 @@ PROJECT_DIRECTORY = os.path.abspath(os.path.join(currentDirectory, os.pardir))
 
 SCREENSHOT_DIR = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
                                'testData', 'screenshots')
+OUTPUT_DIR = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
+                               'static', 'sequencelistings', 'output')
 XML_SCHEMA_PATH = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
                                'static', 'sequencelistings', 'st26.xsd')
 
@@ -118,28 +120,14 @@ def expandFormula(aFormula):
     return result 
 
 def helper_generateXml(sl):
-    sequences = sl.sequence_set.all()
-         
     xml = render_to_string('xml_template.xml', {'sequenceListing': sl,
-                            'sequences': sequences
+                            'sequences': sl.sequence_set.all(),
                             }).encode('utf-8', 'strict')
-     
-#     outf = os.path.join(PROJECT_DIRECTORY,
-#           'sequencelistings',
-#           'output',
-#           '%s.xml' % sl.fileName)     
-    outf = os.path.join(PROJECT_DIRECTORY,
-          'sequencelistings',
-          'static',
-          'sequencelistings',
-          '%s.xml' % sl.fileName)
-      
+
+    outf = os.path.join(OUTPUT_DIR, '%s.xml' % sl.fileName)
+    
     with open(outf, 'w') as gf:
         gf.write(xml) 
-      
-    xmlFilePath = 'sequencelistings/%s.xml' % sl.fileName
-     
-    return (outf, xmlFilePath)
     
 def validateDocumentWithSchema(aFilePath, aSchemaPath):
     result = False

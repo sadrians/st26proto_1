@@ -288,16 +288,33 @@ def generateXml(request, pk):
         sl = SequenceListing.objects.all().get(pk=pk)
         sl.productionDate = timezone.now()
         sl.save()
-         
-        res = util.helper_generateXml(sl)
-         
+        
+        util.helper_generateXml(sl)
+        
+        xmlFilePath = 'sequencelistings/output/%s.xml' % sl.fileName
+        
+        logger.info('Generated xml seql at %s.' %xmlFilePath)
+        
         return render(request, 'sequencelistings/xmloutput.html', 
-                      {'filePath': res[1], 
-                        'location': os.path.abspath(res[0]), 
+                      {'filePath': xmlFilePath, 
+                        'location': util.OUTPUT_DIR, 
                         'fileName': sl.fileName,
                         }) 
          
-        logger.info('Generated xml seql at %s.' %os.path.abspath(res[0]))
+# def generateXml(request, pk):
+#         sl = SequenceListing.objects.all().get(pk=pk)
+#         sl.productionDate = timezone.now()
+#         sl.save()
+#          
+#         res = util.helper_generateXml(sl)
+#          
+#         return render(request, 'sequencelistings/xmloutput.html', 
+#                       {'filePath': res[1], 
+#                         'location': os.path.abspath(res[0]), 
+#                         'fileName': sl.fileName,
+#                         }) 
+#          
+#         logger.info('Generated xml seql at %s.' %os.path.abspath(res[0]))
         
 @login_required
 def render_xmlFile(request):

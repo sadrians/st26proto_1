@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version = "1.0">
+    <xs:simpleType name="featureKeyValue">
+        <xs:annotation>
+            <xs:documentation>
+            Legal values for INSDFeature_key element.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="allele"/>
+            <xs:enumeration value="attenuator"/>
+            <xs:enumeration value="C_region"/>
+            <xs:enumeration value="CAAT_signal"/>
+            <xs:enumeration value="CDS"/>
+            <xs:enumeration value="conflict"/>
+            <xs:enumeration value="D-loop"/>
+            <xs:enumeration value="D_segment"/>
+            <xs:enumeration value="enhancer"/>
+            <xs:enumeration value="exon"/>
+            <xs:enumeration value="GC_signal"/>
+            <xs:enumeration value="gene"/>
+            <xs:enumeration value="iDNA"/>
+            <xs:enumeration value="intron"/>
+            <xs:enumeration value="J_segment"/>
+            <xs:enumeration value="LTR"/>
+            <xs:enumeration value="mat_peptide"/>
+            <xs:enumeration value="misc_binding"/>
+            <xs:enumeration value="misc_difference"/>
+            <xs:enumeration value="misc_feature"/>
+            <xs:enumeration value="misc_recomb"/>
+            <xs:enumeration value="misc_RNA"/>
+            <xs:enumeration value="misc_signal"/>
+            <xs:enumeration value="misc_structure"/>
+            <xs:enumeration value="modified_base"/>
+            <xs:enumeration value="mRNA"/>
+            <xs:enumeration value="mutation"/>
+            <xs:enumeration value="N_region"/>
+            <xs:enumeration value="old_sequence"/>
+            <xs:enumeration value="polyA_signal"/>
+            <xs:enumeration value="polyA_site"/>
+            <xs:enumeration value="precursor_RNA"/>
+            <xs:enumeration value="prim_transcript"/>
+            <xs:enumeration value="primer_bind"/>
+            <xs:enumeration value="promoter"/>
+            <xs:enumeration value="protein_bind"/>
+            <xs:enumeration value="RBS"/>
+            <xs:enumeration value="repeat_region"/>
+            <xs:enumeration value="repeat_unit"/>
+            <xs:enumeration value="rep_origin"/>
+            <xs:enumeration value="rRNA"/>
+            <xs:enumeration value="S_region"/>
+            <xs:enumeration value="satellite"/>
+            <xs:enumeration value="scRNA"/>
+            <xs:enumeration value="sig_peptide"/>
+            <xs:enumeration value="snRNA"/>
+            <xs:enumeration value="source"/>
+            <xs:enumeration value="stem_loop"/>
+            <xs:enumeration value="STS"/>
+            <xs:enumeration value="TATA_signal"/>
+            <xs:enumeration value="terminator"/>
+            <xs:enumeration value="transit_peptide"/>
+            <xs:enumeration value="tRNA"/>
+            <xs:enumeration value="unsure"/>
+            <xs:enumeration value="V_region"/>
+            <xs:enumeration value="V_segment"/>
+            <xs:enumeration value="variation"/>
+            <xs:enumeration value="3'clip"/>
+            <xs:enumeration value="3'UTR"/>
+            <xs:enumeration value="5'clip"/>
+            <xs:enumeration value="5'UTR"/>
+            <xs:enumeration value="-10_signal"/>
+            <xs:enumeration value="-35_signal"/>
+            <xs:enumeration value="ACT_SITE"/>
+            <xs:enumeration value="BINDING"/>
+            <xs:enumeration value="CA_BIND"/>
+            <xs:enumeration value="CARBOHYD"/>
+            <xs:enumeration value="CHAIN"/>
+            <xs:enumeration value="COILED"/>
+            <xs:enumeration value="COMPBIAS"/>
+            <xs:enumeration value="CONFLICT"/>
+            <xs:enumeration value="CROSSLNK"/>
+            <xs:enumeration value="DISULFID"/>
+            <xs:enumeration value="DNA_BIND"/>
+            <xs:enumeration value="DOMAIN"/>
+            <xs:enumeration value="HELIX"/>
+            <xs:enumeration value="INIT_MET"/>
+            <xs:enumeration value="INTRAMEM"/>
+            <xs:enumeration value="LIPID"/>
+            <xs:enumeration value="METAL"/>
+            <xs:enumeration value="MOD_RES"/>
+            <xs:enumeration value="MOTIF"/>
+            <xs:enumeration value="MUTAGEN"/>
+            <xs:enumeration value="NON_STD"/>
+            <xs:enumeration value="NON_TER"/>
+            <xs:enumeration value="NP_BIND"/>
+            <xs:enumeration value="PEPTIDE"/>
+            <xs:enumeration value="PROPEP"/>
+            <xs:enumeration value="REGION"/>
+            <xs:enumeration value="REPEAT"/>
+            <xs:enumeration value="SIGNAL"/>
+            <xs:enumeration value="SITE"/>
+            <xs:enumeration value="SOURCE"/>
+            <xs:enumeration value="STRAND"/>
+            <xs:enumeration value="TOPO_DOM"/>
+            <xs:enumeration value="TRANSMEM"/>
+            <xs:enumeration value="TRANSIT"/>
+            <xs:enumeration value="TURN"/>
+            <xs:enumeration value="UNSURE"/>
+            <xs:enumeration value="VARIANT"/>
+            <xs:enumeration value="VAR_SEQ"/>
+            <xs:enumeration value="ZN_FING"/> 
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
