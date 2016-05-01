@@ -5,12 +5,12 @@
                     fileName="test1"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="April 24, 2016">
+                    productionDate="April 30, 2016">
 <!-- <ST26SequenceListing dtdVersion="V1_0" 
                     fileName="test1"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="April 24, 2016, 10:22 p.m."
+                    productionDate="April 30, 2016, 5:43 p.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
@@ -63,7 +63,7 @@
     
     
     <SequenceTotalQuantity>
-        2
+        4
     </SequenceTotalQuantity>
     
         <SequenceData sequenceIDNumber="1">
@@ -456,6 +456,77 @@
                     
                 </INSDSeq_feature-table>
                 <INSDSeq_sequence>MSSRKSQYNFIQTNDSKPSNNIYQSQSSEPTTRNKKTKKLDQVETYIQIFETYLKLLIGQEIGLEEEERLNGYQNFDCSDNNNTLDLEQPEAIISLYNPDFVQDDYEFQLNQLEIFEQIIQSLSIDEQSNKEKLFLKAIEYVFLQLLDHKSYSVYDIRTRRLETQTNEQRNALYQLGSAQDLFHNSEQSPKSSYLMENNFQNKFQTQDYQKEEQNNIIQKLVTQFRQQLMGNIMANLGNINNISEYFQVDYQKLQYIQKKAYSQGEYLRQSGKFWHRTQKVTSDILTLIRNILIVQFTRRGFQVQQKISQDGEKIFLLLYMSEKMLETAAENCQLPKKISYCFTDLLSLEPVDRQYRPLRLNGRLWRPQDYQISPYLKYLRPLITEQIQQINFKKVAREVGQTGINIELFQYGKSDIHGDQDGPSDEEWTAYYKYLVHLNNHINLCRKEFQLKSDIALIIDKQKTVEQLVAIRTHSKHKNFDEFNEEEQKHYRDLNEEVQQLIIQSNSLVISSKLPQIKKIKLYLQQQLAHNYLTIFNESLKVANCTNHQLKTVWERYNITPFDLYVPFQINKKDSSTKNIERYQLRWCRYIKNEKNHITLFPSNERLKLAYSVLQSCVSLDTL</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="3">
+            <INSDSeq>
+                <INSDSeq_length>14</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..14</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Mus musculus</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>cgtaatccatacat</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="4">
+            <INSDSeq>
+                <INSDSeq_length>19</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..19</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Felis</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>cgt(acct)4</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>cgtacctacctacctacct</INSDSeq_sequence>
             </INSDSeq>
         </SequenceData>
       

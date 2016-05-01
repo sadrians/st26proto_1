@@ -16,6 +16,10 @@ from models import SequenceListing, Title, Sequence, Feature, Qualifier
 from forms import MultipleFeatureForm
 from django.utils.encoding import filepath_to_uri
 
+import logging 
+
+logger = logging.getLogger(__name__)
+
 class IndexView(generic.ListView):
     template_name = 'sequencelistings/index.html'
     context_object_name = 'sequencelistings'
@@ -282,36 +286,19 @@ def add_qualifier(request, pk, spk, fpk):
 
 def generateXml(request, pk):
         sl = SequenceListing.objects.all().get(pk=pk)
-        
-        res = helper_generateXml(sl)
-        
+        sl.productionDate = timezone.now()
+        sl.save()
+         
+        res = util.helper_generateXml(sl)
+         
         return render(request, 'sequencelistings/xmloutput.html', 
                       {'filePath': res[1], 
                         'location': os.path.abspath(res[0]), 
                         'fileName': sl.fileName,
-                        })
+                        }) 
+         
+        logger.info('Generated xml seql at %s.' %os.path.abspath(res[0]))
         
-def helper_generateXml(sl):
-        sl.productionDate = timezone.now()
-        sl.save()
-        sequences = sl.sequence_set.all()
-     
-        xml = render_to_string('xml_template.xml', {'sequenceListing': sl,
-                                                    'sequences': sequences
-                                                    }).encode('utf-8', 'strict')
- 
-        outf = os.path.join(util.PROJECT_DIRECTORY,
-                            'sequencelistings',
-                            'static',
-                            'sequencelistings',
-                            '%s.xml' % sl.fileName)
-         
-        with open(outf, 'w') as gf:
-            gf.write(xml) 
-         
-        xmlFilePath = 'sequencelistings/%s.xml' % sl.fileName
-        return (outf, xmlFilePath) 
-
 @login_required
 def render_xmlFile(request):
 #     Take the user to the xml file.

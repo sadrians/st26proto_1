@@ -4,7 +4,7 @@ Created on Apr 17, 2015
 @author: ad
 '''
 import os, re, logging 
-
+from django.template.loader import render_to_string
 from lxml import etree 
 
 logger = logging.getLogger(__name__)
@@ -15,6 +15,10 @@ SCREENSHOT_DIR = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
                                'testData', 'screenshots')
 XML_SCHEMA_PATH = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
                                'static', 'sequencelistings', 'st26.xsd')
+
+XML_DTD_PATH = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
+                               'static', 'sequencelistings', 
+                               'ST26SequenceListing_V1_0.dtd')
 MOLTYPE_DNA = 'DNA'
 MOLTYPE_RNA = 'RNA'
 MOLTYPE_AA = 'AA'
@@ -113,6 +117,30 @@ def expandFormula(aFormula):
             logger.error(msg)
     return result 
 
+def helper_generateXml(sl):
+    sequences = sl.sequence_set.all()
+         
+    xml = render_to_string('xml_template.xml', {'sequenceListing': sl,
+                            'sequences': sequences
+                            }).encode('utf-8', 'strict')
+     
+#     outf = os.path.join(PROJECT_DIRECTORY,
+#           'sequencelistings',
+#           'output',
+#           '%s.xml' % sl.fileName)     
+    outf = os.path.join(PROJECT_DIRECTORY,
+          'sequencelistings',
+          'static',
+          'sequencelistings',
+          '%s.xml' % sl.fileName)
+      
+    with open(outf, 'w') as gf:
+        gf.write(xml) 
+      
+    xmlFilePath = 'sequencelistings/%s.xml' % sl.fileName
+     
+    return (outf, xmlFilePath)
+    
 def validateDocumentWithSchema(aFilePath, aSchemaPath):
     result = False
     xmlschema_doc = etree.parse(aSchemaPath)
