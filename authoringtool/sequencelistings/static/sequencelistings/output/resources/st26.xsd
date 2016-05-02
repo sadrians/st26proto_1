@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version = "1.0">
+    <xs:include schemaLocation = "featureKeyValues.xsd" />
+    <xs:group name="applicantNameGroup">
+        <xs:sequence>
+            <xs:element name="ApplicantName">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="languageCode"
+                                          type="xs:string"
+                                          use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+    
+            <xs:element name="ApplicantNameLatin" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="applicationIdentificationGroup">
+        <xs:sequence>
+            <xs:element name="IPOfficeCode"/>
+            <xs:element name="ApplicationNumberText"/>
+            <xs:element name="FilingDate" minOccurs="0"/>    
+        </xs:sequence>
+    </xs:group>
+                
+    <xs:element name="ST26SequenceListing">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs="2"
+                           minOccurs="1">
+                    <xs:element name="ApplicationIdentification"
+                                maxOccurs="1"
+                                minOccurs="0">
+                        <xs:complexType>
+                            <xs:group ref="applicationIdentificationGroup"/>
+                        </xs:complexType>
+                    </xs:element>
+                    
+                    <xs:element name="ApplicantFileReference"
+                                type="xs:string"
+                                maxOccurs="1"
+                                minOccurs="0" />
+                </xs:choice>
+                
+                <xs:element name="EarliestPriorityApplicationIdentification">
+                    <xs:complexType>
+                        <xs:group ref="applicationIdentificationGroup"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:group ref="applicantNameGroup" minOccurs="0"/>
+                <xs:element name="InventorName">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="languageCode"
+                                              type="xs:string"
+                                              use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="InventorNameLatin" type="xs:string"/>
+
+                <xs:element name="InventionTitle"   maxOccurs="unbounded"
+                                                    minOccurs="1">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="languageCode"
+                                              type="xs:string"
+                                              use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="SequenceTotalQuantity"
+                            type="xs:string" />
+
+                <xs:element
+                        name="SequenceData"
+                        maxOccurs="unbounded"
+                        minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="INSDSeq">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="INSDSeq_length" type="xs:string"/>
+
+                                        <xs:element name="INSDSeq_moltype">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="DNA"/>
+                                                    <xs:enumeration value="RNA"/>
+                                                    <xs:enumeration value="AA"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+
+                                        <xs:element name="INSDSeq_division"
+                                                    type="xs:string"
+                                                    fixed="PAT"/>
+
+                                        <xs:element name="INSDSeq_other-seqids">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="INSDSeqid" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+
+                                        <xs:element name="INSDSeq_feature-table">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="INSDFeature"
+                                                                maxOccurs="unbounded"
+                                                                minOccurs="1">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="INSDFeature_key" type="featureKeyValue"/>
+                                                                <xs:element name="INSDFeature_location" type="xs:string"/>
+                                                                <xs:element name="INSDFeature_quals"
+                                                                            maxOccurs="1"
+                                                                            minOccurs="0">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="INSDQualifier"
+                                                                                        maxOccurs="unbounded"
+                                                                                        minOccurs="1">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element
+                                                                                                name="INSDQualifier_name"
+                                                                                                type="xs:string"/>
+                                                                                        <xs:element
+                                                                                                name="INSDQualifier_value"
+                                                                                                type="xs:string"
+                                                                                                maxOccurs="1"
+                                                                                                minOccurs="0"/>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+
+                                        <xs:element name="INSDSeq_sequence" type="xs:string"/>
+
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="sequenceIDNumber"
+                                      type="xs:string"
+                                      use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+            <xs:attribute name="dtdVersion" type="xs:string" use="required"/>
+            <xs:attribute name="fileName" type="xs:string" />
+            <xs:attribute name="softwareName" type="xs:string" />
+            <xs:attribute name="softwareVersion" type="xs:string" />
+            <xs:attribute name="productionDate" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
