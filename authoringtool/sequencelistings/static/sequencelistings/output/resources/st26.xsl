@@ -7,7 +7,7 @@
         <html>
             <head>
                 <title>generated xseql</title>
-                <link rel="stylesheet" type="text/css" href="style.css"/>
+                <link rel="stylesheet" type="text/css" href="resources/style.css"/>
             </head>
             <body>
                 <h1>ST26 SEQUENCE LISTING</h1>
