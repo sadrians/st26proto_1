@@ -38,6 +38,7 @@ def detail(request, pk): #good
         
     return render(request, 'sequencelistings/detail_w3.html', {'sequencelisting': sl})
 
+# TODO: is this needed?
 def edit_sequence_data(request, pk): #good
     sl = get_object_or_404(SequenceListing, pk=pk)
         
@@ -95,6 +96,7 @@ def add_sequencelisting(request):
     return render(request, 'sequencelistings/add_sequencelisting.html', 
                   {'form': form, 'title_form': title_form})
 
+# TODO: is this needed?
 def add_title(request, pk):
     if request.method == 'POST':
         form = TitleForm(request.POST)
@@ -184,38 +186,7 @@ def add_sequence(request, pk):
             
             sequence_instance.save()
             feature_source_helper(sequence_instance, organism)
-            
-            
-#             value_for_source = 'source'
-#             if cd['moltype'] == 'AA':
-#                 value_for_source = 'SOURCE'
-#                 
-#             value_for_organism = 'organism'
-#             if cd['moltype'] == 'AA':
-#                 value_for_organism = 'ORGANISM'
-#                 
-#             value_for_moltype = 'mol_type'
-#             if cd['moltype'] == 'AA':
-#                 value_for_moltype = 'MOL_TYPE'
-#                 
-            
-#             
-#             feature_instance = Feature.objects.create(sequence=sequence_instance, 
-#                                                       featureKey=value_for_source, 
-#                                                       location='1..%s' % sequence_instance.length)
-#             feature_instance.save()
-#             
-#             organism_qualifier_instance = Qualifier.objects.create(feature=feature_instance, 
-#                                                           qualifierName=value_for_organism, 
-#                                                           qualifierValue=organism)
-#             organism_qualifier_instance.save()
-#             
-#             mol_type_qualifier_instance = Qualifier.objects.create(feature=feature_instance, 
-#                                                           qualifierName=value_for_moltype, 
-#                                                           qualifierValue=util.MOL_TYPE_QUALIFIER_VALUES[cd['moltype']])
-#             mol_type_qualifier_instance.save()
-
-#             create a note qualifier to indicate the formula if applicable
+#             create a note qualifier to indicate the a formula if applicable
             if '(' in raw_residues:
                 value_for_note = 'note'
                 if cd['moltype'] == 'AA':
@@ -233,6 +204,9 @@ def add_sequence(request, pk):
     return render(request, 'sequencelistings/add_seq.html', {'form': form, 'pk': pk, 'seql': sl})
 
 def feature_source_helper(seq, organism):
+    '''
+    Create automatically feature source for a given sequence and organism.
+    '''
     value_for_source = 'source'
     value_for_organism = 'organism'
     value_for_moltype = 'mol_type'
@@ -323,6 +297,7 @@ def generateXml(request, pk):
         sl.productionDate = timezone.now()
         sl.save()
         
+#         generate xml and write it to file system
         util.helper_generateXml(sl)
         
         xmlFilePath = 'sequencelistings/output/%s.xml' % sl.fileName
@@ -334,21 +309,6 @@ def generateXml(request, pk):
                         'location': util.OUTPUT_DIR, 
                         'fileName': sl.fileName,
                         }) 
-         
-# def generateXml(request, pk):
-#         sl = SequenceListing.objects.all().get(pk=pk)
-#         sl.productionDate = timezone.now()
-#         sl.save()
-#          
-#         res = util.helper_generateXml(sl)
-#          
-#         return render(request, 'sequencelistings/xmloutput.html', 
-#                       {'filePath': res[1], 
-#                         'location': os.path.abspath(res[0]), 
-#                         'fileName': sl.fileName,
-#                         }) 
-#          
-#         logger.info('Generated xml seql at %s.' %os.path.abspath(res[0]))
         
 @login_required
 def render_xmlFile(request):

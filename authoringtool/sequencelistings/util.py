@@ -160,10 +160,11 @@ def validateDocumentWithDtd(afile, adtd):
                 else:
                     print(dtd.error_log.filter_from_errors()[0])
             except etree.XMLSyntaxError as e:
-                        print e 
+                print e 
     return result
 
 # helper used to generate XML code for the schema 
+
 def generateXmlSchemaFeatureKeyValuesEnumeration():
     for fk in fkdna + fkprt:
         print '<xs:enumeration value="%s"/>' % fk 
