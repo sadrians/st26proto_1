@@ -114,6 +114,7 @@ def add_title(request, pk):
         form = TitleForm()
     return render(request, 'sequencelistings/add_title.html', {'form': form, 'pk': pk})
 
+# TODO: is this view used actually?
 def sequence(request, pk, spk):
     seq = Sequence.objects.get(pk=spk)
     form = SequenceForm(instance=seq, initial={'organism': seq.getOrganism()})
@@ -182,39 +183,45 @@ def add_sequence(request, pk):
                 )
             
             sequence_instance.save()
+            feature_source_helper(sequence_instance, organism)
             
-            value_for_source = 'source'
-            if cd['moltype'] == 'AA':
-                value_for_source = 'SOURCE'
-                
-            value_for_organism = 'organism'
-            if cd['moltype'] == 'AA':
-                value_for_organism = 'ORGANISM'
-                
-            value_for_moltype = 'mol_type'
-            if cd['moltype'] == 'AA':
-                value_for_moltype = 'MOL_TYPE'
-                
-            value_for_note = 'note'
-            if cd['moltype'] == 'AA':
-                value_for_moltype = 'NOTE'
             
-            feature_instance = Feature.objects.create(sequence=sequence_instance, 
-                                                      featureKey=value_for_source, 
-                                                      location='1..%s' % sequence_instance.length)
-            feature_instance.save()
+#             value_for_source = 'source'
+#             if cd['moltype'] == 'AA':
+#                 value_for_source = 'SOURCE'
+#                 
+#             value_for_organism = 'organism'
+#             if cd['moltype'] == 'AA':
+#                 value_for_organism = 'ORGANISM'
+#                 
+#             value_for_moltype = 'mol_type'
+#             if cd['moltype'] == 'AA':
+#                 value_for_moltype = 'MOL_TYPE'
+#                 
             
-            organism_qualifier_instance = Qualifier.objects.create(feature=feature_instance, 
-                                                          qualifierName=value_for_organism, 
-                                                          qualifierValue=organism)
-            organism_qualifier_instance.save()
-            
-            mol_type_qualifier_instance = Qualifier.objects.create(feature=feature_instance, 
-                                                          qualifierName=value_for_moltype, 
-                                                          qualifierValue=util.MOL_TYPE_QUALIFIER_VALUES[cd['moltype']])
-            mol_type_qualifier_instance.save()
-            
+#             
+#             feature_instance = Feature.objects.create(sequence=sequence_instance, 
+#                                                       featureKey=value_for_source, 
+#                                                       location='1..%s' % sequence_instance.length)
+#             feature_instance.save()
+#             
+#             organism_qualifier_instance = Qualifier.objects.create(feature=feature_instance, 
+#                                                           qualifierName=value_for_organism, 
+#                                                           qualifierValue=organism)
+#             organism_qualifier_instance.save()
+#             
+#             mol_type_qualifier_instance = Qualifier.objects.create(feature=feature_instance, 
+#                                                           qualifierName=value_for_moltype, 
+#                                                           qualifierValue=util.MOL_TYPE_QUALIFIER_VALUES[cd['moltype']])
+#             mol_type_qualifier_instance.save()
+
+#             create a note qualifier to indicate the formula if applicable
             if '(' in raw_residues:
+                value_for_note = 'note'
+                if cd['moltype'] == 'AA':
+                    value_for_note = 'NOTE'
+                
+                feature_instance = Feature.objects.filter(sequence = sequence_instance)[0]
                 note_qualifier_instance = Qualifier.objects.create(feature=feature_instance, 
                                                           qualifierName=value_for_note, 
                                                           qualifierValue=raw_residues)
@@ -224,6 +231,33 @@ def add_sequence(request, pk):
     else:
         form = SequenceForm()
     return render(request, 'sequencelistings/add_seq.html', {'form': form, 'pk': pk, 'seql': sl})
+
+def feature_source_helper(seq, organism):
+    value_for_source = 'source'
+    value_for_organism = 'organism'
+    value_for_moltype = 'mol_type'
+    
+    molType = seq.moltype
+    
+    if molType == 'AA':
+        value_for_source = 'SOURCE'
+        value_for_organism = 'ORGANISM'
+        value_for_moltype = 'MOL_TYPE'
+    
+    feature_instance = Feature.objects.create(sequence=seq, 
+                                              featureKey=value_for_source, 
+                                              location='1..%s' % seq.length)
+    feature_instance.save()
+    
+    organism_qualifier_instance = Qualifier.objects.create(feature=feature_instance, 
+                                                  qualifierName=value_for_organism, 
+                                                  qualifierValue=organism)
+    organism_qualifier_instance.save()
+    
+    mol_type_qualifier_instance = Qualifier.objects.create(feature=feature_instance, 
+                                                  qualifierName=value_for_moltype, 
+                                                  qualifierValue=util.MOL_TYPE_QUALIFIER_VALUES[molType])
+    mol_type_qualifier_instance.save()
 
 def add_feature(request, pk, spk):
     seq = Sequence.objects.get(pk=spk)

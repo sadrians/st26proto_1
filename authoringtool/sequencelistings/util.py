@@ -11,8 +11,10 @@ logger = logging.getLogger(__name__)
 currentDirectory = os.path.abspath(os.path.dirname(__file__))
 PROJECT_DIRECTORY = os.path.abspath(os.path.join(currentDirectory, os.pardir))
 
-SCREENSHOT_DIR = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
-                               'testData', 'screenshots')
+TEST_DATA_DIR_PATH = os.path.join(PROJECT_DIRECTORY, 
+                                       'sequencelistings', 'testData')
+
+SCREENSHOT_DIR = os.path.join(TEST_DATA_DIR_PATH, 'screenshots')
 OUTPUT_DIR = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
                                'static', 'sequencelistings', 'output')
 

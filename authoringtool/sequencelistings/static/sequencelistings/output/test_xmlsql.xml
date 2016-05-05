@@ -5,24 +5,24 @@
                     fileName="test_xmlsql"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="May 2, 2016">
+                    productionDate="May 5, 2016">
 <!-- <ST26SequenceListing dtdVersion="1" 
                     fileName="test_xmlsql"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="May 2, 2016, 10:02 a.m."
+                    productionDate="May 5, 2016, 9:58 p.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
         <IPOfficeCode>EP</IPOfficeCode>
         <ApplicationNumberText>2015123456</ApplicationNumberText>
-        <FilingDate>May 2, 2016</FilingDate>
+        <FilingDate>May 5, 2016</FilingDate>
     </ApplicationIdentification>
     <ApplicantFileReference>123</ApplicantFileReference>
     <EarliestPriorityApplicationIdentification>
         <IPOfficeCode>US</IPOfficeCode>
         <ApplicationNumberText>998877</ApplicationNumberText>
-        <FilingDate>May 2, 2016</FilingDate>
+        <FilingDate>May 5, 2016</FilingDate>
     </EarliestPriorityApplicationIdentification>
     <ApplicantName languageCode="EN">
         John Smith
@@ -55,6 +55,24 @@
                     <INSDSeqid>-</INSDSeqid>
                 </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..18</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
                     
                 </INSDSeq_feature-table>
                 <INSDSeq_sequence>catcatcatcatcatcat</INSDSeq_sequence>

@@ -19,11 +19,6 @@ from selenium import webdriver
 logger = logging.getLogger(__name__)
 logger.info('TEST start.')
 
-TEST_DATA_DIR_PATH = os.path.join(util.PROJECT_DIRECTORY, 
-                                       'sequencelistings', 'testData')
-
-
-
 def getName():
     return inspect.stack()[1][3]
  
@@ -54,6 +49,7 @@ class SequenceListingFixture(object):
             inventorNameLanguageCode = 'FR',
             inventorNameLatin = 'Mary Dupont',        
             )
+        
         self.create_title_instance(sl)
          
         return sl 
@@ -65,14 +61,19 @@ class SequenceListingFixture(object):
                     inventionTitleLanguageCode = 'EN')
       
     def create_sequence_instance(self, sl):
-        return Sequence.objects.create(
+        seq = Sequence.objects.create(
                     sequenceListing = sl,
                     moltype = 'DNA',
                     residues = 'catcatcatcatcatcat')
-      
-    def create_feature_instance(self, s):
+        f = self.create_feature_instance(seq, 'source')
+        self.create_organism_qualifier_instance(f)
+        self.create_mol_type_qualifier_instance(f)
+        
+        return seq 
+
+    def create_feature_instance(self, s, fk):
         return Feature.objects.create(sequence=s, 
-                                      featureKey='source', 
+                                      featureKey=fk, 
                                       location='1..%s' % s.length)
       
     def create_organism_qualifier_instance(self, sourceFeature):
@@ -85,21 +86,23 @@ class SequenceListingFixture(object):
                                       qualifierName='mol_type', 
                                       qualifierValue='genomic DNA')
  
-class NoSequenceListingViewTest(TestCase):
+class IndexViewNoSequenceListingTest(TestCase):
     def test_index_view_with_no_sequencelistings(self):
         """
-        If no sequence listings exist, an appropriate message should be displayed.
+        If no sequence listings exist, an appropriate message should be displayed 
+        on index page.
         """
         print 'Running %s ...' % getName()
         response = self.client.get(reverse('sequencelistings:index'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "No sequence listings are available.")
+        self.assertContains(response, "sequencelistings/output/resources/style.css")
         self.assertQuerysetEqual(response.context['sequencelistings'], [])
              
-class SequenceListingViewTests(TestCase):
+class ViewsTests(TestCase):
     @classmethod
     def setUpClass(cls):
-        super(SequenceListingViewTests, cls).setUpClass()
+        super(ViewsTests, cls).setUpClass()
         cls.sequenceListingFixture = SequenceListingFixture()
            
     def setUp(self):
@@ -111,7 +114,7 @@ class SequenceListingViewTests(TestCase):
                      
     def test_index_view_with_one_sequencelisting(self):
         """
-        The sequence listings index, displays one sequence listing.
+        The index page displays one sequence listing.
         """
         print 'Running %s ...' % getName()
         response = self.client.get(reverse('sequencelistings:index'))
@@ -136,7 +139,8 @@ class SequenceListingViewTests(TestCase):
 #         now a sequence is created
         s1 = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
         self.assertTrue(response.context['sequencelisting'].sequence_set.all())
-        self.sequenceListingFixture.create_feature_instance(s1)
+#         now a feature is created
+#         self.sequenceListingFixture.create_feature_instance(s1, 'source')
         response = self.client.get(reverse('sequencelistings:detail', args=[self.sequenceListing.pk]))
 #         print response
         self.assertContains(response, "location")
@@ -202,45 +206,46 @@ class SequenceListingViewTests(TestCase):
             
         s1 = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
              
-        self.assertEqual(None, s1.getOrganism())
+#         self.assertEqual(None, s1.getOrganism())
              
-        f1 = self.sequenceListingFixture.create_feature_instance(s1)
+#         f1 = self.sequenceListingFixture.create_feature_instance(s1, 'source')
              
-        self.assertEqual(None, s1.getOrganism())
+#         self.assertEqual(None, s1.getOrganism())
              
-        self.sequenceListingFixture.create_organism_qualifier_instance(f1)
+#         TODO: activate this test once found out how to get feature from a seq instance
+#         self.sequenceListingFixture.create_organism_qualifier_instance(f1)
              
-        self.assertEqual('Homo sapiens', s1.getOrganism())
-             
-        s2 = Sequence.objects.create(
-                sequenceListing = self.sequenceListing,
-                moltype = 'AA',
-                residues = 'MRTAVTAD')
-        self.assertEqual(None, s2.getOrganism())
-             
-        f2 = Feature.objects.create(sequence=s2, 
-                                  featureKey='SOURCE', 
-                                  location='1..%s' % s2.length)
-        self.assertEqual(None, s2.getOrganism())
-     
-        Qualifier.objects.create(feature=f2, 
-                                  qualifierName='ORGANISM', 
-                                  qualifierValue='Mus musculus')
-        self.assertEqual('Mus musculus', s2.getOrganism())
-     
-               
-        s3 = Sequence.objects.create(
-            sequenceListing = self.sequenceListing,
-            moltype = 'RNA',
-            residues = 'caucaucaucaucaucau')
-        f3 = Feature.objects.create(sequence=s3, 
-                                  featureKey='source', 
-                                  location='1..%s' % s3.length)
-             
-        Qualifier.objects.create(feature=f3, 
-                                  qualifierName='organism', 
-                                  qualifierValue='Drosophila')
-        self.assertEqual('Drosophila', s3.getOrganism())
+#         self.assertEqual('Homo sapiens', s1.getOrganism())
+#              
+#         s2 = Sequence.objects.create(
+#                 sequenceListing = self.sequenceListing,
+#                 moltype = 'AA',
+#                 residues = 'MRTAVTAD')
+#         self.assertEqual(None, s2.getOrganism())
+#              
+#         f2 = Feature.objects.create(sequence=s2, 
+#                                   featureKey='SOURCE', 
+#                                   location='1..%s' % s2.length)
+#         self.assertEqual(None, s2.getOrganism())
+#      
+#         Qualifier.objects.create(feature=f2, 
+#                                   qualifierName='ORGANISM', 
+#                                   qualifierValue='Mus musculus')
+#         self.assertEqual('Mus musculus', s2.getOrganism())
+#      
+#                
+#         s3 = Sequence.objects.create(
+#             sequenceListing = self.sequenceListing,
+#             moltype = 'RNA',
+#             residues = 'caucaucaucaucaucau')
+#         f3 = Feature.objects.create(sequence=s3, 
+#                                   featureKey='source', 
+#                                   location='1..%s' % s3.length)
+#              
+#         Qualifier.objects.create(feature=f3, 
+#                                   qualifierName='organism', 
+#                                   qualifierValue='Drosophila')
+#         self.assertEqual('Drosophila', s3.getOrganism())
       
     def test_createFeature(self):
         """
@@ -250,11 +255,11 @@ class SequenceListingViewTests(TestCase):
             
         s1 = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
               
-        f1 = Feature.objects.create(sequence=s1, 
-                                    featureKey='source', 
-                                    location='1..4')
-        self.assertEqual('source', f1.featureKey)
-        self.assertEqual('1..4', f1.location)
+#         f1 = Feature.objects.create(sequence=s1, 
+#                                     featureKey='source', 
+#                                     location='1..4')
+#         self.assertEqual('source', f1.featureKey)
+#         self.assertEqual('1..4', f1.location)
              
         f = s1.feature_set.all()
         self.assertEqual(1, len(f), 'Expected 1 feature.')
@@ -263,7 +268,7 @@ class SequenceListingViewTests(TestCase):
         response = self.client.get(reverse('sequencelistings:detail', args=[1]))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "source")
-        self.assertContains(response, "1..4")
+        self.assertContains(response, "1..18")
           
     def test_createQualifier(self):
         """
@@ -272,7 +277,7 @@ class SequenceListingViewTests(TestCase):
         print 'Running %s ...' % getName()
             
         s1 = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
-        f1 = self.sequenceListingFixture.create_feature_instance(s1)
+        f1 = self.sequenceListingFixture.create_feature_instance(s1, 'source')
       
         q1 = Qualifier.objects.create(feature=f1, 
                                       qualifierName='organism', 
@@ -315,8 +320,8 @@ class ViewsTest(TestCase):
     def test_generateXml(self):
         print 'Running %s ...' % getName()
                                    
-        f1 = os.path.join(TEST_DATA_DIR_PATH, 'file1.xml')
-        f2 = os.path.join(TEST_DATA_DIR_PATH, 'test1.xml')
+        f1 = os.path.join(util.TEST_DATA_DIR_PATH, 'file1.xml')
+        f2 = os.path.join(util.TEST_DATA_DIR_PATH, 'test1.xml')
            
 #         self.assertTrue(util.validateDocumentWithSchema1(f, s))
         self.assertFalse(util.validateDocumentWithSchema(f1, util.XML_SCHEMA_PATH))
@@ -332,7 +337,7 @@ class ViewsTest(TestCase):
 #         print 'Running %s ...' % getName()
 #          
 #         s1 = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
-#         f1 = self.sequenceListingFixture.create_feature_instance(s1)
+#         f1 = self.sequenceListingFixture.create_feature_instance(s1, 'source')
 #      
 #         q1 = self.sequenceListingFixture.create_organism_qualifier_instance(f1)
 #         q2 = self.sequenceListingFixture.create_mol_type_qualifier_instance(f1)
@@ -372,8 +377,8 @@ class XmlTest(TestCase):
     def test_validateXmlDocument(self):
         print 'Running %s ...' % getName()
                                     
-        f1 = os.path.join(TEST_DATA_DIR_PATH, 'file1.xml')
-        f2 = os.path.join(TEST_DATA_DIR_PATH, 'test1.xml')
+        f1 = os.path.join(util.TEST_DATA_DIR_PATH, 'file1.xml')
+        f2 = os.path.join(util.TEST_DATA_DIR_PATH, 'test1.xml')
             
 #         self.assertTrue(util.validateDocumentWithSchema1(f, s))
         self.assertFalse(util.validateDocumentWithSchema(f1, util.XML_SCHEMA_PATH))
@@ -389,7 +394,7 @@ class XmlTest(TestCase):
 #         print 'Running %s ...' % getName()
 #          
 #         s1 = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
-#         f1 = self.sequenceListingFixture.create_feature_instance(s1)
+#         f1 = self.sequenceListingFixture.create_feature_instance(s1, 'source')
 #      
 #         q1 = self.sequenceListingFixture.create_organism_qualifier_instance(f1)
 #         q2 = self.sequenceListingFixture.create_mol_type_qualifier_instance(f1)
@@ -447,21 +452,20 @@ class UtilTests(TestCase):
         print 'Running %s ...' % getName()
                   
 #         valid seql contains the first 2 seqs from f2 - goes via if branch
-        f3 = os.path.join(TEST_DATA_DIR_PATH, 'test3.xml')
+        f3 = os.path.join(util.TEST_DATA_DIR_PATH, 'test3.xml')
         self.assertTrue(util.validateDocumentWithSchema(f3, util.XML_SCHEMA_PATH))
  
 #         ApplicantNamex instead of ApplicantName - goes to except branch
-        f4 = os.path.join(TEST_DATA_DIR_PATH, 'test4.xml')        
+        f4 = os.path.join(util.TEST_DATA_DIR_PATH, 'test4.xml')        
         self.assertFalse(util.validateDocumentWithSchema(f4, util.XML_SCHEMA_PATH))
  
 #         SOURCxE instead of SOURCE - goes to else branch 
-        f5 = os.path.join(TEST_DATA_DIR_PATH, 'test5.xml')        
+        f5 = os.path.join(util.TEST_DATA_DIR_PATH, 'test5.xml')        
         self.assertFalse(util.validateDocumentWithSchema(f5, util.XML_SCHEMA_PATH))
- 
- 
+
 #         supplementary test with seql with more sequences
 #         valid seql 20 sequences
-        f2 = os.path.join(TEST_DATA_DIR_PATH, 'test2.xml')
+        f2 = os.path.join(util.TEST_DATA_DIR_PATH, 'test2.xml')
         self.assertTrue(util.validateDocumentWithSchema(f2, util.XML_SCHEMA_PATH))
      
 class FormsTests(TestCase):
@@ -484,7 +488,7 @@ class FormsTests(TestCase):
         print 'Running %s ...' % getName()
            
         s1 = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
-        f1 = self.sequenceListingFixture.create_feature_instance(s1)
+        f1 = self.sequenceListingFixture.create_feature_instance(s1, 'source')
               
         qf1 = QualifierForm(feature=f1, 
                             data={'qualifierName': 'note',
@@ -499,24 +503,24 @@ class FormsTests(TestCase):
             
         self.assertTrue(qf2.is_valid())
    
-class HomeTestCase(StaticLiveServerTestCase):
+class SeleniumTests(StaticLiveServerTestCase):
        
     def setUp(self):
         self.selenium = webdriver.Firefox()
         self.selenium.maximize_window()
         self._screenshot_number=1
-        super(HomeTestCase, self).setUp() 
-           
+        self.sequenceListingFixture = SequenceListingFixture()
+        super(SeleniumTests, self).setUp() 
+        
     def tearDown(self):
         self.selenium.quit()
-        super(HomeTestCase, self).tearDown()
+        super(SeleniumTests, self).tearDown()
            
     def get(self, relative_url):
         self.selenium.get('%s%s' % (self.live_server_url, relative_url))
         self.screenshot()
     
     def screenshot(self):
-        print 'Running %s ...' % getName() 
         if hasattr(self, 'sauce_user_name'):
             # Sauce Labs is taking screenshots for us
             return
@@ -524,15 +528,36 @@ class HomeTestCase(StaticLiveServerTestCase):
         path = os.path.join(util.SCREENSHOT_DIR, name)
         self.selenium.get_screenshot_as_file(path)
         self._screenshot_number += 1   
-           
-    def test_check_pages(self):
+
+    def test_index_page_no_seqls(self):
         print 'Running %s ...' % self._testMethodName
+         
         self.get('/sequencelistings/')
         self.assertIn('st26proto - Index', self.selenium.title)
-            
+         
+        all_pars = self.selenium.find_elements_by_tag_name('p')
+        no_seqls_par = None  
+        for p in all_pars:
+            if 'available' in p.text:
+                no_seqls_par = p 
+        self.assertEqual('No sequence listings are available.', no_seqls_par.text)
+    
+#     def test_index_page_with_seql(self):
+#         print 'Running %s ...' % self._testMethodName
+#          
+# #         sl = self.sequenceListingFixture.create_sequencelisting_instance()
+#         self.get('/sequencelistings/')
+#          
+#         td = self.selenium.find_element_by_tag_name('td')
+#         self.assertEqual('test_xmlsql', td.text)
+# #         sl.delete()
+    
+    def test_about_page(self):
+        print 'Running %s ...' % self._testMethodName
+         
         self.get('/sequencelistings/about')
         self.assertIn('st26proto - About', self.selenium.title)
-           
+                      
     def test_register(self):
         print 'Running %s ...' % self._testMethodName
            
