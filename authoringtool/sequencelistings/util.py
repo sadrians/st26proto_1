@@ -142,9 +142,9 @@ def validateDocumentWithSchema(aFilePath, aSchemaPath):
         if xmlschema.validate(doc):
             result = True
         else:
-            logger.error(xmlschema.error_log)
+            logger.error('\n%s' % xmlschema.error_log)
     except etree.XMLSyntaxError as syntErr:
-        logger.error('%s\n%s' % (aFilePath, syntErr))
+        logger.error('\n%s\n%s' % (aFilePath, syntErr))
     
     return result 
 
@@ -158,9 +158,10 @@ def validateDocumentWithDtd(afile, adtd):
                 if dtd.validate(fi):
                     result = True
                 else:
-                    print(dtd.error_log.filter_from_errors()[0])
+                    logger.error('\n%s\n%s' % (afile, 
+                                             dtd.error_log.filter_from_errors()[0]))
             except etree.XMLSyntaxError as e:
-                print e 
+                logger.error('\n%s\n%s' % (afile, e)) 
     return result
 
 # helper used to generate XML code for the schema 

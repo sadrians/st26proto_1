@@ -2,7 +2,7 @@
 <!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "ST26SequenceListing_V1_0.dtd">
 <?xml-stylesheet type="text/xsl" href="st26.xsl"?>
 <ST26SequenceListing dtdVersion="1" 
-                    fileName="test6"
+                    fileName="test3"
                     softwareName="prototype" 
                     softwareVersion="0.1"
                     productionDate="April 28, 2016">
@@ -18,9 +18,9 @@
         <ApplicationNumberText>h</ApplicationNumberText>
         <FilingDate>April 27, 2015</FilingDate>
     </EarliestPriorityApplicationIdentification>
-    <ApplicantName languageCode="j">
+    <ApplicantsName languageCode="j">
         i
-    </ApplicantName>
+    </ApplicantsName>
     <ApplicantNameLatin>
         k
     </ApplicantNameLatin>
