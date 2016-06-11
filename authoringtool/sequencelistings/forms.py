@@ -70,12 +70,13 @@ class FeatureForm(ModelForm):
         model = Feature
         fields = ['featureKey', 'location']   
 
+
 class EditFeatureForm(ModelForm):     
     class Meta:
         model = Feature
         fields = ['featureKey', 'location']   
 
-        
+
 class MultipleFeatureForm(Form):
     featureChoice = []
     qualifierChoice = []
@@ -116,6 +117,7 @@ class QualifierForm(ModelForm):
                 'qualifierName', 
                   'qualifierValue']
 
+
 class UserForm(ModelForm):
     password = CharField(widget=PasswordInput())
 
@@ -137,63 +139,3 @@ class FormulaForm(Form):
 #     x5 = CharField(label='occurence5', max_length=500, help_text='Ex: 4 or 6..20')
 
 
-
-
-
-# class QualifierForm(ModelForm):
-# #     qualifierNameChoice = ChoiceField(label='Qualifier name', choices=qualnamelist)
-#     
-#     class Meta:
-#         model = Qualifier
-#         fields = ['qualifierName', 
-#                   'qualifierValue']
-        
-    
-# from django.forms import ModelForm 
-# from django.forms.models import inlineformset_factory 
-# 
-# from models import SequenceListing, Sequence, Feature, Qualifier 
-# 
-# class SequenceListingForm(ModelForm):
-#     class Meta:
-#         model = SequenceListing 
-#         
-# SequenceFormSet = inlineformset_factory(SequenceListing, Sequence)
-# FeatureFormSet = inlineformset_factory(SequenceListing, Feature)
-# QualifierFormSet = inlineformset_factory(SequenceListing, Qualifier)
-
-
-# class FeatureForm(ModelForm):
-#     c = []
-#     def __init__(self, *args, **kwargs):
-#         moltype = kwargs.pop('mt')
-# #         print 'featureform moltype:', moltype
-# #         print 'featureform moltype:', kwargs.pop('mt')
-#         
-#         super(FeatureForm, self).__init__(*args, **kwargs)
-#         
-# #         pass
-#         if moltype == 'PRT':
-#             c = util.FEATURE_KEYS_PRT 
-#         else:
-#             c = util.FEATURE_KEYS_DNA
-# #     fk = ChoiceField(choices=util.FEATURE_KEYS_DNA)
-#         self.fields['fk'] = ChoiceField(choices=c)
-# 
-#     
-#     class Meta:
-#         model = Feature
-#         fields = [
-# #                   'sequence', 
-# #                 'featureKey', 
-#                   'location']
-
-# class FeatureForm(ModelForm):
-#     fk = ChoiceField(choices=util.FEATURE_KEYS_DNA)
-#     
-#     class Meta:
-#         model = Feature
-#         fields = [
-# #                   'sequence', 
-#                   'featureKey', 
-#                   'location']

@@ -98,6 +98,7 @@
 <!-- END GENERAL INFORMATION accordion ========================== -->
 
     <br>
+    <!-- if the user is logged in show link for adding title  -->
     {% if user.is_authenticated %}
         {% if user.is_staff or sequencelisting.fileName != 'Invention_SEQL' %}
             <p><a href="{% url 'sequencelistings:add_title' sequencelisting.pk %}">Add new title</a></p>
@@ -109,7 +110,7 @@
     
     <h1>SEQUENCE DATA</h1>
     <p>
-    
+    <!-- if the user is logged in show link for editing sequence data  -->
     {% if user.is_authenticated %}
         {% if user.is_staff or sequencelisting.fileName != 'Invention_SEQL' %}
             <a href="{% url 'sequencelistings:edit_sequence_data' sequencelisting.pk %}">Edit</a>
@@ -193,6 +194,7 @@
         {% endfor %}
     </table>
     <br>
+    <!-- if the user is logged in show link for adding sequences  -->
     {% if user.is_authenticated %}
         {% if user.is_staff or sequencelisting.fileName != 'Invention_SEQL' %}
             <p><a href="{% url 'sequencelistings:add_seq' sequencelisting.pk %}">Add new sequence</a></p>

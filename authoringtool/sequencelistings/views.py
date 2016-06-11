@@ -333,11 +333,3 @@ def restricted(request):
 def about(request):
     return render_to_response('sequencelistings/about.html', {}, {})
 
-
-# {% if user.is_authenticated and sequencelisting.fileName != 'Invention_SEQL' %}
-#         <p><a href="{% url 'sequencelistings:add_title' sequencelisting.pk %}">Add new title</a></p>
-#     {% endif %}
-#     
-#     {% if user.is_authenticated and sequencelisting.fileName == 'Invention_SEQL' and user.username == 'ad' %}
-#         <p><a href="{% url 'sequencelistings:add_title' sequencelisting.pk %}">Add new title</a></p>
-#     {% endif %}
