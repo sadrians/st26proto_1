@@ -19,7 +19,7 @@ def clearData():
     Title.objects.all().delete()
     SequenceListing.objects.all().delete()
     print 'Data cleared.'
- 
+
 def populate():
     clearData()
      
@@ -135,7 +135,28 @@ def add_qualifier(feature, qualifierName, qualifierValue):
      
     print 'created', q 
     return q 
- 
+
+def copySequenceListing(aSequenceListing):
+    '''
+    Copy the SequenceListing instance given as argument and the corresponding 
+    title(s). 
+    '''
+    titles = Title.objects.filter(sequenceListing=aSequenceListing)
+    
+    aSequenceListing.pk = None
+    fileName = aSequenceListing.fileName 
+    aSequenceListing.fileName = '%s_copy' % fileName
+    aSequenceListing.sequenceTotalQuantity = 0
+    
+    aSequenceListing.save()
+
+    sls = SequenceListing.objects.all()
+    newPk = max([sl.pk for sl in sls])
+    newSl = SequenceListing.objects.get(pk=newPk)
+        
+    for t in titles:
+        add_title(newSl, t.inventionTitle, t.inventionTitleLanguageCode)  
+
 def mytest():
     sls = SequenceListing.objects.all()
      

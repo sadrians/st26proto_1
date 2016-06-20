@@ -4,8 +4,8 @@ from django.core.exceptions import ObjectDoesNotExist, ValidationError
 from django.core.validators import RegexValidator 
 import re 
 
-regex_nuc = '^[a,c,g,t,u,n]{10,}$' #TODO: add the full set of valid chars
-regex_prt = '^[A,C,D,E,F,G,H,I,K,L,M,N,O,P,Q,R,S,T,U,V,W,Y,X]{4,}$'
+regex_nuc = '^[a,c,g,t,u,n,v,k,r,s,b,h,d]{10,}$' #TODO: add the full set of valid chars
+regex_prt = '^[A,C,D,E,F,G,H,I,K,L,M,N,O,P,Q,R,S,T,U,V,W,Y,X,J]{4,}$'
 pattern_nuc = re.compile(regex_nuc)
 pattern_prt = re.compile(regex_prt)
         

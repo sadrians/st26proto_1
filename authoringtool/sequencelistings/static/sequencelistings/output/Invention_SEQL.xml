@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "ST26SequenceListing_V1_0.dtd">
-<?xml-stylesheet type="text/xsl" href="st26.xsl"?>
+<?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>
 <ST26SequenceListing dtdVersion="1" 
                     fileName="Invention_SEQL"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="May 1, 2016">
+                    productionDate="June 20, 2016">
 <!-- <ST26SequenceListing dtdVersion="1" 
                     fileName="Invention_SEQL"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="May 1, 2016, 9:40 p.m."
+                    productionDate="June 21, 2016, 12:47 a.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>

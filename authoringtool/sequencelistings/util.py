@@ -20,8 +20,8 @@ OUTPUT_DIR = os.path.join(PROJECT_DIRECTORY, 'sequencelistings',
 
 XML_SCHEMA_PATH = os.path.join(OUTPUT_DIR, 'resources', 'st26.xsd')
 
-# XML_DTD_PATH = os.path.join(OUTPUT_DIR, 'resources', 'ST26SequenceListing_V1_0.dtd')
-XML_DTD_PATH = os.path.join(OUTPUT_DIR, 'resources', 'cws_4_7-en-annex2-AN-II_amended.dtd')
+XML_DTD_PATH = os.path.join(OUTPUT_DIR, 'resources', 'ST26SequenceListing_V1_0.dtd')
+# XML_DTD_PATH = os.path.join(OUTPUT_DIR, 'resources', 'cws_4_7-en-annex2-AN-II_amended.dtd')
 MOLTYPE_DNA = 'DNA'
 MOLTYPE_RNA = 'RNA'
 MOLTYPE_AA = 'AA'

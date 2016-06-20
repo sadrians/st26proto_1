@@ -5,12 +5,12 @@
                     fileName="file2"
                     softwareName="ST26 authoring tool prototype" 
                     softwareVersion="0.1"
-                    productionDate="May 2, 2016">
+                    productionDate="June 20, 2016">
 <!-- <ST26SequenceListing dtdVersion="1.0" 
                     fileName="file2"
                     softwareName="ST26 authoring tool prototype" 
                     softwareVersion="0.1"
-                    productionDate="May 2, 2016, 10:09 a.m."
+                    productionDate="June 21, 2016, 1 a.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
@@ -111,7 +111,7 @@
                     
                         <INSDFeature>
                             <INSDFeature_key>C_region</INSDFeature_key>
-                            <INSDFeature_location>mytest</INSDFeature_location>
+                            <INSDFeature_location>2..10</INSDFeature_location>
                             <INSDFeature_quals>
                                 
                             </INSDFeature_quals>

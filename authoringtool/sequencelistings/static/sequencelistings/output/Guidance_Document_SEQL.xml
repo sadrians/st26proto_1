@@ -1,0 +1,2950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "ST26SequenceListing_V1_0.dtd">
+<?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>
+<ST26SequenceListing dtdVersion="1" 
+                    fileName="Guidance_Document_SEQL"
+                    softwareName="prototype" 
+                    softwareVersion="0.1"
+                    productionDate="June 20, 2016">
+<!-- <ST26SequenceListing dtdVersion="1" 
+                    fileName="Guidance_Document_SEQL"
+                    softwareName="prototype" 
+                    softwareVersion="0.1"
+                    productionDate="June 21, 2016, 12:47 a.m."
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:noNamespaceSchemaLocation="st26.xsd"> -->
+    <ApplicationIdentification>
+        <IPOfficeCode>US</IPOfficeCode>
+        <ApplicationNumberText>14/999,999</ApplicationNumberText>
+        <FilingDate>Jan. 4, 2015</FilingDate>
+    </ApplicationIdentification>
+    <ApplicantFileReference>AB123</ApplicantFileReference>
+    <EarliestPriorityApplicationIdentification>
+        <IPOfficeCode>IB</IPOfficeCode>
+        <ApplicationNumberText>PCT/IB2014/099999</ApplicationNumberText>
+        <FilingDate>July 9, 2014</FilingDate>
+    </EarliestPriorityApplicationIdentification>
+    <ApplicantName languageCode="EN">
+        GENOS Co., Inc.
+    </ApplicantName>
+    <ApplicantNameLatin>
+        GENOS Co., Inc.
+    </ApplicantNameLatin>
+    <InventorName languageCode="EN">
+        Keiko Nakamura
+    </InventorName>
+    <InventorNameLatin>
+        Keiko Nakamura
+    </InventorNameLatin>
+    
+        <InventionTitle languageCode="EN">
+            Mus musculus abcd-1 gene for efg protein
+        </InventionTitle>
+    
+        <InventionTitle languageCode="JA">
+            efgタンパク質のためのマウスabcd-1遺伝子
+        </InventionTitle>
+    
+        <InventionTitle languageCode="FR">
+            Gène abcd-1 de Mus musculus pour protéine efg
+        </InventionTitle>
+    
+    
+    <SequenceTotalQuantity>
+        71
+    </SequenceTotalQuantity>
+    
+        <SequenceData sequenceIDNumber="1">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>1</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>D-Alanine</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>2</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>D-Glutamic acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Nle</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>D-Methionine</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>D-Norleucine</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>REGION</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>circular peptide</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>AEKXGMX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="2">
+            <INSDSeq>
+                <INSDSeq_length>6</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold: give text for modification of tryptophan</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>1</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold: give text for modification of the N-terminus</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold: give text for modification of the C-terminus</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>VAFXGK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="3">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold: text for modification at the carboxy terminus of tryptophan using an alkyl bridge to conjugate dipeptide GK</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>1</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold: text for modification of the N-terminus</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>VAFW</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="4">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGGX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="5">
+            <INSDSeq>
+                <INSDSeq_length>12</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..12</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>misc_feature</INSDFeature_key>
+                            <INSDFeature_location>12</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold: attached to the C3 spacer which is joined to SEQ.ID.NO. 6</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>atgcatgcatgc</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="6">
+            <INSDSeq>
+                <INSDSeq_length>12</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..12</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>misc_feature</INSDFeature_key>
+                            <INSDFeature_location>1</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold: attached to the C3 spacer which is joined to SEQ.ID.NO. 5</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>cggcatgcatgc</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="7">
+            <INSDSeq>
+                <INSDSeq_length>25</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..25</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Mus musculus</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>atgcatgcatgcvcggcatgcatgc</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="8">
+            <INSDSeq>
+                <INSDSeq_length>18</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..18</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>modified_base</INSDFeature_key>
+                            <INSDFeature_location>11</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mod_base</INSDQualifier_name>
+                                    <INSDQualifier_value>OTHER</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>abasic site</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>gagcattgacntaaggct</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="9">
+            <INSDSeq>
+                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>aatgccggag</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="10">
+            <INSDSeq>
+                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>aatgccggak</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="11">
+            <INSDSeq>
+                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>aatgccggac</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="12">
+            <INSDSeq>
+                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>aatgccggat</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="13">
+            <INSDSeq>
+                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>aatgttggac</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="14">
+            <INSDSeq>
+                <INSDSeq_length>15</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..15</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>nngkngkngkagvcr</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="15">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>XYEKGJL</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="16">
+            <INSDSeq>
+                <INSDSeq_length>30</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..30</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>modified_base</INSDFeature_key>
+                            <INSDFeature_location>1</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mod_base</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>cacacaaaaaaaaaaaaaaaaaaaaaaaaa</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="17">
+            <INSDSeq>
+                <INSDSeq_length>28</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..28</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>modified_base</INSDFeature_key>
+                            <INSDFeature_location>1</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mod_base</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>cacataggcatctcctagtgcaggaaga</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="18">
+            <INSDSeq>
+                <INSDSeq_length>85</INSDSeq_length>
+                <INSDSeq_moltype>RNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..85</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>tRNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>ggagacatcgcttgagcattaagcgagaagccgattcttcgccgaagaatgacagccgcctgccacttcgaaggctgtctccgca</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="19">
+            <INSDSeq>
+                <INSDSeq_length>44</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..44</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>gatcattttttatattttttatattttttatattttttatgtac</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="20">
+            <INSDSeq>
+                <INSDSeq_length>44</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..44</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>attcatacgcactatacgcactatacgcactatacgcactgtac</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="21">
+            <INSDSeq>
+                <INSDSeq_length>44</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..44</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>gatcatacgcactatacgcactatacgcactatacgcactgtac</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="22">
+            <INSDSeq>
+                <INSDSeq_length>12</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..12</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>gatcaaaagtac</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="23">
+            <INSDSeq>
+                <INSDSeq_length>74</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..74</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>XXXXXXXXDXXXXXXXXXXFXXXXXXXXXXXXXXXXXXXXXXXXXXXXAXXXXXXXXXXXXXXXXXXXGXXXXX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="24">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>RISL</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="25">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>LLKK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="26">
+            <INSDSeq>
+                <INSDSeq_length>6</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>IPACTA</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="27">
+            <INSDSeq>
+                <INSDSeq_length>6</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>FRAGGK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="28">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>HQYFA</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="29">
+            <INSDSeq>
+                <INSDSeq_length>8</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>ATFGKKKA</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="30">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Lys is bound to Gly at position 5 of AASHG (SEQ.ID.NO. 31)</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>DGSAKKK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="31">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Gly is bound to Lys at position 5 of DGSAKKK (SEQ.ID.NO. 30)</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>AASHG</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="32">
+            <INSDSeq>
+                <INSDSeq_length>13</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..13</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>atcgcaattggcc</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="33">
+            <INSDSeq>
+                <INSDSeq_length>13</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..13</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>ggccaattgcgat</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="34">
+            <INSDSeq>
+                <INSDSeq_length>58</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..58</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>tagttcattgactaaggctccccattgactaaggcgactagcattgactaaggcaagc</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="35">
+            <INSDSeq>
+                <INSDSeq_length>16</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..16</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>modified_base</INSDFeature_key>
+                            <INSDFeature_location>11</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mod_base</INSDQualifier_name>
+                                    <INSDQualifier_value>OTHER</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold: N-(2-aminoethyl) glycine 5-nitroindole or N-(2-aminoethyl) glycine 3-nitroindole</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>cgcctnagtcaatggg</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="36">
+            <INSDSeq>
+                <INSDSeq_length>25</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..25</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>atcgggatcgcatattcgattggcc</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="37">
+            <INSDSeq>
+                <INSDSeq_length>25</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..25</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>ggccaatatggcttgcgatcccgat</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="38">
+            <INSDSeq>
+                <INSDSeq_length>20</INSDSeq_length>
+                <INSDSeq_moltype>RNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..20</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic RNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>modified_base</INSDFeature_key>
+                            <INSDFeature_location>1</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mod_base</INSDQualifier_name>
+                                    <INSDQualifier_value>OTHER</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>thymine</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>misc_feature</INSDFeature_key>
+                            <INSDFeature_location>1</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold:</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>tcctgtccggagatgttgat</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="39">
+            <INSDSeq>
+                <INSDSeq_length>8</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any amino acid as long as it is the same in position 8</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>any amino acid as long as it is the same in position 4</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGXGGGX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="40">
+            <INSDSeq>
+                <INSDSeq_length>400</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..400</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>9..400</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Up to 98 copies of GGGX can be deleted.</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="41">
+            <INSDSeq>
+                <INSDSeq_length>400</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..400</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>9..400</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Up to 98 copies of GGGX can be deleted.</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGXGGGX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="42">
+            <INSDSeq>
+                <INSDSeq_length>8</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGXGGGX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="43">
+            <INSDSeq>
+                <INSDSeq_length>12</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..12</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGXGGGXGGGX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="44">
+            <INSDSeq>
+                <INSDSeq_length>306</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..306</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CDS</INSDFeature_key>
+                            <INSDFeature_location>19..??</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>translation</INSDQualifier_name>
+                                    <INSDQualifier_value>MAPNTQTASPRALADSLMQLARQVSRLESGQ</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>protein_id</INSDQualifier_name>
+                                    <INSDQualifier_value>45</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CDS</INSDFeature_key>
+                            <INSDFeature_location>?..?</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>translation</INSDQualifier_name>
+                                    <INSDQualifier_value>MTMITDSLAVVLQRRDWENPGVTQLNRLAAHWCQK</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>protein_id</INSDQualifier_name>
+                                    <INSDQualifier_value>46</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CDS</INSDFeature_key>
+                            <INSDFeature_location>?..?</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>translation</INSDQualifier_name>
+                                    <INSDQualifier_value>MLRRQVNEVA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>protein_id</INSDQualifier_name>
+                                    <INSDQualifier_value>47</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>caattcagggtggtgaatatggcgcccaatacgcaaaccgcctctccccgcgcgttggccgattcattaatggaaagcgggcagtgaatgaccatgattacggattcactggccgtcgttttacaacgtcgtgactgggaaaaccctggcgttacccaacttaatcgccttgcagcacattggtgtcaaaaataataataaccggatgtactatttatccctgatgctgcgtcgtcaggtgaatgaagtcgcttaagcaatcaatgtcggatgcggcgcgacgcttatccgaccaacatatcataa</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="45">
+            <INSDSeq>
+                <INSDSeq_length>31</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..31</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MAPNTQTASPRALADSLMQLARQVSRLESGQ</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="46">
+            <INSDSeq>
+                <INSDSeq_length>35</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..35</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MTMITDSLAVVLQRRDWENPGVTQLNRLAAHWCQK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="47">
+            <INSDSeq>
+                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MLRRQVNEVA</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="48">
+            <INSDSeq>
+                <INSDSeq_length>10</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..10</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SITE</INSDFeature_key>
+                            <INSDFeature_location>2</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Homoserine</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>3..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>A or G</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>AXXXXXYLGS</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="49">
+            <INSDSeq>
+                <INSDSeq_length>17</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..17</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CARBOHYD</INSDFeature_key>
+                            <INSDFeature_location>9</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Asn N-linked to asialyloligosaccharide.</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>DISULFID</INSDFeature_key>
+                            <INSDFeature_location>join(4,15)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>LEYCLKRWNETISHCAW</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="50">
+            <INSDSeq>
+                <INSDSeq_length>106</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..106</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>LLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXKYMR</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="51">
+            <INSDSeq>
+                <INSDSeq_length>53</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..53</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>30</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be deleted.</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>KXXKXXXXXXXXXXXXXXXXXXXXKXXXKXXXXXXXXXXXXXXXXXXXXKXXK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="52">
+            <INSDSeq>
+                <INSDSeq_length>52</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..52</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>29^30</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>X can be inserted.</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>KXXKXXXXXXXXXXXXXXXXXXXXKXXXKXXXXXXXXXXXXXXXXXXXKXXK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="53">
+            <INSDSeq>
+                <INSDSeq_length>63</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..63</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>?..?</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Up to 10 X residues may be deleted.</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>?..?</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Up to 10 X residues may be deleted.</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>KXXKXXXXXXXXXXXXXXXXXXXXXXXXXKXXXKXXXXXXXXXXXXXXXXXXXXXXXXXKXXK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="54">
+            <INSDSeq>
+                <INSDSeq_length>48</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..48</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>KXXKXXXXXXXXXXXXXXXKXXXKXXXXXXXXXXXXXXXXXXXXKXXK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="55">
+            <INSDSeq>
+                <INSDSeq_length>6</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGAGXX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="56">
+            <INSDSeq>
+                <INSDSeq_length>45</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..45</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>CDS</INSDFeature_key>
+                            <INSDFeature_location>1..45</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>translation</INSDQualifier_name>
+                                    <INSDQualifier_value>MTGNKPETDVYEIL</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>protein_id</INSDQualifier_name>
+                                    <INSDQualifier_value>57</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>atgaccggaaataaacctgaaaccgatgtttacgaaattttatga</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="57">
+            <INSDSeq>
+                <INSDSeq_length>14</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..14</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MTGNKPETDVYEIL</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="58">
+            <INSDSeq>
+                <INSDSeq_length>22</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..19</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold-Species1</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>acattgaatctcataccacttt</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="59">
+            <INSDSeq>
+                <INSDSeq_length>19</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..19</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold-Species2</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>acatggatcccacgacttt</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="60">
+            <INSDSeq>
+                <INSDSeq_length>22</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..22</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>@Berthold-Species3</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>gtatggcgtcgtatsgtagttt</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="61">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Serine or Threonine</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGJATX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="62">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>replace with Isoleucine</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>VARIANT</INSDFeature_key>
+                            <INSDFeature_location>7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>replace with Threonine</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGLATS</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="63">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GLPXRIC</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="64">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GLPVRIC</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="65">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GLPTRIC</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="66">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GLPDRIC</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="67">
+            <INSDSeq>
+                <INSDSeq_length>36</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..36</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>cgaatgncccactacgaatgncacgaatgncccaca</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="68">
+            <INSDSeq>
+                <INSDSeq_length>36</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..36</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>cgaatgacccactacgaatgbcacgaatgbcccaca</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="69">
+            <INSDSeq>
+                <INSDSeq_length>36</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..36</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>cgaatgtcccactacgaatgvcacgaatgvcccaca</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="70">
+            <INSDSeq>
+                <INSDSeq_length>36</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..36</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>cgaatggcccactacgaatghcacgaatghcccaca</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="71">
+            <INSDSeq>
+                <INSDSeq_length>36</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..36</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>cgaatgccccactacgaatgdcacgaatgdcccaca</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+      
+</ST26SequenceListing>
