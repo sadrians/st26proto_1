@@ -1,7 +1,8 @@
+from django.test import LiveServerTestCase
 from selenium import webdriver
-import unittest
+from selenium.webdriver.common.keys import Keys 
 
-class VisitorTest(unittest.TestCase):
+class VisitorTest(LiveServerTestCase):
     def setUp(self):
         self.browser = webdriver.Firefox()
         self.browser.implicitly_wait(3)
@@ -11,8 +12,14 @@ class VisitorTest(unittest.TestCase):
         
     def test_can_access_index_page(self):
         print 'Running selenium test_can_access_index_page ...'
-        self.browser.get('http://localhost:8000/sequencelistings')
+        
+        current_url = '%s%s' %(self.live_server_url, '/sequencelistings/')
+        print 'current_url', current_url
+#         self.browser.get('http://localhost:8000/sequencelistings')
+        self.browser.get(current_url)
+        
         self.assertIn('st26proto - Index', self.browser.title) 
-
-if __name__ == '__main__':
-    unittest.main()
+        
+        headers_h2 = self.browser.find_elements_by_tag_name('h2')
+        self.assertIn('WELCOME', [h.text for h in headers_h2])
+        self.assertIn('SEQUENCE LISTING PORTOFOLIO', [h.text for h in headers_h2])

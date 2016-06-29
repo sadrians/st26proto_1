@@ -83,7 +83,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-
+STATIC_ROOT = '' # added to avoid AttributeError: 'NoneType' object has no attribute 'endswith' which is thrown when running selenium tests from functional_tests
 STATIC_URL = '/static/'
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
