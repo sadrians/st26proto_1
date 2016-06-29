@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "ST26SequenceListing_V1_0.dtd">
+<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "resources/ST26SequenceListing_V1_0.dtd">
 <?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>
 <ST26SequenceListing dtdVersion="V1_0" 
                     fileName="test2"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="May 2, 2016">
+                    productionDate="June 29, 2016">
 <!-- <ST26SequenceListing dtdVersion="V1_0" 
                     fileName="test2"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="May 2, 2016, 10 a.m."
+                    productionDate="June 29, 2016, 11:27 p.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
@@ -244,6 +244,19 @@
                                 <INSDQualifier>
                                     <INSDQualifier_name>note</INSDQualifier_name>
                                     <INSDQualifier_value>example of some annotation</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>mutation</INSDFeature_key>
+                            <INSDFeature_location>7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>c/a</INSDQualifier_value>
                                 </INSDQualifier>
                                 
                             </INSDFeature_quals>

@@ -316,9 +316,10 @@ def render_xmlFile(request):
     return HttpResponseRedirect('/sequencelistings/output_xml/')
 
 # TODO: refactor first line of this function ...
+# TODO: TEST IT!!!
 def download(request, fileName):
     s = '%s has not been found.' % fileName 
-    filePath = os.path.join(util.PROJECT_DIRECTORY, 'sequencelistings', 'static', 'sequencelistings', '%s.xml' % fileName)
+    filePath = os.path.join(util.PROJECT_DIRECTORY, 'sequencelistings', 'static', 'sequencelistings', 'output', '%s.xml' % fileName)
     with open(filePath, 'r') as f:
         s = f.read()
     response = HttpResponse(s, content_type='application/xml')
