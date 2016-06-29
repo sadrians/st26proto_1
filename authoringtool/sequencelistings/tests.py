@@ -12,9 +12,7 @@ import util
 
 import inspect 
 import os
-import logging
-
-from selenium import webdriver 
+# import logging
 
 # TODO: revive logging whenever necessary
 # logger = logging.getLogger(__name__)
@@ -488,85 +486,4 @@ class FormsTests(TestCase):
                                   'qualifierValue':'test for xxx value'})
               
         self.assertTrue(qf2.is_valid())
-     
-# class SeleniumTests(StaticLiveServerTestCase):
-#           
-#     def setUp(self):
-#         self.selenium = webdriver.Firefox()
-# #         self.selenium.maximize_window()
-#         self._screenshot_number=1
-#         self.sequenceListingFixture = SequenceListingFixture()
-#         super(SeleniumTests, self).setUp() 
-#            
-#     def tearDown(self):
-#         self.selenium.quit()
-#         super(SeleniumTests, self).tearDown()
-#               
-#     def get(self, relative_url):
-#         self.selenium.get('%s%s' % (self.live_server_url, relative_url))
-#         self.screenshot()
-#        
-#     def screenshot(self):
-#         if hasattr(self, 'sauce_user_name'):
-#             # Sauce Labs is taking screenshots for us
-#             return
-#         name = '%s_%d.png' % (self._testMethodName, self._screenshot_number)
-#         path = os.path.join(util.SCREENSHOT_DIR, name)
-#         self.selenium.get_screenshot_as_file(path)
-#         self._screenshot_number += 1   
-#    
-#     def test_index_page_no_seqls(self):
-#         print 'Running %s ...' % self._testMethodName
-#              
-#         self.get('/sequencelistings/')
-#         self.assertIn('st26proto - Index', self.selenium.title)
-#              
-#         all_pars = self.selenium.find_elements_by_tag_name('p')
-#         no_seqls_par = None  
-#         for p in all_pars:
-#             if 'available' in p.text:
-#                 no_seqls_par = p 
-#         self.assertEqual('No sequence listings are available.', no_seqls_par.text)
-#      
-# #     this test is commented out bc otherwise tests from other classes get messed up ...
-# #     def test_index_page_with_seql(self):
-# #         print 'Running %s ...' % self._testMethodName
-# #            
-# # #         sl = self.sequenceListingFixture.create_sequencelisting_instance()
-# #         self.get('/sequencelistings/')
-# #            
-# #         td = self.selenium.find_element_by_tag_name('td')
-# #         self.assertEqual('test_xmlsql', td.text)
-# # #         sl.delete()
-#        
-#     def test_about_page(self):
-#         print 'Running %s ...' % self._testMethodName
-#             
-#         self.get('/sequencelistings/about')
-#         self.assertIn('st26proto - About', self.selenium.title)
-#                          
-#     def test_register(self):
-#         print 'Running %s ...' % self._testMethodName
-#               
-#         self.get('/accounts/register/')
-#         username = self.selenium.find_element_by_id('id_username')
-#         email = self.selenium.find_element_by_id('id_email')
-#         password1 = self.selenium.find_element_by_id('id_password1')
-#         password2 = self.selenium.find_element_by_id('id_password2')
-#               
-#         username.send_keys('user20')
-#         email.send_keys('user20@email.com')
-#         password1.send_keys('password20')
-#         password2.send_keys('password20')
-#         self.screenshot()
-# #         self.selenium.find_element_by_xpath('//input[@value="Submit"]').click()
-#         self.selenium.find_element_by_class_name("btn").click()
-#         self.get('/sequencelistings/')
-#         self.assertIn('st26proto - Index', self.selenium.title)
-#               
-#         self.assertIn('user20', self.selenium.find_element_by_class_name('page-header').text)
-#          
-#         self.get('/sequencelistings/add_sequencelisting')
-#         self.assertIn('Create a sequence listing', self.selenium.find_element_by_tag_name('h2').text)
-
         

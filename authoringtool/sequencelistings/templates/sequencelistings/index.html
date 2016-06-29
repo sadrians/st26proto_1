@@ -59,12 +59,12 @@
             {% endfor %}
         </table>
     {% else %}
-        <p>No sequence listings are available.</p>
+        <p id="no_seqls_par">No sequence listings are available.</p>
     {% endif %}
     {% if user.is_authenticated %}
         <h2>SEQUENCE LISTING GENERATOR</h2>
         <p>This section enables you to create a new sequence listing.</p>
-        <a href="{% url 'sequencelistings:add_sequencelisting' %}">Add new sequence listing</a>
+        <a id="add_seql_link" href="{% url 'sequencelistings:add_sequencelisting' %}">Add new sequence listing</a>
     {% endif %}
     <hr>
     <h3>Disclaimer</h3>
