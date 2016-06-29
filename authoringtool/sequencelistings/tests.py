@@ -16,8 +16,9 @@ import logging
 
 from selenium import webdriver 
 
-logger = logging.getLogger(__name__)
-logger.info('TEST start.')
+# TODO: revive logging whenever necessary
+# logger = logging.getLogger(__name__)
+# logger.info('TEST start.')
 
 def getName():
     return inspect.stack()[1][3]
