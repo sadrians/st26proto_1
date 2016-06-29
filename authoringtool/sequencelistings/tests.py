@@ -492,7 +492,7 @@ class SeleniumTests(StaticLiveServerTestCase):
           
     def setUp(self):
         self.selenium = webdriver.Firefox()
-        self.selenium.maximize_window()
+#         self.selenium.maximize_window()
         self._screenshot_number=1
         self.sequenceListingFixture = SequenceListingFixture()
         super(SeleniumTests, self).setUp() 
