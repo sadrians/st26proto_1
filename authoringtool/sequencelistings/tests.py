@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from django.test import TestCase, LiveServerTestCase
-from django.contrib.staticfiles.testing import StaticLiveServerTestCase
+from django.test import TestCase
+# from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from django.core.urlresolvers import resolve, reverse
 from models import SequenceListing, Title, Sequence, Feature, Qualifier
 from forms import QualifierForm
@@ -88,8 +88,12 @@ class ViewsTests(TestCase):
     def setUpClass(cls):
         super(ViewsTests, cls).setUpClass()
         cls.sequenceListingFixture = SequenceListingFixture()
+        seqls = SequenceListing.objects.all()
+        for seql in seqls:
+            seql.delete()
             
     def setUp(self):
+#         self.sequenceListingFixture = SequenceListingFixture()
         self.sequenceListing = self.sequenceListingFixture.create_sequencelisting_instance()
         
     def tearDown(self):
@@ -170,7 +174,8 @@ class ViewsTests(TestCase):
         self.assertEqual(1, s1.sequenceIdNo)
         self.assertEqual('catcatcatcatcatcat', s1.residues)
          
-        response = self.client.get(reverse('sequencelistings:detail', args=[1]))
+        response = self.client.get(reverse('sequencelistings:detail', 
+                                           args=[self.sequenceListing.id]))
         self.assertEqual(response.status_code, 200)
 #         test that the page returns expected html contents
         self.assertContains(response, "18")
@@ -183,7 +188,8 @@ class ViewsTests(TestCase):
                 
         self.assertEqual(2, self.sequenceListing.sequenceTotalQuantity)
          
-        response = self.client.get(reverse('sequencelistings:detail', args=[1]))
+        response = self.client.get(reverse('sequencelistings:detail', 
+                                           args=[self.sequenceListing.id]))
         self.assertEqual(response.status_code, 200)
 #         test that the page returns expected html contents
         self.assertContains(response, "18")
@@ -212,7 +218,7 @@ class ViewsTests(TestCase):
         self.assertEqual(2, len(f), 'Expected 2 features.')
         self.assertEqual('source', f[0].featureKey)
                
-        response = self.client.get(reverse('sequencelistings:detail', args=[1]))
+        response = self.client.get(reverse('sequencelistings:detail', args=[self.sequenceListing.id]))
         self.assertEqual(response.status_code, 200)
 #         test that the page returns expected html contents
         self.assertContains(response, "source")
@@ -238,7 +244,8 @@ class ViewsTests(TestCase):
         self.assertEqual('note', q1.qualifierName)
         self.assertEqual('test for note', q1.qualifierValue)
          
-        response = self.client.get(reverse('sequencelistings:detail', args=[1]))
+        response = self.client.get(reverse('sequencelistings:detail', 
+                                           args=[self.sequenceListing.id]))
 #         test that the page returns expected html contents
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "note")
@@ -297,7 +304,8 @@ class ViewsTests(TestCase):
         found = resolve('/sequencelistings/sl%d/add_seq/' % self.sequenceListing.id)
         self.assertEqual(found.func, views.add_sequence)
         
-        response = self.client.get(reverse('sequencelistings:add_seq', args=[1]))
+        response = self.client.get(reverse('sequencelistings:add_seq', 
+                                           args=[self.sequenceListing.id]))
 #         test that the page returns expected html contents
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Molecule type")

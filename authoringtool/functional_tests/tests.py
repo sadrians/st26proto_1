@@ -2,6 +2,8 @@ from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys 
 
+import time 
+
 class VisitorTest(LiveServerTestCase):
     def setUp(self):
         self.browser = webdriver.Firefox()
@@ -47,14 +49,14 @@ class VisitorTest(LiveServerTestCase):
         
         inventionTitle.send_keys('a')
         inventionTitleLanguageCode.send_keys('b')
-        fileName.send_keys('c')
+        fileName.send_keys('selenium_test_file_name')
         applicantFileReference.send_keys('d')
         IPOfficeCode.send_keys('e')
         applicationNumberText.send_keys('f')
-        filingDate.send_keys('20101220')
+        filingDate.send_keys('2010-12-20')
         earliestPriorityIPOfficeCode.send_keys('g')
         earliestPriorityApplicationNumberText.send_keys('h')
-        earliestPriorityFilingDate.send_keys('20091220')
+        earliestPriorityFilingDate.send_keys('2009-12-20')
         applicantName.send_keys('i')
         applicantNameLanguageCode.send_keys('j')
         applicantNameLatin.send_keys('k')
@@ -62,7 +64,9 @@ class VisitorTest(LiveServerTestCase):
         inventorNameLanguageCode.send_keys('m')
         inventorNameLatin.send_keys('n')
         
+#         time.sleep(10)
         self.browser.find_element_by_xpath('//input[@value="Submit"]').click()
+#         time.sleep(10)
              
     def test_can_access_index_page_no_seqls(self):
         print 'Selenium: Running %s ...' % self._testMethodName
@@ -105,16 +109,17 @@ class VisitorTest(LiveServerTestCase):
         self.register()
         self.browser.get('%s%s' %(self.live_server_url, '/sequencelistings/add_sequencelisting')) 
         self.assertIn('Create a sequence listing', self.browser.find_element_by_tag_name('h2').text)
-# # TODO: continue here. 
-#         self.add_sequencelisting()
+
+        self.add_sequencelisting()
 #         self.browser.find_element_by_link_text('Sequence listings').click()
-#         self.browser.get('%s%s' %(self.live_server_url, '/sequencelistings/')) 
-#         import time
+        self.browser.get('%s%s' %(self.live_server_url, '/sequencelistings/')) 
+#         print 'browser.page_source', self.browser.page_source
+         
 #         time.sleep(10)
-#         self.assertEqual(1, len(self.browser.find_elements_by_tag_name('table')), 
-#                          'There should be a table if 1 seql.')
-#         at the moment it looks like no seql added ...
-        
-        
-        
+        self.assertEqual(1, len(self.browser.find_elements_by_tag_name('table')), 
+                         'There should be a table if 1 seql.')
+        cells = self.browser.find_elements_by_tag_name('td')
+        self.assertIn('selenium_test_file_name', [cell.text for cell in cells])
+         
+    
 
