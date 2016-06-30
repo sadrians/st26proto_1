@@ -68,6 +68,16 @@ class SequenceListingFixture(object):
         views.feature_source_helper(seq, 'Homo sapiens')
         
         return seq 
+    
+    def create_custom_sequence_instance(self, sl, mt, res, org):
+        seq = Sequence.objects.create(
+                sequenceListing = sl,
+                moltype = mt,
+                residues = res)
+
+        views.feature_source_helper(seq, org)
+        
+        return seq 
  
 class IndexViewNoSequenceListingTest(TestCase):
     def test_index_view_with_no_sequencelistings(self):
@@ -455,6 +465,38 @@ class ModelsTests(TestCase):
     def tearDown(self):
         TestCase.tearDown(self)
         self.sequenceListing.delete()
+    
+    def test_saving_and_retrieving_sequenceListings(self):
+        print 'Running %s ...' % getName()
+        
+        second_seql = self.sequenceListingFixture.create_sequencelisting_instance()
+        second_seql.fileName = 'abc'
+        second_seql.save()
+        
+        saved_seqls = SequenceListing.objects.all()
+        self.assertEqual(2, saved_seqls.count())
+        
+        first_saved_seql = saved_seqls[0]
+        second_saved_seql = saved_seqls[1]
+        
+        self.assertEqual('test_xmlsql', first_saved_seql.fileName)
+        self.assertEqual('abc', second_saved_seql.fileName)
+        
+    def test_saving_and_retrieving_sequences(self):
+        print 'Running %s ...' % getName()
+        
+        self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
+        self.sequenceListingFixture.create_custom_sequence_instance(self.sequenceListing,
+                    'AA', 'MRSVTF', 'Mus musculus')
+
+        saved_seqs = Sequence.objects.all()
+        self.assertEqual(2, saved_seqs.count())
+        
+        first_saved_seq = saved_seqs[0]
+        second_saved_seq = saved_seqs[1]
+         
+        self.assertEqual('DNA', first_saved_seq.moltype)
+        self.assertEqual('AA', second_saved_seq.moltype)
                       
     def test_getOrganism(self):
         """
