@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from django.test import TestCase, LiveServerTestCase
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
-from django.core.urlresolvers import reverse
+from django.core.urlresolvers import resolve, reverse
 from models import SequenceListing, Title, Sequence, Feature, Qualifier
 from forms import QualifierForm
 import views
@@ -76,6 +76,7 @@ class IndexViewNoSequenceListingTest(TestCase):
         on index page.
         """
         print 'Running %s ...' % getName()
+        
         response = self.client.get(reverse('sequencelistings:index'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "No sequence listings are available.")
@@ -106,12 +107,24 @@ class ViewsTests(TestCase):
         self.assertContains(response, "Invention 1")
         self.assertQuerysetEqual(response.context['sequencelistings'], 
                                  ['<SequenceListing: Sequence listing test_xmlsql>'])
+    
+    def test_add_sequencelisting_view(self):
+        print 'Running %s ...' % getName()
+        
+        found = resolve('/sequencelistings/add_sequencelisting/')
+        self.assertEqual(found.func, views.add_sequencelisting)
+        
+#         TODO: continue adding test if necessary
             
     def test_detail_view(self):
         """
         The details of the sequence listing are correctly displayed.
         """
         print 'Running %s ...' % getName()
+        
+        found = resolve('/sequencelistings/sl%d/' % self.sequenceListing.id)
+        self.assertEqual(found.func, views.detail)
+        
         response = self.client.get(reverse('sequencelistings:detail', args=[self.sequenceListing.pk]))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "test_xmlsql")
@@ -217,7 +230,7 @@ class ViewsTests(TestCase):
         self.assertContains(response, "note")
         self.assertContains(response, "test for note")
  
-#     TODO: status code is 302 instead of 200. why????
+#     TODO: status code is 302 instead of 200. why???? bc of some redirection (2016 Jun 30)
 #     def test_add_sequencelisting_view(self):
 #         """
 #         The form add_sequencelisting is correctly displayed.
@@ -228,39 +241,90 @@ class ViewsTests(TestCase):
 #         self.assertEqual(response.status_code, 200)
 #         self.assertContains(response, "Create a sequence listing")
 #         self.assertContains(response, "File name:")
+    
+    def test_edit_sequence_data_view(self):
+        print 'Running %s ...' % getName()
+        
+        found = resolve('/sequencelistings/sl%d/edit_sequence_data/' % self.sequenceListing.id)
+        self.assertEqual(found.func, views.edit_sequence_data)
+
+    def test_sequence_view(self):
+        print 'Running %s ...' % getName()
+        
+        seq = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
+
+        found = resolve('/sequencelistings/sl%d/seq%d/' % (self.sequenceListing.id, seq.id))
+        self.assertEqual(found.func, views.sequence)
+        
+#         TODO: continue adding test if necessary
  
     def test_add_seq_view(self):
         """
         The form add_seq is correctly displayed.
         """
         print 'Running %s ...' % getName()
+        
+        found = resolve('/sequencelistings/sl%d/add_seq/' % self.sequenceListing.id)
+        self.assertEqual(found.func, views.add_sequence)
+        
         response = self.client.get(reverse('sequencelistings:add_seq', args=[1]))
 #         print 'response:', response
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Molecule type")
         self.assertContains(response, "Residues")
-               
+     
+    def test_add_title_view(self):
+        
+        print 'Running %s ...' % getName()
+        
+        found = resolve('/sequencelistings/sl%d/add_title/' % self.sequenceListing.id)
+        self.assertEqual(found.func, views.add_title)
+        
+#         TODO: continue if necessary
+              
     def test_add_feature_view(self):
         """
         The form add_feature is correctly displayed.
         """
         print 'Running %s ...' % getName()
-        self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
-        response = self.client.get(reverse('sequencelistings:add_feature', args=[1, 1]))
+        
+        seq = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
+
+        found = resolve('/sequencelistings/sl%d/seq%d/add_feature/' % (self.sequenceListing.id, seq.id))
+        self.assertEqual(found.func, views.add_feature)
+        
+        response = self.client.get(reverse('sequencelistings:add_feature', 
+                                           args=[self.sequenceListing.id, seq.id]))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Feature key")
         self.assertContains(response, "Submit")
+     
+    
+    def test_add_multiple_feature_view(self):
+        print 'Running %s ...' % getName()
+        
+        seq = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
+
+        found = resolve('/sequencelistings/sl%d/seq%d/add_multiple_feature/' % (self.sequenceListing.id, seq.id))
+        self.assertEqual(found.func, views.add_multiple_feature)
         
     def test_edit_feature_view(self):
         """
         The form edit_feature is correctly displayed.
         """
         print 'Running %s ...' % getName()
-        s = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
-        f = Feature.objects.create(sequence=s, 
+        seq = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
+        f1 = seq.feature_set.all()[0]
+        
+        found = resolve('/sequencelistings/sl%d/seq%d/f%d/edit_feature/' % (self.sequenceListing.id, seq.id, f1.id))
+        self.assertEqual(found.func, views.edit_feature)
+        
+        f = Feature.objects.create(sequence=seq, 
                                     featureKey='modified_base', 
                                     location='7')
-        response = self.client.get(reverse('sequencelistings:edit_feature', args=[self.sequenceListing.id, s.id, f.id]))
+        
+        response = self.client.get(reverse('sequencelistings:edit_feature', args=[self.sequenceListing.id, seq.id, f.id]))
+        
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Feature key")
         self.assertContains(response, "7")
@@ -271,8 +335,15 @@ class ViewsTests(TestCase):
         The form add_qualifier is correctly displayed.
         """
         print 'Running %s ...' % getName()
-        self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
-        response = self.client.get(reverse('sequencelistings:add_qualifier', args=[1, 1, 1]))
+        
+        seq = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
+        f = seq.feature_set.all()[0]
+        
+        found = resolve('/sequencelistings/sl%d/seq%d/f%d/add_qualifier/' % (self.sequenceListing.id, seq.id, f.id))
+        self.assertEqual(found.func, views.add_qualifier)
+        
+        response = self.client.get(reverse('sequencelistings:add_qualifier', 
+                                           args=[self.sequenceListing.id, seq.id, f.id]))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Feature: source at location 1..")
         self.assertContains(response, "Qualifier name:")
@@ -294,12 +365,23 @@ class ViewsTests(TestCase):
         The about_view page is correctly displayed.
         """
         print 'Running %s ...' % getName()
-             
+        
+        found = resolve('/sequencelistings/about/')
+        self.assertEqual(found.func, views.about)
+        
         self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
         response = self.client.get(reverse('sequencelistings:about'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'About')
         self.assertContains(response, 'only for information purposes')
+    
+# #     not sure how to implement this test ...
+#     def test_download_view(self):
+#         
+#         print 'Running %s ...' % getName()
+#         
+#         found = resolve('/sequencelistings/download/test_xmlsql.xml')
+#         self.assertEqual(found.func, views.download)
  
 class ModelsTests(TestCase):
     @classmethod

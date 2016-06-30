@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "ST26SequenceListing_V1_0.dtd">
+<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "resources/ST26SequenceListing_V1_0.dtd">
 <?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>
 <ST26SequenceListing dtdVersion="1.0" 
                     fileName="file1"
                     softwareName="ST26 authoring tool prototype" 
                     softwareVersion="0.1"
-                    productionDate="June 20, 2016">
+                    productionDate="June 30, 2016">
 <!-- <ST26SequenceListing dtdVersion="1.0" 
                     fileName="file1"
                     softwareName="ST26 authoring tool prototype" 
                     softwareVersion="0.1"
-                    productionDate="June 21, 2016, 1:01 a.m."
+                    productionDate="June 30, 2016, 11:54 a.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>

@@ -25,7 +25,45 @@ class VisitorTest(LiveServerTestCase):
         password2.send_keys('password20')
 # #         self.browser.find_element_by_xpath('//input[@value="Submit"]').click()
         self.browser.find_element_by_class_name("btn").click()
+
+    def add_sequencelisting(self):
         
+        inventionTitle = self.browser.find_element_by_id('id_inventionTitle')
+        inventionTitleLanguageCode = self.browser.find_element_by_id('id_inventionTitleLanguageCode')
+        fileName = self.browser.find_element_by_id('id_fileName')
+        applicantFileReference = self.browser.find_element_by_id('id_applicantFileReference')
+        IPOfficeCode = self.browser.find_element_by_id('id_IPOfficeCode')
+        applicationNumberText = self.browser.find_element_by_id('id_applicationNumberText')
+        filingDate = self.browser.find_element_by_id('id_filingDate')
+        earliestPriorityIPOfficeCode = self.browser.find_element_by_id('id_earliestPriorityIPOfficeCode')
+        earliestPriorityApplicationNumberText = self.browser.find_element_by_id('id_earliestPriorityApplicationNumberText')
+        earliestPriorityFilingDate = self.browser.find_element_by_id('id_earliestPriorityFilingDate')
+        applicantName = self.browser.find_element_by_id('id_applicantName')
+        applicantNameLanguageCode = self.browser.find_element_by_id('id_applicantNameLanguageCode')
+        applicantNameLatin = self.browser.find_element_by_id('id_applicantNameLatin')
+        inventorName = self.browser.find_element_by_id('id_inventorName')
+        inventorNameLanguageCode = self.browser.find_element_by_id('id_inventorNameLanguageCode')
+        inventorNameLatin = self.browser.find_element_by_id('id_inventorNameLatin')
+        
+        inventionTitle.send_keys('a')
+        inventionTitleLanguageCode.send_keys('b')
+        fileName.send_keys('c')
+        applicantFileReference.send_keys('d')
+        IPOfficeCode.send_keys('e')
+        applicationNumberText.send_keys('f')
+        filingDate.send_keys('20101220')
+        earliestPriorityIPOfficeCode.send_keys('g')
+        earliestPriorityApplicationNumberText.send_keys('h')
+        earliestPriorityFilingDate.send_keys('20091220')
+        applicantName.send_keys('i')
+        applicantNameLanguageCode.send_keys('j')
+        applicantNameLatin.send_keys('k')
+        inventorName.send_keys('l')
+        inventorNameLanguageCode.send_keys('m')
+        inventorNameLatin.send_keys('n')
+        
+        self.browser.find_element_by_xpath('//input[@value="Submit"]').click()
+             
     def test_can_access_index_page_no_seqls(self):
         print 'Selenium: Running %s ...' % self._testMethodName
         
@@ -67,5 +105,16 @@ class VisitorTest(LiveServerTestCase):
         self.register()
         self.browser.get('%s%s' %(self.live_server_url, '/sequencelistings/add_sequencelisting')) 
         self.assertIn('Create a sequence listing', self.browser.find_element_by_tag_name('h2').text)
-
+# # TODO: continue here. 
+#         self.add_sequencelisting()
+#         self.browser.find_element_by_link_text('Sequence listings').click()
+#         self.browser.get('%s%s' %(self.live_server_url, '/sequencelistings/')) 
+#         import time
+#         time.sleep(10)
+#         self.assertEqual(1, len(self.browser.find_elements_by_tag_name('table')), 
+#                          'There should be a table if 1 seql.')
+#         at the moment it looks like no seql added ...
+        
+        
+        
 
