@@ -116,9 +116,9 @@ class VisitorTest(LiveServerTestCase):
 #         print 'browser.page_source', self.browser.page_source
          
 #         time.sleep(10)
-        self.assertEqual(1, len(self.browser.find_elements_by_tag_name('table')), 
-                         'There should be a table if 1 seql.')
-        cells = self.browser.find_elements_by_tag_name('td')
+        table = self.browser.find_element_by_id('home_page_table')
+#         self.assertEqual(1, len(table), 'There should be a table if a seql added.')
+        cells = table.find_elements_by_tag_name('td')
         self.assertIn('selenium_test_file_name', [cell.text for cell in cells])
          
     
