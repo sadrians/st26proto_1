@@ -95,6 +95,8 @@ class ViewsTests(TestCase):
     def tearDown(self):
         TestCase.tearDown(self)
         self.sequenceListing.delete()
+    
+#     TODO: add test after refactoring Index class into index function 
                       
     def test_index_view_with_one_sequencelisting(self):
         """
@@ -102,7 +104,9 @@ class ViewsTests(TestCase):
         """
         print 'Running %s ...' % getName()
         response = self.client.get(reverse('sequencelistings:index'))
+        
         self.assertEqual(response.status_code, 200)
+#         test that the page returns expected html contents
         self.assertContains(response, "test_xmlsql")
         self.assertContains(response, "Invention 1")
         self.assertQuerysetEqual(response.context['sequencelistings'], 
@@ -110,10 +114,14 @@ class ViewsTests(TestCase):
     
     def test_add_sequencelisting_view(self):
         print 'Running %s ...' % getName()
-        
+#         test that URL resolves to correct views function
         found = resolve('/sequencelistings/add_sequencelisting/')
         self.assertEqual(found.func, views.add_sequencelisting)
-        
+
+#         response = self.client.get(reverse('sequencelistings:add_sequencelisting'))
+# #         test that the page returns expected html contents
+#         self.assertContains(response, "Invention title") 
+#         self.assertContains(response, "Submit")      
 #         TODO: continue adding test if necessary
             
     def test_detail_view(self):
@@ -121,12 +129,13 @@ class ViewsTests(TestCase):
         The details of the sequence listing are correctly displayed.
         """
         print 'Running %s ...' % getName()
-        
+#         test that URL resolves to correct views function        
         found = resolve('/sequencelistings/sl%d/' % self.sequenceListing.id)
         self.assertEqual(found.func, views.detail)
         
         response = self.client.get(reverse('sequencelistings:detail', args=[self.sequenceListing.pk]))
         self.assertEqual(response.status_code, 200)
+#         test that the page returns expected html contents        
         self.assertContains(response, "test_xmlsql")
         self.assertContains(response, "2015123456")
         self.assertEqual(response.context['sequencelisting'], self.sequenceListing)
@@ -137,6 +146,7 @@ class ViewsTests(TestCase):
         self.assertTrue(response.context['sequencelisting'].sequence_set.all())
         response = self.client.get(reverse('sequencelistings:detail', args=[self.sequenceListing.pk]))
 #         print response
+#         test that the page returns expected html contents
         self.assertContains(response, "location")
         self.assertContains(response, "Generate XML")
         self.assertContains(response, "source")
@@ -162,6 +172,7 @@ class ViewsTests(TestCase):
          
         response = self.client.get(reverse('sequencelistings:detail', args=[1]))
         self.assertEqual(response.status_code, 200)
+#         test that the page returns expected html contents
         self.assertContains(response, "18")
         self.assertContains(response, "catcatcatcatcatcat")
 #         create another sequence      
@@ -174,6 +185,7 @@ class ViewsTests(TestCase):
          
         response = self.client.get(reverse('sequencelistings:detail', args=[1]))
         self.assertEqual(response.status_code, 200)
+#         test that the page returns expected html contents
         self.assertContains(response, "18")
         self.assertContains(response, "catcatcatcatcatcat")
         self.assertContains(response, "20")
@@ -202,6 +214,7 @@ class ViewsTests(TestCase):
                
         response = self.client.get(reverse('sequencelistings:detail', args=[1]))
         self.assertEqual(response.status_code, 200)
+#         test that the page returns expected html contents
         self.assertContains(response, "source")
         self.assertContains(response, "1..18")
         self.assertContains(response, "allele")
@@ -226,6 +239,7 @@ class ViewsTests(TestCase):
         self.assertEqual('test for note', q1.qualifierValue)
          
         response = self.client.get(reverse('sequencelistings:detail', args=[1]))
+#         test that the page returns expected html contents
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "note")
         self.assertContains(response, "test for note")
@@ -247,14 +261,30 @@ class ViewsTests(TestCase):
         
         found = resolve('/sequencelistings/sl%d/edit_sequence_data/' % self.sequenceListing.id)
         self.assertEqual(found.func, views.edit_sequence_data)
+        
+        self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
+        
+        response = self.client.get(reverse('sequencelistings:edit_sequence_data', 
+                                           args=[self.sequenceListing.id]))
+#         test that the page returns expected html contents
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "EDIT SEQUENCE DATA")
+        self.assertContains(response, "Add new qualifier")        
 
     def test_sequence_view(self):
         print 'Running %s ...' % getName()
-        
+#         test that URL resolves to correct views function        
         seq = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
 
         found = resolve('/sequencelistings/sl%d/seq%d/' % (self.sequenceListing.id, seq.id))
         self.assertEqual(found.func, views.sequence)
+        
+        response = self.client.get(reverse('sequencelistings:sequence', 
+                                           args=[self.sequenceListing.id, seq.id]))
+#         test that the page returns expected html contents
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Molecule type")
+        self.assertContains(response, "Submit")
         
 #         TODO: continue adding test if necessary
  
@@ -263,12 +293,12 @@ class ViewsTests(TestCase):
         The form add_seq is correctly displayed.
         """
         print 'Running %s ...' % getName()
-        
+#         test that URL resolves to correct views function        
         found = resolve('/sequencelistings/sl%d/add_seq/' % self.sequenceListing.id)
         self.assertEqual(found.func, views.add_sequence)
         
         response = self.client.get(reverse('sequencelistings:add_seq', args=[1]))
-#         print 'response:', response
+#         test that the page returns expected html contents
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Molecule type")
         self.assertContains(response, "Residues")
@@ -276,10 +306,17 @@ class ViewsTests(TestCase):
     def test_add_title_view(self):
         
         print 'Running %s ...' % getName()
-        
+#         test that URL resolves to correct views function        
         found = resolve('/sequencelistings/sl%d/add_title/' % self.sequenceListing.id)
         self.assertEqual(found.func, views.add_title)
-        
+
+        response = self.client.get(reverse('sequencelistings:add_title', 
+                                           args=[self.sequenceListing.id]))
+
+#         test that the page returns expected html contents
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Invention title language code:")
+        self.assertContains(response, "Submit")
 #         TODO: continue if necessary
               
     def test_add_feature_view(self):
@@ -289,24 +326,32 @@ class ViewsTests(TestCase):
         print 'Running %s ...' % getName()
         
         seq = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
-
+#         test that URL resolves to correct views function
         found = resolve('/sequencelistings/sl%d/seq%d/add_feature/' % (self.sequenceListing.id, seq.id))
         self.assertEqual(found.func, views.add_feature)
         
         response = self.client.get(reverse('sequencelistings:add_feature', 
                                            args=[self.sequenceListing.id, seq.id]))
         self.assertEqual(response.status_code, 200)
+#         test that the page returns expected html contents
         self.assertContains(response, "Feature key")
         self.assertContains(response, "Submit")
-     
-    
+       
     def test_add_multiple_feature_view(self):
         print 'Running %s ...' % getName()
         
         seq = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
-
+#         test that URL resolves to correct views function
         found = resolve('/sequencelistings/sl%d/seq%d/add_multiple_feature/' % (self.sequenceListing.id, seq.id))
         self.assertEqual(found.func, views.add_multiple_feature)
+        
+        response = self.client.get(reverse('sequencelistings:add_multiple_feature', 
+                                           args=[self.sequenceListing.id, seq.id]))
+        self.assertEqual(response.status_code, 200)
+#         test that the page returns expected html contents
+        self.assertContains(response, "Add multiple feature")
+        self.assertContains(response, "Qualifier value:")
+        self.assertContains(response, "Submit")
         
     def test_edit_feature_view(self):
         """
@@ -315,7 +360,7 @@ class ViewsTests(TestCase):
         print 'Running %s ...' % getName()
         seq = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
         f1 = seq.feature_set.all()[0]
-        
+#         test that URL resolves to correct views function        
         found = resolve('/sequencelistings/sl%d/seq%d/f%d/edit_feature/' % (self.sequenceListing.id, seq.id, f1.id))
         self.assertEqual(found.func, views.edit_feature)
         
@@ -326,6 +371,7 @@ class ViewsTests(TestCase):
         response = self.client.get(reverse('sequencelistings:edit_feature', args=[self.sequenceListing.id, seq.id, f.id]))
         
         self.assertEqual(response.status_code, 200)
+#         test that the page returns expected html contents
         self.assertContains(response, "Feature key")
         self.assertContains(response, "7")
         self.assertContains(response, "Update")
@@ -338,13 +384,14 @@ class ViewsTests(TestCase):
         
         seq = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
         f = seq.feature_set.all()[0]
-        
+#         test that URL resolves to correct views function        
         found = resolve('/sequencelistings/sl%d/seq%d/f%d/add_qualifier/' % (self.sequenceListing.id, seq.id, f.id))
         self.assertEqual(found.func, views.add_qualifier)
         
         response = self.client.get(reverse('sequencelistings:add_qualifier', 
                                            args=[self.sequenceListing.id, seq.id, f.id]))
         self.assertEqual(response.status_code, 200)
+#         test that the page returns expected html contents
         self.assertContains(response, "Feature: source at location 1..")
         self.assertContains(response, "Qualifier name:")
         self.assertContains(response, "Qualifier value:")
@@ -356,8 +403,10 @@ class ViewsTests(TestCase):
         print 'Running %s ...' % getName()
              
         self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
+
         response = self.client.get(reverse('sequencelistings:xmloutput', args=[self.sequenceListing.pk, ]))
         self.assertEqual(response.status_code, 200)
+#         test that the page returns expected html contents
         self.assertContains(response, '%s.xml' % self.sequenceListing.fileName)
          
     def test_about_view(self):
@@ -365,13 +414,16 @@ class ViewsTests(TestCase):
         The about_view page is correctly displayed.
         """
         print 'Running %s ...' % getName()
-        
+#         test that URL resolves to correct views function        
         found = resolve('/sequencelistings/about/')
         self.assertEqual(found.func, views.about)
         
         self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
+
         response = self.client.get(reverse('sequencelistings:about'))
         self.assertEqual(response.status_code, 200)
+
+#         test that the page returns expected html contents
         self.assertContains(response, 'About')
         self.assertContains(response, 'only for information purposes')
     
