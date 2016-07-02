@@ -132,6 +132,9 @@ class ViewsTests(TestCase):
         found = resolve('/sequencelistings/add_sequencelisting/')
         self.assertEqual(found.func, views.add_sequencelisting)
 
+#     def test_add_sequencelisting_page_can_save_a_post_request(self):
+# #         TODO: add code similar to TDD online book? ...
+
 #         response = self.client.get(reverse('sequencelistings:add_sequencelisting'))
 # #         test that the page returns expected html contents
 #         self.assertContains(response, "Invention title") 
@@ -482,6 +485,8 @@ class ModelsTests(TestCase):
         self.assertEqual('test_xmlsql', first_saved_seql.fileName)
         self.assertEqual('abc', second_saved_seql.fileName)
         
+        self.assertFalse(self.sequenceListing.isEditable, 'By default, a seql is not editable.')
+        
     def test_saving_and_retrieving_sequences(self):
         print 'Running %s ...' % getName()
         
@@ -497,6 +502,8 @@ class ModelsTests(TestCase):
          
         self.assertEqual('DNA', first_saved_seq.moltype)
         self.assertEqual('AA', second_saved_seq.moltype)
+     
+#     TODO: add tests for other models 
                       
     def test_getOrganism(self):
         """

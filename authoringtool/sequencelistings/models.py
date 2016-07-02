@@ -39,6 +39,8 @@ class SequenceListing(models.Model):
     inventorNameLatin = models.CharField('Inventor name Latin', max_length=200)
     
     sequenceTotalQuantity = models.IntegerField('Sequence total quantity', default=0)
+    
+    isEditable = models.BooleanField('Is editable', default=False)
         
     def __unicode__(self):
         return 'Sequence listing %s' %self.fileName
