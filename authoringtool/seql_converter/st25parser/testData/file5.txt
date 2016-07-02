@@ -1,0 +1,1138 @@
+                         SEQUENCE LISTING
+
+<110>  biOasis Technologies, Inc. 
+ 
+<120>  DEPHOSPHORYLATED LYSOSOMAL STORAGE DISEASE PROTEINS AND METHODS 
+       OF USE THEREOF
+
+<130>  BIOA-006/01WO
+
+<150>  US 61/677,959
+<151>  2012-07-31
+
+<160>  39    
+
+<170>  PatentIn version 3.5
+
+<210>  1
+<211>  738
+<212>  PRT
+<213>  Homo sapiens
+
+<400>  1
+
+Met Arg Gly Pro Ser Gly Ala Leu Trp Leu Leu Leu Ala Leu Arg Thr 
+1               5                   10                  15      
+
+
+Val Leu Gly Gly Met Glu Val Arg Trp Cys Ala Thr Ser Asp Pro Glu 
+            20                  25                  30          
+
+
+Gln His Lys Cys Gly Asn Met Ser Glu Ala Phe Arg Glu Ala Gly Ile 
+        35                  40                  45              
+
+
+Gln Pro Ser Leu Leu Cys Val Arg Gly Thr Ser Ala Asp His Cys Val 
+    50                  55                  60                  
+
+
+Gln Leu Ile Ala Ala Gln Glu Ala Asp Ala Ile Thr Leu Asp Gly Gly 
+65                  70                  75                  80  
+
+
+Ala Ile Tyr Glu Ala Gly Lys Glu His Gly Leu Lys Pro Val Val Gly 
+                85                  90                  95      
+
+
+Glu Val Tyr Asp Gln Glu Val Gly Thr Ser Tyr Tyr Ala Val Ala Val 
+            100                 105                 110         
+
+
+Val Arg Arg Ser Ser His Val Thr Ile Asp Thr Leu Lys Gly Val Lys 
+        115                 120                 125             
+
+
+Ser Cys His Thr Gly Ile Asn Arg Thr Val Gly Trp Asn Val Pro Val 
+    130                 135                 140                 
+
+
+Gly Tyr Leu Val Glu Ser Gly Arg Leu Ser Val Met Gly Cys Asp Val 
+145                 150                 155                 160 
+
+
+Leu Lys Ala Val Ser Asp Tyr Phe Gly Gly Ser Cys Val Pro Gly Ala 
+                165                 170                 175     
+
+
+Gly Glu Thr Ser Tyr Ser Glu Ser Leu Cys Arg Leu Cys Arg Gly Asp 
+            180                 185                 190         
+
+
+Ser Ser Gly Glu Gly Val Cys Asp Lys Ser Pro Leu Glu Arg Tyr Tyr 
+        195                 200                 205             
+
+
+Asp Tyr Ser Gly Ala Phe Arg Cys Leu Ala Glu Gly Ala Gly Asp Val 
+    210                 215                 220                 
+
+
+Ala Phe Val Lys His Ser Thr Val Leu Glu Asn Thr Asp Gly Lys Thr 
+225                 230                 235                 240 
+
+
+Leu Pro Ser Trp Gly Gln Ala Leu Leu Ser Gln Asp Phe Glu Leu Leu 
+                245                 250                 255     
+
+
+Cys Arg Asp Gly Ser Arg Ala Asp Val Thr Glu Trp Arg Gln Cys His 
+            260                 265                 270         
+
+
+Leu Ala Arg Val Pro Ala His Ala Val Val Val Arg Ala Asp Thr Asp 
+        275                 280                 285             
+
+
+Gly Gly Leu Ile Phe Arg Leu Leu Asn Glu Gly Gln Arg Leu Phe Ser 
+    290                 295                 300                 
+
+
+His Glu Gly Ser Ser Phe Gln Met Phe Ser Ser Glu Ala Tyr Gly Gln 
+305                 310                 315                 320 
+
+
+Lys Asp Leu Leu Phe Lys Asp Ser Thr Ser Glu Leu Val Pro Ile Ala 
+                325                 330                 335     
+
+
+Thr Gln Thr Tyr Glu Ala Trp Leu Gly His Glu Tyr Leu His Ala Met 
+            340                 345                 350         
+
+
+Lys Gly Leu Leu Cys Asp Pro Asn Arg Leu Pro Pro Tyr Leu Arg Trp 
+        355                 360                 365             
+
+
+Cys Val Leu Ser Thr Pro Glu Ile Gln Lys Cys Gly Asp Met Ala Val 
+    370                 375                 380                 
+
+
+Ala Phe Arg Arg Gln Arg Leu Lys Pro Glu Ile Gln Cys Val Ser Ala 
+385                 390                 395                 400 
+
+
+Lys Ser Pro Gln His Cys Met Glu Arg Ile Gln Ala Glu Gln Val Asp 
+                405                 410                 415     
+
+
+Ala Val Thr Leu Ser Gly Glu Asp Ile Tyr Thr Ala Gly Lys Thr Tyr 
+            420                 425                 430         
+
+
+Gly Leu Val Pro Ala Ala Gly Glu His Tyr Ala Pro Glu Asp Ser Ser 
+        435                 440                 445             
+
+
+Asn Ser Tyr Tyr Val Val Ala Val Val Arg Arg Asp Ser Ser His Ala 
+    450                 455                 460                 
+
+
+Phe Thr Leu Asp Glu Leu Arg Gly Lys Arg Ser Cys His Ala Gly Phe 
+465                 470                 475                 480 
+
+
+Gly Ser Pro Ala Gly Trp Asp Val Pro Val Gly Ala Leu Ile Gln Arg 
+                485                 490                 495     
+
+
+Gly Phe Ile Arg Pro Lys Asp Cys Asp Val Leu Thr Ala Val Ser Glu 
+            500                 505                 510         
+
+
+Phe Phe Asn Ala Ser Cys Val Pro Val Asn Asn Pro Lys Asn Tyr Pro 
+        515                 520                 525             
+
+
+Ser Ser Leu Cys Ala Leu Cys Val Gly Asp Glu Gln Gly Arg Asn Lys 
+    530                 535                 540                 
+
+
+Cys Val Gly Asn Ser Gln Glu Arg Tyr Tyr Gly Tyr Arg Gly Ala Phe 
+545                 550                 555                 560 
+
+
+Arg Cys Leu Val Glu Asn Ala Gly Asp Val Ala Phe Val Arg His Thr 
+                565                 570                 575     
+
+
+Thr Val Phe Asp Asn Thr Asn Gly His Asn Ser Glu Pro Trp Ala Ala 
+            580                 585                 590         
+
+
+Glu Leu Arg Ser Glu Asp Tyr Glu Leu Leu Cys Pro Asn Gly Ala Arg 
+        595                 600                 605             
+
+
+Ala Glu Val Ser Gln Phe Ala Ala Cys Asn Leu Ala Gln Ile Pro Pro 
+    610                 615                 620                 
+
+
+His Ala Val Met Val Arg Pro Asp Thr Asn Ile Phe Thr Val Tyr Gly 
+625                 630                 635                 640 
+
+
+Leu Leu Asp Lys Ala Gln Asp Leu Phe Gly Asp Asp His Asn Lys Asn 
+                645                 650                 655     
+
+
+Gly Phe Lys Met Phe Asp Ser Ser Asn Tyr His Gly Gln Asp Leu Leu 
+            660                 665                 670         
+
+
+Phe Lys Asp Ala Thr Val Arg Ala Val Pro Val Gly Glu Lys Thr Thr 
+        675                 680                 685             
+
+
+Tyr Arg Gly Trp Leu Gly Leu Asp Tyr Val Ala Ala Leu Glu Gly Met 
+    690                 695                 700                 
+
+
+Ser Ser Gln Gln Cys Ser Gly Ala Ala Ala Pro Ala Pro Gly Ala Pro 
+705                 710                 715                 720 
+
+
+Leu Leu Pro Leu Leu Leu Pro Ala Leu Ala Ala Arg Leu Leu Pro Pro 
+                725                 730                 735     
+
+
+Ala Leu 
+        
+
+
+<210>  2
+<211>  525
+<212>  PRT
+<213>  Homo sapiens
+
+<400>  2
+
+Ser Glu Thr Gln Ala Asn Ser Thr Thr Asp Ala Leu Asn Val Leu Leu 
+1               5                   10                  15      
+
+
+Ile Ile Val Asp Asp Leu Arg Pro Ser Leu Gly Cys Tyr Gly Asp Lys 
+            20                  25                  30          
+
+
+Leu Val Arg Ser Pro Asn Ile Asp Gln Leu Ala Ser His Ser Leu Leu 
+        35                  40                  45              
+
+
+Phe Gln Asn Ala Phe Ala Gln Gln Ala Val Cys Ala Pro Ser Arg Val 
+    50                  55                  60                  
+
+
+Ser Phe Leu Thr Gly Arg Arg Pro Asp Thr Thr Arg Leu Tyr Asp Phe 
+65                  70                  75                  80  
+
+
+Asn Ser Tyr Trp Arg Val His Ala Gly Asn Phe Ser Thr Ile Pro Gln 
+                85                  90                  95      
+
+
+Tyr Phe Lys Glu Asn Gly Tyr Val Thr Met Ser Val Gly Lys Val Phe 
+            100                 105                 110         
+
+
+His Pro Gly Ile Ser Ser Asn His Thr Asp Asp Ser Pro Tyr Ser Trp 
+        115                 120                 125             
+
+
+Ser Phe Pro Pro Tyr His Pro Ser Ser Glu Lys Tyr Glu Asn Thr Lys 
+    130                 135                 140                 
+
+
+Thr Cys Arg Gly Pro Asp Gly Glu Leu His Ala Asn Leu Leu Cys Pro 
+145                 150                 155                 160 
+
+
+Val Asp Val Leu Asp Val Pro Glu Gly Thr Leu Pro Asp Lys Gln Ser 
+                165                 170                 175     
+
+
+Thr Glu Gln Ala Ile Gln Leu Leu Glu Lys Met Lys Thr Ser Ala Ser 
+            180                 185                 190         
+
+
+Pro Phe Phe Leu Ala Val Gly Tyr His Lys Pro His Ile Pro Phe Arg 
+        195                 200                 205             
+
+
+Tyr Pro Lys Glu Phe Gln Lys Leu Tyr Pro Leu Glu Asn Ile Thr Leu 
+    210                 215                 220                 
+
+
+Ala Pro Asp Pro Glu Val Pro Asp Gly Leu Pro Pro Val Ala Tyr Asn 
+225                 230                 235                 240 
+
+
+Pro Trp Met Asp Ile Arg Gln Arg Glu Asp Val Gln Ala Leu Asn Ile 
+                245                 250                 255     
+
+
+Ser Val Pro Tyr Gly Pro Ile Pro Val Asp Phe Gln Arg Lys Ile Arg 
+            260                 265                 270         
+
+
+Gln Ser Tyr Phe Ala Ser Val Ser Tyr Leu Asp Thr Gln Val Gly Arg 
+        275                 280                 285             
+
+
+Leu Leu Ser Ala Leu Asp Asp Leu Gln Leu Ala Asn Ser Thr Ile Ile 
+    290                 295                 300                 
+
+
+Ala Phe Thr Ser Asp His Gly Trp Ala Leu Gly Glu His Gly Glu Trp 
+305                 310                 315                 320 
+
+
+Ala Lys Tyr Ser Asn Phe Asp Val Ala Thr His Val Pro Leu Ile Phe 
+                325                 330                 335     
+
+
+Tyr Val Pro Gly Arg Thr Ala Ser Leu Pro Glu Ala Gly Glu Lys Leu 
+            340                 345                 350         
+
+
+Phe Pro Tyr Leu Asp Pro Phe Asp Ser Ala Ser Gln Leu Met Glu Pro 
+        355                 360                 365             
+
+
+Gly Arg Gln Ser Met Asp Leu Val Glu Leu Val Ser Leu Phe Pro Thr 
+    370                 375                 380                 
+
+
+Leu Ala Gly Leu Ala Gly Leu Gln Val Pro Pro Arg Cys Pro Val Pro 
+385                 390                 395                 400 
+
+
+Ser Phe His Val Glu Leu Cys Arg Glu Gly Lys Asn Leu Leu Lys His 
+                405                 410                 415     
+
+
+Phe Arg Phe Arg Asp Leu Glu Glu Asp Pro Tyr Leu Pro Gly Asn Pro 
+            420                 425                 430         
+
+
+Arg Glu Leu Ile Ala Tyr Ser Gln Tyr Pro Arg Pro Ser Asp Ile Pro 
+        435                 440                 445             
+
+
+Gln Trp Asn Ser Asp Lys Pro Ser Leu Lys Asp Ile Lys Ile Met Gly 
+    450                 455                 460                 
+
+
+Tyr Ser Ile Arg Thr Ile Asp Tyr Arg Tyr Thr Val Trp Val Gly Phe 
+465                 470                 475                 480 
+
+
+Asn Pro Asp Glu Phe Leu Ala Asn Phe Ser Asp Ile His Ala Gly Glu 
+                485                 490                 495     
+
+
+Leu Tyr Phe Val Asp Ser Asp Pro Leu Gln Asp His Asn Met Tyr Asn 
+            500                 505                 510         
+
+
+Asp Ser Gln Gly Gly Asp Leu Phe Gln Leu Leu Met Pro 
+        515                 520                 525 
+
+
+<210>  3
+<211>  653
+<212>  PRT
+<213>  Homo sapiens
+
+<400>  3
+
+Met Arg Pro Leu Arg Pro Arg Ala Ala Leu Leu Ala Leu Leu Ala Ser 
+1               5                   10                  15      
+
+
+Leu Leu Ala Ala Pro Pro Val Ala Pro Ala Glu Ala Pro His Leu Val 
+            20                  25                  30          
+
+
+Gln Val Asp Ala Ala Arg Ala Leu Trp Pro Leu Arg Arg Phe Trp Arg 
+        35                  40                  45              
+
+
+Ser Thr Gly Phe Cys Pro Pro Leu Pro His Ser Gln Ala Asp Gln Tyr 
+    50                  55                  60                  
+
+
+Val Leu Ser Trp Asp Gln Gln Leu Asn Leu Ala Tyr Val Gly Ala Val 
+65                  70                  75                  80  
+
+
+Pro His Arg Gly Ile Lys Gln Val Arg Thr His Trp Leu Leu Glu Leu 
+                85                  90                  95      
+
+
+Val Thr Thr Arg Gly Ser Thr Gly Arg Gly Leu Ser Tyr Asn Phe Thr 
+            100                 105                 110         
+
+
+His Leu Asp Gly Tyr Leu Asp Leu Leu Arg Glu Asn Gln Leu Leu Pro 
+        115                 120                 125             
+
+
+Gly Phe Glu Leu Met Gly Ser Ala Ser Gly His Phe Thr Asp Phe Glu 
+    130                 135                 140                 
+
+
+Asp Lys Gln Gln Val Phe Glu Trp Lys Asp Leu Val Ser Ser Leu Ala 
+145                 150                 155                 160 
+
+
+Arg Arg Tyr Ile Gly Arg Tyr Gly Leu Ala His Val Ser Lys Trp Asn 
+                165                 170                 175     
+
+
+Phe Glu Thr Trp Asn Glu Pro Asp His His Asp Phe Asp Asn Val Ser 
+            180                 185                 190         
+
+
+Met Thr Met Gln Gly Phe Leu Asn Tyr Tyr Asp Ala Cys Ser Glu Gly 
+        195                 200                 205             
+
+
+Leu Arg Ala Ala Ser Pro Ala Leu Arg Leu Gly Gly Pro Gly Asp Ser 
+    210                 215                 220                 
+
+
+Phe His Thr Pro Pro Arg Ser Pro Leu Ser Trp Gly Leu Leu Arg His 
+225                 230                 235                 240 
+
+
+Cys His Asp Gly Thr Asn Phe Phe Thr Gly Glu Ala Gly Val Arg Leu 
+                245                 250                 255     
+
+
+Asp Tyr Ile Ser Leu His Arg Lys Gly Ala Arg Ser Ser Ile Ser Ile 
+            260                 265                 270         
+
+
+Leu Glu Gln Glu Lys Val Val Ala Gln Gln Ile Arg Gln Leu Phe Pro 
+        275                 280                 285             
+
+
+Lys Phe Ala Asp Thr Pro Ile Tyr Asn Asp Glu Ala Asp Pro Leu Val 
+    290                 295                 300                 
+
+
+Gly Trp Ser Leu Pro Gln Pro Trp Arg Ala Asp Val Thr Tyr Ala Ala 
+305                 310                 315                 320 
+
+
+Met Val Val Lys Val Ile Ala Gln His Gln Asn Leu Leu Leu Ala Asn 
+                325                 330                 335     
+
+
+Thr Thr Ser Ala Phe Pro Tyr Ala Leu Leu Ser Asn Asp Asn Ala Phe 
+            340                 345                 350         
+
+
+Leu Ser Tyr His Pro His Pro Phe Ala Gln Arg Thr Leu Thr Ala Arg 
+        355                 360                 365             
+
+
+Phe Gln Val Asn Asn Thr Arg Pro Pro His Val Gln Leu Leu Arg Lys 
+    370                 375                 380                 
+
+
+Pro Val Leu Thr Ala Met Gly Leu Leu Ala Leu Leu Asp Glu Glu Gln 
+385                 390                 395                 400 
+
+
+Leu Trp Ala Glu Val Ser Gln Ala Gly Thr Val Leu Asp Ser Asn His 
+                405                 410                 415     
+
+
+Thr Val Gly Val Leu Ala Ser Ala His Arg Pro Gln Gly Pro Ala Asp 
+            420                 425                 430         
+
+
+Ala Trp Arg Ala Ala Val Leu Ile Tyr Ala Ser Asp Asp Thr Arg Ala 
+        435                 440                 445             
+
+
+His Pro Asn Arg Ser Val Ala Val Thr Leu Arg Leu Arg Gly Val Pro 
+    450                 455                 460                 
+
+
+Pro Gly Pro Gly Leu Val Tyr Val Thr Arg Tyr Leu Asp Asn Gly Leu 
+465                 470                 475                 480 
+
+
+Cys Ser Pro Asp Gly Glu Trp Arg Arg Leu Gly Arg Pro Val Phe Pro 
+                485                 490                 495     
+
+
+Thr Ala Glu Gln Phe Arg Arg Met Arg Ala Ala Glu Asp Pro Val Ala 
+            500                 505                 510         
+
+
+Ala Ala Pro Arg Pro Leu Pro Ala Gly Gly Arg Leu Thr Leu Arg Pro 
+        515                 520                 525             
+
+
+Ala Leu Arg Leu Pro Ser Leu Leu Leu Val His Val Cys Ala Arg Pro 
+    530                 535                 540                 
+
+
+Glu Lys Pro Pro Gly Gln Val Thr Arg Leu Arg Ala Leu Pro Leu Thr 
+545                 550                 555                 560 
+
+
+Gln Gly Gln Leu Val Leu Val Trp Ser Asp Glu His Val Gly Ser Lys 
+                565                 570                 575     
+
+
+Cys Leu Trp Thr Tyr Glu Ile Gln Phe Ser Gln Asp Gly Lys Ala Tyr 
+            580                 585                 590         
+
+
+Thr Pro Val Ser Arg Lys Pro Ser Thr Phe Asn Leu Phe Val Phe Ser 
+        595                 600                 605             
+
+
+Pro Asp Thr Gly Ala Val Ser Gly Ser Tyr Arg Val Arg Ala Leu Asp 
+    610                 615                 620                 
+
+
+Tyr Trp Ala Arg Pro Gly Pro Phe Ser Asp Pro Val Pro Tyr Leu Glu 
+625                 630                 635                 640 
+
+
+Val Pro Val Pro Arg Gly Pro Pro Ser Pro Gly Asn Pro 
+                645                 650             
+
+
+<210>  4
+<211>  5
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Sulfatase motif
+
+
+<220>
+<221>  MISC_FEATURE
+<222>  (1)..(1)
+<223>  Xaa = Any amino acid or absent
+
+<220>
+<221>  MISC_FEATURE
+<222>  (2)..(2)
+<223>  Xaa = Cys or Ser
+
+<220>
+<221>  MISC_FEATURE
+<222>  (3)..(3)
+<223>  Xaa = Any amino acid
+
+<220>
+<221>  MISC_FEATURE
+<222>  (4)..(4)
+<223>  Xaa = Pro or Ala
+
+<220>
+<221>  MISC_FEATURE
+<222>  (5)..(5)
+<223>  Xaa = Any amino acid
+
+<400>  4
+
+Xaa Xaa Xaa Xaa Xaa 
+1               5   
+
+
+<210>  5
+<211>  5
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Sulfatase motifs
+
+
+<220>
+<221>  MISC_FEATURE
+<222>  (1)..(1)
+<223>  Xaa = Any amino acid or absent
+
+<220>
+<221>  MOD_RES
+<222>  (2)..(2)
+<223>  Formylglycine
+
+<220>
+<221>  MISC_FEATURE
+<222>  (3)..(3)
+<223>  Xaa = Any amino acid or absent
+
+<220>
+<221>  MISC_FEATURE
+<222>  (4)..(4)
+<223>  Xaa = Pro or Ala
+second description line - test
+
+<220>
+<221>  MISC_FEATURE
+<222>  (5)..(5)
+<223>  Xaa = Any amino acid
+
+<400>  5
+
+Xaa Gly Xaa Xaa Xaa 
+1               5   
+
+
+<210>  6
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Exemplary Gly Ser linker
+
+<400>  6
+
+Gly Ser Gly Ser 
+1               
+
+
+<210>  7
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Exemplary Gly Ser linker
+
+<400>  7
+
+Gly Gly Ser Gly 
+1               
+
+
+<210>  8
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Exemplary Gly Ser linker
+
+<400>  8
+
+Gly Gly Gly Ser 
+1               
+
+
+<210>  9
+<211>  5
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Exemplary Gly Ser linker
+
+<400>  9
+
+Gly Gly Gly Gly Ser 
+1               5   
+
+
+<210>  10
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Exemplary Gly Asn linker
+
+<400>  10
+
+Gly Asn Gly Asn 
+1               
+
+
+<210>  11
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Exemplary Gly Asn linker
+
+<400>  11
+
+Gly Gly Asn Gly 
+1               
+
+
+<210>  12
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Exemplary Gly Asn linker
+
+<400>  12
+
+Gly Gly Gly Asn 
+1               
+
+
+<210>  13
+<211>  5
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Exemplary Gly Asn linker
+
+<400>  13
+
+Gly Gly Gly Gly Asn 
+1               5   
+
+
+<210>  14
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - thrombin cleavable
+
+<400>  14
+
+Gly Arg Gly Asp 
+1               
+
+
+<210>  15
+<211>  6
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - thrombin cleavable
+
+<400>  15
+
+Gly Arg Gly Asp Asn Pro 
+1               5       
+
+
+<210>  16
+<211>  5
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - thrombin cleavable
+
+<400>  16
+
+Gly Arg Gly Asp Ser 
+1               5   
+
+
+<210>  17
+<211>  7
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - thrombin cleavable
+
+<400>  17
+
+Gly Arg Gly Asp Ser Pro Lys 
+1               5           
+
+
+<210>  18
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - elastase cleavable
+
+<400>  18
+
+Ala Ala Pro Val 
+1               
+
+
+<210>  19
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - elastase cleavable
+
+<400>  19
+
+Ala Ala Pro Leu 
+1               
+
+
+<210>  20
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - elastase cleavable
+
+<400>  20
+
+Ala Ala Pro Phe 
+1               
+
+
+<210>  21
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - elastase cleavable
+
+<400>  21
+
+Ala Ala Pro Ala 
+1               
+
+
+<210>  22
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - elastase cleavable
+
+<400>  22
+
+Ala Tyr Leu Val 
+1               
+
+
+<210>  23
+<211>  6
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - matrix metalloproteinase 
+       cleavable
+
+
+<220>
+<221>  MISC_FEATURE
+<222>  (3)..(3)
+<223>  Xaa = Any amino acid
+
+<220>
+<221>  MISC_FEATURE
+<222>  (6)..(6)
+<223>  Xaa = Any amino acid
+
+<400>  23
+
+Gly Pro Xaa Gly Pro Xaa 
+1               5       
+
+
+<210>  24
+<211>  6
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - matrix metalloproteinase 
+       cleavable
+
+
+<220>
+<221>  MISC_FEATURE
+<222>  (6)..(6)
+<223>  Xaa = Any amino acid
+
+<400>  24
+
+Gly Pro Leu Gly Pro Xaa 
+1               5       
+
+
+<210>  25
+<211>  6
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - matrix metalloproteinase 
+       cleavable
+
+
+<220>
+<221>  MISC_FEATURE
+<222>  (6)..(6)
+<223>  Xaa = Any amino acid
+
+<400>  25
+
+Gly Pro Ile Gly Pro Xaa 
+1               5       
+
+
+<210>  26
+<211>  5
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - matrix metalloproteinase 
+       cleavable
+
+
+<220>
+<221>  MISC_FEATURE
+<222>  (5)..(5)
+<223>  Xaa = Any amino acid
+
+<400>  26
+
+Ala Pro Gly Leu Xaa 
+1               5   
+
+
+<210>  27
+<211>  7
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - collagenase cleavable
+
+
+<220>
+<221>  MISC_FEATURE
+<222>  (7)..(7)
+<223>  Xaa = Any amino acid
+
+<400>  27
+
+Pro Leu Gly Pro Asp Arg Xaa 
+1               5           
+
+
+<210>  28
+<211>  7
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - collagenase cleavable
+
+
+<220>
+<221>  MISC_FEATURE
+<222>  (7)..(7)
+<223>  Xaa = Any amino acid
+
+<400>  28
+
+Pro Leu Gly Leu Leu Gly Xaa 
+1               5           
+
+
+<210>  29
+<211>  7
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - collagenase cleavable
+
+<400>  29
+
+Pro Gln Gly Ile Ala Gly Trp 
+1               5           
+
+
+<210>  30
+<211>  5
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - collagenase cleavable
+
+<400>  30
+
+Pro Leu Gly Cys His 
+1               5   
+
+
+<210>  31
+<211>  6
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - collagenase cleavable
+
+<400>  31
+
+Pro Leu Gly Leu Tyr Ala 
+1               5       
+
+
+<210>  32
+<211>  7
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - collagenase cleavable
+
+<400>  32
+
+Pro Leu Ala Leu Trp Ala Arg 
+1               5           
+
+
+<210>  33
+<211>  7
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - collagenase cleavable
+
+<400>  33
+
+Pro Leu Ala Tyr Trp Ala Arg 
+1               5           
+
+
+<210>  34
+<211>  7
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - stromelysin cleavable
+
+<400>  34
+
+Pro Tyr Ala Tyr Tyr Met Arg 
+1               5           
+
+
+<210>  35
+<211>  7
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - gelatinase cleavable
+
+<400>  35
+
+Pro Leu Gly Met Tyr Ser Arg 
+1               5           
+
+
+<210>  36
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - angiotensin converting enzyme 
+       cleavable
+
+<400>  36
+
+Gly Asp Lys Pro 
+1               
+
+
+<210>  37
+<211>  5
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - angiotensin converting enzyme 
+       cleavable
+
+<400>  37
+
+Gly Ser Asp Lys Pro 
+1               5   
+
+
+<210>  38
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - cathepsin B cleavable
+
+<400>  38
+
+Ala Leu Ala Leu 
+1               
+
+
+<210>  39
+<211>  4
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Enzymatically degradable linker - cathepsin B cleavable
+
+<400>  39
+
+Gly Phe Leu Gly 
+1               
+
+
+<210>  40
+<211>  29
+<212>  PRT
+<213>  Chloroflexus aurantiacus
+
+<400>  40
+
+Met Ser Gly Thr Gly Arg Leu Ala Gly Lys Ile Ala Leu Ile Thr Gly 
+1               5                   10                  15      
+
+
+Gly Ala Gly Asn Ile Gly Ser Glu Leu Thr Arg Arg Phe 
+            20                  25         

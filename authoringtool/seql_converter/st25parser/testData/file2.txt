@@ -1,0 +1,94 @@
+                         SEQUENCE LISTING
+
+
+<110>  OPX Biotechnologies, Inc.
+	Universite Paris II
+<120>  COMPOSITIONS AND METHODS REGARDING DIRECT NADH UTILIZATION TO PRODUCE 
+    3-HYDROXYPROPIONIC ACID AND RELATED CHEMICALS AND PRODUCTS
+
+<140>  61536464
+<141>  2012-09-19
+
+<160>  4   
+
+
+<170>  PatentIn version 3.5
+
+
+
+<210>  1
+<211>  29
+<212>  PRT
+<213>  Chloroflexus aurantiacus
+
+<300>
+<301> test 301 xxx
+line2
+<302> test 302
+
+<305>  test 305
+line2 test 305
+
+
+<400>  1
+
+Met Ser Gly Thr Gly Arg Leu Ala Gly Lys Ile Ala Leu Ile Thr Gly 
+1               5                   10                  15      
+
+
+Gly Ala Gly Asn Ile Gly Ser Glu Leu Thr Arg Arg Phe 
+            20                  25         
+
+
+
+<210>  2
+<211>  49
+<212>  DNA
+<213>  homo sapiens
+
+<220>
+<221>  3'clip
+<222>  1..30
+
+
+<300>
+<301>Doe, Richard 
+
+<302>Isolation and Characterization of a Gene Encoding a Protease from Paramecium sp.
+<303>		Journal of Genes	
+<304> 1
+<305>4
+<306>
+1-7
+<307>  1988-20-10
+<311>   
+<313> FROM 1 TO 30
+
+<400>  2
+ttgaccaagc tggggacccc ggtcccttgg gaccagtggc agaggagtc                   49
+
+
+<210>  3
+<211>  61
+<212>  RNA
+<213>  homo sapiens
+
+<400>  3
+augaugauga ugaugaugua ccugcagacc ccguuucccu ggugccagug gcagaggagu       60
+
+c                                                                       61
+
+
+<210> 4
+<211> 32
+<212> PRT
+<213> Influenza virus A 
+
+<220> 
+<223> influenza virus A hemagglutinin subtype H9
+
+<400> 4
+Met Glu Thr Lys Ala Ile Ile Ala Ala Leu Leu Met Val Thr Ala Ala
+ 1               5                  10                  15      
+Asn Ala Asp Lys Ile Cys Ile Gly Tyr Gln Ser Thr Asn Ser Thr Glu
+            20                  25                  30          

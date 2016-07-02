@@ -1,0 +1,1290 @@
+                         SEQUENCE LISTING
+
+<110>  AMGEN INC.
+       Quon, Kim Coign
+       Cutler, Gene
+       Kordich, Jennifer Joy
+ 
+<120>  FUSION PROTEINS IN CANCER
+
+<130>  A-1587-WO-PCT
+
+<140>  -to be assigned-
+<141>  2011-06-28
+
+<150>  US 61/360,381
+<151>  2010-06-30
+
+<150>  US 61/501,080
+<151>  2011-06-24
+
+<160>  14    
+
+<170>  PatentIn version 3.5
+
+<210>  1
+<211>  19
+<212>  PRT
+<213>  Homo sapiens
+
+<400>  1
+
+Thr Asn Ser Glu Ser Pro Ser Val Thr Val Leu Leu Glu Leu Leu Val 
+1               5                   10                  15      
+
+
+Gly Ile Tyr 
+            
+
+
+<210>  2
+<211>  19
+<212>  PRT
+<213>  Homo sapiens
+
+<400>  2
+
+Gly Arg Gly Gly Arg Gly Ala Gln Glu Val Leu Leu Glu Leu Leu Val 
+1               5                   10                  15      
+
+
+Gly Ile Tyr 
+            
+
+
+<210>  3
+<211>  3834
+<212>  DNA
+<213>  Homo sapiens
+
+
+<220>
+<221>  CDS
+<222>  (290)..(3247)
+
+<400>  3
+cttgcctgtc tgcgtctaaa gcccctgccc agagtccgcc ttctcaggtc cagtactccc       60
+
+agttcacctg ccctcgggag ccctccttcc ttcggaaaac tcccggctct gactcctcct      120
+
+cagcccctcc ccccgccctg ctcaccttta attgagatgc taatgagatt cctgtcgctt      180
+
+ccatccctgg ccggccagcg ggcgggctcc ccagccaggc cgctgcacct gtcaggggaa      240
+
+caagctggag gagcaggacc ctagacctct gcagcccata ccaggtctc atg gag tag      298
+                                                      Met Glu Gly         
+                                                      1                   
+
+aac aag ctg gag gag cag gac tct agc cct cca tag tcc taa cca ggg        346
+Asn Lys Leu Glu Glu Gln Asp Ser Ser Pro Pro Gln Ser Thr Pro Gly           
+    5                   10                  15                            
+
+ctc atg aag ggg aac aag cgt gag gag cag ggg ctg ggc ccc gaa tga        394
+Leu Met Lys Gly Asn Lys Arg Glu Glu Gln Gly Leu Gly Pro Glu Pro           
+20                  25                  30                  35            
+
+gcg gcg ccc cag cag ccc acg gcg gag gag gag gcc ctg atc gag ttc        442
+Ala Ala Pro Gln Gln Pro Thr Ala Glu Glu Glu Ala Leu Ile Glu Phe           
+                40                  45                  50                
+
+cac cgc tcc tac cga gag ctc ttc gag ttc ttc tgc aac aac acc acc        490
+His Arg Ser Tyr Arg Glu Leu Phe Glu Phe Phe Cys Asn Asn Thr Thr           
+            55                  60                  65                    
+
+atc cac ggc gcc atc cgc ctg gtg tgc tcc cag cac aac cgc atg aag        538
+Ile His Gly Ala Ile Arg Leu Val Cys Ser Gln His Asn Arg Met Lys           
+        70                  75                  80                        
+
+acg gcc ttc tgg gca gtg ctg tgg ctc tgc acc ttt ggc atg atg tac        586
+Thr Ala Phe Trp Ala Val Leu Trp Leu Cys Thr Phe Gly Met Met Tyr           
+    85                  90                  95                            
+
+tgg caa ttc ggc ctg ctt ttc gga gag tac ttc agc tac ccc gtc agc        634
+Trp Gln Phe Gly Leu Leu Phe Gly Glu Tyr Phe Ser Tyr Pro Val Ser           
+100                 105                 110                 115           
+
+ctc aac atc aac ctc aac tcg gac aag ctc gtc ttc ccc gca gtg acc        682
+Leu Asn Ile Asn Leu Asn Ser Asp Lys Leu Val Phe Pro Ala Val Thr           
+                120                 125                 130               
+
+atc tgc acc ctc aat ccc tac agg tac ccg gaa att aaa gag gag ctg        730
+Ile Cys Thr Leu Asn Pro Tyr Arg Tyr Pro Glu Ile Lys Glu Glu Leu           
+            135                 140                 145                   
+
+gag gag ctg gac cgc atc aca gag cag acg ctc ttt gac ctg tac aaa        778
+Glu Glu Leu Asp Arg Ile Thr Glu Gln Thr Leu Phe Asp Leu Tyr Lys           
+        150                 155                 160                       
+
+tac agc tcc ttc acc act ctc gtg gcc ggc tcc cgc agc cgt cgc gac        826
+Tyr Ser Ser Phe Thr Thr Leu Val Ala Gly Ser Arg Ser Arg Arg Asp           
+    165                 170                 175                           
+
+ctg cgg ggg act ctg ccg cac ccc ttg cag cgc ctg agg gtc ccg ccc        874
+Leu Arg Gly Thr Leu Pro His Pro Leu Gln Arg Leu Arg Val Pro Pro           
+180                 185                 190                 195           
+
+ccg cct cac ggg gcc cgt cga gcc cgt agc gtg gcc tcc agc ttg cgg        922
+Pro Pro His Gly Ala Arg Arg Ala Arg Ser Val Ala Ser Ser Leu Arg           
+                200                 205                 210               
+
+gac aac aac ccc cag gtg gac tgg aag gac tgg aag atc ggc ttc cag        970
+Asp Asn Asn Pro Gln Val Asp Trp Lys Asp Trp Lys Ile Gly Phe Gln           
+            215                 220                 225                   
+
+ctg tgc aac cag aac aaa tcg gac tgc ttc tac cag aca tac tca tca       1018
+Leu Cys Asn Gln Asn Lys Ser Asp Cys Phe Tyr Gln Thr Tyr Ser Ser           
+        230                 235                 240                       
+
+ggg gtg gat gcg gtg agg gag tgg tac cgc ttc cac tac atc aac atc       1066
+Gly Val Asp Ala Val Arg Glu Trp Tyr Arg Phe His Tyr Ile Asn Ile           
+    245                 250                 255                           
+
+ctg tcg agg ctg cca gag act ctg cca tcc ctg gag gag gac acg ctg       1114
+Leu Ser Arg Leu Pro Glu Thr Leu Pro Ser Leu Glu Glu Asp Thr Leu           
+260                 265                 270                 275           
+
+ggc aac ttc atc ttc gcc tgc cgc ttc aac cag gtc tcc tgc aac cag       1162
+Gly Asn Phe Ile Phe Ala Cys Arg Phe Asn Gln Val Ser Cys Asn Gln           
+                280                 285                 290               
+
+gcg aat tac tct cac ttc cac cac ccg atg tat gga aac tgc tat act       1210
+Ala Asn Tyr Ser His Phe His His Pro Met Tyr Gly Asn Cys Tyr Thr           
+            295                 300                 305                   
+
+ttc aat gac aag aac aac tcc aac ctc tgg atg tct tcc atg cct gga       1258
+Phe Asn Asp Lys Asn Asn Ser Asn Leu Trp Met Ser Ser Met Pro Gly           
+        310                 315                 320                       
+
+atc aac aac ggt ctg tcc ctg atg ctg cgc gca gag cag aat gac ttc       1306
+Ile Asn Asn Gly Leu Ser Leu Met Leu Arg Ala Glu Gln Asn Asp Phe           
+    325                 330                 335                           
+
+att ccc ctg ctg tcc aca gtg act ggg gcc cgg gta atg gtg cac ggg       1354
+Ile Pro Leu Leu Ser Thr Val Thr Gly Ala Arg Val Met Val His Gly           
+340                 345                 350                 355           
+
+cag gat gaa cct gcc ttt atg gat gat ggt ggc ttt aac ttg cgg cct       1402
+Gln Asp Glu Pro Ala Phe Met Asp Asp Gly Gly Phe Asn Leu Arg Pro           
+                360                 365                 370               
+
+ggc gtg gag acc tcc atc agc atg agg aag gaa acc ctg gac aga ctt       1450
+Gly Val Glu Thr Ser Ile Ser Met Arg Lys Glu Thr Leu Asp Arg Leu           
+            375                 380                 385                   
+
+ggg ggc gat tat ggc gac tgc acc aag aat ggc agt gat gtt cct gtt       1498
+Gly Gly Asp Tyr Gly Asp Cys Thr Lys Asn Gly Ser Asp Val Pro Val           
+        390                 395                 400                       
+
+gag aac ctt tac cct tca aag tac aca cag cag gtg tgt att cac tcc       1546
+Glu Asn Leu Tyr Pro Ser Lys Tyr Thr Gln Gln Val Cys Ile His Ser           
+    405                 410                 415                           
+
+tgc ttc cag gag agc atg atc aag gag tgt ggc tgt gcc tac atc ttc       1594
+Cys Phe Gln Glu Ser Met Ile Lys Glu Cys Gly Cys Ala Tyr Ile Phe           
+420                 425                 430                 435           
+
+tat ccg cgg ccc cag aac gtg gag tac tgt gac tac aga aag cac agt       1642
+Tyr Pro Arg Pro Gln Asn Val Glu Tyr Cys Asp Tyr Arg Lys His Ser           
+                440                 445                 450               
+
+tcc tgg ggg tac tgc tac tat aag ctc cag gtt gac ttc tcc tca gac       1690
+Ser Trp Gly Tyr Cys Tyr Tyr Lys Leu Gln Val Asp Phe Ser Ser Asp           
+            455                 460                 465                   
+
+cac ctg ggc tgt ttc acc aag tgc cgg aag cca tgc agc gtg acc agc       1738
+His Leu Gly Cys Phe Thr Lys Cys Arg Lys Pro Cys Ser Val Thr Ser           
+        470                 475                 480                       
+
+tac cag ctc tct gct ggt tac tca cga tgg ccc tcg gtg aca tcc cag       1786
+Tyr Gln Leu Ser Ala Gly Tyr Ser Arg Trp Pro Ser Val Thr Ser Gln           
+    485                 490                 495                           
+
+gaa tgg gtc ttc cag atg cta tcg cga cag aac aat tac acc gtc aac       1834
+Glu Trp Val Phe Gln Met Leu Ser Arg Gln Asn Asn Tyr Thr Val Asn           
+500                 505                 510                 515           
+
+aac aag aga aat gga gtg gcc aaa gtc aac atc ttc ttc aag gag ctg       1882
+Asn Lys Arg Asn Gly Val Ala Lys Val Asn Ile Phe Phe Lys Glu Leu           
+                520                 525                 530               
+
+aac tac aaa acc aat tct gag tct ccc tct gtc acg gtg ctc ctg gag       1930
+Asn Tyr Lys Thr Asn Ser Glu Ser Pro Ser Val Thr Val Leu Leu Glu           
+            535                 540                 545                   
+
+ctg ttg gtg gga ata tac ccc tca ggg gtt att gga ctg gtc cct cac       1978
+Leu Leu Val Gly Ile Tyr Pro Ser Gly Val Ile Gly Leu Val Pro His           
+        550                 555                 560                       
+
+cta ggg gac agg gag aag aga gat agt gtg tgt ccc caa gga aaa tat       2026
+Leu Gly Asp Arg Glu Lys Arg Asp Ser Val Cys Pro Gln Gly Lys Tyr           
+    565                 570                 575                           
+
+atc cac cct caa aat aat tcg att tgc tgt acc aag tgc cac aaa gga       2074
+Ile His Pro Gln Asn Asn Ser Ile Cys Cys Thr Lys Cys His Lys Gly           
+580                 585                 590                 595           
+
+acc tac ttg tac aat gac tgt cca ggc ccg ggg cag gat acg gac tgc       2122
+Thr Tyr Leu Tyr Asn Asp Cys Pro Gly Pro Gly Gln Asp Thr Asp Cys           
+                600                 605                 610               
+
+agg gag tgt gag agc ggc tcc ttc acc gct tca gaa aac cac ctc aga       2170
+Arg Glu Cys Glu Ser Gly Ser Phe Thr Ala Ser Glu Asn His Leu Arg           
+            615                 620                 625                   
+
+cac tgc ctc agc tgc tcc aaa tgc cga aag gaa atg ggt cag gtg gag       2218
+His Cys Leu Ser Cys Ser Lys Cys Arg Lys Glu Met Gly Gln Val Glu           
+        630                 635                 640                       
+
+atc tct tct tgc aca gtg gac cgg gac acc gtg tgt ggc tgc agg aag       2266
+Ile Ser Ser Cys Thr Val Asp Arg Asp Thr Val Cys Gly Cys Arg Lys           
+    645                 650                 655                           
+
+aac cag tac cgg cat tat tgg agt gaa aac ctt ttc cag tgc ttc aat       2314
+Asn Gln Tyr Arg His Tyr Trp Ser Glu Asn Leu Phe Gln Cys Phe Asn           
+660                 665                 670                 675           
+
+tgc agc ctc tgc ctc aat ggg acc gtg cac ctc tcc tgc cag gag aaa       2362
+Cys Ser Leu Cys Leu Asn Gly Thr Val His Leu Ser Cys Gln Glu Lys           
+                680                 685                 690               
+
+cag aac acc gtg tgc acc tgc cat gca ggt ttc ttt cta aga gaa aac       2410
+Gln Asn Thr Val Cys Thr Cys His Ala Gly Phe Phe Leu Arg Glu Asn           
+            695                 700                 705                   
+
+gag tgt gtc tcc tgt agt aac tgt aag aaa agc ctg gag tgc acg aag       2458
+Glu Cys Val Ser Cys Ser Asn Cys Lys Lys Ser Leu Glu Cys Thr Lys           
+        710                 715                 720                       
+
+ttg tgc cta ccc cag att gag aat gtt aag ggc act gag gac tca ggc       2506
+Leu Cys Leu Pro Gln Ile Glu Asn Val Lys Gly Thr Glu Asp Ser Gly           
+    725                 730                 735                           
+
+acc aca gtg ctg ttg ccc ctg gtc att ttc ttt ggt ctt tgc ctt tta       2554
+Thr Thr Val Leu Leu Pro Leu Val Ile Phe Phe Gly Leu Cys Leu Leu           
+740                 745                 750                 755           
+
+tcc ctc ctc ttc att ggt tta atg tat cgc tac caa cgg tgg aag tcc       2602
+Ser Leu Leu Phe Ile Gly Leu Met Tyr Arg Tyr Gln Arg Trp Lys Ser           
+                760                 765                 770               
+
+aag ctc tac tcc att gtt tgt ggg aaa tcg aca cct gaa aaa gag ggg       2650
+Lys Leu Tyr Ser Ile Val Cys Gly Lys Ser Thr Pro Glu Lys Glu Gly           
+            775                 780                 785                   
+
+gag ctt gaa gga act act act aag ccc ctg gcc cca aac cca agc ttc       2698
+Glu Leu Glu Gly Thr Thr Thr Lys Pro Leu Ala Pro Asn Pro Ser Phe           
+        790                 795                 800                       
+
+agt ccc act cca ggc ttc acc ccc acc ctg ggc ttc agt ccc gtg ccc       2746
+Ser Pro Thr Pro Gly Phe Thr Pro Thr Leu Gly Phe Ser Pro Val Pro           
+    805                 810                 815                           
+
+agt tcc acc ttc acc tcc agc tcc acc tat acc ccc ggt gac tgt ccc       2794
+Ser Ser Thr Phe Thr Ser Ser Ser Thr Tyr Thr Pro Gly Asp Cys Pro           
+820                 825                 830                 835           
+
+aac ttt gcg gct ccc cgc aga gag gtg gca cca ccc tat cag ggg gct       2842
+Asn Phe Ala Ala Pro Arg Arg Glu Val Ala Pro Pro Tyr Gln Gly Ala           
+                840                 845                 850               
+
+gac ccc atc ctt gcg aca gcc ctc gcc tcc gac ccc atc ccc aac ccc       2890
+Asp Pro Ile Leu Ala Thr Ala Leu Ala Ser Asp Pro Ile Pro Asn Pro           
+            855                 860                 865                   
+
+ctt cag aag tgg gag gac agc gcc cac aag cca cag agc cta gac act       2938
+Leu Gln Lys Trp Glu Asp Ser Ala His Lys Pro Gln Ser Leu Asp Thr           
+        870                 875                 880                       
+
+gat gac ccc gcg acg ctg tac gcc gtg gtg gag aac gtg ccc ccg ttg       2986
+Asp Asp Pro Ala Thr Leu Tyr Ala Val Val Glu Asn Val Pro Pro Leu           
+    885                 890                 895                           
+
+cgc tgg aag gaa ttc gtg cgg cgc cta ggg ctg agc gac cac gag atc       3034
+Arg Trp Lys Glu Phe Val Arg Arg Leu Gly Leu Ser Asp His Glu Ile           
+900                 905                 910                 915           
+
+gat cgg ctg gag ctg cag aac ggg cgc tgc ctg cgc gag gcg caa tac       3082
+Asp Arg Leu Glu Leu Gln Asn Gly Arg Cys Leu Arg Glu Ala Gln Tyr           
+                920                 925                 930               
+
+agc atg ctg gcg acc tgg agg cgg cgc acg ccg cgg cgc gag gcc acg       3130
+Ser Met Leu Ala Thr Trp Arg Arg Arg Thr Pro Arg Arg Glu Ala Thr           
+            935                 940                 945                   
+
+ctg gag ctg ctg gga cgc gtg ctc cgc gac atg gac ctg ctg ggc tgc       3178
+Leu Glu Leu Leu Gly Arg Val Leu Arg Asp Met Asp Leu Leu Gly Cys           
+        950                 955                 960                       
+
+ctg gag gac atc gag gag gcg ctt tgc ggc ccc gcc gcc ctc ccg ccc       3226
+Leu Glu Asp Ile Glu Glu Ala Leu Cys Gly Pro Ala Ala Leu Pro Pro           
+    965                 970                 975                           
+
+gcg ccc agt ctt ctc aga tga ggctgcgccc ctgcgggcag ctctaaggac          3277
+Ala Pro Ser Leu Leu Arg                                                   
+980                 985                                                   
+
+cgtcctgcga gatcgccttc caaccccact tttttctgga aaggaggggt cctgcagggg     3337
+
+caagcaggag ctagcagccg cctacttggt gctaacccct cgatgtacat agcttttctc     3397
+
+agctgcctgc gcgccgccga cagtcagcgc tgtgcgcgcg gagagaggtg cgccgtgggc     3457
+
+tcaagagcct gagtgggtgg tttgcgagga tgagggacgc tatgcctcat gcccgttttg     3517
+
+ggtgtcctca ccagcaaggc tgctcggggg cccctggttc gtccctgagc ctttttcaca     3577
+
+gtgcataagc agtttttttt gtttttgttt tgttttgttt tgtttttaaa tcaatcatgt     3637
+
+tacactaata gaaacttggc actcctgtgc cctctgcctg gacaagcaca tagcaagctg     3697
+
+aactgtccta aggcaggggc gagcacggaa caatggggcc ttcagctgga gctgtggact     3757
+
+tttgtacata cactaaaatt ctgaagttaa agctctgctc ttggaaaaaa aaaaaaaaaa     3817
+
+aaaaaaaaaa aaaaaaa                                                    3834
+
+
+<210>  4
+<211>  985
+<212>  PRT
+<213>  Homo sapiens
+
+<400>  4
+
+Met Glu Gly Asn Lys Leu Glu Glu Gln Asp Ser Ser Pro Pro Gln Ser 
+1               5                   10                  15      
+
+
+Thr Pro Gly Leu Met Lys Gly Asn Lys Arg Glu Glu Gln Gly Leu Gly 
+            20                  25                  30          
+
+
+Pro Glu Pro Ala Ala Pro Gln Gln Pro Thr Ala Glu Glu Glu Ala Leu 
+        35                  40                  45              
+
+
+Ile Glu Phe His Arg Ser Tyr Arg Glu Leu Phe Glu Phe Phe Cys Asn 
+    50                  55                  60                  
+
+
+Asn Thr Thr Ile His Gly Ala Ile Arg Leu Val Cys Ser Gln His Asn 
+65                  70                  75                  80  
+
+
+Arg Met Lys Thr Ala Phe Trp Ala Val Leu Trp Leu Cys Thr Phe Gly 
+                85                  90                  95      
+
+
+Met Met Tyr Trp Gln Phe Gly Leu Leu Phe Gly Glu Tyr Phe Ser Tyr 
+            100                 105                 110         
+
+
+Pro Val Ser Leu Asn Ile Asn Leu Asn Ser Asp Lys Leu Val Phe Pro 
+        115                 120                 125             
+
+
+Ala Val Thr Ile Cys Thr Leu Asn Pro Tyr Arg Tyr Pro Glu Ile Lys 
+    130                 135                 140                 
+
+
+Glu Glu Leu Glu Glu Leu Asp Arg Ile Thr Glu Gln Thr Leu Phe Asp 
+145                 150                 155                 160 
+
+
+Leu Tyr Lys Tyr Ser Ser Phe Thr Thr Leu Val Ala Gly Ser Arg Ser 
+                165                 170                 175     
+
+
+Arg Arg Asp Leu Arg Gly Thr Leu Pro His Pro Leu Gln Arg Leu Arg 
+            180                 185                 190         
+
+
+Val Pro Pro Pro Pro His Gly Ala Arg Arg Ala Arg Ser Val Ala Ser 
+        195                 200                 205             
+
+
+Ser Leu Arg Asp Asn Asn Pro Gln Val Asp Trp Lys Asp Trp Lys Ile 
+    210                 215                 220                 
+
+
+Gly Phe Gln Leu Cys Asn Gln Asn Lys Ser Asp Cys Phe Tyr Gln Thr 
+225                 230                 235                 240 
+
+
+Tyr Ser Ser Gly Val Asp Ala Val Arg Glu Trp Tyr Arg Phe His Tyr 
+                245                 250                 255     
+
+
+Ile Asn Ile Leu Ser Arg Leu Pro Glu Thr Leu Pro Ser Leu Glu Glu 
+            260                 265                 270         
+
+
+Asp Thr Leu Gly Asn Phe Ile Phe Ala Cys Arg Phe Asn Gln Val Ser 
+        275                 280                 285             
+
+
+Cys Asn Gln Ala Asn Tyr Ser His Phe His His Pro Met Tyr Gly Asn 
+    290                 295                 300                 
+
+
+Cys Tyr Thr Phe Asn Asp Lys Asn Asn Ser Asn Leu Trp Met Ser Ser 
+305                 310                 315                 320 
+
+
+Met Pro Gly Ile Asn Asn Gly Leu Ser Leu Met Leu Arg Ala Glu Gln 
+                325                 330                 335     
+
+
+Asn Asp Phe Ile Pro Leu Leu Ser Thr Val Thr Gly Ala Arg Val Met 
+            340                 345                 350         
+
+
+Val His Gly Gln Asp Glu Pro Ala Phe Met Asp Asp Gly Gly Phe Asn 
+        355                 360                 365             
+
+
+Leu Arg Pro Gly Val Glu Thr Ser Ile Ser Met Arg Lys Glu Thr Leu 
+    370                 375                 380                 
+
+
+Asp Arg Leu Gly Gly Asp Tyr Gly Asp Cys Thr Lys Asn Gly Ser Asp 
+385                 390                 395                 400 
+
+
+Val Pro Val Glu Asn Leu Tyr Pro Ser Lys Tyr Thr Gln Gln Val Cys 
+                405                 410                 415     
+
+
+Ile His Ser Cys Phe Gln Glu Ser Met Ile Lys Glu Cys Gly Cys Ala 
+            420                 425                 430         
+
+
+Tyr Ile Phe Tyr Pro Arg Pro Gln Asn Val Glu Tyr Cys Asp Tyr Arg 
+        435                 440                 445             
+
+
+Lys His Ser Ser Trp Gly Tyr Cys Tyr Tyr Lys Leu Gln Val Asp Phe 
+    450                 455                 460                 
+
+
+Ser Ser Asp His Leu Gly Cys Phe Thr Lys Cys Arg Lys Pro Cys Ser 
+465                 470                 475                 480 
+
+
+Val Thr Ser Tyr Gln Leu Ser Ala Gly Tyr Ser Arg Trp Pro Ser Val 
+                485                 490                 495     
+
+
+Thr Ser Gln Glu Trp Val Phe Gln Met Leu Ser Arg Gln Asn Asn Tyr 
+            500                 505                 510         
+
+
+Thr Val Asn Asn Lys Arg Asn Gly Val Ala Lys Val Asn Ile Phe Phe 
+        515                 520                 525             
+
+
+Lys Glu Leu Asn Tyr Lys Thr Asn Ser Glu Ser Pro Ser Val Thr Val 
+    530                 535                 540                 
+
+
+Leu Leu Glu Leu Leu Val Gly Ile Tyr Pro Ser Gly Val Ile Gly Leu 
+545                 550                 555                 560 
+
+
+Val Pro His Leu Gly Asp Arg Glu Lys Arg Asp Ser Val Cys Pro Gln 
+                565                 570                 575     
+
+
+Gly Lys Tyr Ile His Pro Gln Asn Asn Ser Ile Cys Cys Thr Lys Cys 
+            580                 585                 590         
+
+
+His Lys Gly Thr Tyr Leu Tyr Asn Asp Cys Pro Gly Pro Gly Gln Asp 
+        595                 600                 605             
+
+
+Thr Asp Cys Arg Glu Cys Glu Ser Gly Ser Phe Thr Ala Ser Glu Asn 
+    610                 615                 620                 
+
+
+His Leu Arg His Cys Leu Ser Cys Ser Lys Cys Arg Lys Glu Met Gly 
+625                 630                 635                 640 
+
+
+Gln Val Glu Ile Ser Ser Cys Thr Val Asp Arg Asp Thr Val Cys Gly 
+                645                 650                 655     
+
+
+Cys Arg Lys Asn Gln Tyr Arg His Tyr Trp Ser Glu Asn Leu Phe Gln 
+            660                 665                 670         
+
+
+Cys Phe Asn Cys Ser Leu Cys Leu Asn Gly Thr Val His Leu Ser Cys 
+        675                 680                 685             
+
+
+Gln Glu Lys Gln Asn Thr Val Cys Thr Cys His Ala Gly Phe Phe Leu 
+    690                 695                 700                 
+
+
+Arg Glu Asn Glu Cys Val Ser Cys Ser Asn Cys Lys Lys Ser Leu Glu 
+705                 710                 715                 720 
+
+
+Cys Thr Lys Leu Cys Leu Pro Gln Ile Glu Asn Val Lys Gly Thr Glu 
+                725                 730                 735     
+
+
+Asp Ser Gly Thr Thr Val Leu Leu Pro Leu Val Ile Phe Phe Gly Leu 
+            740                 745                 750         
+
+
+Cys Leu Leu Ser Leu Leu Phe Ile Gly Leu Met Tyr Arg Tyr Gln Arg 
+        755                 760                 765             
+
+
+Trp Lys Ser Lys Leu Tyr Ser Ile Val Cys Gly Lys Ser Thr Pro Glu 
+    770                 775                 780                 
+
+
+Lys Glu Gly Glu Leu Glu Gly Thr Thr Thr Lys Pro Leu Ala Pro Asn 
+785                 790                 795                 800 
+
+
+Pro Ser Phe Ser Pro Thr Pro Gly Phe Thr Pro Thr Leu Gly Phe Ser 
+                805                 810                 815     
+
+
+Pro Val Pro Ser Ser Thr Phe Thr Ser Ser Ser Thr Tyr Thr Pro Gly 
+            820                 825                 830         
+
+
+Asp Cys Pro Asn Phe Ala Ala Pro Arg Arg Glu Val Ala Pro Pro Tyr 
+        835                 840                 845             
+
+
+Gln Gly Ala Asp Pro Ile Leu Ala Thr Ala Leu Ala Ser Asp Pro Ile 
+    850                 855                 860                 
+
+
+Pro Asn Pro Leu Gln Lys Trp Glu Asp Ser Ala His Lys Pro Gln Ser 
+865                 870                 875                 880 
+
+
+Leu Asp Thr Asp Asp Pro Ala Thr Leu Tyr Ala Val Val Glu Asn Val 
+                885                 890                 895     
+
+
+Pro Pro Leu Arg Trp Lys Glu Phe Val Arg Arg Leu Gly Leu Ser Asp 
+            900                 905                 910         
+
+
+His Glu Ile Asp Arg Leu Glu Leu Gln Asn Gly Arg Cys Leu Arg Glu 
+        915                 920                 925             
+
+
+Ala Gln Tyr Ser Met Leu Ala Thr Trp Arg Arg Arg Thr Pro Arg Arg 
+    930                 935                 940                 
+
+
+Glu Ala Thr Leu Glu Leu Leu Gly Arg Val Leu Arg Asp Met Asp Leu 
+945                 950                 955                 960 
+
+
+Leu Gly Cys Leu Glu Asp Ile Glu Glu Ala Leu Cys Gly Pro Ala Ala 
+                965                 970                 975     
+
+
+Leu Pro Pro Ala Pro Ser Leu Leu Arg 
+            980                 985 
+
+
+<210>  5
+<211>  4017
+<212>  DNA
+<213>  Homo sapiens
+
+
+<220>
+<221>  CDS
+<222>  (290)..(3430)
+
+<400>  5
+cttgcctgtc tgcgtctaaa gcccctgccc agagtccgcc ttctcaggtc cagtactccc       60
+
+agttcacctg ccctcgggag ccctccttcc ttcggaaaac tcccggctct gactcctcct      120
+
+cagcccctcc ccccgccctg ctcaccttta attgagatgc taatgagatt cctgtcgctt      180
+
+ccatccctgg ccggccagcg ggcgggctcc ccagccaggc cgctgcacct gtcaggggaa      240
+
+caagctggag gagcaggacc ctagacctct gcagcccata ccaggtctc atg gag ggg      298
+                                                      Met Glu Gly         
+                                                      1                   
+
+aac aag ctg gag gag cag gac tct agc cct cca cag tcc act cca ggg        346
+Asn Lys Leu Glu Glu Gln Asp Ser Ser Pro Pro Gln Ser Thr Pro Gly           
+    5                   10                  15                            
+
+ctc atg aag ggg aac aag cgt gag gag cag ggg ctg ggc ccc gaa cct        394
+Leu Met Lys Gly Asn Lys Arg Glu Glu Gln Gly Leu Gly Pro Glu Pro           
+20                  25                  30                  35            
+
+gcg gcg ccc cag cag ccc acg gcg gag gag gag gcc ctg atc gag ttc        442
+Ala Ala Pro Gln Gln Pro Thr Ala Glu Glu Glu Ala Leu Ile Glu Phe           
+                40                  45                  50                
+
+cac cgc tcc tac cga gag ctc ttc gag ttc ttc tgc aac aac acc acc        490
+His Arg Ser Tyr Arg Glu Leu Phe Glu Phe Phe Cys Asn Asn Thr Thr           
+            55                  60                  65                    
+
+atc cac ggc gcc atc cgc ctg gtg tgc tcc cag cac aac cgc atg aag        538
+Ile His Gly Ala Ile Arg Leu Val Cys Ser Gln His Asn Arg Met Lys           
+        70                  75                  80                        
+
+acg gcc ttc tgg gca gtg ctg tgg ctc tgc acc ttt ggc atg atg tac        586
+Thr Ala Phe Trp Ala Val Leu Trp Leu Cys Thr Phe Gly Met Met Tyr           
+    85                  90                  95                            
+
+tgg caa ttc ggc ctg ctt ttc gga gag tac ttc agc tac ccc gtc agc        634
+Trp Gln Phe Gly Leu Leu Phe Gly Glu Tyr Phe Ser Tyr Pro Val Ser           
+100                 105                 110                 115           
+
+ctc aac atc aac ctc aac tcg gac aag ctc gtc ttc ccc gca gtg acc        682
+Leu Asn Ile Asn Leu Asn Ser Asp Lys Leu Val Phe Pro Ala Val Thr           
+                120                 125                 130               
+
+atc tgc acc ctc aat ccc tac agg tac ccg gaa att aaa gag gag ctg        730
+Ile Cys Thr Leu Asn Pro Tyr Arg Tyr Pro Glu Ile Lys Glu Glu Leu           
+            135                 140                 145                   
+
+gag gag ctg gac cgc atc aca gag cag acg ctc ttt gac ctg tac aaa        778
+Glu Glu Leu Asp Arg Ile Thr Glu Gln Thr Leu Phe Asp Leu Tyr Lys           
+        150                 155                 160                       
+
+tac agc tcc ttc acc act ctc gtg gcc ggc tcc cgc agc cgt cgc gac        826
+Tyr Ser Ser Phe Thr Thr Leu Val Ala Gly Ser Arg Ser Arg Arg Asp           
+    165                 170                 175                           
+
+ctg cgg ggg act ctg ccg cac ccc ttg cag cgc ctg agg gtc ccg ccc        874
+Leu Arg Gly Thr Leu Pro His Pro Leu Gln Arg Leu Arg Val Pro Pro           
+180                 185                 190                 195           
+
+ccg cct cac ggg gcc cgt cga gcc cgt agc gtg gcc tcc agc ttg cgg        922
+Pro Pro His Gly Ala Arg Arg Ala Arg Ser Val Ala Ser Ser Leu Arg           
+                200                 205                 210               
+
+gac aac aac ccc cag gtg gac tgg aag gac tgg aag atc ggc ttc cag        970
+Asp Asn Asn Pro Gln Val Asp Trp Lys Asp Trp Lys Ile Gly Phe Gln           
+            215                 220                 225                   
+
+ctg tgc aac cag aac aaa tcg gac tgc ttc tac cag aca tac tca tca       1018
+Leu Cys Asn Gln Asn Lys Ser Asp Cys Phe Tyr Gln Thr Tyr Ser Ser           
+        230                 235                 240                       
+
+ggg gtg gat gcg gtg agg gag tgg tac cgc ttc cac tac atc aac atc       1066
+Gly Val Asp Ala Val Arg Glu Trp Tyr Arg Phe His Tyr Ile Asn Ile           
+    245                 250                 255                           
+
+ctg tcg agg ctg cca gag act ctg cca tcc ctg gag gag gac acg ctg       1114
+Leu Ser Arg Leu Pro Glu Thr Leu Pro Ser Leu Glu Glu Asp Thr Leu           
+260                 265                 270                 275           
+
+ggc aac ttc atc ttc gcc tgc cgc ttc aac cag gtc tcc tgc aac cag       1162
+Gly Asn Phe Ile Phe Ala Cys Arg Phe Asn Gln Val Ser Cys Asn Gln           
+                280                 285                 290               
+
+gcg aat tac tct cac ttc cac cac ccg atg tat gga aac tgc tat act       1210
+Ala Asn Tyr Ser His Phe His His Pro Met Tyr Gly Asn Cys Tyr Thr           
+            295                 300                 305                   
+
+ttc aat gac aag aac aac tcc aac ctc tgg atg tct tcc atg cct gga       1258
+Phe Asn Asp Lys Asn Asn Ser Asn Leu Trp Met Ser Ser Met Pro Gly           
+        310                 315                 320                       
+
+atc aac aac ggt ctg tcc ctg atg ctg cgc gca gag cag aat gac ttc       1306
+Ile Asn Asn Gly Leu Ser Leu Met Leu Arg Ala Glu Gln Asn Asp Phe           
+    325                 330                 335                           
+
+att ccc ctg ctg tcc aca gtg act ggg gcc cgg gta atg gtg cac ggg       1354
+Ile Pro Leu Leu Ser Thr Val Thr Gly Ala Arg Val Met Val His Gly           
+340                 345                 350                 355           
+
+cag gat gaa cct gcc ttt atg gat gat ggt ggc ttt aac ttg cgg cct       1402
+Gln Asp Glu Pro Ala Phe Met Asp Asp Gly Gly Phe Asn Leu Arg Pro           
+                360                 365                 370               
+
+ggc gtg gag acc tcc atc agc atg agg aag gaa acc ctg gac aga ctt       1450
+Gly Val Glu Thr Ser Ile Ser Met Arg Lys Glu Thr Leu Asp Arg Leu           
+            375                 380                 385                   
+
+ggg ggc gat tat ggc gac tgc acc aag aat ggc agt gat gtt cct gtt       1498
+Gly Gly Asp Tyr Gly Asp Cys Thr Lys Asn Gly Ser Asp Val Pro Val           
+        390                 395                 400                       
+
+gag aac ctt tac cct tca aag tac aca cag cag gtg tgt att cac tcc       1546
+Glu Asn Leu Tyr Pro Ser Lys Tyr Thr Gln Gln Val Cys Ile His Ser           
+    405                 410                 415                           
+
+tgc ttc cag gag agc atg atc aag gag tgt ggc tgt gcc tac atc ttc       1594
+Cys Phe Gln Glu Ser Met Ile Lys Glu Cys Gly Cys Ala Tyr Ile Phe           
+420                 425                 430                 435           
+
+tat ccg cgg ccc cag aac gtg gag tac tgt gac tac aga aag cac agt       1642
+Tyr Pro Arg Pro Gln Asn Val Glu Tyr Cys Asp Tyr Arg Lys His Ser           
+                440                 445                 450               
+
+tcc tgg ggg tac tgc tac tat aag ctc cag gtt gac ttc tcc tca gac       1690
+Ser Trp Gly Tyr Cys Tyr Tyr Lys Leu Gln Val Asp Phe Ser Ser Asp           
+            455                 460                 465                   
+
+cac ctg ggc tgt ttc acc aag tgc cgg aag cca tgc agc gtg acc agc       1738
+His Leu Gly Cys Phe Thr Lys Cys Arg Lys Pro Cys Ser Val Thr Ser           
+        470                 475                 480                       
+
+tac cag ctc tct gct ggt tac tca cga tgg ccc tcg gtg aca tcc cag       1786
+Tyr Gln Leu Ser Ala Gly Tyr Ser Arg Trp Pro Ser Val Thr Ser Gln           
+    485                 490                 495                           
+
+gaa tgg gtc ttc cag atg cta tcg cga cag aac aat tac acc gtc aac       1834
+Glu Trp Val Phe Gln Met Leu Ser Arg Gln Asn Asn Tyr Thr Val Asn           
+500                 505                 510                 515           
+
+aac aag aga aat gga gtg gcc aaa gtc aac atc ttc ttc aag gag ctg       1882
+Asn Lys Arg Asn Gly Val Ala Lys Val Asn Ile Phe Phe Lys Glu Leu           
+                520                 525                 530               
+
+aac tac aaa acc aat tct gag tct ccc tct gtc acg atg gtc acc ctc       1930
+Asn Tyr Lys Thr Asn Ser Glu Ser Pro Ser Val Thr Met Val Thr Leu           
+            535                 540                 545                   
+
+ctg tcc aac ctg ggc agc cag tgg agc ctg tgg ttc ggc tcc tcg gtg       1978
+Leu Ser Asn Leu Gly Ser Gln Trp Ser Leu Trp Phe Gly Ser Ser Val           
+        550                 555                 560                       
+
+ttg tct gtg gtg gag atg gct gag ctc gtc ttt gac ctg ctg gtc atc       2026
+Leu Ser Val Val Glu Met Ala Glu Leu Val Phe Asp Leu Leu Val Ile           
+    565                 570                 575                           
+
+atg ttc ctc atg ctg ctc cga agg ttc cga agc cga tac tgg tct cca       2074
+Met Phe Leu Met Leu Leu Arg Arg Phe Arg Ser Arg Tyr Trp Ser Pro           
+580                 585                 590                 595           
+
+ggc cga ggg ggc agg ggt gct cag gag gtg ctc ctg gag ctg ttg gtg       2122
+Gly Arg Gly Gly Arg Gly Ala Gln Glu Val Leu Leu Glu Leu Leu Val           
+                600                 605                 610               
+
+gga ata tac ccc tca ggg gtt att gga ctg gtc cct cac cta ggg gac       2170
+Gly Ile Tyr Pro Ser Gly Val Ile Gly Leu Val Pro His Leu Gly Asp           
+            615                 620                 625                   
+
+agg gag aag aga gat agt gtg tgt ccc caa gga aaa tat atc cac cct       2218
+Arg Glu Lys Arg Asp Ser Val Cys Pro Gln Gly Lys Tyr Ile His Pro           
+        630                 635                 640                       
+
+caa aat aat tcg att tgc tgt acc aag tgc cac aaa gga acc tac ttg       2266
+Gln Asn Asn Ser Ile Cys Cys Thr Lys Cys His Lys Gly Thr Tyr Leu           
+    645                 650                 655                           
+
+tac aat gac tgt cca ggc ccg ggg cag gat acg gac tgc agg gag tgt       2314
+Tyr Asn Asp Cys Pro Gly Pro Gly Gln Asp Thr Asp Cys Arg Glu Cys           
+660                 665                 670                 675           
+
+gag agc ggc tcc ttc acc gct tca gaa aac cac ctc aga cac tgc ctc       2362
+Glu Ser Gly Ser Phe Thr Ala Ser Glu Asn His Leu Arg His Cys Leu           
+                680                 685                 690               
+
+agc tgc tcc aaa tgc cga aag gaa atg ggt cag gtg gag atc tct tct       2410
+Ser Cys Ser Lys Cys Arg Lys Glu Met Gly Gln Val Glu Ile Ser Ser           
+            695                 700                 705                   
+
+tgc aca gtg gac cgg gac acc gtg tgt ggc tgc agg aag aac cag tac       2458
+Cys Thr Val Asp Arg Asp Thr Val Cys Gly Cys Arg Lys Asn Gln Tyr           
+        710                 715                 720                       
+
+cgg cat tat tgg agt gaa aac ctt ttc cag tgc ttc aat tgc agc ctc       2506
+Arg His Tyr Trp Ser Glu Asn Leu Phe Gln Cys Phe Asn Cys Ser Leu           
+    725                 730                 735                           
+
+tgc ctc aat ggg acc gtg cac ctc tcc tgc cag gag aaa cag aac acc       2554
+Cys Leu Asn Gly Thr Val His Leu Ser Cys Gln Glu Lys Gln Asn Thr           
+740                 745                 750                 755           
+
+gtg tgc acc tgc cat gca ggt ttc ttt cta aga gaa aac gag tgt gtc       2602
+Val Cys Thr Cys His Ala Gly Phe Phe Leu Arg Glu Asn Glu Cys Val           
+                760                 765                 770               
+
+tcc tgt agt aac tgt aag aaa agc ctg gag tgc acg aag ttg tgc cta       2650
+Ser Cys Ser Asn Cys Lys Lys Ser Leu Glu Cys Thr Lys Leu Cys Leu           
+            775                 780                 785                   
+
+ccc cag att gag aat gtt aag ggc act gag gac tca ggc acc aca gtg       2698
+Pro Gln Ile Glu Asn Val Lys Gly Thr Glu Asp Ser Gly Thr Thr Val           
+        790                 795                 800                       
+
+ctg ttg ccc ctg gtc att ttc ttt ggt ctt tgc ctt tta tcc ctc ctc       2746
+Leu Leu Pro Leu Val Ile Phe Phe Gly Leu Cys Leu Leu Ser Leu Leu           
+    805                 810                 815                           
+
+ttc att ggt tta atg tat cgc tac caa cgg tgg aag tcc aag ctc tac       2794
+Phe Ile Gly Leu Met Tyr Arg Tyr Gln Arg Trp Lys Ser Lys Leu Tyr           
+820                 825                 830                 835           
+
+tcc att gtt tgt ggg aaa tcg aca cct gaa aaa gag ggg gag ctt gaa       2842
+Ser Ile Val Cys Gly Lys Ser Thr Pro Glu Lys Glu Gly Glu Leu Glu           
+                840                 845                 850               
+
+gga act act act aag ccc ctg gcc cca aac cca agc ttc agt ccc act       2890
+Gly Thr Thr Thr Lys Pro Leu Ala Pro Asn Pro Ser Phe Ser Pro Thr           
+            855                 860                 865                   
+
+cca ggc ttc acc ccc acc ctg ggc ttc agt ccc gtg ccc agt tcc acc       2938
+Pro Gly Phe Thr Pro Thr Leu Gly Phe Ser Pro Val Pro Ser Ser Thr           
+        870                 875                 880                       
+
+ttc acc tcc agc tcc acc tat acc ccc ggt gac tgt ccc aac ttt gcg       2986
+Phe Thr Ser Ser Ser Thr Tyr Thr Pro Gly Asp Cys Pro Asn Phe Ala           
+    885                 890                 895                           
+
+gct ccc cgc aga gag gtg gca cca ccc tat cag ggg gct gac ccc atc       3034
+Ala Pro Arg Arg Glu Val Ala Pro Pro Tyr Gln Gly Ala Asp Pro Ile           
+900                 905                 910                 915           
+
+ctt gcg aca gcc ctc gcc tcc gac ccc atc ccc aac ccc ctt cag aag       3082
+Leu Ala Thr Ala Leu Ala Ser Asp Pro Ile Pro Asn Pro Leu Gln Lys           
+                920                 925                 930               
+
+tgg gag gac agc gcc cac aag cca cag agc cta gac act gat gac ccc       3130
+Trp Glu Asp Ser Ala His Lys Pro Gln Ser Leu Asp Thr Asp Asp Pro           
+            935                 940                 945                   
+
+gcg acg ctg tac gcc gtg gtg gag aac gtg ccc ccg ttg cgc tgg aag       3178
+Ala Thr Leu Tyr Ala Val Val Glu Asn Val Pro Pro Leu Arg Trp Lys           
+        950                 955                 960                       
+
+gaa ttc gtg cgg cgc cta ggg ctg agc gac cac gag atc gat cgg ctg       3226
+Glu Phe Val Arg Arg Leu Gly Leu Ser Asp His Glu Ile Asp Arg Leu           
+    965                 970                 975                           
+
+gag ctg cag aac ggg cgc tgc ctg cgc gag gcg caa tac agc atg ctg       3274
+Glu Leu Gln Asn Gly Arg Cys Leu Arg Glu Ala Gln Tyr Ser Met Leu           
+980                 985                 990                 995           
+
+gcg acc tgg agg cgg  cgc acg ccg cgg cgc  gag gcc acg ctg gag         3319
+Ala Thr Trp Arg Arg  Arg Thr Pro Arg Arg  Glu Ala Thr Leu Glu             
+                1000                 1005                 1010            
+
+ctg ctg gga cgc gtg  ctc cgc gac atg gac  ctg ctg ggc tgc ctg         3364
+Leu Leu Gly Arg Val  Leu Arg Asp Met Asp  Leu Leu Gly Cys Leu             
+                1015                 1020                 1025            
+
+gag gac atc gag gag  gcg ctt tgc ggc ccc  gcc gcc ctc ccg ccc         3409
+Glu Asp Ile Glu Glu  Ala Leu Cys Gly Pro  Ala Ala Leu Pro Pro             
+                1030                 1035                 1040            
+
+gcg ccc agt ctt ctc  aga tga ggctgcgccc ctgcgggcag ctctaaggac         3460
+Ala Pro Ser Leu Leu  Arg                                                  
+                1045                                                      
+
+cgtcctgcga gatcgccttc caaccccact tttttctgga aaggaggggt cctgcagggg     3520
+
+caagcaggag ctagcagccg cctacttggt gctaacccct cgatgtacat agcttttctc     3580
+
+agctgcctgc gcgccgccga cagtcagcgc tgtgcgcgcg gagagaggtg cgccgtgggc     3640
+
+tcaagagcct gagtgggtgg tttgcgagga tgagggacgc tatgcctcat gcccgttttg     3700
+
+ggtgtcctca ccagcaaggc tgctcggggg cccctggttc gtccctgagc ctttttcaca     3760
+
+gtgcataagc agtttttttt gtttttgttt tgttttgttt tgtttttaaa tcaatcatgt     3820
+
+tacactaata gaaacttggc actcctgtgc cctctgcctg gacaagcaca tagcaagctg     3880
+
+aactgtccta aggcaggggc gagcacggaa caatggggcc ttcagctgga gctgtggact     3940
+
+tttgtacata cactaaaatt ctgaagttaa agctctgctc ttggaaaaaa aaaaaaaaaa     4000
+
+aaaaaaaaaa aaaaaaa                                                    4017
+
+
+<210>  6
+<211>  1046
+<212>  PRT
+<213>  Homo sapiens
+
+<400>  6
+
+Met Glu Gly Asn Lys Leu Glu Glu Gln Asp Ser Ser Pro Pro Gln Ser 
+1               5                   10                  15      
+
+
+Thr Pro Gly Leu Met Lys Gly Asn Lys Arg Glu Glu Gln Gly Leu Gly 
+            20                  25                  30          
+
+
+Pro Glu Pro Ala Ala Pro Gln Gln Pro Thr Ala Glu Glu Glu Ala Leu 
+        35                  40                  45              
+
+
+Ile Glu Phe His Arg Ser Tyr Arg Glu Leu Phe Glu Phe Phe Cys Asn 
+    50                  55                  60                  
+
+
+Asn Thr Thr Ile His Gly Ala Ile Arg Leu Val Cys Ser Gln His Asn 
+65                  70                  75                  80  
+
+
+Arg Met Lys Thr Ala Phe Trp Ala Val Leu Trp Leu Cys Thr Phe Gly 
+                85                  90                  95      
+
+
+Met Met Tyr Trp Gln Phe Gly Leu Leu Phe Gly Glu Tyr Phe Ser Tyr 
+            100                 105                 110         
+
+
+Pro Val Ser Leu Asn Ile Asn Leu Asn Ser Asp Lys Leu Val Phe Pro 
+        115                 120                 125             
+
+
+Ala Val Thr Ile Cys Thr Leu Asn Pro Tyr Arg Tyr Pro Glu Ile Lys 
+    130                 135                 140                 
+
+
+Glu Glu Leu Glu Glu Leu Asp Arg Ile Thr Glu Gln Thr Leu Phe Asp 
+145                 150                 155                 160 
+
+
+Leu Tyr Lys Tyr Ser Ser Phe Thr Thr Leu Val Ala Gly Ser Arg Ser 
+                165                 170                 175     
+
+
+Arg Arg Asp Leu Arg Gly Thr Leu Pro His Pro Leu Gln Arg Leu Arg 
+            180                 185                 190         
+
+
+Val Pro Pro Pro Pro His Gly Ala Arg Arg Ala Arg Ser Val Ala Ser 
+        195                 200                 205             
+
+
+Ser Leu Arg Asp Asn Asn Pro Gln Val Asp Trp Lys Asp Trp Lys Ile 
+    210                 215                 220                 
+
+
+Gly Phe Gln Leu Cys Asn Gln Asn Lys Ser Asp Cys Phe Tyr Gln Thr 
+225                 230                 235                 240 
+
+
+Tyr Ser Ser Gly Val Asp Ala Val Arg Glu Trp Tyr Arg Phe His Tyr 
+                245                 250                 255     
+
+
+Ile Asn Ile Leu Ser Arg Leu Pro Glu Thr Leu Pro Ser Leu Glu Glu 
+            260                 265                 270         
+
+
+Asp Thr Leu Gly Asn Phe Ile Phe Ala Cys Arg Phe Asn Gln Val Ser 
+        275                 280                 285             
+
+
+Cys Asn Gln Ala Asn Tyr Ser His Phe His His Pro Met Tyr Gly Asn 
+    290                 295                 300                 
+
+
+Cys Tyr Thr Phe Asn Asp Lys Asn Asn Ser Asn Leu Trp Met Ser Ser 
+305                 310                 315                 320 
+
+
+Met Pro Gly Ile Asn Asn Gly Leu Ser Leu Met Leu Arg Ala Glu Gln 
+                325                 330                 335     
+
+
+Asn Asp Phe Ile Pro Leu Leu Ser Thr Val Thr Gly Ala Arg Val Met 
+            340                 345                 350         
+
+
+Val His Gly Gln Asp Glu Pro Ala Phe Met Asp Asp Gly Gly Phe Asn 
+        355                 360                 365             
+
+
+Leu Arg Pro Gly Val Glu Thr Ser Ile Ser Met Arg Lys Glu Thr Leu 
+    370                 375                 380                 
+
+
+Asp Arg Leu Gly Gly Asp Tyr Gly Asp Cys Thr Lys Asn Gly Ser Asp 
+385                 390                 395                 400 
+
+
+Val Pro Val Glu Asn Leu Tyr Pro Ser Lys Tyr Thr Gln Gln Val Cys 
+                405                 410                 415     
+
+
+Ile His Ser Cys Phe Gln Glu Ser Met Ile Lys Glu Cys Gly Cys Ala 
+            420                 425                 430         
+
+
+Tyr Ile Phe Tyr Pro Arg Pro Gln Asn Val Glu Tyr Cys Asp Tyr Arg 
+        435                 440                 445             
+
+
+Lys His Ser Ser Trp Gly Tyr Cys Tyr Tyr Lys Leu Gln Val Asp Phe 
+    450                 455                 460                 
+
+
+Ser Ser Asp His Leu Gly Cys Phe Thr Lys Cys Arg Lys Pro Cys Ser 
+465                 470                 475                 480 
+
+
+Val Thr Ser Tyr Gln Leu Ser Ala Gly Tyr Ser Arg Trp Pro Ser Val 
+                485                 490                 495     
+
+
+Thr Ser Gln Glu Trp Val Phe Gln Met Leu Ser Arg Gln Asn Asn Tyr 
+            500                 505                 510         
+
+
+Thr Val Asn Asn Lys Arg Asn Gly Val Ala Lys Val Asn Ile Phe Phe 
+        515                 520                 525             
+
+
+Lys Glu Leu Asn Tyr Lys Thr Asn Ser Glu Ser Pro Ser Val Thr Met 
+    530                 535                 540                 
+
+
+Val Thr Leu Leu Ser Asn Leu Gly Ser Gln Trp Ser Leu Trp Phe Gly 
+545                 550                 555                 560 
+
+
+Ser Ser Val Leu Ser Val Val Glu Met Ala Glu Leu Val Phe Asp Leu 
+                565                 570                 575     
+
+
+Leu Val Ile Met Phe Leu Met Leu Leu Arg Arg Phe Arg Ser Arg Tyr 
+            580                 585                 590         
+
+
+Trp Ser Pro Gly Arg Gly Gly Arg Gly Ala Gln Glu Val Leu Leu Glu 
+        595                 600                 605             
+
+
+Leu Leu Val Gly Ile Tyr Pro Ser Gly Val Ile Gly Leu Val Pro His 
+    610                 615                 620                 
+
+
+Leu Gly Asp Arg Glu Lys Arg Asp Ser Val Cys Pro Gln Gly Lys Tyr 
+625                 630                 635                 640 
+
+
+Ile His Pro Gln Asn Asn Ser Ile Cys Cys Thr Lys Cys His Lys Gly 
+                645                 650                 655     
+
+
+Thr Tyr Leu Tyr Asn Asp Cys Pro Gly Pro Gly Gln Asp Thr Asp Cys 
+            660                 665                 670         
+
+
+Arg Glu Cys Glu Ser Gly Ser Phe Thr Ala Ser Glu Asn His Leu Arg 
+        675                 680                 685             
+
+
+His Cys Leu Ser Cys Ser Lys Cys Arg Lys Glu Met Gly Gln Val Glu 
+    690                 695                 700                 
+
+
+Ile Ser Ser Cys Thr Val Asp Arg Asp Thr Val Cys Gly Cys Arg Lys 
+705                 710                 715                 720 
+
+
+Asn Gln Tyr Arg His Tyr Trp Ser Glu Asn Leu Phe Gln Cys Phe Asn 
+                725                 730                 735     
+
+
+Cys Ser Leu Cys Leu Asn Gly Thr Val His Leu Ser Cys Gln Glu Lys 
+            740                 745                 750         
+
+
+Gln Asn Thr Val Cys Thr Cys His Ala Gly Phe Phe Leu Arg Glu Asn 
+        755                 760                 765             
+
+
+Glu Cys Val Ser Cys Ser Asn Cys Lys Lys Ser Leu Glu Cys Thr Lys 
+    770                 775                 780                 
+
+
+Leu Cys Leu Pro Gln Ile Glu Asn Val Lys Gly Thr Glu Asp Ser Gly 
+785                 790                 795                 800 
+
+
+Thr Thr Val Leu Leu Pro Leu Val Ile Phe Phe Gly Leu Cys Leu Leu 
+                805                 810                 815     
+
+
+Ser Leu Leu Phe Ile Gly Leu Met Tyr Arg Tyr Gln Arg Trp Lys Ser 
+            820                 825                 830         
+
+
+Lys Leu Tyr Ser Ile Val Cys Gly Lys Ser Thr Pro Glu Lys Glu Gly 
+        835                 840                 845             
+
+
+Glu Leu Glu Gly Thr Thr Thr Lys Pro Leu Ala Pro Asn Pro Ser Phe 
+    850                 855                 860                 
+
+
+Ser Pro Thr Pro Gly Phe Thr Pro Thr Leu Gly Phe Ser Pro Val Pro 
+865                 870                 875                 880 
+
+
+Ser Ser Thr Phe Thr Ser Ser Ser Thr Tyr Thr Pro Gly Asp Cys Pro 
+                885                 890                 895     
+
+
+Asn Phe Ala Ala Pro Arg Arg Glu Val Ala Pro Pro Tyr Gln Gly Ala 
+            900                 905                 910         
+
+
+Asp Pro Ile Leu Ala Thr Ala Leu Ala Ser Asp Pro Ile Pro Asn Pro 
+        915                 920                 925             
+
+
+Leu Gln Lys Trp Glu Asp Ser Ala His Lys Pro Gln Ser Leu Asp Thr 
+    930                 935                 940                 
+
+
+Asp Asp Pro Ala Thr Leu Tyr Ala Val Val Glu Asn Val Pro Pro Leu 
+945                 950                 955                 960 
+
+
+Arg Trp Lys Glu Phe Val Arg Arg Leu Gly Leu Ser Asp His Glu Ile 
+                965                 970                 975     
+
+
+Asp Arg Leu Glu Leu Gln Asn Gly Arg Cys Leu Arg Glu Ala Gln Tyr 
+            980                 985                 990         
+
+
+Ser Met Leu Ala Thr Trp Arg Arg  Arg Thr Pro Arg Arg  Glu Ala Thr 
+        995                 1000                 1005             
+
+
+Leu Glu  Leu Leu Gly Arg Val  Leu Arg Asp Met Asp  Leu Leu Gly 
+    1010                 1015                 1020             
+
+
+Cys Leu  Glu Asp Ile Glu Glu  Ala Leu Cys Gly Pro  Ala Ala Leu 
+    1025                 1030                 1035             
+
+
+Pro Pro  Ala Pro Ser Leu Leu  Arg 
+    1040                 1045     
+
+
+<210>  7
+<211>  26
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  primer
+
+<400>  7
+catcttcttc aaggagctga actaca                                            26
+
+
+<210>  8
+<211>  22
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  primer
+
+<400>  8
+gaccagtcca ataacccctg ag                                                22
+
+
+<210>  9
+<211>  16
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  probe
+
+<400>  9
+ctgtcacggt gctcct                                                       16
+
+
+<210>  10
+<211>  20
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  Primer
+
+<400>  10
+ccgaagccga tactggtctc                                                   20
+
+
+<210>  11
+<211>  22
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  primer
+
+<400>  11
+gaccagtcca ataacccctg ag                                                22
+
+
+<210>  12
+<211>  16
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  probe
+
+<400>  12
+ctcaggaggt gctcct                                                       16
+
+
+<210>  13
+<211>  59
+<212>  PRT
+<213>  Homo sapiens
+
+<400>  13
+
+Met Gly Met Ala Arg Gly Ser Leu Thr Arg Val Pro Gly Val Met Gly 
+1               5                   10                  15      
+
+
+Glu Gly Thr Gln Gly Pro Glu Leu Ser Leu Asp Pro Asp Pro Cys Ser 
+            20                  25                  30          
+
+
+Pro Gln Ser Thr Pro Gly Leu Met Lys Gly Asn Lys Leu Glu Glu Gln 
+        35                  40                  45              
+
+
+Asp Pro Arg Pro Leu Gln Pro Ile Pro Gly Leu 
+    50                  55                  
+
+
+<210>  14
+<211>  23
+<212>  PRT
+<213>  Homo sapiens
+
+<400>  14
+
+Met Ser Ser Ile Lys Gly Asn Lys Leu Glu Glu Gln Asp Pro Arg Pro 
+1               5                   10                  15      
+
+
+Leu Gln Pro Ile Pro Gly Leu 
+            20              
+
+

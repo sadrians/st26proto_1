@@ -1,0 +1,97 @@
+                         SEQUENCE LISTING
+
+
+<110>  OPX Biotechnologies, Inc.
+
+<120  COMPOSITIONS AND METHODS REGARDING DIRECT NADH UTILIZATION TO PRODUCE 
+    3-HYDROXYPROPIONIC ACID AND RELATED CHEMICALS AND PRODUCTS
+        
+
+<130>  34246761601
+
+<140>  61536464
+<141>  2012-09-19
+
+<150>  61536558
+
+<151>  2011-09-19
+
+<150>  61536539
+
+<151>  2011-09-19
+
+
+
+<150>  61536539
+
+<151>  2011-09-19
+
+<160>  5   
+
+
+<170>  PatentIn version 3.5
+
+
+
+<210>  1
+<211>  29
+<212>  PRT
+<213>  Chloroflexus aurantiacus
+
+<400>  1
+
+Met Ser Gly Thr Gly Arg Leu Ala Gly Lys Ile Ala Leu Ile Thr Gly 
+1               5                   10                  15      
+
+
+Gly Ala Gly Asn Ile Gly Ser Glu Leu Thr Arg Arg Phe 
+            20                  25         
+
+
+
+<210>  2
+<211>  49
+<212>  RNA
+<213>  homo sapiens
+
+<400>  2
+uugaccaagc uggggacccc ggucccuugg gaccaguggc agaggaguc                   49
+
+
+<210> 4
+<211> 32
+<212> PRT
+<213> Influenza virus A 
+
+<220> 
+<223> influenza virus A hemagglutinin subtype H9
+
+<400> 4
+Met Glu Thr Lys Ala Ile Ile Ala Ala Leu Leu Met Val Thr Ala Ala
+ 1               5                  10                  15      
+Asn Ala Asp Lys Ile Cys Ile Gly Tyr Gln Ser Thr Asn Ser Thr Glu
+            20                  25                  30          
+
+
+<210>  5
+<211>  100
+<212>  DNA
+<213>  Artificial
+
+<220>
+<223>  Sequence from Mycobacterium tuberculosis artificially optimised 
+       for expression in human cells.
+
+
+<220>
+<221>  CDS
+<222>  (20)..(1399)
+
+<400>  5
+atcgaccgtc tccacaggt atg aca cag agc cag acc gtg aca gtg gac cag        52
+                     Met Thr Gln Ser Gln Thr Val Thr Val Asp Gln          
+                     1               5                   10               
+
+cag gag atc ctg aac cgg gcc aat gag gtg gaa gct ccc atg gcc gac        100
+Gln Glu Ile Leu Asn Arg Ala Asn Glu Val Glu Ala Pro Met Ala Asp           
+            15                  20                  25               

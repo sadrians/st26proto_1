@@ -1,0 +1,2692 @@
+
+                                SEQUENCE LISTING
+
+<110> Regenerative Research Foundation
+
+<120> METHODS AND COMPOSITIONS FOR
+  DIFFERENTIATING EMBRYONIC STEM CELLS
+  
+
+<130> 27562-0013WO1
+
+<150> 61/406,843          
+<151> 2010-10-26  
+
+<160> 44
+
+<170> FastSEQ for Windows Version 4.0
+
+<210> 1
+<211> 5437
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_002522
+
+<400> 1
+agtgggggcc tgatagcgcg gcggtgtgga ccgcgcggcc gaagagcgcg gcgcccagag 60
+cgcgggccgc tcgcggagcc acagcccgag ccgggtccca gccggagccg agccccagcc 120
+gagccgagcc gggcccggag cgcccggtgc ccgcagccat gccggccggc cgcgccgcgc 180
+gcacctgtgc gctgctcgcc ctctgcctcc tgggcgccgg ggcccaggat ttcgggccga 240
+cgcgcttcat ctgcacctcg gtgcccgtgg acgccgacat gtgcgccgcg tccgtggccg 300
+ccggcggcgc cgaggagctc cggagcagcg tgctgcagct ccgcgagacg gtgctgcagc 360
+agaaggagac catcctgagc cagaaggaga ccatccgcga gctgaccgcc aagctgggcc 420
+gctgcgagag ccagagcacg ctggaccccg gagccggcga ggcccgggcg ggcggcggcc 480
+gcaagcagcc cggctcgggc aagaacacca tgggcgacct gtcccggaca ccggccgccg 540
+agacgctcag ccaactcggg caaactttgc aatcgctcaa aacccgcctg gagaacctcg 600
+agcagtacag ccgcctcaat tcctccagcc agaccaacag cctcaaggat ctgctgcaga 660
+gcaagatcga tgagctggag aggcaggtgc tgtcccgggt gaacaccctg gaggagggca 720
+aggggggccc caggaacgac accgaggaga gggtcaagat cgagaccgcc ctgacctccc 780
+tgcaccagcg gatcagcgag ctcgagaaag gtcagaaaga caaccgccct ggagacaagt 840
+tccagctcac attcccactg cggaccaact atatgtatgc caaggtgaag aagagcctgc 900
+cagagatgta cgccttcact gtctgcatgt ggctcaagtc cagcgccacg ccaggtgtgg 960
+gcacgccctt ctcctacgct gtgcccggcc aggccaacga gctggtcctc attgagtggg 1020
+gcaacaaccc catggagatc ctcatcaatg acaaggtggc caagttgcct tttgtcatca 1080
+atgatggcaa gtggcaccac atctgtgtca cctggaccac ccgggacggg gtctgggagg 1140
+cctaccagga tggcacgcag ggtggcagtg gcgagaactt ggcgccctat caccccatca 1200
+agccccaggg cgtgctggtg ctgggccagg agcaggacac tctgggtggt gggtttgatg 1260
+ccacccaggc atttgtgggt gagctggccc acttcaacat ctgggaccgc aagctgaccc 1320
+ccggggaggt gtacaacctg gccacctgca gcaccaaggc tctgtccggc aatgtcatcg 1380
+cctgggctga atcccacatc gagatctacg gaggggccac caagtggacc ttcgaggcct 1440
+gtcgccagat caactgagca cggcaggcca ggctgagccc gcccgccctc gccccctgct 1500
+tgtgcggcga tgatctgttt tgtgcgtctc ttctctccct tttccccagg aatgaaccga 1560
+ggccgtcgcc cctgcacacg cacacgcaca cagcctggtt ttgtcctcat gcacacgaag 1620
+cagcccctgc tcccatctgt ccctgaggaa gccccacttc tctgtaggag cccggactct 1680
+ctcaggcatg ccccattcac agctgaagtg ggtgctgcaa cgtcttgaac aaggcagaag 1740
+ttggtgagag gatctgtgtg tgcgtgtcta catgtgtgtg tctacgtgtg tgcgtgcgtg 1800
+gctgggggag gccttttctt tgaggacgta cctcatttcc ttctttcttc tggctttgga 1860
+aaaatctcat gatgaaaatt catatttgcc aactttgtta gctgcgtgcg tgctttgggg 1920
+ttggtgcaac ctcagtacac gcatttgtct ttgtttgcaa acctttctca gagcgacata 1980
+tctttatatt gatgtaataa atgtctttta gtggtttgtc aaaggccggg ggcgggggct 2040
+ctctacagag aatttttatt ttgtaataga agtgaactgt ctctgaaggg tgaaggcagg 2100
+ccgtcctggg atggtaccct gtgctctccc gtggaggaga ggggatggct gaggacactg 2160
+gcccttaccc cagggccaga cagcatccat ccctgctgtt tgcatctgag agcagcatgg 2220
+ggcctgggag gtcggcctgt gtgcccagct cagctagctc tgccccagga cggccctgcc 2280
+ctcgaccttc ccacctcctc agatcctgca aggctggggt ctgcccctcc cttctcacct 2340
+ctggagctgt gctgcactgc ttcagcccag agggccctga gagaggagcg tgccacccac 2400
+agcccgggaa gccgggcccc agcacccctc tcctttggcc tccggcagtg cagaccagag 2460
+gggacctttt aaggaaagaa gccgtgtttc gatgaagacc tggccacatg gggccactgg 2520
+gacttcaacc cagcccatcg gtgggaaggt cctttttggg ggactttgac agccatatcc 2580
+ctcccagcac accaggcgcc aggtgagctg gttcagaccc ctccaggggt actccagaga 2640
+cctcacgtgt ggagccaggc ctggccaggg caggggcctg aaacccactc ctccatctca 2700
+tggggctcac ggcctacagc agcccacaag ctgccactgg ccggcgacac tgacacctga 2760
+gcagtgtcca gaaccttttt gccttttttt gttccccgtg aaaagcaaca tggacatttc 2820
+cttctagtcc ttccaaggag gggagagaag tgtatgtgca tttgtgtgtg tgtgtgtgtg 2880
+ttgtgtgtgt gtgtgcgcta agtgagaaag agagcaggct cgggaggccc tgcccagggt 2940
+aggaggagct tcctgctttg caccatctgg tggtcgcacg ccctgagggc accccgactc 3000
+tgtctccagg agtctcatca gcaaaccgct gacaagtctt tctagaaatt ctactgcact 3060
+gcctggctca gctgcagctg cagacatttc tgcaggagga gcaggtgttt ctgtcttctg 3120
+ttccttctag ggccacctgt ccccttaaac acaggtccac gttgtgtcaa gaacctagtg 3180
+catctgtgtg tgtctgtcag tgtctctgtg tcagtgttct cgtgggtgtc tgcacggtac 3240
+ccggccgccg ttctgcaatg catcactccc gcagaggggg gtgcagatca ggcgccgtgc 3300
+tgcgcgttgt tgttcaacag tggctttttc ttagataatc gtgcttcctc agcgcccgtc 3360
+gggttgtggc atccttggat ctgcagggat cttctccgtt tgcatgttcc tcggggtggc 3420
+gtgttccttg ctccctgggt ccgacatgtg ttcccgcacc tgcatggact gccccggttc 3480
+tgtgttgtgt gccgagtgcc gcccagtgtt ctgtgaccac ccgtgtagct actgaaaatg 3540
+gctgggtaag caagtcaagg gtgttggagg aggtcaagag agagctcagt ttccctctcc 3600
+ccctccccaa acacaccaag aagcattttt aacgtgtagg ttgagaacaa gcctaaagga 3660
+ttcccacagc tgggagccag caagagagct tggagtcgcc tctctagacc agatctagcc 3720
+ccaccctcac tccagccatc tcggagccct tgtgtaggca acgcccggtg cgggctgtgt 3780
+ggggtgctcc cctgccagca cctccggcca gccccgcccc tgccgatcta ctggaccgca 3840
+gaccaccttc tgcccccgtg ggccaggtgg gagctgtccg ttcaggacca tgagccatcc 3900
+tctgccctga ctagcgaggg gcagagcaca ccccagtgct tacgcctcca cccctgcagc 3960
+ctcctggccc gctcaccttc ctcacccctc ctctgaccca cccatggtgc cagggccgaa 4020
+gctgaccttt agctccctcc tgccccttgc tagggtctga gccaagcccc tcgactccct 4080
+cactgtgttg acacttggca ctttgctggc cccgagaaag gtcgatgaca cagccgcaaa 4140
+tctaatccac gtagttccca tttactcctt aatctgattg atgttccctc ttgcactgaa 4200
+taatacatgc ctctctcagg taagccattt tataaaacaa gaagataaaa agcactgttg 4260
+aggcagtgtt tgcttttgcc gagctggtgt ccgacagctc cctgggtgtc cggggtggga 4320
+gagctgttga cagaagctct ccgggccctc aggggcttag atcccacttg agtcgtaagc 4380
+cttcttgctt ttgataacac agtattattt ctcttactgt agaagaaaaa gtttattacc 4440
+aaacaagagt atttttatga aagaaaagga caaacctata aattaactca acctatatct 4500
+cccttgaaaa tactttcagg ctccaccaaa acgtagaact gaaagcatgt attttggaag 4560
+aaagagatac attttgtatg ctttcttttc cttttgtaga ttcccagttt attttctaag 4620
+actgcaaaga tcactttgtc accagccctg ggacctgaga ccaagggggt gtcttgtggg 4680
+cagtgagggg gtgaggagag gctggcatga ggttcagtca ttccagtgag ctccaaagag 4740
+gggccacctg ttctcaaaag catgttgggg accaggaggt aaaactggcc atttatggtg 4800
+aacctgtgtc ttggagctga cttactaagt ggaatgagcc gaggatttga atatcagttc 4860
+taaccttgat agaagaacct tgggttacat gtggttcaca ttaagaggat agaatccttt 4920
+ggaatcttat ggcaaccaaa tgtggcttga cgaagtcgtg gtttcatctc ttaaacacag 4980
+tgtgtaaatt tattcaacta acgatgggaa atgtattact tctgtacaca gtggactgaa 5040
+gtgcaatttg ttgaaaggga acaagtcatt gaagagaaaa aaaaagccca atacttagag 5100
+tcccaatttt gtctcatttg ccaaaaaaaa aaaaaaaaaa aaagcaaacc ccctatggtt 5160
+gatattgtta taatgtatat actgtataat atgaaagaga atcgatgtat ctcacttttt 5220
+cattatttgc taaccaaagc tgtacatttt tcatatgatc tgcagccttt tgggtatcaa 5280
+atgggtcaaa accatgggac ctgccacctc ccatcagcaa ttctggaaat gcactatttc 5340
+tactggtatt cttgcttttt tttttttttt cattttcttg ctgaaatgac atgaattgtt 5400
+gagtttattt ttacacagta aagagtggag aaagact                          5437
+
+
+
+<210> 2
+<211> 432
+<212> PRT
+<213> Homo sapiens
+
+<308> GenBank Accession No. NP_002513                
+
+<400> 2
+Met Pro Ala Gly Arg Ala Ala Arg Thr Cys Ala Leu Leu Ala Leu Cys
+ 1               5                  10                  15      
+Leu Leu Gly Ala Gly Ala Gln Asp Phe Gly Pro Thr Arg Phe Ile Cys
+            20                  25                  30          
+Thr Ser Val Pro Val Asp Ala Asp Met Cys Ala Ala Ser Val Ala Ala
+        35                  40                  45              
+Gly Gly Ala Glu Glu Leu Arg Ser Ser Val Leu Gln Leu Arg Glu Thr
+    50                  55                  60                  
+Val Leu Gln Gln Lys Glu Thr Ile Leu Ser Gln Lys Glu Thr Ile Arg
+65                  70                  75                  80  
+Glu Leu Thr Ala Lys Leu Gly Arg Cys Glu Ser Gln Ser Thr Leu Asp
+                85                  90                  95      
+Pro Gly Ala Gly Glu Ala Arg Ala Gly Gly Gly Arg Lys Gln Pro Gly
+            100                 105                 110         
+Ser Gly Lys Asn Thr Met Gly Asp Leu Ser Arg Thr Pro Ala Ala Glu
+        115                 120                 125             
+Thr Leu Ser Gln Leu Gly Gln Thr Leu Gln Ser Leu Lys Thr Arg Leu
+    130                 135                 140                 
+Glu Asn Leu Glu Gln Tyr Ser Arg Leu Asn Ser Ser Ser Gln Thr Asn
+145                 150                 155                 160 
+Ser Leu Lys Asp Leu Leu Gln Ser Lys Ile Asp Glu Leu Glu Arg Gln
+                165                 170                 175     
+Val Leu Ser Arg Val Asn Thr Leu Glu Glu Gly Lys Gly Gly Pro Arg
+            180                 185                 190         
+Asn Asp Thr Glu Glu Arg Val Lys Ile Glu Thr Ala Leu Thr Ser Leu
+        195                 200                 205             
+His Gln Arg Ile Ser Glu Leu Glu Lys Gly Gln Lys Asp Asn Arg Pro
+    210                 215                 220                 
+Gly Asp Lys Phe Gln Leu Thr Phe Pro Leu Arg Thr Asn Tyr Met Tyr
+225                 230                 235                 240 
+Ala Lys Val Lys Lys Ser Leu Pro Glu Met Tyr Ala Phe Thr Val Cys
+                245                 250                 255     
+Met Trp Leu Lys Ser Ser Ala Thr Pro Gly Val Gly Thr Pro Phe Ser
+            260                 265                 270         
+Tyr Ala Val Pro Gly Gln Ala Asn Glu Leu Val Leu Ile Glu Trp Gly
+        275                 280                 285             
+Asn Asn Pro Met Glu Ile Leu Ile Asn Asp Lys Val Ala Lys Leu Pro
+    290                 295                 300                 
+Phe Val Ile Asn Asp Gly Lys Trp His His Ile Cys Val Thr Trp Thr
+305                 310                 315                 320 
+Thr Arg Asp Gly Val Trp Glu Ala Tyr Gln Asp Gly Thr Gln Gly Gly
+                325                 330                 335     
+Ser Gly Glu Asn Leu Ala Pro Tyr His Pro Ile Lys Pro Gln Gly Val
+            340                 345                 350         
+Leu Val Leu Gly Gln Glu Gln Asp Thr Leu Gly Gly Gly Phe Asp Ala
+        355                 360                 365             
+Thr Gln Ala Phe Val Gly Glu Leu Ala His Phe Asn Ile Trp Asp Arg
+    370                 375                 380                 
+Lys Leu Thr Pro Gly Glu Val Tyr Asn Leu Ala Thr Cys Ser Thr Lys
+385                 390                 395                 400 
+Ala Leu Ser Gly Asn Val Ile Ala Trp Ala Glu Ser His Ile Glu Ile
+                405                 410                 415     
+Tyr Gly Gly Ala Thr Lys Trp Thr Phe Glu Ala Cys Arg Gln Ile Asn
+            420                 425                 430         
+
+
+<210> 3
+<211> 5284
+<212> DNA
+<213> Mus musculus
+
+<308> GenBank Accession No. NM_008730
+
+<400> 3
+gctgacgtcg gcggcgccga ggcccctccc gcggctgcat aaaaggcgcg ggctccgcag 60
+cgcaggcggc agtgggggcc gaggagcgcg gccgagaaga ctgtgcggcg tagaagcgcg 120
+gtgctagagc gcgggccgcc tgcggagcga ctgccccagc cagcccgatc ccggtctcag 180
+cccgatcccc accggagccg agcggccccg gtgctccaag tgtccggagc catgctggcc 240
+ggccgcgccg cacgcacctg tgcgctgctc gccctctgcc tcctgggcag tggggcccaa 300
+gatttcgggc cgacccgctt catctgcact tcggtgccgg tggatgcaga catgtgtgcc 360
+gcgtccgtgg ctgcgggcgg cgcggaggag cttcggagca acgtgctgca gctccgcgag 420
+accgtgctgc agcagaagga gaccatcctc agccagaagg agaccatcag ggagctgacc 480
+accaagcttg gccgctgcga gagccagagc accctggact cgggtcccgg cgaggccagg 540
+tcgggaggcg gccgcaagca gcctggctcg ggcaagaaca cgatgggcga cctgtcccgg 600
+acgccggccg cggagacgct cagccaactc gggcaaactt tgcaatctct caaaacccga 660
+ctggagaacc tcgagcagta cagccgcctc aattcttcca gccaaaccaa cagcctcaag 720
+gatctgctgc agagcaagat cgatgacctg gagcggcagg tgctgtctcg ggtgaacact 780
+ctggaggagg ggaaaggggg ccccaagaac gacacagagg aaagggccaa gatcgagagc 840
+gccttgacct ccctacacca acggatcagc gagctggaga aaggtcagaa agacaatcgc 900
+cccggagaca agtttcagct gacattccca ctgcggacca actacatgta tgccaaggtg 960
+aagaagagcc tgccagagat gtatgccttc accgtgtgca tgtggctcaa gtccagtgcg 1020
+gcgcctggag tgggcacacc cttctcttat gctgtgcctg ggcaggccaa cgaactggtc 1080
+ctcatcgagt ggggcaacaa ccccatggag atactcatta atgacaaggt ggccaagctg 1140
+ccgtttgtaa tcaacgatgg caaatggcat cacatctgtg tcacctggac cacccgggat 1200
+ggggtctggg aggcctatca ggatggcacc cagggtggca atggagagaa cttggcaccc 1260
+tatcacccca tcaaaccaca gggcgtgctg gtgctgggtc aggaacagga cactctaggt 1320
+ggagggtttg atgccaccca agcatttgtg ggtgagctag cccatttcaa catctgggac 1380
+cgcaagctga cccccgggga ggtgtacaac ctggccacct gcagcagcaa ggctctctct 1440
+ggcaatgtca tcgcctgggc tgagtcccag atcgagatct ttggtggagc caccaagtgg 1500
+acattcgagg cttgtcgcca gatcaactga aggcttcagg ctagggctga gcccccagcc 1560
+ccagcgcctg cccaccctgc ttgtgcggtg acccatcgtc tctcttctcc cctcccccca 1620
+ggaatgactc aaggccatgg cccctgcaca cgcacacgca cacagcctgg ttgtcctcct 1680
+tgtgcacttg aagcagtccc ggctcttctc tggcccccaa ggacaccccc ttctctctag 1740
+gggccccact atatcctggg catacctagc taaagcaggc agcatcagct ttgacaatgc 1800
+agaatttcgt gagaaagaga gagagagaga gacagagaga gagagacaga gagagagagc 1860
+gcgagtgtgt gtgtagggag gctttcttct agaatgagtt agtttgttcc cttctttctg 1920
+tgtgattgtt gtaagtttcc tgatgggtcg gctgcctgtg tgcctcaggg ctggtgcggc 1980
+ttcctggacc acccatttgt ccttgtttgc agacctcttt gggagtgatg taggtctctg 2040
+ttgacataag tcaacaatgg tttgtcaagg ttgggggggt gctttccaca ggaatatttg 2100
+ggggggatga taagtggagt ctctgaaatt caaaggctgg ttgtccaggg atggcaccac 2160
+ctaccaatca gccccttccc acgtccccat caggctgtct gctgtctaca tctgagggtg 2220
+gcatgggctg agcccctcag cagctctacc ccaggactgc tcctcacctc acccttggcc 2280
+ttcctgcctc cttgtatctt atcaagggac ctgttattcc ctttcagctt ccaaagctac 2340
+ttcagcccag tggttctgag aggagagtgc ccttccagag tcccaggaca cagggccttg 2400
+gcacccaccc ttcttcctcc ctctggcaat gagagaccag aggcttcaag tgggggtctc 2460
+acgtgctcgg tctcagcgct agagaatacc gagacctgat ccacagtccg tgggaatggt 2520
+ctcccacggc atttttcaca gccatactcc ctccccccag cgcacccagg cccgggtgag 2580
+ctagctcaga cccctcaggg gccaggggct cagaaacctc tcatgtggag cctgctggcc 2640
+ggggtgggtc ctgccatcca ctcctgcatt tcatggggca caagcccagc agcagcccca 2700
+acctgccacc ggcctgagac actgagcccg tggcttttcc ttattgaaag taggcatgag 2760
+tacccccttc tgggccttct gaggaggggg acgaaatgcg tgtgtgcaca tgtgtctgtt 2820
+gaatgctgag gaggctgtgt ccaggcaggg tggacccctg cattgttccc ccccgtgttg 2880
+tgggcacaca cccagtgaca cctggactat gtctccagta gcctgactag caggaggctg 2940
+gcaagtcttt ctagaaacct acgcactgcc tggctcgtct gcagctgcag acacttaatt 3000
+cctcaacagg agcaggtttt ccacctgctg ttccttccag gggcacctgt ctccttccac 3060
+acaggtccat gttgtgtctg aaactagtgc atccgtgtct gtctgtgtgc tgtctgtgtc 3120
+actgttcttg tgggtgtctg cacagttccc tggtcactgc tctgtggtgc atcctctctg 3180
+agggtgcgga tcaggctgtg ctccacccgt tgtccagcag tggctttttc ttagataatt 3240
+gtgcttcctc agcgcccgcc gggttgtggc atccttggat ctgcggggat cttctgtgtt 3300
+tgcatgttcc tcagggtggt gtgtcccttg ctcccttggt ctgacgcgtg ttcccttgcc 3360
+tgcatggact tctctggttc tgtgtttgtg tgctgaatgc cacccagtgt tctgtgatca 3420
+cccatgtagc tactgaaaaa tggctgggta agcaagccag gggtgttggg gaggtcagga 3480
+gagagatcaa catgcctctc ccctccccct ccccagacat agcaagaagc atttctaaca 3540
+tctaggttga gaacaagcct gaatggtacc catggttggg agagagaact tgaacttcaa 3600
+atcgactttc cagaccagat cgagccccac ccttactttt agccttctgg gagccaccac 3660
+caggcgaggc ccagagccgg ctatgcccgg tgtactcctg ccaacccctg ccaccagccc 3720
+cagcccctgc caatgcggac cccagaccac ttgcacccag acgggtgggg tgggagctgt 3780
+ccgttcagga ccacaagcca tcctctgccc tggcttagag ggcagagcac accccaatgc 3840
+ttctgcctct gtcacttcat ctctccactc ctctcccttc tcctctcccc tgcggcaccc 3900
+acggtgccag ggacagacgc tgacatctag ctcttgccct gccccttact ggagtctgtg 3960
+ccaagccctc ctctccgtca ctgtgttcac acttggcact ttgctggccc tgagaaaggt 4020
+aacgacagcc gcaaatctaa tccgcatatt tcccatcgac tccgtaatct gattgatgtt 4080
+ccctcttgca ctgaataata catgcctctc tcaggtaagc cattttataa aataagagat 4140
+aaaacgcact gtcgagacag tgtttgcttc tgccgatggt gtccgacagc accctgggca 4200
+ttagggtggt agagctgcca cggaggctcc caggccctag gggctgagag ctcacttgaa 4260
+ttgtaagcct tcttgctttt gataacacag tattatttct cttactgtag aagaaaaagt 4320
+ttattaccaa acaagagtat ttttatgaaa gaataggaca aacctataaa ttatctcaac 4380
+ctatatctcc cttgaaaata ctttcaggct ccgccaaaac ctaggactga aagcaagtat 4440
+tttggaagaa agagatacat ttttgtatgc tttcttttcc ttttgtagac gcccgactta 4500
+ttttctaaga ctgcaaagat cactttgtca ccagccctgg gacctgaggc caaggggttg 4560
+tcttgtgggc agtgaggggg aaggacaggc tggcctgagg ttcacagtca ttccagtgag 4620
+ctctgatgag gggccaccag atcttgaggg tgtgtaaggg accaggaggt taaaaagaaa 4680
+ggcccctgat ggtgggctct ttgtgttgga gctgaaaggt tatatggaag gagataagaa 4740
+tttggatacc agttctgagc ttgatagaag gaattagggt cactctggct aacatagggg 4800
+tacagcatcc ttagtaaccc gagcgtggct cgaagtggtc atgatttcat ccaaaacaca 4860
+atgtgtaaac ttactcagct aacaatggga aatgtattgc ttctgtgcgc agtggactta 4920
+cgtgcaattt gttcaaaagg gaacaagtca ttgaggagaa acaaaagccc aatacttaga 4980
+gtcccaattt tgtcttattt gccaaaaaaa aagcaacccc ccaagagttg atattgttac 5040
+aatgtacata ctgtaaaata tgaaagaatc gatgtatctt actttttcat tatttgctaa 5100
+ccaaagctgt acatttttca tacaatccgc agccttttga gtatcaaagg ggtaaaccac 5160
+acccatcagc cattctggaa gtgcactatt tatactggta tccttgcttt ttttttccca 5220
+ttttcttgct gagatgacat gaattgttaa gtttattttt acacagtaaa gagtgaagaa 5280
+agac                                                              5284
+
+
+
+<210> 4
+<211> 432
+<212> PRT
+<213> Mus musculus
+
+<308> GenBank Accession No. NP_032756
+
+<400> 4
+Met Leu Ala Gly Arg Ala Ala Arg Thr Cys Ala Leu Leu Ala Leu Cys
+ 1               5                  10                  15      
+Leu Leu Gly Ser Gly Ala Gln Asp Phe Gly Pro Thr Arg Phe Ile Cys
+            20                  25                  30          
+Thr Ser Val Pro Val Asp Ala Asp Met Cys Ala Ala Ser Val Ala Ala
+        35                  40                  45              
+Gly Gly Ala Glu Glu Leu Arg Ser Asn Val Leu Gln Leu Arg Glu Thr
+    50                  55                  60                  
+Val Leu Gln Gln Lys Glu Thr Ile Leu Ser Gln Lys Glu Thr Ile Arg
+65                  70                  75                  80  
+Glu Leu Thr Thr Lys Leu Gly Arg Cys Glu Ser Gln Ser Thr Leu Asp
+                85                  90                  95      
+Ser Gly Pro Gly Glu Ala Arg Ser Gly Gly Gly Arg Lys Gln Pro Gly
+            100                 105                 110         
+Ser Gly Lys Asn Thr Met Gly Asp Leu Ser Arg Thr Pro Ala Ala Glu
+        115                 120                 125             
+Thr Leu Ser Gln Leu Gly Gln Thr Leu Gln Ser Leu Lys Thr Arg Leu
+    130                 135                 140                 
+Glu Asn Leu Glu Gln Tyr Ser Arg Leu Asn Ser Ser Ser Gln Thr Asn
+145                 150                 155                 160 
+Ser Leu Lys Asp Leu Leu Gln Ser Lys Ile Asp Asp Leu Glu Arg Gln
+                165                 170                 175     
+Val Leu Ser Arg Val Asn Thr Leu Glu Glu Gly Lys Gly Gly Pro Lys
+            180                 185                 190         
+Asn Asp Thr Glu Glu Arg Ala Lys Ile Glu Ser Ala Leu Thr Ser Leu
+        195                 200                 205             
+His Gln Arg Ile Ser Glu Leu Glu Lys Gly Gln Lys Asp Asn Arg Pro
+    210                 215                 220                 
+Gly Asp Lys Phe Gln Leu Thr Phe Pro Leu Arg Thr Asn Tyr Met Tyr
+225                 230                 235                 240 
+Ala Lys Val Lys Lys Ser Leu Pro Glu Met Tyr Ala Phe Thr Val Cys
+                245                 250                 255     
+Met Trp Leu Lys Ser Ser Ala Ala Pro Gly Val Gly Thr Pro Phe Ser
+            260                 265                 270         
+Tyr Ala Val Pro Gly Gln Ala Asn Glu Leu Val Leu Ile Glu Trp Gly
+        275                 280                 285             
+Asn Asn Pro Met Glu Ile Leu Ile Asn Asp Lys Val Ala Lys Leu Pro
+    290                 295                 300                 
+Phe Val Ile Asn Asp Gly Lys Trp His His Ile Cys Val Thr Trp Thr
+305                 310                 315                 320 
+Thr Arg Asp Gly Val Trp Glu Ala Tyr Gln Asp Gly Thr Gln Gly Gly
+                325                 330                 335     
+Asn Gly Glu Asn Leu Ala Pro Tyr His Pro Ile Lys Pro Gln Gly Val
+            340                 345                 350         
+Leu Val Leu Gly Gln Glu Gln Asp Thr Leu Gly Gly Gly Phe Asp Ala
+        355                 360                 365             
+Thr Gln Ala Phe Val Gly Glu Leu Ala His Phe Asn Ile Trp Asp Arg
+    370                 375                 380                 
+Lys Leu Thr Pro Gly Glu Val Tyr Asn Leu Ala Thr Cys Ser Ser Lys
+385                 390                 395                 400 
+Ala Leu Ser Gly Asn Val Ile Ala Trp Ala Glu Ser Gln Ile Glu Ile
+                405                 410                 415     
+Phe Gly Gly Ala Thr Lys Trp Thr Phe Glu Ala Cys Arg Gln Ile Asn
+            420                 425                 430         
+
+
+<210> 5
+<211> 2024
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No. NM_000567.2
+
+<400> 5
+aaggcaagag atctaggact tctagcccct gaactttcag ccgaatacat cttttccaaa 60
+ggagtgaatt caggcccttg tatcactggc agcaggacgt gaccatggag aagctgttgt 120
+gtttcttggt cttgaccagc ctctctcatg cttttggcca gacagacatg tcgaggaagg 180
+cttttgtgtt tcccaaagag tcggatactt cctatgtatc cctcaaagca ccgttaacga 240
+agcctctcaa agccttcact gtgtgcctcc acttctacac ggaactgtcc tcgacccgtg 300
+ggtacagtat tttctcgtat gccaccaaga gacaagacaa tgagattctc atattttggt 360
+ctaaggatat aggatacagt tttacagtgg gtgggtctga aatattattc gaggttcctg 420
+aagtcacagt agctccagta cacatttgta caagctggga gtccgcctca gggatcgtgg 480
+agttctgggt agatgggaag cccagggtga ggaagagtct gaagaaggga tacactgtgg 540
+gggcagaagc aagcatcatc ttggggcagg agcaggattc cttcggtggg aactttgaag 600
+gaagccagtc cctggtggga gacattggaa atgtgaacat gtgggacttt gtgctgtcac 660
+cagatgagat taacaccatc tatcttggcg ggcccttcag tcctaatgtc ctgaactggc 720
+gggcactgaa gtatgaagtg caaggcgaag tgttcaccaa accccagctg tggccctgag 780
+gcccagctgt gggtcctgaa ggtacctccc ggttttttac accgcatggg ccccacgtct 840
+ctgtctctgg tacctcccgc ttttttacac tgcatggttc ccacgtctct gtctctgggc 900
+ctttgttccc ctatatgcat tgcaggcctg ctccaccctc ctcagcgcct gagaatggag 960
+gtaaagtgtc tggtctggga gctcgttaac tatgctggga aacggtccaa aagaatcaga 1020
+atttgaggtg ttttgttttc atttttattt caagttggac agatcttgga gataatttct 1080
+tacctcacat agatgagaaa actaacaccc agaaaggaga aatgatgtta taaaaaactc 1140
+ataaggcaag agctgagaag gaagcgctga tcttctattt aattccccac ccatgacccc 1200
+cagaaagcag gagggcattg cccacattca cagggctctt cagtctcaga atcaggacac 1260
+tggccaggtg tctggtttgg gtccagagtg ctcatcatca tgtcatagaa ctgctgggcc 1320
+caggtctcct gaaatgggaa gcccagcaat accacgcagt ccctccactt tctcaaagca 1380
+cactggaaag gccattagaa ttgccccagc agagcagatc tgcttttttt ccagagcaaa 1440
+atgaagcact aggtataaat atgttgttac tgccaagaac ttaaatgact ggtttttgtt 1500
+tgcttgcagt gctttcttaa ttttatggct cttctgggaa actcctcccc ttttccacac 1560
+gaaccttgtg gggctgtgaa ttctttcttc atccccgcat tcccaatata cccaggccac 1620
+aagagtggac gtgaaccaca gggtgtcctg tcagaggagc ccatctccca tctccccagc 1680
+tccctatctg gaggatagtt ggatagttac gtgttcctag caggaccaac tacagtcttc 1740
+ccaaggattg agttatggac tttgggagtg agacatcttc ttgctgctgg atttccaagc 1800
+tgagaggacg tgaacctggg accaccagta gccatcttgt ttgccacatg gagagagact 1860
+gtgaggacag aagccaaact ggaagtggag gagccaaggg attgacaaac aacagagcct 1920
+tgaccacgtg gagtctctga atcagccttg tctggaacca gatctacacc tggactgccc 1980
+aggtctataa gccaataaag cccctgttta cttgaaaaaa aaaa                  2024
+
+<210> 6
+<211> 224
+<212> PRT
+<213> Homo sapiens
+
+<308> GenBank. Accession No. CAA39671.1
+
+<400> 6
+Met Glu Lys Leu Leu Cys Phe Leu Val Leu Thr Ser Leu Ser His Ala
+ 1               5                  10                  15      
+Phe Gly Gln Thr Asp Met Ser Arg Lys Ala Phe Val Phe Pro Lys Glu
+            20                  25                  30          
+Ser Asp Thr Ser Tyr Val Ser Leu Lys Ala Pro Leu Thr Lys Pro Leu
+        35                  40                  45              
+Lys Ala Phe Thr Val Cys Leu His Phe Tyr Thr Glu Leu Ser Ser Thr
+    50                  55                  60                  
+Arg Gly Thr Val Phe Ser Arg Met Pro Pro Arg Asp Lys Thr Met Arg
+65                  70                  75                  80  
+Phe Phe Ile Phe Trp Ser Lys Asp Ile Gly Tyr Ser Phe Thr Val Gly
+                85                  90                  95      
+Gly Ser Glu Ile Leu Phe Glu Val Pro Glu Val Thr Val Ala Pro Val
+            100                 105                 110         
+His Ile Cys Thr Ser Trp Glu Ser Ala Ser Gly Ile Val Glu Phe Trp
+        115                 120                 125             
+Val Asp Gly Lys Pro Arg Val Arg Lys Ser Leu Lys Lys Gly Tyr Thr
+    130                 135                 140                 
+Val Gly Ala Glu Ala Ser Ile Ile Leu Gly Gln Glu Gln Asp Ser Phe
+145                 150                 155                 160 
+Gly Gly Asn Phe Glu Gly Ser Gln Ser Leu Val Gly Asp Ile Gly Asn
+                165                 170                 175     
+Val Asn Met Trp Asp Phe Val Leu Ser Pro Asp Glu Ile Asn Thr Ile
+            180                 185                 190         
+Tyr Leu Gly Gly Pro Phe Ser Pro Asn Val Leu Asn Trp Arg Ala Leu
+        195                 200                 205             
+Lys Tyr Glu Val Gln Gly Glu Val Phe Thr Lys Pro Gln Leu Trp Pro
+    210                 215                 220                 
+
+
+<210> 7
+<211> 2738
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NM_002523.2  
+
+<400> 7
+agagtgccga gcagcgcggt gggtgcggct gtgagacggc aggagacttc tgccccgcgg 60
+tgcacgcgac cctcgagacg acagcgcggc tactgccagc agcgaaggcg cctcccgcgg 120
+agcgccccga cggcgcccgc tcgcccatgc cgagctgagc gcggcagcgg cggcgggatg 180
+ctggcgctgc tggccgccag cgtggcgctc gccgtggccg ctggggccca ggacagcccg 240
+gcgcccggta gccgcttcgt gtgcacggca ctgcccccag aggcggtgca cgccggctgc 300
+ccgctgcccg cgatgcccat gcagggcggc gcgcagagtc ccgaggagga gctgagggcc 360
+gcggtgctgc agctgcgcga gaccgtcgtg cagcagaagg agacgctggg cgcgcagcgc 420
+gaggccatcc gcgagctcac gggcaagcta gcgcgctgcg aggggctggc gggcggcaag 480
+gcgcgcggcg cgggggccac gggcaaggac actatgggcg acctgccgcg ggaccccggc 540
+cacgtcgtgg agcagctcag ccgctcgctg cagaccctca aggaccgcct ggagagcctc 600
+gagcaccagc tcagagcaaa cgtgtccaat gctgggctgc ccggcgactt ccgcgaggtg 660
+ctccagcagc ggctggggga gctggagagg cagcttctgc gcaaggtggc agagctggag 720
+gacgagaagt ccctgctgca caatgagacc tcggctcacc ggcagaagac cgagagcacc 780
+ctgaacgcgc tgctgcagag ggtcaccgag ctggagcgag gcaatagcgc ctttaagtca 840
+ccagatgcgt tcaaggtgtc cctcccactc cgcacaaact acctatacgg caagatcaag 900
+aagacgctgc ctgagctgta cgccttcacc atctgcctgt ggctgcggtc cagcgcctca 960
+ccaggcattg gcaccccctt ctcctatgcg gtgccagggc aggccaacga gatcgtgctg 1020
+atcgagtggg gcaacaaccc catcgagctg ctcatcaacg acaaggttgc gcagctgccc 1080
+ctgtttgtca gtgacggcaa gtggcaccac atctgtgtca cctggacgac acgggatggc 1140
+atgtgggagg cattccagga cggagagaag ctgggcactg gggagaacct ggccccctgg 1200
+caccccatca agcccggggg cgtgctgatc cttggacaag agcaggacac cgtggggggt 1260
+aggtttgatg ccactcaggc atttgtcggg gagctcagcc agttcaacat atgggaccgc 1320
+gtccttcgcg cacaagaaat tgtcaacatc gccaactgct ccacaaacat gccgggcaac 1380
+atcatcccgt gggtggacaa taacgtcgat gtgttcggag gggcctccaa gtggcccgtg 1440
+gagacgtgtg aggagcgtct ccttgacttg tagccgcctt ctcctctgtc caggaggccg 1500
+ggatcaggct gttgccatgg aagttcaggg ccatagactg ccccacttaa actcttgtca 1560
+gtctgggctc agggttccca gagctcattc cccaggaatc tctaagacca gggctggggc 1620
+agtgtctgtc actggcttgt ttgttcccta ccaatattct gttgctgttt gaagtagtgc 1680
+cagggtcccc tgggaagatg cccccaagac acctgcccca agtgggtgga tatctgcctt 1740
+cctgctgcaa gtggaggcag gtccagcagc ccctcttcag agcccctgta aatgctatcg 1800
+cagcctgagt cctgccgcct tccagttcct tggtgtcccg tgcacccctt ctgtctgtcc 1860
+cctttcatgg ctgtgcagcc gtcccgctgg agtggccatg tcccttgtgc attgagtgca 1920
+tccccgctgg tgactaagct cgcagcaagc ggctaccccc cgatctgcaa aagggcctct 1980
+ccctttgtgt tctatacatt gtgaatcttc ccgtctgaag aacgcccagc ctgcccagac 2040
+aaagccccgc cttccccaaa gcagaggggc tgtctgtgtc tccagaaagg ggacatcggg 2100
+ggggaggggg gctcagaaag gagaagggct gtgatctccg gtcccttccc ccatcatcct 2160
+tccttagact gatgctttga ctgaatcatc actagctatg gcattaaaag gcctctcttc 2220
+tcatctggtg ccaaaggttc cgttgcagct ttttacaacc atccggtgtg gtttggagga 2280
+tttgtttttt ttttttccca acagaaaaga acagccatta gaagaaggct cccattttct 2340
+gatgttccgc cccactgtga agagtgtgct cgttttaaat tcatgttgat tcttgtaagc 2400
+actggactgt cttcatcaag tatttcccta cagaactcct caagaaaaca gagatcattt 2460
+ggctagagat tgtctgagtg actccaagct actcactgta ttggacggga gtagtaattt 2520
+attttaaaga taaagtgact aagtggggaa atttataaag ctaaatatta tatattttat 2580
+ttttcataca tgtttgaagt gcaaatctgt ggatattcca tttgtaggac caagtcgaca 2640
+tgcccatcct gacattgtat gctacgagaa ctcttctgat gatggaattt cgattaaagt 2700
+gcactgaaag atgaaaaaaa aaaaaaaaaa aaaaaaaa                         2738
+
+<210> 8
+<211> 431
+<212> PRT
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NP_002514.1
+
+<400> 8
+Met Leu Ala Leu Leu Ala Ala Ser Val Ala Leu Ala Val Ala Ala Gly
+ 1               5                  10                  15      
+Ala Gln Asp Ser Pro Ala Pro Gly Ser Arg Phe Val Cys Thr Ala Leu
+            20                  25                  30          
+Pro Pro Glu Ala Val His Ala Gly Cys Pro Leu Pro Ala Met Pro Met
+        35                  40                  45              
+Gln Gly Gly Ala Gln Ser Pro Glu Glu Glu Leu Arg Ala Ala Val Leu
+    50                  55                  60                  
+Gln Leu Arg Glu Thr Val Val Gln Gln Lys Glu Thr Leu Gly Ala Gln
+65                  70                  75                  80  
+Arg Glu Ala Ile Arg Glu Leu Thr Gly Lys Leu Ala Arg Cys Glu Gly
+                85                  90                  95      
+Leu Ala Gly Gly Lys Ala Arg Gly Ala Gly Ala Thr Gly Lys Asp Thr
+            100                 105                 110         
+Met Gly Asp Leu Pro Arg Asp Pro Gly His Val Val Glu Gln Leu Ser
+        115                 120                 125             
+Arg Ser Leu Gln Thr Leu Lys Asp Arg Leu Glu Ser Leu Glu His Gln
+    130                 135                 140                 
+Leu Arg Ala Asn Val Ser Asn Ala Gly Leu Pro Gly Asp Phe Arg Glu
+145                 150                 155                 160 
+Val Leu Gln Gln Arg Leu Gly Glu Leu Glu Arg Gln Leu Leu Arg Lys
+                165                 170                 175     
+Val Ala Glu Leu Glu Asp Glu Lys Ser Leu Leu His Asn Glu Thr Ser
+            180                 185                 190         
+Ala His Arg Gln Lys Thr Glu Ser Thr Leu Asn Ala Leu Leu Gln Arg
+        195                 200                 205             
+Val Thr Glu Leu Glu Arg Gly Asn Ser Ala Phe Lys Ser Pro Asp Ala
+    210                 215                 220                 
+Phe Lys Val Ser Leu Pro Leu Arg Thr Asn Tyr Leu Tyr Gly Lys Ile
+225                 230                 235                 240 
+Lys Lys Thr Leu Pro Glu Leu Tyr Ala Phe Thr Ile Cys Leu Trp Leu
+                245                 250                 255     
+Arg Ser Ser Ala Ser Pro Gly Ile Gly Thr Pro Phe Ser Tyr Ala Val
+            260                 265                 270         
+Pro Gly Gln Ala Asn Glu Ile Val Leu Ile Glu Trp Gly Asn Asn Pro
+        275                 280                 285             
+Ile Glu Leu Leu Ile Asn Asp Lys Val Ala Gln Leu Pro Leu Phe Val
+    290                 295                 300                 
+Ser Asp Gly Lys Trp His His Ile Cys Val Thr Trp Thr Thr Arg Asp
+305                 310                 315                 320 
+Gly Met Trp Glu Ala Phe Gln Asp Gly Glu Lys Leu Gly Thr Gly Glu
+                325                 330                 335     
+Asn Leu Ala Pro Trp His Pro Ile Lys Pro Gly Gly Val Leu Ile Leu
+            340                 345                 350         
+Gly Gln Glu Gln Asp Thr Val Gly Gly Arg Phe Asp Ala Thr Gln Ala
+        355                 360                 365             
+Phe Val Gly Glu Leu Ser Gln Phe Asn Ile Trp Asp Arg Val Leu Arg
+    370                 375                 380                 
+Ala Gln Glu Ile Val Asn Ile Ala Asn Cys Ser Thr Asn Met Pro Gly
+385                 390                 395                 400 
+Asn Ile Ile Pro Trp Val Asp Asn Asn Val Asp Val Phe Gly Gly Ala
+                405                 410                 415     
+Ser Lys Trp Pro Val Glu Thr Cys Glu Glu Arg Leu Leu Asp Leu
+            420                 425                 430     
+
+
+<210> 9
+<211> 5831
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NM_014293.3
+
+<400> 9
+cggccgcggc gacagctcca gctccggctc cggctccggc tccggctccg gctcccgcgc 60
+ctgccccgct cggcccagcg cgcccgggct ccgcgccccg accccgccgc cgcgcctgcc 120
+gggggcctcg ggcgcccccg ccgcccgcct cacgctgaag ttcctggccg tgctgctggc 180
+cgcgggcatg ctggcgttcc tcggtgccgt catctgcatc atcgccagcg tgcccctggc 240
+ggccagcccg gcgcgggcgc tgcccggcgg cgccgacaat gcttcggtcg cctcgggcgc 300
+cgccgcgtcc ccgggcccgc agcggagcct gagcgcgctg cacggcgcgg gcggttcagc 360
+cgggcccccc gcgctgcccg gggcacccgc ggccagcgcg cacccgctgc cgcccgggcc 420
+cctgttcagc cgcttcctgt gcacgccgct ggctgctgcc tgcccgtcgg gggcccagca 480
+gggggacgcg gcgggcgctg cgccgggcga gcgcgaagag ctgctgctgc tgcagagcac 540
+ggccgagcag ctgcgccaga cggcgctgca gcaggaggcg cgcatccgcg ccgaccagga 600
+caccatccgt gagctcaccg gcaagctggg ccgctgcgag agcggcctgc cgcgcggcct 660
+ccagggcgcc gggccccgcc gcgacaccat ggccgacggg ccctgggact cgcctgcgct 720
+cattctggag ctggaggacg ccgtgcgcgc cctgcgggac cgcatcgacc gcctggagca 780
+ggagcttcca gcccgtgtga acctctcagc tgccccagcc ccagtctctg ctgtgcccac 840
+cggcctacac tccaagatgg accagctgga ggggcagctg ctggcccagg tgctggcact 900
+ggagaaggag cgtgtggccc tcagccacag cagccgccgg cagaggcagg aagtggaaaa 960
+ggagttggac gtcctgcagg gtcgtgtggc tgagctggag cacgggtcct cagcctacag 1020
+tcctccagat gccttcaaga tcagcatccc catccgtaac aactacatgt acgcccgcgt 1080
+gcggaaggct ctgcccgagc tctacgcatt caccgcctgc atgtggctgc ggtccaggtc 1140
+cagcggcacc ggccagggca cccccttctc ctactcagtg cccgggcagg ccaacgagat 1200
+tgtactgcta gaggcgggcc atgagcccat ggagctgctg atcaacgaca aggtggccca 1260
+gctgcccctg agcctgaagg acaatggctg gcaccacatc tgcatcgcct ggaccacaag 1320
+ggatggccta tggtctgcct accaggacgg ggagctgcag ggctccggtg agaacctggc 1380
+tgcctggcac cccatcaagc ctcatgggat ccttatcttg ggccaggagc aggataccct 1440
+gggtggccgg tttgatgcca cccaggcctt tgtcggtgac attgcccagt ttaacctgtg 1500
+ggaccacgcc ctgacaccag cccaggtcct gggcattgcc aactgcactg cgccactgct 1560
+gggcaacgtc cttccctggg aagacaagtt ggtggaggcc tttgggggtg caacaaaggc 1620
+tgccttcgat gtctgcaagg ggagggccaa ggcatgaggg gccacctcat ccagggcccc 1680
+tcccttgcct gccactttgg ggacttgagg ggggtcatat tccctcctca gcctgcccac 1740
+gcactggcct tccctcctgc cccactcctg gctgtgcctc ccatttcccc tcacctgtac 1800
+ccacacctcc agaatgccct gccctgcgag tgtgtcccct gtccccacct gagtggggag 1860
+gagcgtctca agtgaacagt gggagcctgc ccacctggca ctgcactgga gttgtctctt 1920
+accccaccct ccctgcccat caactgtatc tgatttcact aattttgaca gcacccccag 1980
+tagggtagga ttgtgtatga gggggacccc actatctcag tggtgggggt ggccgcccgc 2040
+ccccttgtcc cccatgcaac aggcccagtg gcttcccctt cagggccaca acaggctgta 2100
+gaaggggatg acgaggacat cagaggttag acttaccctc ctccctcttt ccaccagctg 2160
+ccagtcaagg gcagtgggat ctcgatggag cctccccccc cccccaccca tgcctccctc 2220
+ttcctcctct ttcctcctct ctttgtgtgt agcggtttga atgttggttc catgcctggc 2280
+ccagccccac ctcagtctcc aggacattcc tttcccagct ccagcctgga gggaagggga 2340
+caaagacccc aggaggccaa agggctgcag tcaccccttg tgctcaccca tagtgatggc 2400
+cactggtata gtcatcgctc tccctccatg ccaaggacag gacttggacc gcttcagcct 2460
+gggctgggag cagccctaag gtagaggcct catggcccag gagaccccac ctctggcaga 2520
+gccacattac ctaccctgtg catggtcctg gggcagcaag gaagaagctc agagggtggg 2580
+gagaagcatg aagcagtgag cagagcactg ggtgagaggg agaagacctt ggttcctagc 2640
+cagccctgct aatgtgctgt gtggccttct gtaagtccct gccctctctg ggcctggcct 2700
+tcctcattcg tgagctgagg ccctcgcttt ggtcatttgc tctccagatt gggtgtgagc 2760
+ttctctgtga ttccaggtgg atatgtgggg aaagctctgg tgaccctggg cttcgcaggg 2820
+gtagatccca ggactcggca gtggatggga tgcagccagt catgggttag ggtcagcaga 2880
+gactcagagt ccagggcaag gttcaaggca gactaacctc atgcatggat tgtaaaaaac 2940
+cagctccctt tggatcaacc cagcctggca cccttgcctg tctgagagtg tctcaaaggg 3000
+ctgatggctt cctggtcccc ttgagtcatc accagcttcc ccaagagagt gtcagaatct 3060
+taagagctga gaggccgggc acggtggctc acgcctgtaa tcccagcact ttgggaggct 3120
+gagacaggca gatcacttga ggtcaggagt tcgaagtcag cctggccaac gtggtgaaac 3180
+cccatcttca ctaaaaatac aaaacttagc tggttaggtg gtgcatgcct gtagtcccag 3240
+ctactcggga ggccgaggca gaagaatctc ttgaactgag gaggtggagg ttgcagtgag 3300
+ccgagatcac gccattgcac tccagcctgg gcaacagagc aagactccat ctcaaaaaaa 3360
+taataataat cttaaagatg agaaaagcca ccccatctgg caccacagct gcatcttgct 3420
+tgtgagaaat ggggaagagt tcagggagga cacgtgacct gcacaggatc acagagcatg 3480
+gggcagagcc aggactagag ctcagggcat ctgactccct cttcagtgtt cttccccctc 3540
+catgttgcct gcccctgaag acctttgagt tcagtctaca cctaagcagg tagacatccg 3600
+cgaggtcaga tgctttccaa catgacacct gaacatcttc ctttatgcaa cacccaaaca 3660
+tcttggcatc cccaccccag gaagtgcggg gaggaggtta tgatccctgg gcgcttcggc 3720
+agaatggaga gctgaggtgt ccctcccctg ctagtcacct accaggtgtc tgagcagctg 3780
+catgctccct ggctcaagtg ggcactgtac cttttgcctg cctttttgtt ccctatctcc 3840
+actccctgag gccacttagc ctgagacatg atgcaagagc tgcaggccgg ggggctcagt 3900
+gccatggaag ctactccaag ttgcattgcc tcccgcgccc agatcctgct ttccatttcg 3960
+agaacataaa tagattgccc agcccctcca gtacaatccc actggaagaa aaggcaatgg 4020
+cgggcttcag ccagacctgc tgagacctag gttgccacgg taacagccaa agacatcaac 4080
+ccaagtgctg ggtcaagtgt ctcatcatac tggcactgtt gctggggtga cggcagaatt 4140
+cagaacttca atttcagtga cgccaagctt gatgtgtttc tgttattgtt ttgaagaagg 4200
+tagctcttgt ggaggacttg ggagaaggat ggggtcttag gaaggaggtg acagcacttg 4260
+catggtcact tgagcccaca cacacgctca accccaagtc ctttatgctt tgtcacagtg 4320
+aagatgagac ctctgacgtc caagccttgt tcctgtgctg catcacccac tcagccttcc 4380
+aaagggaaca ggaacaaatt tccccagcac cactgtttgg gtcccgcttt tcctatcttc 4440
+tgctgcccct gagcacatcc aagcagacag ggaaagagga gtcagacatg gcccagtcac 4500
+atcctgagct gctcctggct gataaccacg atggagcccg tgtttgtcct gccatctggc 4560
+actgcactga gtgtggcaca ggcaccgtcc tgttgatctc acaacacagt tctaagttag 4620
+gacgttcttg gctccgttag acaggtgagg aaactggggc acagagaggt gatgtcatct 4680
+gcctggtgtc aatcagctag caagtgatgg agcccagatt tcaaaccaaa gggggttacg 4740
+tccaggggct gagttcccac tcacctgtgt agagtgccat ctgggcacca ttgctccaga 4800
+cgtgttccga cccctttccc agcccacagg gcttgaagtg aaggaacaga ggcagggggt 4860
+gggccagccc cagggccagg gtccccttgg tgaagccgtg ccagggggct cagctgcttc 4920
+agggaatgtg tccctcccac catgggccag agcttcagcc cttctttagc tcagctagag 4980
+ttcacaggag agccaaaaaa gaaaaggaag ctgagcatct cccgagtcct gggcagggaa 5040
+ggggagggaa attgctgctt ctccaactct tgcttggggc caagccctgc accagttgct 5100
+tcccagctgt tatctgccag atcttcccat cttgtggcat gtggtgcccc caccaacatc 5160
+ccaaggggac caatcccctt gccaccactt tgcatcacct gggaccacag atttggacag 5220
+gaagggctct gagaagaggc caaagccctc attttacaga tgaggaagct gaagcccggg 5280
+gaggggagcg accctcaagg ccacccagct ggacacggga gacttgagcc cagccttctg 5340
+actgcattca gccctctcta ggacgcagca gcctctcccc agcactgagt cccccctcct 5400
+ttgtgtgtcc cagcaccctt ggcctgagta aacttggaaa ggggctccct cccagagaag 5460
+ggactactct cttcacccct ttattccagc tgcctgccac cccagacccc cacctcccac 5520
+cctgaccccc gacccctggg tggggaaggg gctcacatgg gcccaggctg agtgtgagtg 5580
+agcatgtcaa gttgtctgac actgtgacat tagtgcaccc tactgacaac ccctccccag 5640
+ccttgcccct ttctcctctc cctgttttgt acataaattg acatgagctg caacatgtgt 5700
+gcgtgtgtgt gcgtgtgtgt gtgtgtgtat gtgtgtgtga tctgtgtcat ggttttgtta 5760
+cctttttgtt tttgtaaact tgaatgttca aaataaacat gctgtttact ctgagaaaaa 5820
+aaaaaaaaaa a                                                      5831
+
+
+
+<210> 10
+<211> 500
+<212> PRT
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NP_055108.2
+
+<400> 10
+Met Lys Phe Leu Ala Val Leu Leu Ala Ala Gly Met Leu Ala Phe Leu
+ 1               5                  10                  15      
+Gly Ala Val Ile Cys Ile Ile Ala Ser Val Pro Leu Ala Ala Ser Pro
+            20                  25                  30          
+Ala Arg Ala Leu Pro Gly Gly Ala Asp Asn Ala Ser Val Ala Ser Gly
+        35                  40                  45              
+Ala Ala Ala Ser Pro Gly Pro Gln Arg Ser Leu Ser Ala Leu His Gly
+    50                  55                  60                  
+Ala Gly Gly Ser Ala Gly Pro Pro Ala Leu Pro Gly Ala Pro Ala Ala
+65                  70                  75                  80  
+Ser Ala His Pro Leu Pro Pro Gly Pro Leu Phe Ser Arg Phe Leu Cys
+                85                  90                  95      
+Thr Pro Leu Ala Ala Ala Cys Pro Ser Gly Ala Gln Gln Gly Asp Ala
+            100                 105                 110         
+Ala Gly Ala Ala Pro Gly Glu Arg Glu Glu Leu Leu Leu Leu Gln Ser
+        115                 120                 125             
+Thr Ala Glu Gln Leu Arg Gln Thr Ala Leu Gln Gln Glu Ala Arg Ile
+    130                 135                 140                 
+Arg Ala Asp Gln Asp Thr Ile Arg Glu Leu Thr Gly Lys Leu Gly Arg
+145                 150                 155                 160 
+Cys Glu Ser Gly Leu Pro Arg Gly Leu Gln Gly Ala Gly Pro Arg Arg
+                165                 170                 175     
+Asp Thr Met Ala Asp Gly Pro Trp Asp Ser Pro Ala Leu Ile Leu Glu
+            180                 185                 190         
+Leu Glu Asp Ala Val Arg Ala Leu Arg Asp Arg Ile Asp Arg Leu Glu
+        195                 200                 205             
+Gln Glu Leu Pro Ala Arg Val Asn Leu Ser Ala Ala Pro Ala Pro Val
+    210                 215                 220                 
+Ser Ala Val Pro Thr Gly Leu His Ser Lys Met Asp Gln Leu Glu Gly
+225                 230                 235                 240 
+Gln Leu Leu Ala Gln Val Leu Ala Leu Glu Lys Glu Arg Val Ala Leu
+                245                 250                 255     
+Ser His Ser Ser Arg Arg Gln Arg Gln Glu Val Glu Lys Glu Leu Asp
+            260                 265                 270         
+Val Leu Gln Gly Arg Val Ala Glu Leu Glu His Gly Ser Ser Ala Tyr
+        275                 280                 285             
+Ser Pro Pro Asp Ala Phe Lys Ile Ser Ile Pro Ile Arg Asn Asn Tyr
+    290                 295                 300                 
+Met Tyr Ala Arg Val Arg Lys Ala Leu Pro Glu Leu Tyr Ala Phe Thr
+305                 310                 315                 320 
+Ala Cys Met Trp Leu Arg Ser Arg Ser Ser Gly Thr Gly Gln Gly Thr
+                325                 330                 335     
+Pro Phe Ser Tyr Ser Val Pro Gly Gln Ala Asn Glu Ile Val Leu Leu
+            340                 345                 350         
+Glu Ala Gly His Glu Pro Met Glu Leu Leu Ile Asn Asp Lys Val Ala
+        355                 360                 365             
+Gln Leu Pro Leu Ser Leu Lys Asp Asn Gly Trp His His Ile Cys Ile
+    370                 375                 380                 
+Ala Trp Thr Thr Arg Asp Gly Leu Trp Ser Ala Tyr Gln Asp Gly Glu
+385                 390                 395                 400 
+Leu Gln Gly Ser Gly Glu Asn Leu Ala Ala Trp His Pro Ile Lys Pro
+                405                 410                 415     
+His Gly Ile Leu Ile Leu Gly Gln Glu Gln Asp Thr Leu Gly Gly Arg
+            420                 425                 430         
+Phe Asp Ala Thr Gln Ala Phe Val Gly Asp Ile Ala Gln Phe Asn Leu
+        435                 440                 445             
+Trp Asp His Ala Leu Thr Pro Ala Gln Val Leu Gly Ile Ala Asn Cys
+    450                 455                 460                 
+Thr Ala Pro Leu Leu Gly Asn Val Leu Pro Trp Glu Asp Lys Leu Val
+465                 470                 475                 480 
+Glu Ala Phe Gly Gly Ala Thr Lys Ala Ala Phe Asp Val Cys Lys Gly
+                485                 490                 495     
+Arg Ala Lys Ala
+            500 
+
+
+<210> 11
+<211> 1955
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NM_002852.3
+
+<400> 11
+attcatcccc attcaggctt tcctcagcat ttattaagga ctctctgctc cagcctctca 60
+ctctcactct cctccgctca aactcagctc acttgagagt ctcctcccgc cagctgtgga 120
+aagaactttg cgtctctcca gcaatgcatc tccttgcgat tctgttttgt gctctctggt 180
+ctgcagtgtt ggccgagaac tcggatgatt atgatctcat gtatgtgaat ttggacaacg 240
+aaatagacaa tggactccat cccactgagg accccacgcc gtgcgcctgc ggtcaggagc 300
+actcggaatg ggacaagctc ttcatcatgc tggagaactc gcagatgaga gagcgcatgc 360
+tgctgcaagc cacggacgac gtcctgcggg gcgagctgca gaggctgcgg gaggagctgg 420
+gccggctcgc ggaaagcctg gcgaggccgt gcgcgccggg ggctcccgca gaggccaggc 480
+tgaccagtgc tctggacgag ctgctgcagg cgacccgcga cgcgggccgc aggctggcgc 540
+gtatggaggg cgcggaggcg cagcgcccag aggaggcggg gcgcgccctg gccgcggtgc 600
+tagaggagct gcggcagacg cgagccgacc tgcacgcggt gcagggctgg gctgcccgga 660
+gctggctgcc ggcaggttgt gaaacagcta ttttattccc aatgcgttcc aagaagattt 720
+ttggaagcgt gcatccagtg agaccaatga ggcttgagtc ttttagtgcc tgcatttggg 780
+tcaaagccac agatgtatta aacaaaacca tcctgttttc ctatggcaca aagaggaatc 840
+catatgaaat ccagctgtat ctcagctacc aatccatagt gtttgtggtg ggtggagagg 900
+agaacaaact ggttgctgaa gccatggttt ccctgggaag gtggacccac ctgtgcggca 960
+cctggaattc agaggaaggg ctcacatcct tgtgggtaaa tggtgaactg gcggctacca 1020
+ctgttgagat ggccacaggt cacattgttc ctgagggagg aatcctgcag attggccaag 1080
+aaaagaatgg ctgctgtgtg ggtggtggct ttgatgaaac attagccttc tctgggagac 1140
+tcacaggctt caatatctgg gatagtgttc ttagcaatga agagataaga gagaccggag 1200
+gagcagagtc ttgtcacatc cgggggaata ttgttgggtg gggagtcaca gagatccagc 1260
+cacatggagg agctcagtat gtttcataaa tgttgtgaaa ctccacttga agccaaagaa 1320
+agaaactcac acttaaaaca catgccagtt gggaaggtct gaaaactcag tgcataatag 1380
+gaacacttga gactaatgaa agagagagtt gagaccaatc tttatttgta ctggccaaat 1440
+actgaataaa cagttgaagg aaagacattg gaaaaagctt ttgaggataa tgttactaga 1500
+ctttatgcca tggtgctttc agtttaatgc tgtgtctctg tcagataaac tctcaaataa 1560
+ttaaaaagga ctgtattgtt gaacagaggg acaattgttt tacttttctt tggttaattt 1620
+tgttttggcc agagatgaat tttacattgg aagaataaca aaataagatt tgttgtccat 1680
+tgttcattgt tattggtatg taccttatta caaaaaaaag atgaaaacat atttatacta 1740
+caaggtgact taacaactat aaatgtagtt tatgtgttat aatcgaatgt cacgtttttg 1800
+agaagatagt catataagtt atattgcaaa agggatttgt attaatttaa gactattttt 1860
+gtaaagctct actgtaaata aaatatttta taaaactagc tcacgtcatt taattataaa 1920
+tttaagagat gttttggaaa aaaaaaaaaa aaaaa                            1955
+
+<210> 12
+<211> 381
+<212> PRT
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NP_002843.2
+
+<400> 12
+Met His Leu Leu Ala Ile Leu Phe Cys Ala Leu Trp Ser Ala Val Leu
+ 1               5                  10                  15      
+Ala Glu Asn Ser Asp Asp Tyr Asp Leu Met Tyr Val Asn Leu Asp Asn
+            20                  25                  30          
+Glu Ile Asp Asn Gly Leu His Pro Thr Glu Asp Pro Thr Pro Cys Ala
+        35                  40                  45              
+Cys Gly Gln Glu His Ser Glu Trp Asp Lys Leu Phe Ile Met Leu Glu
+    50                  55                  60                  
+Asn Ser Gln Met Arg Glu Arg Met Leu Leu Gln Ala Thr Asp Asp Val
+65                  70                  75                  80  
+Leu Arg Gly Glu Leu Gln Arg Leu Arg Glu Glu Leu Gly Arg Leu Ala
+                85                  90                  95      
+Glu Ser Leu Ala Arg Pro Cys Ala Pro Gly Ala Pro Ala Glu Ala Arg
+            100                 105                 110         
+Leu Thr Ser Ala Leu Asp Glu Leu Leu Gln Ala Thr Arg Asp Ala Gly
+        115                 120                 125             
+Arg Arg Leu Ala Arg Met Glu Gly Ala Glu Ala Gln Arg Pro Glu Glu
+    130                 135                 140                 
+Ala Gly Arg Ala Leu Ala Ala Val Leu Glu Glu Leu Arg Gln Thr Arg
+145                 150                 155                 160 
+Ala Asp Leu His Ala Val Gln Gly Trp Ala Ala Arg Ser Trp Leu Pro
+                165                 170                 175     
+Ala Gly Cys Glu Thr Ala Ile Leu Phe Pro Met Arg Ser Lys Lys Ile
+            180                 185                 190         
+Phe Gly Ser Val His Pro Val Arg Pro Met Arg Leu Glu Ser Phe Ser
+        195                 200                 205             
+Ala Cys Ile Trp Val Lys Ala Thr Asp Val Leu Asn Lys Thr Ile Leu
+    210                 215                 220                 
+Phe Ser Tyr Gly Thr Lys Arg Asn Pro Tyr Glu Ile Gln Leu Tyr Leu
+225                 230                 235                 240 
+Ser Tyr Gln Ser Ile Val Phe Val Val Gly Gly Glu Glu Asn Lys Leu
+                245                 250                 255     
+Val Ala Glu Ala Met Val Ser Leu Gly Arg Trp Thr His Leu Cys Gly
+            260                 265                 270         
+Thr Trp Asn Ser Glu Glu Gly Leu Thr Ser Leu Trp Val Asn Gly Glu
+        275                 280                 285             
+Leu Ala Ala Thr Thr Val Glu Met Ala Thr Gly His Ile Val Pro Glu
+    290                 295                 300                 
+Gly Gly Ile Leu Gln Ile Gly Gln Glu Lys Asn Gly Cys Cys Val Gly
+305                 310                 315                 320 
+Gly Gly Phe Asp Glu Thr Leu Ala Phe Ser Gly Arg Leu Thr Gly Phe
+                325                 330                 335     
+Asn Ile Trp Asp Ser Val Leu Ser Asn Glu Glu Ile Arg Glu Thr Gly
+            340                 345                 350         
+Gly Ala Glu Ser Cys His Ile Arg Gly Asn Ile Val Gly Trp Gly Val
+        355                 360                 365             
+Thr Glu Ile Gln Pro His Gly Gly Ala Gln Tyr Val Ser
+    370                 375                 380     
+
+
+<210> 13
+<211> 960
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NM_001639
+
+<400> 13
+gggcatgaat atcagacgct agggggacag ccactgtgtt gtctgctacc ctcatcctgg 60
+tcactgcttc tgctataaca gccctaggcc aggaatatga acaagccgct gctttggatc 120
+tctgtcctca ccagcctcct ggaagccttt gctcacacag acctcagtgg gaaggtgttt 180
+gtatttccta gagaatctgt tactgatcat gtaaacttga tcacaccgct ggagaagcct 240
+ctacagaact ttaccttgtg ttttcgagcc tatagtgatc tctctcgtgc ctacagcctc 300
+ttctcctaca atacccaagg cagggataat gagctactag tttataaaga aagagttgga 360
+gagtatagtc tatacattgg aagacacaaa gttacatcca aagttatcga aaagttcccg 420
+gctccagtgc acatctgtgt gagctgggag tcctcatcag gtattgctga attttggatc 480
+aatgggacac ctttggtgaa aaagggtctg cgacagggtt actttgtaga agctcagccc 540
+aagattgtcc tggggcagga acaggattcc tatgggggca agtttgatag gagccagtcc 600
+tttgtgggag agattgggga tttgtacatg tgggactctg tgctgccccc agaaaatatc 660
+ctgtctgcct atcagggtac ccctctccct gccaatatcc tggactggca ggctctgaac 720
+tatgaaatca gaggatatgt catcatcaaa cccttggtgt gggtctgagg tcttgactca 780
+acgagagcac ttgaaaatga aatgactgtc taagagatct ggtcaaagca actggatact 840
+agatcttaca tctgcagctc tttcttcttt gaatttccta tctgtatgtc tgcctaatta 900
+aaaaaatata tattgtatta tgctacctgc aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa 960
+
+
+<210> 14
+<211> 223
+<212> PRT
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NP_001630.1
+
+<400> 14
+Met Asn Lys Pro Leu Leu Trp Ile Ser Val Leu Thr Ser Leu Leu Glu
+ 1               5                  10                  15      
+Ala Phe Ala His Thr Asp Leu Ser Gly Lys Val Phe Val Phe Pro Arg
+            20                  25                  30          
+Glu Ser Val Thr Asp His Val Asn Leu Ile Thr Pro Leu Glu Lys Pro
+        35                  40                  45              
+Leu Gln Asn Phe Thr Leu Cys Phe Arg Ala Tyr Ser Asp Leu Ser Arg
+    50                  55                  60                  
+Ala Tyr Ser Leu Phe Ser Tyr Asn Thr Gln Gly Arg Asp Asn Glu Leu
+65                  70                  75                  80  
+Leu Val Tyr Lys Glu Arg Val Gly Glu Tyr Ser Leu Tyr Ile Gly Arg
+                85                  90                  95      
+His Lys Val Thr Ser Lys Val Ile Glu Lys Phe Pro Ala Pro Val His
+            100                 105                 110         
+Ile Cys Val Ser Trp Glu Ser Ser Ser Gly Ile Ala Glu Phe Trp Ile
+        115                 120                 125             
+Asn Gly Thr Pro Leu Val Lys Lys Gly Leu Arg Gln Gly Tyr Phe Val
+    130                 135                 140                 
+Glu Ala Gln Pro Lys Ile Val Leu Gly Gln Glu Gln Asp Ser Tyr Gly
+145                 150                 155                 160 
+Gly Lys Phe Asp Arg Ser Gln Ser Phe Val Gly Glu Ile Gly Asp Leu
+                165                 170                 175     
+Tyr Met Trp Asp Ser Val Leu Pro Pro Glu Asn Ile Leu Ser Ala Tyr
+            180                 185                 190         
+Gln Gly Thr Pro Leu Pro Ala Asn Ile Leu Asp Trp Gln Ala Leu Asn
+        195                 200                 205             
+Tyr Glu Ile Arg Gly Tyr Val Ile Ile Lys Pro Leu Val Trp Val
+    210                 215                 220             
+
+
+<210> 15
+<211> 2174
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NM_003212
+
+<400> 15
+aatgatagag atattagggc tagttaacca cagttttaca agactcctct tcccgcgtgt 60
+gggccattgt catgctggtg ggcgtcccgc ccacctgaaa ggtctccccg ccccgactgg 120
+ggtttgttgt tgaagaagga gaatccccgg aaaggctgag tctccagctc aaggtcaaaa 180
+cgtccaaggc cgaaagccct ccagtttccc ctggacgcct tgctcctgct tctgctacga 240
+ccttctgggg aaaacgaatt tctcattttc ttcttaaatt gccattttcg ctttaggaga 300
+tgaatgtttt cctttggctg ttttggcaat gactctgaat taaagcgatg ctaacgcctc 360
+ttttccccct aattgttaaa agctatggac tgcaggaaga tggcccgctt ctcttacagt 420
+gtgatttgga tcatggccat ttctaaagtc tttgaactgg gattagttgc cgggctgggc 480
+catcaggaat ttgctcgtcc atctcgggga tacctggcct tcagagatga cagcatttgg 540
+ccccaggagg agcctgcaat tcggcctcgg tcttcccagc gtgtgccgcc catggggata 600
+cagcacagta aggagctaaa cagaacctgc tgcctgaatg ggggaacctg catgctgggg 660
+tccttttgtg cctgccctcc ctccttctac ggacggaact gtgagcacga tgtgcgcaaa 720
+gagaactgtg ggtctgtgcc ccatgacacc tggctgccca agaagtgttc cctgtgtaaa 780
+tgctggcacg gtcagctccg ctgctttcct caggcatttc tacccggctg tgatggcctt 840
+gtgatggatg agcacctcgt ggcttccagg actccagaac taccaccgtc tgcacgtact 900
+accactttta tgctagttgg catctgcctt tctatacaaa gctactatta atcgacattg 960
+acctatttcc agaaatacaa ttttagatat catgcaaatt tcatgaccag taaaggctgc 1020
+tgctacaatg tcctaactga aagatgatca tttgtagttg ccttaaaata atgaatacat 1080
+ttccaaaatg gtctctaaca tttccttaca gaactacttc ttacttcttt gccctgccct 1140
+ctcccaaaaa actacttctt ttttcaaaag aaagtcagcc atatctccat tgtgcctaag 1200
+tccagtgttt cttttttttt ttttttttga gacggagtct cactctgtca cccaggctgg 1260
+actgcaatga cgcgatcttg gttcactgca acctccgcat ccggggttca agccattctc 1320
+ctgcctcagc ctcccaagta actgggatta caggcatgtg tcaccatgcc cagctaattt 1380
+ttttgtattt ttagtagaga tgggggtttc accatattgg ccagtctggt ctcgaactcc 1440
+tgaccttgtg atccactcgc ctcagcctct cgaagtgctg agattacaca cgtgagcaac 1500
+tgtgcaaggc ctggtgtttc ttgatacatg taattctacc aaggtcttct taatatgttc 1560
+ttttaaatga ttgaattata tgttcagatt attggagact aattctaatg tggaccttag 1620
+aatacagttt tgagtagagt tgatcaaaat caattaaaat agtctcttta aaaggaaaga 1680
+aaacatcttt aaggggagga accagagtgc tgaaggaatg gaagtccatc tgcgtgtgtg 1740
+cagggagact gggtaggaaa gaggaagcaa atagaagaga gaggttgaaa aacaaaatgg 1800
+gttacttgat tggtgattag gtggtggtag agaagcaagt aaaaaggcta aatggaaggg 1860
+caagtttcca tcatctatag aaagctatat aagacaagaa ctcccctttt tttcccaaag 1920
+gcattataaa aagaatgaag cctccttaga aaaaaaatta tacctcaatg tccccaacaa 1980
+gattgcttaa taaattgtgt ttcctccaag ctattcaatt cttttaactg ttgtagaaga 2040
+caaaatgttc acaatatatt tagttgtaaa ccaagtgatc aaactacata ttgtaaagcc 2100
+catttttaaa atacattgta tatatgtgta tgcacagtaa aaatggaaac tatattgacc 2160
+taaaaaaaaa aaaa                                                   2174
+
+<210> 16
+<211> 188
+<212> PRT
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NP_003203
+
+<400> 16
+Met Asp Cys Arg Lys Met Ala Arg Phe Ser Tyr Ser Val Ile Trp Ile
+ 1               5                  10                  15      
+Met Ala Ile Ser Lys Val Phe Glu Leu Gly Leu Val Ala Gly Leu Gly
+            20                  25                  30          
+His Gln Glu Phe Ala Arg Pro Ser Arg Gly Tyr Leu Ala Phe Arg Asp
+        35                  40                  45              
+Asp Ser Ile Trp Pro Gln Glu Glu Pro Ala Ile Arg Pro Arg Ser Ser
+    50                  55                  60                  
+Gln Arg Val Pro Pro Met Gly Ile Gln His Ser Lys Glu Leu Asn Arg
+65                  70                  75                  80  
+Thr Cys Cys Leu Asn Gly Gly Thr Cys Met Leu Gly Ser Phe Cys Ala
+                85                  90                  95      
+Cys Pro Pro Ser Phe Tyr Gly Arg Asn Cys Glu His Asp Val Arg Lys
+            100                 105                 110         
+Glu Asn Cys Gly Ser Val Pro His Asp Thr Trp Leu Pro Lys Lys Cys
+        115                 120                 125             
+Ser Leu Cys Lys Cys Trp His Gly Gln Leu Arg Cys Phe Pro Gln Ala
+    130                 135                 140                 
+Phe Leu Pro Gly Cys Asp Gly Leu Val Met Asp Glu His Leu Val Ala
+145                 150                 155                 160 
+Ser Arg Thr Pro Glu Leu Pro Pro Ser Ala Arg Thr Thr Thr Phe Met
+                165                 170                 175     
+Leu Val Gly Ile Cys Leu Ser Ile Gln Ser Tyr Tyr
+            180                 185             
+
+
+<210> 17
+<211> 1784
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NM_001174136
+
+<400> 17
+cctggatgtt caagggaaca atgacagagt gtgatttgga tcatggccat ttctaaagtc 60
+tttgaactgg gattagttgc cgggctgggc catcaggaat ttgctcgtcc atctcgggga 120
+tacctggcct tcagagatga cagcatttgg ccccaggagg agcctgcaat tcggcctcgg 180
+tcttcccagc gtgtgccgcc catggggata cagcacagta aggagctaaa cagaacctgc 240
+tgcctgaatg ggggaacctg catgctgggg tccttttgtg cctgccctcc ctccttctac 300
+ggacggaact gtgagcacga tgtgcgcaaa gagaactgtg ggtctgtgcc ccatgacacc 360
+tggctgccca agaagtgttc cctgtgtaaa tgctggcacg gtcagctccg ctgctttcct 420
+caggcatttc tacccggctg tgatggcctt gtgatggatg agcacctcgt ggcttccagg 480
+actccagaac taccaccgtc tgcacgtact accactttta tgctagttgg catctgcctt 540
+tctatacaaa gctactatta atcgacattg acctatttcc agaaatacaa ttttagatat 600
+catgcaaatt tcatgaccag taaaggctgc tgctacaatg tcctaactga aagatgatca 660
+tttgtagttg ccttaaaata atgaatacat ttccaaaatg gtctctaaca tttccttaca 720
+gaactacttc ttacttcttt gccctgccct ctcccaaaaa actacttctt ttttcaaaag 780
+aaagtcagcc atatctccat tgtgcctaag tccagtgttt cttttttttt ttttttttga 840
+gacggagtct cactctgtca cccaggctgg actgcaatga cgcgatcttg gttcactgca 900
+acctccgcat ccggggttca agccattctc ctgcctcagc ctcccaagta actgggatta 960
+caggcatgtg tcaccatgcc cagctaattt ttttgtattt ttagtagaga tgggggtttc 1020
+accatattgg ccagtctggt ctcgaactcc tgaccttgtg atccactcgc ctcagcctct 1080
+cgaagtgctg agattacaca cgtgagcaac tgtgcaaggc ctggtgtttc ttgatacatg 1140
+taattctacc aaggtcttct taatatgttc ttttaaatga ttgaattata tgttcagatt 1200
+attggagact aattctaatg tggaccttag aatacagttt tgagtagagt tgatcaaaat 1260
+caattaaaat agtctcttta aaaggaaaga aaacatcttt aaggggagga accagagtgc 1320
+tgaaggaatg gaagtccatc tgcgtgtgtg cagggagact gggtaggaaa gaggaagcaa 1380
+atagaagaga gaggttgaaa aacaaaatgg gttacttgat tggtgattag gtggtggtag 1440
+agaagcaagt aaaaaggcta aatggaaggg caagtttcca tcatctatag aaagctatat 1500
+aagacaagaa ctcccctttt tttcccaaag gcattataaa aagaatgaag cctccttaga 1560
+aaaaaaatta tacctcaatg tccccaacaa gattgcttaa taaattgtgt ttcctccaag 1620
+ctattcaatt cttttaactg ttgtagaaga caaaatgttc acaatatatt tagttgtaaa 1680
+ccaagtgatc aaactacata ttgtaaagcc catttttaaa atacattgta tatatgtgta 1740
+tgcacagtaa aaatggaaac tatattgacc taaaaaaaaa aaaa                  1784
+
+<210> 18
+<211> 172
+<212> PRT
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NP_001167607
+
+<400> 18
+Met Ala Ile Ser Lys Val Phe Glu Leu Gly Leu Val Ala Gly Leu Gly
+ 1               5                  10                  15      
+His Gln Glu Phe Ala Arg Pro Ser Arg Gly Tyr Leu Ala Phe Arg Asp
+            20                  25                  30          
+Asp Ser Ile Trp Pro Gln Glu Glu Pro Ala Ile Arg Pro Arg Ser Ser
+        35                  40                  45              
+Gln Arg Val Pro Pro Met Gly Ile Gln His Ser Lys Glu Leu Asn Arg
+    50                  55                  60                  
+Thr Cys Cys Leu Asn Gly Gly Thr Cys Met Leu Gly Ser Phe Cys Ala
+65                  70                  75                  80  
+Cys Pro Pro Ser Phe Tyr Gly Arg Asn Cys Glu His Asp Val Arg Lys
+                85                  90                  95      
+Glu Asn Cys Gly Ser Val Pro His Asp Thr Trp Leu Pro Lys Lys Cys
+            100                 105                 110         
+Ser Leu Cys Lys Cys Trp His Gly Gln Leu Arg Cys Phe Pro Gln Ala
+        115                 120                 125             
+Phe Leu Pro Gly Cys Asp Gly Leu Val Met Asp Glu His Leu Val Ala
+    130                 135                 140                 
+Ser Arg Thr Pro Glu Leu Pro Pro Ser Ala Arg Thr Thr Thr Phe Met
+145                 150                 155                 160 
+Leu Val Gly Ile Cys Leu Ser Ile Gln Ser Tyr Tyr
+                165                 170         
+
+
+<210> 19
+<211> 1948
+<212> DNA
+<213> Mus musculus
+
+<308> GenBank. Accession No. NM_011562
+
+<400> 19
+acctgagggt cctactcaac accttaagtt tcttttaagg gaggtatatt cctccgaagt 60
+cctcaatcac aaaccgttta taggaagaag aggccccatc ccctgccggt ctacacggag 120
+atcttggctg ctaacttccc acagactctc caggacgggg gcctctctca tttggcatat 180
+ctttcttttt aatctactgt tttcattttg tgaaattagc ctttgggtgt ttcgagaatg 240
+gctttatgaa ctaaagccat ctgctaatat tgtgtttctt gtcttttcct ccaacgtttt 300
+tacgagccgt cgaagatggg gtacttctca tccagtgtgg ttttgcttgt ggccatttcc 360
+agtgcgtttg aatttggacc cgttgctggg agagaccttg ccatcagaga taacagcatt 420
+tgggaccaga aagaacctgc cgtacgcgat cggtctttcc agtttgtgcc ttccgtgggg 480
+atacagaaca gtaagtcgct taataaaact tgctgtctga atggagggac ttgcatcctg 540
+gggtccttct gtgcctgccc tccttccttc tatggacgca actgtgaaca tgatgttcgc 600
+aaagagcact gtgggtctat cctccatggc acctggctgc ccaagaagtg ttccctgtgc 660
+agatgctggc acggccagct ccactgtctt cctcagacct ttctacctgg ctgtgatggt 720
+cacgtgatgg accaggacct caaagcatcc gggactccgt gtcaaacgcc gtctgtgacg 780
+accactttta tgctagctgg cgcctgcctt tttctagata tgaaagtata ggtgtcatgt 840
+gaattccatg ccagtgccat agcaaagatg tcattcatct tgatgctcac agtgaatccc 900
+taatgttacc cctcaaaaca ctaactaggc cttacctctg cacagcccct cctctttctg 960
+gaaaactatg gcgtgtgtgc caagcactgt aacagcgagt tacattccta gcctaaaagc 1020
+tactctaaga atgtgctgtc tgccatagcc tgagtttctt gatagaagta actctcttac 1080
+ttttcttcct aagactttta aacagttctg aaggttatta ttaaatccca atgtgcaact 1140
+ggaagtaaat tcagagtagc tgaaaacagc taaattatct ttaagcaggg aggtggtggt 1200
+gtctacctta aatcaggcaa aggcaggtat atttcttgag ttccaggaca gacaggccta 1260
+cacagaaacc ctgtctcggg gagaaaaaag agagagagag aagaaaaact attatcttaa 1320
+aagaaaatta atggaccagg cattgtggca gatggcttta atcccagccc tcaggaggta 1380
+gggataggag gatctcaaga gttcaaggcc agcctggtct atgtagcgaa cccctgtctc 1440
+aaaaaggaaa aagcatccta cgagggagtt gaggaagtaa tgagggtctg tgcagaggga 1500
+gcagcagatg gggaagtgac taagactggg gaaacagagt ggattgtttg attgatgttt 1560
+acggaggtac tgggaattta aaagctaagt tcttcagcca agcacagtgg tgcacactat 1620
+taatgtcagc tctcaggagg ctacaacagg actactaaaa gctcatgtcc aacctgggct 1680
+atgtacagag taccaggcca acaaagactg aatggcaaga ccctcacaga aaacccaaac 1740
+acccgagtct cttttctgca aaagtacgaa ggctttctcc aagctatata caattattca 1800
+actgttgtgg aggaaagaaa gtgtttatta ttgtagtagt aaaccagatt ataaaaacca 1860
+cgtattgtca agtcagtttt tataataatt gttcatgaat atgcacagta aaaatgggaa 1920
+ctctgaaaaa aaaaaaaaaa aaaaaaaa                                    1948
+
+<210> 20
+<211> 171
+<212> PRT
+<213> Mus musculus
+
+<308> GenBank. Accession No. NP_035692
+
+<400> 20
+Met Gly Tyr Phe Ser Ser Ser Val Val Leu Leu Val Ala Ile Ser Ser
+ 1               5                  10                  15      
+Ala Phe Glu Phe Gly Pro Val Ala Gly Arg Asp Leu Ala Ile Arg Asp
+            20                  25                  30          
+Asn Ser Ile Trp Asp Gln Lys Glu Pro Ala Val Arg Asp Arg Ser Phe
+        35                  40                  45              
+Gln Phe Val Pro Ser Val Gly Ile Gln Asn Ser Lys Ser Leu Asn Lys
+    50                  55                  60                  
+Thr Cys Cys Leu Asn Gly Gly Thr Cys Ile Leu Gly Ser Phe Cys Ala
+65                  70                  75                  80  
+Cys Pro Pro Ser Phe Tyr Gly Arg Asn Cys Glu His Asp Val Arg Lys
+                85                  90                  95      
+Glu His Cys Gly Ser Ile Leu His Gly Thr Trp Leu Pro Lys Lys Cys
+            100                 105                 110         
+Ser Leu Cys Arg Cys Trp His Gly Gln Leu His Cys Leu Pro Gln Thr
+        115                 120                 125             
+Phe Leu Pro Gly Cys Asp Gly His Val Met Asp Gln Asp Leu Lys Ala
+    130                 135                 140                 
+Ser Gly Thr Pro Cys Gln Thr Pro Ser Val Thr Thr Thr Phe Met Leu
+145                 150                 155                 160 
+Ala Gly Ala Cys Leu Phe Leu Asp Met Lys Val
+                165                 170     
+
+
+<210> 21
+<211> 6947
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NM_000280
+
+<400> 21
+ggtgcatttg catgttgcgg agtgattagt gggtttgaaa agggaaccgt ggctcggcct 60
+catttcccgc tctggttcag gcgcaggagg aagtgttttg ctggaggatg atgacagagg 120
+tcaggcttcg ctaatgggcc agtgaggagc ggtggaggcg aggccgggcg ccggcacaca 180
+cacattaaca cacttgagcc atcaccaatc agcataggaa tctgagaatt gctctcacac 240
+accaacccag caacatccgt ggagaaaact ctcaccagca actcctttaa aacaccgtca 300
+tttcaaacca ttgtggtctt caagcaacaa cagcagcaca aaaaacccca accaaacaaa 360
+actcttgaca gaagctgtga caaccagaaa ggatgcctca taaaggggga agactttaac 420
+taggggcgcg cagatgtgtg aggcctttta ttgtgagagt ggacagacat ccgagatttc 480
+agagccccat attcgagccc cgtggaatcc cgcggccccc agccagagcc agcatgcaga 540
+acagtcacag cggagtgaat cagctcggtg gtgtctttgt caacgggcgg ccactgccgg 600
+actccacccg gcagaagatt gtagagctag ctcacagcgg ggcccggccg tgcgacattt 660
+cccgaattct gcaggtgtcc aacggatgtg tgagtaaaat tctgggcagg tattacgaga 720
+ctggctccat cagacccagg gcaatcggtg gtagtaaacc gagagtagcg actccagaag 780
+ttgtaagcaa aatagcccag tataagcggg agtgcccgtc catctttgct tgggaaatcc 840
+gagacagatt actgtccgag ggggtctgta ccaacgataa cataccaagc gtgtcatcaa 900
+taaacagagt tcttcgcaac ctggctagcg aaaagcaaca gatgggcgca gacggcatgt 960
+atgataaact aaggatgttg aacgggcaga ccggaagctg gggcacccgc cctggttggt 1020
+atccggggac ttcggtgcca gggcaaccta cgcaagatgg ctgccagcaa caggaaggag 1080
+ggggagagaa taccaactcc atcagttcca acggagaaga ttcagatgag gctcaaatgc 1140
+gacttcagct gaagcggaag ctgcaaagaa atagaacatc ctttacccaa gagcaaattg 1200
+aggccctgga gaaagagttt gagagaaccc attatccaga tgtgtttgcc cgagaaagac 1260
+tagcagccaa aatagatcta cctgaagcaa gaatacaggt atggttttct aatcgaaggg 1320
+ccaaatggag aagagaagaa aaactgagga atcagagaag acaggccagc aacacaccta 1380
+gtcatattcc tatcagcagt agtttcagca ccagtgtcta ccaaccaatt ccacaaccca 1440
+ccacaccggt ttcctccttc acatctggct ccatgttggg ccgaacagac acagccctca 1500
+caaacaccta cagcgctctg ccgcctatgc ccagcttcac catggcaaat aacctgccta 1560
+tgcaaccccc agtccccagc cagacctcct catactcctg catgctgccc accagccctt 1620
+cggtgaatgg gcggagttat gatacctaca cccccccaca tatgcagaca cacatgaaca 1680
+gtcagccaat gggcacctcg ggcaccactt caacaggact catttcccct ggtgtgtcag 1740
+ttccagttca agttcccgga agtgaacctg atatgtctca atactggcca agattacagt 1800
+aaaaaaaaaa aaaaaaaaaa aaaggaaagg aaatattgtg ttaattcagt cagtgactat 1860
+ggggacacaa cagttgagct ttcaggaaag aaagaaaaat ggctgttaga gccgcttcag 1920
+ttctacaatt gtgtcctgta ttgtaccact ggggaaggaa tggacttgaa acaaggacct 1980
+ttgtatacag aaggcacgat atcagttgga acaaatcttc attttggtat ccaaactttt 2040
+attcattttg gtgtattatt tgtaaatggg catttgtatg ttataatgaa aaaaagaaca 2100
+atgtagactg gatggatgtt tgatctgtgt tggtcatgaa gttgtttttt ttttttttaa 2160
+aaagaaaacc atgatcaaca agctttgcca cgaatttaag agttttatca agatatatcg 2220
+aatacttcta cccatctgtt catagtttat ggactgatgt tccaagtttg tatcattcct 2280
+ttgcatataa ttaaacctgg aacaacatgc actagattta tgtcagaaat atctgttggt 2340
+tttccaaagg ttgttaacag atgaagttta tgtgcaaaaa agggtaagat ataaattcaa 2400
+ggaagaaaaa aagttgatag ctaaaaggta gagtgtgtct tcgatataat ccaatttgtt 2460
+ttatgtcaaa atgtaagtat ttgtcttccc tagaaatcct cagaatgatt tctataataa 2520
+agttaatttc atttatattt gacaagaata tagatgtttt atacacattt tcatgcaatc 2580
+atacgtttct tttttggcca gcaaaagtta attgttctta gatatagttg tattactgtt 2640
+cacggtccaa tcattttgtg catctagagt tcattcctaa tcaattaaaa gtgcttgcaa 2700
+gagttttaaa cttaagtgtt ttgaagttgt tcacaactac atatcaaaat taaccattgt 2760
+tgattgtaaa aaaccatgcc aaagcctttg tatttccttt attatacagt tttcttttta 2820
+accttatagt gtggtgttac aaattttatt tccatgttag atcaacattc taaaccaatg 2880
+gttactttca cacacactct gttttacatc ctgatgatcc ttaaaaaata atccttatag 2940
+ataccataaa tcaaaaacgt gttagaaaaa aattccactt acagcagggt gtagatctgt 3000
+gcccatttat acccacaaca tatatacaaa atggtaacat ttcccagtta gccatttaat 3060
+tctaaagctc aaagtctaga aataatttaa aaatgcaaca agcgattagc taggaattgt 3120
+tttttgaatt aggactggca ttttcaatct gggcagattt ccattgtcag cctatttcaa 3180
+caatgatttc actgaagtat attcaaaagt agatttctta aaggagactt tctgaaagct 3240
+gttgcctttt tcaaataggc cctctccctt ttctgtctcc ctcccctttg cacaagaggc 3300
+atcatttccc attgaaccac tacagctgtt cccatttgaa tcttgctttc tgtgcggttg 3360
+tggatggttg gagggtggag gggggatgtt gcatgtcaag gaataatgag cacagacaca 3420
+tcaacagaca acaacaaagc agactgtgac tggccggtgg gaattaaagg ccttcagtca 3480
+ttggcagctt aagccaaaca ttcccaaatc tatgaagcag ggcccattgt tggtcagttg 3540
+ttatttgcaa tgaagcacag ttctgatcat gtttaaagtg gaggcacgca gggcaggagt 3600
+gcttgagccc aagcaaagga tggaaaaaaa taagcctttg ttgggtaaaa aaggactgtc 3660
+tgagactttc atttgttctg tgcaacatat aagtcaatac agataagtct tcctctgcaa 3720
+acttcactaa aaagcctggg ggttctggca gtctagatta aaatgcttgc acatgcagaa 3780
+acctctgggg acaaagacac acttccactg aattatactc tgctttaaaa aaatccccaa 3840
+aagcaaatga tcagaaatgt agaaattaat ggaaggattt aaacatgacc ttctcgttca 3900
+atatctactg ttttttagtt aaggaattac ttgtgaacag ataattgaga ttcattgctc 3960
+cggcatgaaa tatactaata attttattcc accagagttg ctgcacattt ggagacacct 4020
+tcctaagttg cagtttttgt atgtgtgcat gtagttttgt tcagtgtcag cctgcactgc 4080
+acagcagcac atttctgcag gggagtgagc acacatacgc actgttggta caattgccgg 4140
+tgcagacatt tctacctcct gacattttgc agcctacatt ccctgagggc tgtgtgctga 4200
+gggaactgtc agagaagggc tatgtgggag tgcatgccac agctgctggc tggcttactt 4260
+cttccttctc gctggctgta atttccacca cggtcaggca gccagttccg gcccacggtt 4320
+ctgttgtgta gacagcagag actttggaga cccggatgtc gcacgccagg tgcaagaggt 4380
+gggaatggga gaaaaggagt gacgtgggag cggagggtct gtatgtgtgc acttgggcac 4440
+gtatatgtgt gctctgaagg tcaggattgc cagggcaaag tagcacagtc tggtatagtc 4500
+tgaagaagcg gctgctcagc tgcagaagcc ctctggtccg gcaggatggg aacggctgcc 4560
+ttgccttctg cccacaccct agggacatga gctgtccttc caaacagagc tccaggcact 4620
+ctcttgggga cagcatggca ggctctgtgt ggtagcagtg cctgggagtt ggccttttac 4680
+tcattgttga aataattttt gtttattatt tatttaacga tacatatatt tatatattta 4740
+tcaatggggt atctgcaggg atgttttgac accatcttcc aggatggaga ttatttgtga 4800
+agacttcagt agaatcccag gactaaacgt ctaaattttt tctccaaact tgactgactt 4860
+gggaaaacca ggtgaataga ataagagctg aatgttttaa gtaataaacg ttcaaactgc 4920
+tctaagtaaa aaaatgcatt ttactgcaat gaatttctag aatatttttc ccccaaagct 4980
+atgcctccta acccttaaat ggtgaacaac tggtttcttg ctacagctca ctgccatttc 5040
+ttcttactat catcactagg tttcctaaga ttcactcata cagtattatt tgaagattca 5100
+gctttgttct gtgaatgtca tcttaggatt gtgtctatat tcttttgctt atttcttttt 5160
+actctgggcc tctcatacta gtaagatttt aaaaagcctt ttcttctctg tatgtttggc 5220
+tcaccaaggc gaaatatata ttcttctctt tttcatttct caagaataaa cctcatctgc 5280
+ttttttgttt ttctgtgttt tggcttggta ctgaatgact caactgctcg gttttaaagt 5340
+tcaaagtgta agtacttagg gttagtactg cttatttcaa taatgttgac ggtgactatc 5400
+tttggaaagc agtaacatgc tgtcttagaa atgacattaa taatgggctt aaacaaatga 5460
+ataggggggt ccccccactc tccttttgta tgcctatgtg tgtctgattt gttaaaagat 5520
+ggacagggaa ttgattgcag agtgtcgctt ccttctaaag tagttttatt ttgtctactg 5580
+ttagtattta aagatcctgg aggtggacat aaggaataaa tggaagagaa aagtagatat 5640
+tgtatggtgg ctactaaaag gaaattcaaa aagtcttaga acccgagcac ctgagcaaac 5700
+tgcagtagtc aaaatattta tctcatgtta aagaaaggca aatctagtgt aagaaatgag 5760
+taccatatag ggttttgaag ttcatatact agaaacactt aaaagatatc atttcagata 5820
+ttacgtttgg cattgttctt aagtatttat atctttgagt caagctgata attaaaaaaa 5880
+atctgttaat ggagtgtata tttcataatg tatcaaaatg gtgtctatac ctaaggtagc 5940
+attattgaag agagatatgt ttatgtagta agttattaac ataatgagta acaaataatg 6000
+tttccagaag aaaggaaaac acattttcag agtgcgtttt tatcagagga agacaaaaat 6060
+acacacccct ctccagtagc ttatttttac aaagccggcc cagtgaatta gaaaaacaaa 6120
+gcacttggat atgatttttg gaaagcccag gtacacttat tattcaaaat gcacttttac 6180
+tgagtttgaa aagtttcttt tatatttaaa ataagggttc aaatatgcat attcaatttt 6240
+tatagtagtt atctatttgc aaagcatata ttaactagta attggctgtt aattttatag 6300
+acatggtagc cagggaagta tatcaatgac ctattaagta ttttgacaag caatttacat 6360
+atctgatgac ctcgtatctc tttttcagca agtcaaatgc tatgtaattg ttccattgtg 6420
+tgttgtataa aatgaatcaa cacggtaaga aaaaggttag agttattaaa ataataaact 6480
+gactaaaata ctcatttgaa tttattcaga atgttcataa tgctttcaaa ggacatagca 6540
+gagcttttgt ggagtatccg cacaacatta tttattatct atggactaaa tcaatttttt 6600
+gaagttgctt taaaatttaa aagcaccttt gcttaatata aagcccttta attttaactg 6660
+acagatcaat tctgaaactt tattttgaaa agaaaatggg gaagaatctg tgtctttaga 6720
+attaaaagaa atgaaaaaaa taaacccgac attctaaaaa aatagaataa gaaacctgat 6780
+ttttagtact aatgaaatag cgggtgacaa aatagttgtc tttttgattt tgatcacaaa 6840
+aaataaactg gtagtgacag gatatgatgg agagatttga catcctggca aatcactgtc 6900
+attgattcaa ttattctaat tctgaataaa agctgtatac agtaaaa               6947
+
+
+
+<210> 22
+<211> 4108
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_ 005986.2   
+
+<400> 22
+ccggccgtct atgctccagg ccctctcctc gcggtgccgg tgaacccgcc agccgccccg 60
+atgtacagca tgatgatgga gaccgacctg cactcgcccg gcggcgccca ggcccccacg 120
+aacctctcgg gccccgccgg ggcgggcggc ggcgggggcg gaggcggggg cggcggcggc 180
+ggcgggggcg ccaaggccaa ccaggaccgg gtcaaacggc ccatgaacgc cttcatggtg 240
+tggtcccgcg ggcagcggcg caagatggcc caggagaacc ccaagatgca caactcggag 300
+atcagcaagc gcctgggggc cgagtggaag gtcatgtccg aggccgagaa gcggccgttc 360
+atcgacgagg ccaagcggct gcgcgcgctg cacatgaagg agcacccgga ttacaagtac 420
+cggccgcgcc gcaagaccaa gacgctgctc aagaaggaca agtactcgct ggccggcggg 480
+ctcctggcgg ccggcgcggg tggcggcggc gcggctgtgg ccatgggcgt gggcgtgggc 540
+gtgggcgcgg cggccgtggg ccagcgcctg gagagcccag gcggcgcggc gggcggcggc 600
+tacgcgcacg tcaacggctg ggccaacggc gcctaccccg gctcggtggc ggcggcggcg 660
+gcggccgcgg ccatgatgca ggaggcgcag ctggcctacg ggcagcaccc gggcgcgggc 720
+ggcgcgcacc cgcacgcgca ccccgcgcac ccgcacccgc accacccgca cgcgcacccg 780
+cacaacccgc agcccatgca ccgctacgac atgggcgcgc tgcagtacag ccccatctcc 840
+aactcgcagg gctacatgag cgcgtcgccc tcgggctacg gcggcctccc ctacggcgcc 900
+gcggccgccg ccgccgccgc tgcgggcggc gcgcaccaga actcggccgt ggcggcggcg 960
+gcggcggcgg cggccgcgtc gtcgggcgcc ctgggcgcgc tgggctctct ggtgaagtcg 1020
+gagcccagcg gcagcccgcc cgccccagcg cactcgcggg cgccgtgccc cggggacctg 1080
+cgcgagatga tcagcatgta cttgcccgcc ggcgaggggg gcgacccggc ggcggcagca 1140
+gcggccgcgg cgcagagccg gctgcactcg ctgccgcagc actaccaggg cgcgggcgcg 1200
+ggcgtgaacg gcacggtgcc cctgacgcac atctagcgcc ttcgggacgc cggggactct 1260
+gcggcggcga cccacgagct cgcggcccgc gcccggctcc cgccccgccc cggcgcggcg 1320
+tggcttttgt acagacgttc ccacattctt gtcaaaagga aaatactgga gacgaacgcc 1380
+gggtgacgcg tgtcccccac tcaccttccc cggagaccct ggcgaccgcc gggcgctgac 1440
+accagacttg ggttttagac tgaacttcgg tgttttcttg agactttttg tacagtattt 1500
+atcacctacg gaggaagcgg aaagcgtttt ctttgctcga ggggacaaaa aagtcaaaac 1560
+gaggcgagag gcgaagccca cttttgtata ccggccggcg cgctcacttt cctccgcgtt 1620
+gcttccggac ggcgccgacc gccggagccc aagtgacgcg gagctcgtcg catttgttat 1680
+aaatgtagta aggcaggtcc aagcacttac aagttttttg tagttgttac cgctcttttg 1740
+ggttggtttg ttaatttata caaagagatt accaccacca ccccctcctt cagacggcgg 1800
+agttatattc tgggttttgt aaaactttat gtatctgagc atttccattt ttttttttgg 1860
+gttttgtatt atttcttgta aatgcattgt gaaaaatttt attttcggcg ttgcaatgcg 1920
+gggaggagaa gtcagattat gtacatagtt ttctaaaaag cctttcttct aaaaacgaaa 1980
+aaagaccccc cacccaaaat gtttcgagtc aacaaattta agagacagag cccattttct 2040
+ccataaattt gtaacatgct atttttatgt gcatgtttta tgagttcaaa atgcaatgag 2100
+gaaatctgac agggaaatta tctgtatgaa ctaaaagtaa gggaaccccg gggaatggga 2160
+ggacaggatt tttcaaggaa cctttttcaa tgaaagagaa ggaagttaaa acctataggt 2220
+tattttgtag agctgagtgt taatacgggc cgagaaataa aagtatcttc tgctccggct 2280
+gtttcactgc ggacggctgg ggctgctgcg cgttaccttg ctgcaagcgg ggcgccttcc 2340
+acctggctgg gggtctgcgc cacagtttgg tccagaggag ggaggaggaa gggaagaccc 2400
+cagtggtggg accctggacc aggccatgga tgaaggacaa agaccagggc aggtcacggg 2460
+tttcccaatt ccccagcaat taagatttcg agcagaattt atctaaatgt gtttcaagga 2520
+aacacaatcg ctgaaccaaa acgtactgca gccgagcccc ctccgtccat cctctgcccc 2580
+tccccctggc ttctttctct tgggaaaacg ggcaaaataa ttgtgctgga ttctcacaca 2640
+cacagaaata tcgaccatca ccctcccccg cgtgaactgg gatgcaagtt gctaaccgat 2700
+gtgaacgcaa aatgccttgt tcattattcc tgacgagatc ttgaggttgt ttgatgcttt 2760
+aaatttttta attatattat tttctaggtg tttattggta cattgcagtt ttttttttga 2820
+aatttaaaaa tttctgtaaa actttgtctt caagtaatct gacagcatta aatattgcat 2880
+ttaaaaatta tactgtagca aatacattta aaaattaatc acaacgttaa gatgaaatta 2940
+tatttttgga aaaaaaaaac acttgaagcc cagatggaaa tacgtttatt tcagcagcct 3000
+taggtttccc ctcgctttct caacaccctt ccttgtcctg gagtatggac tgtccgtcca 3060
+aaagtgagcc tatgctataa gtttaatgag aaccgaattc agcctgcatt cgagaatagc 3120
+tttaagtata atgctgatct gacaattgac gtgtaatttg ggaagtcatt ttgataattt 3180
+tgcttaaacc actcattcgt taaagtgatt acaaaaaagt tcaagaatga tgtccactgc 3240
+tttctaacaa gataataaac cccccccctc ttttcttttt ctttattttt atttctttta 3300
+gctatttgat cctttctgaa gcagttgttt ctggaagagt ctgtgcgccc atggatggct 3360
+gagcaccact acgacttagt ccgggataag ggcctcccca gtcctctccg ggagatgatt 3420
+tgggaaattt tataatgctt gttctgttaa ctcaccggga ccttgagggt ccaatgggac 3480
+cttgagggtt ttctctgaaa tatacaaact taaaggactc tctctgaggt tctttgactg 3540
+acgtccactc tcagtctggc ccctgtgctc ccctgtgtgt accctggagt ttctgtgtcc 3600
+aattgttggc atctaggtct tggctcaaga ttaggatgtg ggccccactt tagaggcaca 3660
+gactatgaaa agctgagtta gtgcgcccgg gacgccaggc aagcagcttt tacagtttgg 3720
+catcttattg caggtgcttc gtgcacagtc agctgaaata gccaatgcca ggtgctccaa 3780
+ccaccttatt tccttgtttt gttgattaga acaacacaga aaaaagcaaa tataaatttt 3840
+taatgactcc atttaaaaat atcacagggt gggggcaagg aaattagctg agattcatct 3900
+caggattgag attctatccc cccttccccg cccccagcag tgtcgctcca attcaaatta 3960
+gtggagaaaa gattacagta ggccctgagc cgactgtgaa ttcggtgctt ggccaaggta 4020
+acactcatcg tattcacgga gtgaaatact atatgatgat agttattata ttatatgacg 4080
+acttcattca cttcccaaat cacagggt                                    4108
+
+<210> 23
+<211> 2098
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_024865.2
+
+<400> 23
+attataaatc tagagactcc aggattttaa cgttctgctg gactgagctg gttgcctcat 60
+gttattatgc aggcaactca ctttatccca atttcttgat acttttcctt ctggaggtcc 120
+tatttctcta acatcttcca gaaaagtctt aaagctgcct taaccttttt tccagtccac 180
+ctcttaaatt ttttcctcct cttcctctat actaacatga gtgtggatcc agcttgtccc 240
+caaagcttgc cttgctttga agcatccgac tgtaaagaat cttcacctat gcctgtgatt 300
+tgtgggcctg aagaaaacta tccatccttg caaatgtctt ctgctgagat gcctcacacg 360
+gagactgtct ctcctcttcc ttcctccatg gatctgctta ttcaggacag ccctgattct 420
+tccaccagtc ccaaaggcaa acaacccact tctgcagaga agagtgtcgc aaaaaaggaa 480
+gacaaggtcc cggtcaagaa acagaagacc agaactgtgt tctcttccac ccagctgtgt 540
+gtactcaatg atagatttca gagacagaaa tacctcagcc tccagcagat gcaagaactc 600
+tccaacatcc tgaacctcag ctacaaacag gtgaagacct ggttccagaa ccagagaatg 660
+aaatctaaga ggtggcagaa aaacaactgg ccgaagaata gcaatggtgt gacgcagaag 720
+gcctcagcac ctacctaccc cagcctttac tcttcctacc accagggatg cctggtgaac 780
+ccgactggga accttccaat gtggagcaac cagacctgga acaattcaac ctggagcaac 840
+cagacccaga acatccagtc ctggagcaac cactcctgga acactcagac ctggtgcacc 900
+caatcctgga acaatcaggc ctggaacagt cccttctata actgtggaga ggaatctctg 960
+cagtcctgca tgcagttcca gccaaattct cctgccagtg acttggaggc tgccttggaa 1020
+gctgctgggg aaggccttaa tgtaatacag cagaccacta ggtattttag tactccacaa 1080
+accatggatt tattcctaaa ctactccatg aacatgcaac ctgaagacgt gtgaagatga 1140
+gtgaaactga tattactcaa tttcagtctg gacactggct gaatccttcc tctcccctcc 1200
+tcccatccct cataggattt ttcttgtttg gaaaccacgt gttctggttt ccatgatgcc 1260
+catccagtca atctcatgga gggtggagta tggttggagc ctaatcagcg aggtttcttt 1320
+tttttttttt ttcctattgg atcttcctgg agaaaatact tttttttttt ttttttttga 1380
+aacggagtct tgctctgtcg cccaggctgg agtgcagtgg cgcggtcttg gctcactgca 1440
+agctccgtct cccgggttca cgccattctc ctgcctcagc ctcccgagca gctgggacta 1500
+caggcgcccg ccacctcgcc cggctaatat tttgtatttt tagtagagac ggggtttcac 1560
+tgtgttagcc aggatggtct cgatctcctg accttgtgat ccacccgcct cggcctccct 1620
+aacagctggg atttacaggc gtgagccacc gcgccctgcc tagaaaagac attttaataa 1680
+ccttggctgc cgtctctggc tatagataag tagatctaat actagtttgg atatctttag 1740
+ggtttagaat ctaacctcaa gaataagaaa tacaagtaca aattggtgat gaagatgtat 1800
+tcgtattgtt tgggattggg aggctttgct tattttttaa aaactattga ggtaaagggt 1860
+taagctgtaa catacttaat tgatttctta ccgtttttgg ctctgttttg ctatatcccc 1920
+taatttgttg gttgtgctaa tctttgtaga aagaggtctc gtatttgctg catcgtaatg 1980
+acatgagtac tgctttagtt ggtttaagtt caaatgaatg aaacaactat ttttccttta 2040
+gttgatttta ccctgatttc accgagtgtt tcaatgagta aatatacagc ttaaacat   2098
+
+<210> 24
+<211> 2949
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_004235.4
+
+<400> 24
+agtttcccga ccagagagaa cgaacgtgtc tgcgggcgcg cggggagcag aggcggtggc 60
+gggcggcggc ggcaccggga gccgccgagt gaccctcccc cgcccctctg gccccccacc 120
+ctcccacccg cccgtggccc gcgcccatgg ccgcgcgcgc tccacacaac tcaccggagt 180
+ccgcgccttg cgccgccgac cagttcgcag ctccgcgcca cggcagccag tctcacctgg 240
+cggcaccgcc cgcccaccgc cccggccaca gcccctgcgc ccacggcagc actcgaggcg 300
+accgcgacag tggtggggga cgctgctgag tggaagagag cgcagcccgg ccaccggacc 360
+tacttactcg ccttgctgat tgtctatttt tgcgtttaca acttttctaa gaacttttgt 420
+atacaaagga actttttaaa aaagacgctt ccaagttata tttaatccaa agaagaagga 480
+tctcggccaa tttggggttt tgggttttgg cttcgtttct tctcttcgtt gactttgggg 540
+ttcaggtgcc ccagctgctt cgggctgccg aggaccttct gggcccccac attaatgagg 600
+cagccacctg gcgagtctga catggctgtc agcgacgcgc tgctcccatc tttctccacg 660
+ttcgcgtctg gcccggcggg aagggagaag acactgcgtc aagcaggtgc cccgaataac 720
+cgctggcggg aggagctctc ccacatgaag cgacttcccc cagtgcttcc cggccgcccc 780
+tatgacctgg cggcggcgac cgtggccaca gacctggaga gcggcggagc cggtgcggct 840
+tgcggcggta gcaacctggc gcccctacct cggagagaga ccgaggagtt caacgatctc 900
+ctggacctgg actttattct ctccaattcg ctgacccatc ctccggagtc agtggccgcc 960
+accgtgtcct cgtcagcgtc agcctcctct tcgtcgtcgc cgtcgagcag cggccctgcc 1020
+agcgcgccct ccacctgcag cttcacctat ccgatccggg ccgggaacga cccgggcgtg 1080
+gcgccgggcg gcacgggcgg aggcctcctc tatggcaggg agtccgctcc ccctccgacg 1140
+gctcccttca acctggcgga catcaacgac gtgagcccct cgggcggctt cgtggccgag 1200
+ctcctgcggc cagaattgga cccggtgtac attccgccgc agcagccgca gccgccaggt 1260
+ggcgggctga tgggcaagtt cgtgctgaag gcgtcgctga gcgcccctgg cagcgagtac 1320
+ggcagcccgt cggtcatcag cgtcagcaaa ggcagccctg acggcagcca cccggtggtg 1380
+gtggcgccct acaacggcgg gccgccgcgc acgtgcccca agatcaagca ggaggcggtc 1440
+tcttcgtgca cccacttggg cgctggaccc cctctcagca atggccaccg gccggctgca 1500
+cacgacttcc ccctggggcg gcagctcccc agcaggacta ccccgaccct gggtcttgag 1560
+gaagtgctga gcagcaggga ctgtcaccct gccctgccgc ttcctcccgg cttccatccc 1620
+cacccggggc ccaattaccc atccttcctg cccgatcaga tgcagccgca agtcccgccg 1680
+ctccattacc aagagctcat gccacccggt tcctgcatgc cagaggagcc caagccaaag 1740
+aggggaagac gatcgtggcc ccggaaaagg accgccaccc acacttgtga ttacgcgggc 1800
+tgcggcaaaa cctacacaaa gagttcccat ctcaaggcac acctgcgaac ccacacaggt 1860
+gagaaacctt accactgtga ctgggacggc tgtggatgga aattcgcccg ctcagatgaa 1920
+ctgaccaggc actaccgtaa acacacgggg caccgcccgt tccagtgcca aaaatgcgac 1980
+cgagcatttt ccaggtcgga ccacctcgcc ttacacatga agaggcattt ttaaatccca 2040
+gacagtggat atgacccaca ctgccagaag agaattcagt attttttact tttcacactg 2100
+tcttcccgat gagggaagga gcccagccag aaagcactac aatcatggtc aagttcccaa 2160
+ctgagtcatc ttgtgagtgg ataatcagga aaaatgagga atccaaaaga caaaaatcaa 2220
+agaacagatg gggtctgtga ctggatcttc tatcattcca attctaaatc cgacttgaat 2280
+attcctggac ttacaaaatg ccaagggggt gactggaagt tgtggatatc agggtataaa 2340
+ttatatccgt gagttggggg agggaagacc agaattccct tgaattgtgt attgatgcaa 2400
+tataagcata aaagatcacc ttgtattctc tttaccttct aaaagccatt attatgatgt 2460
+tagaagaaga ggaagaaatt caggtacaga aaacatgttt aaatagccta aatgatggtg 2520
+cttggtgagt cttggttcta aaggtaccaa acaaggaagc caaagttttc aaactgctgc 2580
+atactttgac aaggaaaatc tatatttgtc ttccgatcaa catttatgac ctaagtcagg 2640
+taatatacct ggtttacttc tttagcattt ttatgcagac agtctgttat gcactgtggt 2700
+ttcagatgtg caataatttg tacaatggtt tattcccaag tatgccttaa gcagaacaaa 2760
+tgtgtttttc tatatagttc cttgccttaa taaatatgta atataaattt aagcaaacgt 2820
+ctattttgta tatttgtaaa ctacaaagta aaatgaacat tttgtggagt ttgtattttg 2880
+catactcaag gtgagaatta agttttaaat aaacctataa tattttatct gaaaaaaaaa 2940
+aaaaaaaaa                                                         2949
+
+<210> 25
+<211> 6055
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_002253
+
+<400> 25
+actgagtccc gggaccccgg gagagcggtc aatgtgtggt cgctgcgttt cctctgcctg 60
+cgccgggcat cacttgcgcg ccgcagaaag tccgtctggc agcctggata tcctctccta 120
+ccggcacccg cagacgcccc tgcagccgcg gtcggcgccc gggctcccta gccctgtgcg 180
+ctcaactgtc ctgcgctgcg gggtgccgcg agttccacct ccgcgcctcc ttctctagac 240
+aggcgctggg agaaagaacc ggctcccgag ttctgggcat ttcgcccggc tcgaggtgca 300
+ggatgcagag caaggtgctg ctggccgtcg ccctgtggct ctgcgtggag acccgggccg 360
+cctctgtggg tttgcctagt gtttctcttg atctgcccag gctcagcata caaaaagaca 420
+tacttacaat taaggctaat acaactcttc aaattacttg caggggacag agggacttgg 480
+actggctttg gcccaataat cagagtggca gtgagcaaag ggtggaggtg actgagtgca 540
+gcgatggcct cttctgtaag acactcacaa ttccaaaagt gatcggaaat gacactggag 600
+cctacaagtg cttctaccgg gaaactgact tggcctcggt catttatgtc tatgttcaag 660
+attacagatc tccatttatt gcttctgtta gtgaccaaca tggagtcgtg tacattactg 720
+agaacaaaaa caaaactgtg gtgattccat gtctcgggtc catttcaaat ctcaacgtgt 780
+cactttgtgc aagataccca gaaaagagat ttgttcctga tggtaacaga atttcctggg 840
+acagcaagaa gggctttact attcccagct acatgatcag ctatgctggc atggtcttct 900
+gtgaagcaaa aattaatgat gaaagttacc agtctattat gtacatagtt gtcgttgtag 960
+ggtataggat ttatgatgtg gttctgagtc cgtctcatgg aattgaacta tctgttggag 1020
+aaaagcttgt cttaaattgt acagcaagaa ctgaactaaa tgtggggatt gacttcaact 1080
+gggaataccc ttcttcgaag catcagcata agaaacttgt aaaccgagac ctaaaaaccc 1140
+agtctgggag tgagatgaag aaatttttga gcaccttaac tatagatggt gtaacccgga 1200
+gtgaccaagg attgtacacc tgtgcagcat ccagtgggct gatgaccaag aagaacagca 1260
+catttgtcag ggtccatgaa aaaccttttg ttgcttttgg aagtggcatg gaatctctgg 1320
+tggaagccac ggtgggggag cgtgtcagaa tccctgcgaa gtaccttggt tacccacccc 1380
+cagaaataaa atggtataaa aatggaatac cccttgagtc caatcacaca attaaagcgg 1440
+ggcatgtact gacgattatg gaagtgagtg aaagagacac aggaaattac actgtcatcc 1500
+ttaccaatcc catttcaaag gagaagcaga gccatgtggt ctctctggtt gtgtatgtcc 1560
+caccccagat tggtgagaaa tctctaatct ctcctgtgga ttcctaccag tacggcacca 1620
+ctcaaacgct gacatgtacg gtctatgcca ttcctccccc gcatcacatc cactggtatt 1680
+ggcagttgga ggaagagtgc gccaacgagc ccagccaagc tgtctcagtg acaaacccat 1740
+acccttgtga agaatggaga agtgtggagg acttccaggg aggaaataaa attgaagtta 1800
+ataaaaatca atttgctcta attgaaggaa aaaacaaaac tgtaagtacc cttgttatcc 1860
+aagcggcaaa tgtgtcagct ttgtacaaat gtgaagcggt caacaaagtc gggagaggag 1920
+agagggtgat ctccttccac gtgaccaggg gtcctgaaat tactttgcaa cctgacatgc 1980
+agcccactga gcaggagagc gtgtctttgt ggtgcactgc agacagatct acgtttgaga 2040
+acctcacatg gtacaagctt ggcccacagc ctctgccaat ccatgtggga gagttgccca 2100
+cacctgtttg caagaacttg gatactcttt ggaaattgaa tgccaccatg ttctctaata 2160
+gcacaaatga cattttgatc atggagctta agaatgcatc cttgcaggac caaggagact 2220
+atgtctgcct tgctcaagac aggaagacca agaaaagaca ttgcgtggtc aggcagctca 2280
+cagtcctaga gcgtgtggca cccacgatca caggaaacct ggagaatcag acgacaagta 2340
+ttggggaaag catcgaagtc tcatgcacgg catctgggaa tccccctcca cagatcatgt 2400
+ggtttaaaga taatgagacc cttgtagaag actcaggcat tgtattgaag gatgggaacc 2460
+ggaacctcac tatccgcaga gtgaggaagg aggacgaagg cctctacacc tgccaggcat 2520
+gcagtgttct tggctgtgca aaagtggagg catttttcat aatagaaggt gcccaggaaa 2580
+agacgaactt ggaaatcatt attctagtag gcacggcggt gattgccatg ttcttctggc 2640
+tacttcttgt catcatccta cggaccgtta agcgggccaa tggaggggaa ctgaagacag 2700
+gctacttgtc catcgtcatg gatccagatg aactcccatt ggatgaacat tgtgaacgac 2760
+tgccttatga tgccagcaaa tgggaattcc ccagagaccg gctgaagcta ggtaagcctc 2820
+ttggccgtgg tgcctttggc caagtgattg aagcagatgc ctttggaatt gacaagacag 2880
+caacttgcag gacagtagca gtcaaaatgt tgaaagaagg agcaacacac agtgagcatc 2940
+gagctctcat gtctgaactc aagatcctca ttcatattgg tcaccatctc aatgtggtca 3000
+accttctagg tgcctgtacc aagccaggag ggccactcat ggtgattgtg gaattctgca 3060
+aatttggaaa cctgtccact tacctgagga gcaagagaaa tgaatttgtc ccctacaaga 3120
+ccaaaggggc acgattccgt caagggaaag actacgttgg agcaatccct gtggatctga 3180
+aacggcgctt ggacagcatc accagtagcc agagctcagc cagctctgga tttgtggagg 3240
+agaagtccct cagtgatgta gaagaagagg aagctcctga agatctgtat aaggacttcc 3300
+tgaccttgga gcatctcatc tgttacagct tccaagtggc taagggcatg gagttcttgg 3360
+catcgcgaaa gtgtatccac agggacctgg cggcacgaaa tatcctctta tcggagaaga 3420
+acgtggttaa aatctgtgac tttggcttgg cccgggatat ttataaagat ccagattatg 3480
+tcagaaaagg agatgctcgc ctccctttga aatggatggc cccagaaaca atttttgaca 3540
+gagtgtacac aatccagagt gacgtctggt cttttggtgt tttgctgtgg gaaatatttt 3600
+ccttaggtgc ttctccatat cctggggtaa agattgatga agaattttgt aggcgattga 3660
+aagaaggaac tagaatgagg gcccctgatt atactacacc agaaatgtac cagaccatgc 3720
+tggactgctg gcacggggag cccagtcaga gacccacgtt ttcagagttg gtggaacatt 3780
+tgggaaatct cttgcaagct aatgctcagc aggatggcaa agactacatt gttcttccga 3840
+tatcagagac tttgagcatg gaagaggatt ctggactctc tctgcctacc tcacctgttt 3900
+cctgtatgga ggaggaggaa gtatgtgacc ccaaattcca ttatgacaac acagcaggaa 3960
+tcagtcagta tctgcagaac agtaagcgaa agagccggcc tgtgagtgta aaaacatttg 4020
+aagatatccc gttagaagaa ccagaagtaa aagtaatccc agatgacaac cagacggaca 4080
+gtggtatggt tcttgcctca gaagagctga aaactttgga agacagaacc aaattatctc 4140
+catcttttgg tggaatggtg cccagcaaaa gcagggagtc tgtggcatct gaaggctcaa 4200
+accagacaag cggctaccag tccggatatc actccgatga cacagacacc accgtgtact 4260
+ccagtgagga agcagaactt ttaaagctga tagagattgg agtgcaaacc ggtagcacag 4320
+cccagattct ccagcctgac tcggggacca cactgagctc tcctcctgtt taaaaggaag 4380
+catccacacc cccaactcct ggacatcaca tgagaggtgc tgctcagatt ttcaagtgtt 4440
+gttctttcca ccagcaggaa gtagccgcat ttgattttca tttcgacaac agaaaaagga 4500
+cctcggactg cagggagcca gtcttctagg catatcctgg aagaggcttg tgacccaaga 4560
+atgtgtctgt gtcttctccc agtgttgacc tgatcctctt tttcattcat ttaaaaagca 4620
+tttatcatgc cccctgctgc gggtctcacc atgggtttag aacaaagacg ttcaagaaat 4680
+ggccccatcc tcaaagaagt agcagtacct ggggagctga cacttctgta aaactagaag 4740
+ataaaccagg caatgtaagt gttcgaggtg ttgaagatgg gaaggatttg cagggctgag 4800
+tctatccaag aggctttgtt taggacgtgg gtcccaagcc aagccttaag tgtggaattc 4860
+ggattgatag aaaggaagac taacgttacc ttgctttgga gagtactgga gcctgcaaat 4920
+gcattgtgtt tgctctggtg gaggtgggca tggggtctgt tctgaaatgt aaagggttca 4980
+gacggggttt ctggttttag aaggttgcgt gttcttcgag ttgggctaaa gtagagttcg 5040
+ttgtgctgtt tctgactcct aatgagagtt ccttccagac cgttacgtgt ctcctggcca 5100
+agccccagga aggaaatgat gcagctctgg ctccttgtct cccaggctga tcctttattc 5160
+agaataccac aaagaaagga cattcagctc aaggctccct gccgtgttga agagttctga 5220
+ctgcacaaac cagcttctgg tttcttctgg aatgaatacc ctcatatctg tcctgatgtg 5280
+atatgtctga gactgaatgc gggaggttca atgtgaagct gtgtgtggtg tcaaagtttc 5340
+aggaaggatt ttaccctttt gttcttcccc ctgtccccaa cccactctca ccccgcaacc 5400
+catcagtatt ttagttattt ggcctctact ccagtaaacc tgattgggtt tgttcactct 5460
+ctgaatgatt attagccaga cttcaaaatt attttatagc ccaaattata acatctattg 5520
+tattatttag acttttaaca tatagagcta tttctactga tttttgccct tgttctgtcc 5580
+tttttttcaa aaaagaaaat gtgttttttg tttggtacca tagtgtgaaa tgctgggaac 5640
+aatgactata agacatgcta tggcacatat atttatagtc tgtttatgta gaaacaaatg 5700
+taatatatta aagccttata tataatgaac tttgtactat tcacattttg tatcagtatt 5760
+atgtagcata acaaaggtca taatgctttc agcaattgat gtcattttat taaagaacat 5820
+tgaaaaactt gaaggaatcc ctttgcaagg ttgcattact gtacccatca tttctaaaat 5880
+ggaagagggg gtggctgggc acagtggccg acacctaaaa acccagcact ttggggggcc 5940
+aaggtgggag gatcgcttga gcccaggagt tcaagaccag tctggccaac atggtcagat 6000
+tccatctcaa agaaaaaagg taaaaataaa ataaaatgga gaagaaggaa tcaga      6055
+
+
+
+<210> 26
+<211> 5190
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_000222.2
+
+<400> 26
+tctgggggct cggctttgcc gcgctcgctg cacttgggcg agagctggaa cgtggaccag 60
+agctcggatc ccatcgcagc taccgcgatg agaggcgctc gcggcgcctg ggattttctc 120
+tgcgttctgc tcctactgct tcgcgtccag acaggctctt ctcaaccatc tgtgagtcca 180
+ggggaaccgt ctccaccatc catccatcca ggaaaatcag acttaatagt ccgcgtgggc 240
+gacgagatta ggctgttatg cactgatccg ggctttgtca aatggacttt tgagatcctg 300
+gatgaaacga atgagaataa gcagaatgaa tggatcacgg aaaaggcaga agccaccaac 360
+accggcaaat acacgtgcac caacaaacac ggcttaagca attccattta tgtgtttgtt 420
+agagatcctg ccaagctttt ccttgttgac cgctccttgt atgggaaaga agacaacgac 480
+acgctggtcc gctgtcctct cacagaccca gaagtgacca attattccct caaggggtgc 540
+caggggaagc ctcttcccaa ggacttgagg tttattcctg accccaaggc gggcatcatg 600
+atcaaaagtg tgaaacgcgc ctaccatcgg ctctgtctgc attgttctgt ggaccaggag 660
+ggcaagtcag tgctgtcgga aaaattcatc ctgaaagtga ggccagcctt caaagctgtg 720
+cctgttgtgt ctgtgtccaa agcaagctat cttcttaggg aaggggaaga attcacagtg 780
+acgtgcacaa taaaagatgt gtctagttct gtgtactcaa cgtggaaaag agaaaacagt 840
+cagactaaac tacaggagaa atataatagc tggcatcacg gtgacttcaa ttatgaacgt 900
+caggcaacgt tgactatcag ttcagcgaga gttaatgatt ctggagtgtt catgtgttat 960
+gccaataata cttttggatc agcaaatgtc acaacaacct tggaagtagt agataaagga 1020
+ttcattaata tcttccccat gataaacact acagtatttg taaacgatgg agaaaatgta 1080
+gatttgattg ttgaatatga agcattcccc aaacctgaac accagcagtg gatctatatg 1140
+aacagaacct tcactgataa atgggaagat tatcccaagt ctgagaatga aagtaatatc 1200
+agatacgtaa gtgaacttca tctaacgaga ttaaaaggca ccgaaggagg cacttacaca 1260
+ttcctagtgt ccaattctga cgtcaatgct gccatagcat ttaatgttta tgtgaataca 1320
+aaaccagaaa tcctgactta cgacaggctc gtgaatggca tgctccaatg tgtggcagca 1380
+ggattcccag agcccacaat agattggtat ttttgtccag gaactgagca gagatgctct 1440
+gcttctgtac tgccagtgga tgtgcagaca ctaaactcat ctgggccacc gtttggaaag 1500
+ctagtggttc agagttctat agattctagt gcattcaagc acaatggcac ggttgaatgt 1560
+aaggcttaca acgatgtggg caagacttct gcctatttta actttgcatt taaaggtaac 1620
+aacaaagagc aaatccatcc ccacaccctg ttcactcctt tgctgattgg tttcgtaatc 1680
+gtagctggca tgatgtgcat tattgtgatg attctgacct acaaatattt acagaaaccc 1740
+atgtatgaag tacagtggaa ggttgttgag gagataaatg gaaacaatta tgtttacata 1800
+gacccaacac aacttcctta tgatcacaaa tgggagtttc ccagaaacag gctgagtttt 1860
+gggaaaaccc tgggtgctgg agctttcggg aaggttgttg aggcaactgc ttatggctta 1920
+attaagtcag atgcggccat gactgtcgct gtaaagatgc tcaagccgag tgcccatttg 1980
+acagaacggg aagccctcat gtctgaactc aaagtcctga gttaccttgg taatcacatg 2040
+aatattgtga atctacttgg agcctgcacc attggagggc ccaccctggt cattacagaa 2100
+tattgttgct atggtgatct tttgaatttt ttgagaagaa aacgtgattc atttatttgt 2160
+tcaaagcagg aagatcatgc agaagctgca ctttataaga atcttctgca ttcaaaggag 2220
+tcttcctgca gcgatagtac taatgagtac atggacatga aacctggagt ttcttatgtt 2280
+gtcccaacca aggccgacaa aaggagatct gtgagaatag gctcatacat agaaagagat 2340
+gtgactcccg ccatcatgga ggatgacgag ttggccctag acttagaaga cttgctgagc 2400
+ttttcttacc aggtggcaaa gggcatggct ttcctcgcct ccaagaattg tattcacaga 2460
+gacttggcag ccagaaatat cctccttact catggtcgga tcacaaagat ttgtgatttt 2520
+ggtctagcca gagacatcaa gaatgattct aattatgtgg ttaaaggaaa cgctcgacta 2580
+cctgtgaagt ggatggcacc tgaaagcatt ttcaactgtg tatacacgtt tgaaagtgac 2640
+gtctggtcct atgggatttt tctttgggag ctgttctctt taggaagcag cccctatcct 2700
+ggaatgccgg tcgattctaa gttctacaag atgatcaagg aaggcttccg gatgctcagc 2760
+cctgaacacg cacctgctga aatgtatgac ataatgaaga cttgctggga tgcagatccc 2820
+ctaaaaagac caacattcaa gcaaattgtt cagctaattg agaagcagat ttcagagagc 2880
+accaatcata tttactccaa cttagcaaac tgcagcccca accgacagaa gcccgtggta 2940
+gaccattctg tgcggatcaa ttctgtcggc agcaccgctt cctcctccca gcctctgctt 3000
+gtgcacgacg atgtctgagc agaatcagtg tttgggtcac ccctccagga atgatctctt 3060
+cttttggctt ccatgatggt tattttcttt tctttcaact tgcatccaac tccaggatag 3120
+tgggcacccc actgcaatcc tgtctttctg agcacacttt agtggccgat gatttttgtc 3180
+atcagccacc atcctattgc aaaggttcca actgtatata ttcccaatag caacgtagct 3240
+tctaccatga acagaaaaca ttctgatttg gaaaaagaga gggaggtatg gactgggggc 3300
+cagagtcctt tccaaggctt ctccaattct gcccaaaaat atggttgata gtttacctga 3360
+ataaatggta gtaatcacag ttggccttca gaaccatcca tagtagtatg atgatacaag 3420
+attagaagct gaaaacctaa gtcctttatg tggaaaacag aacatcatta gaacaaagga 3480
+cagagtatga acacctgggc ttaagaaatc tagtatttca tgctgggaat gagacatagg 3540
+ccatgaaaaa aatgatcccc aagtgtgaac aaaagatgct cttctgtgga ccactgcatg 3600
+agcttttata ctaccgacct ggtttttaaa tagagtttgc tattagagca ttgaattgga 3660
+gagaaggcct ccctagccag cacttgtata tacgcatcta taaattgtcc gtgttcatac 3720
+atttgagggg aaaacaccat aaggtttcgt ttctgtatac aaccctggca ttatgtccac 3780
+tgtgtataga agtagattaa gagccatata agtttgaagg aaacagttaa taccattttt 3840
+taaggaaaca atataaccac aaagcacagt ttgaacaaaa tctcctcttt tagctgatga 3900
+acttattctg tagattctgt ggaacaagcc tatcagcttc agaatggcat tgtactcaat 3960
+ggatttgatg ctgtttgaca aagttactga ttcactgcat ggctcccaca ggagtgggaa 4020
+aacactgcca tcttagtttg gattcttatg tagcaggaaa taaagtatag gtttagcctc 4080
+cttcgcaggc atgtcctgga caccgggcca gtatctatat atgtgtatgt acgtttgtat 4140
+gtgtgtagac aaatatttgg aggggtattt ttgccctgag tccaagaggg tcctttagta 4200
+cctgaaaagt aacttggctt tcattattag tactgctctt gtttcttttc acatagctgt 4260
+ctagagtagc ttaccagaag cttccatagt ggtgcagagg aagtggaagg catcagtccc 4320
+tatgtatttg cagttcacct gcacttaagg cactctgtta tttagactca tcttactgta 4380
+cctgttcctt agaccttcca taatgctact gtctcactga aacatttaaa ttttaccctt 4440
+tagactgtag cctggatatt attcttgtag tttacctctt taaaaacaaa acaaaacaaa 4500
+acaaaaaact ccccttcctc actgcccaat ataaaaggca aatgtgtaca tggcagagtt 4560
+tgtgtgttgt cttgaaagat tcaggtatgt tgcctttatg gtttccccct tctacatttc 4620
+ttagactaca tttagagaac tgtggccgtt atctggaagt aaccatttgc actggagttc 4680
+tatgctctcg cacctttcca aagttaacag attttggggt tgtgttgtca cccaagagat 4740
+tgttgtttgc catactttgt ctgaaaaatt cctttgtgtt tctattgact tcaatgatag 4800
+taagaaaagt ggttgttagt tatagatgtc taggtacttc aggggcactt cattgagagt 4860
+tttgtcttgg atattcttga aagtttatat ttttataatt ttttcttaca tcagatgttt 4920
+ctttgcagtg gcttaatgtt tgaaattatt ttgtggcttt ttttgtaaat attgaaatgt 4980
+agcaataatg tcttttgaat attcccaagc ccatgagtcc ttgaaaatat tttttatata 5040
+tacagtaact ttatgtgtaa atacataagc ggcgtaagtt taaaggatgt tggtgttcca 5100
+cgtgttttat tcctgtatgt tgtccaattg ttgacagttc tgaagaattc taataaaatg 5160
+tacatatata aatcaaaaaa aaaaaaaaaa                                  5190
+
+
+
+<210> 27
+<211> 2350
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_022454.3
+
+<400> 27
+gcagtgtcac taggccggct gggggccctg ggtacgctgt agaccagacc gcgacaggcc 60
+agaacacggg cggcggcttc gggccgggag acccgcgcag ccctcggggc atctcagtgc 120
+ctcactcccc accccctccc ccgggtcggg ggaggcggcg cgtccggcgg agggttgagg 180
+ggagcggggc aggcctggag cgccatgagc agcccggatg cgggatacgc cagtgacgac 240
+cagagccaga cccagagcgc gctgcccgcg gtgatggccg ggctgggccc ctgcccctgg 300
+gccgagtcgc tgagccccat cggggacatg aaggtgaagg gcgaggcgcc ggcgaacagc 360
+ggagcaccgg ccggggccgc gggccgagcc aagggcgagt cccgtatccg gcggccgatg 420
+aacgctttca tggtgtgggc taaggacgag cgcaagcggc tggcgcagca gaatccagac 480
+ctgcacaacg ccgagttgag caagatgctg ggcaagtcgt ggaaggcgct gacgctggcg 540
+gagaagcggc ccttcgtgga ggaggcagag cggctgcgcg tgcagcacat gcaggaccac 600
+cccaactaca agtaccggcc gcggcggcgc aagcaggtga agcggctgaa gcgggtggag 660
+ggcggcttcc tgcacggcct ggctgagccg caggcggccg cgctgggccc cgagggcggc 720
+cgcgtggcca tggacggcct gggcctccag ttccccgagc agggcttccc cgccggcccg 780
+ccgctgctgc ctccgcacat gggcggccac taccgcgact gccagagtct gggcgcgcct 840
+ccgctcgacg gctacccgtt gcccacgccc gacacgtccc cgctggacgg cgtggacccc 900
+gacccggctt tcttcgccgc cccgatgccc ggggactgcc cggcggccgg cacctacagc 960
+tacgcgcagg tctcggacta cgctggcccc ccggagcctc ccgccggtcc catgcacccc 1020
+cgactcggcc cagagcccgc gggtccctcg attccgggcc tcctggcgcc acccagcgcc 1080
+cttcacgtgt actacggcgc gatgggctcg cccggggcgg gcggcgggcg cggcttccag 1140
+atgcagccgc aacaccagca ccagcaccag caccagcacc accccccggg ccccggacag 1200
+ccgtcgcccc ctccggaggc actgccctgc cgggacggca cggaccccag tcagcccgcc 1260
+gagctcctcg gggaggtgga ccgcacggaa tttgaacagt atctgcactt cgtgtgcaag 1320
+cctgagatgg gcctccccta ccaggggcat gactccggtg tgaatctccc cgacagccac 1380
+ggggccattt cctcggtggt gtccgacgcc agctccgcgg tatattactg caactatcct 1440
+gacgtgtgac aggtccctga tccgccccag cctgcaggcc agaagcagtg ttacacactt 1500
+cctggaggag ctaaggaaat cctcagactc ctgggttttt gttgttgctg ttgttgtttt 1560
+ttaaaaggtg tgttggcata taatttatgg taatttattt tgtctgccac ttgaacagtt 1620
+tgggggggtg aggtttcatt taaaatttgt tcagagattt gtttcccata gttggattgt 1680
+caaaacccta tttccaagtt caagttaact agctttgaat gtgtcccaaa acagcttcct 1740
+ccatttcctg aaagtttatt gatcaaagaa atgttgtcct gggtgtgttt tttcaatctt 1800
+ctaaaaaata aaatctggaa tcctgctttt ttgctctact agtacctctg tcacactagt 1860
+cttatcaaaa accagttctt aagatcaatg ttaagtttat tagttaatgt aaatttctca 1920
+tcctcgaaaa gggtgaacat aaatgccttt aaggagtata tctaaaaata aacattagga 1980
+tatctaagtt tgatgtaatt gtttcaggaa ggaaaaaaga aaagcattct ggaatgagcc 2040
+tacttcaagt aatcttagtt tctaaaacta acagttaata ttttcaattc cagtatatca 2100
+ctttaagtag aaggggatgt ccaagtaatt ttggttttct aactgttgaa tcataagctt 2160
+gacctgcccc cagaggcttt ttggatgttt ttatctgtgt tttgccatct ctttacactc 2220
+ctcgacattc agtttacctt aatcttcaca tttttacacc ttgggaagtg gcaagcatcg 2280
+ctgggtttaa gataaaggag tcacaaaaac taatcaaaat aaaatttgca ttatgacaac 2340
+ttttaataca                                                        2350
+
+<210> 28
+<211> 3056
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_005900.2
+
+<400> 28
+ggcagctgag gagtggaggc tgggcagctc cgactccctg acgccagcgc gaccagatca 60
+atccaggctc caggagaaag caggcgggcg ggcggagaaa ggagaggccg agcggctcaa 120
+cccgggccga ggctcgggga gcggagagtg gcgcagcgcc cggccgtccg gacccgggcc 180
+gcgagacccc gctcgcccgg ccactcgtgc tcccacacgg acgggcgcgc cgccaacccg 240
+gtgctgactg ggttactttt ttaaacacta ggaatggtaa tttctactct tctggacttc 300
+aaactaagaa gttaaagaga cttctctgta aataaacaaa tctcttctgc tgtccttttg 360
+catttggaga cagctttatt tcaccatatc caaggagtat aactagtgct gtcattatga 420
+atgtgacaag tttattttcc tttacaagtc cagctgtgaa gagacttctt gggtggaaac 480
+agggcgatga agaagaaaaa tgggcagaga aagctgttga tgctttggtg aaaaaactga 540
+agaaaaagaa aggtgccatg gaggaactgg aaaaggcctt gagctgccca gggcaaccga 600
+gtaactgtgt caccattccc cgctctctgg atggcaggct gcaagtctcc caccggaagg 660
+gactgcctca tgtcatttac tgccgtgtgt ggcgctggcc cgatcttcag agccaccatg 720
+aactaaaacc actggaatgc tgtgagtttc cttttggttc caagcagaag gaggtctgca 780
+tcaatcccta ccactataag agagtagaaa gccctgtact tcctcctgtg ctggttccaa 840
+gacacagcga atataatcct cagcacagcc tcttagctca gttccgtaac ttaggacaaa 900
+atgagcctca catgccactc aacgccactt ttccagattc tttccagcaa cccaacagcc 960
+acccgtttcc tcactctccc aatagcagtt acccaaactc tcctgggagc agcagcagca 1020
+cctaccctca ctctcccacc agctcagacc caggaagccc tttccagatg ccagctgata 1080
+cgcccccacc tgcttacctg cctcctgaag accccatgac ccaggatggc tctcagccga 1140
+tggacacaaa catgatggcg cctcccctgc cctcagaaat caacagagga gatgttcagg 1200
+cggttgctta tgaggaacca aaacactggt gctctattgt ctactatgag ctcaacaatc 1260
+gtgtgggtga agcgttccat gcctcctcca caagtgtgtt ggtggatggt ttcactgatc 1320
+cttccaacaa taagaaccgt ttctgccttg ggctgctctc caatgttaac cggaattcca 1380
+ctattgaaaa caccaggcgg catattggaa aaggagttca tctttattat gttggagggg 1440
+aggtgtatgc cgaatgcctt agtgacagta gcatctttgt gcaaagtcgg aactgcaact 1500
+accatcatgg atttcatcct actactgttt gcaagatccc tagtgggtgt agtctgaaaa 1560
+tttttaacaa ccaagaattt gctcagttat tggcacagtc tgtgaaccat ggatttgaga 1620
+cagtctatga gcttacaaaa atgtgtacta tacgtatgag ctttgtgaag ggctggggag 1680
+cagaatacca ccgccaggat gttactagca ccccctgctg gattgagata catctgcacg 1740
+gccccctcca gtggctggat aaagttctta ctcaaatggg ttcacctcat aatcctattt 1800
+catctgtatc ttaaatggcc ccaggcatct gcctctggaa aactattgag ccttgcatgt 1860
+acttgaagga tggatgagtc agacacgatt gagaactgac aaaggagcct tgataatact 1920
+tgacctctgt gaccaactgt tggattcaga aatttaaaca aaaaaaaaaa aaaacacaca 1980
+caccttggta acatactgtt gatatcaaga acctgtttag tttacattgt aacattctat 2040
+tgtaaaatca actaaaattc agacttttag caggactttg tgtacagtta aaggagagat 2100
+ggccaagcca gggacaaatt gtctattaga aaacggtcct aagagattct ttggtgtttg 2160
+gcactttaag gtcatcgttg ggcagaagtt tagcattaat agttgttctg aaacgtgttt 2220
+tatcaggttt agagcccatg ttgagtcttc ttttcatggg ttttcataat attttaaaac 2280
+tatttgttta gcgatggttt tgttcgttta agtaaaggtt aatcttgatg atatacataa 2340
+taatctttct aaaattgtat gctgaccata cttgctgtca gaataatgct aggcatatgc 2400
+tttttgctaa atatgtatgt acagagtatt tggaagttaa gaattgatta gactagtgaa 2460
+tttaggagta tttgaggtgg gtggggggaa gagggaaatg acaactgcaa atgtagacta 2520
+tactgtaaaa attcagtttg ttgctttaaa gaaacaaact gatacctgaa ttttgctgtg 2580
+tttccatttt ttagagattt ttatcatttt tttctctctc ggcattcttt tttctcatac 2640
+tcttcaaaaa gcagttctgc agctggttaa ttcatgtaac tgtgagagca aatgaataat 2700
+tcctgctatt ctgaaattgc ctacatgttt caataccagt tatatggagt gcttgaattt 2760
+aataagcagt ttttacggag tttacagtac agaaataggc tttaattttc aagtgaattt 2820
+tttgccaaac ttagtaactc tgttaaatat ttggaggatt taaagaacat cccagtttga 2880
+attcatttca aactttttaa atttttttgt actatgtttg gttttatttt ccttctgtta 2940
+atcttttgta ttcacttatg ctctcgtaca ttgagtactt ttattccaaa actagtgggt 3000
+tttctctact ggaaattttc aataaacctg tcattattgc ttactttgat taaaaa     3056
+
+<210> 29
+<211> 10384
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_005901.4
+
+<400> 29
+gcgcccgggc cgccggccgg gcccgggcct gggggcgggg cgggaagacg gcggccggga 60
+gtgttttcag ttccgcctcc aatcgcccat tcccctcttc ccctcccagc cccctccatc 120
+ccatcggaag aggaaggaac aaaaggtccc ggaccccccg gatctgacgg ggcgggacct 180
+ggcgccacct tgcaggttcg atacaagagg ctgttttcct agcgtggctt gctgcctttg 240
+gtaagaacat gtcgtccatc ttgccattca cgccgccagt tgtgaagaga ctgctgggat 300
+ggaagaagtc agctggtggg tctggaggag caggcggagg agagcagaat gggcaggaag 360
+aaaagtggtg tgagaaagca gtgaaaagtc tggtgaagaa gctaaagaaa acaggacgat 420
+tagatgagct tgagaaagcc atcaccactc aaaactgtaa tactaaatgt gttaccatac 480
+caagcacttg ctctgaaatt tggggactga gtacaccaaa tacgatagat cagtgggata 540
+caacaggcct ttacagcttc tctgaacaaa ccaggtctct tgatggtcgt ctccaggtat 600
+cccatcgaaa aggattgcca catgttatat attgccgatt atggcgctgg cctgatcttc 660
+acagtcatca tgaactcaag gcaattgaaa actgcgaata tgcttttaat cttaaaaagg 720
+atgaagtatg tgtaaaccct taccactatc agagagttga gacaccagtt ttgcctccag 780
+tattagtgcc ccgacacacc gagatcctaa cagaacttcc gcctctggat gactatactc 840
+actccattcc agaaaacact aacttcccag caggaattga gccacagagt aattatattc 900
+cagaaacgcc acctcctgga tatatcagtg aagatggaga aacaagtgac caacagttga 960
+atcaaagtat ggacacaggc tctccagcag aactatctcc tactactctt tcccctgtta 1020
+atcatagctt ggatttacag ccagttactt actcagaacc tgcattttgg tgttcgatag 1080
+catattatga attaaatcag agggttggag aaaccttcca tgcatcacag ccctcactca 1140
+ctgtagatgg ctttacagac ccatcaaatt cagagaggtt ctgcttaggt ttactctcca 1200
+atgttaaccg aaatgccacg gtagaaatga caagaaggca tataggaaga ggagtgcgct 1260
+tatactacat aggtggggaa gtttttgctg agtgcctaag tgatagtgca atctttgtgc 1320
+agagccccaa ttgtaatcag agatatggct ggcaccctgc aacagtgtgt aaaattccac 1380
+caggctgtaa tctgaagatc ttcaacaacc aggaatttgc tgctcttctg gctcagtctg 1440
+ttaatcaggg ttttgaagcc gtctatcagc taactagaat gtgcaccata agaatgagtt 1500
+ttgtgaaagg gtggggagca gaataccgaa ggcagacggt aacaagtact ccttgctgga 1560
+ttgaacttca tctgaatgga cctctacagt ggttggacaa agtattaact cagatgggat 1620
+ccccttcagt gcgttgctca agcatgtcat aaagcttcac caatcaagtc ccatgaaaag 1680
+acttaatgta acaactcttc tgtcatagca ttgtgtgtgg tccctatgga ctgtttacta 1740
+tccaaaagtt caagagagaa aacagcactt gaggtctcat caattaaagc accttgtgga 1800
+atctgtttcc tatatttgaa tattagatgg gaaaattagt gtctagaaat actctcccat 1860
+taaagaggaa gagaagattt taaagactta atgatgtctt attgggcata aaactgagtg 1920
+tcccaaaggt ttattaataa cagtagtagt tatgtgtaca ggtaatgtat catgatccag 1980
+tatcacagta ttgtgctgtt tatatacatt tttagtttgc atagatgagg tgtgtgtgtg 2040
+cgctgcttct tgatctaggc aaacctttat aaagttgcag tacctaatct gttattccca 2100
+cttctctgtt atttttgtgt gtctttttta atatataata tatatcaaga ttttcaaatt 2160
+atttagaagc agattttcct gtagaaaaac taatttttct gccttttacc aaaaataaac 2220
+tcttggggga agaaaagtgg attaactttt gaaatccttg accttaatgt gttcagtggg 2280
+gcttaaacag tcattctttt tgtggttttt tgtttttttt tgtttttttt tttaactgct 2340
+aaatcttatt ataaggaaac catactgaaa acctttccaa gcctcttttt tccattccca 2400
+tttttgtcct cataatcaaa acagcataac atgacatcat caccagtaat agttgcattg 2460
+atactgctgg caccagttaa ttctgggata cagtaagaat tcatatggag aaagtccctt 2520
+tgtcttatgc ccaaatttca acaggaataa ttggcttgta taatctagca gtctgttgat 2580
+ttatccttcc acctcataaa aaatgcatag gtggcagtat aattattttc agggatatgc 2640
+tagaattact tccacatatt tatccctttt taaaaaagct aatctataaa taccgttttt 2700
+ccaaaggtat tttacaatat ttcaacagca gaccttctgc tcttcgagta gtttgatttg 2760
+gtttagtaac cagattgcat tatgaaatgg gccttttgta aatgtaattg tttctgcaaa 2820
+atacctagaa aagtgatgct gaggtaggat cagcagatat gggccatctg tttttaaagt 2880
+atgttgtatt cagtttataa attgattgtt attctacaca taattatgaa ttcagaattt 2940
+taaaaattgg gggaaaagcc atttatttag caagtttttt agcttataag ttacctgcag 3000
+tctgagctgt tcttaactga tcctggtttt gtgattgaca atatttcatg ctctgtagtg 3060
+agaggagatt tccgaaactc tgttgctagt tcattctgca gcaaataatt attatgtctg 3120
+atgttgactc attgcagttt aaacatttct tcttgtttgc atcttagtag aaatggaaaa 3180
+taaccactcc tggtcgtctt ttcataaatt ttcatatttt tgaagctgtc tttggtactt 3240
+gttctttgaa atcatatcca cctgtctcta taggtatcat tttcaatact ttcaacattt 3300
+ggtggttttc tattgggtac tccccatttt cctatatttg tgtgtatatg tatgtgttca 3360
+tgtaaatttg gtatagtaat tttttattca ttcaacaaat atttattgtt cacctgtttg 3420
+taccaggaac ttttcttagt ctttgggtaa aggtgaacaa gacaactaca gttcctgcct 3480
+ttgctgagac agcagttaca ctaaccctta attatcttac ttgtctatga aggagataaa 3540
+cagggtactg tactggagaa taacagatgg gatgcttcag gtaggacatc aaggaaagcc 3600
+tctaaggaaa ggatgcatga gctaacacct gacattaaag aagcaagcca agtgaggagc 3660
+caggggagat aagcattcct ggcaaagaga atagcatcaa atgcaaaaag gttcacacta 3720
+aaggaaactc ctgattaggt attaatgctt tatacagaaa cctctataca aatccaaact 3780
+tgaagatcag aatggttcta cagttcataa cattttgaag gtggccttat tttgtgatag 3840
+tctgcttcat gtgattctca ctaacatatc tccttcctca acctttgctg taaaaatttc 3900
+atttgcacca catcagtact acttaattta acaagctttt gttgtgtaag ctctcactgt 3960
+tttagtgccc tgctgcttgc ttccagactt tgtgctgtcc agtaattatg tcttccacta 4020
+cccatcttgt gagcagagta aatgtcctag gtaataccac tatcaggcct gtaggagata 4080
+ctcagtggag cctctgccct tctttttctt acttgagaac ttgtaatggt gttagggaac 4140
+agttgtaggg gcagaaaaca actctgaaag tggtagaagg tcctgatctt ggtggttact 4200
+cttgcattac tgtgttaggt caagcagtgc ctactatgct gtttcagtag tggagcgcat 4260
+ctctacagtt ctgatgcgat ttttctgtac agtatgaaat tgggactcaa ctctttgaaa 4320
+acacctattg agcagttata cctgttgagc agtttacttc ctggttgtaa ttacatttgt 4380
+gtgaatgtgt ttgatgcttt ttaacgagat gatgtttttt gtattttatc tactgtggcc 4440
+tgattttttt tttgttttct gcccctcccc ccatttatag gtgtggtttt catttttcta 4500
+agtgatagaa tcccctcttt gttgaatttt tgtctttatt taaattagca acattactta 4560
+ggatttattc ttcacaatac tgttaatttt ctaggaatga tgacctgaga accgaatggc 4620
+catgctttct atcacatttc taagatgagt aatatttttt ccagtaggtt ccacagagac 4680
+accttggggg ctggcttagg ggaggctgtt ggagttctca ctgacttagt ggcatattta 4740
+ttctgtactg aagaactgca tggggtttct tttggaaaga gtttcattgc tttaaaaaga 4800
+agctcagaaa gtctttataa ccactggtca acgattagaa aaatataact ggatttaggc 4860
+ctaccttctg gaataccgct gattgtgctc tttttatcct actttaaaga agctttcatg 4920
+attagatttg agctatatca gttataccga ttatacctta taatacacat tcagttagta 4980
+aacatttatt gatgcctgtt gtttgcccag ccactgtgat ggatattgaa taataaaaag 5040
+atgactagga cggggccctg acccttgagc tgtgcttggt cttgtagagg ttgtgttttt 5100
+tttcctcagg acctgtcact ttggcagaag gaaatctgcc taatttttct tgaaagctaa 5160
+attttctttg taagttttta caaattgttt aatacctagt tgtatttttt accttaagcc 5220
+acattgagtt ttgcttgatt tgtctgtctt ttaaacactg tcaaatgctt tcccttttgt 5280
+taaaattatt ttaatttcac tttttttgtg cccttgtcaa tttaagacta agactttgaa 5340
+ggtaaaacaa acaaacaaac atcagtctta gtctcttgct agttgaaatc aaataaaaga 5400
+aaatatatac ccagttggtt tctctacctc ttaaaagctt cccatatata cctttaagat 5460
+ccttctcttt tttctttaac tactaaatag gttcagcatt tattcagtgt tagataccct 5520
+cttcgtctga gggtggcgta ggtttatgtt gggatataaa gtaacacaag acaatcttca 5580
+ctgtacataa aatatgtctt catgtacagt ctttacttta aaagctgaac attccaattt 5640
+gcgccttccc tcccaagccc ctgcccacca agtatctctt tagatatcta gtctgtggac 5700
+atgaacaatg aatacttttt tcttactctg atcgaaggca ttgatactta gacatatcaa 5760
+acatttcttc ctttcatatg ctttactttg ctaaatctat tatattcatt gcctgaattt 5820
+tattcttcct ttctacctga caacacacat ccaggtggta cttgctggtt atcctctttc 5880
+ttgttagcct tgttttttgt tttttttttt tttttttgag agggagtctc gctctgttgc 5940
+ccaacctgga gtgcagtggt gcgatcttgg ttcactgcaa gctccgcctc ccgggttcac 6000
+gccatgcttc tgcctcagcc tcccaagtag ctgggactac aggcgcccac caccacactc 6060
+ggctaatttt ttgtattttt agtagagacg gggtttcacc gtgttggcca ggatggtctc 6120
+gatctcctga cctcgtgatc tgtccacctc ggcttcccaa agtgctggga ttacaggcat 6180
+gagccaccgc gcccagccta gccatatttt tatctgcata tatcagaatg tttctctcct 6240
+ttgaacttat taacaaaaaa ggaacatgct tttcatacct agagtcctaa tttcttcatc 6300
+atgaaggttg ctattcaaat tgatcaatca ttttaatttt acaaatggct caaaaattct 6360
+gttcagtaaa tgtctttgtg actggcaaat ggcataaatt atgtttaaga ttatgaactt 6420
+ttctgacagt tgcagccaat gttttcccta cgataccaga tttccatctt ggggcatatt 6480
+ggattgttgt atttaagaca gtcagaataa tgatagtgtg tggtctccag aggtagtcag 6540
+aatcctgcta ttgagttctt tttatatctt ccttttcaat tttttattac cattttgttt 6600
+gtttagacta cactttgtag ggattgaggg gcaaattatc tcttggagtg gaattcctgt 6660
+gttttgagcc ttacaaccag gaaatatgag ctatactaga tagcctcatg atagcattta 6720
+cgataagaac ttatctcgtg tgttcatgta attttttgag taggaactgt tttatcttga 6780
+atattgtagc taactatata tagcagaact gcctcagtct ttttaagaag gaaataaata 6840
+atatatgtgt atgaatttat atatacatat acactcatag acaaacttaa cagttggggt 6900
+cattctaaca gttaaaacaa ttgttccatt gtttaaatct cagatcctgg taaaatgttc 6960
+ttaatttgtc tgtgtacatt ttcctttcat ggacagacca ttggagtaca ttaattttct 7020
+taatctgcca tttggcagtt catttaatat accatttttt ggcaacttgg taactaagaa 7080
+tcacagccaa aatttgttaa catcaaagaa agctctgcca tataccccgt tactaaatta 7140
+ttatacatcc agcagattct gggatgtact aacttagggt taactttgtt gttgttgata 7200
+atactagatt gctccctctt taattcttct tctggtgcaa ggttgctgct taagttaccc 7260
+tgggaaatac tactacaagg tcaaattttc tagtatctta cagcctgatt gaaggtgatt 7320
+cagatctttg ctcaatataa atggattttc caagattctc tgggccatcc ttgacccaca 7380
+ggtgatctcg ctggagtata ttaacttaac ttcagtgcca gttggtttgg tgccatgaga 7440
+tccataatga atccagaact tcaccattgc ttagatataa gagtcccttg gaagaataat 7500
+gccactgatg atgggggtca gaaggtgtat taactcaaca tagagggctt ttagattttt 7560
+cttcaaaaaa atttcgagaa aagtattctt ttaccctcca aacagttaac agctcttagt 7620
+ttctccaaat atgctctttg atttacttat ttttaattaa agatggtaat ttattgaaca 7680
+atgaaatccg taatatattg atttaaggac aaaagtgaag ttttagaatt ataaaagtac 7740
+ttaaatatta tatattttcc atttcataat tgttttcctt tctctgtggc tttaaagttt 7800
+ttgactattt tacaatgtta atcactaggt aacttgccat atttctggtt ctatattaag 7860
+ttctatcctt tataatgctg ttattataaa gctggttttt agcatttgtc tgtagcaata 7920
+gaaattttac taagtctctg ttctcccagt aagttttttc ttttctcagt aagtccctaa 7980
+gaaaacattt gtttgccact cttactattc ccaatcttgg attgttcgag ctgaaaaaaa 8040
+atttgatgag aaacaggagg atccttttct ggtgaatata ggttcctgct ttaagaatgt 8100
+ggaaatccat tgctttatat aactaatata cacacagatt aattaaaatt gtgagaaata 8160
+attcacacat gacaagtagg taacatgcat gagttttgaa tttttttaaa aacccaactg 8220
+tttgacaaaa tatagaaccc aaattggtac tttcttagac cagtgtaacc tcacacctca 8280
+gttttgcttt tccaaccctg acttgaaagg catatttgta tctttttatt agtgatagtg 8340
+aagctgtgac actaaccttt tatacaaaag agtaaagaaa gaaaaactac agcgattaag 8400
+atgagaacag ttctgcagtt gttgaactag atcacagcat tgtaggcaga ataaaaaatg 8460
+ttcatatctg agaatattcc tttcgccatc ttttcccaag gccagacctc ctggtggagc 8520
+acagttaaaa gtaacattct gggcctttgt aatcggaggg ctgtgtctcc agctggcagc 8580
+ctttgtttta atatataatg caggactgtg gaaaacagtt ggcatagaat attttcacct 8640
+aaaaaagaaa gaaaagacat acaaaactgg attaattgca aaaagagaat acagtaaaat 8700
+accatataac tggacaaagc tagaagaacc tttagaagat ttgtctgaaa acagatttca 8760
+agagtgagct tttatacact gctcactaat ttgcttgatt actaccaact cttcttaaag 8820
+ttaacacgtt taaggtattt ctggacttcc tagcctttta gcaagcttag aggaactagc 8880
+cattagctag tgatgtaaaa atattttggg gactgatgcc cttaaaggtt atgcccttga 8940
+aagttcttac cttttctcta gtgatattaa ggaacgagtg ggtagtgttc tcagggtgac 9000
+cagctgccct aaagtgcctg ggattgaggg tttccctgga tgcgggactt tccctggata 9060
+caaaactttt agcagagttt tgtatatatg tggatttttc tgataagtag cacatcagag 9120
+gccttaacca ctgcccaaaa gcgattctcc attgagagta catatcttga acttaagaaa 9180
+ttcatttgct ctgattttta atcttgtaaa gtttttgcta aactcaaaac aagtcccagg 9240
+cacaccagaa ggagctgacc accttaggtg ttcttgtgat ttatccttac ttccctatgt 9300
+tgtcatagtt gcttctaaac tcagctgcac tatggctgtc aacatttctg atacttattg 9360
+ggatatgtgc catccagtca tttagtactt tgaatggaac atgagattta taacacaggt 9420
+aatagctgaa ggtaccagta tggtggtgag actcacactt agtgatccag ctaaggtaac 9480
+tgatgttata atggaacaga gaagaggcca actagatagc taagttcttc tgaacctatg 9540
+tgtatatgta agtacaaatc atgcgtcctt atggggttaa acttaatctg aaatttacat 9600
+ttttcatagt aaaaggaaac caattgttgc agatttcttt tcttgtgagg aaatacatgg 9660
+cctttgatgc tctggcgtct actgcatttc ccagtctgtt ctgctcgaga agccagaatg 9720
+tgttgttaac atttttccgt gaatgttgtg ttaaaatgat taaatgcatc agccaatggc 9780
+aagtgaagga attgggtgtc ctgatgcaga ctgagcagtt tctctcaatt gtagcctcat 9840
+actcataagg tgcttaccag ctagaacatt gagcacgtga ggtgagattt tttttctctg 9900
+atggcattaa ctttgtaatg caatatgatg gatgcagacc ctgttcttgt ttccctctgg 9960
+aagtccttag tggctgcatc cttggtgcac tgtgatggag atattaaatg tgttctttgt 10020
+gagctttcgt tctatgattg tcaaaagtac gatgtggttc cttttttatt tttattaaac 10080
+aatgagctga ggctttatta cagctggttt tcaagttaaa attgttgaat actgatgtct 10140
+ttctcccacc tacaccaaat attttagtct atttaaagta caaaaaaagt tctgcttaag 10200
+aaaacattgc ttacatgtcc tgtgatttct ggtcaatttt tatatatatt tgtgtgcatc 10260
+atctgtatgt gctttcactt tttaccttgt ttgctcttac ctgtgttaac agccctgtca 10320
+ccgttgaaag gtggacagtt ttcctagcat taaaagaaag ccatttgagt tgtttaccat 10380
+gtta                                                              10384
+
+
+
+<210> 30
+<211> 6256
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_005902.3
+
+<400> 30
+gcggccgccg cctccgcccc gcgttcgggg ccttcccgac cctgcactgc tgccgtccgc 60
+ccgcccggcc gctcttctct tcgccgtggg agccgctccg ggcgcagggc cgcgcgccga 120
+gccccgcagg ctgcagcgcc gcggcccggc ccggcgcccc ggcaacttcg ccgagagttg 180
+aggcgaagtt tgggcgaccg cggcaggccc cggccgagct cccctctgcg cccccggcgt 240
+cccgtcgagc ccagccccgc cgggggcgct cctcgccgcc cgcgcgccct ccccagccat 300
+gtcgtccatc ctgcctttca ctcccccgat cgtgaagcgc ctgctgggct ggaagaaggg 360
+cgagcagaac gggcaggagg agaaatggtg cgagaaggcg gtcaagagcc tggtcaagaa 420
+actcaagaag acggggcagc tggacgagct ggagaaggcc atcaccacgc agaacgtcaa 480
+caccaagtgc atcaccatcc ccaggtccct ggatggccgg ttgcaggtgt cccatcggaa 540
+ggggctccct catgtcatct actgccgcct gtggcgatgg ccagacctgc acagccacca 600
+cgagctacgg gccatggagc tgtgtgagtt cgccttcaat atgaagaagg acgaggtctg 660
+cgtgaatccc taccactacc agagagtaga gacaccagtt ctacctcctg tgttggtgcc 720
+acgccacaca gagatcccgg ccgagttccc cccactggac gactacagcc attccatccc 780
+cgaaaacact aacttccccg caggcatcga gccccagagc aatattccag agaccccacc 840
+ccctggctac ctgagtgaag atggagaaac cagtgaccac cagatgaacc acagcatgga 900
+cgcaggttct ccaaacctat ccccgaatcc gatgtcccca gcacataata acttggacct 960
+gcagccagtt acctactgcg agccggcctt ctggtgctcc atctcctact acgagctgaa 1020
+ccagcgcgtc ggggagacat tccacgcctc gcagccatcc atgactgtgg atggcttcac 1080
+cgacccctcc aattcggagc gcttctgcct agggctgctc tccaatgtca acaggaatgc 1140
+agcagtggag ctgacacgga gacacatcgg aagaggcgtg cggctctact acatcggagg 1200
+ggaggtcttc gcagagtgcc tcagtgacag cgctattttt gtccagtctc ccaactgtaa 1260
+ccagcgctat ggctggcacc cggccaccgt ctgcaagatc ccaccaggat gcaacctgaa 1320
+gatcttcaac aaccaggagt tcgctgccct cctggcccag tcggtcaacc agggctttga 1380
+ggctgtctac cagttgaccc gaatgtgcac catccgcatg agcttcgtca aaggctgggg 1440
+agcggagtac aggagacaga ctgtgaccag taccccctgc tggattgagc tgcacctgaa 1500
+tgggcctttg cagtggcttg acaaggtcct cacccagatg ggctccccaa gcatccgctg 1560
+ttccagtgtg tcttagagac atcaagtatg gtaggggagg gcaggcttgg ggaaaatggc 1620
+catgcaggag gtggagaaaa ttggaactct actcaaccca ttgttgtcaa ggaagaagaa 1680
+atctttctcc ctcaactgaa ggggtgcacc cacctgtttt ctgaaacaca cgagcaaacc 1740
+cagaggtgga tgttatgaac agctgtgtct gccaaacaca tttacccttt ggccccactt 1800
+tgaagggcaa gaaatggcgt ctgctctggt ggcttaagtg agcagaacag gtagtattac 1860
+accaccggcc ccctcccccc agactctttt tttgagtgac agctttctgg gatgtcacag 1920
+tccaaccaga aacacccctc tgtctaggac tgcagtgtgg agttcacctt ggaagggcgt 1980
+tctaggtagg aagagcccgc agggccatgc agacctcatg cccagctctc tgacgcttgt 2040
+gacagtgcct cttccagtga acattcccag cccagccccg ccccgccccg ccccaccact 2100
+ccagcagacc ttgccccttg tgagctggat agacttggga tggggaggga gggagttttg 2160
+tctgtctccc tcccctctca gaacatactg attgggaggt gcgtgttcag cagaacctgc 2220
+acacaggaca gcgggaaaaa tcgatgagcg ccacctcttt aaaaactcac ttacgtttgt 2280
+cctttttcac tttgaaaagt tggaaggatc tgctgaggcc cagtgcatat gcaatgtata 2340
+gtgtctatta tcacattaat ctcaaagaga ttcgaatgac ggtaagtgtt ctcatgaagc 2400
+aggaggccct tgtcgtggga tggcatttgg tctcaggcag caccacactg ggtgcgtctc 2460
+cagtcatctg taagagcttg ctccagattc tgatgcatac ggctatattg gtttatgtag 2520
+tcagttgcat tcattaaatc aactttatca tatgctcttt taaatgtttg gtttatatat 2580
+tttctttaaa aatcctgggc tggcacattg actgggaaac ctgagtgaga cccagcaact 2640
+gcttctctcc cttctctctc ctgaggtgaa gcttttccag gttttgttga agagatacct 2700
+gccagcactt ctgcaagctg aaatttacag aagcaaattc accagaaggg aaacatctca 2760
+ggccaacata ggcaaatgaa aagggctatt aaaatatttt tacacctttg aaaattgcag 2820
+gcttggtaca aagaggtctg tcatcttccc cctgggatat aagatgatct agctcccggt 2880
+agaggatcac cggtgacaac tatagcagtt gtattgtgta acaagtactg ctcccagcag 2940
+caattaggga gaaaactagt ctaaattatt tcaactggaa aaaagaaaaa agagtcctct 3000
+tcttttccca gccttttgca gaacacagta gacagaactg ccaccttcaa ttggtacttt 3060
+attctttgct gctgtttttg tataaaatga cctatcccac gtttttgcat gaatttatag 3120
+caggaaaaat caagggattt cctatggaag tcctgcttta ttccaggtga agggaaggaa 3180
+gtgtatatac ttttggcaag tcatacagct caaatgtgat gagatttctg atgttagagg 3240
+gagatggaga ggcttcctga tgcctcatct gcagggtcct gtgcctctga agttctagcc 3300
+atgaggtttc caggtaggac agctgctccc caagcctcct gaggacacag gaagagacgg 3360
+aaggagcacc ttgacagact tgtgtgagtc ttctcgaagg agggttgact cagaacccag 3420
+agacaataca aaacccctca cttcctctga gagggccaaa tgctgtgagt ctgaagtatg 3480
+tgcctggtgt gaaatgatct atggcctgtt tcttacacag gaagccccct gaacctcctg 3540
+tacatgtgtt catgttccca gccagctctg agacccagga accaaatatt ccattttggc 3600
+ttctgctaga gcagtcatgg ttcctctcct aaaagccatg ggcagcagtt tccgagggcc 3660
+tgcatgatcc acctgctgca cgatcctatg agggcttcct gtggcacaca gccctctggg 3720
+tgcttgggaa ctagcttcag gcacagcctg attctggtga tccagtgatc tatggaagtc 3780
+gtgtcttact ccaggtgaag ggggaaaaaa aaagcctata ctttggcagg ttatgaactt 3840
+tgaatgtgat gaaatgacac gtttggctgc atttggatgg tgtcttagaa ccctcattgc 3900
+tcagacctga aggctacttc taggagcatg aagtttgagt tttgtgtttt tccaaaggat 3960
+acttccttgg ccctttttct ttattgacta gaccaccaga ggaggatgtg tgggattgta 4020
+ggcaaaccca cctgtggcat cactgaaaat aaatttgatc atacctaaga ggttaggaaa 4080
+tggtgccatt cccaccttag agtgctacat aggtgctttg ggcgtatgta acattagtgt 4140
+ccttccttga agccacaagc tagttttctt agttttaaaa tcctgttgta tgaatggcat 4200
+ttgtatatta aaacactttt ttaaaggaca gttgaaaagg gcaagaggaa accagggcag 4260
+ttctagagga gtgctggtga ctggatagca gttttaagtg gcgttcacct agtcaacacg 4320
+accgcgtgtg ttgcccctgc cctgggctcc ccgccatgac atcttcacct tgcagcttgt 4380
+gctgagactg acccaagtgc agctagcact gggacacaga tccttgtctt cagcaccttc 4440
+caaggagcca acttttattc cctttcctct ctcccctccc cacctcgctt cttcccaatt 4500
+tagtaactta gatgcttcca gcacatacgt aggtagctac cccagccggt ttggattaca 4560
+ggcctgtgct ggaacatcat ctcagttggc caccttcctg gcaggctgta gacctgacat 4620
+tttgagacaa gcctagagtc aggagcaggg actttgactc ttaggaagag cacacatgag 4680
+ggcaaggctg ctggcagacg tctccattgt ccttatgttg tctgtgttgt attttttttt 4740
+ttttattgac catggtgatt atttttttaa accatcgtta atatactgaa gtgagctata 4800
+gcacatatca tgtgcttagt ttgtttattt ttctccatct ccccttggct tcctagagtt 4860
+tggacatatt ccaggctaaa tgcttttact caagactaca gaaaggtttg aagtagtgtg 4920
+tgcatggcat gcacgtatgt aagtaatctg gggaagaagc aaagatctgt ttcattctta 4980
+gcctcaggcc tcatgagggt ctccacaggg ccggagctca ggttacacca ctccttcgtc 5040
+cttacaggag atgtagggag aagaatctgc aggctgcttg taggactgtt caccaagggg 5100
+gataccagca gcaagagagt gcacccgttt agccctggac cctgtttctt actgtgtgac 5160
+ttggctagag ttgggagttc ccccaaaata aacgtgtccc cattttacca gaaccaaacc 5220
+tcaacacagc gaagctgtac tgtctttgtg tggcaaagat gttcccttgt aggccccttt 5280
+caggtaaccg tcttcacaat gtattttcat cacagtttaa ggagcatcag ccgcttctca 5340
+agtgggtagg gaaagcagaa aaacgtacgc aagaggacat ggatccaaaa tgatgatgaa 5400
+gcatctccca tggggaggtg atggtgggga gatgatgggc taaacaggca acttttcaaa 5460
+aacacagcta tcatagaaaa gaaacttgcc tcatgtaaac tggattgaga aattctcagt 5520
+gattctgcaa tggatttttt tttaatgcag aagtaatgta tactctagta ttctggtgtt 5580
+tttatattta tgtaataatt tcttaaaacc attcagacag ataactattt aatttttttt 5640
+aagaaagttg gaaaggtctc tcctcccaag gacagtggct ggaagagttg gggcacagcc 5700
+agttctgaat gttggtggag ggtgtagtgg ctttttggct cagcatccag aaacaccaaa 5760
+ccaggctggc taaacaagtg gccgcgtgta aaaacagaca gctctgagtc aaatctgggc 5820
+ccttccacaa gggtcctctg aaccaagccc cactcccttg ctaggggtga aagcattaca 5880
+gagagatgga gccatctatc caagaagcct tcactcacct tcactgctgc tgttgcaact 5940
+cggctgttct ggactctgat gtgtgtggag ggatggggaa tagaacattg actgtgttga 6000
+ttaccttcac tattcggcca gcctgacctt ttaataactt tgtaaaaagc atgtatgtat 6060
+ttatagtgtt ttagattttt ctaactttta tatcttaaaa gcagagcacc tgtttaagca 6120
+ttgtacccct attgttaaag atttgtgtcc tctcattccc tctcttcctc ttgtaagtgc 6180
+ccttctaata aacttttcat ggaaaagctc ctgtgccagg agctcagtct gaaaaaaaaa 6240
+aaaaaaaaaa aaaaaa                                                 6256
+
+
+
+<210> 31
+<211> 1335
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_001485.2
+
+<400> 31
+gacttttcgc ctctcgctgg cctctaccga gcgcgtctat gagcgcagcg ttcccgccgt 60
+cgctgatgat gatgcagcgc ccgctgggga gtagcaccgc cttcagcata gactcgctga 120
+tcggcagccc gccgcagccc agccccggcc atttcgtcta caccggctac cccatgttca 180
+tgccctaccg gccggtagtg ctgccgccgc cgccgccgcc gccgcccgcg ctgccccagg 240
+ccgcgctgca gccagcgctg ccgcccgcac accctcacca ccagatcccc agcctgccca 300
+caggcttctg ctccagcctg gcgcagggca tggcgctcac ctctacgctc atggccacgc 360
+tccccggcgg cttctccgcg tcgccccagc accaggaggc ggcagcggcc cgcaagttcg 420
+cgccgcagcc gctgcccggc ggcggtaact tcgacaaggc ggaggcgctg caggctgacg 480
+cggaggacgg caaaggcttc ctggccaaag agggctcgct gctcgccttc tccgcggccg 540
+agacggtgca ggcttcgctc gtcggggctg tccgagggca agggaaagac gagtcaaagg 600
+tggaagacga cccgaagggc aaggaggaga gcttctcgct ggagagcgat gtggactaca 660
+gctcggatga caatctgact ggccaggcag ctcacaagga ggaagacccg ggccacgcgc 720
+tggaggagac cccgccgagc agcggcgccg cgggcagcac cacgtctacg ggcaagaacc 780
+ggcggcggcg gactgccttc accagcgagc agctgctgga gctagagaag gagttccact 840
+gcaaaaagta cctctccttg accgagcgct cgcagatcgc ccacgccctc aaactcagcg 900
+aggtgcaggt gaaaatctgg ttccagaacc gacgggccaa gtggaaacgg gtgaaggcag 960
+gcaatgccaa ttccaagaca ggggagccct cccggaaccc taagatcgtc gtccccatcc 1020
+ctgtccacgt cagcaggttc gctatcagaa gtcagcatca gcagctagaa caggcccggc 1080
+cctgagggtc cagaagggcc agggcctggc acccacctgg agaagccccc gcacccgagg 1140
+gaacccatgg tggactccac tgtgtttgaa gcaacaaagt cacagcccag ctgtggccat 1200
+cccaagcaaa ttgagaatat attcactaaa tgggcttaaa agactgcttt tgaaggggct 1260
+tacagccaca ccagaagaca cgctaaatat ttattatact atcctacttt gtacataaat 1320
+atctctatag actgg                                                  1335
+
+<210> 32
+<211> 2518
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_003106.2
+
+<400> 32
+ctattaactt gttcaaaaaa gtatcaggag ttgtcaaggc agagaagaga gtgtttgcaa 60
+aagggggaaa gtagtttgct gcctctttaa gactaggact gagagaaaga agaggagaga 120
+gaaagaaagg gagagaagtt tgagccccag gcttaagcct ttccaaaaaa taataataac 180
+aatcatcggc ggcggcagga tcggccagag gaggagggaa gcgctttttt tgatcctgat 240
+tccagtttgc ctctctcttt ttttccccca aattattctt cgcctgattt tcctcgcgga 300
+gccctgcgct cccgacaccc ccgcccgcct cccctcctcc tctccccccg cccgcgggcc 360
+ccccaaagtc ccggccgggc cgagggtcgg cggccgccgg cgggccgggc ccgcgcacag 420
+cgcccgcatg tacaacatga tggagacgga gctgaagccg ccgggcccgc agcaaacttc 480
+ggggggcggc ggcggcaact ccaccgcggc ggcggccggc ggcaaccaga aaaacagccc 540
+ggaccgcgtc aagcggccca tgaatgcctt catggtgtgg tcccgcgggc agcggcgcaa 600
+gatggcccag gagaacccca agatgcacaa ctcggagatc agcaagcgcc tgggcgccga 660
+gtggaaactt ttgtcggaga cggagaagcg gccgttcatc gacgaggcta agcggctgcg 720
+agcgctgcac atgaaggagc acccggatta taaataccgg ccccggcgga aaaccaagac 780
+gctcatgaag aaggataagt acacgctgcc cggcgggctg ctggcccccg gcggcaatag 840
+catggcgagc ggggtcgggg tgggcgccgg cctgggcgcg ggcgtgaacc agcgcatgga 900
+cagttacgcg cacatgaacg gctggagcaa cggcagctac agcatgatgc aggaccagct 960
+gggctacccg cagcacccgg gcctcaatgc gcacggcgca gcgcagatgc agcccatgca 1020
+ccgctacgac gtgagcgccc tgcagtacaa ctccatgacc agctcgcaga cctacatgaa 1080
+cggctcgccc acctacagca tgtcctactc gcagcagggc acccctggca tggctcttgg 1140
+ctccatgggt tcggtggtca agtccgaggc cagctccagc ccccctgtgg ttacctcttc 1200
+ctcccactcc agggcgccct gccaggccgg ggacctccgg gacatgatca gcatgtatct 1260
+ccccggcgcc gaggtgccgg aacccgccgc ccccagcaga cttcacatgt cccagcacta 1320
+ccagagcggc ccggtgcccg gcacggccat taacggcaca ctgcccctct cacacatgtg 1380
+agggccggac agcgaactgg aggggggaga aattttcaaa gaaaaacgag ggaaatggga 1440
+ggggtgcaaa agaggagagt aagaaacagc atggagaaaa cccggtacgc tcaaaaagaa 1500
+aaaggaaaaa aaaaaatccc atcacccaca gcaaatgaca gctgcaaaag agaacaccaa 1560
+tcccatccac actcacgcaa aaaccgcgat gccgacaaga aaacttttat gagagagatc 1620
+ctggacttct ttttggggga ctatttttgt acagagaaaa cctggggagg gtggggaggg 1680
+cgggggaatg gaccttgtat agatctggag gaaagaaagc tacgaaaaac tttttaaaag 1740
+ttctagtggt acggtaggag ctttgcagga agtttgcaaa agtctttacc aataatattt 1800
+agagctagtc tccaagcgac gaaaaaaatg ttttaatatt tgcaagcaac ttttgtacag 1860
+tatttatcga gataaacatg gcaatcaaaa tgtccattgt ttataagctg agaatttgcc 1920
+aatatttttc aaggagaggc ttcttgctga attttgattc tgcagctgaa atttaggaca 1980
+gttgcaaacg tgaaaagaag aaaattattc aaatttggac attttaattg tttaaaaatt 2040
+gtacaaaagg aaaaaattag aataagtact ggcgaaccat ctctgtggtc ttgtttaaaa 2100
+agggcaaaag ttttagactg tactaaattt tataacttac tgttaaaagc aaaaatggcc 2160
+atgcaggttg acaccgttgg taatttataa tagcttttgt tcgatcccaa ctttccattt 2220
+tgttcagata aaaaaaacca tgaaattact gtgtttgaaa tattttctta tggtttgtaa 2280
+tatttctgta aatttattgt gatattttaa ggttttcccc cctttatttt ccgtagttgt 2340
+attttaaaag attcggctct gtattatttg aatcagtctg ccgagaatcc atgtatatat 2400
+ttgaactaat atcatcctta taacaggtac attttcaact taagttttta ctccattatg 2460
+cacagtttga gataaataaa tttttgaaat atggacactg aaaaaaaaaa aaaaaaaa   2518
+
+<210> 33
+<211> 1912
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_001008540.1
+
+<400> 33
+ttttttttct tccctctagt gggcggggca gaggagttag ccaagatgtg actttgaaac 60
+cctcagcgtc tcagtgccct tttgttctaa acaaagaatt ttgtaattgg ttctaccaaa 120
+gaaggatata atgaagtcac tatgggaaaa gatggggagg agagttgtag gattctacat 180
+taattctctt gtgcccttag cccactactt cagaatttcc tgaagaaagc aagcctgaat 240
+tggtttttta aattgcttta aaaatttttt ttaactgggt taatgcttgc tgaattggaa 300
+gtgaatgtcc attcctttgc ctcttttgca gatatacact tcagataact acaccgagga 360
+aatgggctca ggggactatg actccatgaa ggaaccctgt ttccgtgaag aaaatgctaa 420
+tttcaataaa atcttcctgc ccaccatcta ctccatcatc ttcttaactg gcattgtggg 480
+caatggattg gtcatcctgg tcatgggtta ccagaagaaa ctgagaagca tgacggacaa 540
+gtacaggctg cacctgtcag tggccgacct cctctttgtc atcacgcttc ccttctgggc 600
+agttgatgcc gtggcaaact ggtactttgg gaacttccta tgcaaggcag tccatgtcat 660
+ctacacagtc aacctctaca gcagtgtcct catcctggcc ttcatcagtc tggaccgcta 720
+cctggccatc gtccacgcca ccaacagtca gaggccaagg aagctgttgg ctgaaaaggt 780
+ggtctatgtt ggcgtctgga tccctgccct cctgctgact attcccgact tcatctttgc 840
+caacgtcagt gaggcagatg acagatatat ctgtgaccgc ttctacccca atgacttgtg 900
+ggtggttgtg ttccagtttc agcacatcat ggttggcctt atcctgcctg gtattgtcat 960
+cctgtcctgc tattgcatta tcatctccaa gctgtcacac tccaagggcc accagaagcg 1020
+caaggccctc aagaccacag tcatcctcat cctggctttc ttcgcctgtt ggctgcctta 1080
+ctacattggg atcagcatcg actccttcat cctcctggaa atcatcaagc aagggtgtga 1140
+gtttgagaac actgtgcaca agtggatttc catcaccgag gccctagctt tcttccactg 1200
+ttgtctgaac cccatcctct atgctttcct tggagccaaa tttaaaacct ctgcccagca 1260
+cgcactcacc tctgtgagca gagggtccag cctcaagatc ctctccaaag gaaagcgagg 1320
+tggacattca tctgtttcca ctgagtctga gtcttcaagt tttcactcca gctaacacag 1380
+atgtaaaaga ctttttttta tacgataaat aacttttttt taagttacac atttttcaga 1440
+tataaaagac tgaccaatat tgtacagttt ttattgcttg ttggattttt gtcttgtgtt 1500
+tctttagttt ttgtgaagtt taattgactt atttatataa attttttttg tttcatattg 1560
+atgtgtgtct aggcaggacc tgtggccaag ttcttagttg ctgtatgtct cgtggtagga 1620
+ctgtagaaaa gggaactgaa cattccagag cgtgtagtga atcacgtaaa gctagaaatg 1680
+atccccagct gtttatgcat agataatctc tccattcccg tggaacgttt ttcctgttct 1740
+taagacgtga ttttgctgta gaagatggca cttataacca aagcccaaag tggtatagaa 1800
+atgctggttt ttcagttttc aggagtgggt tgatttcagc acctacagtg tacagtcttg 1860
+tattaagttg ttaataaaag tacatgttaa acttaaaaaa aaaaaaaaaa aa         1912
+
+<210> 34
+<211> 4353
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_006892.3
+
+<400> 34
+acccactccc gctgccccgt ccggcccgcg ccgcttcctc gcagcagctg ctcccggctc 60
+cgcggccgca gcccgcgtgg acgctccgag cgccccccga cggacgggac cggctccctg 120
+gcggtcgggc gagcgggcgg caacgctgcc cggccggcag cgctggggtt aagtggccca 180
+agtaaaccta gctcggcgat cggcgccgga gattcgcgag cccagcgccc tgcacggccg 240
+ccagccggcc tcccgccagc cagccccgac ccgcggctcc gccgcccagc cgcgccccag 300
+ccagccctgc ggcaggaaag catgaaggga gacaccaggc atctcaatgg agaggaggac 360
+gccggcggga gggaagactc gatcctcgtc aacggggcct gcagcgacca gtcctccgac 420
+tcgcccccaa tcctggaggc tatccgcacc ccggagatca gaggccgaag atcaagctcg 480
+cgactctcca agagggaggt gtccagtctg ctaagctaca cacaggactt gacaggcgat 540
+ggcgacgggg aagatgggga tggctctgac accccagtca tgccaaagct cttccgggaa 600
+accaggactc gttcagaaag cccagctgtc cgaactcgaa ataacaacag tgtctccagc 660
+cgggagaggc acaggccttc cccacgttcc acccgaggcc ggcagggccg caaccatgtg 720
+gacgagtccc ccgtggagtt cccggctacc aggtccctga gacggcgggc aacagcatcg 780
+gcaggaacgc catggccgtc ccctcccagc tcttacctta ccatcgacct cacagacgac 840
+acagaggaca cacatgggac gccccagagc agcagtaccc cctacgcccg cctagcccag 900
+gacagccagc aggggggcat ggagtccccg caggtggagg cagacagtgg agatggagac 960
+agttcagagt atcaggatgg gaaggagttt ggaatagggg acctcgtgtg gggaaagatc 1020
+aagggcttct cctggtggcc cgccatggtg gtgtcttgga aggccacctc caagcgacag 1080
+gctatgtctg gcatgcggtg ggtccagtgg tttggcgatg gcaagttctc cgaggtctct 1140
+gcagacaaac tggtggcact ggggctgttc agccagcact ttaatttggc caccttcaat 1200
+aagctcgtct cctatcgaaa agccatgtac catgctctgg agaaagctag ggtgcgagct 1260
+ggcaagacct tccccagcag ccctggagac tcattggagg accagctgaa gcccatgttg 1320
+gagtgggccc acgggggctt caagcccact gggatcgagg gcctcaaacc caacaacacg 1380
+caaccagtgg ttaataagtc gaaggtgcgt cgtgcaggca gtaggaaatt agaatcaagg 1440
+aaatacgaga acaagactcg aagacgcaca gctgacgact cagccacctc tgactactgc 1500
+cccgcaccca agcgcctcaa gacaaattgc tataacaacg gcaaagaccg aggggatgaa 1560
+gatcagagcc gagaacaaat ggcttcagat gttgccaaca acaagagcag cctggaagat 1620
+ggctgtttgt cttgtggcag gaaaaacccc gtgtccttcc accctctctt tgaggggggg 1680
+ctctgtcaga catgccggga tcgcttcctt gagctgtttt acatgtatga tgacgatggc 1740
+tatcagtctt actgcactgt gtgctgcgag ggccgagagc tgctgctttg cagcaacacg 1800
+agctgctgcc ggtgtttctg tgtggagtgc ctggaggtgc tggtgggcac aggcacagcg 1860
+gccgaggcca agcttcagga gccctggagc tgttacatgt gtctcccgca gcgctgtcat 1920
+ggcgtcctgc ggcgccggaa ggactggaac gtgcgcctgc aggccttctt caccagtgac 1980
+acggggcttg aatatgaagc ccccaagctg taccctgcca ttcccgcagc ccgaaggcgg 2040
+cccattcgag tcctgtcatt gtttgatggc atcgcgacag gctacctagt cctcaaagag 2100
+ttgggcataa aggtaggaaa gtacgtcgct tctgaagtgt gtgaggagtc cattgctgtt 2160
+ggaaccgtga agcacgaggg gaatatcaaa tacgtgaacg acgtgaggaa catcacaaag 2220
+aaaaatattg aagaatgggg cccatttgac ttggtgattg gcggaagccc atgcaacgat 2280
+ctctcaaatg tgaatccagc caggaaaggc ctgtatgagg gtacaggccg gctcttcttc 2340
+gaattttacc acctgctgaa ttactcacgc cccaaggagg gtgatgaccg gccgttcttc 2400
+tggatgtttg agaatgttgt agccatgaag gttggcgaca agagggacat ctcacggttc 2460
+ctggagtgta atccagtgat gattgatgcc atcaaagttt ctgctgctca cagggcccga 2520
+tacttctggg gcaacctacc cgggatgaac aggcccgtga tagcatcaaa gaatgataaa 2580
+ctcgagctgc aggactgctt ggaatacaat aggatagcca agttaaagaa agtacagaca 2640
+ataaccacca agtcgaactc gatcaaacag gggaaaaacc aacttttccc tgttgtcatg 2700
+aatggcaaag aagatgtttt gtggtgcact gagctcgaaa ggatctttgg ctttcctgtg 2760
+cactacacag acgtgtccaa catgggccgt ggtgcccgcc agaagctgct gggaaggtcc 2820
+tggagcgtgc ctgtcatccg acacctcttc gcccctctga aggactactt tgcatgtgaa 2880
+tagttccagc caggccccaa gcccactggg gtgtgtggca gagccaggac ccaggaggtg 2940
+tgattcctga aggcatcccc aggccctgct cttcctcagc tgtgtgggtc ataccgtgta 3000
+cctcagttcc ctcttgctca gtgggggcag agccacctga ctcttgcagg ggtagcctga 3060
+ggtgccgcct ccttgtgcac aaatcagacc tggctgcttg gagcagccta acacggtgct 3120
+cattttttct tctcctaaaa ctttaaaact tgaagtaggt agcaacgtgg cttttttttt 3180
+ttcccttcct gggtctacca ctcagagaaa caatggctaa gataccaaaa ccacagtgcc 3240
+gacagctctc caatactcag gttaatgctg aaaaatcatc caagacagtt attgcaagag 3300
+tttaattttt gaaaactggc tactgctctg tgtttacaga cgtgtgcagt tgtaggcatg 3360
+tagctacagg acatttttaa gggcccagga tcgttttttc ccagggcaag cagaagagaa 3420
+aatgttgtat atgtctttta cccggcacat tccccttgcc taaatacaag ggctggagtc 3480
+tgcacgggac ctattagagt attttccaca atgatgatga tttcagcagg gatgacgtca 3540
+tcatcacatt cagggctatt ttttccccca caaacccaag ggcaggggcc actcttagct 3600
+aaatccctcc ccgtgactgc aatagaaccc tctggggagc tcaggaaggg gtgtgctgag 3660
+ttctataata taagctgcca tatattttgt agacaagtat ggctcctcca tatctccctc 3720
+ttccctagga gaggagtgtg aagcaaggag cttagataag acaccccctc aaacccattc 3780
+cctctccagg agacctaccc tccacaggca caggtcccca gatgagaagt ctgctaccct 3840
+catttctcat ctttttacta aactcagagg cagtgacagc agtcagggac agacatacat 3900
+ttctcatacc ttccccacat ctgagagatg acagggaaaa ctgcaaagct cggtgctccc 3960
+tttggagatt ttttaatcct tttttattcc ataagaagtc gtttttaggg agaacgggaa 4020
+ttcagacaag ctgcatttca gaaatgctgt cataatggtt tttaacacct tttactcttc 4080
+ttactggtgc tattttgtag aataaggaac aacgttgaca agttttgtgg ggctttttat 4140
+acacttttta aaatctcaaa cttctatttt tatgtttaac gttttcatta aaattttttt 4200
+tgtaactgga gccacgacgt aacaaatatg gggaaaaaac tgtgccttgt ttcaacagtt 4260
+tttgctaatt tttaggctga aagatgacgg atgcctagag tttaccttat gtttaattaa 4320
+aatcagtatt tgtctaaaaa aaaaaaaaaa aaa                              4353
+
+<210> 35
+<211> 4815
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_004360.3
+
+<400> 35
+agtggcgtcg gaactgcaaa gcacctgtga gcttgcggaa gtcagttcag actccagccc 60
+gctccagccc ggcccgaccc gaccgcaccc ggcgcctgcc ctcgctcggc gtccccggcc 120
+agccatgggc ccttggagcc gcagcctctc ggcgctgctg ctgctgctgc aggtctcctc 180
+ttggctctgc caggagccgg agccctgcca ccctggcttt gacgccgaga gctacacgtt 240
+cacggtgccc cggcgccacc tggagagagg ccgcgtcctg ggcagagtga attttgaaga 300
+ttgcaccggt cgacaaagga cagcctattt ttccctcgac acccgattca aagtgggcac 360
+agatggtgtg attacagtca aaaggcctct acggtttcat aacccacaga tccatttctt 420
+ggtctacgcc tgggactcca cctacagaaa gttttccacc aaagtcacgc tgaatacagt 480
+ggggcaccac caccgccccc cgccccatca ggcctccgtt tctggaatcc aagcagaatt 540
+gctcacattt cccaactcct ctcctggcct cagaagacag aagagagact gggttattcc 600
+tcccatcagc tgcccagaaa atgaaaaagg cccatttcct aaaaacctgg ttcagatcaa 660
+atccaacaaa gacaaagaag gcaaggtttt ctacagcatc actggccaag gagctgacac 720
+accccctgtt ggtgtcttta ttattgaaag agaaacagga tggctgaagg tgacagagcc 780
+tctggataga gaacgcattg ccacatacac tctcttctct cacgctgtgt catccaacgg 840
+gaatgcagtt gaggatccaa tggagatttt gatcacggta accgatcaga atgacaacaa 900
+gcccgaattc acccaggagg tctttaaggg gtctgtcatg gaaggtgctc ttccaggaac 960
+ctctgtgatg gaggtcacag ccacagacgc ggacgatgat gtgaacacct acaatgccgc 1020
+catcgcttac accatcctca gccaagatcc tgagctccct gacaaaaata tgttcaccat 1080
+taacaggaac acaggagtca tcagtgtggt caccactggg ctggaccgag agagtttccc 1140
+tacgtatacc ctggtggttc aagctgctga ccttcaaggt gaggggttaa gcacaacagc 1200
+aacagctgtg atcacagtca ctgacaccaa cgataatcct ccgatcttca atcccaccac 1260
+gtacaagggt caggtgcctg agaacgaggc taacgtcgta atcaccacac tgaaagtgac 1320
+tgatgctgat gcccccaata ccccagcgtg ggaggctgta tacaccatat tgaatgatga 1380
+tggtggacaa tttgtcgtca ccacaaatcc agtgaacaac gatggcattt tgaaaacagc 1440
+aaagggcttg gattttgagg ccaagcagca gtacattcta cacgtagcag tgacgaatgt 1500
+ggtacctttt gaggtctctc tcaccacctc cacagccacc gtcaccgtgg atgtgctgga 1560
+tgtgaatgaa gcccccatct ttgtgcctcc tgaaaagaga gtggaagtgt ccgaggactt 1620
+tggcgtgggc caggaaatca catcctacac tgcccaggag ccagacacat ttatggaaca 1680
+gaaaataaca tatcggattt ggagagacac tgccaactgg ctggagatta atccggacac 1740
+tggtgccatt tccactcggg ctgagctgga cagggaggat tttgagcacg tgaagaacag 1800
+cacgtacaca gccctaatca tagctacaga caatggttct ccagttgcta ctggaacagg 1860
+gacacttctg ctgatcctgt ctgatgtgaa tgacaacgcc cccataccag aacctcgaac 1920
+tatattcttc tgtgagagga atccaaagcc tcaggtcata aacatcattg atgcagacct 1980
+tcctcccaat acatctccct tcacagcaga actaacacac ggggcgagtg ccaactggac 2040
+cattcagtac aacgacccaa cccaagaatc tatcattttg aagccaaaga tggccttaga 2100
+ggtgggtgac tacaaaatca atctcaagct catggataac cagaataaag accaagtgac 2160
+caccttagag gtcagcgtgt gtgactgtga aggggccgct ggcgtctgta ggaaggcaca 2220
+gcctgtcgaa gcaggattgc aaattcctgc cattctgggg attcttggag gaattcttgc 2280
+tttgctaatt ctgattctgc tgctcttgct gtttcttcgg aggagagcgg tggtcaaaga 2340
+gcccttactg cccccagagg atgacacccg ggacaacgtt tattactatg atgaagaagg 2400
+aggcggagaa gaggaccagg actttgactt gagccagctg cacaggggcc tggacgctcg 2460
+gcctgaagtg actcgtaacg acgttgcacc aaccctcatg agtgtccccc ggtatcttcc 2520
+ccgccctgcc aatcccgatg aaattggaaa ttttattgat gaaaatctga aagcggctga 2580
+tactgacccc acagccccgc cttatgattc tctgctcgtg tttgactatg aaggaagcgg 2640
+ttccgaagct gctagtctga gctccctgaa ctcctcagag tcagacaaag accaggacta 2700
+tgactacttg aacgaatggg gcaatcgctt caagaagctg gctgacatgt acggaggcgg 2760
+cgaggacgac taggggactc gagagaggcg ggccccagac ccatgtgctg ggaaatgcag 2820
+aaatcacgtt gctggtggtt tttcagctcc cttcccttga gatgagtttc tggggaaaaa 2880
+aaagagactg gttagtgatg cagttagtat agctttatac tctctccact ttatagctct 2940
+aataagtttg tgttagaaaa gtttcgactt atttcttaaa gctttttttt ttttcccatc 3000
+actctttaca tggtggtgat gtccaaaaga tacccaaatt ttaatattcc agaagaacaa 3060
+ctttagcatc agaaggttca cccagcacct tgcagatttt cttaaggaat tttgtctcac 3120
+ttttaaaaag aaggggagaa gtcagctact ctagttctgt tgttttgtgt atataatttt 3180
+ttaaaaaaaa tttgtgtgct tctgctcatt actacactgg tgtgtccctc tgcctttttt 3240
+ttttttttaa gacagggtct cattctatcg gccaggctgg agtgcagtgg tgcaatcaca 3300
+gctcactgca gccttgtcct cccaggctca agctatcctt gcacctcagc ctcccaagta 3360
+gctgggacca caggcatgca ccactacgca tgactaattt tttaaatatt tgagacgggg 3420
+tctccctgtg ttacccaggc tggtctcaaa ctcctgggct caagtgatcc tcccatcttg 3480
+gcctcccaga gtattgggat tacagacatg agccactgca cctgcccagc tccccaactc 3540
+cctgccattt tttaagagac agtttcgctc catcgcccag gcctgggatg cagtgatgtg 3600
+atcatagctc actgtaacct caaactctgg ggctcaagca gttctcccac cagcctcctt 3660
+tttatttttt tgtacagatg gggtcttgct atgttgccca agctggtctt aaactcctgg 3720
+cctcaagcaa tccttctgcc ttggcccccc aaagtgctgg gattgtgggc atgagctgct 3780
+gtgcccagcc tccatgtttt aatatcaact ctcactcctg aattcagttg ctttgcccaa 3840
+gataggagtt ctctgatgca gaaattattg ggctctttta gggtaagaag tttgtgtctt 3900
+tgtctggcca catcttgact aggtattgtc tactctgaag acctttaatg gcttccctct 3960
+ttcatctcct gagtatgtaa cttgcaatgg gcagctatcc agtgacttgt tctgagtaag 4020
+tgtgttcatt aatgtttatt tagctctgaa gcaagagtga tatactccag gacttagaat 4080
+agtgcctaaa gtgctgcagc caaagacaga gcggaactat gaaaagtggg cttggagatg 4140
+gcaggagagc ttgtcattga gcctggcaat ttagcaaact gatgctgagg atgattgagg 4200
+tgggtctacc tcatctctga aaattctgga aggaatggag gagtctcaac atgtgtttct 4260
+gacacaagat ccgtggtttg tactcaaagc ccagaatccc caagtgcctg cttttgatga 4320
+tgtctacaga aaatgctggc tgagctgaac acatttgccc aattccaggt gtgcacagaa 4380
+aaccgagaat attcaaaatt ccaaattttt ttcttaggag caagaagaaa atgtggccct 4440
+aaagggggtt agttgagggg tagggggtag tgaggatctt gatttggatc tctttttatt 4500
+taaatgtgaa tttcaacttt tgacaatcaa agaaaagact tttgttgaaa tagctttact 4560
+gtttctcaag tgttttggag aaaaaaatca accctgcaat cactttttgg aattgtcttg 4620
+atttttcggc agttcaagct atatcgaata tagttctgtg tagagaatgt cactgtagtt 4680
+ttgagtgtat acatgtgtgg gtgctgataa ttgtgtattt tctttggggg tggaaaagga 4740
+aaacaattca agctgagaaa agtattctca aagatgcatt tttataaatt ttattaaaca 4800
+attttgttaa accat                                                  4815
+
+<210> 36
+<211> 1321
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_001769.3
+
+<400> 36
+cttttcccgg cacatgcgca ccgcagcggg tcgcgcgccc taaggagtgg cactttttaa 60
+aagtgcagcc ggagaccagc ctacagccgc ctgcatctgt atccagcgcc aggtcccgcc 120
+agtcccagct gcgcgcgccc cccagtcccg cacccgttcg gcccaggcta agttagccct 180
+caccatgccg gtcaaaggag gcaccaagtg catcaaatac ctgctgttcg gatttaactt 240
+catcttctgg cttgccggga ttgctgtcct tgccattgga ctatggctcc gattcgactc 300
+tcagaccaag agcatcttcg agcaagaaac taataataat aattccagct tctacacagg 360
+agtctatatt ctgatcggag ccggcgccct catgatgctg gtgggcttcc tgggctgctg 420
+cggggctgtg caggagtccc agtgcatgct gggactgttc ttcggcttcc tcttggtgat 480
+attcgccatt gaaatagctg cggccatctg gggatattcc cacaaggatg aggtgattaa 540
+ggaagtccag gagttttaca aggacaccta caacaagctg aaaaccaagg atgagcccca 600
+gcgggaaacg ctgaaagcca tccactatgc gttgaactgc tgtggtttgg ctgggggcgt 660
+ggaacagttt atctcagaca tctgccccaa gaaggacgta ctcgaaacct tcaccgtgaa 720
+gtcctgtcct gatgccatca aagaggtctt cgacaataaa ttccacatca tcggcgcagt 780
+gggcatcggc attgccgtgg tcatgatatt tggcatgatc ttcagtatga tcttgtgctg 840
+tgctatccgc aggaaccgcg agatggtcta gagtcagctt acatccctga gcaggaaagt 900
+ttacccatga agattggtgg gattttttgt ttgtttgttt tgttttgttt gttgtttgtt 960
+gtttgttttt ttgccactaa ttttagtatt cattctgcat tgctagataa aagctgaagt 1020
+tactttatgt ttgtctttta atgcttcatt caatattgac atttgtagtt gagcgggggg 1080
+tttggtttgc tttggtttat attttttcag ttgtttgttt ttgcttgtta tattaagcag 1140
+aaatcctgca atgaaaggta ctatatttgc tagactctag acaagatatt gtacataaaa 1200
+gaattttttt gtctttaaat agatacaaat gtctatcaac tttaatcaag ttgtaactta 1260
+tattgaagac aatttgatac ataataaaaa attatgacaa tgtcctggac tggtaaaaaa 1320
+a                                                                 1321
+
+<210> 37
+<211> 5246
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_080759.4
+
+<400> 37
+atctttgatc aatgtacttg ccagggagag cccaagtcct tcaaacctcc tccttttcac 60
+cttcatcctt aactttgtgc tagagcgaga cccacacaac aacagccgac cctccccgcc 120
+ccacccccac ccccaaacca gccctcgatc ccagcccccg gagaggactc gcatttcgac 180
+ttgcgggaca cttttgtgcg ttcctctcca gagcgcctct cgtgctcgcc cctcttgcgc 240
+tcgctcttta ttaccttcac ctccttttct cccccttctc tccctttctc cttctcgttc 300
+tctcccggag ttgttgttgc ccccctcgct ccttctcccc ccttttttcc ccttcccctc 360
+ccgggggtgt gtggcaactt ttcctctcgc ttctcctccg tctgtttccc cttatatgtg 420
+accatggcag tgccggcggc tttgatccct ccgacccagc tggtcccccc tcaaccccca 480
+atctccacgt ctgcttcctc ctctggcacc accacctcca cctcttcggc gacttcgtct 540
+ccggctcctt ccatcggacc cccggcgtcc tctgggccaa ctctgttccg cccggagccc 600
+atcgcttcgg cggcggcggc ggcggccaca gtcacctcta ccggcggcgg cggcggcggc 660
+ggcggcggcg gcagcggagg cggcggcggc agcagcggca acggaggcgg cggtggcggc 720
+ggcggcggtg gcagcaactg caaccccaac ctggcggccg cgagcaacgg cagcggcggc 780
+ggcggcggcg gcatcagcgc tggcggcggc gtcgcttcca gcacccccat caacgccagc 840
+accggcagca gcagcagcag cagtagcagc agcagcagca gcagcagtag tagcagcagc 900
+agcagtagca gcagcagctg cggccccctc cccgggaaac ccgtgtactc aaccccgtcc 960
+ccagtggaaa acacccctca gaataatgag tgcaaaatgg tggatctgag gggggccaaa 1020
+gtggcttcct tcacggtgga gggctgcgag ctgatctgcc tgccccaggc tttcgacctg 1080
+ttcctgaagc acttggtggg gggcttgcat acggtctaca ccaagctgaa gcggctggag 1140
+atcacgccgg tggtgtgcaa tgtggaacaa gttcgcatcc tgaggggact gggcgccatc 1200
+cagccaggag tgaaccgctg caaactcatc tccaggaagg acttcgagac cctctacaat 1260
+gactgcacca acgcaagttc tagacctgga aggcctccta agaggactca aagtgtcacc 1320
+tccccagaga actctcacat catgccgcat tctgtccctg gtctcatgtc tcctgggata 1380
+attccaccaa caggtctgac agcagccgct gcagcagctg ctgctgctac caatgcagct 1440
+attgctgaag caatgaaggt gaaaaaaatc aaattagaag ccatgagcaa ctatcatgcc 1500
+agtaataacc aacatggagc agactctgaa aacggggaca tgaattcaag tgtcggactg 1560
+gaacttcctt ttatgatgat gccccaccct ctaattcctg tcagcctacc tccagcatct 1620
+gtcaccatgg caatgagcca gatgaaccac ctcagcacca ttgcaaatat ggcagcagca 1680
+gcacaagttc agagtccccc atccagagtt gagacatcag ttattaagga gcgtgttcct 1740
+gatagcccct cacctgcccc ctctctggag gaggggagaa ggcctggcag tcacccatca 1800
+tcacatcgca gcagcagcgt gtccagctcc cctgctcgga ctgagagctc ttctgacaga 1860
+atcccggtcc atcagaatgg gttgtccatg aaccagatgc tgatgggctt atcaccaaat 1920
+gtacttcctg ggcccaaaga gggagatttg gccggtcatg acatgggaca tgagtcaaaa 1980
+aggatgcata ttgaaaaaga tgagaccccg ctttctacac caaccgcaag agacagcctt 2040
+gacaaactct ctctaactgg gcatggacaa ccactgcctc caggttttcc atctcctttt 2100
+ctgtttcctg atggactgtc ttccatcgag actcttctga ctaacataca ggggctgttg 2160
+aaagttgcca tagataatgc cagagctcaa gagaaacagg tccaactgga aaaaactgag 2220
+ctgaagatgg attttttaag ggaaagagaa ctaagggaaa cacttgagaa gcagttggct 2280
+atggaacaaa agaatagagc catagttcaa aagaggctaa agaaggagaa gaaggcaaag 2340
+agaaaattgc aggaagcact tgagtttgag acgaaacggc gtgaacaagc agaacagacg 2400
+ctaaaacagg cagcttcaac agatagtctc agggtcttaa atgactctct gaccccagag 2460
+atagaggctg accgcagtgg cggcagaaca gatgctgaaa ggacaataca agatggaaga 2520
+ctgtatttga aaactactgt catgtactga atctttcctg ttgaagaaat ccatgttata 2580
+gaaaagaact ttgcagtcag acattcgtca tgggaaagtt cagaaaaaaa taaagtcctt 2640
+ttaagggaac ttcctgaatt ttgtgtatta atgttcttta aaagtttaag tattctacaa 2700
+aaaaaaaaaa agttttctcc attgattttc acctgtggtt cataccagag acctgagaat 2760
+gtttgtaaat gtacaagtat caaagttctt acagttaatt actgcaactt gctgctggac 2820
+aattgtatac agagttaaag gcaggtctga ataagaccta gctttgtttt tttctaatgg 2880
+aatgaaccat tttcctcttc tgaaaattct gtatctgagc acatcaagag actcttgtag 2940
+cagtggttac ccagacttac agaattatgt cctccagaaa ccagcaagaa cacttggaat 3000
+gaacgaatga acttgtaggg ggcatagagg attcttgaaa aaaaaaaatg caagagtgat 3060
+tttctgttac attcaatttc aaactctcta attgtgggtt ttctcctgaa gaattttttt 3120
+tcacatactt tccaaaagac caacaaatgg atgttgacaa caacccaatg aaataacatt 3180
+ttgcatatct gaaaagaagc attgaatata agccaaaagc tttcactgaa ggtttttttt 3240
+tcttaaaaat aaaaaaaaat atataagtgt aacatgtttt cattccaaac tggtagtggt 3300
+atatagaatt aaagataata atgttgcttc ttattcaaac tgttggtcat atgtacagta 3360
+tataaacata aaacacacaa ggaaggtatt atgtatgcag tagtatacta gagtttagga 3420
+aaatgaaaat tttagaaaat atgttttgtc accctgttgg tcagaaagat gtctttctgg 3480
+ttttaacgca tgcaggcatg taaatatttg tctggagtca cagtattaat gaatgagatc 3540
+ttaagcatct ggtgacatca gaactctgtg tcagccactt ttatttgtat attgaaccct 3600
+agctagtgcc ccaagctgca ctattgggaa tggattgtgg ctgaacagca aatcaaaaca 3660
+ccagaaatat ttttatatgt taacgtcata ttatgttaat gttgctgaaa acaaaaccta 3720
+acaaaccttg atgtaccagt ccaataccat gtagcgctga gtgataaagt taaaatgtgc 3780
+tgtgcttccc acccttgtca gagggaaggg tggctatgtg ttattttcac tgtctttttg 3840
+aaagttacag tatgtgtttt cactttcgtg cagataactg gaagtaaagc ggcaaacagt 3900
+gcttattaca tgctaaagtt accttctctt tgttttttgc atatctggaa ttacaccttt 3960
+aaagactgat atgaatcagt acggtcacta tacattttat gatttttctg tcatcttaaa 4020
+attgtatgat cgtaacatta tttattacca caaaacagca aaatcttcaa tgtctaagaa 4080
+aactagctta aaatgtttaa atatagttct gattgggtat taattacttg attaagaaaa 4140
+aattaacatt atagatactc tggcattacg cttctatacc ttttaggtct tccttgcaat 4200
+actggaacat aattcttttg tgtagctcac tattagccag ctaagttcat ctttttaata 4260
+ccataaaaag gttatatgta cagttcctat tttagcttgc ttacaaaggg agcattattt 4320
+ttatttaaag tattgctagt aaatgatttg tagaaacttg gttttctaag catagttctt 4380
+ccataaccac cttttgttgt ttgagcacaa gggattcttt tcctagttct atgtgtttgt 4440
+ttccctatat gcagtcttta aaggattaca acacttaaaa ttgaatggac ttgtgtcaag 4500
+ctttttgcat catacatttt ttgaaagatt tttaaaaaag cctacaactt acatatgtag 4560
+tagaatcagc cattgctctg ctcctggcat agagtcacct gtttgttatg tggattaaat 4620
+agttttaaaa tacatatttg aagacctttg agaatgcttt agtgtttgat ttgaaataaa 4680
+aggaaatttt agcaaggatt aaagaaaaaa gctatcagct gtatgttaag agagactctt 4740
+actaacatgt tgtaaatatt acaattcatg aaatgttatt gtaagtctgt aacttaattt 4800
+tttccctgtt ttagttatac aggttggttt ggaaatttgt gttttggcat aaacaagtaa 4860
+aatgtgccca ttttatggtt tccatgcttt tgtaatccta aaaatattaa tgtctagttg 4920
+ttctatatta taaccacatt tgcgctctat gcaagccctt ggaacagaac atactcatct 4980
+tcatgtagga cctatgaaaa ttgtctattt ttatctatat atttaaagtt ttctaaaaat 5040
+gataaaaggt tattacgaat tttgttgtac aaaatctgta caaaaatctg tttttacatc 5100
+ataatgcaag aattggaaat ttttctatgg tagcctagtt atttgagcct ggtttcaatg 5160
+tgagaaccac gtttactgtt attgtattta attttctttt ccttttcaac aatctcctaa 5220
+taaaactgtc tgaaatctca aaaaaa                                      5246
+
+
+
+<210> 38
+<211> 2908
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_004098.3
+
+<400> 38
+cgggcgccgc aggagcgagt gagctgggag cgaggggcga aggcgcggag aagcccggcc 60
+gcccggtggg cggcagaagg ctcagccgag gcggcggcgc cgactccgtt ccactctcgg 120
+cccggatcca ggcctccggg ttcccaggcg ctcacctccc tctgacgcac tttaaagagt 180
+ctcccccctt ccacctcagg gcgagtaata gcgaccaatc atcaagccat ttaccaggct 240
+tcggaggaag ctgtttatgt gatccccgca ctaattaggc tcatgaacta acaaatcgtt 300
+tgcacaactt gtgaagaagc gaacacttcc atggattgtc cttggactta gggcgccctg 360
+cccgcctttt gcagaggaga aaaaactttt tttttttttt gcctcccccg agaactttcc 420
+ccccttctcc tccctgcctc taactccgat ccccccacgc catctcgcca aaaaaaaaaa 480
+aaaaaaaaaa aaagaaaaaa aaagaaaaaa aaagaaaaaa aattacccca atccacgcct 540
+gcaaattctt ctggaaggat tttcccccct ctcttcaggt tgggcgcgtt tggtgcaaga 600
+ttctcgggat cctcggcttt gcctctccct ctccctcccc cctcctttcc tttttccttt 660
+cctttccttt ctttcttcct ttccttcccc ccacccccac ccccacccca aacaaacgag 720
+tccccaattc tcgtccgtcc tcgccgcggg cagcgggcgg cggaggcagc gtgcggcggt 780
+cgccaggagc tgggagccca gggcgcccgc tcctcggcgc agcatgttcc agccggcgcc 840
+caagcgctgc ttcaccatcg agtcgctggt ggccaaggac agtcccctgc ccgcctcgcg 900
+ctccgaggac cccatccgtc ccgcggcact cagctacgct aactccagcc ccataaatcc 960
+gttcctcaac ggcttccact cggccgccgc cgccgccgcc ggtaggggcg tctactccaa 1020
+cccggacttg gtgttcgccg aggcggtctc gcacccgccc aaccccgccg tgccagtgca 1080
+cccggtgccg ccgccgcacg ccctggccgc ccacccccta ccctcctcgc actcgccaca 1140
+ccccctattc gcctcgcagc agcgggatcc gtccaccttc tacccctggc tcatccaccg 1200
+ctaccgatat ctgggtcatc gcttccaagg gaacgacact agccccgaga gtttcctttt 1260
+gcacaacgcg ctggcccgaa agcccaagcg gatccgaacc gccttctccc cgtcccagct 1320
+tctaaggctg gaacacgcct ttgagaagaa tcactacgtg gtgggcgccg aaaggaagca 1380
+gctggcacac agcctcagcc tcacggaaac tcaggtaaaa gtatggtttc agaaccgaag 1440
+aacaaagttc aaaaggcaga agctggagga agaaggctca gattcgcaac aaaagaaaaa 1500
+agggacgcac catattaacc ggtggagaat cgccaccaag caggcgagtc cggaggaaat 1560
+agacgtgacc tcagatgatt aaaaacataa acctaacccc acagaaacgg acaacatgga 1620
+gcaaaagaga cagggagagg tggagaagga aaaaacccta caaaacaaaa acaaaccgca 1680
+tacacgttca ccgagaaagg gagagggaat cggagggagc agcggaatgc ggcgaagact 1740
+ctggacagcg agggcacagg gtcccaaacc gaggccgcgc caagatggca gaggatggag 1800
+gctccttcat caacaagcga ccctcgtcta aagaggcagc tgagtgagag acacagagag 1860
+aaggagaaag agggagggag agagagaaag agagagaaag agagagagag agagagagag 1920
+agaaagctga acgtgcactc tgacaagggg agctgtcaat caaacaccaa accggggaga 1980
+caagatgatt ggcaggtatt ccgtttatca cagtccactt aaaaaatgat gatgatgata 2040
+aaaaccacga cccaaccagg cacaggactt ttttgttttt tgcacttcgc tgtgtttccc 2100
+ccccatcttt aaaaataatt agtaataaaa aacaaaaatt ccatatctag ccccatccca 2160
+cacctgtttc aaatccttga aatgcatgta gcagttgttg ggcgaatggt gtttaaagac 2220
+cgaaaatgaa ttgtaatttt cttttccttt taaagacagg ttctgtgtgc tttttatttt 2280
+gatttttttt cccaagaaat gtgcagtctg taaacacttt ttgatacctt ctgatgtcaa 2340
+agtgattgtg caagctaaat gaagtaggct cagcgatagt ggtcctctta cagagaaacg 2400
+gggagcagga cgacgggggg gctgggggtg gcgggggagg gtgcccacaa aaagaatcag 2460
+gacttgtact gggaaaaaaa cccctaaatt aattatattt cttggacatt ccctttccta 2520
+acatcctgag gcttaaaacc ctgatgcaaa cttctccttt cagtggttgg agaaattggc 2580
+cgagttcaac cattcactgc aatgcctatt ccaaacttta aatctatcta ttgcaaaacc 2640
+tgaaggactg tagttagcgg ggatgatgtt aagtgtggcc aagcgcacgg cggcaagttt 2700
+tcaagcactg agtttctatt ccaagatcat agacttacta aagagagtga caaatgcttc 2760
+cttaatgtct tctataccag aatgtaaata tttttgtgtt ttgtgttaat ttgttagaat 2820
+tctaacacac tatatacttc caagaagtat gtcaatgtca atattttgtc aataaagatt 2880
+tatcaatatg ccctcaaaaa aaaaaaaa                                    2908
+
+<210> 39
+<211> 1005
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_001446.3
+
+<400> 39
+gaggattggg aggaactcga cctactccgc taacccagtg gcctgagcca atcacaaaga 60
+ggattggagc ctcactcgag cgctccttcc cttctcctct ctctgtgaca gcctcttgga 120
+aagagggaca ctggaggggt gtgtttgcaa tttaaatcac tggatttttg cccaccctct 180
+ttccaaataa gaaggcagga gctgcttgct gaggtgtaaa gggtcttctg agctgcagtg 240
+gcaattagac cagaagatcc ccgctcctgt ctctaaagag gggaaagggc aaggatggtg 300
+gaggctttct gtgctacctg gaagctgacc aacagtcaga actttgatga gtacatgaag 360
+gctctaggcg tgggctttgc cactaggcag gtgggaaatg tgaccaaacc aacggtaatt 420
+atcagtcaag aaggagacaa agtggtcatc aggactctca gcacattcaa gaacacggag 480
+attagtttcc agctgggaga agagtttgat gaaaccactg cagatgatag aaactgtaag 540
+tctgttgtta gcctggatgg agacaaactt gttcacatac agaaatggga tggcaaagaa 600
+acaaattttg taagagaaat taaggatggc aaaatggtta tgacccttac ttttggtgat 660
+gtggttgctg ttcgccacta tgagaaggca taaaaatgtt cctggtcggg gcttggaaga 720
+gctcttcagt ttttctgttt cctcaagtct cagtgctatc ctattacaac atggctgatc 780
+attaattaga aggttatcct tggtgtggag gtggaaaatg gtgatttaaa aacttgttac 840
+tccaagcaac ttgcccaatt ttaatctgaa aatttatcat gttttataat ttgaattaaa 900
+gttttgtccc cccccccctt ttttttataa acaagtgaat acattttata atttcttttg 960
+gaatgtaaat caaatttgaa taaaaatctt acacgtgaaa aaaaa                 1005
+
+<210> 40
+<211> 2379
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank Accession No.: NM_002467.4
+
+<400> 40
+gacccccgag ctgtgctgct cgcggccgcc accgccgggc cccggccgtc cctggctccc 60
+ctcctgcctc gagaagggca gggcttctca gaggcttggc gggaaaaaga acggagggag 120
+ggatcgcgct gagtataaaa gccggttttc ggggctttat ctaactcgct gtagtaattc 180
+cagcgagagg cagagggagc gagcgggcgg ccggctaggg tggaagagcc gggcgagcag 240
+agctgcgctg cgggcgtcct gggaagggag atccggagcg aatagggggc ttcgcctctg 300
+gcccagccct cccgctgatc ccccagccag cggtccgcaa cccttgccgc atccacgaaa 360
+ctttgcccat agcagcgggc gggcactttg cactggaact tacaacaccc gagcaaggac 420
+gcgactctcc cgacgcgggg aggctattct gcccatttgg ggacacttcc ccgccgctgc 480
+caggacccgc ttctctgaaa ggctctcctt gcagctgctt agacgctgga tttttttcgg 540
+gtagtggaaa accagcagcc tcccgcgacg atgcccctca acgttagctt caccaacagg 600
+aactatgacc tcgactacga ctcggtgcag ccgtatttct actgcgacga ggaggagaac 660
+ttctaccagc agcagcagca gagcgagctg cagcccccgg cgcccagcga ggatatctgg 720
+aagaaattcg agctgctgcc caccccgccc ctgtccccta gccgccgctc cgggctctgc 780
+tcgccctcct acgttgcggt cacacccttc tcccttcggg gagacaacga cggcggtggc 840
+gggagcttct ccacggccga ccagctggag atggtgaccg agctgctggg aggagacatg 900
+gtgaaccaga gtttcatctg cgacccggac gacgagacct tcatcaaaaa catcatcatc 960
+caggactgta tgtggagcgg cttctcggcc gccgccaagc tcgtctcaga gaagctggcc 1020
+tcctaccagg ctgcgcgcaa agacagcggc agcccgaacc ccgcccgcgg ccacagcgtc 1080
+tgctccacct ccagcttgta cctgcaggat ctgagcgccg ccgcctcaga gtgcatcgac 1140
+ccctcggtgg tcttccccta ccctctcaac gacagcagct cgcccaagtc ctgcgcctcg 1200
+caagactcca gcgccttctc tccgtcctcg gattctctgc tctcctcgac ggagtcctcc 1260
+ccgcagggca gccccgagcc cctggtgctc catgaggaga caccgcccac caccagcagc 1320
+gactctgagg aggaacaaga agatgaggaa gaaatcgatg ttgtttctgt ggaaaagagg 1380
+caggctcctg gcaaaaggtc agagtctgga tcaccttctg ctggaggcca cagcaaacct 1440
+cctcacagcc cactggtcct caagaggtgc cacgtctcca cacatcagca caactacgca 1500
+gcgcctccct ccactcggaa ggactatcct gctgccaaga gggtcaagtt ggacagtgtc 1560
+agagtcctga gacagatcag caacaaccga aaatgcacca gccccaggtc ctcggacacc 1620
+gaggagaatg tcaagaggcg aacacacaac gtcttggagc gccagaggag gaacgagcta 1680
+aaacggagct tttttgccct gcgtgaccag atcccggagt tggaaaacaa tgaaaaggcc 1740
+cccaaggtag ttatccttaa aaaagccaca gcatacatcc tgtccgtcca agcagaggag 1800
+caaaagctca tttctgaaga ggacttgttg cggaaacgac gagaacagtt gaaacacaaa 1860
+cttgaacagc tacggaactc ttgtgcgtaa ggaaaagtaa ggaaaacgat tccttctaac 1920
+agaaatgtcc tgagcaatca cctatgaact tgtttcaaat gcatgatcaa atgcaacctc 1980
+acaaccttgg ctgagtcttg agactgaaag atttagccat aatgtaaact gcctcaaatt 2040
+ggactttggg cataaaagaa cttttttatg cttaccatct tttttttttc tttaacagat 2100
+ttgtatttaa gaattgtttt taaaaaattt taagatttac acaatgtttc tctgtaaata 2160
+ttgccattaa atgtaaataa ctttaataaa acgtttatag cagttacaca gaatttcaat 2220
+cctagtatat agtacctagt attataggta ctataaaccc taattttttt tatttaagta 2280
+cattttgctt tttaaagttg atttttttct attgttttta gaaaaaataa aataactggc 2340
+aaatatatca ttgagccaaa tcttaaaaaa aaaaaaaaa                        2379
+
+<210> 41
+<211> 2518
+<212> DNA
+<213> Homo sapiens
+
+<308> GenBank. Accession No. NM_003181 
+
+<400> 41
+tttgcttttg cttatttccg tccatttccc tctctgcgcg cggaccttcc ttttccagat 60
+ggtgagagcc gcggggacac ccgacgccgg ggcaggctga tccacgatcc tgggtgtgcg 120
+taacgccgcc tggggctccg tgggcgaggg acgtgtgggg acaggtgcac cggaaactgc 180
+cagactggag agttgaggca tcggaggcgc gagaacagca ctactactgc ggcgagacga 240
+gcgcggcgca tcccaaagcc cggccaaatg cgctcgtccc tgggagggga gggaggcgcg 300
+cctggagcgg ggacagtctt ggtccgcgcc ctcctcccgg gtctgtgccg ggacccggga 360
+cccgggagcc gtcgcaggtc tcggtccaag gggccccttt tctcggaagg gcggcggcca 420
+agagcaggga aggtggatct caggtagcga gtctgggctt cggggacggc ggggagggga 480
+gccggacggg aggatgagct cccctggcac cgagagcgcg ggaaagagcc tgcagtaccg 540
+agtggaccac ctgctgagcg ccgtggagaa tgagctgcag gcgggcagcg agaagggcga 600
+ccccacagag cgcgaactgc gcgtgggcct ggaggagagc gagctgtggc tgcgcttcaa 660
+ggagctcacc aatgagatga tcgtgaccaa gaacggcagg aggatgtttc cggtgctgaa 720
+ggtgaacgtg tctggcctgg accccaacgc catgtactcc ttcctgctgg acttcgtggc 780
+ggcggacaac caccgctgga agtacgtgaa cggggaatgg gtgccggggg gcaagccgga 840
+gccgcaggcg cccagctgcg tctacatcca ccccgactcg cccaacttcg gggcccactg 900
+gatgaaggct cccgtctcct tcagcaaagt caagctcacc aacaagctca acggaggggg 960
+ccagatcatg ctgaactcct tgcataagta tgagcctcga atccacatag tgagagttgg 1020
+gggtccacag cgcatgatca ccagccactg cttccctgag acccagttca tagcggtgac 1080
+tgcttatcag aacgaggaga tcacagctct taaaattaag tacaatccat ttgcaaaagc 1140
+tttccttgat gcaaaggaaa gaagtgatca caaagagatg atggaggaac ccggagacag 1200
+ccagcaacct gggtactccc aatgggggtg gcttcttcct ggaaccagca ccctgtgtcc 1260
+acctgcaaat cctcatcctc agtttggagg tgccctctcc ctcccctcca cgcacagctg 1320
+tgacaggtac ccaaccctga ggagccaccg gtcctcaccc taccccagcc cctatgctca 1380
+tcggaacaat tctccaacct attctgacaa ctcacctgca tgtttatcca tgctgcaatc 1440
+ccatgacaat tggtccagcc ttggaatgcc tgcccatccc agcatgctcc ccgtgagcca 1500
+caatgccagc ccacctacca gctccagtca gtaccccagc ctgtggtctg tgagcaacgg 1560
+cgccgtcacc ccgggctccc aggcagcagc cgtgtccaac gggctggggg cccagttctt 1620
+ccggggctcc cccgcgcact acacacccct cacccatccg gtctcggcgc cctcttcctc 1680
+gggatcccca ctgtacgaag gggcggccgc ggccacagac atcgtggaca gccagtacga 1740
+cgccgcagcc caaggccgcc tcatagcctc atggacacct gtgtcgccac cttccatgtg 1800
+aagcagcaag gcccaggtcc cgaaagatgc agtgactttt tgtcgtggca gccagtggtg 1860
+actggattga cctactaggt acccagtggc agtctcaggt taagaaggaa atgcagcctc 1920
+agtaacttcc ttttcaaagc agtggaggag cacacggcac ctttccccag agccccagca 1980
+tcccttgctc acacctgcag tagcggtgct gtcccaggtg gcttacagat gaacccaact 2040
+gtggagatga tgcagttggc ccaacctcac tgacggtgaa aaaatgtttg ccagggtcca 2100
+gaaacttttt ttggtttatt tctcatacag tgtattggca actttggcac accagaattt 2160
+gtaaactcca ccagtcctac tttagtgaga taaaaagcac actcttaatc ttcttccttg 2220
+ttgctttcaa gtagttagag ttgagctgtt aaggacagaa taaaatcata gttgaggaca 2280
+gcaggtttta gttgaattga aaatttgact gctctgcccc ctagaatgtg tgtattttaa 2340
+gcatatgtag ctaatctctt gtgttgttaa actataactg tttcatattt ttcttttgac 2400
+aaagtagcca aagacaatca gcagaaagca ttttctgcaa aataaacgca atatgcaaaa 2460
+tgtgattcgt ccagttatta gtgaagcccc tccttttgtg agtatttact gtttattg   2518
+
+
+<210> 42
+<211> 19
+<212> DNA
+<213> Artificial Sequence
+
+<220> 
+<223> shRNA1
+
+<400> 42
+agtaaagagt ggagaaaga                                              19
+
+<210> 43
+<211> 19
+<212> DNA
+<213> Artificial Sequence
+
+<220> 
+<223> shRNA2
+
+<400> 43
+acgtgtaggt tgagaacaa                                              19
+
+<210> 44
+<211> 19
+<212> DNA
+<213> Artificial Sequence
+
+<220> 
+<223> shRNA3
+
+<400> 44
+gagaaaggtc agaaagaca                                              19

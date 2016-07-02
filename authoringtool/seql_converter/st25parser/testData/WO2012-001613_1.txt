@@ -1,0 +1,109 @@
+                         SEQUENCE LISTING
+
+<110>  FUNDACI� INSTITUT DE RECERCA HOSPITAL UNIVERSITARI VALL 
+       D'HEBRON
+ 
+<120>  COMBINATION OF SIX SNPs FOR DETECTING THE PREDISPOSITION TO NEUROVASCULAR DISEASES
+
+<130>  P25337ES00
+
+<160>  6     
+
+<170>  PatentIn version 3.3
+
+<210>  1
+<211>  41
+<212>  DNA
+<213>  Homo Sapiens
+
+
+<220>
+<221>  Variation
+<222>  (21)..(21)
+<223>  n = a or g
+
+
+<400>  1
+atcaagggat gatatcaact ntgagtcact cataggattc a                         41
+
+
+<210>  abc
+<211>  41
+<212>  DNA
+<213>  Homo Sapiens
+
+
+<220>
+<221>  variation
+<222>  (21)..(21)
+<223>  n = t or c
+
+
+<400>  2
+actgagagcc cccagtgccc nggcccgtac tcagagcacg g                         41
+
+
+<210>  3
+<211>  45
+<212>  DNA
+<213>  Homo Sapiens
+
+
+<220>
+<221>  variation
+<222>  (21)..(21)
+<223>  n = g or a
+
+
+<400>  3
+ctccccatcc atccatccac ncatctaccc acccttctac c                         41
+
+
+<210>  4
+<211>  abc
+<212>  DNA
+<213>  Homo Sapiens
+
+
+<220>
+<221>  variation
+<222>  (21)..(21)
+<223>  n = c or g
+
+
+<400>  4
+ggaggcagtt ctttccaccc ngagcctggg ttggggaggc c                         41
+
+
+<210>  5
+<212>  DNA
+<213>  Homo Sapiens
+
+
+<220>
+<221>  variation
+<222>  (21)..(21)
+<223>  n = c or a
+
+
+<400>  5
+ctcccaggat gagggagatc nagaaggggg cagtgtgagg c                         41
+
+
+<210>  6
+<211>  
+<212>  DNA
+<213>  Homo Sapiens
+
+
+<220>
+<221>  variation
+<222>  (21)..(21)
+<223>  n = c or t
+
+
+
+<400>  6
+tctctgctgg ttactcacga nggccctcgg tgacatccca g                         41
+
+

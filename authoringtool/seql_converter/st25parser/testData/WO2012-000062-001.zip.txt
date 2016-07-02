@@ -1,0 +1,315 @@
+                         SEQUENCE LISTING
+
+<110>  Welcome Receptor Antibodies Pty Ltd
+ 
+<120>  Diagnosis and treatment of brain tumors
+
+<130>  510960
+
+<150>  AU 2010902958
+<151>  2010-07-02
+
+<160>  5     
+
+<170>  PatentIn version 3.5
+
+<210>  1
+<211>  3470
+<212>  DNA
+<213>  Homo sapiens
+
+<400>  1
+gtgcgcacgt ccgcacctca ccctgcggct gacatctcct gcccaggaga tgggcgctga       60
+
+agcttgagcg cctgagtccc tggagccaca cctgcgaaca ccctttgctt ctattgagct      120
+
+gtgcccagcc gcccagtgac agaattccag gacaaagaga tcttcaaaaa tcaaaaatga      180
+
+ggttcacatt tacaagccgg tgcttggcac tgtttcttct tctaaatcac ccaaccccaa      240
+
+ttcttcctgc cttttcaaat caaacctatc caacaataga gcccaagcca tttctttacg      300
+
+tcgtaggacg aaagaagatg atggatgcac agtacaaatg ctatgaccga atgcagcagt      360
+
+tacccgcata ccaaggagaa ggtccatatt gcaatcgcac ctgggatgga tggctgtgct      420
+
+gggatgacac accggctgga gtattgtcct atcagttctg cccagattat tttccggatt      480
+
+ttgatccatc agaaaaggtt acaaaatact gtgatgaaaa aggtgtttgg tttaaacatc      540
+
+ctgaaaacaa tcgaacctgg tccaactata ctatgtgcaa tgctttcact cctgagaaac      600
+
+tgaagaatgc atatgttctg tactatttgg ctattgtggg tcattctttg tcaattttca      660
+
+ccctagtgat ttccctgggg attttcgtgt ttttcaggag ccttggctgc caaagggtaa      720
+
+ccctgcacaa gaacatgttt cttacttaca ttctgaattc tatgattatc atcatccacc      780
+
+tggttgaagt agtacccaat ggagagctcg tgcgaaggga cccggtgagc tgcaagattt      840
+
+tgcatttttt ccaccagtac atgatggcct gcaactattt ctggatgctc tgtgaaggga      900
+
+tctatcttca tacactcatt gtcgtggctg tgtttactga gaagcaacgc ttgcggtggt      960
+
+attatctctt gggctggggg ttcccgctgg tgccaaccac tatccatgct attaccaggg     1020
+
+ccgtgtactt caatgacaac tgctggctga gtgtggaaac ccatttgctt tacataatcc     1080
+
+atggacctgt catggcggca cttgtggtca atttcttctt tttgctcaac attgtccggg     1140
+
+tgcttgtgac caaaatgagg gaaacccatg aggcggaatc ccacatgtac ctgaaggctg     1200
+
+tgaaggccac catgatcctt gtgcccctgc tgggaatcca gtttgtcgtc tttccctgga     1260
+
+gaccttccaa caagatgctt gggaagatat atgattacgt gatgcactct ctgattcatt     1320
+
+tccagggctt ctttgttgcg accatctact gcttctgcaa caatgaggtc caaaccaccg     1380
+
+tgaagcgcca atgggcccaa ttcaaaattc agtggaacca gcgttggggg aggcgcccct     1440
+
+ccaaccgctc tgctcgcgct gcagccgctg ctgcggaggc tggcgacatc ccaatttaca     1500
+
+tctgccatca ggagctgagg aatgaaccag ccaacaacca aggcgaggag agtgctgaga     1560
+
+tcatcccttt gaatatcata gagcaagagt catctgcttg aatgtgaagc aaacacagca     1620
+
+tcgtgatcac tgagccatca tttcctggga gaaagaccat gcatttaaag tattctccat     1680
+
+cctcccagga accgaacata tcatttgtga agaattattc agtgaatttg tccattgtaa     1740
+
+atctgaagaa agttattctt ggtactgttg ctttgggaga cagtctagga atggagtctc     1800
+
+ccactgcaac ttgtgaactc catcattcat ccaggactga gatgcaaatg tcacagtaat     1860
+
+gcaagcaaag tatcaaagaa aaacaatgaa attgacctag ttcagataca gggtgctcct     1920
+
+tgtcaatact gagccattta tacctttgaa atattaaaat cactgtcaat atttttattt     1980
+
+ttaactctgg attttgaatt agattatttc tgtatttggc tatggatctg atttttaatt     2040
+
+tttttaaatt tcagtcaatt ctgatgttac tgagatgttt taccatcctt acaatgtaaa     2100
+
+ccacatgaac tacgtgacct ctgcaagaca aagcggcttt ctaatagaga gattagtaaa     2160
+
+tatgtgaaga aaaagacctg catttggcag gaagatgtat gctttgaatg caaaagaaat     2220
+
+ttagagtcaa tttgctgaaa acattacatg ctcagcttgg ttttggacaa gcctgtccat     2280
+
+tgggcaggac ctagctgttg taaagaattg gtcttaatgt tgaatgtatt ttggttgctg     2340
+
+atgtttataa actgagaggt cacaaagaat ctatcactaa aaatttttac aaaactgcca     2400
+
+aaaatataat tcttagtgga agacaatact ccctttaaag agagtttgcc actcccctaa     2460
+
+actccaggat ttataaagca aattactcca aggtttataa agcagattac ctcttgccct     2520
+
+tgggtgctat ctagcagtaa aagataaatt tgttgaatat tggtaattaa aagactccac     2580
+
+ataagtccat taactgcttt ccacccagct tcaaagctta aaaagagctc aggcttttcc     2640
+
+aggaagatcc aggagggcta attagaaatc aacttgtggt tgaccgcttg tttcttgtta     2700
+
+ttaccaaaac aggaggggaa aaaattaact gctccaaatt taaccataaa tcaattcatg     2760
+
+tttaacgttt ctcattaaaa tccagtatta tattatcata tctctcttta cttcccagta     2820
+
+taagattttt gaaaatcctg aataaaccag tatcgttact ggcacctgaa attaatttgt     2880
+
+gaatttgcaa cagtaatcag agttaccatt atttaatttg tatgctaaat gaggaggtac     2940
+
+attgaaaccc tccaaatctc cagtctcatc tatgtcatat tttgccactg cctttcagaa     3000
+
+gtgatttagt tgtggaaaga taataaattg atttgttatg gttacatatt tagcgcaccc     3060
+
+agagaaaatt aattatattt ctacagagaa aatgaatttg ggatactaaa gtagtttaag     3120
+
+tctcctttac tgaatgtaag ggggggatcg aaaagaaggt atttttccaa tcacagtgtt     3180
+
+atgtagtatt gttctatttt tgtttacaaa catggaaaac agagtatttc tggcagctgt     3240
+
+ggtacaaatg tgataatata ttgctaaaat attttagatg ttattatgct aatatagtag     3300
+
+gggttgaaga aaacaaaata gcttattata gaattgcaca tagttctgcc caaattatgt     3360
+
+gaaatgctta tgcttgtgta tatgtataaa ttaatacaga gtacgttaaa agcaaaaaga     3420
+
+tgtatatttg catatttttc taaagaaata tattattcat cttttcattc                3470
+
+
+<210>  2
+<211>  474
+<212>  PRT
+<213>  Homo sapiens
+
+<400>  2
+
+Met Arg Phe Thr Phe Thr Ser Arg Cys Leu Ala Leu Phe Leu Leu Leu 
+1               5                   10                  15      
+
+
+Asn His Pro Thr Pro Ile Leu Pro Ala Phe Ser Asn Gln Thr Tyr Pro 
+            20                  25                  30          
+
+
+Thr Ile Glu Pro Lys Pro Phe Leu Tyr Val Val Gly Arg Lys Lys Met 
+        35                  40                  45              
+
+
+Met Asp Ala Gln Tyr Lys Cys Tyr Asp Arg Met Gln Gln Leu Pro Ala 
+    50                  55                  60                  
+
+
+Tyr Gln Gly Glu Gly Pro Tyr Cys Asn Arg Thr Trp Asp Gly Trp Leu 
+65                  70                  75                  80  
+
+
+Cys Trp Asp Asp Thr Pro Ala Gly Val Leu Ser Tyr Gln Phe Cys Pro 
+                85                  90                  95      
+
+
+Asp Tyr Phe Pro Asp Phe Asp Pro Ser Glu Lys Val Thr Lys Tyr Cys 
+            100                 105                 110         
+
+
+Asp Glu Lys Gly Val Trp Phe Lys His Pro Glu Asn Asn Arg Thr Trp 
+        115                 120                 125             
+
+
+Ser Asn Tyr Thr Met Cys Asn Ala Phe Thr Pro Glu Lys Leu Lys Asn 
+    130                 135                 140                 
+
+
+Ala Tyr Val Leu Tyr Tyr Leu Ala Ile Val Gly His Ser Leu Ser Ile 
+145                 150                 155                 160 
+
+
+Phe Thr Leu Val Ile Ser Leu Gly Ile Phe Val Phe Phe Arg Ser Leu 
+                165                 170                 175     
+
+
+Gly Cys Gln Arg Val Thr Leu His Lys Asn Met Phe Leu Thr Tyr Ile 
+            180                 185                 190         
+
+
+Leu Asn Ser Met Ile Ile Ile Ile His Leu Val Glu Val Val Pro Asn 
+        195                 200                 205             
+
+
+Gly Glu Leu Val Arg Arg Asp Pro Val Ser Cys Lys Ile Leu His Phe 
+    210                 215                 220                 
+
+
+Phe His Gln Tyr Met Met Ala Cys Asn Tyr Phe Trp Met Leu Cys Glu 
+225                 230                 235                 240 
+
+
+Gly Ile Tyr Leu His Thr Leu Ile Val Val Ala Val Phe Thr Glu Lys 
+                245                 250                 255     
+
+
+Gln Arg Leu Arg Trp Tyr Tyr Leu Leu Gly Trp Gly Phe Pro Leu Val 
+            260                 265                 270         
+
+
+Pro Thr Thr Ile His Ala Ile Thr Arg Ala Val Tyr Phe Asn Asp Asn 
+        275                 280                 285             
+
+
+Cys Trp Leu Ser Val Glu Thr His Leu Leu Tyr Ile Ile His Gly Pro 
+    290                 295                 300                 
+
+
+Val Met Ala Ala Leu Val Val Asn Phe Phe Phe Leu Leu Asn Ile Val 
+305                 310                 315                 320 
+
+
+Arg Val Leu Val Thr Lys Met Arg Glu Thr His Glu Ala Glu Ser His 
+                325                 330                 335     
+
+
+Met Tyr Leu Lys Ala Val Lys Ala Thr Met Ile Leu Val Pro Leu Leu 
+            340                 345                 350         
+
+
+Gly Ile Gln Phe Val Val Phe Pro Trp Arg Pro Ser Asn Lys Met Leu 
+        355                 360                 365             
+
+
+Gly Lys Ile Tyr Asp Tyr Val Met His Ser Leu Ile His Phe Gln Gly 
+    370                 375                 380                 
+
+
+Phe Phe Val Ala Thr Ile Tyr Cys Phe Cys Asn Asn Glu Val Gln Thr 
+385                 390                 395                 400 
+
+
+Thr Val Lys Arg Gln Trp Ala Gln Phe Lys Ile Gln Trp Asn Gln Arg 
+                405                 410                 415     
+
+
+Trp Gly Arg Arg Pro Ser Asn Arg Ser Ala Arg Ala Ala Ala Ala Ala 
+            420                 425                 430         
+
+
+Ala Glu Ala Gly Asp Ile Pro Ile Tyr Ile Cys His Gln Glu Leu Arg 
+        435                 440                 445             
+
+
+Asn Glu Pro Ala Asn Asn Gln Gly Glu Glu Ser Ala Glu Ile Ile Pro 
+    450                 455                 460                 
+
+
+Leu Asn Ile Ile Glu Gln Glu Ser Ser Ala 
+465                 470                 
+
+
+<210>  3
+<211>  18
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Epitope 1 of human CTR
+
+<400>  3
+
+Asp Ile Pro Ile Tyr Ile Cys His Gln Glu Leu Arg Asn Glu Pro Ala 
+1               5                   10                  15      
+
+
+Asn Asn 
+        
+
+
+<210>  4
+<211>  17
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Epitope 2 of human CTR
+
+<400>  4
+
+Pro Ser Glu Lys Val Thr Lys Tyr Cys Asp Glu Lys Gly Val Trp Phe 
+1               5                   10                  15      
+
+
+Lys 
+    
+
+
+<210>  5
+<211>  12
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Epitope 3 of human CTR
+
+<400>  5
+
+Phe Ser Asn Gln Thr Tyr Pro Thr Ile Glu Pro Lys 
+1               5                   10          
+
+

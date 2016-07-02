@@ -1,0 +1,62 @@
+                         SEQUENCE LISTING
+
+<110>  University of Florida
+ 
+<120>  Targeted Receptor-Mediated siRNA
+
+<130>  222108-2080
+
+<150>  61/362,751
+<151>  2010-07-09
+
+<160>  4     
+
+<170>  PatentIn version 3.5
+
+<210>  1
+<211>  19
+<212>  RNA
+<213>  Artificial sequence
+
+<220>
+<223>  Caspase-3 targeting sequence
+
+<400>  1
+ccgacaagcu ugaauuuau                                                    19
+
+
+<210>  2
+<211>  19
+<212>  DNA
+<213>  Artificial sequence
+
+<220>
+<223>  Scrambled targeting sequence
+
+<400>  2
+gauaugucaa cucaguacu                                                    19
+
+
+<210>  3
+<211>  21
+<212>  abc
+<213>  Artificial sequence
+
+<220>
+<223>  Human GAPDH targeting sequence
+
+<400>  3
+ggucauccau gacaacuuug g                                                 21
+
+
+<210>  4
+<211>  19
+<213>  Artificial sequence
+
+<220>
+<223>  siRNA tageting Caspase-3
+
+<400>  4
+auaaauucaa gcuugucgg                                                    19
+
+

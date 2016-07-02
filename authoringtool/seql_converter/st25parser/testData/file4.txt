@@ -1,0 +1,2191 @@
+                         SEQUENCE LISTING
+
+<110>  Bavarian Nordic A/S
+       
+ 
+<120>  RECOMBINANT MODIFIED VACCINIA VIRUS ANKARA (MVA) RESPIRATORY 
+       SYNCYTIAL VIRUS (RSV) VACCINE
+
+<130>  BNI14747PCT
+
+<140>  Not yet assigned
+<141>  2013-03-15
+
+<150>  US 61/678,367
+<151>  2012-08-01
+
+<150>  EP 12005594.2
+<151>  2012-08-01
+
+<160>  43    
+
+<170>  PatentIn version 3.5
+
+<210>  1
+<211>  897
+<212>  DNA
+<213>  Human Respiratory Syncytial Virus (hRSV), strain A2
+
+<400>  1
+atgagcaaga acaaggacca gcggaccgcc aagaccctgg aacggacctg ggacaccctg       60
+
+aaccatctgc tgttcatcag tagctgcctg tacaagctga acctgaagtc cgtggcccag      120
+
+atcaccctga gcatcctggc catgatcatc agcaccagcc tgatcattgc cgccatcatc      180
+
+tttatcgcca gcgccaacca caaagtgacc cccaccacag ccatcatcca ggacgccacc      240
+
+tcccagatca agaacaccac ccccacctac ctgacccaga accctcagct gggcatcagc      300
+
+cccagcaacc ccagcgagat caccagccag atcacaacca tcctggcctc caccacccct      360
+
+ggcgtgaagt ccaccctgca gagcaccacc gtgaaaacca agaataccac caccacacag      420
+
+acccagccca gcaagcccac caccaagcag agacagaaca agcccccctc caagcccaac      480
+
+aacgacttcc acttcgaggt gttcaacttc gtgccctgca gcatctgcag caacaacccc      540
+
+acctgttggg ccatctgcaa gcggatcccc aacaagaagc ccggcaagaa aaccacaacc      600
+
+aagcctacca agaagcctac cctgaaaacc accaagaagg accccaagcc ccagaccacc      660
+
+aagagcaaag aggtgccaac caccaagccc accgaggaac ccaccatcaa caccaccaag      720
+
+accaacatca tcaccaccct gctgacctcc aacaccaccg gcaaccccga gctgacaagc      780
+
+cagatggaaa ccttccacag caccagcagc gagggcaacc ctagccctag ccaggtgtcc      840
+
+accacctccg agtaccccag ccagcctagc agccccccca acacccccag acagtga         897
+
+
+<210>  2
+<211>  298
+<212>  PRT
+<213>  hRSV strain A2
+
+<400>  2
+
+Met Ser Lys Asn Lys Asp Gln Arg Thr Ala Lys Thr Leu Glu Arg Thr 
+1               5                   10                  15      
+
+
+Trp Asp Thr Leu Asn His Leu Leu Phe Ile Ser Ser Cys Leu Tyr Lys 
+            20                  25                  30          
+
+
+Leu Asn Leu Lys Ser Val Ala Gln Ile Thr Leu Ser Ile Leu Ala Met 
+        35                  40                  45              
+
+
+Ile Ile Ser Thr Ser Leu Ile Ile Ala Ala Ile Ile Phe Ile Ala Ser 
+    50                  55                  60                  
+
+
+Ala Asn His Lys Val Thr Pro Thr Thr Ala Ile Ile Gln Asp Ala Thr 
+65                  70                  75                  80  
+
+
+Ser Gln Ile Lys Asn Thr Thr Pro Thr Tyr Leu Thr Gln Asn Pro Gln 
+                85                  90                  95      
+
+
+Leu Gly Ile Ser Pro Ser Asn Pro Ser Glu Ile Thr Ser Gln Ile Thr 
+            100                 105                 110         
+
+
+Thr Ile Leu Ala Ser Thr Thr Pro Gly Val Lys Ser Thr Leu Gln Ser 
+        115                 120                 125             
+
+
+Thr Thr Val Lys Thr Lys Asn Thr Thr Thr Thr Gln Thr Gln Pro Ser 
+    130                 135                 140                 
+
+
+Lys Pro Thr Thr Lys Gln Arg Gln Asn Lys Pro Pro Ser Lys Pro Asn 
+145                 150                 155                 160 
+
+
+Asn Asp Phe His Phe Glu Val Phe Asn Phe Val Pro Cys Ser Ile Cys 
+                165                 170                 175     
+
+
+Ser Asn Asn Pro Thr Cys Trp Ala Ile Cys Lys Arg Ile Pro Asn Lys 
+            180                 185                 190         
+
+
+Lys Pro Gly Lys Lys Thr Thr Thr Lys Pro Thr Lys Lys Pro Thr Leu 
+        195                 200                 205             
+
+
+Lys Thr Thr Lys Lys Asp Pro Lys Pro Gln Thr Thr Lys Ser Lys Glu 
+    210                 215                 220                 
+
+
+Val Pro Thr Thr Lys Pro Thr Glu Glu Pro Thr Ile Asn Thr Thr Lys 
+225                 230                 235                 240 
+
+
+Thr Asn Ile Ile Thr Thr Leu Leu Thr Ser Asn Thr Thr Gly Asn Pro 
+                245                 250                 255     
+
+
+Glu Leu Thr Ser Gln Met Glu Thr Phe His Ser Thr Ser Ser Glu Gly 
+            260                 265                 270         
+
+
+Asn Pro Ser Pro Ser Gln Val Ser Thr Thr Ser Glu Tyr Pro Ser Gln 
+        275                 280                 285             
+
+
+Pro Ser Ser Pro Pro Asn Thr Pro Arg Gln 
+    290                 295             
+
+
+<210>  3
+<211>  1725
+<212>  DNA
+<213>  hRSV strain A2
+
+<400>  3
+atggaactgc tgatcctgaa ggccaacgcc atcaccacaa tcctgaccgc cgtgaccttc       60
+
+tgcttcgcca gcggccagaa catcaccgag gaattctacc agagcacctg tagcgccgtg      120
+
+agcaagggct acctgagcgc cctgagaacc ggctggtaca cctccgtgat caccatcgag      180
+
+ctgtccaaca tcaaagaaaa caagtgcaac ggcaccgacg ccaaagtgaa gctgatcaag      240
+
+caggaactgg acaagtacaa gaacgccgtg accgaactcc agctcctcat gcagtccacc      300
+
+cctgccacca acaaccgggc cagaagagaa ctgccccggt ttatgaacta cacactgaac      360
+
+aacgccaaaa agaccaatgt cactctgagc aagaagcgga agcggcggtt cctgggcttt      420
+
+ctgctgggcg tgggcagcgc cattgccagc ggcgtggccg tgtccaaggt gctgcacctg      480
+
+gaaggcgaag tgaacaagat caagagtgcc ctgctctcca caaacaaggc cgtggtgtcc      540
+
+ctgagcaacg gcgtgagcgt gctgaccagc aaggtcctgg atctgaagaa ctacatcgac      600
+
+aagcagctcc tgcccatcgt gaacaagcag agctgcagca tcagcaacat cgagactgtc      660
+
+atcgagttcc agcagaagaa caaccggctg ctggaaatca cccgggagtt cagcgtgaac      720
+
+gcaggcgtga ccacccccgt gtccacctac atgctgacca acagcgagct gctgtccctg      780
+
+atcaatgaca tgcccatcac caacgatcag aagaaactca tgagcaacaa cgtgcagatc      840
+
+gtgcggcagc agagttacag tatcatgagc atcatcaaag aagaggtgct ggcctacgtg      900
+
+gtgcagctgc ccctgtacgg cgtgatcgac accccctgct ggaagctgca caccagcccc      960
+
+ctgtgcacca ccaacacaaa agagggcagt aacatctgcc tgacccggac cgacagaggc     1020
+
+tggtactgcg acaacgccgg cagcgtgtca ttctttccac aggccgagac atgcaaggtg     1080
+
+cagagcaacc gggtgttctg cgacaccatg aacagcctga ccctgccctc cgaagtcaac     1140
+
+ctgtgcaacg tggacatctt caaccccaag tacgactgca agatcatgac ttccaagacc     1200
+
+gacgtgtcca gcagcgtgat tacctccctg ggcgccatcg tgtcctgcta cggcaagacc     1260
+
+aagtgcaccg ccagcaacaa gaatagagga atcatcaaga ccttcagcaa cggctgcgac     1320
+
+tacgtgtcca ataagggcat ggacaccgtg tccgtgggca acacactgta ctacgtgaat     1380
+
+aagcaggaag gcaagagcct gtacgtgaag ggcgagccca tcatcaactt ctacgacccc     1440
+
+ctggtgttcc ccagcgacga gttcgacgcc agtatcagcc aggtcaacga gaagatcaac     1500
+
+cagagcctgg ccttcatcag aaagagcgac gaactgctgc acaatgtgaa cgctggcaag     1560
+
+agtaccacaa acatcatgat caccaccatc atcatcgtga tcattgtgat cctgctgagt     1620
+
+ctgatcgccg tgggcctgct gctgtactgc aaggcccgca gcacccctgt gaccctgtcc     1680
+
+aaggatcagc tgtccggcat caacaatatc gccttctcca actga                     1725
+
+
+<210>  4
+<211>  574
+<212>  PRT
+<213>  hRSV strain A2
+
+<400>  4
+
+Met Glu Leu Leu Ile Leu Lys Ala Asn Ala Ile Thr Thr Ile Leu Thr 
+1               5                   10                  15      
+
+
+Ala Val Thr Phe Cys Phe Ala Ser Gly Gln Asn Ile Thr Glu Glu Phe 
+            20                  25                  30          
+
+
+Tyr Gln Ser Thr Cys Ser Ala Val Ser Lys Gly Tyr Leu Ser Ala Leu 
+        35                  40                  45              
+
+
+Arg Thr Gly Trp Tyr Thr Ser Val Ile Thr Ile Glu Leu Ser Asn Ile 
+    50                  55                  60                  
+
+
+Lys Glu Asn Lys Cys Asn Gly Thr Asp Ala Lys Val Lys Leu Ile Lys 
+65                  70                  75                  80  
+
+
+Gln Glu Leu Asp Lys Tyr Lys Asn Ala Val Thr Glu Leu Gln Leu Leu 
+                85                  90                  95      
+
+
+Met Gln Ser Thr Pro Ala Thr Asn Asn Arg Ala Arg Arg Glu Leu Pro 
+            100                 105                 110         
+
+
+Arg Phe Met Asn Tyr Thr Leu Asn Asn Ala Lys Lys Thr Asn Val Thr 
+        115                 120                 125             
+
+
+Leu Ser Lys Lys Arg Lys Arg Arg Phe Leu Gly Phe Leu Leu Gly Val 
+    130                 135                 140                 
+
+
+Gly Ser Ala Ile Ala Ser Gly Val Ala Val Ser Lys Val Leu His Leu 
+145                 150                 155                 160 
+
+
+Glu Gly Glu Val Asn Lys Ile Lys Ser Ala Leu Leu Ser Thr Asn Lys 
+                165                 170                 175     
+
+
+Ala Val Val Ser Leu Ser Asn Gly Val Ser Val Leu Thr Ser Lys Val 
+            180                 185                 190         
+
+
+Leu Asp Leu Lys Asn Tyr Ile Asp Lys Gln Leu Leu Pro Ile Val Asn 
+        195                 200                 205             
+
+
+Lys Gln Ser Cys Ser Ile Ser Asn Ile Glu Thr Val Ile Glu Phe Gln 
+    210                 215                 220                 
+
+
+Gln Lys Asn Asn Arg Leu Leu Glu Ile Thr Arg Glu Phe Ser Val Asn 
+225                 230                 235                 240 
+
+
+Ala Gly Val Thr Thr Pro Val Ser Thr Tyr Met Leu Thr Asn Ser Glu 
+                245                 250                 255     
+
+
+Leu Leu Ser Leu Ile Asn Asp Met Pro Ile Thr Asn Asp Gln Lys Lys 
+            260                 265                 270         
+
+
+Leu Met Ser Asn Asn Val Gln Ile Val Arg Gln Gln Ser Tyr Ser Ile 
+        275                 280                 285             
+
+
+Met Ser Ile Ile Lys Glu Glu Val Leu Ala Tyr Val Val Gln Leu Pro 
+    290                 295                 300                 
+
+
+Leu Tyr Gly Val Ile Asp Thr Pro Cys Trp Lys Leu His Thr Ser Pro 
+305                 310                 315                 320 
+
+
+Leu Cys Thr Thr Asn Thr Lys Glu Gly Ser Asn Ile Cys Leu Thr Arg 
+                325                 330                 335     
+
+
+Thr Asp Arg Gly Trp Tyr Cys Asp Asn Ala Gly Ser Val Ser Phe Phe 
+            340                 345                 350         
+
+
+Pro Gln Ala Glu Thr Cys Lys Val Gln Ser Asn Arg Val Phe Cys Asp 
+        355                 360                 365             
+
+
+Thr Met Asn Ser Leu Thr Leu Pro Ser Glu Val Asn Leu Cys Asn Val 
+    370                 375                 380                 
+
+
+Asp Ile Phe Asn Pro Lys Tyr Asp Cys Lys Ile Met Thr Ser Lys Thr 
+385                 390                 395                 400 
+
+
+Asp Val Ser Ser Ser Val Ile Thr Ser Leu Gly Ala Ile Val Ser Cys 
+                405                 410                 415     
+
+
+Tyr Gly Lys Thr Lys Cys Thr Ala Ser Asn Lys Asn Arg Gly Ile Ile 
+            420                 425                 430         
+
+
+Lys Thr Phe Ser Asn Gly Cys Asp Tyr Val Ser Asn Lys Gly Met Asp 
+        435                 440                 445             
+
+
+Thr Val Ser Val Gly Asn Thr Leu Tyr Tyr Val Asn Lys Gln Glu Gly 
+    450                 455                 460                 
+
+
+Lys Ser Leu Tyr Val Lys Gly Glu Pro Ile Ile Asn Phe Tyr Asp Pro 
+465                 470                 475                 480 
+
+
+Leu Val Phe Pro Ser Asp Glu Phe Asp Ala Ser Ile Ser Gln Val Asn 
+                485                 490                 495     
+
+
+Glu Lys Ile Asn Gln Ser Leu Ala Phe Ile Arg Lys Ser Asp Glu Leu 
+            500                 505                 510         
+
+
+Leu His Asn Val Asn Ala Gly Lys Ser Thr Thr Asn Ile Met Ile Thr 
+        515                 520                 525             
+
+
+Thr Ile Ile Ile Val Ile Ile Val Ile Leu Leu Ser Leu Ile Ala Val 
+    530                 535                 540                 
+
+
+Gly Leu Leu Leu Tyr Cys Lys Ala Arg Ser Thr Pro Val Thr Leu Ser 
+545                 550                 555                 560 
+
+
+Lys Asp Gln Leu Ser Gly Ile Asn Asn Ile Ala Phe Ser Asn 
+                565                 570                 
+
+
+<210>  5
+<211>  1725
+<212>  DNA
+<213>  hRSV strain A-Long
+
+<400>  5
+atggaactgc ccatcctgaa ggccaacgcc atcaccacaa tcctggccgc cgtgaccttc       60
+
+tgcttcgcca gcagccagaa catcaccgag gaattctacc agagcacctg tagcgccgtg      120
+
+agcaagggct acctgagcgc cctgagaacc ggctggtaca cctccgtgat caccatcgag      180
+
+ctgtccaaca tcaaagaaaa caagtgcaac ggcaccgacg ccaaagtgaa gctgatcaag      240
+
+caggaactgg acaagtacaa gaacgccgtg accgaactcc agctcctcat gcagtccacc      300
+
+cctgccgcca acaaccgggc cagaagagaa ctgccccggt ttatgaacta cacactgaac      360
+
+aacaccaaaa agaccaatgt gaccctgagc aagaagcgga agcggcggtt cctgggcttt      420
+
+ctgctgggcg tgggcagcgc cattgccagc ggcattgccg tgtccaaggt gctgcacctg      480
+
+gaaggcgaag tgaacaagat caagagcgcc ctgctgtcca ccaacaaggc cgtggtgtcc      540
+
+ctgagcaacg gcgtgagcgt gctgaccagc aaggtgctgg atctgaagaa ctacatcgac      600
+
+aagcagctcc tgcccatcgt gaacaagcag agctgccgga tcagcaacat cgagacagtg      660
+
+atcgagttcc agcagaagaa caaccggctg ctggaaatca cccgggagtt cagcgtgaac      720
+
+gtgggcgtga ccacccccgt gtccacctac atgctgacca acagcgagct gctgtccctg      780
+
+atcaatgaca tgcccatcac caacgaccag aagaaactga tgagcaacaa cgtgcagatc      840
+
+gtgcggcagc agagctacag catcatgagc atcatcaaag aagaggtgct ggcctacgtg      900
+
+gtgcagctgc ccctgtacgg cgtgatcgac accccctgct ggaagctgca caccagcccc      960
+
+ctgtgcacca ccaacacaaa agagggcagt aacatctgcc tgacccggac cgacagaggc     1020
+
+tggtactgcg acaacgccgg cagcgtgtca ttctttccac aggccgagac atgcaaggtg     1080
+
+cagagcaacc gggtgttctg cgacaccatg aacagcctga ccctgccctc cgaagtcaac     1140
+
+ctgtgcaacg tggacatctt caaccccaag tacgactgca agatcatgac ttccaagacc     1200
+
+gacgtgtcca gcagcgtgat tacctccctg ggcgccatcg tgtcctgcta cggcaagacc     1260
+
+aagtgcaccg ccagcaacaa gaatagagga atcatcaaga ccttcagcaa cggctgcgac     1320
+
+tacgtgtcca ataagggcgt ggacaccgtg tccgtgggca acacactgta ctacgtgaat     1380
+
+aagcaggaag gcaagagcct gtacgtgaag ggcgagccca tcatcaactt ctacgacccc     1440
+
+ctggtgttcc ccagcgacga gttcgacgcc agcatcagcc aggtcaacga gaagatcaac     1500
+
+cagagcctgg ccttcatcag aaagagcgac gaactgctgc acaatgtgaa cgctggcaag     1560
+
+agtaccacaa acatcatgat caccaccatc atcatcgtga tcattgtgat cctgctgagt     1620
+
+ctgatcgccg tgggcctgct gctgtactgc aaggcccgca gcacccctgt gaccctgtcc     1680
+
+aaggatcagc tgtccggcat caacaatatc gccttctcca actga                     1725
+
+
+<210>  6
+<211>  574
+<212>  PRT
+<213>  hRSV strain A-Long
+
+<400>  6
+
+Met Glu Leu Pro Ile Leu Lys Ala Asn Ala Ile Thr Thr Ile Leu Ala 
+1               5                   10                  15      
+
+
+Ala Val Thr Phe Cys Phe Ala Ser Ser Gln Asn Ile Thr Glu Glu Phe 
+            20                  25                  30          
+
+
+Tyr Gln Ser Thr Cys Ser Ala Val Ser Lys Gly Tyr Leu Ser Ala Leu 
+        35                  40                  45              
+
+
+Arg Thr Gly Trp Tyr Thr Ser Val Ile Thr Ile Glu Leu Ser Asn Ile 
+    50                  55                  60                  
+
+
+Lys Glu Asn Lys Cys Asn Gly Thr Asp Ala Lys Val Lys Leu Ile Lys 
+65                  70                  75                  80  
+
+
+Gln Glu Leu Asp Lys Tyr Lys Asn Ala Val Thr Glu Leu Gln Leu Leu 
+                85                  90                  95      
+
+
+Met Gln Ser Thr Pro Ala Ala Asn Asn Arg Ala Arg Arg Glu Leu Pro 
+            100                 105                 110         
+
+
+Arg Phe Met Asn Tyr Thr Leu Asn Asn Thr Lys Lys Thr Asn Val Thr 
+        115                 120                 125             
+
+
+Leu Ser Lys Lys Arg Lys Arg Arg Phe Leu Gly Phe Leu Leu Gly Val 
+    130                 135                 140                 
+
+
+Gly Ser Ala Ile Ala Ser Gly Ile Ala Val Ser Lys Val Leu His Leu 
+145                 150                 155                 160 
+
+
+Glu Gly Glu Val Asn Lys Ile Lys Ser Ala Leu Leu Ser Thr Asn Lys 
+                165                 170                 175     
+
+
+Ala Val Val Ser Leu Ser Asn Gly Val Ser Val Leu Thr Ser Lys Val 
+            180                 185                 190         
+
+
+Leu Asp Leu Lys Asn Tyr Ile Asp Lys Gln Leu Leu Pro Ile Val Asn 
+        195                 200                 205             
+
+
+Lys Gln Ser Cys Arg Ile Ser Asn Ile Glu Thr Val Ile Glu Phe Gln 
+    210                 215                 220                 
+
+
+Gln Lys Asn Asn Arg Leu Leu Glu Ile Thr Arg Glu Phe Ser Val Asn 
+225                 230                 235                 240 
+
+
+Val Gly Val Thr Thr Pro Val Ser Thr Tyr Met Leu Thr Asn Ser Glu 
+                245                 250                 255     
+
+
+Leu Leu Ser Leu Ile Asn Asp Met Pro Ile Thr Asn Asp Gln Lys Lys 
+            260                 265                 270         
+
+
+Leu Met Ser Asn Asn Val Gln Ile Val Arg Gln Gln Ser Tyr Ser Ile 
+        275                 280                 285             
+
+
+Met Ser Ile Ile Lys Glu Glu Val Leu Ala Tyr Val Val Gln Leu Pro 
+    290                 295                 300                 
+
+
+Leu Tyr Gly Val Ile Asp Thr Pro Cys Trp Lys Leu His Thr Ser Pro 
+305                 310                 315                 320 
+
+
+Leu Cys Thr Thr Asn Thr Lys Glu Gly Ser Asn Ile Cys Leu Thr Arg 
+                325                 330                 335     
+
+
+Thr Asp Arg Gly Trp Tyr Cys Asp Asn Ala Gly Ser Val Ser Phe Phe 
+            340                 345                 350         
+
+
+Pro Gln Ala Glu Thr Cys Lys Val Gln Ser Asn Arg Val Phe Cys Asp 
+        355                 360                 365             
+
+
+Thr Met Asn Ser Leu Thr Leu Pro Ser Glu Val Asn Leu Cys Asn Val 
+    370                 375                 380                 
+
+
+Asp Ile Phe Asn Pro Lys Tyr Asp Cys Lys Ile Met Thr Ser Lys Thr 
+385                 390                 395                 400 
+
+
+Asp Val Ser Ser Ser Val Ile Thr Ser Leu Gly Ala Ile Val Ser Cys 
+                405                 410                 415     
+
+
+Tyr Gly Lys Thr Lys Cys Thr Ala Ser Asn Lys Asn Arg Gly Ile Ile 
+            420                 425                 430         
+
+
+Lys Thr Phe Ser Asn Gly Cys Asp Tyr Val Ser Asn Lys Gly Val Asp 
+        435                 440                 445             
+
+
+Thr Val Ser Val Gly Asn Thr Leu Tyr Tyr Val Asn Lys Gln Glu Gly 
+    450                 455                 460                 
+
+
+Lys Ser Leu Tyr Val Lys Gly Glu Pro Ile Ile Asn Phe Tyr Asp Pro 
+465                 470                 475                 480 
+
+
+Leu Val Phe Pro Ser Asp Glu Phe Asp Ala Ser Ile Ser Gln Val Asn 
+                485                 490                 495     
+
+
+Glu Lys Ile Asn Gln Ser Leu Ala Phe Ile Arg Lys Ser Asp Glu Leu 
+            500                 505                 510         
+
+
+Leu His Asn Val Asn Ala Gly Lys Ser Thr Thr Asn Ile Met Ile Thr 
+        515                 520                 525             
+
+
+Thr Ile Ile Ile Val Ile Ile Val Ile Leu Leu Ser Leu Ile Ala Val 
+    530                 535                 540                 
+
+
+Gly Leu Leu Leu Tyr Cys Lys Ala Arg Ser Thr Pro Val Thr Leu Ser 
+545                 550                 555                 560 
+
+
+Lys Asp Gln Leu Ser Gly Ile Asn Asn Ile Ala Phe Ser Asn 
+                565                 570                 
+
+
+<210>  7
+<211>  738
+<212>  DNA
+<213>  hRSV strain B
+
+<400>  7
+atgattattt ccactagtct cattatcgct gctattatct tcatcattag tgccaatcat       60
+
+aaagtcaccc tcacaaccgt caccgtgcag accattaaaa accataccga gaagaatatc      120
+
+tcaacatatc tgacacaggt cccccccgaa agagtgaact cttccaaaca gcccacaacc      180
+
+acctccccca ttcataccaa tagtgccaca atttctccca acacaaagtc tgaaacacac      240
+
+cacactactg ctcagacaaa gggccgaatc accacctcta ctcagaccaa taagccatca      300
+
+acaaaatccc gctccaaaaa cccacctaaa aaacctaaag atgactatca tttcgaagtc      360
+
+tttaatttcg tcccatgttc catttgcgga aacaaccagc tctgtaaatc tatctgtaaa      420
+
+accatcccct ctaacaagcc aaaaaagaaa cctactatta aaccaactaa taagcccacc      480
+
+actaagacta ctaacaaacg cgatccaaaa acacccgcca aaatgcctaa aaaagagatc      540
+
+attacaaacc cagccaagaa accaactctc aaaactaccg aacgggacac ctccatttct      600
+
+cagtctaccg tgctcgatac catcactccc aaatacacta tccagcagca gtcactccac      660
+
+tcaacaacct ccgagaacac cccctcctca acccagattc ctactgcttc cgaaccatcc      720
+
+accctcaacc ccaattga                                                    738
+
+
+<210>  8
+<211>  245
+<212>  PRT
+<213>  hRSV strain B
+
+<400>  8
+
+Met Ile Ile Ser Thr Ser Leu Ile Ile Ala Ala Ile Ile Phe Ile Ile 
+1               5                   10                  15      
+
+
+Ser Ala Asn His Lys Val Thr Leu Thr Thr Val Thr Val Gln Thr Ile 
+            20                  25                  30          
+
+
+Lys Asn His Thr Glu Lys Asn Ile Ser Thr Tyr Leu Thr Gln Val Pro 
+        35                  40                  45              
+
+
+Pro Glu Arg Val Asn Ser Ser Lys Gln Pro Thr Thr Thr Ser Pro Ile 
+    50                  55                  60                  
+
+
+His Thr Asn Ser Ala Thr Ile Ser Pro Asn Thr Lys Ser Glu Thr His 
+65                  70                  75                  80  
+
+
+His Thr Thr Ala Gln Thr Lys Gly Arg Ile Thr Thr Ser Thr Gln Thr 
+                85                  90                  95      
+
+
+Asn Lys Pro Ser Thr Lys Ser Arg Ser Lys Asn Pro Pro Lys Lys Pro 
+            100                 105                 110         
+
+
+Lys Asp Asp Tyr His Phe Glu Val Phe Asn Phe Val Pro Cys Ser Ile 
+        115                 120                 125             
+
+
+Cys Gly Asn Asn Gln Leu Cys Lys Ser Ile Cys Lys Thr Ile Pro Ser 
+    130                 135                 140                 
+
+
+Asn Lys Pro Lys Lys Lys Pro Thr Ile Lys Pro Thr Asn Lys Pro Thr 
+145                 150                 155                 160 
+
+
+Thr Lys Thr Thr Asn Lys Arg Asp Pro Lys Thr Pro Ala Lys Met Pro 
+                165                 170                 175     
+
+
+Lys Lys Glu Ile Ile Thr Asn Pro Ala Lys Lys Pro Thr Leu Lys Thr 
+            180                 185                 190         
+
+
+Thr Glu Arg Asp Thr Ser Ile Ser Gln Ser Thr Val Leu Asp Thr Ile 
+        195                 200                 205             
+
+
+Thr Pro Lys Tyr Thr Ile Gln Gln Gln Ser Leu His Ser Thr Thr Ser 
+    210                 215                 220                 
+
+
+Glu Asn Thr Pro Ser Ser Thr Gln Ile Pro Thr Ala Ser Glu Pro Ser 
+225                 230                 235                 240 
+
+
+Thr Leu Asn Pro Asn 
+                245 
+
+
+<210>  9
+<211>  1176
+<212>  DNA
+<213>  hRSV strain A2
+
+<400>  9
+atggccctga gcaaagtgaa gctgaacgac accctgaaca aggaccagct gctgtccagc       60
+
+tccaagtaca ccatccagag aagcaccggc gacagcatcg acacccccaa ctacgacgtg      120
+
+cagaagcaca tcaataagct gtgcggcatg ctgctgatca ccgaggacgc caaccacaag      180
+
+ttcaccggcc tgatcgggat gctgtacgcc atgagccggc tgggccggga ggacaccatc      240
+
+aagatcctgc gggacgccgg ctaccacgtg aaggccaacg gcgtggacgt gaccacccac      300
+
+cggcaggaca tcaacggcaa agaaatgaag ttcgaggtgc tgaccctggc cagcctgacc      360
+
+accgagatcc agatcaacat cgagatcgag agccggaagt cctacaagaa aatgctgaaa      420
+
+gaaatgggcg aggtggcccc cgagtacaga cacgacagcc ccgactgcgg catgatcatc      480
+
+ctgtgtatcg ccgccctggt catcacaaag ctggccgctg gcgacagatc tggcctgacc      540
+
+gccgtgatca gacgggccaa caacgtgctg aagaacgaga tgaagcggta caagggcctg      600
+
+ctgcccaagg atatcgccaa cagcttctac gaggtgttcg aaaagcaccc ccacttcatc      660
+
+gacgtgttcg tgcacttcgg cattgcccag agcagcacca gaggcggcag cagagtggag      720
+
+ggcatcttcg ccggcctgtt catgaacgcc tacggcgctg gccaggtcat gctgagatgg      780
+
+ggcgtgctgg ccaagagcgt gaagaacatc atgctgggcc acgccagcgt gcaggccgag      840
+
+atggaacagg tggtggaggt gtacgagtac gcccagaagc tgggcggcga ggccggcttc      900
+
+taccacatcc tgaacaaccc caaggcctcc ctgctgtccc tgacccagtt cccccacttt      960
+
+agcagcgtgg tgctcggaaa tgcagccgga ctgggcatca tgggcgagta ccgcggcacc     1020
+
+cccagaaacc aggacctgta cgacgccgcc aaggcctacg ccgagcagct gaaagaaaac     1080
+
+ggcgtgatca actacagcgt gctggacctg acagccgagg aactggaagc cattaagcac     1140
+
+cagctgaacc ctaaggacaa cgacgtggag ctgtga                               1176
+
+
+<210>  10
+<211>  391
+<212>  PRT
+<213>  hRSV strain A2
+
+<400>  10
+
+Met Ala Leu Ser Lys Val Lys Leu Asn Asp Thr Leu Asn Lys Asp Gln 
+1               5                   10                  15      
+
+
+Leu Leu Ser Ser Ser Lys Tyr Thr Ile Gln Arg Ser Thr Gly Asp Ser 
+            20                  25                  30          
+
+
+Ile Asp Thr Pro Asn Tyr Asp Val Gln Lys His Ile Asn Lys Leu Cys 
+        35                  40                  45              
+
+
+Gly Met Leu Leu Ile Thr Glu Asp Ala Asn His Lys Phe Thr Gly Leu 
+    50                  55                  60                  
+
+
+Ile Gly Met Leu Tyr Ala Met Ser Arg Leu Gly Arg Glu Asp Thr Ile 
+65                  70                  75                  80  
+
+
+Lys Ile Leu Arg Asp Ala Gly Tyr His Val Lys Ala Asn Gly Val Asp 
+                85                  90                  95      
+
+
+Val Thr Thr His Arg Gln Asp Ile Asn Gly Lys Glu Met Lys Phe Glu 
+            100                 105                 110         
+
+
+Val Leu Thr Leu Ala Ser Leu Thr Thr Glu Ile Gln Ile Asn Ile Glu 
+        115                 120                 125             
+
+
+Ile Glu Ser Arg Lys Ser Tyr Lys Lys Met Leu Lys Glu Met Gly Glu 
+    130                 135                 140                 
+
+
+Val Ala Pro Glu Tyr Arg His Asp Ser Pro Asp Cys Gly Met Ile Ile 
+145                 150                 155                 160 
+
+
+Leu Cys Ile Ala Ala Leu Val Ile Thr Lys Leu Ala Ala Gly Asp Arg 
+                165                 170                 175     
+
+
+Ser Gly Leu Thr Ala Val Ile Arg Arg Ala Asn Asn Val Leu Lys Asn 
+            180                 185                 190         
+
+
+Glu Met Lys Arg Tyr Lys Gly Leu Leu Pro Lys Asp Ile Ala Asn Ser 
+        195                 200                 205             
+
+
+Phe Tyr Glu Val Phe Glu Lys His Pro His Phe Ile Asp Val Phe Val 
+    210                 215                 220                 
+
+
+His Phe Gly Ile Ala Gln Ser Ser Thr Arg Gly Gly Ser Arg Val Glu 
+225                 230                 235                 240 
+
+
+Gly Ile Phe Ala Gly Leu Phe Met Asn Ala Tyr Gly Ala Gly Gln Val 
+                245                 250                 255     
+
+
+Met Leu Arg Trp Gly Val Leu Ala Lys Ser Val Lys Asn Ile Met Leu 
+            260                 265                 270         
+
+
+Gly His Ala Ser Val Gln Ala Glu Met Glu Gln Val Val Glu Val Tyr 
+        275                 280                 285             
+
+
+Glu Tyr Ala Gln Lys Leu Gly Gly Glu Ala Gly Phe Tyr His Ile Leu 
+    290                 295                 300                 
+
+
+Asn Asn Pro Lys Ala Ser Leu Leu Ser Leu Thr Gln Phe Pro His Phe 
+305                 310                 315                 320 
+
+
+Ser Ser Val Val Leu Gly Asn Ala Ala Gly Leu Gly Ile Met Gly Glu 
+                325                 330                 335     
+
+
+Tyr Arg Gly Thr Pro Arg Asn Gln Asp Leu Tyr Asp Ala Ala Lys Ala 
+            340                 345                 350         
+
+
+Tyr Ala Glu Gln Leu Lys Glu Asn Gly Val Ile Asn Tyr Ser Val Leu 
+        355                 360                 365             
+
+
+Asp Leu Thr Ala Glu Glu Leu Glu Ala Ile Lys His Gln Leu Asn Pro 
+    370                 375                 380                 
+
+
+Lys Asp Asn Asp Val Glu Leu 
+385                 390     
+
+
+<210>  11
+<211>  54
+<212>  DNA
+<213>  Foot and Mouth Disease Virus (FMDV)
+
+<400>  11
+ctgaacttcg atctgctgaa actggccggc gacgtggaaa gcaaccctgg cccc             54
+
+
+<210>  12
+<211>  18
+<212>  PRT
+<213>  FMDV
+
+<400>  12
+
+Leu Asn Phe Asp Leu Leu Lys Leu Ala Gly Asp Val Glu Ser Asn Pro 
+1               5                   10                  15      
+
+
+Gly Pro 
+        
+
+
+<210>  13
+<211>  585
+<212>  DNA
+<213>  hRSV strain A2
+
+<400>  13
+atgagcagac ggaacccctg caagttcgag atccggggcc actgcctgaa cggcaagcgg       60
+
+tgccacttca gccacaacta cttcgagtgg ccccctcatg ctctgctggt ccggcagaac      120
+
+tttatgctga accggatcct gaagtccatg gacaagagca tcgataccct gagcgagatc      180
+
+agcggagccg ccgaactgga tagaaccgag gaatacgccc tgggcgtggt cggagtgctg      240
+
+gaaagctaca tcggcagcat caacaacatc accaagcaga gcgcctgcgt ggccatgagc      300
+
+aagctgctga ccgagctgaa cagcgacgat atcaagaagc tgcgcgacaa cgaagaactg      360
+
+aactccccca agatccgggt gtacaacaca gtgatcagct acattgagag caaccggaag      420
+
+aacaacaagc agaccatcca tctgctgaag cggctgcccg ccgacgtgct gaaaaagacc      480
+
+atcaagaaca ccctggacat ccacaagtcc atcaccatca ataaccccaa agaaagcacc      540
+
+gtgtccgaca ccaacgacca cgccaagaac aacgacacca cctga                      585
+
+
+<210>  14
+<211>  194
+<212>  PRT
+<213>  hRSV strain A2
+
+<400>  14
+
+Met Ser Arg Arg Asn Pro Cys Lys Phe Glu Ile Arg Gly His Cys Leu 
+1               5                   10                  15      
+
+
+Asn Gly Lys Arg Cys His Phe Ser His Asn Tyr Phe Glu Trp Pro Pro 
+            20                  25                  30          
+
+
+His Ala Leu Leu Val Arg Gln Asn Phe Met Leu Asn Arg Ile Leu Lys 
+        35                  40                  45              
+
+
+Ser Met Asp Lys Ser Ile Asp Thr Leu Ser Glu Ile Ser Gly Ala Ala 
+    50                  55                  60                  
+
+
+Glu Leu Asp Arg Thr Glu Glu Tyr Ala Leu Gly Val Val Gly Val Leu 
+65                  70                  75                  80  
+
+
+Glu Ser Tyr Ile Gly Ser Ile Asn Asn Ile Thr Lys Gln Ser Ala Cys 
+                85                  90                  95      
+
+
+Val Ala Met Ser Lys Leu Leu Thr Glu Leu Asn Ser Asp Asp Ile Lys 
+            100                 105                 110         
+
+
+Lys Leu Arg Asp Asn Glu Glu Leu Asn Ser Pro Lys Ile Arg Val Tyr 
+        115                 120                 125             
+
+
+Asn Thr Val Ile Ser Tyr Ile Glu Ser Asn Arg Lys Asn Asn Lys Gln 
+    130                 135                 140                 
+
+
+Thr Ile His Leu Leu Lys Arg Leu Pro Ala Asp Val Leu Lys Lys Thr 
+145                 150                 155                 160 
+
+
+Ile Lys Asn Thr Leu Asp Ile His Lys Ser Ile Thr Ile Asn Asn Pro 
+                165                 170                 175     
+
+
+Lys Glu Ser Thr Val Ser Asp Thr Asn Asp His Ala Lys Asn Asn Asp 
+            180                 185                 190         
+
+
+Thr Thr 
+        
+
+
+<210>  15
+<211>  1575
+<212>  DNA
+<213>  hRSV strain A2
+
+<400>  15
+atggaactcc ctattctcaa agccaatgct attactacca ttctcgccgc tgtcaccttt       60
+
+tgtttcgcct cttcccagaa tattaccgaa gagttttacc agtctacctg ttccgccgtc      120
+
+agtaaaggat acctgtccgc cctccgcact ggttggtata ctagtgtcat tacaatcgaa      180
+
+ctctcaaata taaaagaaaa taagtgtaat gggaccgatg ctaaagtcaa actcattaaa      240
+
+caagaactcg ataagtataa gaatgctgtc actgagctgc aactgctgat gcagtctaca      300
+
+cccgcagcca ataatcgagc cagacgcgag ctgcctcgct ttatgaatta tactctcaat      360
+
+aatactaaaa agacaaacgt caccctcagt aaaaagcgaa aaagacggtt tctcggattc      420
+
+ctcctcggcg tgggctctgc tatcgctagc ggaattgctg tctccaaagt cctccatctg      480
+
+gaaggggagg tcaacaaaat taagtctgct ctcctctcta caaacaaagc cgtcgtgtct      540
+
+ctctccaatg gcgtgtctgt gctcacctct aaagtgctcg acctcaaaaa ttacattgat      600
+
+aaacagctgc tccctattgt gaacaaacag tcttgccgca ttagcaatat cgaaaccgtc      660
+
+attgaatttc aacaaaagaa taataggctc ctcgaaatta cccgcgaatt ctccgtgaat      720
+
+gtgggagtca caacacctgt ctctacctat atgctcacta actccgaact cctctccctc      780
+
+attaacgata tgcccattac aaatgatcag aaaaaactca tgtctaataa cgtccagatt      840
+
+gtccgccagc agtcttatag cattatgtcc attatcaaag aggaagtcct cgcttacgtc      900
+
+gtccagctcc ctctgtatgg ggtcatcgat acaccttgtt ggaaactcca tacctcccca      960
+
+ctgtgtacaa ccaataccaa agaagggtcc aatatttgcc tgacaagaac cgaccgcggg     1020
+
+tggtactgtg ataatgccgg ctctgtctcc tttttccccc aggccgaaac ctgtaaagtc     1080
+
+cagtctaatc gagtcttttg cgatactatg aattccctca ccctcccttc agaagtgaat     1140
+
+ctctgtaacg tcgatatttt caaccctaaa tatgattgca aaattatgac cagtaaaact     1200
+
+gacgtgtcct cttccgtcat cacctccctc ggtgctattg tgtcttgtta cggaaaaact     1260
+
+aaatgcacgg ctagtaataa gaaccgaggc attattaaga ccttttccaa cggctgtgat     1320
+
+tatgtgtcta acaaaggcgt ggatactgtc agtgtcggaa atacactcta ctatgtcaac     1380
+
+aaacaggaag ggaaaagtct ctacgtcaaa ggggagccga taatcaattt ttacgatccc     1440
+
+ctcgtctttc cctccgatga atttgatgcc agtatttccc aggtgaacga aaaaatcaat     1500
+
+cagtctctcg cttttattag aaaatctgat gaactcctgc ataacgtcaa tgcaggcaaa     1560
+
+agcactacta attga                                                      1575
+
+
+<210>  16
+<211>  524
+<212>  PRT
+<213>  hRSV strain A2
+
+<400>  16
+
+Met Glu Leu Pro Ile Leu Lys Ala Asn Ala Ile Thr Thr Ile Leu Ala 
+1               5                   10                  15      
+
+
+Ala Val Thr Phe Cys Phe Ala Ser Ser Gln Asn Ile Thr Glu Glu Phe 
+            20                  25                  30          
+
+
+Tyr Gln Ser Thr Cys Ser Ala Val Ser Lys Gly Tyr Leu Ser Ala Leu 
+        35                  40                  45              
+
+
+Arg Thr Gly Trp Tyr Thr Ser Val Ile Thr Ile Glu Leu Ser Asn Ile 
+    50                  55                  60                  
+
+
+Lys Glu Asn Lys Cys Asn Gly Thr Asp Ala Lys Val Lys Leu Ile Lys 
+65                  70                  75                  80  
+
+
+Gln Glu Leu Asp Lys Tyr Lys Asn Ala Val Thr Glu Leu Gln Leu Leu 
+                85                  90                  95      
+
+
+Met Gln Ser Thr Pro Ala Ala Asn Asn Arg Ala Arg Arg Glu Leu Pro 
+            100                 105                 110         
+
+
+Arg Phe Met Asn Tyr Thr Leu Asn Asn Thr Lys Lys Thr Asn Val Thr 
+        115                 120                 125             
+
+
+Leu Ser Lys Lys Arg Lys Arg Arg Phe Leu Gly Phe Leu Leu Gly Val 
+    130                 135                 140                 
+
+
+Gly Ser Ala Ile Ala Ser Gly Ile Ala Val Ser Lys Val Leu His Leu 
+145                 150                 155                 160 
+
+
+Glu Gly Glu Val Asn Lys Ile Lys Ser Ala Leu Leu Ser Thr Asn Lys 
+                165                 170                 175     
+
+
+Ala Val Val Ser Leu Ser Asn Gly Val Ser Val Leu Thr Ser Lys Val 
+            180                 185                 190         
+
+
+Leu Asp Leu Lys Asn Tyr Ile Asp Lys Gln Leu Leu Pro Ile Val Asn 
+        195                 200                 205             
+
+
+Lys Gln Ser Cys Arg Ile Ser Asn Ile Glu Thr Val Ile Glu Phe Gln 
+    210                 215                 220                 
+
+
+Gln Lys Asn Asn Arg Leu Leu Glu Ile Thr Arg Glu Phe Ser Val Asn 
+225                 230                 235                 240 
+
+
+Val Gly Val Thr Thr Pro Val Ser Thr Tyr Met Leu Thr Asn Ser Glu 
+                245                 250                 255     
+
+
+Leu Leu Ser Leu Ile Asn Asp Met Pro Ile Thr Asn Asp Gln Lys Lys 
+            260                 265                 270         
+
+
+Leu Met Ser Asn Asn Val Gln Ile Val Arg Gln Gln Ser Tyr Ser Ile 
+        275                 280                 285             
+
+
+Met Ser Ile Ile Lys Glu Glu Val Leu Ala Tyr Val Val Gln Leu Pro 
+    290                 295                 300                 
+
+
+Leu Tyr Gly Val Ile Asp Thr Pro Cys Trp Lys Leu His Thr Ser Pro 
+305                 310                 315                 320 
+
+
+Leu Cys Thr Thr Asn Thr Lys Glu Gly Ser Asn Ile Cys Leu Thr Arg 
+                325                 330                 335     
+
+
+Thr Asp Arg Gly Trp Tyr Cys Asp Asn Ala Gly Ser Val Ser Phe Phe 
+            340                 345                 350         
+
+
+Pro Gln Ala Glu Thr Cys Lys Val Gln Ser Asn Arg Val Phe Cys Asp 
+        355                 360                 365             
+
+
+Thr Met Asn Ser Leu Thr Leu Pro Ser Glu Val Asn Leu Cys Asn Val 
+    370                 375                 380                 
+
+
+Asp Ile Phe Asn Pro Lys Tyr Asp Cys Lys Ile Met Thr Ser Lys Thr 
+385                 390                 395                 400 
+
+
+Asp Val Ser Ser Ser Val Ile Thr Ser Leu Gly Ala Ile Val Ser Cys 
+                405                 410                 415     
+
+
+Tyr Gly Lys Thr Lys Cys Thr Ala Ser Asn Lys Asn Arg Gly Ile Ile 
+            420                 425                 430         
+
+
+Lys Thr Phe Ser Asn Gly Cys Asp Tyr Val Ser Asn Lys Gly Val Asp 
+        435                 440                 445             
+
+
+Thr Val Ser Val Gly Asn Thr Leu Tyr Tyr Val Asn Lys Gln Glu Gly 
+    450                 455                 460                 
+
+
+Lys Ser Leu Tyr Val Lys Gly Glu Pro Ile Ile Asn Phe Tyr Asp Pro 
+465                 470                 475                 480 
+
+
+Leu Val Phe Pro Ser Asp Glu Phe Asp Ala Ser Ile Ser Gln Val Asn 
+                485                 490                 495     
+
+
+Glu Lys Ile Asn Gln Ser Leu Ala Phe Ile Arg Lys Ser Asp Glu Leu 
+            500                 505                 510         
+
+
+Leu His Asn Val Asn Ala Gly Lys Ser Thr Thr Asn 
+        515                 520                 
+
+
+<210>  17
+<211>  1809
+<212>  DNA
+<213>  Artificial
+
+<220>
+<223>  cDNA encoding fusion protein comprising full-length N protein 
+       from hRSV strain A2 fused to the protease 2A fragment from FMDV 
+       fused to full-length M2 protein from hRSV strain A2.
+
+<400>  17
+atggccctga gcaaagtgaa gctgaacgac accctgaaca aggaccagct gctgtccagc       60
+
+tccaagtaca ccatccagag aagcaccggc gacagcatcg acacccccaa ctacgacgtg      120
+
+cagaagcaca tcaataagct gtgcggcatg ctgctgatca ccgaggacgc caaccacaag      180
+
+ttcaccggcc tgatcgggat gctgtacgcc atgagccggc tgggccggga ggacaccatc      240
+
+aagatcctgc gggacgccgg ctaccacgtg aaggccaacg gcgtggacgt gaccacccac      300
+
+cggcaggaca tcaacggcaa agaaatgaag ttcgaggtgc tgaccctggc cagcctgacc      360
+
+accgagatcc agatcaacat cgagatcgag agccggaagt cctacaagaa aatgctgaaa      420
+
+gaaatgggcg aggtggcccc cgagtacaga cacgacagcc ccgactgcgg catgatcatc      480
+
+ctgtgtatcg ccgccctggt catcacaaag ctggccgctg gcgacagatc tggcctgacc      540
+
+gccgtgatca gacgggccaa caacgtgctg aagaacgaga tgaagcggta caagggcctg      600
+
+ctgcccaagg atatcgccaa cagcttctac gaggtgttcg aaaagcaccc ccacttcatc      660
+
+gacgtgttcg tgcacttcgg cattgcccag agcagcacca gaggcggcag cagagtggag      720
+
+ggcatcttcg ccggcctgtt catgaacgcc tacggcgctg gccaggtcat gctgagatgg      780
+
+ggcgtgctgg ccaagagcgt gaagaacatc atgctgggcc acgccagcgt gcaggccgag      840
+
+atggaacagg tggtggaggt gtacgagtac gcccagaagc tgggcggcga ggccggcttc      900
+
+taccacatcc tgaacaaccc caaggcctcc ctgctgtccc tgacccagtt cccccacttt      960
+
+agcagcgtgg tgctcggaaa tgcagccgga ctgggcatca tgggcgagta ccgcggcacc     1020
+
+cccagaaacc aggacctgta cgacgccgcc aaggcctacg ccgagcagct gaaagaaaac     1080
+
+ggcgtgatca actacagcgt gctggacctg acagccgagg aactggaagc cattaagcac     1140
+
+cagctgaacc ctaaggacaa cgacgtggag ctgctgaact tcgatctgct gaaactggcc     1200
+
+ggcgacgtgg aaagcaaccc tggccccagc agacggaacc cctgcaagtt cgagatccgg     1260
+
+ggccactgcc tgaacggcaa gcggtgccac ttcagccaca actacttcga gtggccccct     1320
+
+catgctctgc tggtccggca gaactttatg ctgaaccgga tcctgaagtc catggacaag     1380
+
+agcatcgata ccctgagcga gatcagcgga gccgccgaac tggatagaac cgaggaatac     1440
+
+gccctgggcg tggtcggagt gctggaaagc tacatcggca gcatcaacaa catcaccaag     1500
+
+cagagcgcct gcgtggccat gagcaagctg ctgaccgagc tgaacagcga cgatatcaag     1560
+
+aagctgcgcg acaacgaaga actgaactcc cccaagatcc gggtgtacaa cacagtgatc     1620
+
+agctacattg agagcaaccg gaagaacaac aagcagacca tccatctgct gaagcggctg     1680
+
+cccgccgacg tgctgaaaaa gaccatcaag aacaccctgg acatccacaa gtccatcacc     1740
+
+atcaataacc ccaaagaaag caccgtgtcc gacaccaacg accacgccaa gaacaacgac     1800
+
+accacctga                                                             1809
+
+
+<210>  18
+<211>  602
+<212>  PRT
+<213>  Artificial
+
+<220>
+<223>  Fusion protein comprising full-length N protein from hRSV strain 
+       A2 fused to the protease 2A fragment from FMDV fused to 
+       full-length M2 protein from hRSV strain A2.
+
+<400>  18
+
+Met Ala Leu Ser Lys Val Lys Leu Asn Asp Thr Leu Asn Lys Asp Gln 
+1               5                   10                  15      
+
+
+Leu Leu Ser Ser Ser Lys Tyr Thr Ile Gln Arg Ser Thr Gly Asp Ser 
+            20                  25                  30          
+
+
+Ile Asp Thr Pro Asn Tyr Asp Val Gln Lys His Ile Asn Lys Leu Cys 
+        35                  40                  45              
+
+
+Gly Met Leu Leu Ile Thr Glu Asp Ala Asn His Lys Phe Thr Gly Leu 
+    50                  55                  60                  
+
+
+Ile Gly Met Leu Tyr Ala Met Ser Arg Leu Gly Arg Glu Asp Thr Ile 
+65                  70                  75                  80  
+
+
+Lys Ile Leu Arg Asp Ala Gly Tyr His Val Lys Ala Asn Gly Val Asp 
+                85                  90                  95      
+
+
+Val Thr Thr His Arg Gln Asp Ile Asn Gly Lys Glu Met Lys Phe Glu 
+            100                 105                 110         
+
+
+Val Leu Thr Leu Ala Ser Leu Thr Thr Glu Ile Gln Ile Asn Ile Glu 
+        115                 120                 125             
+
+
+Ile Glu Ser Arg Lys Ser Tyr Lys Lys Met Leu Lys Glu Met Gly Glu 
+    130                 135                 140                 
+
+
+Val Ala Pro Glu Tyr Arg His Asp Ser Pro Asp Cys Gly Met Ile Ile 
+145                 150                 155                 160 
+
+
+Leu Cys Ile Ala Ala Leu Val Ile Thr Lys Leu Ala Ala Gly Asp Arg 
+                165                 170                 175     
+
+
+Ser Gly Leu Thr Ala Val Ile Arg Arg Ala Asn Asn Val Leu Lys Asn 
+            180                 185                 190         
+
+
+Glu Met Lys Arg Tyr Lys Gly Leu Leu Pro Lys Asp Ile Ala Asn Ser 
+        195                 200                 205             
+
+
+Phe Tyr Glu Val Phe Glu Lys His Pro His Phe Ile Asp Val Phe Val 
+    210                 215                 220                 
+
+
+His Phe Gly Ile Ala Gln Ser Ser Thr Arg Gly Gly Ser Arg Val Glu 
+225                 230                 235                 240 
+
+
+Gly Ile Phe Ala Gly Leu Phe Met Asn Ala Tyr Gly Ala Gly Gln Val 
+                245                 250                 255     
+
+
+Met Leu Arg Trp Gly Val Leu Ala Lys Ser Val Lys Asn Ile Met Leu 
+            260                 265                 270         
+
+
+Gly His Ala Ser Val Gln Ala Glu Met Glu Gln Val Val Glu Val Tyr 
+        275                 280                 285             
+
+
+Glu Tyr Ala Gln Lys Leu Gly Gly Glu Ala Gly Phe Tyr His Ile Leu 
+    290                 295                 300                 
+
+
+Asn Asn Pro Lys Ala Ser Leu Leu Ser Leu Thr Gln Phe Pro His Phe 
+305                 310                 315                 320 
+
+
+Ser Ser Val Val Leu Gly Asn Ala Ala Gly Leu Gly Ile Met Gly Glu 
+                325                 330                 335     
+
+
+Tyr Arg Gly Thr Pro Arg Asn Gln Asp Leu Tyr Asp Ala Ala Lys Ala 
+            340                 345                 350         
+
+
+Tyr Ala Glu Gln Leu Lys Glu Asn Gly Val Ile Asn Tyr Ser Val Leu 
+        355                 360                 365             
+
+
+Asp Leu Thr Ala Glu Glu Leu Glu Ala Ile Lys His Gln Leu Asn Pro 
+    370                 375                 380                 
+
+
+Lys Asp Asn Asp Val Glu Leu Leu Asn Phe Asp Leu Leu Lys Leu Ala 
+385                 390                 395                 400 
+
+
+Gly Asp Val Glu Ser Asn Pro Gly Pro Ser Arg Arg Asn Pro Cys Lys 
+                405                 410                 415     
+
+
+Phe Glu Ile Arg Gly His Cys Leu Asn Gly Lys Arg Cys His Phe Ser 
+            420                 425                 430         
+
+
+His Asn Tyr Phe Glu Trp Pro Pro His Ala Leu Leu Val Arg Gln Asn 
+        435                 440                 445             
+
+
+Phe Met Leu Asn Arg Ile Leu Lys Ser Met Asp Lys Ser Ile Asp Thr 
+    450                 455                 460                 
+
+
+Leu Ser Glu Ile Ser Gly Ala Ala Glu Leu Asp Arg Thr Glu Glu Tyr 
+465                 470                 475                 480 
+
+
+Ala Leu Gly Val Val Gly Val Leu Glu Ser Tyr Ile Gly Ser Ile Asn 
+                485                 490                 495     
+
+
+Asn Ile Thr Lys Gln Ser Ala Cys Val Ala Met Ser Lys Leu Leu Thr 
+            500                 505                 510         
+
+
+Glu Leu Asn Ser Asp Asp Ile Lys Lys Leu Arg Asp Asn Glu Glu Leu 
+        515                 520                 525             
+
+
+Asn Ser Pro Lys Ile Arg Val Tyr Asn Thr Val Ile Ser Tyr Ile Glu 
+    530                 535                 540                 
+
+
+Ser Asn Arg Lys Asn Asn Lys Gln Thr Ile His Leu Leu Lys Arg Leu 
+545                 550                 555                 560 
+
+
+Pro Ala Asp Val Leu Lys Lys Thr Ile Lys Asn Thr Leu Asp Ile His 
+                565                 570                 575     
+
+
+Lys Ser Ile Thr Ile Asn Asn Pro Lys Glu Ser Thr Val Ser Asp Thr 
+            580                 585                 590         
+
+
+Asn Asp His Ala Lys Asn Asn Asp Thr Thr 
+        595                 600         
+
+
+<210>  19
+<211>  10
+<212>  PRT
+<213>  Artificial
+
+<220>
+<223>  Synthetic peptide.
+
+<400>  19
+
+Thr Tyr Met Leu Thr Asn Ser Glu Leu Leu 
+1               5                   10  
+
+
+<210>  20
+<211>  9
+<212>  PRT
+<213>  Artificial
+
+<220>
+<223>  Synthetic peptide.
+
+<400>  20
+
+Lys Tyr Lys Asn Ala Val Thr Glu Leu 
+1               5                   
+
+
+<210>  21
+<211>  15
+<212>  PRT
+<213>  Artificial
+
+<220>
+<223>  Synthetic peptide.
+
+<400>  21
+
+Glu Leu Gln Leu Leu Met Gln Ser Thr Pro Ala Ala Asn Asn Arg 
+1               5                   10                  15  
+
+
+<210>  22
+<211>  13
+<212>  PRT
+<213>  Artificial
+
+<220>
+<223>  Synthetic peptide.
+
+<400>  22
+
+Trp Ala Ile Cys Lys Arg Ile Pro Asn Lys Lys Pro Gly 
+1               5                   10              
+
+
+<210>  23
+<211>  9
+<212>  PRT
+<213>  Artificial
+
+<220>
+<223>  Synthetic peptide.
+
+<400>  23
+
+Lys Tyr Thr Ile Gln Arg Ser Thr Gly 
+1               5                   
+
+
+<210>  24
+<211>  9
+<212>  PRT
+<213>  Artificial
+
+<220>
+<223>  Synthetic peptide.
+
+<400>  24
+
+Leu Ser Leu Thr Gln Phe Pro Asn Phe 
+1               5                   
+
+
+<210>  25
+<211>  9
+<212>  PRT
+<213>  Artificial
+
+<220>
+<223>  Synthetic peptide.
+
+<400>  25
+
+Ser Arg Leu Gly Arg Glu Asp Thr Ile 
+1               5                   
+
+
+<210>  26
+<211>  9
+<212>  PRT
+<213>  Artificial
+
+<220>
+<223>  Synthetic peptide.
+
+<400>  26
+
+Ile Pro Lys Asp Ile Ala Asn Ser Phe 
+1               5                   
+
+
+<210>  27
+<211>  9
+<212>  PRT
+<213>  Artificial
+
+<220>
+<223>  Synthetic peptide.
+
+<400>  27
+
+Ser Tyr Ile Gly Ser Ile Asn Asn Ile 
+1               5                   
+
+
+<210>  28
+<211>  1725
+<212>  DNA
+<213>  hRSV strain A2
+
+<400>  28
+atggagttgc taatcctcaa agcaaatgca attaccacaa tcctcactgc agtcacattt       60
+
+tgttttgctt ctggtcaaaa catcactgaa gaattttatc aatcaacatg cagtgcagtt      120
+
+agcaaaggct atcttagtgc tctgagaact ggttggtata ccagtgttat aactatagaa      180
+
+ttaagtaata tcaaggaaaa taagtgtaat ggaacagatg ctaaggtaaa attgataaaa      240
+
+caagaattag ataaatataa aaatgctgta acagaattgc agttgctcat gcaaagcaca      300
+
+ccaccaacaa acaatcgagc cagaagagaa ctaccaaggt ttatgaatta tacactcaac      360
+
+aatgccaaaa aaaccaatgt aacattaagc aagaaaagga aaagaagatt tcttggtttt      420
+
+ttgttaggtg ttggatctgc aatcgccagt ggcgttgctg tatctaaggt cctgcaccta      480
+
+gaaggggaag tgaacaagat caaaagtgct ctactatcca caaacaaggc tgtagtcagc      540
+
+ttatcaaatg gagttagtgt cttaaccagc aaagtgttag acctcaaaaa ctatatagat      600
+
+aaacaattgt tacctattgt gaacaagcaa agctgcagca tatcaaatat agaaactgtg      660
+
+atagagttcc aacaaaagaa caacagacta ctagagatta ccagggaatt tagtgttaat      720
+
+gcaggtgtaa ctacacctgt aagcacttac atgttaacta atagtgaatt attgtcatta      780
+
+atcaatgata tgcctataac aaatgatcag aaaaagttaa tgtccaacaa tgttcaaata      840
+
+gttagacagc aaagttactc tatcatgtcc ataataaaag aggaagtctt agcatatgta      900
+
+gtacaattac cactatatgg tgttatagat acaccctgtt ggaaactaca cacatcccct      960
+
+ctatgtacaa ccaacacaaa agaagggtcc aacatctgtt taacaagaac tgacagagga     1020
+
+tggtactgtg acaatgcagg atcagtatct ttcttcccac aagctgaaac atgtaaagtt     1080
+
+caatcaaatc gagtattttg tgacacaatg aacagtttaa cattaccaag tgaaataaat     1140
+
+ctctgcaatg ttgacatatt caaccccaaa tatgattgta aaattatgac ttcaaaaaca     1200
+
+gatgtaagca gctccgttat cacatctcta ggagccattg tgtcatgcta tggcaaaact     1260
+
+aaatgtacag catccaataa aaatcgtgga atcataaaga cattttctaa cgggtgcgat     1320
+
+tatgtatcaa ataaagggat ggacactgtg tctgtaggta acacattata ttatgtaaat     1380
+
+aagcaagaag gtaaaagtct ctatgtaaaa ggtgaaccaa taataaattt ctatgaccca     1440
+
+ttagtattcc cctctgatga atttgatgca tcaatatctc aagtcaacga gaagattaac     1500
+
+cagagcctag catttattcg taaatccgat gaattattac ataatgtaaa tgctggtaaa     1560
+
+tccaccacaa atatcatgat aactactata attatagtga ttatagtaat attgttatca     1620
+
+ttaattgctg ttggactgct cttatactgt aaggccagaa gcacaccagt cacactaagc     1680
+
+aaagatcaac tgagtggtat aaataatatt gcatttagta actaa                     1725
+
+
+<210>  29
+<211>  574
+<212>  PRT
+<213>  hRSV strain A2
+
+<400>  29
+
+Met Glu Leu Leu Ile Leu Lys Ala Asn Ala Ile Thr Thr Ile Leu Thr 
+1               5                   10                  15      
+
+
+Ala Val Thr Phe Cys Phe Ala Ser Gly Gln Asn Ile Thr Glu Glu Phe 
+            20                  25                  30          
+
+
+Tyr Gln Ser Thr Cys Ser Ala Val Ser Lys Gly Tyr Leu Ser Ala Leu 
+        35                  40                  45              
+
+
+Arg Thr Gly Trp Tyr Thr Ser Val Ile Thr Ile Glu Leu Ser Asn Ile 
+    50                  55                  60                  
+
+
+Lys Glu Asn Lys Cys Asn Gly Thr Asp Ala Lys Val Lys Leu Ile Lys 
+65                  70                  75                  80  
+
+
+Gln Glu Leu Asp Lys Tyr Lys Asn Ala Val Thr Glu Leu Gln Leu Leu 
+                85                  90                  95      
+
+
+Met Gln Ser Thr Pro Pro Thr Asn Asn Arg Ala Arg Arg Glu Leu Pro 
+            100                 105                 110         
+
+
+Arg Phe Met Asn Tyr Thr Leu Asn Asn Ala Lys Lys Thr Asn Val Thr 
+        115                 120                 125             
+
+
+Leu Ser Lys Lys Arg Lys Arg Arg Phe Leu Gly Phe Leu Leu Gly Val 
+    130                 135                 140                 
+
+
+Gly Ser Ala Ile Ala Ser Gly Val Ala Val Ser Lys Val Leu His Leu 
+145                 150                 155                 160 
+
+
+Glu Gly Glu Val Asn Lys Ile Lys Ser Ala Leu Leu Ser Thr Asn Lys 
+                165                 170                 175     
+
+
+Ala Val Val Ser Leu Ser Asn Gly Val Ser Val Leu Thr Ser Lys Val 
+            180                 185                 190         
+
+
+Leu Asp Leu Lys Asn Tyr Ile Asp Lys Gln Leu Leu Pro Ile Val Asn 
+        195                 200                 205             
+
+
+Lys Gln Ser Cys Ser Ile Ser Asn Ile Glu Thr Val Ile Glu Phe Gln 
+    210                 215                 220                 
+
+
+Gln Lys Asn Asn Arg Leu Leu Glu Ile Thr Arg Glu Phe Ser Val Asn 
+225                 230                 235                 240 
+
+
+Ala Gly Val Thr Thr Pro Val Ser Thr Tyr Met Leu Thr Asn Ser Glu 
+                245                 250                 255     
+
+
+Leu Leu Ser Leu Ile Asn Asp Met Pro Ile Thr Asn Asp Gln Lys Lys 
+            260                 265                 270         
+
+
+Leu Met Ser Asn Asn Val Gln Ile Val Arg Gln Gln Ser Tyr Ser Ile 
+        275                 280                 285             
+
+
+Met Ser Ile Ile Lys Glu Glu Val Leu Ala Tyr Val Val Gln Leu Pro 
+    290                 295                 300                 
+
+
+Leu Tyr Gly Val Ile Asp Thr Pro Cys Trp Lys Leu His Thr Ser Pro 
+305                 310                 315                 320 
+
+
+Leu Cys Thr Thr Asn Thr Lys Glu Gly Ser Asn Ile Cys Leu Thr Arg 
+                325                 330                 335     
+
+
+Thr Asp Arg Gly Trp Tyr Cys Asp Asn Ala Gly Ser Val Ser Phe Phe 
+            340                 345                 350         
+
+
+Pro Gln Ala Glu Thr Cys Lys Val Gln Ser Asn Arg Val Phe Cys Asp 
+        355                 360                 365             
+
+
+Thr Met Asn Ser Leu Thr Leu Pro Ser Glu Ile Asn Leu Cys Asn Val 
+    370                 375                 380                 
+
+
+Asp Ile Phe Asn Pro Lys Tyr Asp Cys Lys Ile Met Thr Ser Lys Thr 
+385                 390                 395                 400 
+
+
+Asp Val Ser Ser Ser Val Ile Thr Ser Leu Gly Ala Ile Val Ser Cys 
+                405                 410                 415     
+
+
+Tyr Gly Lys Thr Lys Cys Thr Ala Ser Asn Lys Asn Arg Gly Ile Ile 
+            420                 425                 430         
+
+
+Lys Thr Phe Ser Asn Gly Cys Asp Tyr Val Ser Asn Lys Gly Met Asp 
+        435                 440                 445             
+
+
+Thr Val Ser Val Gly Asn Thr Leu Tyr Tyr Val Asn Lys Gln Glu Gly 
+    450                 455                 460                 
+
+
+Lys Ser Leu Tyr Val Lys Gly Glu Pro Ile Ile Asn Phe Tyr Asp Pro 
+465                 470                 475                 480 
+
+
+Leu Val Phe Pro Ser Asp Glu Phe Asp Ala Ser Ile Ser Gln Val Asn 
+                485                 490                 495     
+
+
+Glu Lys Ile Asn Gln Ser Leu Ala Phe Ile Arg Lys Ser Asp Glu Leu 
+            500                 505                 510         
+
+
+Leu His Asn Val Asn Ala Gly Lys Ser Thr Thr Asn Ile Met Ile Thr 
+        515                 520                 525             
+
+
+Thr Ile Ile Ile Val Ile Ile Val Ile Leu Leu Ser Leu Ile Ala Val 
+    530                 535                 540                 
+
+
+Gly Leu Leu Leu Tyr Cys Lys Ala Arg Ser Thr Pro Val Thr Leu Ser 
+545                 550                 555                 560 
+
+
+Lys Asp Gln Leu Ser Gly Ile Asn Asn Ile Ala Phe Ser Asn 
+                565                 570                 
+
+
+<210>  30
+<211>  897
+<212>  DNA
+<213>  hRSV strain A2
+
+<400>  30
+atgagcaaga acaaggacca gcggaccgcc aagaccctgg aacggacctg ggacaccctg       60
+
+aaccatctgc tgttcatcag tagctgcctg tacaagctga acctgaagtc cgtggcccag      120
+
+atcaccctga gcatcctggc catgatcatc agcaccagcc tgatcattgc cgccatcatc      180
+
+tttatcgcca gcgccaacca caaagtgacc cccaccacag ccatcatcca ggacgccacc      240
+
+tcccagatca agaacaccac ccccacctac ctgacccaga accctcagct gggcatcagc      300
+
+cccagcaacc ccagcgagat caccagccag atcacaacca tcctggcctc caccacccct      360
+
+ggcgtgaagt ccaccctgca gagcaccacc gtgaaaacca agaataccac caccacacag      420
+
+acccagccca gcaagcccac caccaagcag agacagaaca agcccccctc caagcccaac      480
+
+aacgacttcc acttcgaggt gttcaacttc gtgccctgca gcatctgcag caacaacccc      540
+
+acctgttggg ccatctgcaa gcggatcccc aacaagaagc ccggcaagaa aaccacaacc      600
+
+aagcctacca agaagcctac cctgaaaacc accaagaagg accccaagcc ccagaccacc      660
+
+aagagcaaag aggtgccaac caccaagccc accgaggaac ccaccatcaa caccaccaag      720
+
+accaacatca tcaccaccct gctgacctcc aacaccaccg gcaaccccga gctgacaagc      780
+
+cagatggaaa ccttccacag caccagcagc gagggcaacc ctagccctag ccaggtgtcc      840
+
+accacctccg agtaccccag ccagcctagc agccccccca acacccccag acagtga         897
+
+
+<210>  31
+<211>  298
+<212>  PRT
+<213>  hRSV strain A2
+
+<400>  31
+
+Met Ser Lys Asn Lys Asp Gln Arg Thr Ala Lys Thr Leu Glu Arg Thr 
+1               5                   10                  15      
+
+
+Trp Asp Thr Leu Asn His Leu Leu Phe Ile Ser Ser Cys Leu Tyr Lys 
+            20                  25                  30          
+
+
+Leu Asn Leu Lys Ser Val Ala Gln Ile Thr Leu Ser Ile Leu Ala Met 
+        35                  40                  45              
+
+
+Ile Ile Ser Thr Ser Leu Ile Ile Ala Ala Ile Ile Phe Ile Ala Ser 
+    50                  55                  60                  
+
+
+Ala Asn His Lys Val Thr Pro Thr Thr Ala Ile Ile Gln Asp Ala Thr 
+65                  70                  75                  80  
+
+
+Ser Gln Ile Lys Asn Thr Thr Pro Thr Tyr Leu Thr Gln Asn Pro Gln 
+                85                  90                  95      
+
+
+Leu Gly Ile Ser Pro Ser Asn Pro Ser Glu Ile Thr Ser Gln Ile Thr 
+            100                 105                 110         
+
+
+Thr Ile Leu Ala Ser Thr Thr Pro Gly Val Lys Ser Thr Leu Gln Ser 
+        115                 120                 125             
+
+
+Thr Thr Val Lys Thr Lys Asn Thr Thr Thr Thr Gln Thr Gln Pro Ser 
+    130                 135                 140                 
+
+
+Lys Pro Thr Thr Lys Gln Arg Gln Asn Lys Pro Pro Ser Lys Pro Asn 
+145                 150                 155                 160 
+
+
+Asn Asp Phe His Phe Glu Val Phe Asn Phe Val Pro Cys Ser Ile Cys 
+                165                 170                 175     
+
+
+Ser Asn Asn Pro Thr Cys Trp Ala Ile Cys Lys Arg Ile Pro Asn Lys 
+            180                 185                 190         
+
+
+Lys Pro Gly Lys Lys Thr Thr Thr Lys Pro Thr Lys Lys Pro Thr Leu 
+        195                 200                 205             
+
+
+Lys Thr Thr Lys Lys Asp Pro Lys Pro Gln Thr Thr Lys Ser Lys Glu 
+    210                 215                 220                 
+
+
+Val Pro Thr Thr Lys Pro Thr Glu Glu Pro Thr Ile Asn Thr Thr Lys 
+225                 230                 235                 240 
+
+
+Thr Asn Ile Ile Thr Thr Leu Leu Thr Ser Asn Thr Thr Gly Asn Pro 
+                245                 250                 255     
+
+
+Glu Leu Thr Ser Gln Met Glu Thr Phe His Ser Thr Ser Ser Glu Gly 
+            260                 265                 270         
+
+
+Asn Pro Ser Pro Ser Gln Val Ser Thr Thr Ser Glu Tyr Pro Ser Gln 
+        275                 280                 285             
+
+
+Pro Ser Ser Pro Pro Asn Thr Pro Arg Gln 
+    290                 295             
+
+
+<210>  32
+<211>  585
+<212>  DNA
+<213>  hRSV strain A2
+
+<400>  32
+atgtcacgaa ggaatccttg caaatttgaa attcgaggtc attgcttaaa tggtaagagg       60
+
+tgtcatttta gtcataatta ttttgaatgg ccaccccatg cactgcttgt aagacaaaac      120
+
+tttatgttaa acagaatact taagtctatg gataaaagta tagatacctt atcagaaata      180
+
+agtggagctg cagagttgga cagaacagaa gagtatgctc ttggtgtagt tggagtgcta      240
+
+gagagttata taggatcaat aaacaatata actaaacaat cagcatgtgt tgccatgagc      300
+
+aaactcctca ctgaactcaa tagtgatgat atcaaaaagc tgagggacaa tgaagagcta      360
+
+aattcaccca agataagagt gtacaatact gtcatatcat atattgaaag caacaggaaa      420
+
+aacaataaac aaactatcca tctgttaaaa agattgccag cagacgtatt gaagaaaacc      480
+
+atcaaaaaca cattggatat ccataagagc ataaccatca acaacccaaa agaatcaact      540
+
+gttagtgata caaatgacca tgccaaaaat aatgatacta cctga                      585
+
+
+<210>  33
+<211>  194
+<212>  PRT
+<213>  hRSV strain A2
+
+<400>  33
+
+Met Ser Arg Arg Asn Pro Cys Lys Phe Glu Ile Arg Gly His Cys Leu 
+1               5                   10                  15      
+
+
+Asn Gly Lys Arg Cys His Phe Ser His Asn Tyr Phe Glu Trp Pro Pro 
+            20                  25                  30          
+
+
+His Ala Leu Leu Val Arg Gln Asn Phe Met Leu Asn Arg Ile Leu Lys 
+        35                  40                  45              
+
+
+Ser Met Asp Lys Ser Ile Asp Thr Leu Ser Glu Ile Ser Gly Ala Ala 
+    50                  55                  60                  
+
+
+Glu Leu Asp Arg Thr Glu Glu Tyr Ala Leu Gly Val Val Gly Val Leu 
+65                  70                  75                  80  
+
+
+Glu Ser Tyr Ile Gly Ser Ile Asn Asn Ile Thr Lys Gln Ser Ala Cys 
+                85                  90                  95      
+
+
+Val Ala Met Ser Lys Leu Leu Thr Glu Leu Asn Ser Asp Asp Ile Lys 
+            100                 105                 110         
+
+
+Lys Leu Arg Asp Asn Glu Glu Leu Asn Ser Pro Lys Ile Arg Val Tyr 
+        115                 120                 125             
+
+
+Asn Thr Val Ile Ser Tyr Ile Glu Ser Asn Arg Lys Asn Asn Lys Gln 
+    130                 135                 140                 
+
+
+Thr Ile His Leu Leu Lys Arg Leu Pro Ala Asp Val Leu Lys Lys Thr 
+145                 150                 155                 160 
+
+
+Ile Lys Asn Thr Leu Asp Ile His Lys Ser Ile Thr Ile Asn Asn Pro 
+                165                 170                 175     
+
+
+Lys Glu Ser Thr Val Ser Asp Thr Asn Asp His Ala Lys Asn Asn Asp 
+            180                 185                 190         
+
+
+Thr Thr 
+        
+
+
+<210>  34
+<211>  1176
+<212>  DNA
+<213>  hRSV strain A2
+
+<400>  34
+atggctctta gcaaagtcaa gttgaatgat acactcaaca aagatcaact tctgtcatcc       60
+
+agcaaataca ccatccaacg gagcacagga gatagtattg atactcctaa ttatgatgtg      120
+
+cagaaacaca tcaataagtt atgtggcatg ttattaatca cagaagatgc taatcataaa      180
+
+ttcactgggt taataggtat gttatatgcg atgtctaggt taggaagaga agacaccata      240
+
+aaaatactca gagatgcggg atatcatgta aaagcaaatg gagtagatgt aacaacacat      300
+
+cgtcaagaca ttaatggaaa agaaatgaaa tttgaagtgt taacattggc aagcttaaca      360
+
+actgaaattc aaatcaacat tgagatagaa tctagaaaat cctacaaaaa aatgctaaaa      420
+
+gaaatgggag aggtagctcc agaatacagg catgactctc ctgattgtgg gatgataata      480
+
+ttatgtatag cagcattagt aataactaaa ttagcagcag gggacagatc tggtcttaca      540
+
+gccgtgatta ggagagctaa taatgtccta aaaaatgaaa tgaaacgtta caaaggctta      600
+
+ctacccaagg acatagccaa cagcttctat gaagtgtttg aaaaacatcc ccactttata      660
+
+gatgtttttg ttcattttgg tatagcacaa tcttctacca gaggtggcag tagagttgaa      720
+
+gggatttttg caggattgtt tatgaatgcc tatggtgcag ggcaagtgat gttacggtgg      780
+
+ggagtcttag caaaatcagt taaaaatatt atgttaggac atgctagtgt gcaagcagaa      840
+
+atggaacaag ttgttgaggt ttatgaatat gcccaaaaat tgggtggtga agcaggattc      900
+
+taccatatat tgaacaaccc aaaagcatca ttattatctt tgactcaatt tcctcacttc      960
+
+tccagtgtag tattaggcaa tgctgctggc ctaggcataa tgggagagta cagaggtaca     1020
+
+ccgaggaatc aagatctata tgatgcagca aaggcatatg ctgaacaact caaagaaaat     1080
+
+ggtgtgatta actacagtgt actagacttg acagcagaag aactagaggc tatcaaacat     1140
+
+cagcttaatc caaaagataa tgatgtagag ctttga                               1176
+
+
+<210>  35
+<211>  391
+<212>  PRT
+<213>  hRSV strain A2
+
+<400>  35
+
+Met Ala Leu Ser Lys Val Lys Leu Asn Asp Thr Leu Asn Lys Asp Gln 
+1               5                   10                  15      
+
+
+Leu Leu Ser Ser Ser Lys Tyr Thr Ile Gln Arg Ser Thr Gly Asp Ser 
+            20                  25                  30          
+
+
+Ile Asp Thr Pro Asn Tyr Asp Val Gln Lys His Ile Asn Lys Leu Cys 
+        35                  40                  45              
+
+
+Gly Met Leu Leu Ile Thr Glu Asp Ala Asn His Lys Phe Thr Gly Leu 
+    50                  55                  60                  
+
+
+Ile Gly Met Leu Tyr Ala Met Ser Arg Leu Gly Arg Glu Asp Thr Ile 
+65                  70                  75                  80  
+
+
+Lys Ile Leu Arg Asp Ala Gly Tyr His Val Lys Ala Asn Gly Val Asp 
+                85                  90                  95      
+
+
+Val Thr Thr His Arg Gln Asp Ile Asn Gly Lys Glu Met Lys Phe Glu 
+            100                 105                 110         
+
+
+Val Leu Thr Leu Ala Ser Leu Thr Thr Glu Ile Gln Ile Asn Ile Glu 
+        115                 120                 125             
+
+
+Ile Glu Ser Arg Lys Ser Tyr Lys Lys Met Leu Lys Glu Met Gly Glu 
+    130                 135                 140                 
+
+
+Val Ala Pro Glu Tyr Arg His Asp Ser Pro Asp Cys Gly Met Ile Ile 
+145                 150                 155                 160 
+
+
+Leu Cys Ile Ala Ala Leu Val Ile Thr Lys Leu Ala Ala Gly Asp Arg 
+                165                 170                 175     
+
+
+Ser Gly Leu Thr Ala Val Ile Arg Arg Ala Asn Asn Val Leu Lys Asn 
+            180                 185                 190         
+
+
+Glu Met Lys Arg Tyr Lys Gly Leu Leu Pro Lys Asp Ile Ala Asn Ser 
+        195                 200                 205             
+
+
+Phe Tyr Glu Val Phe Glu Lys His Pro His Phe Ile Asp Val Phe Val 
+    210                 215                 220                 
+
+
+His Phe Gly Ile Ala Gln Ser Ser Thr Arg Gly Gly Ser Arg Val Glu 
+225                 230                 235                 240 
+
+
+Gly Ile Phe Ala Gly Leu Phe Met Asn Ala Tyr Gly Ala Gly Gln Val 
+                245                 250                 255     
+
+
+Met Leu Arg Trp Gly Val Leu Ala Lys Ser Val Lys Asn Ile Met Leu 
+            260                 265                 270         
+
+
+Gly His Ala Ser Val Gln Ala Glu Met Glu Gln Val Val Glu Val Tyr 
+        275                 280                 285             
+
+
+Glu Tyr Ala Gln Lys Leu Gly Gly Glu Ala Gly Phe Tyr His Ile Leu 
+    290                 295                 300                 
+
+
+Asn Asn Pro Lys Ala Ser Leu Leu Ser Leu Thr Gln Phe Pro His Phe 
+305                 310                 315                 320 
+
+
+Ser Ser Val Val Leu Gly Asn Ala Ala Gly Leu Gly Ile Met Gly Glu 
+                325                 330                 335     
+
+
+Tyr Arg Gly Thr Pro Arg Asn Gln Asp Leu Tyr Asp Ala Ala Lys Ala 
+            340                 345                 350         
+
+
+Tyr Ala Glu Gln Leu Lys Glu Asn Gly Val Ile Asn Tyr Ser Val Leu 
+        355                 360                 365             
+
+
+Asp Leu Thr Ala Glu Glu Leu Glu Ala Ile Lys His Gln Leu Asn Pro 
+    370                 375                 380                 
+
+
+Lys Asp Asn Asp Val Glu Leu 
+385                 390     
+
+
+<210>  36
+<211>  27
+<212>  DNA
+<213>  Artificial
+
+<220>
+<223>  RT-PCR primer.
+
+<400>  36
+gaactcagtg taggtagaat gtttgca                                           27
+
+
+<210>  37
+<211>  25
+<212>  DNA
+<213>  Artificial
+
+<220>
+<223>  RT-PCR primer.
+
+<400>  37
+ttcagctatc attttctctg ccaat                                             25
+
+
+<210>  38
+<211>  27
+<212>  DNA
+<213>  Artificial
+
+<220>
+<223>  RT-PCR probe.
+
+<400>  38
+tttgaacctg tctgaacatt cccggtt                                           27
+
+
+<210>  39
+<211>  40
+<212>  DNA
+<213>  Artificial
+
+<220>
+<223>  Synthetic promoter.
+
+<400>  39
+aaaaattgaa attttatttt ttttttttgg aatataaata                             40
+
+
+<210>  40
+<211>  104
+<212>  DNA
+<213>  Artificial
+
+<220>
+<223>  Synthetic promoter.
+
+<400>  40
+tccaaaccca cccgcttttt atagtaagtt tttcacccat aaataataaa tacaataatt       60
+
+aatttctcgt aaaagtagaa aatatattct aatttattgc acgg                       104
+
+
+<210>  41
+<211>  73
+<212>  DNA
+<213>  Artificial
+
+<220>
+<223>  Synthetic promoter.
+
+<400>  41
+taaaaattga aaaaatattc taatttatag gacggttttg attttctttt tttctattct       60
+
+ataaataata aat                                                          73
+
+
+<210>  42
+<211>  227
+<212>  DNA
+<213>  Artificial
+
+<220>
+<223>  Synthetic promoter.
+
+<400>  42
+gttttgaaaa tttttttata ataaatatcc ggtaaaaatt gaaaaactat tctaatttat       60
+
+tgcacggtcc ggtaaaaatt gaaaaactat tctaatttat tgcacggtcc ggtaaaaatt      120
+
+gaaaaactat tctaatttat tgcacggtcc ggtaaaaatt gaaaaactat tctaatttat      180
+
+tgcacggtcc ggtaaaaatt gaaaaactat tctaatttat tgcacgg                    227
+
+
+<210>  43
+<211>  112
+<212>  DNA
+<213>  Artificial
+
+<220>
+<223>  Synthetic promoter.
+
+<400>  43
+tacttaaaaa ttgaaaataa atacaaaggt tcttgagggt tgtgttaaat tgaaagcgag       60
+
+aaataatcat aaataatttc attatcgcga tatccgttaa gtttgtatcg ta              112
+
+

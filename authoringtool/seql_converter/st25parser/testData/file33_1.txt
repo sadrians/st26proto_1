@@ -1,0 +1,70 @@
+
+                                SEQUENCE LISTING
+
+<110> Merck Sharp & Dohme Corp.
+      Chen, Zhiyu
+      Lancaster, Thomas M.
+      Zion, Todd C.
+
+<120> DRUG-LIGAND CONJUGATES, SYTHESIS
+  THEREOF, AND INTERMEDIATES THERETO
+  
+
+<130> 23016
+
+<150> 61/368,597          
+<151> 2010-07-28  
+
+<160> 3
+
+<170> FastSEQ for Windows Version 4.0
+
+<210> 1
+<211> 23
+<212> PRT
+<213> Artificial Sequence
+
+<220> 
+<223> Insulin analog A-chain
+
+<400> 1
+Xaa Gly Ile Val Glu Gln Cys Cys Xaa Xaa Xaa Cys Ser Leu Tyr Gln
+ 1               5                  10                  15      
+Leu Glu Xaa Tyr Cys Xaa Xaa
+            20              
+
+
+<210> 2
+<212> DNA
+<213> Artificial Sequence
+
+<220> 
+<223> Encodes RHI-1
+
+<400> 2
+atgagattcc catctatctt cactgctgtt ttgttcgctg cttcttctgc tttggctgct 60
+cctgttaaca ctactactga agacgaaact gctcaaatcc cagctgaagc ggttatcggt 120
+tactctgact tggaaggtga cttcgacgtt gctgttttgc ctttctctaa ctctactaat 180
+aatggtttgt tgttcatcaa cactactatc gcttctatcg ctgctaagga agagggtgtt 240
+tctatggcta agagagaaga agctgaagct gaagctgaac caaagtttgt taaccaacac 300
+ttgtgtggtt ctcacttggt tgaagctttg tacttggttt gtggtgaaag aggtttcttc 360
+tacactccaa aggctgctaa gggtatcgtt gaacaatgtt gtacttctat ctgttctttg 420
+taccaattgg aaaactactg taactaa                                     447
+
+<210> 3
+<211> 435
+<212> DNA
+<213> Artificial Sequence
+
+<220> 
+<223> Encodes RHI-2
+
+<400> 3
+atgagattcc catctatctt cactgctgtt ttgttcgctg cttcttctgc tttggctgct 60
+cctgttaaca ctactactga agacgaaact gctcaaatcc cagctgaagc ggttatcggt 120
+tactctgact tggaaggtga cttcgacgtt gctgttttgc ctttctctaa ctctactaat 180
+aatggtttgt tgttcatcaa cactactatc gcttctatcg ctgctaagga agagggtgtt 240
+tctatggcta agagagacga cggtgaccca agatttgtta accaacactt gtgtggttct 300
+cacttggttg aagctttgta cttggtttgt ggtgaaagag gtttcttcta cactccaaag 360
+gacgaaagag gtatcgttga acaatgttgt acttctatct gttctttgta ccaattggaa 420
+aactactgta actaa                                                  435

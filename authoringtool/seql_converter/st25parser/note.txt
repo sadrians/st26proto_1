@@ -1,0 +1,3 @@
+2 jul 2016
+- this is a copy of the seqlparser package from seqlvalidator prj
+- further extended to implement support for applicant field 

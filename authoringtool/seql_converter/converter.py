@@ -13,12 +13,22 @@ django.setup()
 from django.template.loader import render_to_string
 from django.utils import timezone
 
-from sequencelistings.models import SequenceListing, Title, Sequence, Feature, Qualifier 
+from st25parser.seqlparser import SequenceListing as Seql_st25
+
+from sequencelistings.models import SequenceListing  as Seql_st26, Title, Sequence, Feature, Qualifier 
 
 class St25To26Converter(object):
     
+    def __init__(self, st25FilePath):
+        base = os.path.basename(st25FilePath)
+        self.fileName = os.path.splitext(base)[0]
+        
+        self.seql_st25 = Seql_st25(st25FilePath)
+        
+    
     def createInMemorySeql(self):
-        sl = SequenceListing(
+        
+        self.seql_st26 = Seql_st26(
                 fileName = 'test_xmlsqlyyy',
                 dtdVersion = '1',
                 softwareName = 'prototype',
@@ -44,7 +54,7 @@ class St25To26Converter(object):
                 inventorNameLatin = 'Mary Dupont',        
                 ) 
         
-        return sl 
+        return self.seql_st26 
     
     def createXmlFile(self, sl, outputDir):
         xml = render_to_string('xml_template.xml', {'sequenceListing': sl,
@@ -55,16 +65,16 @@ class St25To26Converter(object):
         with open(xmlFilePath, 'w') as gf:
             gf.write(xml) 
         
-def test_createInMemorySeql():
-    sc = St25To26Converter()
-    sl = sc.createInMemorySeql()
-    print 'Seql'
-    print sl
-    outDir = r'/Users/ad/pyton/projects/test/xml_output'
-    sc.createXmlFile(sl, outDir)
-    print 'Created xml file.'
-#     print 'is editable:', sl.isEditable
-#     print 'applicant reference:', sl.applicantFileReference
-#     print 'Done.'
-    
-test_createInMemorySeql()
+# def test_createInMemorySeql():
+#     sc = St25To26Converter()
+#     sl = sc.createInMemorySeql()
+#     print 'Seql'
+#     print sl
+#     outDir = r'/Users/ad/pyton/projects/test/xml_output'
+#     sc.createXmlFile(sl, outDir)
+#     print 'Created xml file.'
+# #     print 'is editable:', sl.isEditable
+# #     print 'applicant reference:', sl.applicantFileReference
+# #     print 'Done.'
+#     
+# test_createInMemorySeql()

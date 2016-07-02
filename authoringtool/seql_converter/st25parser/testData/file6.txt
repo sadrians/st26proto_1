@@ -1,0 +1,76 @@
+	Sequence Listing
+
+<110>	Smith, John; Smithgene Inc.	 
+<120>	Example of a Sequence Listing	 
+<130>	01‑00001	 
+<140>	PCT/EP98/00001	 
+<141>	1998‑12‑31	 
+<150>	US 08/999,999	 
+<151>	1997‑10‑15	 
+<160>	4	 
+<170>	PatentIn version 2.0	 
+
+<210>	1	 
+<211>	389	 
+<212>	DNA	 
+<213>	Paramecium sp.	 
+
+<220>	 	 
+<221>	CDS	 
+<222>	(279)...(389)	 
+
+<300>	 	 
+<301>	Doe, Richard	 
+<302>	Isolation and Characterization of a Gene Encoding a Protease from Paramecium sp.	 
+<303>	Journal of Genes	 
+<304>	1	 
+<305>	4	 
+<306>	1-7	 
+<307>	1988‑06‑31	 
+<308>	123456	 
+<309>	1988‑06‑31	 
+
+<400>	1	 
+agctgtagtc	attcctgtgt	cctcttctct	ctgggcttct	Caccctgcta	atcagatctc	 	    60
+agggagagtg	tcttgaccct	cctctgcctt	tgcagcttca	Caggcaggca	ggcaggcagc	 	  120
+tgatgtggca	attgctggca	gtgccacagg	cttttcagcc	Aggcttaggg	tgggttccgc	 	  180
+cgcggcgcgg	cggcccctct	cgcgctcctc	tcgcgcctct	Ctctcgctct	cctctcgctc	 	  240
+ggacctgatt	aggtgagcag	gaggaggggg	cagttagc	atg	Gtt	tca	atg	ttc	agc	296	 
+ 	 	 	 	                                Met	Val	Ser	Met	Phe	Ser	 	 
+ 	 	 	 	                                1	 	 	 	5	 	 	 
+ttg	tct	ttc	aaa	tgg	cct	gga	ttt	tgt	ttg	ttt	Gtt	tgt	ttg	ttc	caa	344	 
+Leu	Ser	Phe	Lys	Trp	Pro	Gly	Phe	Cys	Leu	Phe	Val	Cys	Leu	Phe	Gln	 	 
+ 	 	 	10	 	 	 	 	15	 	 	 	 	20	 	 	 	 
+tgt	ccc	aaa	gtc	ctc	ccc	tgt	cac	tca	tca	ctg	Cag	ccg	aat	ctt	 	389	 
+Cys	Pro	Lys	Val	Leu	Pro	Cys	His	Ser	Ser	Leu	Gln	Pro	Asn	Leu	 	 	 
+ 	 	25	 	 	 	 	30	 	 	 	 	35	 	 	 	 	 
+
+<210>	2	 
+<211>	37	 
+<212>	PRT	 
+<213>	Paramecium sp.	 
+
+<400>	2	 
+Met	Val	Ser	Met	Phe	Ser	Leu	Ser	Phe	Lys	Trp	Pro	Gly	Phe	Cys	Leu	 
+1	 	 	 	5	 	 	 	 	10	 	 	 	 	15	 	 
+Phe	Val	Cys	Leu	Phe	Gln	Cys	Pro	Lys	Val	Leu	Pro	Cys	His	Ser	Ser	 
+ 	 	 	20	 	 	 	 	25	 	 	 	 	30	 	 	 
+Leu	Gln	Pro	Asn	Leu	 	 	 	 	 	 	 	 	 	 	 	 
+ 	 	35	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+
+<210>	3	 
+<211>	11	 
+<212>	PRT	 
+<213>	Artificial Sequence	 
+<220>	 	 
+<223>	Designed peptide based on size and polarity to act as a linker between the alpha and beta chains of Protein XYZ.	 
+
+<400>	3	 
+Met	Val	Asn	Leu	Glu	Pro	Met	His	Thr	Glu	Ile	 
+1	 	 	 	5	 	 	 	 	10	 	 
+
+<210>	4	 
+
+<400>	4	 
+
+000	 

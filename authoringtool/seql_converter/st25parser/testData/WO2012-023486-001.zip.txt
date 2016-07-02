@@ -1,0 +1,69 @@
+<110>  KANEKA CORPORATION
+
+<110>  UNIVERSITY CORPORATION KANSAI UNIVERSITY
+
+<110>  ICHIEI., LTD
+
+<120>  ICE CRYSTALLIZATION-INHIBITING PROTEIN
+
+<130>  F11-034PCT
+
+<150>  JP 2010-181795
+<151>  2010-8-16
+
+<160>  5
+
+<210>  SEQ  ID NO: 1
+<211>  22
+<212>  PRT
+<213>  Flammulina velutipes
+
+<400>  SEQ ID NO: 1
+Leu Gly Pro Ala Pro Val Pro Leu Gly Ser Ala Glu Asn Phe Ala
+                5                   10                  15
+Val Leu Ser Glu Thr Gly Val
+                20
+
+<210>  SEQ  ID NO: 2
+<211>  22
+<212>  PRT
+<213>  Flammulina velutipes
+
+<400>  SEQ ID NO: 2
+Leu Gly Pro Ala Pro Val Pro Leu Gly Lys Ala Glu Asn Phe Ala
+                5                   10                  15
+Val Leu Ser Glu Thr Gly Val
+                20
+
+<210>  SEQ  ID NO: 3
+<211>  22
+<212>  PRT
+<213>  Flammulina velutipes
+
+<400>  SEQ ID NO: 3
+Leu Gly Pro Ala Pro Val Pro Leu Gly Ser Ala Glu Asn Phe Ala
+                5                   10                  15
+Ile Leu Ser Glu Thr Gly Val
+                20
+
+<210>  SEQ  ID NO: 4
+<211>  22
+<212>  PRT
+<213>  Flammulina velutipes
+
+<400>  SEQ ID NO: 4
+Leu Gly Pro Ala Pro Val Pro Leu Gly Lys Ala Glu Asn Phe Ala
+                5                   10                  15
+Ile Leu Ser Glu Thr Gly Val
+                20
+
+<210>  SEQ  ID NO: 5
+<211>  20
+<212>  PRT
+<213>  Flammulina velutipes
+
+<400>  SEQ ID NO: 5
+Thr Ala Tyr Asn Asp Ala Gln Gly Arg Val Asn Pro Asp Phe Thr
+                5                   10                  15
+Asn Leu Leu Ala Gly
+                20
