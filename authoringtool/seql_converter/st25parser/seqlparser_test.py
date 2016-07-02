@@ -7,10 +7,12 @@ Updated on 2 Jul 2016
 import django
 django.setup()
 
+from django.conf import settings
 import unittest
 import os
 
 from seqlparser import SequenceListing
+import seqlutils
 
 def withMethodName(func):
     def inner(*args, **kwargs):
@@ -22,63 +24,37 @@ class Test(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-
-        infilename1 = os.path.join('testdata', 'file1.txt')
-        cls.sl1 = SequenceListing(infilename1)
-
-        infilename2 = os.path.join('testdata', 'file2.txt')
-        cls.sl2 = SequenceListing(infilename2)
-
-        cls.infilename5 = os.path.join('testdata', 'file5.txt')
-        cls.sl5 = SequenceListing(cls.infilename5)
-
-        infilename6 = os.path.join('testdata', 'file6.txt')
-        cls.sl6 = SequenceListing(infilename6)
-
-        infilename32 = os.path.join('testdata', 'file32.txt')
-        cls.sl32 = SequenceListing(infilename32)
-        #
-        # infilename32_1 = os.path.join('testdata', 'file32_1.txt')
-        # cls.sl32_1 = SequenceListing(infilename32_1)
-
-        # 120 is missing
-        infilename32_2 = os.path.join('testdata', 'file32_2.txt')
-        cls.sl32_2 = SequenceListing(infilename32_2)
-
-        # 120 is empty
-        infilename32_3 = os.path.join('testdata', 'file32_3.txt')
-        cls.sl32_3 = SequenceListing(infilename32_3)
-
-        infilename32_4 = os.path.join('testdata', 'file32_4.txt')
-        cls.sl32_4 = SequenceListing(infilename32_4)
-
-        # closing bracket missing from 120
-        infilename32_5 = os.path.join('testdata', 'file32_5.txt') #closing bracket missing from 120
-        cls.sl32_5 = SequenceListing(infilename32_5)
-
-        # seq 3 is missing
-        infilename32_8 = os.path.join('testdata', 'file32_8.txt')
-        cls.sl32_8 = SequenceListing(infilename32_8)
+        def getAbsPath(aFileName):
+            return os.path.join(settings.BASE_DIR, 'seql_converter', 'st25parser', 'testData', aFileName)
+        def getSeql(aFileName):
+            return SequenceListing(getAbsPath(aFileName))
         
-        # 110 is empty
-        infilename32_9 = os.path.join('testdata', 'file32_9.txt')
-        cls.sl32_9 = SequenceListing(infilename32_9)
-
-        infilename33_1 = os.path.join('testdata', 'file33_1.txt')
-        cls.sl33_1 = SequenceListing(infilename33_1)
-
-        f6083_1 = os.path.join('testdata', 'WO2012-006083_1.txt')
-        cls.sl6083_1 = SequenceListing(f6083_1)
-        #
-        # infilename016177 = os.path.join('testdata', 'WO2012-016177-001.zip.txt')
-
-        # what's special with this sl?
-        infilename058291 = os.path.join('testdata', 'WO2012-058291-001.zip.txt')
-        cls.sl058291 = SequenceListing(infilename058291)
-
-        # not sequence listing file
-        infilenameSumRep = os.path.join('testdata', 'Summary_Report.log')
-        cls.sl_sumRep = SequenceListing(infilenameSumRep)
+#         infilename1 = os.path.join(settings.BASE_DIR, 'seql_converter', 'st25parser', 'testData', 'file1.txt')
+#         cls.sl1 = SequenceListing(infilename1)
+        
+        cls.sl1 = getSeql('file1.txt')
+        cls.sl2 = getSeql('file2.txt')
+        cls.sl5 = getSeql('file5.txt')
+        cls.sl6 = getSeql('file6.txt')
+        cls.sl32 = getSeql('file32.txt')
+        cls.sl32_2 = getSeql('file32_2.txt') # 120 is missing
+        cls.sl32_3 = getSeql('file32_3.txt') # 120 is empty
+        cls.sl32_4 = getSeql('file32_4.txt')
+        cls.sl32_5 = getSeql('file32_5.txt') # closing bracket missing from 120
+        cls.sl32_8 = getSeql('file32_8.txt') # seq 3 is missing
+        cls.sl32_9 = getSeql('file32_9.txt') # 110 is empty
+        cls.sl33_1 = getSeql('file33_1.txt')
+        cls.sl6083_1 = getSeql('WO2012-006083_1.txt')
+        cls.sl058291 = getSeql('WO2012-058291-001.zip.txt') # what's special with this sl?
+        cls.sl_input_no_seql = getSeql('no_st25_example.txt') # not sequence listing file
+                
+        infilename1 = getAbsPath('file1.txt')
+        infilename2 = getAbsPath('file2.txt')
+        infilename5 = getAbsPath('file5.txt')
+        infilename6 = getAbsPath('file6.txt')
+        infilename32 = getAbsPath('file32.txt')
+        infilename33_1 = getAbsPath('file33_1.txt')
+        f6083_1 = getAbsPath('WO2012-006083_1.txt')
 
         cls.seq1_1 = SequenceListing.getSequenceFromFile(infilename1, 1)
         cls.seq1_2 = SequenceListing.getSequenceFromFile(infilename1, 2)
@@ -88,9 +64,9 @@ class Test(unittest.TestCase):
         #
         cls.seq2_3 = SequenceListing.getSequenceFromFile(infilename2, 3)
 
-        cls.seq5_5 = SequenceListing.getSequenceFromFile(cls.infilename5, 5)
-        cls.seq5_37 = SequenceListing.getSequenceFromFile(cls.infilename5, 37)
-        cls.seq5_40 = SequenceListing.getSequenceFromFile(cls.infilename5, 40)
+        cls.seq5_5 = SequenceListing.getSequenceFromFile(infilename5, 5)
+        cls.seq5_37 = SequenceListing.getSequenceFromFile(infilename5, 37)
+        cls.seq5_40 = SequenceListing.getSequenceFromFile(infilename5, 40)
 
         cls.seq6_1 = SequenceListing.getSequenceFromFile(infilename6, 1)
         cls.seq6_4 = SequenceListing.getSequenceFromFile(infilename6, 4) # skip code
@@ -108,7 +84,7 @@ class Test(unittest.TestCase):
     @withMethodName
     def test_isSeql(self):
         self.assertTrue(self.sl1.isSeql)
-        self.assertTrue(not self.sl_sumRep.isSeql)
+        self.assertTrue(not self.sl_input_no_seql.isSeql)
         self.assertTrue(not SequenceListing('abc').isSeql)
         print 'xxx'
         # test if closing bracket missing from 120

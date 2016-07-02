@@ -5,6 +5,7 @@ Created on Jul 2, 2016
 '''
 import unittest
 import os 
+from django.conf import settings 
 from converter import St25To26Converter 
 
 def withMethodName(func):
@@ -15,7 +16,6 @@ def withMethodName(func):
 
 class Test_St25To26Converter(unittest.TestCase):
 
-
     def setUp(self):
         pass
 
@@ -25,11 +25,10 @@ class Test_St25To26Converter(unittest.TestCase):
 
     @withMethodName
     def test_init(self):
-        fp = os.path.join('test', 'testdata', 'WO2013041670.txt')
+        fp = os.path.join(settings.BASE_DIR, 'seql_converter', 'test', 'testdata', 'WO2013041670.txt')
         sc = St25To26Converter(fp)
         
         self.assertEqual('WO2013041670', sc.fileName)
-
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
