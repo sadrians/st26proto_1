@@ -21,55 +21,6 @@ def myCopyScript(aFileName):
     copySequenceListing(sl)
     print 'Done with copying', aFileName
 
-
-def createInMemorySeql():
-    sl = SequenceListing(
-            fileName = 'test_xmlsqlxxx',
-            dtdVersion = '1',
-            softwareName = 'prototype',
-            softwareVersion = '0.1',
-            productionDate = timezone.now().date(),
-              
-            applicantFileReference = '123',
-       
-            IPOfficeCode = 'EP',
-            applicationNumberText = '2015123456',
-            filingDate = timezone.now().date(),
-           
-            earliestPriorityIPOfficeCode = 'US',
-            earliestPriorityApplicationNumberText = '998877',
-            earliestPriorityFilingDate = timezone.now().date(),
-           
-            applicantName = 'John Smith',
-            applicantNameLanguageCode = 'EN',
-            applicantNameLatin = 'same',
-           
-            inventorName = 'Mary Dupont',
-            inventorNameLanguageCode = 'FR',
-            inventorNameLatin = 'Mary Dupont',        
-            ) 
-    
-    return sl 
-
-def test_createInMemorySeql():
-    sl = createInMemorySeql()
-    print 'Seql'
-    print sl
-    print 'is editable:', sl.isEditable
-    print 'applicant reference:', sl.applicantFileReference
-    print 'Done.'
-    
-# test_createInMemorySeql()
-# seqls = SequenceListing.objects.all()
-# print seqls 
-# for sl in seqls:
-#     print sl
-#     print 'is editable:', sl.isEditable
-
-
-
-
-
 # myCopyScript('Invention_SEQL')
 
 # print 'GGGX'*100

@@ -121,6 +121,7 @@ def expandFormula(aFormula):
     return result 
 
 def helper_generateXml(sl):
+#     TODO: can eliminate sequences param as it can be obtained by the client from sl
     xml = render_to_string('xml_template.xml', {'sequenceListing': sl,
                             'sequences': sl.sequence_set.all(),
                             }).encode('utf-8', 'strict')
