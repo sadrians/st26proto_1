@@ -6,13 +6,7 @@
                     softwareName="prototype" 
                     softwareVersion="0.1"
                     productionDate="">
-<!-- <ST26SequenceListing dtdVersion="1" 
-                    fileName="file1"
-                    softwareName="prototype" 
-                    softwareVersion="0.1"
-                    productionDate="July 3, 2016"
-                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                    xsi:noNamespaceSchemaLocation="st26.xsd"> -->
+
     <ApplicationIdentification>
         <IPOfficeCode>XX</IPOfficeCode>
         <ApplicationNumberText>61536464</ApplicationNumberText>
@@ -37,9 +31,73 @@
         -
     </InventorNameLatin>
     
+        <InventionTitle languageCode="XX">
+            COMPOSITIONS AND METHODS REGARDING DIRECT NADH UTILIZATION TO PRODUCE 3-HYDROXYPROPIONIC ACID AND RELATED CHEMICALS AND PRODUCTS
+        </InventionTitle>
+    
     
     <SequenceTotalQuantity>
         4
     </SequenceTotalQuantity>
+    
+        <SequenceData sequenceIDNumber="1">
+            <INSDSeq>
+                <INSDSeq_length>29</INSDSeq_length>
+                <INSDSeq_moltype>PRT</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MSGTGRLAGKIALITGGAGNIGSELTRRF</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="2">
+            <INSDSeq>
+                <INSDSeq_length>49</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>ttgaccaagctggggaccccggtcccttgggaccagtggcagaggagtc</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="3">
+            <INSDSeq>
+                <INSDSeq_length>61</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>atgatgatgatgatgatgtacctgcagaccccgtttccctggtgccagtggcagaggagtc</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="4">
+            <INSDSeq>
+                <INSDSeq_length>32</INSDSeq_length>
+                <INSDSeq_moltype>PRT</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>-</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>METKAIIAALLMVTAANADKICIGYQSTNSTE</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
       
 </ST26SequenceListing>

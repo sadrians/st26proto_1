@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "resources/ST26SequenceListing_V1_0.dtd">
+<?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>
+<ST26SequenceListing dtdVersion="{{sequenceListing.dtdVersion}}" 
+                    fileName="{{sequenceListing.fileName}}"
+                    softwareName="{{sequenceListing.softwareName}}" 
+                    softwareVersion="{{sequenceListing.softwareVersion}}"
+                    productionDate="{{sequenceListing.productionDate.date}}">
+
+    <ApplicationIdentification>
+        <IPOfficeCode>{{sequenceListing.IPOfficeCode}}</IPOfficeCode>
+        <ApplicationNumberText>{{sequenceListing.applicationNumberText}}</ApplicationNumberText>
+        <FilingDate>{{sequenceListing.filingDate}}</FilingDate>
+    </ApplicationIdentification>
+    <ApplicantFileReference>{{sequenceListing.applicantFileReference}}</ApplicantFileReference>
+    <EarliestPriorityApplicationIdentification>
+        <IPOfficeCode>{{sequenceListing.earliestPriorityIPOfficeCode}}</IPOfficeCode>
+        <ApplicationNumberText>{{sequenceListing.earliestPriorityApplicationNumberText}}</ApplicationNumberText>
+        <FilingDate>{{sequenceListing.earliestPriorityFilingDate}}</FilingDate>
+    </EarliestPriorityApplicationIdentification>
+    <ApplicantName languageCode="{{sequenceListing.applicantNameLanguageCode}}">
+        {{sequenceListing.applicantName}}
+    </ApplicantName>
+    <ApplicantNameLatin>
+        {{sequenceListing.applicantNameLatin}}
+    </ApplicantNameLatin>
+    <InventorName languageCode="{{sequenceListing.inventorNameLanguageCode}}">
+        {{sequenceListing.inventorName}}
+    </InventorName>
+    <InventorNameLatin>
+        {{sequenceListing.inventorNameLatin}}
+    </InventorNameLatin>
+    {% for t in titles %}
+        <InventionTitle languageCode="{{t.inventionTitleLanguageCode}}">
+            {{t.inventionTitle}}
+        </InventionTitle>
+    {% endfor %}
+    
+    <SequenceTotalQuantity>
+        {{sequenceListing.sequenceTotalQuantity}}
+    </SequenceTotalQuantity>
+    {% for seq in sequences %}
+        <SequenceData sequenceIDNumber="{{seq.sequenceIdNo}}">
+            <INSDSeq>
+                <INSDSeq_length>{{seq.length}}</INSDSeq_length>
+                <INSDSeq_moltype>{{seq.moltype}}</INSDSeq_moltype>
+                <INSDSeq_division>{{seq.division}}</INSDSeq_division>
+                <INSDSeq_other-seqids>
+                    <INSDSeqid>{{seq.otherSeqId}}</INSDSeqid>
+                </INSDSeq_other-seqids>
+                <INSDSeq_feature-table>
+                    {% for f in seq.feature_set.all %}
+                        <INSDFeature>
+                            <INSDFeature_key>{{f.featureKey}}</INSDFeature_key>
+                            <INSDFeature_location>{{f.location}}</INSDFeature_location>
+                            <INSDFeature_quals>
+                                {% for q in f.qualifier_set.all %}
+                                <INSDQualifier>
+                                    <INSDQualifier_name>{{q.qualifierName}}</INSDQualifier_name>
+                                    <INSDQualifier_value>{{q.qualifierValue}}</INSDQualifier_value>
+                                </INSDQualifier>
+                                {% endfor %}
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    {% endfor %}
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>{{seq.residues}}</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    {% endfor %}  
+</ST26SequenceListing>

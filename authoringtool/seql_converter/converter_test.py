@@ -7,6 +7,7 @@ import unittest
 import os 
 from django.conf import settings 
 from converter import St25To26Converter 
+import sequencelistings.util as slsu
 
 def withMethodName(func):
     def inner(*args, **kwargs):
@@ -63,15 +64,24 @@ class Test_St25To26Converter(unittest.TestCase):
         self.assertEqual('OPX Biotechnologies, Inc.', self.sc1.seql_st26.applicantNameLatin)
 
         self.assertEqual('4', self.sc1.seql_st26.sequenceTotalQuantity)
-
+        
+    @withMethodName
+    def test_getTitlesSt26(self):
+        t = self.sc1.titles_st26[0]
+        self.assertEqual('COMPOSITIONS AND METHODS REGARDING DIRECT NADH UTILIZATION TO PRODUCE 3-HYDROXYPROPIONIC ACID AND RELATED CHEMICALS AND PRODUCTS', 
+                         t.inventionTitle)
+        self.assertEqual('XX', t.inventionTitleLanguageCode)
+        
     @withMethodName
     def test_generateXmlFile(self):
         od = os.path.join(settings.BASE_DIR, 'seql_converter', 'test', 'output')
         
         self.sc1.generateXmlFile(od)
+        filePath1 = os.path.join(od, '%s.xml' % self.sc1.fileName)
         
-        self.assertTrue(os.path.isfile(os.path.join(od, '%s.xml' % self.sc1.fileName)))
-
+        self.assertTrue(os.path.isfile(filePath1))
+#         self.assertTrue(slsu.validateDocumentWithSchema(filePath1, slsu.XML_SCHEMA_PATH))
+        
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
     unittest.main()
