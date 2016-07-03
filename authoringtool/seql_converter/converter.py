@@ -3,7 +3,8 @@ Created on Jul 2, 2016
 
 @author: ad
 '''
-import os 
+import os
+import datetime 
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'authoringtool.settings')
  
@@ -17,6 +18,8 @@ from st25parser.seqlparser import SequenceListing as Seql_st25
 
 from sequencelistings.models import SequenceListing  as Seql_st26, Title, Sequence, Feature, Qualifier 
 
+import converter_util
+
 class St25To26Converter(object):
     
     def __init__(self, st25FilePath):
@@ -24,37 +27,60 @@ class St25To26Converter(object):
         self.fileName = os.path.splitext(base)[0]
         
         self.seql_st25 = Seql_st25(st25FilePath)
+        self.seql_st26 = self.createInMemorySeql(self.seql_st25)
         
-    
-    def createInMemorySeql(self):
+#         applicationNumberRegex = r'(?P<alpha>\D*)(?P<numeric>\d+)'
+#         self.applicationNumberPattern = re.compile(applicationNumberRegex)
+     
+    def getFirstApplicant(self, aListOfApplicants):
+        if aListOfApplicants:
+            return aListOfApplicants[0]
+        else:
+            return '-' #TODO: remove hardcoded string
+
+    def createInMemorySeql(self, aSeql_st25):
+        applicationNumberAsTuple = converter_util.applicationNumberAsTuple(aSeql_st25.generalInformation.applicationNumber)
         
-        self.seql_st26 = Seql_st26(
-                fileName = 'test_xmlsqlyyy',
+        priorityNumberAsTuple = ('', '')
+        priorityDate = ''
+        
+        aSeql_st25_priority = aSeql_st25.generalInformation.priority
+        if aSeql_st25_priority:
+            
+            firstPriority = aSeql_st25_priority[0]
+            priorityNumberAsTuple = converter_util.applicationNumberAsTuple(firstPriority[0])
+            priorityDateAsString = firstPriority[1]
+            priorityDate = datetime.datetime.strptime(priorityDateAsString, '%Y-%m-%d').date()
+        
+        sl = Seql_st26(
+                fileName = self.fileName,
                 dtdVersion = '1',
                 softwareName = 'prototype',
                 softwareVersion = '0.1',
                 productionDate = timezone.now().date(),
                   
-                applicantFileReference = '123',
+                applicantFileReference = aSeql_st25.generalInformation.reference,
            
-                IPOfficeCode = 'EP',
-                applicationNumberText = '2015123456',
-                filingDate = timezone.now().date(),
+                IPOfficeCode = applicationNumberAsTuple[0],
+                applicationNumberText = applicationNumberAsTuple[1],
+                filingDate = datetime.datetime.strptime(aSeql_st25.generalInformation.filingDate, '%Y-%m-%d').date(),
                
-                earliestPriorityIPOfficeCode = 'US',
-                earliestPriorityApplicationNumberText = '998877',
-                earliestPriorityFilingDate = timezone.now().date(),
+                earliestPriorityIPOfficeCode = priorityNumberAsTuple[0],
+                earliestPriorityApplicationNumberText = priorityNumberAsTuple[1],
+                earliestPriorityFilingDate = priorityDate,
                
-                applicantName = 'John Smith',
-                applicantNameLanguageCode = 'EN',
-                applicantNameLatin = 'same',
+                applicantName = self.getFirstApplicant(aSeql_st25.generalInformation.applicant),
+                applicantNameLanguageCode = 'XX',
+                applicantNameLatin = self.getFirstApplicant(aSeql_st25.generalInformation.applicant),
                
                 inventorName = 'Mary Dupont',
                 inventorNameLanguageCode = 'FR',
-                inventorNameLatin = 'Mary Dupont',        
+                inventorNameLatin = 'Mary Dupont', 
+                
+                sequenceTotalQuantity = aSeql_st25.generalInformation.quantity       
                 ) 
         
-        return self.seql_st26 
+        return sl 
     
     def createXmlFile(self, sl, outputDir):
         xml = render_to_string('xml_template.xml', {'sequenceListing': sl,

@@ -27,7 +27,11 @@ generalInformationRegex = r"""(?P<header>[^<]*)
                                        tag170 = tag(170))
 
 generalInformationPattern = re.compile(generalInformationRegex, re.DOTALL | re.VERBOSE)
+
 # (<151>\s*(?P<priorityDate>[^<]*))*
+# priorityRegex = r"""(<150>\s*(?P<prNumber>[^<]*?)<151>\s*(?P<prDate>[^<]*))+"""
+# priorityPattern = re.compile(priorityRegex, re.MULTILINE)
+
 sequenceRegex = r"""<210>\s*(?P<seqIdNo>[^<]*)
                     (<211>\s*(?P<length>[^<]*))?
                     (<212>\s*(?P<molType>[^<]*))?
@@ -57,6 +61,7 @@ def safeStrip(s):
 
 class SequenceListing(object):
     def __init__(self, inFile):
+#         print inFile 
         self.isSeql = False
         try:
             self.seqlGenerator = su.generateChunks(inFile, pa)
@@ -127,9 +132,12 @@ class GeneralInformation(object):
         self.reference = '-'
         self.applicationNumber = '-'
         self.filingDate = '-'
+        self.priority = [] # a list of tuples (applNumber, filingDate)
         self.quantity = 0
         self.software = '-'
+        
         m = generalInformationPattern.match(inStr)
+        
         if m:
             applicantLines = m.group('applicant').splitlines()
             self.applicant = [a.strip() for a in applicantLines if a.strip() != ''] 
@@ -137,10 +145,42 @@ class GeneralInformation(object):
             self.reference = safeStrip(m.group('reference'))
             self.applicationNumber = safeStrip(m.group('applicationNumber'))
             self.filingDate = safeStrip(m.group('filingDate'))
+            
+            pg = m.group('priority')
+#             if pg.endswith('<'):
+#                 pg = pg[:1]
+#             print 'pg'
+#             print pg
+            if pg:
+                self.priority = self.parsePriority(safeStrip(pg[:-1]))
+            
             self.quantity = safeStrip(m.group('quantity'))
             self.software = safeStrip(m.group('software'))
             self.genInfoPatternFound = True
 
+    @classmethod
+    def parsePriority(self, aString):
+        result = []
+#         if aString != '':
+        if aString not in (None, ''):
+
+            pr = '<150>' + aString
+            
+            
+            result = []
+            if aString != '':
+                pr = '<150>' + aString 
+        #         print pr
+                prList = pr.split('<150>')
+#                 print prList
+                
+                for p in prList[1:]:
+                    l = p.split('<151>')
+#                     print l
+                    result.append((safeStrip(l[0]), safeStrip(l[1])))
+        
+        
+        return result
 
 class Sequence(object):
     def __init__(self, inStr):

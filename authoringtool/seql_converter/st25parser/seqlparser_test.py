@@ -11,7 +11,7 @@ from django.conf import settings
 import unittest
 import os
 
-from seqlparser import SequenceListing
+from seqlparser import SequenceListing, GeneralInformation
 import seqlutils
 
 def withMethodName(func):
@@ -20,7 +20,7 @@ def withMethodName(func):
         func(*args, **kwargs)
     return inner
 
-class Test(unittest.TestCase):
+class TestSequenceListing(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -91,6 +91,63 @@ class Test(unittest.TestCase):
         self.assertTrue(self.sl32_5.isSeql)
         # what's special with this sl? why do we need this test?
         self.assertTrue(self.sl058291.isSeql)
+
+# ==========Tests for GeneralInformation===========================
+    @withMethodName
+    def test_applicant(self):
+        
+        self.assertEqual(['OPX Biotechnologies, Inc.'], self.sl1.generalInformation.applicant)
+        self.assertEqual(['OPX Biotechnologies, Inc.', 'Universite Paris II'], self.sl2.generalInformation.applicant)
+        self.assertEqual(['Merck Sharp & Dohme Corp.',
+                          'Chen, Zhiyu',
+                          'Lancaster, Thomas M.',
+                          'Zion, Todd C.'], self.sl33_1.generalInformation.applicant)
+#         # item110 empty
+        self.assertEqual([], self.sl32_9.generalInformation.applicant)
+
+    @withMethodName
+    def test_title(self):
+        self.assertEqual(self.sl32.generalInformation.title, "COMPOSITIONS AND METHODS REGARDING DIRECT NADH UTILIZATION TO PRODUCE 3-HYDROXYPROPIONIC ACID AND RELATED CHEMICALS AND PRODUCTS")
+        # item120 missing
+        self.assertEqual(None, self.sl32_2.generalInformation.title)
+        # item120 empty
+        self.assertEqual('', self.sl32_3.generalInformation.title)
+
+    @withMethodName
+    def test_reference(self):
+        self.assertEqual(self.sl32.generalInformation.reference, "34246761601")
+        #reference element is missing
+        self.assertEqual(self.sl2.generalInformation.reference, None)
+
+    @withMethodName
+    def test_applicationNumber(self):
+        self.assertEqual(self.sl32.generalInformation.applicationNumber, "61536464")
+
+    @withMethodName
+    def test_filingDate(self):
+        self.assertEqual(self.sl32.generalInformation.filingDate, "2012-09-19")
+        
+    @withMethodName
+    def test_priority(self):
+        pr32 = self.sl32.generalInformation.priority
+        self.assertEqual(3, len(pr32))
+        
+        self.assertListEqual([('61536558 - prio1', '2001-01-01'), 
+                              ('61536539 - prio2', '2002-02-02 - pd'),
+                              ('61536539 - prio3', '2003-03-03')], 
+                             self.sl1.generalInformation.priority)
+        
+        self.assertListEqual([], self.sl2.generalInformation.priority)
+        
+    @withMethodName
+    def test_quantity(self):
+        self.assertEqual('5', self.sl32.generalInformation.quantity)
+
+    @withMethodName
+    def test_software(self):
+        self.assertEqual(self.sl32.generalInformation.software, "PatentIn version 3.5")
+
+# ==========Tests for Sequence===========================
 
     @withMethodName
     def test_sequence(self):
@@ -256,47 +313,32 @@ class Test(unittest.TestCase):
         # but actualSeqIdNo is not equal to seq_id_no
         self.assertEqual(3, sl32_8_sequences[2].actualSeqIdNo)
 
+class Test_GeneralInformation(unittest.TestCase):
+    
     @withMethodName
-    def test_applicant(self):
+    def test_parsePriority(self):
+        p = """
+  61536558
+
+<151>  2011-09-19
+
+<150>  61536539
+
+<151>  2012-09-19
+
+
+
+<150>  61536580
+
+<151>  2013-09-19
+        """
+        res = GeneralInformation.parsePriority(p)
+        self.assertListEqual([('61536558', '2011-09-19'), 
+                              ('61536539', '2012-09-19'), 
+                              ('61536580', '2013-09-19')], res)
         
-        self.assertEqual(['OPX Biotechnologies, Inc.'], self.sl1.generalInformation.applicant)
-        self.assertEqual(['OPX Biotechnologies, Inc.', 'Universite Paris II'], self.sl2.generalInformation.applicant)
-        self.assertEqual(['Merck Sharp & Dohme Corp.',
-                          'Chen, Zhiyu',
-                          'Lancaster, Thomas M.',
-                          'Zion, Todd C.'], self.sl33_1.generalInformation.applicant)
-#         # item110 empty
-        self.assertEqual([], self.sl32_9.generalInformation.applicant)
 
-    @withMethodName
-    def test_title(self):
-        self.assertEqual(self.sl32.generalInformation.title, "COMPOSITIONS AND METHODS REGARDING DIRECT NADH UTILIZATION TO PRODUCE 3-HYDROXYPROPIONIC ACID AND RELATED CHEMICALS AND PRODUCTS")
-        # item120 missing
-        self.assertEqual(None, self.sl32_2.generalInformation.title)
-        # item120 empty
-        self.assertEqual('', self.sl32_3.generalInformation.title)
-
-    @withMethodName
-    def test_reference(self):
-        self.assertEqual(self.sl32.generalInformation.reference, "34246761601")
-        #reference element is missing
-        self.assertEqual(self.sl2.generalInformation.reference, None)
-
-    @withMethodName
-    def test_applicationNumber(self):
-        self.assertEqual(self.sl32.generalInformation.applicationNumber, "61536464")
-
-    @withMethodName
-    def test_filingDate(self):
-        self.assertEqual(self.sl32.generalInformation.filingDate, "2012-09-19")
-
-    @withMethodName
-    def test_quantity(self):
-        self.assertEqual('5', self.sl32.generalInformation.quantity)
-
-    @withMethodName
-    def test_software(self):
-        self.assertEqual(self.sl32.generalInformation.software, "PatentIn version 3.5")
+# ==========Tests for Feature===========================
 
     # def test_feature1(self):
     #     chunks = []
