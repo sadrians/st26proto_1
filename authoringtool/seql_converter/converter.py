@@ -5,6 +5,7 @@ Created on Jul 2, 2016
 '''
 import os
 import datetime 
+from seql_converter.st25parser.seqlparser import SequenceListing
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'authoringtool.settings')
  
@@ -27,20 +28,19 @@ class St25To26Converter(object):
         self.fileName = os.path.splitext(base)[0]
         
         self.seql_st25 = Seql_st25(st25FilePath)
-        self.seql_st26 = self.createInMemorySeql(self.seql_st25)
-        
-#         applicationNumberRegex = r'(?P<alpha>\D*)(?P<numeric>\d+)'
-#         self.applicationNumberPattern = re.compile(applicationNumberRegex)
-     
-    def getFirstApplicant(self, aListOfApplicants):
-        if aListOfApplicants:
-            return aListOfApplicants[0]
-        else:
-            return '-' #TODO: remove hardcoded string
+        self.seql_st26 = self.getSequenceListingSt26(self.seql_st25)
 
-    def createInMemorySeql(self, aSeql_st25):
+    def getSequenceListingSt26(self, aSeql_st25):
+#         set first applicant value
+        seql_st26_applicantName = '-'
+        aSeql_st25_applicant = aSeql_st25.generalInformation.applicant
+        if aSeql_st25_applicant:
+            seql_st26_applicantName = aSeql_st25_applicant[0]
+        
+#         set applicationNumber
         applicationNumberAsTuple = converter_util.applicationNumberAsTuple(aSeql_st25.generalInformation.applicationNumber)
         
+#         set earliest priority 
         priorityNumberAsTuple = ('', '')
         priorityDate = ''
         
@@ -52,6 +52,7 @@ class St25To26Converter(object):
             priorityDateAsString = firstPriority[1]
             priorityDate = datetime.datetime.strptime(priorityDateAsString, '%Y-%m-%d').date()
         
+#         create SequenceListing instance
         sl = Seql_st26(
                 fileName = self.fileName,
                 dtdVersion = '1',
@@ -69,38 +70,29 @@ class St25To26Converter(object):
                 earliestPriorityApplicationNumberText = priorityNumberAsTuple[1],
                 earliestPriorityFilingDate = priorityDate,
                
-                applicantName = self.getFirstApplicant(aSeql_st25.generalInformation.applicant),
+                applicantName = seql_st26_applicantName,
                 applicantNameLanguageCode = 'XX',
-                applicantNameLatin = self.getFirstApplicant(aSeql_st25.generalInformation.applicant),
-               
-                inventorName = 'Mary Dupont',
-                inventorNameLanguageCode = 'FR',
-                inventorNameLatin = 'Mary Dupont', 
+                applicantNameLatin = seql_st26_applicantName,
+                
+                inventorName = '-',
+                inventorNameLanguageCode = 'XX',
+                inventorNameLatin = '-', 
                 
                 sequenceTotalQuantity = aSeql_st25.generalInformation.quantity       
                 ) 
         
         return sl 
     
-    def createXmlFile(self, sl, outputDir):
-        xml = render_to_string('xml_template.xml', {'sequenceListing': sl,
+    def generateXmlFile(self, outputDir):
+        xml = render_to_string('xml_template.xml', 
+                               {'sequenceListing': self.seql_st26,
                                 }).encode('utf-8', 'strict')
-    
-        xmlFilePath = os.path.join(outputDir, '%s.xml' % sl.fileName)
-        
+        xmlFilePath = os.path.join(outputDir, '%s.xml' % self.fileName)
         with open(xmlFilePath, 'w') as gf:
             gf.write(xml) 
+            
+#         assert os.path.isfile(xmlFilePath)
+#         with open(xmlFilePath) as f:
+#             print '='*50
+#             print f.read()
         
-# def test_createInMemorySeql():
-#     sc = St25To26Converter()
-#     sl = sc.createInMemorySeql()
-#     print 'Seql'
-#     print sl
-#     outDir = r'/Users/ad/pyton/projects/test/xml_output'
-#     sc.createXmlFile(sl, outDir)
-#     print 'Created xml file.'
-# #     print 'is editable:', sl.isEditable
-# #     print 'applicant reference:', sl.applicantFileReference
-# #     print 'Done.'
-#     
-# test_createInMemorySeql()
