@@ -49,7 +49,7 @@
                     <INSDSeqid>{{seq.otherSeqId}}</INSDSeqid>
                 </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
-                    {% for f in seq.feature_set.all %}
+                    {% for f in features %}
                         <INSDFeature>
                             <INSDFeature_key>{{f.featureKey}}</INSDFeature_key>
                             <INSDFeature_location>{{f.location}}</INSDFeature_location>

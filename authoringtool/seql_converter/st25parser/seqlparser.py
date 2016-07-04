@@ -210,7 +210,8 @@ class Sequence(object):
             if featureTable:
                 fiter = re.finditer(featurePattern, featureTable)
                 for fmatcher in fiter:
-                    self.features.append(Feature(fmatcher))
+                    if fmatcher:
+                        self.features.append(Feature(fmatcher))
 
             residues = m.group('residues')
             nucList = []
@@ -295,9 +296,12 @@ class Feature(object):
         self.description = '-'
 
         self.featureHeader = safeStrip(m.group('featureHeader'))
-        self.key = safeStrip(m.group('key'))
-        self.location = safeStrip(m.group('location'))
-        self.description = safeStrip(m.group('description'))
+        if m.group('key'):
+            self.key = safeStrip(m.group('key'))
+        if m.group('location'):
+            self.location = safeStrip(m.group('location'))
+        if m.group('description'):
+            self.description = safeStrip(m.group('description'))
         if self.description:
             self.description = su.inOneLine(self.description)
 

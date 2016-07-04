@@ -178,7 +178,7 @@ class TestSequenceListing(unittest.TestCase):
             self.assertEqual(l, f.location)
             self.assertEqual(d, f.description)
 
-        checkFeature(0, '', None, None, 'Sulfatase motifs')
+        checkFeature(0, '', '-', '-', 'Sulfatase motifs')
         checkFeature(1, '', 'MISC_FEATURE', '(1)..(1)', 'Xaa = Any amino acid or absent')
         checkFeature(2, '', 'MOD_RES', '(2)..(2)', 'Formylglycine')
         checkFeature(3, '', 'MISC_FEATURE', '(3)..(3)', 'Xaa = Any amino acid or absent')
@@ -188,8 +188,8 @@ class TestSequenceListing(unittest.TestCase):
 
         # #test for feature without key and location
         self.assertEqual('', self.seq32_5.features[0].featureHeader)
-        self.assertEqual(None, self.seq32_5.features[0].key)
-        self.assertEqual(None, self.seq32_5.features[0].location)
+        self.assertEqual('-', self.seq32_5.features[0].key)
+        self.assertEqual('-', self.seq32_5.features[0].location)
         self.assertEqual('Sequence from Mycobacterium tuberculosis artificially optimised for expression in human cells.',
                          self.seq32_5.features[0].description)
 
@@ -197,7 +197,7 @@ class TestSequenceListing(unittest.TestCase):
         self.assertEqual('', self.seq32_5.features[1].featureHeader)
         self.assertEqual('CDS', self.seq32_5.features[1].key)
         self.assertEqual('(20)..(1399)', self.seq32_5.features[1].location)
-        self.assertEqual(None, self.seq32_5.features[1].description)
+        self.assertEqual('-', self.seq32_5.features[1].description)
 
     @withMethodName
     def test_mixedmode(self):

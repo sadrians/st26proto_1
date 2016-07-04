@@ -29,9 +29,9 @@ class St25To26Converter(object):
         
         self.seql_st25 = Seql_st25(st25FilePath)
         self.seql_st26 = self.getSequenceListingSt26(self.seql_st25)
-        self.titles_st26 = self.getTitlesSt26()
-        self.sequences_st26 = self.getSequencesSt26()
-
+        self.setTitleSt26()
+        self.setSequencesSt26()
+        
     def getSequenceListingSt26(self, aSeql_st25):
 #         set first applicant value
         seql_st26_applicantName = '-'
@@ -56,7 +56,7 @@ class St25To26Converter(object):
         
 #         create SequenceListing instance
         sl = Seql_st26(
-                fileName = self.fileName,
+                fileName = '%s_converted' % self.fileName,
                 dtdVersion = '1',
                 softwareName = 'prototype',
                 softwareVersion = '0.1',
@@ -80,53 +80,95 @@ class St25To26Converter(object):
                 inventorNameLanguageCode = 'XX',
                 inventorNameLatin = '-', 
                 
-                sequenceTotalQuantity = aSeql_st25.generalInformation.quantity       
+#                 sequenceTotalQuantity = aSeql_st25.generalInformation.quantity       
                 ) 
-        
+        sl.save()
         return sl 
 
-    def getTitlesSt26(self):
+    def setTitleSt26(self):
         seql_st25_title = self.seql_st25.generalInformation.title
 #         assuming is not None 
         seql_st25_titleOneLine = seql_st25_title.replace(r'\s', '')
         t = Title(sequenceListing = self.seql_st26, 
                   inventionTitle = seql_st25_titleOneLine,
                   inventionTitleLanguageCode = 'XX')
+        t.save()
         return [t]
 #         print 't', t 
      
-    def getSequencesSt26(self):
-        result = []
+#     def getSequencesSt26(self):
+#         result = []
+#         
+#         for s25 in self.seql_st25.generateSequence():
+#             residues_st26 = ''
+#             if s25.molType in ('DNA', 'RNA'):
+#                 residues_st26 = s25.residues_nuc 
+#             else:
+#                 residues_st26 = converter_util.oneLetterCode(s25.residues_prt)
+#             
+#             s26 = Sequence(sequenceListing = self.seql_st26,
+#                 sequenceIdNo = s25.seqIdNo,
+#                 length = s25.length,
+#                 moltype = s25.molType,
+#                 division = 'PAT',
+# #                 otherSeqId = '-', #optional, so we don't include it in converted sl
+#                 residues = residues_st26)
+#             result.append(s26)
+#         return result
+    
+    def setSequencesSt26(self):
         
         for s25 in self.seql_st25.generateSequence():
             residues_st26 = ''
             if s25.molType in ('DNA', 'RNA'):
+                molType_st26 = s25.molType
+                sourceKey = 'source'
+                organismQualifierName = 'organism'
+                noteQualifierName = 'note'
                 residues_st26 = s25.residues_nuc 
             else:
+                molType_st26 = 'AA'
+                sourceKey = 'SOURCE'
+                organismQualifierName = 'ORGANISM'
+                noteQualifierName = 'NOTE'
                 residues_st26 = converter_util.oneLetterCode(s25.residues_prt)
             
             s26 = Sequence(sequenceListing = self.seql_st26,
                 sequenceIdNo = s25.seqIdNo,
                 length = s25.length,
-                moltype = s25.molType,
+                moltype = molType_st26,
                 division = 'PAT',
 #                 otherSeqId = '-', #optional, so we don't include it in converted sl
                 residues = residues_st26)
-            result.append(s26)
-        return result
             
+            s26.save()
+            
+            sourceFeature = Feature(sequence=s26, 
+                                    featureKey = sourceKey,
+                                    location = '1..%s' % s26.length)
+            sourceFeature.save()
+            
+            organismQualifier = Qualifier(feature=sourceFeature,
+                                          qualifierName=organismQualifierName,
+                                          qualifierValue=s25.organism)
+            organismQualifier.save()
+            
+            for f in s25.features:
+                currentFeature = Feature(sequence=s26,
+                                         featureKey = f.key,
+                                         location = f.location)
+                currentFeature.save()
+                currentQualifier = Qualifier(feature=currentFeature,
+                                          qualifierName=noteQualifierName,
+                                          qualifierValue=f.description)
+                currentQualifier.save()
+     
     def generateXmlFile(self, outputDir):
-        xml = render_to_string('conv_xml_template.xml', 
+        xml = render_to_string('xml_template.xml', 
                                {'sequenceListing': self.seql_st26,
-                                'titles': self.titles_st26,
-                                'sequences': self.sequences_st26,
                                 }).encode('utf-8', 'strict')
-        xmlFilePath = os.path.join(outputDir, '%s.xml' % self.fileName)
+        xmlFilePath = os.path.join(outputDir, '%s.xml' % self.seql_st26.fileName)
         with open(xmlFilePath, 'w') as gf:
             gf.write(xml) 
-            
-#         assert os.path.isfile(xmlFilePath)
-#         with open(xmlFilePath) as f:
-#             print '='*50
-#             print f.read()
+
         
