@@ -3,7 +3,6 @@ Created on Jul 2, 2016
 
 @author: ad
 '''
-# import unittest
 from django.test import TestCase
 import os 
 from django.conf import settings 
@@ -100,4 +99,6 @@ class Test_St25To26Converter(TestCase):
         filePath1 = os.path.join(od, '%s.xml' % self.sc1.seql_st26.fileName)
          
         self.assertTrue(os.path.isfile(filePath1))
+        self.assertTrue(slsu.validateDocumentWithDtd(filePath1, slsu.XML_DTD_PATH))
+
 #         self.assertTrue(slsu.validateDocumentWithSchema(filePath1, slsu.XML_SCHEMA_PATH))
