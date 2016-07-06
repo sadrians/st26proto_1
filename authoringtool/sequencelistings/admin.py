@@ -36,7 +36,8 @@ class MyAdmin(admin.ModelAdmin):
                                                 'productionDate', 
                                                 'dtdVersion', 
                                                 'softwareName', 
-                                                'softwareVersion'
+                                                'softwareVersion',
+                                                'isEditable'
                                                 ], 
                                      'classes': ['collapse']
                                      }), 

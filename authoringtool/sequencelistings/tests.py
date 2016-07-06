@@ -485,7 +485,7 @@ class ModelsTests(TestCase):
         self.assertEqual('test_xmlsql', first_saved_seql.fileName)
         self.assertEqual('abc', second_saved_seql.fileName)
         
-        self.assertFalse(self.sequenceListing.isEditable, 'By default, a seql is not editable.')
+        self.assertTrue(self.sequenceListing.isEditable, 'By default, a seql is editable.')
         
     def test_saving_and_retrieving_sequences(self):
         print 'Running %s ...' % getName()
