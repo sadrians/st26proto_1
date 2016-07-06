@@ -172,6 +172,7 @@ class ViewsTests(TestCase):
          
 #         if the user is logged in: TODO: see what is this?
 #         self.assertContains(response, "Add new sequence")
+# TODO: test if edit is allowed when user logged in
                
     def test_detail_view_after_add_sequence(self):
         """

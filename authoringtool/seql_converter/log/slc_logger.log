@@ -2462,3 +2462,1125 @@ Opening and ending tag mismatch: ApplicantNamex line 20 and ApplicantName, line 
 /Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml:42:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'SequenceData': This element is not expected. Expected is ( EarliestPriorityApplicationIdentification ).
 2016-07-06 21:35:53,477 - sequencelistings.views - INFO
 	Generated xml seql at sequencelistings/output/test_xmlsql.xml.
+2016-07-06 22:02:12,731 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params [])
+2016-07-06 22:02:12,763 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params [])
+2016-07-06 22:02:12,767 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, UNIQUE ("app_label", "model")); (params [])
+2016-07-06 22:02:12,767 - django.db.backends.schema - DEBUG
+	INSERT INTO "django_content_type__new" ("model", "app_label", "id", "name") SELECT "model", "app_label", "id", "name" FROM "django_content_type"; (params [])
+2016-07-06 22:02:12,767 - django.db.backends.schema - DEBUG
+	DROP TABLE "django_content_type"; (params [])
+2016-07-06 22:02:12,768 - django.db.backends.schema - DEBUG
+	ALTER TABLE "django_content_type__new" RENAME TO "django_content_type"; (params [])
+2016-07-06 22:02:12,783 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id"), "codename" varchar(100) NOT NULL, UNIQUE ("content_type_id", "codename")); (params [])
+2016-07-06 22:02:12,789 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params [])
+2016-07-06 22:02:12,790 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("group_id", "permission_id")); (params [])
+2016-07-06 22:02:12,802 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params [])
+2016-07-06 22:02:12,803 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), UNIQUE ("user_id", "group_id")); (params [])
+2016-07-06 22:02:12,805 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("user_id", "permission_id")); (params [])
+2016-07-06 22:02:12,805 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_permission_417f1b1c ON "auth_permission" ("content_type_id"); (params [])
+2016-07-06 22:02:12,805 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_0e939a4f ON "auth_group_permissions" ("group_id"); (params [])
+2016-07-06 22:02:12,805 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_8373b171 ON "auth_group_permissions" ("permission_id"); (params [])
+2016-07-06 22:02:12,806 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_e8701ad4 ON "auth_user_groups" ("user_id"); (params [])
+2016-07-06 22:02:12,806 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_0e939a4f ON "auth_user_groups" ("group_id"); (params [])
+2016-07-06 22:02:12,806 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_e8701ad4 ON "auth_user_user_permissions" ("user_id"); (params [])
+2016-07-06 22:02:12,807 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_8373b171 ON "auth_user_user_permissions" ("permission_id"); (params [])
+2016-07-06 22:02:12,840 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id"), "user_id" integer NOT NULL REFERENCES "auth_user" ("id")); (params [])
+2016-07-06 22:02:12,840 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_417f1b1c ON "django_admin_log" ("content_type_id"); (params [])
+2016-07-06 22:02:12,840 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_e8701ad4 ON "django_admin_log" ("user_id"); (params [])
+2016-07-06 22:02:12,869 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id")); (params [])
+2016-07-06 22:02:12,922 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id"), "activated" bool NOT NULL); (params [])
+2016-07-06 22:02:12,923 - django.db.backends.schema - DEBUG
+	INSERT INTO "registration_registrationprofile__new" ("activated", "activation_key", "user_id", "id") SELECT 0, "activation_key", "user_id", "id" FROM "registration_registrationprofile"; (params [])
+2016-07-06 22:02:12,923 - django.db.backends.schema - DEBUG
+	DROP TABLE "registration_registrationprofile"; (params [])
+2016-07-06 22:02:12,924 - django.db.backends.schema - DEBUG
+	ALTER TABLE "registration_registrationprofile__new" RENAME TO "registration_registrationprofile"; (params [])
+2016-07-06 22:02:13,008 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL); (params [])
+2016-07-06 22:02:13,012 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_qualifier" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "qualifierName" varchar(100) NOT NULL, "qualifierValue" varchar(1000) NOT NULL, "feature_id" integer NOT NULL REFERENCES "sequencelistings_feature" ("id")); (params [])
+2016-07-06 22:02:13,017 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL); (params [])
+2016-07-06 22:02:13,027 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL); (params [])
+2016-07-06 22:02:13,039 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_title" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "inventionTitle" varchar(200) NOT NULL, "inventionTitleLanguageCode" varchar(2) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-06 22:02:13,054 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-06 22:02:13,054 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-06 22:02:13,055 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-06 22:02:13,055 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-06 22:02:13,055 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_qualifier_86d175dd ON "sequencelistings_qualifier" ("feature_id"); (params [])
+2016-07-06 22:02:13,056 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_title_3c9ce7d7 ON "sequencelistings_title" ("sequenceListing_id"); (params [])
+2016-07-06 22:02:13,056 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-06 22:02:13,071 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL, "sequence_id" integer NOT NULL REFERENCES "sequencelistings_sequence" ("id")); (params [])
+2016-07-06 22:02:13,071 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_feature__new" ("location", "id", "featureKey") SELECT "location", "id", "featureKey" FROM "sequencelistings_feature"; (params [])
+2016-07-06 22:02:13,071 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_feature"; (params [])
+2016-07-06 22:02:13,072 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_feature__new" RENAME TO "sequencelistings_feature"; (params [])
+2016-07-06 22:02:13,072 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_feature_d9cd7378 ON "sequencelistings_feature" ("sequence_id"); (params [])
+2016-07-06 22:02:13,111 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-06 22:02:13,111 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-06 22:02:13,112 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-06 22:02:13,112 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-06 22:02:13,112 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-06 22:02:13,162 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-06 22:02:13,163 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-06 22:02:13,163 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-06 22:02:13,163 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-06 22:02:13,164 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-06 22:02:13,220 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-06 22:02:13,220 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", 0, "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-06 22:02:13,221 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-06 22:02:13,221 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-06 22:02:13,285 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-06 22:02:13,286 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-06 22:02:13,286 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-06 22:02:13,286 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-06 22:02:13,290 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params [])
+2016-07-06 22:02:13,291 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_session_de54fa62 ON "django_session" ("expire_date"); (params [])
+2016-07-06 22:02:16,540 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64558/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2016-07-06 22:02:16,883 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:16,884 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64558/hub/session/5afd7ffb-f8d0-6841-bf45-8f8da7fa113f/timeouts/implicit_wait {"sessionId": "5afd7ffb-f8d0-6841-bf45-8f8da7fa113f", "ms": 3000.0}
+2016-07-06 22:02:16,922 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:16,922 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64558/hub/session/5afd7ffb-f8d0-6841-bf45-8f8da7fa113f/url {"url": "http://localhost:8081/sequencelistings/about", "sessionId": "5afd7ffb-f8d0-6841-bf45-8f8da7fa113f"}
+2016-07-06 22:02:17,062 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:02:17,257 - django.request - WARNING
+	Not Found: /static/images/rango.jpg
+2016-07-06 22:02:17,370 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:17,370 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64558/hub/session/5afd7ffb-f8d0-6841-bf45-8f8da7fa113f/title {"sessionId": "5afd7ffb-f8d0-6841-bf45-8f8da7fa113f"}
+2016-07-06 22:02:17,378 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:17,378 - selenium.webdriver.remote.remote_connection - DEBUG
+	DELETE http://127.0.0.1:64558/hub/session/5afd7ffb-f8d0-6841-bf45-8f8da7fa113f {"sessionId": "5afd7ffb-f8d0-6841-bf45-8f8da7fa113f"}
+2016-07-06 22:02:17,386 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:20,828 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2016-07-06 22:02:20,942 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:20,942 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/timeouts/implicit_wait {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "ms": 3000.0}
+2016-07-06 22:02:20,968 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:20,969 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/url {"url": "http://localhost:8081/sequencelistings/", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959"}
+2016-07-06 22:02:21,063 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:02:21,279 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:21,280 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/elements {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "add_seql_link"}
+2016-07-06 22:02:24,308 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:24,308 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/url {"url": "http://localhost:8081/accounts/register/", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959"}
+2016-07-06 22:02:24,359 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:02:24,501 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:24,502 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_username"}
+2016-07-06 22:02:24,572 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:24,572 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_email"}
+2016-07-06 22:02:24,579 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:24,579 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_password1"}
+2016-07-06 22:02:24,585 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:24,586 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_password2"}
+2016-07-06 22:02:24,594 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:24,594 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{91091602-29bf-4b4d-b570-f9d37433d1ba}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{91091602-29bf-4b4d-b570-f9d37433d1ba}", "value": ["u", "s", "e", "r", "2", "0"]}
+2016-07-06 22:02:24,657 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:24,657 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{23464878-d2d3-6046-ae71-a1c9d7ef1dcb}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{23464878-d2d3-6046-ae71-a1c9d7ef1dcb}", "value": ["u", "s", "e", "r", "2", "0", "@", "e", "m", "a", "i", "l", ".", "c", "o", "m"]}
+2016-07-06 22:02:24,744 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:24,745 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{cc616029-d698-2c46-90c0-09c687375edc}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{cc616029-d698-2c46-90c0-09c687375edc}", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "2", "0"]}
+2016-07-06 22:02:24,811 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:24,811 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{f82297b5-0d42-e24c-a043-a9da9e005838}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{f82297b5-0d42-e24c-a043-a9da9e005838}", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "2", "0"]}
+2016-07-06 22:02:24,873 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:24,873 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "class name", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "btn"}
+2016-07-06 22:02:24,880 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:24,880 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{83298205-90d3-fe4a-aa87-61c93f2a1170}/click {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{83298205-90d3-fe4a-aa87-61c93f2a1170}"}
+2016-07-06 22:02:25,257 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:02:25,382 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,383 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/url {"url": "http://localhost:8081/sequencelistings/add_sequencelisting", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959"}
+2016-07-06 22:02:25,439 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:02:25,683 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,683 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "tag name", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "h2"}
+2016-07-06 22:02:25,693 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,693 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{8dad4b77-6298-de40-be29-f7fd6da4f1cc}/text {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{8dad4b77-6298-de40-be29-f7fd6da4f1cc}"}
+2016-07-06 22:02:25,709 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,709 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_inventionTitle"}
+2016-07-06 22:02:25,717 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,717 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_inventionTitleLanguageCode"}
+2016-07-06 22:02:25,724 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,725 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_fileName"}
+2016-07-06 22:02:25,732 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,733 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_applicantFileReference"}
+2016-07-06 22:02:25,739 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,739 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_IPOfficeCode"}
+2016-07-06 22:02:25,745 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,745 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_applicationNumberText"}
+2016-07-06 22:02:25,751 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,751 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_filingDate"}
+2016-07-06 22:02:25,761 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,761 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_earliestPriorityIPOfficeCode"}
+2016-07-06 22:02:25,768 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,769 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_earliestPriorityApplicationNumberText"}
+2016-07-06 22:02:25,774 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,775 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_earliestPriorityFilingDate"}
+2016-07-06 22:02:25,780 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,781 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_applicantName"}
+2016-07-06 22:02:25,786 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,787 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_applicantNameLanguageCode"}
+2016-07-06 22:02:25,792 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,793 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_applicantNameLatin"}
+2016-07-06 22:02:25,798 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,798 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_inventorName"}
+2016-07-06 22:02:25,804 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,805 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_inventorNameLanguageCode"}
+2016-07-06 22:02:25,811 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,811 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "id_inventorNameLatin"}
+2016-07-06 22:02:25,818 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,818 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{71952579-3c40-014f-8c71-3f5af53d5b01}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{71952579-3c40-014f-8c71-3f5af53d5b01}", "value": ["a"]}
+2016-07-06 22:02:25,853 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,853 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{af876d26-1829-ab4b-bbd1-5524a0a63c1a}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{af876d26-1829-ab4b-bbd1-5524a0a63c1a}", "value": ["b"]}
+2016-07-06 22:02:25,891 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,891 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{13590b5b-6317-a74e-9e8b-b98fb1246299}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{13590b5b-6317-a74e-9e8b-b98fb1246299}", "value": ["s", "e", "l", "e", "n", "i", "u", "m", "_", "t", "e", "s", "t", "_", "f", "i", "l", "e", "_", "n", "a", "m", "e"]}
+2016-07-06 22:02:25,988 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:25,988 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{38ddb98d-2e4e-4244-b90c-7cef6b75b717}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{38ddb98d-2e4e-4244-b90c-7cef6b75b717}", "value": ["d"]}
+2016-07-06 22:02:26,028 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,028 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{85c89855-79d6-d74c-bfca-91ee5559d9a1}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{85c89855-79d6-d74c-bfca-91ee5559d9a1}", "value": ["e"]}
+2016-07-06 22:02:26,064 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,064 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{e4cfd688-1f13-784e-ad18-93808607ddf6}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{e4cfd688-1f13-784e-ad18-93808607ddf6}", "value": ["f"]}
+2016-07-06 22:02:26,098 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,098 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{b384a9bc-f0c5-b149-b5f3-5af234c9f3ad}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{b384a9bc-f0c5-b149-b5f3-5af234c9f3ad}", "value": ["2", "0", "1", "0", "-", "1", "2", "-", "2", "0"]}
+2016-07-06 22:02:26,157 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,157 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{a10bda79-09bd-c340-aa50-892fcb93a855}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{a10bda79-09bd-c340-aa50-892fcb93a855}", "value": ["g"]}
+2016-07-06 22:02:26,192 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,192 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{83f965a0-fa4b-284d-944a-a56c2bc7a898}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{83f965a0-fa4b-284d-944a-a56c2bc7a898}", "value": ["h"]}
+2016-07-06 22:02:26,228 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,228 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{58a0c1e6-5fe3-5b4c-87fa-5cd59789eaa2}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{58a0c1e6-5fe3-5b4c-87fa-5cd59789eaa2}", "value": ["2", "0", "0", "9", "-", "1", "2", "-", "2", "0"]}
+2016-07-06 22:02:26,286 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,286 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{8849f337-ed83-5c48-b429-7eface9359dc}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{8849f337-ed83-5c48-b429-7eface9359dc}", "value": ["i"]}
+2016-07-06 22:02:26,324 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,324 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{9ff937a8-34b5-0e42-b3ca-7df1c01b4c86}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{9ff937a8-34b5-0e42-b3ca-7df1c01b4c86}", "value": ["j"]}
+2016-07-06 22:02:26,367 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,367 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{477f6d55-c24c-694b-9a76-23c038ec7a70}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{477f6d55-c24c-694b-9a76-23c038ec7a70}", "value": ["k"]}
+2016-07-06 22:02:26,398 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,398 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{9d3272c8-47ad-5b47-851d-cff0d2eb6063}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{9d3272c8-47ad-5b47-851d-cff0d2eb6063}", "value": ["l"]}
+2016-07-06 22:02:26,430 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,431 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{eff1cccd-600a-fc4e-95d7-f46d4c43ea9f}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{eff1cccd-600a-fc4e-95d7-f46d4c43ea9f}", "value": ["m"]}
+2016-07-06 22:02:26,465 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,466 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{d38991b5-a397-9f43-bf17-433348819ff1}/value {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{d38991b5-a397-9f43-bf17-433348819ff1}", "value": ["n"]}
+2016-07-06 22:02:26,504 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,504 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "xpath", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "//input[@value=\"Submit\"]"}
+2016-07-06 22:02:26,569 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:26,569 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{9921838d-218c-574a-a347-a3af996fca8f}/click {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{9921838d-218c-574a-a347-a3af996fca8f}"}
+2016-07-06 22:02:26,841 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:02:27,298 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:27,298 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/url {"url": "http://localhost:8081/sequencelistings/", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959"}
+2016-07-06 22:02:27,351 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:02:27,474 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:27,475 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element {"using": "id", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "value": "home_page_table"}
+2016-07-06 22:02:27,482 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:27,483 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{81870f21-d95c-ea4d-b4c8-3323d48d17f3}/elements {"using": "tag name", "sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{81870f21-d95c-ea4d-b4c8-3323d48d17f3}", "value": "td"}
+2016-07-06 22:02:27,490 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:27,491 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{4aa5f848-8008-a143-bf1c-97a03a883a0b}/text {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{4aa5f848-8008-a143-bf1c-97a03a883a0b}"}
+2016-07-06 22:02:27,507 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:27,507 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{136df30e-e4d6-eb4b-94e8-1f018b74c79b}/text {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{136df30e-e4d6-eb4b-94e8-1f018b74c79b}"}
+2016-07-06 22:02:27,517 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:27,518 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959/element/{b8ef1a8a-9596-3d48-948e-460d012419d7}/text {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959", "id": "{b8ef1a8a-9596-3d48-948e-460d012419d7}"}
+2016-07-06 22:02:27,528 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:27,528 - selenium.webdriver.remote.remote_connection - DEBUG
+	DELETE http://127.0.0.1:64586/hub/session/98f7717f-9bbe-8e47-b371-41fef8563959 {"sessionId": "98f7717f-9bbe-8e47-b371-41fef8563959"}
+2016-07-06 22:02:27,532 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:31,061 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64689/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2016-07-06 22:02:31,161 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:31,162 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64689/hub/session/355fadd4-dcdd-114a-a70f-963efa94893a/timeouts/implicit_wait {"sessionId": "355fadd4-dcdd-114a-a70f-963efa94893a", "ms": 3000.0}
+2016-07-06 22:02:31,200 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:31,200 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64689/hub/session/355fadd4-dcdd-114a-a70f-963efa94893a/url {"url": "http://localhost:8081/sequencelistings/", "sessionId": "355fadd4-dcdd-114a-a70f-963efa94893a"}
+2016-07-06 22:02:31,283 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:02:31,507 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:31,507 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64689/hub/session/355fadd4-dcdd-114a-a70f-963efa94893a/title {"sessionId": "355fadd4-dcdd-114a-a70f-963efa94893a"}
+2016-07-06 22:02:31,569 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:31,570 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64689/hub/session/355fadd4-dcdd-114a-a70f-963efa94893a/elements {"using": "tag name", "sessionId": "355fadd4-dcdd-114a-a70f-963efa94893a", "value": "h2"}
+2016-07-06 22:02:31,656 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:31,657 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64689/hub/session/355fadd4-dcdd-114a-a70f-963efa94893a/element/{ba7cb540-dab5-4a41-a25e-90b66dd91994}/text {"sessionId": "355fadd4-dcdd-114a-a70f-963efa94893a", "id": "{ba7cb540-dab5-4a41-a25e-90b66dd91994}"}
+2016-07-06 22:02:31,674 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:31,675 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64689/hub/session/355fadd4-dcdd-114a-a70f-963efa94893a/element/{4a7c5f3d-c42e-c546-aaa0-e90fb6dcdf60}/text {"sessionId": "355fadd4-dcdd-114a-a70f-963efa94893a", "id": "{4a7c5f3d-c42e-c546-aaa0-e90fb6dcdf60}"}
+2016-07-06 22:02:31,733 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:31,734 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64689/hub/session/355fadd4-dcdd-114a-a70f-963efa94893a/element/{ba7cb540-dab5-4a41-a25e-90b66dd91994}/text {"sessionId": "355fadd4-dcdd-114a-a70f-963efa94893a", "id": "{ba7cb540-dab5-4a41-a25e-90b66dd91994}"}
+2016-07-06 22:02:31,746 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:31,746 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64689/hub/session/355fadd4-dcdd-114a-a70f-963efa94893a/element/{4a7c5f3d-c42e-c546-aaa0-e90fb6dcdf60}/text {"sessionId": "355fadd4-dcdd-114a-a70f-963efa94893a", "id": "{4a7c5f3d-c42e-c546-aaa0-e90fb6dcdf60}"}
+2016-07-06 22:02:31,758 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:31,758 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64689/hub/session/355fadd4-dcdd-114a-a70f-963efa94893a/element {"using": "id", "sessionId": "355fadd4-dcdd-114a-a70f-963efa94893a", "value": "no_seqls_par"}
+2016-07-06 22:02:31,768 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:31,768 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64689/hub/session/355fadd4-dcdd-114a-a70f-963efa94893a/element/{ba91f1c2-2e33-8a40-87c5-b93d60b1e74b}/text {"sessionId": "355fadd4-dcdd-114a-a70f-963efa94893a", "id": "{ba91f1c2-2e33-8a40-87c5-b93d60b1e74b}"}
+2016-07-06 22:02:31,797 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:31,798 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64689/hub/session/355fadd4-dcdd-114a-a70f-963efa94893a/elements {"using": "tag name", "sessionId": "355fadd4-dcdd-114a-a70f-963efa94893a", "value": "table"}
+2016-07-06 22:02:34,819 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:34,820 - selenium.webdriver.remote.remote_connection - DEBUG
+	DELETE http://127.0.0.1:64689/hub/session/355fadd4-dcdd-114a-a70f-963efa94893a {"sessionId": "355fadd4-dcdd-114a-a70f-963efa94893a"}
+2016-07-06 22:02:34,826 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:38,260 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2016-07-06 22:02:38,330 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:38,330 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/timeouts/implicit_wait {"sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b", "ms": 3000.0}
+2016-07-06 22:02:38,340 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:38,340 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/url {"url": "http://localhost:8081/accounts/register/", "sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b"}
+2016-07-06 22:02:38,422 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:02:38,710 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:38,711 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/element {"using": "id", "sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b", "value": "id_username"}
+2016-07-06 22:02:38,784 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:38,785 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/element {"using": "id", "sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b", "value": "id_email"}
+2016-07-06 22:02:38,814 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:38,814 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/element {"using": "id", "sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b", "value": "id_password1"}
+2016-07-06 22:02:38,848 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:38,848 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/element {"using": "id", "sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b", "value": "id_password2"}
+2016-07-06 22:02:38,856 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:38,856 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/element/{a7ce090d-c2a4-144e-9c3b-2db954767105}/value {"sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b", "id": "{a7ce090d-c2a4-144e-9c3b-2db954767105}", "value": ["u", "s", "e", "r", "2", "0"]}
+2016-07-06 22:02:38,921 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:38,921 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/element/{ead0fb56-cd7c-f846-8063-1b48a94a766b}/value {"sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b", "id": "{ead0fb56-cd7c-f846-8063-1b48a94a766b}", "value": ["u", "s", "e", "r", "2", "0", "@", "e", "m", "a", "i", "l", ".", "c", "o", "m"]}
+2016-07-06 22:02:39,005 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:39,005 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/element/{f0700aa8-a976-b643-adf6-d89b4bf9755c}/value {"sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b", "id": "{f0700aa8-a976-b643-adf6-d89b4bf9755c}", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "2", "0"]}
+2016-07-06 22:02:39,073 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:39,073 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/element/{501ca919-b210-4442-9017-0fdea99ea40f}/value {"sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b", "id": "{501ca919-b210-4442-9017-0fdea99ea40f}", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "2", "0"]}
+2016-07-06 22:02:39,139 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:39,139 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/element {"using": "class name", "sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b", "value": "btn"}
+2016-07-06 22:02:39,147 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:39,147 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/element/{ef6c23d9-fb90-5c42-867d-63ecded5713f}/click {"sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b", "id": "{ef6c23d9-fb90-5c42-867d-63ecded5713f}"}
+2016-07-06 22:02:39,594 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:02:39,770 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:39,770 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/url {"url": "http://localhost:8081/sequencelistings/", "sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b"}
+2016-07-06 22:02:39,818 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:02:39,951 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:39,951 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/title {"sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b"}
+2016-07-06 22:02:39,981 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:39,981 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/element {"using": "class name", "sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b", "value": "page-header"}
+2016-07-06 22:02:39,993 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:39,994 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b/element/{dd2ef9fe-e8ac-984c-baba-b01172899dcf}/text {"sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b", "id": "{dd2ef9fe-e8ac-984c-baba-b01172899dcf}"}
+2016-07-06 22:02:40,011 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:40,011 - selenium.webdriver.remote.remote_connection - DEBUG
+	DELETE http://127.0.0.1:64727/hub/session/c75e4b88-7e3a-984f-8f0c-658157ba723b {"sessionId": "c75e4b88-7e3a-984f-8f0c-658157ba723b"}
+2016-07-06 22:02:40,016 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:02:41,767 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: ab(c.
+2016-07-06 22:02:41,768 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: a(b9c.
+2016-07-06 22:02:41,811 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test6.xml
+Opening and ending tag mismatch: ApplicantNamey line 21 and ApplicantName, line 23, column 34
+2016-07-06 22:02:41,812 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test7.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantsName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceTotalQuantity SequenceData SequenceData )
+2016-07-06 22:02:41,813 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceData SequenceData )
+2016-07-06 22:02:41,829 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test4.xml
+Opening and ending tag mismatch: ApplicantNamex line 20 and ApplicantName, line 22, column 34
+2016-07-06 22:02:41,831 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_ENUMERATION_VALID: Element 'INSDFeature_key': [facet 'enumeration'] The value 'SOURCxE' is not an element of the set {'allele', 'attenuator', 'C_region', 'CAAT_signal', 'CDS', 'conflict', 'D-loop', 'D_segment', 'enhancer', 'exon', 'GC_signal', 'gene', 'iDNA', 'intron', 'J_segment', 'LTR', 'mat_peptide', 'misc_binding', 'misc_difference', 'misc_feature', 'misc_recomb', 'misc_RNA', 'misc_signal', 'misc_structure', 'modified_base', 'mRNA', 'mutation', 'N_region', 'old_sequence', 'polyA_signal', 'polyA_site', 'precursor_RNA', 'prim_transcript', 'primer_bind', 'promoter', 'protein_bind', 'RBS', 'repeat_region', 'repeat_unit', 'rep_origin', 'rRNA', 'S_region', 'satellite', 'scRNA', 'sig_peptide', 'snRNA', 'source', 'stem_loop', 'STS', 'TATA_signal', 'terminator', 'transit_peptide', 'tRNA', 'unsure', 'V_region', 'V_segment', 'variation', '3'clip', '3'UTR', '5'clip', '5'UTR', '-10_signal', '-35_signal', 'ACT_SITE', 'BINDING', 'CA_BIND', 'CARBOHYD', 'CHAIN', 'COILED', 'COMPBIAS', 'CONFLICT', 'CROSSLNK', 'DISULFID', 'DNA_BIND', 'DOMAIN', 'HELIX', 'INIT_MET', 'INTRAMEM', 'LIPID', 'METAL', 'MOD_RES', 'MOTIF', 'MUTAGEN', 'NON_STD', 'NON_TER', 'NP_BIND', 'PEPTIDE', 'PROPEP', 'REGION', 'REPEAT', 'SIGNAL', 'SITE', 'SOURCE', 'STRAND', 'TOPO_DOM', 'TRANSMEM', 'TRANSIT', 'TURN', 'UNSURE', 'VARIANT', 'VAR_SEQ', 'ZN_FING'}.
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_1: Element 'INSDFeature_key': 'SOURCxE' is not a valid value of the atomic type 'featureKeyValue'.
+2016-07-06 22:02:41,835 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml:42:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'SequenceData': This element is not expected. Expected is ( EarliestPriorityApplicationIdentification ).
+2016-07-06 22:02:42,445 - sequencelistings.views - INFO
+	Generated xml seql at sequencelistings/output/test_xmlsql.xml.
+2016-07-06 22:13:53,826 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params [])
+2016-07-06 22:13:53,863 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params [])
+2016-07-06 22:13:53,866 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, UNIQUE ("app_label", "model")); (params [])
+2016-07-06 22:13:53,867 - django.db.backends.schema - DEBUG
+	INSERT INTO "django_content_type__new" ("model", "app_label", "id", "name") SELECT "model", "app_label", "id", "name" FROM "django_content_type"; (params [])
+2016-07-06 22:13:53,867 - django.db.backends.schema - DEBUG
+	DROP TABLE "django_content_type"; (params [])
+2016-07-06 22:13:53,868 - django.db.backends.schema - DEBUG
+	ALTER TABLE "django_content_type__new" RENAME TO "django_content_type"; (params [])
+2016-07-06 22:13:53,883 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id"), "codename" varchar(100) NOT NULL, UNIQUE ("content_type_id", "codename")); (params [])
+2016-07-06 22:13:53,889 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params [])
+2016-07-06 22:13:53,890 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("group_id", "permission_id")); (params [])
+2016-07-06 22:13:53,902 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params [])
+2016-07-06 22:13:53,903 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), UNIQUE ("user_id", "group_id")); (params [])
+2016-07-06 22:13:53,905 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("user_id", "permission_id")); (params [])
+2016-07-06 22:13:53,905 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_permission_417f1b1c ON "auth_permission" ("content_type_id"); (params [])
+2016-07-06 22:13:53,906 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_0e939a4f ON "auth_group_permissions" ("group_id"); (params [])
+2016-07-06 22:13:53,906 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_8373b171 ON "auth_group_permissions" ("permission_id"); (params [])
+2016-07-06 22:13:53,906 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_e8701ad4 ON "auth_user_groups" ("user_id"); (params [])
+2016-07-06 22:13:53,906 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_0e939a4f ON "auth_user_groups" ("group_id"); (params [])
+2016-07-06 22:13:53,907 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_e8701ad4 ON "auth_user_user_permissions" ("user_id"); (params [])
+2016-07-06 22:13:53,907 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_8373b171 ON "auth_user_user_permissions" ("permission_id"); (params [])
+2016-07-06 22:13:53,941 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id"), "user_id" integer NOT NULL REFERENCES "auth_user" ("id")); (params [])
+2016-07-06 22:13:53,942 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_417f1b1c ON "django_admin_log" ("content_type_id"); (params [])
+2016-07-06 22:13:53,943 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_e8701ad4 ON "django_admin_log" ("user_id"); (params [])
+2016-07-06 22:13:53,971 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id")); (params [])
+2016-07-06 22:13:54,019 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id"), "activated" bool NOT NULL); (params [])
+2016-07-06 22:13:54,020 - django.db.backends.schema - DEBUG
+	INSERT INTO "registration_registrationprofile__new" ("activated", "activation_key", "user_id", "id") SELECT 0, "activation_key", "user_id", "id" FROM "registration_registrationprofile"; (params [])
+2016-07-06 22:13:54,020 - django.db.backends.schema - DEBUG
+	DROP TABLE "registration_registrationprofile"; (params [])
+2016-07-06 22:13:54,020 - django.db.backends.schema - DEBUG
+	ALTER TABLE "registration_registrationprofile__new" RENAME TO "registration_registrationprofile"; (params [])
+2016-07-06 22:13:54,078 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL); (params [])
+2016-07-06 22:13:54,108 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_qualifier" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "qualifierName" varchar(100) NOT NULL, "qualifierValue" varchar(1000) NOT NULL, "feature_id" integer NOT NULL REFERENCES "sequencelistings_feature" ("id")); (params [])
+2016-07-06 22:13:54,114 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL); (params [])
+2016-07-06 22:13:54,126 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL); (params [])
+2016-07-06 22:13:54,138 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_title" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "inventionTitle" varchar(200) NOT NULL, "inventionTitleLanguageCode" varchar(2) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-06 22:13:54,152 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-06 22:13:54,153 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-06 22:13:54,153 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-06 22:13:54,153 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-06 22:13:54,154 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_qualifier_86d175dd ON "sequencelistings_qualifier" ("feature_id"); (params [])
+2016-07-06 22:13:54,154 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_title_3c9ce7d7 ON "sequencelistings_title" ("sequenceListing_id"); (params [])
+2016-07-06 22:13:54,154 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-06 22:13:54,169 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL, "sequence_id" integer NOT NULL REFERENCES "sequencelistings_sequence" ("id")); (params [])
+2016-07-06 22:13:54,170 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_feature__new" ("location", "id", "featureKey") SELECT "location", "id", "featureKey" FROM "sequencelistings_feature"; (params [])
+2016-07-06 22:13:54,170 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_feature"; (params [])
+2016-07-06 22:13:54,170 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_feature__new" RENAME TO "sequencelistings_feature"; (params [])
+2016-07-06 22:13:54,171 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_feature_d9cd7378 ON "sequencelistings_feature" ("sequence_id"); (params [])
+2016-07-06 22:13:54,209 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-06 22:13:54,210 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-06 22:13:54,210 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-06 22:13:54,211 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-06 22:13:54,211 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-06 22:13:54,263 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-06 22:13:54,264 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-06 22:13:54,264 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-06 22:13:54,265 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-06 22:13:54,265 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-06 22:13:54,321 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-06 22:13:54,321 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", 0, "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-06 22:13:54,322 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-06 22:13:54,322 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-06 22:13:54,387 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-06 22:13:54,388 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-06 22:13:54,388 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-06 22:13:54,388 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-06 22:13:54,392 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params [])
+2016-07-06 22:13:54,393 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_session_de54fa62 ON "django_session" ("expire_date"); (params [])
+2016-07-06 22:13:57,607 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64966/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2016-07-06 22:13:57,711 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:13:57,712 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64966/hub/session/92c527f7-bb89-4b46-966d-e887ab7b30a4/timeouts/implicit_wait {"sessionId": "92c527f7-bb89-4b46-966d-e887ab7b30a4", "ms": 3000.0}
+2016-07-06 22:13:57,736 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:13:57,737 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64966/hub/session/92c527f7-bb89-4b46-966d-e887ab7b30a4/url {"url": "http://localhost:8081/sequencelistings/about", "sessionId": "92c527f7-bb89-4b46-966d-e887ab7b30a4"}
+2016-07-06 22:13:57,883 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:13:58,079 - django.request - WARNING
+	Not Found: /static/images/rango.jpg
+2016-07-06 22:13:58,196 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:13:58,196 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64966/hub/session/92c527f7-bb89-4b46-966d-e887ab7b30a4/title {"sessionId": "92c527f7-bb89-4b46-966d-e887ab7b30a4"}
+2016-07-06 22:13:58,207 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:13:58,207 - selenium.webdriver.remote.remote_connection - DEBUG
+	DELETE http://127.0.0.1:64966/hub/session/92c527f7-bb89-4b46-966d-e887ab7b30a4 {"sessionId": "92c527f7-bb89-4b46-966d-e887ab7b30a4"}
+2016-07-06 22:13:58,213 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:01,593 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2016-07-06 22:14:01,746 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:01,746 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/timeouts/implicit_wait {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "ms": 3000.0}
+2016-07-06 22:14:01,807 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:01,808 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/url {"url": "http://localhost:8081/sequencelistings/", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200"}
+2016-07-06 22:14:01,973 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:14:02,797 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:02,797 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/elements {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "add_seql_link"}
+2016-07-06 22:14:05,950 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:05,950 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/url {"url": "http://localhost:8081/accounts/register/", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200"}
+2016-07-06 22:14:05,991 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:14:06,177 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:06,177 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_username"}
+2016-07-06 22:14:06,243 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:06,243 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_email"}
+2016-07-06 22:14:06,250 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:06,251 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_password1"}
+2016-07-06 22:14:06,258 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:06,258 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_password2"}
+2016-07-06 22:14:06,267 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:06,267 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{90ea09c6-def2-714d-8682-5ae5f096e3b9}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{90ea09c6-def2-714d-8682-5ae5f096e3b9}", "value": ["u", "s", "e", "r", "2", "0"]}
+2016-07-06 22:14:06,330 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:06,330 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{c995e3ee-4bf3-f44f-8ec1-f3e5447e7310}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{c995e3ee-4bf3-f44f-8ec1-f3e5447e7310}", "value": ["u", "s", "e", "r", "2", "0", "@", "e", "m", "a", "i", "l", ".", "c", "o", "m"]}
+2016-07-06 22:14:06,415 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:06,415 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{806efbe4-a488-854d-921a-ed9d93f4b53f}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{806efbe4-a488-854d-921a-ed9d93f4b53f}", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "2", "0"]}
+2016-07-06 22:14:06,480 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:06,480 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{162f0c5b-db4f-db40-b266-8e4a46ccbd0b}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{162f0c5b-db4f-db40-b266-8e4a46ccbd0b}", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "2", "0"]}
+2016-07-06 22:14:06,541 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:06,541 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "class name", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "btn"}
+2016-07-06 22:14:06,549 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:06,549 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{32b09217-0c59-d84c-b1d8-b263216e6dad}/click {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{32b09217-0c59-d84c-b1d8-b263216e6dad}"}
+2016-07-06 22:14:06,930 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:14:07,055 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,055 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/url {"url": "http://localhost:8081/sequencelistings/add_sequencelisting", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200"}
+2016-07-06 22:14:07,122 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:14:07,333 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,334 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "tag name", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "h2"}
+2016-07-06 22:14:07,345 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,345 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{40428f63-7c38-d947-b3e4-c722c3c092b3}/text {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{40428f63-7c38-d947-b3e4-c722c3c092b3}"}
+2016-07-06 22:14:07,358 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,358 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_inventionTitle"}
+2016-07-06 22:14:07,366 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,366 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_inventionTitleLanguageCode"}
+2016-07-06 22:14:07,374 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,374 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_fileName"}
+2016-07-06 22:14:07,382 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,382 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_applicantFileReference"}
+2016-07-06 22:14:07,390 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,390 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_IPOfficeCode"}
+2016-07-06 22:14:07,397 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,398 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_applicationNumberText"}
+2016-07-06 22:14:07,405 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,405 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_filingDate"}
+2016-07-06 22:14:07,412 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,413 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_earliestPriorityIPOfficeCode"}
+2016-07-06 22:14:07,420 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,420 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_earliestPriorityApplicationNumberText"}
+2016-07-06 22:14:07,427 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,427 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_earliestPriorityFilingDate"}
+2016-07-06 22:14:07,435 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,435 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_applicantName"}
+2016-07-06 22:14:07,443 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,443 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_applicantNameLanguageCode"}
+2016-07-06 22:14:07,452 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,453 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_applicantNameLatin"}
+2016-07-06 22:14:07,461 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,462 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_inventorName"}
+2016-07-06 22:14:07,470 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,470 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_inventorNameLanguageCode"}
+2016-07-06 22:14:07,477 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,478 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "id_inventorNameLatin"}
+2016-07-06 22:14:07,484 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,484 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{59666e88-89ab-e947-baac-6808ca78128c}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{59666e88-89ab-e947-baac-6808ca78128c}", "value": ["a"]}
+2016-07-06 22:14:07,530 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,531 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{183d56bc-c0c3-934d-af29-7a1761d63148}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{183d56bc-c0c3-934d-af29-7a1761d63148}", "value": ["b"]}
+2016-07-06 22:14:07,569 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,570 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{bbc71ece-2cba-7845-aed2-e8e2b2ad176e}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{bbc71ece-2cba-7845-aed2-e8e2b2ad176e}", "value": ["s", "e", "l", "e", "n", "i", "u", "m", "_", "t", "e", "s", "t", "_", "f", "i", "l", "e", "_", "n", "a", "m", "e"]}
+2016-07-06 22:14:07,675 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,676 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{56bc007a-8e1c-364d-86af-d86cd61cd668}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{56bc007a-8e1c-364d-86af-d86cd61cd668}", "value": ["d"]}
+2016-07-06 22:14:07,708 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,709 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{578cf11b-7014-a34a-b2f6-6af4fbe8c8a9}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{578cf11b-7014-a34a-b2f6-6af4fbe8c8a9}", "value": ["e"]}
+2016-07-06 22:14:07,756 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,757 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{dfbee24f-33e8-6443-bc35-49f265ba86c2}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{dfbee24f-33e8-6443-bc35-49f265ba86c2}", "value": ["f"]}
+2016-07-06 22:14:07,789 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,790 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{6d531698-09ab-7446-bd07-cbaed0a9fdda}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{6d531698-09ab-7446-bd07-cbaed0a9fdda}", "value": ["2", "0", "1", "0", "-", "1", "2", "-", "2", "0"]}
+2016-07-06 22:14:07,854 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,854 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{5697582a-ccc2-2a4f-ad7b-d74696e1dd76}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{5697582a-ccc2-2a4f-ad7b-d74696e1dd76}", "value": ["g"]}
+2016-07-06 22:14:07,895 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,895 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{313a1587-7d00-3d47-94b2-29ba537b047b}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{313a1587-7d00-3d47-94b2-29ba537b047b}", "value": ["h"]}
+2016-07-06 22:14:07,933 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,934 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{835b090d-759f-4b47-b6c5-e9238b80ac55}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{835b090d-759f-4b47-b6c5-e9238b80ac55}", "value": ["2", "0", "0", "9", "-", "1", "2", "-", "2", "0"]}
+2016-07-06 22:14:07,992 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:07,992 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{eb78f96a-9725-7b42-9b27-9aea199306ce}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{eb78f96a-9725-7b42-9b27-9aea199306ce}", "value": ["i"]}
+2016-07-06 22:14:08,028 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,028 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{c1319d8a-1fc4-0d41-9b23-4d1b1d5e06b5}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{c1319d8a-1fc4-0d41-9b23-4d1b1d5e06b5}", "value": ["j"]}
+2016-07-06 22:14:08,067 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,067 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{ae58470a-e867-9448-88f2-be26c0dd6af5}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{ae58470a-e867-9448-88f2-be26c0dd6af5}", "value": ["k"]}
+2016-07-06 22:14:08,098 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,098 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{a24ee837-07af-e24b-8c1e-f2df289244e0}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{a24ee837-07af-e24b-8c1e-f2df289244e0}", "value": ["l"]}
+2016-07-06 22:14:08,134 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,134 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{6caf0424-7453-0c4f-9386-fe452a297df2}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{6caf0424-7453-0c4f-9386-fe452a297df2}", "value": ["m"]}
+2016-07-06 22:14:08,166 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,166 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{4a22eed0-ebe2-e346-8f63-f6f40eadbfc5}/value {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{4a22eed0-ebe2-e346-8f63-f6f40eadbfc5}", "value": ["n"]}
+2016-07-06 22:14:08,197 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,198 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "xpath", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "//input[@value=\"Submit\"]"}
+2016-07-06 22:14:08,237 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,237 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{2429b358-98b2-4b40-a58d-079745573428}/click {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{2429b358-98b2-4b40-a58d-079745573428}"}
+2016-07-06 22:14:08,380 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:14:08,559 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,560 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/url {"url": "http://localhost:8081/sequencelistings/", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200"}
+2016-07-06 22:14:08,607 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:14:08,734 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,734 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element {"using": "id", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "value": "home_page_table"}
+2016-07-06 22:14:08,747 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,747 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{d29d03de-7751-2346-9954-b1e87101ae0c}/elements {"using": "tag name", "sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{d29d03de-7751-2346-9954-b1e87101ae0c}", "value": "td"}
+2016-07-06 22:14:08,758 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,759 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{4b8be43d-03cd-f146-87b9-3bb7bd82868b}/text {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{4b8be43d-03cd-f146-87b9-3bb7bd82868b}"}
+2016-07-06 22:14:08,781 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,782 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{8382c574-d58c-034a-a9a8-512f8b5fba46}/text {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{8382c574-d58c-034a-a9a8-512f8b5fba46}"}
+2016-07-06 22:14:08,798 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,798 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200/element/{3b549b8e-abcd-9b40-ad45-6289485d98c3}/text {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200", "id": "{3b549b8e-abcd-9b40-ad45-6289485d98c3}"}
+2016-07-06 22:14:08,811 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:08,811 - selenium.webdriver.remote.remote_connection - DEBUG
+	DELETE http://127.0.0.1:64998/hub/session/366fb418-6b53-c746-bbcf-43ba2c547200 {"sessionId": "366fb418-6b53-c746-bbcf-43ba2c547200"}
+2016-07-06 22:14:08,817 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:13,432 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65103/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2016-07-06 22:14:13,631 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:13,632 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65103/hub/session/1b73a579-a46c-8944-b1b3-07d578b562f6/timeouts/implicit_wait {"sessionId": "1b73a579-a46c-8944-b1b3-07d578b562f6", "ms": 3000.0}
+2016-07-06 22:14:13,656 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:13,656 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65103/hub/session/1b73a579-a46c-8944-b1b3-07d578b562f6/url {"url": "http://localhost:8081/sequencelistings/", "sessionId": "1b73a579-a46c-8944-b1b3-07d578b562f6"}
+2016-07-06 22:14:13,773 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:14:14,003 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:14,003 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:65103/hub/session/1b73a579-a46c-8944-b1b3-07d578b562f6/title {"sessionId": "1b73a579-a46c-8944-b1b3-07d578b562f6"}
+2016-07-06 22:14:14,011 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:14,012 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65103/hub/session/1b73a579-a46c-8944-b1b3-07d578b562f6/elements {"using": "tag name", "sessionId": "1b73a579-a46c-8944-b1b3-07d578b562f6", "value": "h2"}
+2016-07-06 22:14:14,076 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:14,076 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:65103/hub/session/1b73a579-a46c-8944-b1b3-07d578b562f6/element/{57fe7279-bf16-2641-abfa-e8fa370dbcc7}/text {"sessionId": "1b73a579-a46c-8944-b1b3-07d578b562f6", "id": "{57fe7279-bf16-2641-abfa-e8fa370dbcc7}"}
+2016-07-06 22:14:14,091 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:14,092 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:65103/hub/session/1b73a579-a46c-8944-b1b3-07d578b562f6/element/{984546bc-0ef8-8e4c-9674-6067603b06dc}/text {"sessionId": "1b73a579-a46c-8944-b1b3-07d578b562f6", "id": "{984546bc-0ef8-8e4c-9674-6067603b06dc}"}
+2016-07-06 22:14:14,104 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:14,104 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:65103/hub/session/1b73a579-a46c-8944-b1b3-07d578b562f6/element/{57fe7279-bf16-2641-abfa-e8fa370dbcc7}/text {"sessionId": "1b73a579-a46c-8944-b1b3-07d578b562f6", "id": "{57fe7279-bf16-2641-abfa-e8fa370dbcc7}"}
+2016-07-06 22:14:14,117 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:14,118 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:65103/hub/session/1b73a579-a46c-8944-b1b3-07d578b562f6/element/{984546bc-0ef8-8e4c-9674-6067603b06dc}/text {"sessionId": "1b73a579-a46c-8944-b1b3-07d578b562f6", "id": "{984546bc-0ef8-8e4c-9674-6067603b06dc}"}
+2016-07-06 22:14:14,128 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:14,129 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65103/hub/session/1b73a579-a46c-8944-b1b3-07d578b562f6/element {"using": "id", "sessionId": "1b73a579-a46c-8944-b1b3-07d578b562f6", "value": "no_seqls_par"}
+2016-07-06 22:14:14,140 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:14,140 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:65103/hub/session/1b73a579-a46c-8944-b1b3-07d578b562f6/element/{86ac169f-c0cb-1b4a-85e2-eab619124b9a}/text {"sessionId": "1b73a579-a46c-8944-b1b3-07d578b562f6", "id": "{86ac169f-c0cb-1b4a-85e2-eab619124b9a}"}
+2016-07-06 22:14:14,154 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:14,154 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65103/hub/session/1b73a579-a46c-8944-b1b3-07d578b562f6/elements {"using": "tag name", "sessionId": "1b73a579-a46c-8944-b1b3-07d578b562f6", "value": "table"}
+2016-07-06 22:14:17,164 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:17,165 - selenium.webdriver.remote.remote_connection - DEBUG
+	DELETE http://127.0.0.1:65103/hub/session/1b73a579-a46c-8944-b1b3-07d578b562f6 {"sessionId": "1b73a579-a46c-8944-b1b3-07d578b562f6"}
+2016-07-06 22:14:17,172 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:20,619 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2016-07-06 22:14:20,730 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:20,731 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/timeouts/implicit_wait {"sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146", "ms": 3000.0}
+2016-07-06 22:14:20,756 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:20,757 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/url {"url": "http://localhost:8081/accounts/register/", "sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146"}
+2016-07-06 22:14:20,842 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:14:21,120 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:21,120 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/element {"using": "id", "sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146", "value": "id_username"}
+2016-07-06 22:14:21,188 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:21,188 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/element {"using": "id", "sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146", "value": "id_email"}
+2016-07-06 22:14:21,196 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:21,196 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/element {"using": "id", "sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146", "value": "id_password1"}
+2016-07-06 22:14:21,203 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:21,204 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/element {"using": "id", "sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146", "value": "id_password2"}
+2016-07-06 22:14:21,212 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:21,212 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/element/{b9008017-0759-d240-b2ea-afad85fa0027}/value {"sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146", "id": "{b9008017-0759-d240-b2ea-afad85fa0027}", "value": ["u", "s", "e", "r", "2", "0"]}
+2016-07-06 22:14:21,275 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:21,275 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/element/{bdba9fb2-d052-d14c-a658-80a89bde6b6c}/value {"sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146", "id": "{bdba9fb2-d052-d14c-a658-80a89bde6b6c}", "value": ["u", "s", "e", "r", "2", "0", "@", "e", "m", "a", "i", "l", ".", "c", "o", "m"]}
+2016-07-06 22:14:21,364 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:21,365 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/element/{5d28a902-897a-7740-a471-17f99776bcf7}/value {"sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146", "id": "{5d28a902-897a-7740-a471-17f99776bcf7}", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "2", "0"]}
+2016-07-06 22:14:21,453 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:21,453 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/element/{2678c511-b3c3-044e-812f-2cd288007ee5}/value {"sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146", "id": "{2678c511-b3c3-044e-812f-2cd288007ee5}", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "2", "0"]}
+2016-07-06 22:14:21,560 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:21,560 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/element {"using": "class name", "sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146", "value": "btn"}
+2016-07-06 22:14:21,568 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:21,569 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/element/{d406100a-9cb3-0340-98ad-dfec15e592b1}/click {"sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146", "id": "{d406100a-9cb3-0340-98ad-dfec15e592b1}"}
+2016-07-06 22:14:21,954 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:14:22,067 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:22,068 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/url {"url": "http://localhost:8081/sequencelistings/", "sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146"}
+2016-07-06 22:14:22,137 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-06 22:14:22,255 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:22,255 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/title {"sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146"}
+2016-07-06 22:14:22,265 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:22,265 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/element {"using": "class name", "sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146", "value": "page-header"}
+2016-07-06 22:14:22,278 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:22,278 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146/element/{35bb78c5-273b-3847-a674-f776a0589d9e}/text {"sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146", "id": "{35bb78c5-273b-3847-a674-f776a0589d9e}"}
+2016-07-06 22:14:22,295 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:22,296 - selenium.webdriver.remote.remote_connection - DEBUG
+	DELETE http://127.0.0.1:65142/hub/session/44a886f2-9c4f-2540-a644-70473d9b6146 {"sessionId": "44a886f2-9c4f-2540-a644-70473d9b6146"}
+2016-07-06 22:14:22,300 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-06 22:14:23,665 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: ab(c.
+2016-07-06 22:14:23,665 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: a(b9c.
+2016-07-06 22:14:23,718 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test6.xml
+Opening and ending tag mismatch: ApplicantNamey line 21 and ApplicantName, line 23, column 34
+2016-07-06 22:14:23,719 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test7.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantsName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceTotalQuantity SequenceData SequenceData )
+2016-07-06 22:14:23,719 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceData SequenceData )
+2016-07-06 22:14:23,726 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test4.xml
+Opening and ending tag mismatch: ApplicantNamex line 20 and ApplicantName, line 22, column 34
+2016-07-06 22:14:23,728 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_ENUMERATION_VALID: Element 'INSDFeature_key': [facet 'enumeration'] The value 'SOURCxE' is not an element of the set {'allele', 'attenuator', 'C_region', 'CAAT_signal', 'CDS', 'conflict', 'D-loop', 'D_segment', 'enhancer', 'exon', 'GC_signal', 'gene', 'iDNA', 'intron', 'J_segment', 'LTR', 'mat_peptide', 'misc_binding', 'misc_difference', 'misc_feature', 'misc_recomb', 'misc_RNA', 'misc_signal', 'misc_structure', 'modified_base', 'mRNA', 'mutation', 'N_region', 'old_sequence', 'polyA_signal', 'polyA_site', 'precursor_RNA', 'prim_transcript', 'primer_bind', 'promoter', 'protein_bind', 'RBS', 'repeat_region', 'repeat_unit', 'rep_origin', 'rRNA', 'S_region', 'satellite', 'scRNA', 'sig_peptide', 'snRNA', 'source', 'stem_loop', 'STS', 'TATA_signal', 'terminator', 'transit_peptide', 'tRNA', 'unsure', 'V_region', 'V_segment', 'variation', '3'clip', '3'UTR', '5'clip', '5'UTR', '-10_signal', '-35_signal', 'ACT_SITE', 'BINDING', 'CA_BIND', 'CARBOHYD', 'CHAIN', 'COILED', 'COMPBIAS', 'CONFLICT', 'CROSSLNK', 'DISULFID', 'DNA_BIND', 'DOMAIN', 'HELIX', 'INIT_MET', 'INTRAMEM', 'LIPID', 'METAL', 'MOD_RES', 'MOTIF', 'MUTAGEN', 'NON_STD', 'NON_TER', 'NP_BIND', 'PEPTIDE', 'PROPEP', 'REGION', 'REPEAT', 'SIGNAL', 'SITE', 'SOURCE', 'STRAND', 'TOPO_DOM', 'TRANSMEM', 'TRANSIT', 'TURN', 'UNSURE', 'VARIANT', 'VAR_SEQ', 'ZN_FING'}.
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_1: Element 'INSDFeature_key': 'SOURCxE' is not a valid value of the atomic type 'featureKeyValue'.
+2016-07-06 22:14:23,732 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml:42:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'SequenceData': This element is not expected. Expected is ( EarliestPriorityApplicationIdentification ).
+2016-07-06 22:14:24,356 - sequencelistings.views - INFO
+	Generated xml seql at sequencelistings/output/test_xmlsql.xml.

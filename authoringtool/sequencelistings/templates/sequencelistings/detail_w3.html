@@ -100,7 +100,7 @@
     <br>
     <!-- if the user is logged in show link for adding title  -->
     {% if user.is_authenticated %}
-        {% if user.is_staff or sequencelisting.fileName != 'Invention_SEQL' %}
+        {% if sequencelisting.isEditable or user.is_staff  %}
             <p><a href="{% url 'sequencelistings:add_title' sequencelisting.pk %}">Add new title</a></p>
         {% endif %}
     
@@ -112,7 +112,7 @@
     <p>
     <!-- if the user is logged in show link for editing sequence data  -->
     {% if user.is_authenticated %}
-        {% if user.is_staff or sequencelisting.fileName != 'Invention_SEQL' %}
+        {% if sequencelisting.isEditable or user.is_staff  %}
             <a href="{% url 'sequencelistings:edit_sequence_data' sequencelisting.pk %}">Edit</a>
         {% endif %}
     
@@ -196,7 +196,7 @@
     <br>
     <!-- if the user is logged in show link for adding sequences  -->
     {% if user.is_authenticated %}
-        {% if user.is_staff or sequencelisting.fileName != 'Invention_SEQL' %}
+        {% if sequencelisting.isEditable or user.is_staff  %}
             <p><a href="{% url 'sequencelistings:add_seq' sequencelisting.pk %}">Add new sequence</a></p>
         {% endif %}
     
