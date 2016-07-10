@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+{% extends 'sequencelistings/base.html' %}
+{% load my_filters %}
+
+{%block header_block %}
+    <h2><strong>DELETE</strong>SEQ.ID.NO. {{seq.sequenceIdNo}}?????</h2>
+{% endblock %}
+
+{% block body_block %}
+<p><a href="{% url 'sequencelistings:index' %}">Home &gt;&gt;</a>
+<a href="{% url 'sequencelistings:detail' seq.sequenceListing.pk %}">{{seq.sequenceListing}} &gt;&gt;</a>
+</p>
+
+<hr>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <!-- <table>
+        {{ form.as_table }}
+    </table> -->
+    <!-- <hr>
+    <h2>Feature table</h2>
+    <hr>
+    
+    {% for f, ff in featureFormDic.iteritems %}
+        <table>
+            {{ff.as_table}}
+        </table>
+        <br>
+        <ul>
+        {% for qf in qualifierFormDic|access:f %}
+            <li><p>{{qf}}</p></li>
+        {% endfor %}
+        </ul>
+        <p>
+        <a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/seq{{seq.pk}}/f{{f.pk}}/add_qualifier/'><span  class="addQalifierLink">Add new qualifier</span></a>
+        </p>
+        <hr>
+        
+    {% endfor %}
+    <p>
+    <a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/seq{{seq.pk}}/add_feature/'><span  class="addFeatureLink">Add new feature</span></a>
+    </p> -->
+    <!-- <br>
+    <p>
+    <a href="{% url 'sequencelistings:add_multiple_feature' seq.sequenceListing.pk seq.pk %}"><span  class="addFeatureLink">Add multiple feature</span></a>
+
+    </p>
+    <br> -->
+    <!-- <table class="featuretable">
+        <tr>
+            <th>feature key</th>
+            <th>location</th>
+            <th>qualifiers</th>
+        </tr>
+        {% for f in seq.feature_set.all %}
+            <tr>
+                <td>
+                    {{f.featureKey}}
+                </td>
+                <td>{{f.location}}</td>
+                <td>                          
+                    <table class="qualifiertable">
+                        <tr>
+                            <th>name</th>
+                            <th>value</th>
+                        </tr>
+                        {% if f.qualifier_set.all %}
+                            {% for q in f.qualifier_set.all %}
+                            <tr>
+                                <td>{{q.qualifierName}}</td>
+                                <td>{{q.qualifierValue}}</td>
+                            </tr>
+                            {% endfor %}
+                        {% endif %}
+                        <tr>
+                            <td class="addQalifierLink" colspan="2">
+                            <a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/seq{{seq.pk}}/f{{f.pk}}/add_qualifier/'>Add new qualifier</a>
+                            </td>
+                        </tr>
+                    </table>                         
+                </td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td class="addFeatureLink" colspan="2">
+                <a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/seq{{seq.pk}}/add_feature/'>Add new feature</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="addFeatureLink" colspan="2">
+                <a href='/sequencelistings/sl{{seq.sequenceListing.pk}}/seq{{seq.pk}}/add_multiple_feature/'>Add multiple feature</a>
+            </td>
+        </tr>                   
+    </table> -->
+    <p>
+        <input type="submit" value="Delete" />
+    </p>
+</form>
+{% endblock %}

@@ -83,6 +83,20 @@ class Sequence(models.Model): #good
         self.length = len(self.residues)
         super(Sequence, self).save(*args, **kwargs)
         
+    def delete(self, *args, **kwargs):
+        currentSequenceIdNo = self.sequenceIdNo
+#         allSequences = self.sequenceListing.sequence_set.filter(sequenceIdNo > currentSequenceIdNo)
+        allSubsequentSequences = SequenceListing.objects.filter(sequenceListing = self.sequenceListing).filter(sequenceIdNo_gt=currentSequenceIdNo)
+        for seq in allSubsequentSequences:
+            seq.sequenceIdNo -= seq.sequenceIdNo
+            seq.save()
+            
+        self.sequenceListing.sequenceTotalQuantity -= 1
+        self.sequenceListing.save()
+        
+        super(Sequence, self).delete(*args, **kwargs)
+        
+    
     def clean(self):
         if self.moltype == 'AA':
             p = pattern_prt  

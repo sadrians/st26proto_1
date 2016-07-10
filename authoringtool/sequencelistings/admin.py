@@ -63,7 +63,7 @@ class MyAdmin(admin.ModelAdmin):
                                       })
                  ]
     inlines = [TitleInline, SequenceInline]
-    list_display = ('fileName', 
+    list_display = ('fileName', 'sequenceTotalQuantity',
 #                     'inventionTitle', 
                     'productionDate',)
 

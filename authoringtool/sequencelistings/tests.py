@@ -503,7 +503,34 @@ class ModelsTests(TestCase):
          
         self.assertEqual('DNA', first_saved_seq.moltype)
         self.assertEqual('AA', second_saved_seq.moltype)
-     
+    
+    def test_deleting_sequence(self):
+        print 'Running %s ...' % getName()
+        
+        seq1 = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
+        seq2 = self.sequenceListingFixture.create_custom_sequence_instance(self.sequenceListing,
+                    'AA', 'MRSVTF', 'Mus musculus')
+
+        saved_seqs = Sequence.objects.all()
+        self.assertEqual(2, saved_seqs.count())
+        
+        first_saved_seq = saved_seqs[0]
+        second_saved_seq = saved_seqs[1]
+        
+        self.assertEqual('DNA', first_saved_seq.moltype)
+        self.assertEqual('AA', second_saved_seq.moltype)
+    
+        seq1.delete()
+        
+        self.assertEqual(1, self.sequenceListing.sequenceTotalQuantity)
+        
+        self.assertEqual(1, saved_seqs.count())
+        
+        remaining_seq = saved_seqs[0]
+        self.assertEqual(1, remaining_seq.sequenceIdNo)
+        self.assertEqual('AA', remaining_seq.moltype)
+        
+    
 #     TODO: add tests for other models 
                       
     def test_getOrganism(self):
