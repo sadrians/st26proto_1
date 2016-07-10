@@ -510,25 +510,47 @@ class ModelsTests(TestCase):
         seq1 = self.sequenceListingFixture.create_sequence_instance(self.sequenceListing)
         seq2 = self.sequenceListingFixture.create_custom_sequence_instance(self.sequenceListing,
                     'AA', 'MRSVTF', 'Mus musculus')
+        seq3 = self.sequenceListingFixture.create_custom_sequence_instance(self.sequenceListing,
+                    'AA', 'MRAVTQVRT', 'Felis catus')
+        seq4 = self.sequenceListingFixture.create_custom_sequence_instance(self.sequenceListing,
+                    'DNA', 'cgtatacggattaccatatatacagagatacca', 'Tomato')
+        
 
         saved_seqs = Sequence.objects.all()
-        self.assertEqual(2, saved_seqs.count())
+        self.assertEqual(4, saved_seqs.count())
+        self.assertEqual(4, self.sequenceListing.sequenceTotalQuantity)
         
         first_saved_seq = saved_seqs[0]
         second_saved_seq = saved_seqs[1]
+        third_saved_seq = saved_seqs[2]
+        fourth_saved_seq = saved_seqs[3]
         
         self.assertEqual('DNA', first_saved_seq.moltype)
         self.assertEqual('AA', second_saved_seq.moltype)
+        self.assertEqual(9, third_saved_seq.length)
+        self.assertEqual('cgtatacggattaccatatatacagagatacca', fourth_saved_seq.residues)
     
-        seq1.delete()
+        seq2.delete()
         
-        self.assertEqual(1, self.sequenceListing.sequenceTotalQuantity)
+        self.assertEqual(3, self.sequenceListing.sequenceTotalQuantity)
         
-        self.assertEqual(1, saved_seqs.count())
+        self.assertEqual(3, saved_seqs.count())
         
-        remaining_seq = saved_seqs[0]
-        self.assertEqual(1, remaining_seq.sequenceIdNo)
-        self.assertEqual('AA', remaining_seq.moltype)
+        saved_seqs = Sequence.objects.all()
+        
+#         remaining_seq = saved_seqs[0]
+        self.assertEqual(1, saved_seqs[0].sequenceIdNo)
+        self.assertEqual('DNA', saved_seqs[0].moltype)
+        
+        print saved_seqs[1]
+        
+        self.assertEqual(2, saved_seqs[1].sequenceIdNo)
+        self.assertEqual('AA', saved_seqs[1].moltype)
+        self.assertEqual('MRAVTQVRT', saved_seqs[1].residues)
+        
+        self.assertEqual(3, saved_seqs[2].sequenceIdNo)
+        self.assertEqual('DNA', saved_seqs[2].moltype)
+        self.assertEqual('cgtatacggattaccatatatacagagatacca', saved_seqs[2].residues)
         
     
 #     TODO: add tests for other models 

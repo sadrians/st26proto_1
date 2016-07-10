@@ -83,18 +83,19 @@ class Sequence(models.Model): #good
         self.length = len(self.residues)
         super(Sequence, self).save(*args, **kwargs)
         
-    def delete(self, *args, **kwargs):
-        currentSequenceIdNo = self.sequenceIdNo
-#         allSequences = self.sequenceListing.sequence_set.filter(sequenceIdNo > currentSequenceIdNo)
-        allSubsequentSequences = SequenceListing.objects.filter(sequenceListing = self.sequenceListing).filter(sequenceIdNo_gt=currentSequenceIdNo)
-        for seq in allSubsequentSequences:
-            seq.sequenceIdNo -= seq.sequenceIdNo
-            seq.save()
-            
-        self.sequenceListing.sequenceTotalQuantity -= 1
-        self.sequenceListing.save()
+#     def delete(self, *args, **kwargs):
+#         currentSequenceIdNo = self.sequenceIdNo
+# #         allSequences = self.sequenceListing.sequence_set.filter(sequenceIdNo > currentSequenceIdNo)
+#         allSubsequentSequences = Sequence.objects.filter(sequenceListing = self.sequenceListing).filter(sequenceIdNo__gt=currentSequenceIdNo)
+#         super(Sequence, self).delete(*args, **kwargs)
+#         for seq in allSubsequentSequences:
+#             seq.sequenceIdNo -= seq.sequenceIdNo
+#             seq.save()
+#              
+#         self.sequenceListing.sequenceTotalQuantity -= 1
+#         self.sequenceListing.save()
+         
         
-        super(Sequence, self).delete(*args, **kwargs)
         
     
     def clean(self):
@@ -107,7 +108,7 @@ class Sequence(models.Model): #good
         if not p.match(self.residues):
             raise ValidationError('Enter a valid residue symbol.')
     
-#     this method is to be used only temporarily for Berthold    
+#     this method is to be used only temporarily for Berthold; 20160710 TO REtain it!  
     def delete(self, *args, **kwargs):
         subsequentSequencesSet = self.sequenceListing.sequence_set.filter(sequenceIdNo__gt=self.sequenceIdNo)
         super(Sequence, self).delete(*args, **kwargs)
