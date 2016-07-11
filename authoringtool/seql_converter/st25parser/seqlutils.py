@@ -41,6 +41,8 @@ RANGE_LOCATION_PATTERN = re.compile(RANGE_LOCATION_REGEX)
 # ================================================
 STOP_CODONS_DNA = ['tag', 'taa', 'tga']
 STOP_CODONS_RNA = ['uag', 'uaa', 'uga']
+
+DEFAULT_STRING = '-'
 # ================================================
 # functions
 # ================================================

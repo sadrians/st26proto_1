@@ -50,6 +50,9 @@ ST_25_ST_26_ELEMENT_MAP = {
 elementDtdLineRegex = r'<!ELEMENT (?P<elementName>\w+)'
 ELEMENT_DTD_LINE_PATTERN = re.compile(elementDtdLineRegex)
 
+DEFAULT_CODE = 'XX' # placeholder when IPOffice code or language code are missing
+DEFAULT_DATE_STRING = '1900-01-01'
+
 def getSt26ElementNames():
     res = []
     with open(slsu.XML_DTD_PATH, 'r') as f:
@@ -82,7 +85,7 @@ def applicationNumberAsTuple(anApplicationNumber):
     if anApplicationNumber:
         if len(anApplicationNumber) > 1:
             if anApplicationNumber == 'Not yet assigned':
-                iPOfficeCode = 'XX'
+                iPOfficeCode = DEFAULT_CODE
                 applicationNumberText = anApplicationNumber
             else:
                 firstTwoChars = anApplicationNumber[:2]
@@ -90,10 +93,10 @@ def applicationNumberAsTuple(anApplicationNumber):
                     iPOfficeCode = firstTwoChars.strip()
                     applicationNumberText = anApplicationNumber[2:].strip()
                 else:
-                    iPOfficeCode = 'XX'
+                    iPOfficeCode = DEFAULT_CODE
                     applicationNumberText = anApplicationNumber
         else:
-            iPOfficeCode = 'XX'
+            iPOfficeCode = DEFAULT_CODE
             applicationNumberText = anApplicationNumber
         
         

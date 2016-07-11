@@ -8,6 +8,7 @@ import os
 from django.conf import settings 
 from converter import St25To26Converter 
 import sequencelistings.util as slsu
+import converter_util
 
 def withMethodName(func):
     def inner(*args, **kwargs):
@@ -41,10 +42,10 @@ class Test_St25To26Converter(TestCase):
         self.assertEqual('file1_converted', self.sc1.seql_st26.fileName)
         self.assertEqual('34246761601', self.sc1.seql_st26.applicantFileReference)
          
-        self.assertEqual('XX', self.sc1.seql_st26.IPOfficeCode)
+        self.assertEqual(converter_util.DEFAULT_CODE, self.sc1.seql_st26.IPOfficeCode)
         self.assertEqual('61536464', self.sc1.seql_st26.applicationNumberText)
          
-        self.assertEqual('XX', self.sc80.seql_st26.IPOfficeCode)
+        self.assertEqual(converter_util.DEFAULT_CODE, self.sc80.seql_st26.IPOfficeCode)
         self.assertEqual('Not yet assigned', self.sc80.seql_st26.applicationNumberText)
          
         self.assertEqual(2012, self.sc1.seql_st26.filingDate.year)
@@ -55,7 +56,7 @@ class Test_St25To26Converter(TestCase):
         self.assertEqual(1, self.sc33_1.seql_st26.filingDate.month)
         self.assertEqual(1, self.sc33_1.seql_st26.filingDate.day)
          
-        self.assertEqual('XX', self.sc1.seql_st26.earliestPriorityIPOfficeCode)
+        self.assertEqual(converter_util.DEFAULT_CODE, self.sc1.seql_st26.earliestPriorityIPOfficeCode)
         self.assertEqual('61536558 - prio1', self.sc1.seql_st26.earliestPriorityApplicationNumberText)
          
         self.assertEqual('US', self.sc80.seql_st26.earliestPriorityIPOfficeCode)
@@ -66,7 +67,7 @@ class Test_St25To26Converter(TestCase):
         self.assertEqual(1, self.sc1.seql_st26.earliestPriorityFilingDate.day)
  
         self.assertEqual('OPX Biotechnologies, Inc.', self.sc1.seql_st26.applicantName)
-        self.assertEqual('XX', self.sc1.seql_st26.applicantNameLanguageCode)
+        self.assertEqual(converter_util.DEFAULT_CODE, self.sc1.seql_st26.applicantNameLanguageCode)
         self.assertEqual('OPX Biotechnologies, Inc.', self.sc1.seql_st26.applicantNameLatin)
  
         self.assertEqual(4, self.sc1.seql_st26.sequenceTotalQuantity)
@@ -76,7 +77,7 @@ class Test_St25To26Converter(TestCase):
         t = self.sc1.seql_st26.title_set.all()[0]
         self.assertEqual('COMPOSITIONS AND METHODS REGARDING DIRECT NADH UTILIZATION TO PRODUCE 3-HYDROXYPROPIONIC ACID AND RELATED CHEMICALS AND PRODUCTS', 
                          t.inventionTitle)
-        self.assertEqual('XX', t.inventionTitleLanguageCode)
+        self.assertEqual(converter_util.DEFAULT_CODE, t.inventionTitleLanguageCode)
          
     @withMethodName
     def test_setSequencesSt26(self):

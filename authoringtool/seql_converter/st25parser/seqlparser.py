@@ -54,10 +54,11 @@ prtRegex = r"[A-Za-z\s]+"
 prtPattern = re.compile(prtRegex)
 
 def safeStrip(s):
-    if s:
+    if s is not None:
         return s.strip()
     else:
-        return s
+#         return s
+        return su.DEFAULT_STRING
 
 class SequenceListing(object):
     def __init__(self, inFile):

@@ -109,7 +109,7 @@ class TestSequenceListing(unittest.TestCase):
     def test_title(self):
         self.assertEqual(self.sl32.generalInformation.title, "COMPOSITIONS AND METHODS REGARDING DIRECT NADH UTILIZATION TO PRODUCE 3-HYDROXYPROPIONIC ACID AND RELATED CHEMICALS AND PRODUCTS")
         # item120 missing
-        self.assertEqual(None, self.sl32_2.generalInformation.title)
+        self.assertEqual(seqlutils.DEFAULT_STRING, self.sl32_2.generalInformation.title)
         # item120 empty
         self.assertEqual('', self.sl32_3.generalInformation.title)
 
@@ -117,7 +117,7 @@ class TestSequenceListing(unittest.TestCase):
     def test_reference(self):
         self.assertEqual(self.sl32.generalInformation.reference, "34246761601")
         #reference element is missing
-        self.assertEqual(self.sl2.generalInformation.reference, None)
+        self.assertEqual(self.sl2.generalInformation.reference, seqlutils.DEFAULT_STRING)
 
     @withMethodName
     def test_applicationNumber(self):
@@ -177,8 +177,8 @@ class TestSequenceListing(unittest.TestCase):
             self.assertEqual(k, f.key)
             self.assertEqual(l, f.location)
             self.assertEqual(d, f.description)
-
-        checkFeature(0, '', '-', '-', 'Sulfatase motifs')
+        
+        checkFeature(0, '', seqlutils.DEFAULT_STRING, seqlutils.DEFAULT_STRING, 'Sulfatase motifs')
         checkFeature(1, '', 'MISC_FEATURE', '(1)..(1)', 'Xaa = Any amino acid or absent')
         checkFeature(2, '', 'MOD_RES', '(2)..(2)', 'Formylglycine')
         checkFeature(3, '', 'MISC_FEATURE', '(3)..(3)', 'Xaa = Any amino acid or absent')
@@ -188,8 +188,8 @@ class TestSequenceListing(unittest.TestCase):
 
         # #test for feature without key and location
         self.assertEqual('', self.seq32_5.features[0].featureHeader)
-        self.assertEqual('-', self.seq32_5.features[0].key)
-        self.assertEqual('-', self.seq32_5.features[0].location)
+        self.assertEqual(seqlutils.DEFAULT_STRING, self.seq32_5.features[0].key)
+        self.assertEqual(seqlutils.DEFAULT_STRING, self.seq32_5.features[0].location)
         self.assertEqual('Sequence from Mycobacterium tuberculosis artificially optimised for expression in human cells.',
                          self.seq32_5.features[0].description)
 
@@ -197,7 +197,7 @@ class TestSequenceListing(unittest.TestCase):
         self.assertEqual('', self.seq32_5.features[1].featureHeader)
         self.assertEqual('CDS', self.seq32_5.features[1].key)
         self.assertEqual('(20)..(1399)', self.seq32_5.features[1].location)
-        self.assertEqual('-', self.seq32_5.features[1].description)
+        self.assertEqual(seqlutils.DEFAULT_STRING, self.seq32_5.features[1].description)
 
     @withMethodName
     def test_mixedmode(self):
@@ -255,7 +255,7 @@ class TestSequenceListing(unittest.TestCase):
             seq.append(s)
         self.assertEqual(3, len(seq))
         self.assertEqual('2', self.seq33_1_2.seqIdNo)
-        self.assertEqual(None, self.seq33_1_2.length)
+        self.assertEqual(seqlutils.DEFAULT_STRING, self.seq33_1_2.length)
         self.assertEqual('DNA', self.seq33_1_2.molType)
         self.assertEqual('Artificial Sequence', self.seq33_1_2.organism)
         self.assertEqual(447, self.seq33_1_2.actualLength)
@@ -276,9 +276,9 @@ class TestSequenceListing(unittest.TestCase):
         self.assertTrue(not self.seq1_2.isSkipCode)
 
         self.assertEqual(self.seq6_4.seqIdNo, "4")
-        self.assertEqual(self.seq6_4.length, None)
-        self.assertEqual(self.seq6_4.molType, None)
-        self.assertEqual(self.seq6_4.organism, None)
+        self.assertEqual(self.seq6_4.length, seqlutils.DEFAULT_STRING)
+        self.assertEqual(self.seq6_4.molType, seqlutils.DEFAULT_STRING)
+        self.assertEqual(self.seq6_4.organism, seqlutils.DEFAULT_STRING)
         self.assertEqual(0, self.seq6_4.actualLength)
         self.assertEqual(None, self.seq6_4.actualMolType)
         self.assertEqual([], self.seq6_4.features)
@@ -389,12 +389,12 @@ class Test_GeneralInformation(unittest.TestCase):
 #         '''Test skip code sequence when processResidues is True.
 #         '''
 #         self.assertEqual(self.seq016177_3.seq_id_no, "3")
-#         self.assertEqual(self.seq016177_3.length, None)
-#         self.assertEqual(self.seq016177_3.molType, None)
-#         self.assertEqual(self.seq016177_3.organism, None)
+#         self.assertEqual(self.seq016177_3.length, seqlutils.DEFAULT_STRING)
+#         self.assertEqual(self.seq016177_3.molType, seqlutils.DEFAULT_STRING)
+#         self.assertEqual(self.seq016177_3.organism, seqlutils.DEFAULT_STRING)
 #         self.assertEqual(0, self.seq016177_3.actualLength)
 #         # self.assertEqual(su.VALUE_NOT_SET, self.seq016177_3.actualMolType)
-#         self.assertEqual(None, self.seq016177_3.actualMolType)
+#         self.assertEqual(seqlutils.DEFAULT_STRING, self.seq016177_3.actualMolType)
 #         self.assertEqual([], self.seq016177_3.features)
 #         self.assertEqual([], self.seq016177_3.publication)
 #         self.assertEqual(self.seq016177_3.item400, '3')
@@ -412,10 +412,10 @@ class Test_GeneralInformation(unittest.TestCase):
 #
 #         self.assertEqual(self.seq1_1.publication[0]['item301'], "test 301 xxx line2")
 #         self.assertEqual(self.seq1_1.publication[0]['item302'], "test 302")
-#         self.assertEqual(self.seq1_1.publication[0]['item303'],  None)
+#         self.assertEqual(self.seq1_1.publication[0]['item303'],  seqlutils.DEFAULT_STRING)
 #         self.assertEqual(self.seq1_1.publication[0]['item305'], "test 305 line2 test 305")
 #
-#         exp_pub306_313 = [None]*8
+#         exp_pub306_313 = [seqlutils.DEFAULT_STRING]*8
 #         l = ['item' + str(i) for i in range(306, 314)]
 #         act_pub306_313 = [self.seq1_1.publication[0][curritem] for curritem in l]
 #         self.assertEqual(act_pub306_313, exp_pub306_313)
@@ -433,11 +433,11 @@ class Test_GeneralInformation(unittest.TestCase):
 #         self.assertEqual(self.pub1_2_1['item305'], '4')
 #         self.assertEqual(self.pub1_2_1['item306'], '1-7')
 #         self.assertEqual(self.pub1_2_1['item307'], '1988-20-10')
-#         self.assertEqual(self.pub1_2_1['item308'], None)
-#         self.assertEqual(self.pub1_2_1['item309'], None)
-#         self.assertEqual(self.pub1_2_1['item310'], None)
+#         self.assertEqual(self.pub1_2_1['item308'], seqlutils.DEFAULT_STRING)
+#         self.assertEqual(self.pub1_2_1['item309'], seqlutils.DEFAULT_STRING)
+#         self.assertEqual(self.pub1_2_1['item310'], seqlutils.DEFAULT_STRING)
 #         self.assertEqual(self.pub1_2_1['item311'], su.EMPTY)
-#         self.assertEqual(self.pub1_2_1['item312'], None)
+#         self.assertEqual(self.pub1_2_1['item312'], seqlutils.DEFAULT_STRING)
 #         self.assertEqual(self.pub1_2_1['item313'], 'FROM 1 TO 30')
 
 
@@ -461,10 +461,10 @@ class Test_GeneralInformation(unittest.TestCase):
 #         Test that an empty sequence is returned when Sequence class raises ParseException.
 #         '''
 #         self.assertEqual(3, len(self.sequences_sl33_1))
-#         self.assertEqual(None, self.seq33_1_2.seq_id_no)
-#         self.assertEqual(None, self.seq33_1_2.length)
-#         self.assertEqual(None, self.seq33_1_2.mol_type)
-#         self.assertEqual(None, self.seq33_1_2.organism)
+#         self.assertEqual(seqlutils.DEFAULT_STRING, self.seq33_1_2.seq_id_no)
+#         self.assertEqual(seqlutils.DEFAULT_STRING, self.seq33_1_2.length)
+#         self.assertEqual(seqlutils.DEFAULT_STRING, self.seq33_1_2.mol_type)
+#         self.assertEqual(seqlutils.DEFAULT_STRING, self.seq33_1_2.organism)
 #         self.assertEqual([], self.seq33_1_2.feature)
 
 
@@ -591,7 +591,7 @@ class Test_GeneralInformation(unittest.TestCase):
 #             self.assertEqual(l, f.location)
 #             self.assertEqual(d, f.description)
 #
-#         checkFeature(0, '', None, None, 'Sulfatase motifs')
+#         checkFeature(0, '', seqlutils.DEFAULT_STRING, seqlutils.DEFAULT_STRING, 'Sulfatase motifs')
 #         checkFeature(1, '', 'MISC_FEATURE', '(1)..(1)', 'Xaa = Any amino acid or absent')
 #         checkFeature(2, '', 'MOD_RES', '(2)..(2)', 'Formylglycine')
 #         checkFeature(3, '', 'MISC_FEATURE', '(3)..(3)', 'Xaa = Any amino acid or absent')
@@ -601,8 +601,8 @@ class Test_GeneralInformation(unittest.TestCase):
 #
 #         # #test for feature without key and location
 #         self.assertEqual('', self.seq32_5.features[0].featureHeader)
-#         self.assertEqual(None, self.seq32_5.features[0].key)
-#         self.assertEqual(None, self.seq32_5.features[0].location)
+#         self.assertEqual(seqlutils.DEFAULT_STRING, self.seq32_5.features[0].key)
+#         self.assertEqual(seqlutils.DEFAULT_STRING, self.seq32_5.features[0].location)
 #         self.assertEqual('Sequence from Mycobacterium tuberculosis artificially optimised for expression in human cells.',
 #                          self.seq32_5.features[0].description)
 #
@@ -610,7 +610,7 @@ class Test_GeneralInformation(unittest.TestCase):
 #         self.assertEqual('', self.seq32_5.features[1].featureHeader)
 #         self.assertEqual('CDS', self.seq32_5.features[1].key)
 #         self.assertEqual('(20)..(1399)', self.seq32_5.features[1].location)
-#         self.assertEqual(None, self.seq32_5.features[1].description)
+#         self.assertEqual(seqlutils.DEFAULT_STRING, self.seq32_5.features[1].description)
 #
 #
 #
@@ -663,7 +663,7 @@ class Test_GeneralInformation(unittest.TestCase):
 #         self.assertEqual(3, len(self.sl33_1.sequences))
 #         seq2 = self.sl33_1.sequences[1]
 #         self.assertEqual('2', seq2.seqIdNo)
-#         self.assertEqual(None, seq2.length)
+#         self.assertEqual(seqlutils.DEFAULT_STRING, seq2.length)
 #         self.assertEqual('DNA', seq2.molType)
 #         self.assertEqual('Artificial Sequence', seq2.organism)
 #         self.assertEqual(447, seq2.actualLength)

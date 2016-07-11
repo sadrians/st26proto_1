@@ -16,6 +16,7 @@ from django.template.loader import render_to_string
 from django.utils import timezone
 
 from st25parser.seqlparser import SequenceListing as Seql_st25
+from st25parser import seqlutils
 
 from sequencelistings.models import SequenceListing  as Seql_st26, Title, Sequence, Feature, Qualifier 
 
@@ -33,34 +34,31 @@ class St25To26Converter(object):
         self.setSequencesSt26()
         
     def getSequenceListingSt26(self, aSeql_st25):
+
 #         set first applicant value
-        seql_st26_applicantName = '-'
         aSeql_st25_applicant = aSeql_st25.generalInformation.applicant
         if aSeql_st25_applicant:
             seql_st26_applicantName = aSeql_st25_applicant[0]
- 
-#         set reference 
-        afr = aSeql_st25.generalInformation.reference
-        if afr:
-            applicantFileReference = afr
         else:
-            applicantFileReference = ''
-#         set applicationNumber
+            seql_st26_applicantName = seqlutils.DEFAULT_STRING
+
+#         set applicationNumber as a tuple
         applicationNumberAsTuple = converter_util.applicationNumberAsTuple(aSeql_st25.generalInformation.applicationNumber)
 
 #         set filingDate
-        filingDateAsString = '1900-01-01'
         fd = self.seql_st25.generalInformation.filingDate
-        if fd:
+        if fd != seqlutils.DEFAULT_STRING:
             filingDateAsString = fd 
+        else:
+            filingDateAsString = converter_util.DEFAULT_DATE_STRING
         
 #         set earliest priority 
         priorityNumberAsTuple = ('', '')
-        priorityDate = '1900-01-01'
+        priorityDate = converter_util.DEFAULT_DATE_STRING
                 
         aSeql_st25_priority = aSeql_st25.generalInformation.priority
+        
         if aSeql_st25_priority:
-            
             firstPriority = aSeql_st25_priority[0]
             priorityNumberAsTuple = converter_util.applicationNumberAsTuple(firstPriority[0])
             priorityDateAsString = firstPriority[1]
@@ -74,8 +72,9 @@ class St25To26Converter(object):
                 softwareVersion = '0.1',
                 productionDate = timezone.now().date(),
                   
-#                 applicantFileReference = aSeql_st25.generalInformation.reference,
-                applicantFileReference = applicantFileReference,
+                applicantFileReference = aSeql_st25.generalInformation.reference,
+#                 applicantFileReference = applicantFileReference,
+                
                 IPOfficeCode = applicationNumberAsTuple[0],
                 applicationNumberText = applicationNumberAsTuple[1],
                 filingDate = datetime.datetime.strptime(filingDateAsString, '%Y-%m-%d').date(),
@@ -84,11 +83,11 @@ class St25To26Converter(object):
                 earliestPriorityFilingDate = priorityDate,
                
                 applicantName = seql_st26_applicantName,
-                applicantNameLanguageCode = 'XX',
+                applicantNameLanguageCode = converter_util.DEFAULT_CODE,
                 applicantNameLatin = seql_st26_applicantName,
                 
                 inventorName = '-',
-                inventorNameLanguageCode = 'XX',
+                inventorNameLanguageCode = converter_util.DEFAULT_CODE,
                 inventorNameLatin = '-', 
                 
 #                 sequenceTotalQuantity = aSeql_st25.generalInformation.quantity       
@@ -102,30 +101,9 @@ class St25To26Converter(object):
         seql_st25_titleOneLine = seql_st25_title.replace(r'\s', '')
         t = Title(sequenceListing = self.seql_st26, 
                   inventionTitle = seql_st25_titleOneLine,
-                  inventionTitleLanguageCode = 'XX')
+                  inventionTitleLanguageCode = converter_util.DEFAULT_CODE)
         t.save()
         return [t]
-#         print 't', t 
-     
-#     def getSequencesSt26(self):
-#         result = []
-#         
-#         for s25 in self.seql_st25.generateSequence():
-#             residues_st26 = ''
-#             if s25.molType in ('DNA', 'RNA'):
-#                 residues_st26 = s25.residues_nuc 
-#             else:
-#                 residues_st26 = converter_util.oneLetterCode(s25.residues_prt)
-#             
-#             s26 = Sequence(sequenceListing = self.seql_st26,
-#                 sequenceIdNo = s25.seqIdNo,
-#                 length = s25.length,
-#                 moltype = s25.molType,
-#                 division = 'PAT',
-# #                 otherSeqId = '-', #optional, so we don't include it in converted sl
-#                 residues = residues_st26)
-#             result.append(s26)
-#         return result
     
     def setSequencesSt26(self):
         
