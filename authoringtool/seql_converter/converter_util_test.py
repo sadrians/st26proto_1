@@ -23,6 +23,12 @@ class TestConverterUtil(unittest.TestCase):
         self.assertEqual(('US', '61/678,367'), cu.applicationNumberAsTuple(an5))
         self.assertEqual(('EP', '12005594.2'), cu.applicationNumberAsTuple(an6))
 
+    def test_getSt26ElementNames(self):
+#         self.assertEqual(x, (cu.ELEMENT_NAME_ST26))
+        self.assertIn('ST26SequenceListing', cu.ELEMENT_NAME_ST26)
+        self.assertIn('ApplicantFileReference', cu.ELEMENT_NAME_ST26)
+        self.assertIn('INSDQualifier_value', cu.ELEMENT_NAME_ST26)
+
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
     unittest.main()

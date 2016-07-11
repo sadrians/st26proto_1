@@ -38,14 +38,26 @@ class St25To26Converter(object):
         aSeql_st25_applicant = aSeql_st25.generalInformation.applicant
         if aSeql_st25_applicant:
             seql_st26_applicantName = aSeql_st25_applicant[0]
-        
+ 
+#         set reference 
+        afr = aSeql_st25.generalInformation.reference
+        if afr:
+            applicantFileReference = afr
+        else:
+            applicantFileReference = ''
 #         set applicationNumber
         applicationNumberAsTuple = converter_util.applicationNumberAsTuple(aSeql_st25.generalInformation.applicationNumber)
+
+#         set filingDate
+        filingDateAsString = '1900-01-01'
+        fd = self.seql_st25.generalInformation.filingDate
+        if fd:
+            filingDateAsString = fd 
         
 #         set earliest priority 
         priorityNumberAsTuple = ('', '')
-        priorityDate = ''
-        
+        priorityDate = '1900-01-01'
+                
         aSeql_st25_priority = aSeql_st25.generalInformation.priority
         if aSeql_st25_priority:
             
@@ -62,12 +74,11 @@ class St25To26Converter(object):
                 softwareVersion = '0.1',
                 productionDate = timezone.now().date(),
                   
-                applicantFileReference = aSeql_st25.generalInformation.reference,
-           
+#                 applicantFileReference = aSeql_st25.generalInformation.reference,
+                applicantFileReference = applicantFileReference,
                 IPOfficeCode = applicationNumberAsTuple[0],
                 applicationNumberText = applicationNumberAsTuple[1],
-                filingDate = datetime.datetime.strptime(aSeql_st25.generalInformation.filingDate, '%Y-%m-%d').date(),
-               
+                filingDate = datetime.datetime.strptime(filingDateAsString, '%Y-%m-%d').date(),
                 earliestPriorityIPOfficeCode = priorityNumberAsTuple[0],
                 earliestPriorityApplicationNumberText = priorityNumberAsTuple[1],
                 earliestPriorityFilingDate = priorityDate,
@@ -170,5 +181,7 @@ class St25To26Converter(object):
         xmlFilePath = os.path.join(outputDir, '%s.xml' % self.seql_st26.fileName)
         with open(xmlFilePath, 'w') as gf:
             gf.write(xml) 
+            
+        self.seql_st26.delete()
 
         

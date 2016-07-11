@@ -23,9 +23,11 @@ class Test_St25To26Converter(TestCase):
  
     def setUp(self):
         self.f1 = self.getAbsPath('file1.txt')
+        self.f33_1 = self.getAbsPath('file33_1.txt')
         self.f80 = self.getAbsPath('file80.txt')
          
         self.sc1 = St25To26Converter(self.f1)
+        self.sc33_1 = St25To26Converter(self.f33_1)
         self.sc80 = St25To26Converter(self.f80) 
  
     def tearDown(self):
@@ -48,6 +50,10 @@ class Test_St25To26Converter(TestCase):
         self.assertEqual(2012, self.sc1.seql_st26.filingDate.year)
         self.assertEqual(9, self.sc1.seql_st26.filingDate.month)
         self.assertEqual(19, self.sc1.seql_st26.filingDate.day)
+        
+        self.assertEqual(1900, self.sc33_1.seql_st26.filingDate.year)
+        self.assertEqual(1, self.sc33_1.seql_st26.filingDate.month)
+        self.assertEqual(1, self.sc33_1.seql_st26.filingDate.day)
          
         self.assertEqual('XX', self.sc1.seql_st26.earliestPriorityIPOfficeCode)
         self.assertEqual('61536558 - prio1', self.sc1.seql_st26.earliestPriorityApplicationNumberText)
