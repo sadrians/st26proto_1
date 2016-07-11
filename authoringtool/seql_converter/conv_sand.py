@@ -20,8 +20,8 @@ for el in cu.ELEMENT_NAME_ST26:
 # for el in cu.ELEMENT_NAME_ST26:
 #     print '\'<>\': \'%s\',' % el 
 
-for el in cu.ELEMENT_NAME_ST26:
-    print '\'%s\': ,' % el 
+# for el in cu.ELEMENT_NAME_ST26:
+#     print '\'%s\': ,' % el 
 
 # d_in = r'/Users/ad/pyton/test/converter_in'
 # d_out = r'/Users/ad/pyton/test/converter_out'

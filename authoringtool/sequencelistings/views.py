@@ -39,6 +39,7 @@ def detail(request, pk): #good
     return render(request, 'sequencelistings/detail_w3.html', {'sequencelisting': sl})
 
 # TODO: is this needed?
+
 def edit_sequence_data(request, pk): #good
     sl = get_object_or_404(SequenceListing, pk=pk)
         
@@ -97,6 +98,7 @@ def add_sequencelisting(request):
                   {'form': form, 'title_form': title_form})
 
 # TODO: is this needed?
+
 def add_title(request, pk):
     if request.method == 'POST':
         form = TitleForm(request.POST)

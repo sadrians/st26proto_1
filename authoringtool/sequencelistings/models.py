@@ -61,6 +61,9 @@ class Title(models.Model):
 
 
 class Sequence(models.Model): #good
+    class Meta:
+        ordering = ['sequenceIdNo']
+    
     sequenceListing = models.ForeignKey(SequenceListing)
     
     sequenceIdNo = models.IntegerField('SEQ. ID. NO.', default=0)
