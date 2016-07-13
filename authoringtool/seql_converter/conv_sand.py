@@ -10,10 +10,10 @@ import converter_util as cu
 #     print el 
     
 # # calculate number of chars per tag: 4 angle brackets plus one slash plus 2*length of tag name
-TAG_LENGTH_ST26 = {}
-for el in cu.ELEMENT_NAME_ST26:
-    TAG_LENGTH_ST26[el] = 5 + 2*len(el)
-     
+# TAG_LENGTH_ST26 = {}
+# for el in cu.ELEMENT_NAME_ST26:
+#     TAG_LENGTH_ST26[el] = 5 + 2*len(el)
+#      
 # for k,v in TAG_LENGTH_ST26.iteritems():
 #     print k,v 
 

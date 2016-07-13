@@ -4,6 +4,9 @@ Created on Jul 2, 2016
 @author: ad
 '''
 import re
+import os
+from django.conf import settings 
+
 import sequencelistings.util as slsu 
 
 AMINO_ACIDS = {'Ala': 'A', 'Arg': 'R', 'Asn': 'N', 'Asp': 'D', 
@@ -53,19 +56,21 @@ ELEMENT_DTD_LINE_PATTERN = re.compile(elementDtdLineRegex)
 DEFAULT_CODE = 'XX' # placeholder when IPOffice code or language code are missing
 DEFAULT_DATE_STRING = '1900-01-01'
 
-def getSt26ElementNames():
-    res = []
-    with open(slsu.XML_DTD_PATH, 'r') as f:
-        for l in f:
-            if '<!ELEMENT ' in l:
-    #             print l 
-                elementName = ELEMENT_DTD_LINE_PATTERN.search(l).group('elementName')
-    #             print elementName
-    #             print '='*50
-                res.append(elementName)
+def getSt26ElementLength():
+    res = {}
+    fp = os.path.join(settings.BASE_DIR, 'seql_converter', 'tags_st26.txt')
+    with open(fp) as f:
+        for line in f:
+            res[line.strip()] = 5 + 2*len(line.strip())
     return res 
 
-ELEMENT_NAME_ST26 = getSt26ElementNames()
+TAG_LENGTH_ST26 = getSt26ElementLength()
+    
+# ======================================================
+
+
+
+
 
 def multiple_replace(text, adict):
 #     https://www.safaribooksonline.com/library/view/python-cookbook-2nd/0596007973/ch01s19.html

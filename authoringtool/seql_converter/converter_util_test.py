@@ -25,9 +25,9 @@ class TestConverterUtil(unittest.TestCase):
 
     def test_getSt26ElementNames(self):
 #         self.assertEqual(x, (cu.ELEMENT_NAME_ST26))
-        self.assertIn('ST26SequenceListing', cu.ELEMENT_NAME_ST26)
-        self.assertIn('ApplicantFileReference', cu.ELEMENT_NAME_ST26)
-        self.assertIn('INSDQualifier_value', cu.ELEMENT_NAME_ST26)
+        self.assertIn('ST26SequenceListing', cu.TAG_LENGTH_ST26.keys())
+        self.assertIn('ApplicantFileReference', cu.TAG_LENGTH_ST26.keys())
+        self.assertIn('INSDQualifier_value', cu.TAG_LENGTH_ST26.keys())
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
