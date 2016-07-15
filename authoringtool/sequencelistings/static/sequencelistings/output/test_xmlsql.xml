@@ -5,24 +5,24 @@
                     fileName="test_xmlsql"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="July 13, 2016">
+                    productionDate="July 15, 2016">
 <!-- <ST26SequenceListing dtdVersion="1" 
                     fileName="test_xmlsql"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="July 14, 2016, 12:23 a.m."
+                    productionDate="July 15, 2016, 7:23 a.m."
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
         <IPOfficeCode>EP</IPOfficeCode>
         <ApplicationNumberText>2015123456</ApplicationNumberText>
-        <FilingDate>July 13, 2016</FilingDate>
+        <FilingDate>July 15, 2016</FilingDate>
     </ApplicationIdentification>
     <ApplicantFileReference>123</ApplicantFileReference>
     <EarliestPriorityApplicationIdentification>
         <IPOfficeCode>US</IPOfficeCode>
         <ApplicationNumberText>998877</ApplicationNumberText>
-        <FilingDate>July 13, 2016</FilingDate>
+        <FilingDate>July 15, 2016</FilingDate>
     </EarliestPriorityApplicationIdentification>
     <ApplicantName languageCode="EN">
         John Smith

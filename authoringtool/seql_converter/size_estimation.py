@@ -3,28 +3,13 @@ Created on Jul 12, 2016
 
 @author: ad
 '''
-import os 
 import re 
 import csv
 import pprint
 import converter_util as cu 
 
-from django.conf import settings 
-
 import st25parser.seqlparser
 from seql_converter.st25parser import seqlparser
-
-# fp = os.path.join('st25parser', 'testData', 'file1.txt')
-
-# pprint.pprint(cu.TAG_LENGTH_ST26)
-
-# def estimate(afp):
-#     sl = SequenceListing(fp)
-#     gi = sl.generalInformation 
-#     
-#     print gi.applicant
-#     applicantValueLength = len(gi.applicant[0]) if gi.applicant else 0
-#     print applicantValueLength
 
 GENERAL_INFORMATION_REGEX = r"""(?P<seqlHeader>[^<]+)?
                 (?P<applicant><110>[^<]+)
@@ -59,7 +44,7 @@ FEATURE_REGEX = r"""
 """
 FEATURE_PATTERN = re.compile(FEATURE_REGEX, re.DOTALL | re.VERBOSE)
 
-class SequenceListing(object):
+class RawSequenceListing(object):
     def __init__(self, aFilePath):
         blocks = []
         self.sequences = []
@@ -122,7 +107,7 @@ def safeLength(aStr):
         return 0
 
 def writeSizes(inFile, outFile):
-    sl = SequenceListing(inFile)
+    sl = RawSequenceListing(inFile)
     slp = st25parser.seqlparser.SequenceListing(inFile)
     
     def getSt25St26Lengths(element_st25, 
@@ -270,29 +255,7 @@ def writeSizes(inFile, outFile):
             
             
         
-# f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 'st25parser', 'testData', 'file5.txt') 
-# outf = 'combined_lengths.csv'
 
-# writeSizes(f5, outf)
-
-
-d = r'/Users/ad/pyton/test/converter_in'
-l = [os.path.join(d, a) for a in os.listdir(d) if '.DS' not in a]
-
-# pprint.pprint(l)
-
-
-for fp in l:
-    print fp
-    outf = fp.replace('.txt', '_lengths.txt')
-    outf = outf.replace('converter_in', 'converter_out')
-    writeSizes(fp, outf)
-
-
-
-
-
-print 'Done'
  
 # def getElementSize(aFilePath):
 #     blocks = []

@@ -6,15 +6,15 @@ Created on Jul 12, 2016
 import unittest
 import os 
 from django.conf import settings 
-from size_estimation import SequenceListing
+from size_estimation import RawSequenceListing
 
 class Test(unittest.TestCase):
     def setUp(self):
         self.f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 
                             'st25parser', 'testData', 'file5.txt')
-        self.sl5 = SequenceListing(self.f5)
+        self.sl5 = RawSequenceListing(self.f5)
 
-    def testSequenceListing(self):
+    def testRawSequenceListing(self):
         reference_exp = """<130>  BIOA-006/01WO\r\n\r\n"""
         self.assertEqual(reference_exp, self.sl5.reference)
         self.assertEqual(None, self.sl5.applicationNumber)
