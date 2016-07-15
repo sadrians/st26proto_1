@@ -26,7 +26,7 @@ from seql_converter.st25parser import seqlparser
 #     applicantValueLength = len(gi.applicant[0]) if gi.applicant else 0
 #     print applicantValueLength
 
-GENERAL_INFORMATION_REGEX = r"""(?P<seqlHeader>[^<]+)
+GENERAL_INFORMATION_REGEX = r"""(?P<seqlHeader>[^<]+)?
                 (?P<applicant><110>[^<]+)
                 (?P<title><120>[^<]+)
                 (?P<reference><130>[^<]+)?
@@ -270,10 +270,28 @@ def writeSizes(inFile, outFile):
             
             
         
-f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 'st25parser', 'testData', 'file5.txt') 
-outf = 'combined_lengths.csv'
+# f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 'st25parser', 'testData', 'file5.txt') 
+# outf = 'combined_lengths.csv'
 
-writeSizes(f5, outf)
+# writeSizes(f5, outf)
+
+
+d = r'/Users/ad/pyton/test/converter_in'
+l = [os.path.join(d, a) for a in os.listdir(d) if '.DS' not in a]
+
+# pprint.pprint(l)
+
+
+for fp in l:
+    print fp
+    outf = fp.replace('.txt', '_lengths.txt')
+    outf = outf.replace('converter_in', 'converter_out')
+    writeSizes(fp, outf)
+
+
+
+
+
 print 'Done'
  
 # def getElementSize(aFilePath):
