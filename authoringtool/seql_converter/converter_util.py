@@ -56,6 +56,19 @@ ELEMENT_DTD_LINE_PATTERN = re.compile(elementDtdLineRegex)
 DEFAULT_CODE = 'XX' # placeholder when IPOffice code or language code are missing
 DEFAULT_DATE_STRING = '1900-01-01'
 
+# def safeLength(aStr):
+#     if aStr is not None:
+#         return len(aStr)
+#     else:
+#         return 0
+
+def safeLength(aStr):
+    if aStr not in [None, '-']:
+        return len(aStr)
+    else:
+        return 0
+
+
 def getSt26ElementLength():
     res = {}
     fp = os.path.join(settings.BASE_DIR, 'seql_converter', 'tags_st26.txt')

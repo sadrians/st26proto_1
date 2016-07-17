@@ -10,7 +10,7 @@
                     fileName="file1_converted"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="July 15, 2016"
+                    productionDate="July 17, 2016"
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>

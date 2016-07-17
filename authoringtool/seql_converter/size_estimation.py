@@ -9,7 +9,6 @@ import pprint
 import converter_util as cu 
 
 import st25parser.seqlparser
-from seql_converter.st25parser import seqlparser
 
 GENERAL_INFORMATION_REGEX = r"""(?P<seqlHeader>[^<]+)?
                 (?P<applicant><110>[^<]+)
@@ -70,10 +69,9 @@ class RawSequenceListing(object):
         for s in blocks[1:]:
 #             print '='*50
             reconstructedString = '<210>%s' %s
-            self.sequences.append(Sequence(reconstructedString))
-            
-    #         print reconstructedString
-class Sequence(object):
+            self.sequences.append(RawSequence(reconstructedString))
+             
+class RawSequence(object):
     def __init__(self, aStr):
         sm = SEQUENCE_PATTERN.match(aStr)
         if sm:
@@ -89,22 +87,159 @@ class Sequence(object):
                 featureMatchers = FEATURE_PATTERN.finditer(reconstructedFeatureString)
                 
                 for fm in featureMatchers:
-                    self.features.append(Feature(fm))
+                    self.features.append(RawFeature(fm))
 
             self.residues = sm.group('residues')
 
-class Feature(object):
+class RawFeature(object):
     def __init__(self, fm):
         self.featureHeader = fm.group('featureHeader')
         self.key = fm.group('key')
         self.location = fm.group('location')
         self.description = fm.group('description')
 
-def safeLength(aStr):
-    if aStr is not None:
-        return len(aStr)
-    else:
-        return 0
+
+class ElementSizeCalculator(object):
+    def __init__(self, aFilePath):
+        self.seql_raw = RawSequenceListing(aFilePath)
+        self.seql_clean = st25parser.seqlparser.SequenceListing(aFilePath)
+        
+        self.sequenceRows = self.setSequenceRows()
+     
+    def _getSt25St26Lengths(self,
+                        element_st25_tag, 
+                        seqIdNo,
+                        element_st25, 
+                        value_st25, 
+                        element_st26, comment):
+        
+        return [element_st25_tag, 
+                seqIdNo,
+                cu.safeLength(element_st25), 
+                cu.safeLength(value_st25),
+                0 if element_st26 == '-' else cu.TAG_LENGTH_ST26[element_st26],
+                0 if element_st26 == '-' else cu.TAG_LENGTH_ST26[element_st26] + 
+                                    cu.safeLength(value_st25),
+                element_st26, 
+                comment
+                ]    
+    
+    def getRow_110(self):
+        return self._getSt25St26Lengths(110, 0,
+            self.seql_raw.applicant,
+            self.seql_clean.generalInformation.applicant[0],
+            'ApplicantName', '-')
+    
+    def getRow_120(self):
+        return self._getSt25St26Lengths(120, 0,
+            self.seql_raw.title,
+            self.seql_clean.generalInformation.title,
+            'InventionTitle', '-')
+        
+    def getRow_130(self):
+        return self._getSt25St26Lengths(130, 0,
+            self.seql_raw.reference,
+            self.seql_clean.generalInformation.reference,
+            'ApplicantFileReference', '-')
+#     TODO: include in calculation IPOffice element!
+    def getRow_140(self):
+        return self._getSt25St26Lengths(140, 0, 
+            self.seql_raw.applicationNumber,
+            self.seql_clean.generalInformation.applicationNumber,
+            'ApplicationNumberText', '-')
+     
+    def getRow_141(self):
+        return self._getSt25St26Lengths(141, 0, 
+            self.seql_raw.filingDate,
+            self.seql_clean.generalInformation.filingDate,
+            'FilingDate', '-')
+        
+#     TODO add code for prio
+
+    def getRow_160(self):
+        return self._getSt25St26Lengths(160, 0, 
+            self.seql_raw.quantity,
+            self.seql_clean.generalInformation.quantity,
+            'SequenceTotalQuantity', '-')
+    
+    def getRow_170(self):
+        return self._getSt25St26Lengths(170, 0, 
+            self.seql_raw.software,
+            self.seql_clean.generalInformation.software,
+            '-', 'information discarded in ST.26')
+
+    def setSequenceRows(self):
+        res = []
+        
+        parsedSequences = []
+        for s in self.seql_clean.generateSequence():
+            parsedSequences.append(s)
+                
+        for seq in self.seql_raw.sequences:
+            currentIndex = self.seql_raw.sequences.index(seq)
+            parsedSequence = parsedSequences[currentIndex]
+            currentSeqId = parsedSequence.seqIdNo
+            currentRow210 = self._getSt25St26Lengths(210, currentSeqId, 
+                            seq.seqIdNo, parsedSequence.seqIdNo, 'sequenceIDNumber', '-')
+
+            res.append(currentRow210)
+            
+            currentRow211 = self._getSt25St26Lengths(211, currentSeqId, 
+                            seq.length, parsedSequence.length, 'INSDSeq_length', '-')
+            res.append(currentRow211)
+            
+            currentRow212 = self._getSt25St26Lengths(212, currentSeqId, 
+                            seq.molType, parsedSequence.molType, 'INSDSeq_moltype', '-')
+            res.append(currentRow212)
+            
+            currentRow213 = self._getSt25St26Lengths(213, currentSeqId, 
+                            seq.organism, parsedSequence.organism, 'INSDQualifier_value', '-')
+            res.append(currentRow213)
+        
+            parsedFeatures = parsedSequence.features
+            for feat in seq.features:
+                currentFeatureIndex = seq.features.index(feat)
+                parsedFeature = parsedFeatures[currentFeatureIndex]
+                
+                currentRow220 = self._getSt25St26Lengths(220, currentSeqId, 
+                            feat.featureHeader, parsedFeature.featureHeader, 
+                            'INSDFeature', '-')
+                res.append(currentRow220)
+                
+                currentRow221 = self._getSt25St26Lengths(221, currentSeqId, 
+                            feat.key, parsedFeature.key, 
+                            'INSDFeature_key', '-')
+                res.append(currentRow221)
+                
+                currentRow222 = self._getSt25St26Lengths(222, currentSeqId, 
+                            feat.location, parsedFeature.location, 
+                            'INSDFeature_location', '-')
+                res.append(currentRow222)
+                
+                currentRow223 = self._getSt25St26Lengths(223, currentSeqId, 
+                            feat.description, parsedFeature.description, 
+                            'INSDQualifier_value', '-')
+                res.append(currentRow223)
+                
+        
+            if parsedSequence.molType == 'PRT':
+                parsedResidues = parsedSequence.residues_prt
+                currentRow400 = [400, currentSeqId, 
+                            cu.safeLength(seq.residues), 
+                            cu.safeLength(parsedResidues),
+                            cu.TAG_LENGTH_ST26['INSDSeq_sequence'],
+                            (cu.TAG_LENGTH_ST26['INSDSeq_sequence'] + 
+                            len(cu.oneLetterCode(parsedResidues))),
+                            'INSDSeq_sequence', '3-to-1 letter code']
+                
+            else:
+                parsedResidues = parsedSequence.residues_nuc
+                currentRow400 = self._getSt25St26Lengths(400, currentSeqId, 
+                                seq.residues, parsedResidues, 
+                                'INSDSeq_sequence', '-')
+            res.append(currentRow400)
+        
+        return res 
 
 def writeSizes(inFile, outFile):
     sl = RawSequenceListing(inFile)
@@ -116,10 +251,10 @@ def writeSizes(inFile, outFile):
                            element_st26, comment):
         
         return [element_st25, 
-                safeLength(element_st25_length), 
-                safeLength(value_st25_length),
+                cu.safeLength(element_st25_length), 
+                cu.safeLength(value_st25_length),
                 0 if element_st26 == '-' else cu.TAG_LENGTH_ST26[element_st26],
-                0 if element_st26 == '-' else cu.TAG_LENGTH_ST26[element_st26] + safeLength(value_st25_length),
+                0 if element_st26 == '-' else cu.TAG_LENGTH_ST26[element_st26] + cu.safeLength(value_st25_length),
                 element_st26, 
                 comment
                 ]
@@ -130,13 +265,7 @@ def writeSizes(inFile, outFile):
         wr.writerow(['element_st25', 'element_st25_length', 'value_st25_length', 
                      'tag_st26_length', 'element_st26_length', 'element_st26', 
                      'comment'])
-        
-#         currentValueLength = 0
-#         currentTag = 'ST26SequenceListing'
-#         currentTuple = getSt26Lengths(currentValueLength, currentTag)
-#         
-#         wr.writerow(['-', 0, currentValueLength, currentTuple[0], currentTuple[1], currentTag])
-#                 
+                         
         wr.writerow(getSt25St26Lengths(110, 
                                        sl.applicant, 
                                        slp.generalInformation.applicant[0], 
@@ -157,14 +286,15 @@ def writeSizes(inFile, outFile):
                                        sl.filingDate, 
                                        slp.generalInformation.filingDate, 
                                        'FilingDate', '-'))
-        
+
+# TODO: calculate and write to csv priorities sizes        
         priority_st25 = slp.generalInformation.priority
         priority_st25_length = sum([len(a[0]) + len(a[1]) for a in priority_st25])
         priorityNumber_length = 0
         priorityDate_length = 0
         if priority_st25:
-            priorityNumber_length = safeLength(priority_st25[0][0])
-            priorityDate_length = safeLength(priority_st25[0][1])
+            priorityNumber_length = cu.safeLength(priority_st25[0][0])
+            priorityDate_length = cu.safeLength(priority_st25[0][1])
         
 #         wr.writerow(getSt25St26Lengths('prio', 
 #                                         priority_st25_length, 
@@ -235,8 +365,8 @@ def writeSizes(inFile, outFile):
             if parsedSequence.molType == 'PRT':
                 parsedResidues = parsedSequence.residues_prt
                 wr.writerow([400, 
-                            safeLength(seq.residues), 
-                            safeLength(parsedResidues),
+                            cu.safeLength(seq.residues), 
+                            cu.safeLength(parsedResidues),
                             cu.TAG_LENGTH_ST26['INSDSeq_sequence'],
                             (cu.TAG_LENGTH_ST26['INSDSeq_sequence'] + 
                             len(cu.oneLetterCode(parsedResidues))),
@@ -244,10 +374,6 @@ def writeSizes(inFile, outFile):
                             ])
             else:
                 parsedResidues = parsedSequence.residues_nuc
-            
-#             print 'seq id no', parsedSequence.seqIdNo 
-#             print parsedResidues
-            
                 wr.writerow(getSt25St26Lengths(400, 
                     seq.residues, 
                     parsedResidues, 

@@ -7,6 +7,10 @@ import unittest
 import converter_util as cu 
 
 class TestConverterUtil(unittest.TestCase):
+    def test_safeLength(self):
+        self.assertEqual(0, cu.safeLength(None))
+        self.assertEqual(3, cu.safeLength('abc'))
+        self.assertEqual(20, cu.safeLength('<400>  40\r\n\r\nMet Ser'))
 
     def test_applicationNumberAsTuple(self):
         an1 = 'EP12345'
