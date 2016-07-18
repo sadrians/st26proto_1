@@ -128,6 +128,7 @@ class SequenceListing(object):
 class GeneralInformation(object):
     def __init__(self, inStr):
         self.genInfoPatternFound = False
+        self.seqlHeader = '-'
         self.applicant = []
         self.title = '-'
         self.reference = '-'
@@ -140,6 +141,7 @@ class GeneralInformation(object):
         m = generalInformationPattern.match(inStr)
         
         if m:
+            self.seqlHeader = safeStrip(m.group('header'))
             applicantLines = m.group('applicant').splitlines()
             self.applicant = [a.strip() for a in applicantLines if a.strip() != ''] 
             self.title = su.inOneLine(safeStrip(m.group('title')))

@@ -16,9 +16,14 @@ class Test(unittest.TestCase):
         self.sl5 = RawSequenceListing(self.f5)
 
     def testRawSequenceListing(self):
+        seqlHeader_exp = '''                         SEQUENCE LISTING\r\n\r\n'''
+        self.assertEqual(seqlHeader_exp, self.sl5.seqlHeader)
+        
         reference_exp = """<130>  BIOA-006/01WO\r\n\r\n"""
         self.assertEqual(reference_exp, self.sl5.reference)
+        
         self.assertEqual(None, self.sl5.applicationNumber)
+        
         self.assertEqual(None, self.sl5.filingDate)
         
         priorities_exp = '<150>  US 61/677,959\r\n<151>  2012-07-31\r\n\r\n'
@@ -62,10 +67,60 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.f_WO2013041670 = os.path.join(settings.BASE_DIR, 'seql_converter', 
                             'st25parser', 'testData', 'WO2013041670.txt')
         self.esc_WO2013041670 = ElementSizeCalculator(self.f_WO2013041670)
+     
+    def test_setRow_header(self): 
+        act = [row for row in self.esc5.generalInformationRows if row[6] == 'ST26SequenceListing'][0]
         
+        self.assertEqual(0, act[0])
+        self.assertEqual(0, act[1])
+        self.assertEqual(45, act[2])
+        self.assertEqual(16, act[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['ST26SequenceListing'], act[4])
+        self.assertEqual(cu.TAG_LENGTH_ST26['ST26SequenceListing'], act[5])
+        self.assertEqual('ST26SequenceListing', act[6])
+        self.assertEqual('ST.25 seqlHeader discarded', act[7])
         
-    def test_getRow_110(self):
-        act = self.esc5.getRow_110()
+    def test_setRow_dtdVersion(self): 
+        act = [row for row in self.esc5.generalInformationRows if row[6] == 'dtdVersion'][0]
+
+        self.assertEqual(0, act[0])
+        self.assertEqual(0, act[1])
+        self.assertEqual(0, act[2])
+        self.assertEqual(3, act[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['dtdVersion'], act[4])
+        self.assertEqual(3 + cu.TAG_LENGTH_ST26['dtdVersion'], act[5])
+        self.assertEqual('dtdVersion', act[6])
+        self.assertEqual('ST.26 specific element. Assumed format: d.d (for ex.: 1.3)', act[7])
+        
+    def test_setRow_fileName(self): 
+        act = [row for row in self.esc5.generalInformationRows if row[6] == 'fileName'][0]
+
+        self.assertEqual(0, act[0])
+        self.assertEqual(0, act[1])
+        self.assertEqual(0, act[2])
+        self.assertEqual(5, act[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['fileName'], act[4])
+        self.assertEqual(5 + cu.TAG_LENGTH_ST26['fileName'], act[5])
+        self.assertEqual('fileName', act[6])
+        self.assertEqual('ST.25 file name used with extension xml', act[7])
+           
+    
+#      TODO: test getRow_fileName   
+
+    def test_setRow_softwareName(self): 
+        act = [row for row in self.esc5.generalInformationRows if row[6] == 'softwareName'][0]
+        
+        self.assertEqual(0, act[0])
+        self.assertEqual(0, act[1])
+        self.assertEqual(0, act[2])
+        self.assertEqual(10, act[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['softwareName'], act[4])
+        self.assertEqual(10 + cu.TAG_LENGTH_ST26['softwareName'], act[5])
+        self.assertEqual('softwareName', act[6])
+        self.assertEqual('ST.26 specific element. Assumed it has 10 chars', act[7])
+           
+    def test_setRow_110(self):
+        act = [row for row in self.esc5.generalInformationRows if row[0] == 110][0]
         self.assertEqual(110, act[0])
         self.assertEqual(0, act[1])
         self.assertEqual(39, act[2])
@@ -75,8 +130,8 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual('ApplicantName', act[6])
         self.assertEqual('-', act[7])
         
-    def test_getRow_120(self):
-        act = self.esc5.getRow_120()
+    def test_setRow_120(self):
+        act = [row for row in self.esc5.generalInformationRows if row[0] == 120][0]
         self.assertEqual(120, act[0])
         self.assertEqual(0, act[1])
         self.assertEqual(98, act[2])
@@ -86,8 +141,8 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual('InventionTitle', act[6])
         self.assertEqual('-', act[7])
         
-    def test_getRow_130(self):
-        act = self.esc5.getRow_130()
+    def test_setRow_130(self):
+        act = [row for row in self.esc5.generalInformationRows if row[0] == 130][0]
         self.assertEqual(130, act[0])
         self.assertEqual(0, act[1])
         self.assertEqual(24, act[2])
@@ -97,8 +152,8 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual('ApplicantFileReference', act[6])
         self.assertEqual('-', act[7])
         
-    def test_getRow_140(self):
-        act = self.esc5.getRow_140()
+    def test_setRow_140(self):
+        act = [row for row in self.esc5.generalInformationRows if row[0] == 140][0]
         self.assertEqual(140, act[0])
         self.assertEqual(0, act[1])
         self.assertEqual(0, act[2])
@@ -108,8 +163,8 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual('ApplicationNumberText', act[6])
         self.assertEqual('-', act[7])
         
-    def test_getRow_141(self):
-        act = self.esc5.getRow_141()
+    def test_setRow_141(self):
+        act = [row for row in self.esc5.generalInformationRows if row[0] == 141][0]
         self.assertEqual(141, act[0])
         self.assertEqual(0, act[1])
         self.assertEqual(0, act[2])
@@ -118,9 +173,25 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(0 + cu.TAG_LENGTH_ST26['FilingDate'], act[5])
         self.assertEqual('FilingDate', act[6])
         self.assertEqual('-', act[7])
+    
+    def test_setRow_prio(self):
+        act = [row for row in self.esc5.generalInformationRows if row[6] == 'EarliestPriorityApplicationIdentification'][0]
+
+        self.assertEqual('prio', act[0])
+        self.assertEqual(0, act[1])
+        self.assertEqual(43, act[2])
+        self.assertEqual(23, act[3])
+        prioTagsSt26Length = (cu.TAG_LENGTH_ST26['EarliestPriorityApplicationIdentification'] + 
+                cu.TAG_LENGTH_ST26['IPOfficeCode'] + 
+                cu.TAG_LENGTH_ST26['ApplicationNumberText'] + 
+                cu.TAG_LENGTH_ST26['FilingDate'])
+        self.assertEqual(prioTagsSt26Length, act[4])
+        self.assertEqual(23 + prioTagsSt26Length, act[5])
+        self.assertEqual('EarliestPriorityApplicationIdentification', act[6])
+        self.assertEqual('only first ST.25 priority retained, if any', act[7])
         
-    def test_getRow_160(self):
-        act = self.esc5.getRow_160()
+    def test_setRow_160(self):
+        act = [row for row in self.esc5.generalInformationRows if row[0] == 160][0]
         self.assertEqual(160, act[0])
         self.assertEqual(0, act[1])
         self.assertEqual(17, act[2])
@@ -130,8 +201,8 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual('SequenceTotalQuantity', act[6])
         self.assertEqual('-', act[7])
         
-    def test_getRow_170(self):
-        act = self.esc5.getRow_170()
+    def test_setRow_170(self):
+        act = [row for row in self.esc5.generalInformationRows if row[0] == 170][0]
         self.assertEqual(170, act[0])
         self.assertEqual(0, act[1])
         self.assertEqual(31, act[2])

@@ -94,6 +94,10 @@ class TestSequenceListing(unittest.TestCase):
 
 # ==========Tests for GeneralInformation===========================
     @withMethodName
+    def test_seqlHeader(self):
+        self.assertEqual('SEQUENCE LISTING', self.sl1.generalInformation.seqlHeader)
+    
+    @withMethodName
     def test_applicant(self):
         
         self.assertEqual(['OPX Biotechnologies, Inc.'], self.sl1.generalInformation.applicant)
