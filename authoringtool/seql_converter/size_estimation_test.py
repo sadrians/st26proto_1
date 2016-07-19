@@ -5,6 +5,7 @@ Created on Jul 12, 2016
 '''
 import unittest
 import os 
+import pprint
 from django.conf import settings 
 from size_estimation import RawSequenceListing, ElementSizeCalculator
 import converter_util as cu 
@@ -67,6 +68,10 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.f_WO2013041670 = os.path.join(settings.BASE_DIR, 'seql_converter', 
                             'st25parser', 'testData', 'WO2013041670.txt')
         self.esc_WO2013041670 = ElementSizeCalculator(self.f_WO2013041670)
+        
+        self.f_WO2012_001613 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+                            'st25parser', 'testData', 'WO2012-001613-001.zip.txt')
+        self.esc_WO2012_001613 = ElementSizeCalculator(self.f_WO2012_001613)
      
     def test_setRow_header(self): 
         act = [row for row in self.esc5.generalInformationRows if row[6] == 'ST26SequenceListing'][0]
@@ -151,30 +156,67 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(13 + cu.TAG_LENGTH_ST26['ApplicantFileReference'], act[5])
         self.assertEqual('ApplicantFileReference', act[6])
         self.assertEqual('-', act[7])
+     
+    def test_setRow_ApplicationIdentification(self):
+        actApplicationIdentification_1 = [row for row in self.esc5.generalInformationRows if row[6] == 'ApplicationIdentification']
+        self.assertEqual([], actApplicationIdentification_1)
         
-    def test_setRow_140(self):
-        act = [row for row in self.esc5.generalInformationRows if row[0] == 140][0]
-        self.assertEqual(140, act[0])
+        act = [row for row in self.esc_WO2013041670.generalInformationRows if row[6] == 'ApplicationIdentification'][0]
+        self.assertEqual(0, act[0])
         self.assertEqual(0, act[1])
         self.assertEqual(0, act[2])
         self.assertEqual(0, act[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['ApplicationIdentification'], act[4])
+        self.assertEqual(cu.TAG_LENGTH_ST26['ApplicationIdentification'], act[5])
+        self.assertEqual('ApplicationIdentification', act[6])
+        self.assertEqual('-', act[7])
+        
+    def test_setRow_IPOfficeCode(self):
+        actIPOfficeCode_1 = [row for row in self.esc5.generalInformationRows if row[6] == 'IPOfficeCode']
+        self.assertEqual([], actIPOfficeCode_1)
+        
+        act = [row for row in self.esc_WO2013041670.generalInformationRows if row[6] == 'IPOfficeCode'][0]
+        self.assertEqual(0, act[0])
+        self.assertEqual(0, act[1])
+        self.assertEqual(0, act[2])
+        self.assertEqual(0, act[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['IPOfficeCode'], act[4])
+        self.assertEqual(cu.TAG_LENGTH_ST26['IPOfficeCode'], act[5])
+        self.assertEqual('IPOfficeCode', act[6])
+        self.assertEqual('Corresponding to 140. Empty for the purpose of this study', act[7])
+        
+    def test_setRow_140(self):
+        act140_1 = [row for row in self.esc5.generalInformationRows if row[0] == 140]
+        self.assertEqual([], act140_1)
+        
+        act = [row for row in self.esc_WO2013041670.generalInformationRows if row[0] == 140][0]
+        self.assertEqual(140, act[0])
+        self.assertEqual(0, act[1])
+        self.assertEqual(28, act[2])
+        self.assertEqual(19, act[3])
         self.assertEqual(cu.TAG_LENGTH_ST26['ApplicationNumberText'], act[4])
-        self.assertEqual(0 + cu.TAG_LENGTH_ST26['ApplicationNumberText'], act[5])
+        self.assertEqual(19 + cu.TAG_LENGTH_ST26['ApplicationNumberText'], act[5])
         self.assertEqual('ApplicationNumberText', act[6])
         self.assertEqual('-', act[7])
         
     def test_setRow_141(self):
-        act = [row for row in self.esc5.generalInformationRows if row[0] == 141][0]
+        act141_1 = [row for row in self.esc5.generalInformationRows if row[0] == 141]
+        self.assertEqual([], act141_1)
+        
+        act = [row for row in self.esc_WO2013041670.generalInformationRows if row[0] == 141][0]
         self.assertEqual(141, act[0])
         self.assertEqual(0, act[1])
-        self.assertEqual(0, act[2])
-        self.assertEqual(0, act[3])
+        self.assertEqual(23, act[2])
+        self.assertEqual(10, act[3])
         self.assertEqual(cu.TAG_LENGTH_ST26['FilingDate'], act[4])
-        self.assertEqual(0 + cu.TAG_LENGTH_ST26['FilingDate'], act[5])
+        self.assertEqual(10 + cu.TAG_LENGTH_ST26['FilingDate'], act[5])
         self.assertEqual('FilingDate', act[6])
         self.assertEqual('-', act[7])
     
     def test_setRow_prio(self):
+        act_WO2012_001613 = [row for row in self.esc_WO2012_001613.generalInformationRows if row[6] == 'EarliestPriorityApplicationIdentification']
+        self.assertEqual([], act_WO2012_001613)
+        
         act = [row for row in self.esc5.generalInformationRows if row[6] == 'EarliestPriorityApplicationIdentification'][0]
 
         self.assertEqual('prio', act[0])
@@ -264,9 +306,9 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(12, act_seq1[2])
         self.assertEqual(3, act_seq1[3])
         self.assertEqual(cu.TAG_LENGTH_ST26['INSDSeq_moltype'], act_seq1[4])
-        self.assertEqual(3 + cu.TAG_LENGTH_ST26['INSDSeq_moltype'], act_seq1[5])
+        self.assertEqual(2 + cu.TAG_LENGTH_ST26['INSDSeq_moltype'], act_seq1[5])
         self.assertEqual('INSDSeq_moltype', act_seq1[6])
-        self.assertEqual('-', act_seq1[7])
+        self.assertEqual('PRT replaced by AA for protein sequences', act_seq1[7])
         
         act_seq40 = self.getElementRowsForSequence(self.esc5, 212, '40')[0]
 
@@ -275,24 +317,134 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(12, act_seq40[2])
         self.assertEqual(3, act_seq40[3])
         
-    def test_row213(self):
-        act_seq1 = self.getElementRowsForSequence(self.esc5, 213, '1')[0]
+        act_seq10 = self.getElementRowsForSequence(self.esc_WO2013041670, 212, '10')[0]
+        self.assertEqual(212, act_seq10[0])
+        self.assertEqual('10', act_seq10[1])
+        self.assertEqual(12, act_seq10[2])
+        self.assertEqual(3, act_seq10[3])
+        self.assertEqual(3 + cu.TAG_LENGTH_ST26['INSDSeq_moltype'], act_seq10[5])
+        self.assertEqual('-', act_seq10[7])
         
-        self.assertEqual(213, act_seq1[0])
-        self.assertEqual('1', act_seq1[1])
-        self.assertEqual(23, act_seq1[2])
-        self.assertEqual(12, act_seq1[3])
-        self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq1[4])
-        self.assertEqual(12 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq1[5])
-        self.assertEqual('INSDQualifier_value', act_seq1[6])
-        self.assertEqual('-', act_seq1[7])
+    def test_featureSource(self):
+#         pprint.pprint(self.esc5.sequenceRows)
         
-        act_seq40 = self.getElementRowsForSequence(self.esc5, 213, '40')[0]
-
-        self.assertEqual(213, act_seq40[0])
-        self.assertEqual('40', act_seq40[1])
-        self.assertEqual(35, act_seq40[2])
-        self.assertEqual(24, act_seq40[3])
+        act_INSDFeature = [row for row in self.esc5.sequenceRows 
+                    if row[6] == 'INSDFeature' and 
+                    row[7] == 'ST.26 mandatory feature source'][3]
+        
+        self.assertEqual(0, act_INSDFeature[0])
+        self.assertEqual('4', act_INSDFeature[1])
+        self.assertEqual(0, act_INSDFeature[2])
+        self.assertEqual(0, act_INSDFeature[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDFeature'], act_INSDFeature[4])
+        self.assertEqual(0 + cu.TAG_LENGTH_ST26['INSDFeature'], act_INSDFeature[5])
+        self.assertEqual('INSDFeature', act_INSDFeature[6])
+        self.assertEqual('ST.26 mandatory feature source', act_INSDFeature[7])
+        
+        act_INSDFeature_key = [row for row in self.esc5.sequenceRows 
+                    if row[6] == 'INSDFeature_key' and 
+                    row[7] == 'ST.26 mandatory feature source'][3]
+        
+        self.assertEqual(0, act_INSDFeature_key[0])
+        self.assertEqual('4', act_INSDFeature_key[1])
+        self.assertEqual(0, act_INSDFeature_key[2])
+        self.assertEqual(0, act_INSDFeature_key[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDFeature_key'], act_INSDFeature_key[4])
+        self.assertEqual(len('source') + cu.TAG_LENGTH_ST26['INSDFeature_key'], act_INSDFeature_key[5])
+        self.assertEqual('INSDFeature_key', act_INSDFeature_key[6])
+        self.assertEqual('ST.26 mandatory feature source', act_INSDFeature_key[7])
+        
+        act_INSDFeature_location = [row for row in self.esc5.sequenceRows 
+                    if row[6] == 'INSDFeature_location' and 
+                    row[7] == 'ST.26 mandatory feature source'][3]
+        
+        self.assertEqual(0, act_INSDFeature_location[0])
+        self.assertEqual('4', act_INSDFeature_location[1])
+        self.assertEqual(0, act_INSDFeature_location[2])
+        self.assertEqual(0, act_INSDFeature_location[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDFeature_location'], act_INSDFeature_location[4])
+        self.assertEqual(len('1..5') + cu.TAG_LENGTH_ST26['INSDFeature_location'], act_INSDFeature_location[5])
+        self.assertEqual('INSDFeature_location', act_INSDFeature_location[6])
+        self.assertEqual('ST.26 mandatory feature source', act_INSDFeature_location[7])
+        
+#         tests for qualifiers
+        act_INSDFeature_quals = [row for row in self.esc5.sequenceRows 
+                    if row[6] == 'INSDFeature_quals' and 
+                    row[7] == 'ST.26 mandatory feature source'][0]
+        
+        self.assertEqual(0, act_INSDFeature_quals[0])
+        self.assertEqual('1', act_INSDFeature_quals[1])
+        self.assertEqual(0, act_INSDFeature_quals[2])
+        self.assertEqual(0, act_INSDFeature_quals[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDFeature_quals'], act_INSDFeature_quals[4])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDFeature_quals'], act_INSDFeature_quals[5])
+        self.assertEqual('INSDFeature_quals', act_INSDFeature_quals[6])
+        self.assertEqual('ST.26 mandatory feature source', act_INSDFeature_quals[7])
+        
+        act_INSDQualifier_elements = [row for row in self.esc5.sequenceRows 
+                    if row[6] == 'INSDQualifier' and 
+                    'ST.26 mandatory ' in row[7]]
+        act_INSDQualifier_organism = act_INSDQualifier_elements[0]
+        act_INSDQualifier_mol_type = act_INSDQualifier_elements[1]
+        
+        self.assertEqual(0, act_INSDQualifier_organism[0])
+        self.assertEqual('1', act_INSDQualifier_organism[1])
+        self.assertEqual(0, act_INSDQualifier_organism[2])
+        self.assertEqual(0, act_INSDQualifier_organism[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier'], act_INSDQualifier_organism[4])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier'], act_INSDQualifier_organism[5])
+        self.assertEqual('INSDQualifier', act_INSDQualifier_organism[6])
+        self.assertEqual('ST.26 mandatory qualifier organism', act_INSDQualifier_organism[7])
+        
+        self.assertEqual('INSDQualifier', act_INSDQualifier_mol_type[6])
+        self.assertEqual('ST.26 mandatory qualifier mol_type', act_INSDQualifier_mol_type[7])
+        
+        
+        
+        act_INSDQualifier_name_elements = [row for row in self.esc5.sequenceRows 
+                    if row[6] == 'INSDQualifier_name' and 
+                    'ST.26 mandatory ' in row[7]]
+        act_INSDQualifier_name_organism = act_INSDQualifier_name_elements[0]
+        act_INSDQualifier_name_mol_type = act_INSDQualifier_name_elements[1]
+        
+        self.assertEqual(0, act_INSDQualifier_name_organism[0])
+        self.assertEqual('1', act_INSDQualifier_name_organism[1])
+        self.assertEqual(0, act_INSDQualifier_name_organism[2])
+        self.assertEqual(0, act_INSDQualifier_name_organism[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_name'], act_INSDQualifier_name_organism[4])
+        self.assertEqual(len('organism') + cu.TAG_LENGTH_ST26['INSDQualifier_name'], act_INSDQualifier_name_organism[5])
+        self.assertEqual('INSDQualifier_name', act_INSDQualifier_name_organism[6])
+        self.assertEqual('ST.26 mandatory qualifier organism', act_INSDQualifier_name_organism[7])
+        
+        self.assertEqual('INSDQualifier_name', act_INSDQualifier_name_mol_type[6])
+        self.assertEqual('ST.26 mandatory qualifier mol_type', act_INSDQualifier_name_mol_type[7])
+        
+        act_INSDQualifier_value_elements = [row for row in self.esc5.sequenceRows 
+                    if row[6] == 'INSDQualifier_value' and 
+                    'ST.26 mandatory ' in row[7]]
+        act_INSDQualifier_value_organism = act_INSDQualifier_value_elements[0]
+        act_INSDQualifier_value_mol_type = act_INSDQualifier_value_elements[1]
+        
+        self.assertEqual(213, act_INSDQualifier_value_organism[0])
+        self.assertEqual('1', act_INSDQualifier_value_organism[1])
+        self.assertEqual(23, act_INSDQualifier_value_organism[2])
+        self.assertEqual(12, act_INSDQualifier_value_organism[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_INSDQualifier_value_organism[4])
+        self.assertEqual(len('Homo sapiens') + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_INSDQualifier_value_organism[5])
+        self.assertEqual('INSDQualifier_value', act_INSDQualifier_value_organism[6])
+        self.assertEqual('ST.26 mandatory qualifier organism', act_INSDQualifier_value_organism[7])
+        
+        self.assertEqual(0, act_INSDQualifier_value_mol_type[0])
+        self.assertEqual('INSDQualifier_value', act_INSDQualifier_value_mol_type[6])
+        self.assertEqual('ST.26 mandatory qualifier mol_type', act_INSDQualifier_value_mol_type[7])
+        
+        
+        act_INSDQualifier_value_organism40 = act_INSDQualifier_value_elements[78]
+        self.assertEqual(213, act_INSDQualifier_value_organism40[0])
+        
+        self.assertEqual('40', act_INSDQualifier_value_organism40[1])
+        self.assertEqual(35, act_INSDQualifier_value_organism40[2])
+        self.assertEqual(24, act_INSDQualifier_value_organism40[3])
         
     def test_row220(self):
         rows220_1 = self.getElementRowsForSequence(self.esc5, 220, '1')
@@ -369,44 +521,44 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(17, act_seq4_5[2])
         self.assertEqual(8, act_seq4_5[3])
         
-    def test_row223(self):
-        rows223_1 = self.getElementRowsForSequence(self.esc5, 223, '1')
-        self.assertEqual([], rows223_1)
-        
-        rows223_4 = self.getElementRowsForSequence(self.esc5, 223, '4')
-        self.assertEqual(6, len(rows223_4))
-        
-        act_seq4_0 = rows223_4[0]
-         
-        self.assertEqual(223, act_seq4_0[0])
-        self.assertEqual('4', act_seq4_0[1])
-        self.assertEqual(28, act_seq4_0[2])
-        self.assertEqual(15, act_seq4_0[3])
-        self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq4_0[4])
-        self.assertEqual(15 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq4_0[5])
-        self.assertEqual('INSDQualifier_value', act_seq4_0[6])
-        self.assertEqual('-', act_seq4_0[7])
-         
-        act_seq4_5 = rows223_4[5]
-         
-        self.assertEqual(223, act_seq4_5[0])
-        self.assertEqual('4', act_seq4_5[1])
-        self.assertEqual(31, act_seq4_5[2])
-        self.assertEqual(20, act_seq4_5[3])
-        
-        rows223_39 = self.getElementRowsForSequence(self.esc5, 223, '39')
-        self.assertEqual(1, len(rows223_39))
-        
-        act_seq39_0 = rows223_39[0]
-         
-        self.assertEqual(223, act_seq39_0[0])
-        self.assertEqual('39', act_seq39_0[1])
-        self.assertEqual(66, act_seq39_0[2])
-        self.assertEqual(55, act_seq39_0[3])
-        self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq39_0[4])
-        self.assertEqual(55 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq39_0[5])
-        self.assertEqual('INSDQualifier_value', act_seq39_0[6])
-        self.assertEqual('-', act_seq39_0[7])
+#     def test_row223(self):
+#         rows223_1 = self.getElementRowsForSequence(self.esc5, 223, '1')
+#         self.assertEqual([], rows223_1)
+#         
+#         rows223_4 = self.getElementRowsForSequence(self.esc5, 223, '4')
+# #         self.assertEqual(6, len(rows223_4))
+#         
+#         act_seq4_0 = rows223_4[0]
+#          
+#         self.assertEqual(223, act_seq4_0[0])
+#         self.assertEqual('4', act_seq4_0[1])
+#         self.assertEqual(28, act_seq4_0[2])
+#         self.assertEqual(15, act_seq4_0[3])
+#         self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq4_0[4])
+#         self.assertEqual(15 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq4_0[5])
+#         self.assertEqual('INSDQualifier_value', act_seq4_0[6])
+#         self.assertEqual('-', act_seq4_0[7])
+#          
+#         act_seq4_5 = rows223_4[5]
+#          
+#         self.assertEqual(223, act_seq4_5[0])
+#         self.assertEqual('4', act_seq4_5[1])
+#         self.assertEqual(31, act_seq4_5[2])
+#         self.assertEqual(20, act_seq4_5[3])
+#         
+#         rows223_39 = self.getElementRowsForSequence(self.esc5, 223, '39')
+#         self.assertEqual(1, len(rows223_39))
+#         
+#         act_seq39_0 = rows223_39[0]
+#          
+#         self.assertEqual(223, act_seq39_0[0])
+#         self.assertEqual('39', act_seq39_0[1])
+#         self.assertEqual(66, act_seq39_0[2])
+#         self.assertEqual(55, act_seq39_0[3])
+#         self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq39_0[4])
+#         self.assertEqual(55 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq39_0[5])
+#         self.assertEqual('INSDQualifier_value', act_seq39_0[6])
+#         self.assertEqual('-', act_seq39_0[7])
          
     def test_row400(self):
         act_seq1 = self.getElementRowsForSequence(self.esc5, 400, '1')[0]

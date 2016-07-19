@@ -114,9 +114,13 @@ class ElementSizeCalculator(object):
         self.setRow_110()
         self.setRow_120()
         self.setRow_130()
-        self.setRow_140()
-        self.setRow_141()
-        self.setRow_prio()
+        if self.seql_raw.applicationNumber and self.seql_raw.filingDate:
+            self.setRow_ApplicationIdentification()
+            self.setRow_IPOfficeCode()
+            self.setRow_140()
+            self.setRow_141()
+        if self.seql_raw.priorities:
+            self.setRow_prio()
         self.setRow_160()
         self.setRow_170()
         self.sequenceRows = self.setSequenceRows()
@@ -152,7 +156,7 @@ class ElementSizeCalculator(object):
         dtdVersionValue = 'd.d'
         self.generalInformationRows.append([0, 0, 
                 0,
-                len(dtdVersionValue),
+                len(dtdVersionValue),#TODO: shoudn't be 0 as it's not in ST.25 file???
                 cu.TAG_LENGTH_ST26['dtdVersion'],
                 len(dtdVersionValue) + cu.TAG_LENGTH_ST26['dtdVersion'],
                 'dtdVersion', 
@@ -202,7 +206,29 @@ class ElementSizeCalculator(object):
             self.seql_clean.generalInformation.reference,
             'ApplicantFileReference', '-'))
 #     TODO: include in calculation IPOffice element!
-    
+ 
+    def setRow_ApplicationIdentification(self):
+        r = [0, 0, 
+                0,
+                0,
+                cu.TAG_LENGTH_ST26['ApplicationIdentification'],
+                cu.TAG_LENGTH_ST26['ApplicationIdentification'],
+                'ApplicationIdentification', 
+                '-']
+        
+        self.generalInformationRows.append(r)
+         
+    def setRow_IPOfficeCode(self):
+        r = [0, 0, 
+                0,
+                0,
+                cu.TAG_LENGTH_ST26['IPOfficeCode'],
+                cu.TAG_LENGTH_ST26['IPOfficeCode'],
+                'IPOfficeCode', 
+                'Corresponding to 140. Empty for the purpose of this study']
+        
+        self.generalInformationRows.append(r)
+        
     def setRow_140(self):
         self.generalInformationRows.append(self._getSt25St26Lengths(140, 0, 
             self.seql_raw.applicationNumber,
@@ -273,13 +299,101 @@ class ElementSizeCalculator(object):
                             seq.length, parsedSequence.length, 'INSDSeq_length', '-')
             res.append(currentRow211)
             
-            currentRow212 = self._getSt25St26Lengths(212, currentSeqId, 
-                            seq.molType, parsedSequence.molType, 'INSDSeq_moltype', '-')
-            res.append(currentRow212)
+            moltypeValue = 'AA' if parsedSequence.molType == 'PRT' else parsedSequence.molType 
+
+            currentRow212 = [212, currentSeqId, cu.safeLength(seq.molType), 
+                            cu.safeLength(parsedSequence.molType), 
+                            cu.TAG_LENGTH_ST26['INSDSeq_moltype'], 
+                            cu.safeLength(moltypeValue) + cu.TAG_LENGTH_ST26['INSDSeq_moltype'],
+                            'INSDSeq_moltype', 
+                            'PRT replaced by AA for protein sequences' if moltypeValue == 'AA' else '-']
             
-            currentRow213 = self._getSt25St26Lengths(213, currentSeqId, 
-                            seq.organism, parsedSequence.organism, 'INSDQualifier_value', '-')
-            res.append(currentRow213)
+            res.append(currentRow212)
+                        
+#             create ST.26 feature source
+            currentRow_INSDFeature = [0, currentSeqId, 0, 0, 
+                            cu.TAG_LENGTH_ST26['INSDFeature'], 
+                            cu.TAG_LENGTH_ST26['INSDFeature'],
+                            'INSDFeature', 
+                            'ST.26 mandatory feature source']
+            res.append(currentRow_INSDFeature)
+            
+            currentRow_INSDFeature_key = [0, currentSeqId, 0, 0, 
+                            cu.TAG_LENGTH_ST26['INSDFeature_key'], 
+                            len('source') + cu.TAG_LENGTH_ST26['INSDFeature_key'],
+                            'INSDFeature_key', 
+                            'ST.26 mandatory feature source']
+            
+            res.append(currentRow_INSDFeature_key)
+            
+            sourceLocation = '1..%s' % parsedSequence.length
+            currentRow_INSDFeature_location = [0, currentSeqId, 0, 0, 
+                            cu.TAG_LENGTH_ST26['INSDFeature_location'], 
+                            len(sourceLocation) + cu.TAG_LENGTH_ST26['INSDFeature_location'],
+                            'INSDFeature_location', 
+                            'ST.26 mandatory feature source']
+            
+            res.append(currentRow_INSDFeature_location)
+            
+            def append_INSDFeature_quals(msg):
+                res.append([0, currentSeqId, 0, 0, 
+                            cu.TAG_LENGTH_ST26['INSDFeature_quals'], 
+                            cu.TAG_LENGTH_ST26['INSDFeature_quals'],
+                            'INSDFeature_quals', 
+                            msg])
+            
+#             add first the parent element INSDFeature_quals
+            append_INSDFeature_quals('ST.26 mandatory feature source')
+            
+            def createQualifier(name, msg):
+                currentRow_INSDQualifier = [0, currentSeqId, 0, 0, 
+                            cu.TAG_LENGTH_ST26['INSDQualifier'], 
+                            cu.TAG_LENGTH_ST26['INSDQualifier'],
+                            'INSDQualifier', 
+                            msg]
+            
+                res.append(currentRow_INSDQualifier)
+                
+                currentRow_INSDQualifier_name = [0, currentSeqId, 0, 0, 
+                            cu.TAG_LENGTH_ST26['INSDQualifier_name'], 
+                            len(name) + cu.TAG_LENGTH_ST26['INSDQualifier_name'],
+                            'INSDQualifier_name', 
+                            msg]
+            
+                res.append(currentRow_INSDQualifier_name)
+            
+            def createQualifierValue(tag_st25, element_st25, value_st25, msg):
+                
+                currentRow_INSDQualifier_value = [tag_st25, 
+                    currentSeqId, cu.safeLength(element_st25), 
+                    cu.safeLength(value_st25), 
+                    cu.TAG_LENGTH_ST26['INSDQualifier_value'], 
+                    cu.safeLength(value_st25) + cu.TAG_LENGTH_ST26['INSDQualifier_value'],
+                    'INSDQualifier_value', 
+                    msg]
+            
+                res.append(currentRow_INSDQualifier_value)
+            
+#             qualifier organism
+            createQualifier('organism', 'ST.26 mandatory qualifier organism')
+            createQualifierValue(213, seq.organism, 
+                            parsedSequence.organism, 
+                            'ST.26 mandatory qualifier organism')
+
+#             qualifier mol_type
+            mol_typeValue = 'protein' if parsedSequence.molType == 'PRT' else 'genomic DNA'
+            createQualifier('mol_type', 'ST.26 mandatory qualifier mol_type') 
+#             createQualifierValue(0, 0, mol_typeValue, 'ST.26 mandatory qualifier mol_type')
+            res.append([0, currentSeqId, 0, 0,  
+                    cu.TAG_LENGTH_ST26['INSDQualifier_value'], 
+                    cu.safeLength(mol_typeValue) + cu.TAG_LENGTH_ST26['INSDQualifier_value'],
+                    'INSDQualifier_value', 
+                    'ST.26 mandatory qualifier mol_type'])
+            
+            
+
+
+#             end create ST.26 feature source
         
             parsedFeatures = parsedSequence.features
             for feat in seq.features:
@@ -301,10 +415,21 @@ class ElementSizeCalculator(object):
                             'INSDFeature_location', '-')
                 res.append(currentRow222)
                 
-                currentRow223 = self._getSt25St26Lengths(223, currentSeqId, 
-                            feat.description, parsedFeature.description, 
-                            'INSDQualifier_value', '-')
-                res.append(currentRow223)
+                
+#                 add element INSDFeature_quals
+                append_INSDFeature_quals('-')
+                
+                createQualifier('note', '-')
+                
+                createQualifierValue(223, feat.description, 
+                                parsedFeature.description, 
+                                '-')
+                
+                
+#                 currentRow223 = self._getSt25St26Lengths(223, currentSeqId, 
+#                             feat.description, parsedFeature.description, 
+#                             'INSDQualifier_value', '-')
+#                 res.append(currentRow223)
                 
         
             if parsedSequence.molType == 'PRT':
