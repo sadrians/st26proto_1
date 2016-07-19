@@ -6,13 +6,6 @@
                     softwareName="{{sequenceListing.softwareName}}" 
                     softwareVersion="{{sequenceListing.softwareVersion}}"
                     productionDate="{{sequenceListing.productionDate.date}}">
-<!-- <ST26SequenceListing dtdVersion="{{sequenceListing.dtdVersion}}" 
-                    fileName="{{sequenceListing.fileName}}"
-                    softwareName="{{sequenceListing.softwareName}}" 
-                    softwareVersion="{{sequenceListing.softwareVersion}}"
-                    productionDate="{{sequenceListing.productionDate}}"
-                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                    xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
         <IPOfficeCode>{{sequenceListing.IPOfficeCode}}</IPOfficeCode>
         <ApplicationNumberText>{{sequenceListing.applicationNumberText}}</ApplicationNumberText>

@@ -399,8 +399,6 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual('INSDQualifier', act_INSDQualifier_mol_type[6])
         self.assertEqual('ST.26 mandatory qualifier mol_type', act_INSDQualifier_mol_type[7])
         
-        
-        
         act_INSDQualifier_name_elements = [row for row in self.esc5.sequenceRows 
                     if row[6] == 'INSDQualifier_name' and 
                     'ST.26 mandatory ' in row[7]]

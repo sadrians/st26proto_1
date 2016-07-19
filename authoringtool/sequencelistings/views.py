@@ -311,6 +311,14 @@ def generateXml(request, pk):
                         'location': util.OUTPUT_DIR, 
                         'fileName': sl.fileName,
                         }) 
+#         this version of xml root uses xsd schema file
+#         <!-- <ST26SequenceListing dtdVersion="{{sequenceListing.dtdVersion}}" 
+#                     fileName="{{sequenceListing.fileName}}"
+#                     softwareName="{{sequenceListing.softwareName}}" 
+#                     softwareVersion="{{sequenceListing.softwareVersion}}"
+#                     productionDate="{{sequenceListing.productionDate}}"
+#                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+#                     xsi:noNamespaceSchemaLocation="st26.xsd"> -->
         
 @login_required
 def render_xmlFile(request):

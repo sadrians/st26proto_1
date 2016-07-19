@@ -6,13 +6,6 @@
                     softwareName="prototype" 
                     softwareVersion="0.1"
                     productionDate="July 19, 2016">
-<!-- <ST26SequenceListing dtdVersion="1" 
-                    fileName="test_xmlsql"
-                    softwareName="prototype" 
-                    softwareVersion="0.1"
-                    productionDate="July 19, 2016, 8:48 a.m."
-                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                    xsi:noNamespaceSchemaLocation="st26.xsd"> -->
     <ApplicationIdentification>
         <IPOfficeCode>EP</IPOfficeCode>
         <ApplicationNumberText>2015123456</ApplicationNumberText>

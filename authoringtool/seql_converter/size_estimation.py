@@ -156,7 +156,7 @@ class ElementSizeCalculator(object):
         dtdVersionValue = 'd.d'
         self.generalInformationRows.append([0, 0, 
                 0,
-                len(dtdVersionValue),#TODO: shoudn't be 0 as it's not in ST.25 file???
+                len(dtdVersionValue),
                 cu.TAG_LENGTH_ST26['dtdVersion'],
                 len(dtdVersionValue) + cu.TAG_LENGTH_ST26['dtdVersion'],
                 'dtdVersion', 

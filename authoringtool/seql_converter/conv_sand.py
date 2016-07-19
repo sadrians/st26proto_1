@@ -1,10 +1,14 @@
 import re
 import os
+from django.conf import settings
 
 from converter import St25To26Converter 
  
 import converter_util as cu 
 
+f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 'st25parser', 'testData', 'file5.txt') 
+sc = St25To26Converter(f5)
+sc.generateXmlFile('.')
 
 # for el in cu.ELEMENT_NAME_ST26:
 #     print el 
