@@ -153,6 +153,9 @@ class St25To26Converter(object):
                 currentQualifier.save()
      
     def generateXmlFile(self, outputDir):
+#         strftime('%Y-%m-%d') dates are not in the prescribed ST.26 format!!!!!
+        self.seql_st26.productionDate = timezone.now()
+        self.seql_st26.save()
         xml = render_to_string('xml_template.xml', 
                                {'sequenceListing': self.seql_st26,
                                 }).encode('utf-8', 'strict')

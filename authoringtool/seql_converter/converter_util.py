@@ -78,6 +78,12 @@ def getSt26ElementLength():
     return res 
 
 TAG_LENGTH_ST26 = getSt26ElementLength()
+
+OTHER_ELEMENTS_ST26 = {
+    'xmlHeader': '<?xml version="1.0" encoding="UTF-8"?>', 
+    'doctypeDeclaration': '<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "resources/ST26SequenceListing_V1_0.dtd">',
+    'styleSheetReference': '<?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>',  
+    }
     
 # ======================================================
 

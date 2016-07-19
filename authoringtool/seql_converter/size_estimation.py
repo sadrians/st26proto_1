@@ -106,11 +106,16 @@ class ElementSizeCalculator(object):
         self.seql_raw = RawSequenceListing(self.filePath)
         self.seql_clean = st25parser.seqlparser.SequenceListing(self.filePath)
         self.generalInformationRows = []
-#         self.generalInformationRows.append(self.getRow_header())
+
+        self.setRow_xmlHeader()
+        self.setRow_doctypeDeclaration()
+        self.setRow_styleSheetReference()
         self.setRow_header()
         self.setRow_dtdVersion()
         self.setRow_fileName()
         self.setRow_softwareName()
+        self.setRow_softwareVersion()
+        self.setRow_productionDate()
         self.setRow_110()
         self.setRow_120()
         self.setRow_130()
@@ -142,6 +147,28 @@ class ElementSizeCalculator(object):
                 element_st26, 
                 comment
                 ]    
+
+    def setRow_xmlHeader(self):
+        self.generalInformationRows.append([0, 0, 0, 0,
+                len(cu.OTHER_ELEMENTS_ST26['xmlHeader']),
+                len(cu.OTHER_ELEMENTS_ST26['xmlHeader']),
+                'xmlHeader', 
+                'ST.26 specific element'])
+        
+    def setRow_doctypeDeclaration(self):
+        self.generalInformationRows.append([0, 0, 0, 0,
+                len(cu.OTHER_ELEMENTS_ST26['doctypeDeclaration']),
+                len(cu.OTHER_ELEMENTS_ST26['doctypeDeclaration']),
+                'doctypeDeclaration', 
+                'ST.26 specific element'])
+
+    def setRow_styleSheetReference(self):
+        self.generalInformationRows.append([0, 0, 0, 0,
+                len(cu.OTHER_ELEMENTS_ST26['styleSheetReference']),
+                len(cu.OTHER_ELEMENTS_ST26['styleSheetReference']),
+                'styleSheetReference', 
+                'ST.26 specific element'])
+
 
     def setRow_header(self):
         self.generalInformationRows.append([0, 0, 
@@ -184,9 +211,25 @@ class ElementSizeCalculator(object):
                 'softwareName', 
                 'ST.26 specific element. Assumed it has 10 chars'])
     
-
-# softwareVersion
-# productionDate
+    def setRow_softwareVersion(self):
+        softwareVersion = 'd.d'
+        self.generalInformationRows.append([0, 0, 
+                0,
+                len(softwareVersion),
+                cu.TAG_LENGTH_ST26['softwareVersion'],
+                len(softwareVersion) + cu.TAG_LENGTH_ST26['softwareVersion'],
+                'softwareVersion', 
+                'ST.26 specific element. Assumed format: d.d (for ex.: 1.3)'])
+        
+    def setRow_productionDate(self):
+        productionDate = 'YYYY-MM-DD'
+        self.generalInformationRows.append([0, 0, 
+                0,
+                len(productionDate),
+                cu.TAG_LENGTH_ST26['productionDate'],
+                len(productionDate) + cu.TAG_LENGTH_ST26['productionDate'],
+                'productionDate', 
+                'ST.26 specific element. Assumed format: YYYY-MM-DD (for ex.: 2013-10-20. Date format is still to be implemented in the prototype tool)'])
         
     def setRow_110(self):
         self.generalInformationRows.append(self._getSt25St26Lengths(110, 0,

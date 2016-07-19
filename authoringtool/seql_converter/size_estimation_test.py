@@ -72,7 +72,43 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.f_WO2012_001613 = os.path.join(settings.BASE_DIR, 'seql_converter', 
                             'st25parser', 'testData', 'WO2012-001613-001.zip.txt')
         self.esc_WO2012_001613 = ElementSizeCalculator(self.f_WO2012_001613)
+ 
+    def test_setRow_xmlHeader(self):
+        act = [row for row in self.esc5.generalInformationRows if row[6] == 'xmlHeader'][0]
+        
+        self.assertEqual(0, act[0])
+        self.assertEqual(0, act[1])
+        self.assertEqual(0, act[2])
+        self.assertEqual(0, act[3])
+        self.assertEqual(len(cu.OTHER_ELEMENTS_ST26['xmlHeader']), act[4])
+        self.assertEqual(len(cu.OTHER_ELEMENTS_ST26['xmlHeader']), act[5])
+        self.assertEqual('xmlHeader', act[6])
+        self.assertEqual('ST.26 specific element', act[7])
      
+    def test_setRow_doctypeDeclaration(self):
+        act = [row for row in self.esc5.generalInformationRows if row[6] == 'doctypeDeclaration'][0]
+        
+        self.assertEqual(0, act[0])
+        self.assertEqual(0, act[1])
+        self.assertEqual(0, act[2])
+        self.assertEqual(0, act[3])
+        self.assertEqual(len(cu.OTHER_ELEMENTS_ST26['doctypeDeclaration']), act[4])
+        self.assertEqual(len(cu.OTHER_ELEMENTS_ST26['doctypeDeclaration']), act[5])
+        self.assertEqual('doctypeDeclaration', act[6])
+        self.assertEqual('ST.26 specific element', act[7])
+    
+    def test_setRow_styleSheetReference(self):
+        act = [row for row in self.esc5.generalInformationRows if row[6] == 'styleSheetReference'][0]
+        
+        self.assertEqual(0, act[0])
+        self.assertEqual(0, act[1])
+        self.assertEqual(0, act[2])
+        self.assertEqual(0, act[3])
+        self.assertEqual(len(cu.OTHER_ELEMENTS_ST26['styleSheetReference']), act[4])
+        self.assertEqual(len(cu.OTHER_ELEMENTS_ST26['styleSheetReference']), act[5])
+        self.assertEqual('styleSheetReference', act[6])
+        self.assertEqual('ST.26 specific element', act[7])
+         
     def test_setRow_header(self): 
         act = [row for row in self.esc5.generalInformationRows if row[6] == 'ST26SequenceListing'][0]
         
@@ -96,6 +132,9 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(3 + cu.TAG_LENGTH_ST26['dtdVersion'], act[5])
         self.assertEqual('dtdVersion', act[6])
         self.assertEqual('ST.26 specific element. Assumed format: d.d (for ex.: 1.3)', act[7])
+
+
+
         
     def test_setRow_fileName(self): 
         act = [row for row in self.esc5.generalInformationRows if row[6] == 'fileName'][0]
@@ -123,6 +162,30 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(10 + cu.TAG_LENGTH_ST26['softwareName'], act[5])
         self.assertEqual('softwareName', act[6])
         self.assertEqual('ST.26 specific element. Assumed it has 10 chars', act[7])
+
+    def test_setRow_softwareVersion(self): 
+        act = [row for row in self.esc5.generalInformationRows if row[6] == 'softwareVersion'][0]
+
+        self.assertEqual(0, act[0])
+        self.assertEqual(0, act[1])
+        self.assertEqual(0, act[2])
+        self.assertEqual(3, act[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['softwareVersion'], act[4])
+        self.assertEqual(3 + cu.TAG_LENGTH_ST26['softwareVersion'], act[5])
+        self.assertEqual('softwareVersion', act[6])
+        self.assertEqual('ST.26 specific element. Assumed format: d.d (for ex.: 1.3)', act[7])
+    
+    def test_setRow_productionDate(self): 
+        act = [row for row in self.esc5.generalInformationRows if row[6] == 'productionDate'][0]
+
+        self.assertEqual(0, act[0])
+        self.assertEqual(0, act[1])
+        self.assertEqual(0, act[2])
+        self.assertEqual(len('YYYY-MM-DD'), act[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['productionDate'], act[4])
+        self.assertEqual(len('YYYY-MM-DD') + cu.TAG_LENGTH_ST26['productionDate'], act[5])
+        self.assertEqual('productionDate', act[6])
+#         self.assertEqual('ST.26 specific element. Assumed format: d.d (for ex.: 1.3)', act[7])
            
     def test_setRow_110(self):
         act = [row for row in self.esc5.generalInformationRows if row[0] == 110][0]

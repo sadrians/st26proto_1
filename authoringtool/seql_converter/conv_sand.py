@@ -8,7 +8,13 @@ import converter_util as cu
 
 f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 'st25parser', 'testData', 'file5.txt') 
 sc = St25To26Converter(f5)
-sc.generateXmlFile('.')
+# sc.generateXmlFile('.')
+
+f5conv = 'file5_converted.xml'
+
+# with open(f5conv, 'r') as f:
+#     print f.read().replace(os.linesep, '')
+
 
 # for el in cu.ELEMENT_NAME_ST26:
 #     print el 
