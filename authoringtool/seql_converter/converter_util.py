@@ -55,6 +55,7 @@ ELEMENT_DTD_LINE_PATTERN = re.compile(elementDtdLineRegex)
 
 DEFAULT_CODE = 'XX' # placeholder when IPOffice code or language code are missing
 DEFAULT_DATE_STRING = '1900-01-01'
+BLANK_PLACEHOLDER = '-'
 
 # def safeLength(aStr):
 #     if aStr is not None:
@@ -69,15 +70,27 @@ def safeLength(aStr):
         return 0
 
 
-def getSt26ElementLength():
+# def setSt26ElementLength():
+#     res = {}
+#     fp = os.path.join(settings.BASE_DIR, 'seql_converter', 'tags_st26.txt')
+#     with open(fp) as f:
+#         for line in f:
+#             res[line.strip()] = 5 + 2*len(line.strip())
+#     return res 
+
+def setSt26ElementLength():
     res = {}
     fp = os.path.join(settings.BASE_DIR, 'seql_converter', 'tags_st26.txt')
     with open(fp) as f:
         for line in f:
-            res[line.strip()] = 5 + 2*len(line.strip())
-    return res 
+            cleanLine = line.strip()
+            if cleanLine[0].islower(): #it's an attribute
+                res[cleanLine] = len(cleanLine) + 2*len('"') + len('=') + len(' ')
+            else: #it's an element
+                res[cleanLine] =  2*(len(cleanLine) + len('<') + len('>')) + len('/')
+    return res
 
-TAG_LENGTH_ST26 = getSt26ElementLength()
+TAG_LENGTH_ST26 = setSt26ElementLength()
 
 OTHER_ELEMENTS_ST26 = {
     'xmlHeader': '<?xml version="1.0" encoding="UTF-8"?>', 

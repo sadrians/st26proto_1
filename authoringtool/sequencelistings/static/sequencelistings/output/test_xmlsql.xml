@@ -5,17 +5,17 @@
                     fileName="test_xmlsql"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="July 19, 2016">
+                    productionDate="July 20, 2016">
     <ApplicationIdentification>
         <IPOfficeCode>EP</IPOfficeCode>
         <ApplicationNumberText>2015123456</ApplicationNumberText>
-        <FilingDate>July 19, 2016</FilingDate>
+        <FilingDate>July 20, 2016</FilingDate>
     </ApplicationIdentification>
     <ApplicantFileReference>123</ApplicantFileReference>
     <EarliestPriorityApplicationIdentification>
         <IPOfficeCode>US</IPOfficeCode>
         <ApplicationNumberText>998877</ApplicationNumberText>
-        <FilingDate>July 19, 2016</FilingDate>
+        <FilingDate>July 20, 2016</FilingDate>
     </EarliestPriorityApplicationIdentification>
     <ApplicantName languageCode="EN">
         John Smith
@@ -44,9 +44,6 @@
                 <INSDSeq_length>18</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>

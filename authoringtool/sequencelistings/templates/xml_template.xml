@@ -44,9 +44,6 @@
                 <INSDSeq_length>{{seq.length}}</INSDSeq_length>
                 <INSDSeq_moltype>{{seq.moltype}}</INSDSeq_moltype>
                 <INSDSeq_division>{{seq.division}}</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>{{seq.otherSeqId}}</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     {% for f in seq.feature_set.all %}
                         <INSDFeature>

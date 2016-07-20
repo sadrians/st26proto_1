@@ -1,17 +1,26 @@
 element_st25,seqIdNo,element_st25_length,value_length,tag_st26_length,element_st26_length,element_st26,comment
+0,0,0,0,38,38,xmlHeader,ST.26 specific element
+0,0,0,0,118,118,doctypeDeclaration,ST.26 specific element
+0,0,0,0,60,60,styleSheetReference,ST.26 specific element
 0,0,45,16,43,43,ST26SequenceListing,ST.25 seqlHeader discarded
-0,0,0,3,25,28,dtdVersion,ST.26 specific element. Assumed format: d.d (for ex.: 1.3)
-0,0,0,5,21,26,fileName,ST.25 file name used with extension xml
-0,0,0,10,29,39,softwareName,ST.26 specific element. Assumed it has 10 chars
+0,0,0,3,14,17,dtdVersion,ST.26 specific element. Assumed format: d.d (for ex.: 1.3)
+0,0,0,5,12,17,fileName,ST.25 file name used with extension xml
+0,0,0,10,16,26,softwareName,ST.26 specific element. Assumed it has 10 chars
+0,0,0,3,19,22,softwareVersion,ST.26 specific element. Assumed format: d.d (for ex.: 1.3)
+0,0,0,10,18,28,productionDate,ST.26 specific element. Assumed format: YYYY-MM-DD (for ex.: 2013-10-20. Date format is still to be implemented in the prototype tool)
 110,0,39,26,31,57,ApplicantName,-
 120,0,98,78,33,111,InventionTitle,-
 130,0,24,13,49,62,ApplicantFileReference,-
 prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25 priority retained, if any"
 160,0,17,2,47,49,SequenceTotalQuantity,-
 170,0,31,20,0,0,-,information discarded in ST.26
-210,1,10,1,37,38,sequenceIDNumber,-
+0,1,0,0,29,29,SequenceData,ST.26 specific element
+210,1,10,1,20,21,sequenceIDNumber,-
+0,1,0,0,19,19,INSDSeq,ST.26 specific element
 211,1,12,3,33,36,INSDSeq_length,-
 212,1,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,1,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,1,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,1,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,1,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,1,0,0,45,51,INSDFeature_location,ST.26 mandatory feature source
@@ -23,9 +32,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,1,0,0,41,49,INSDQualifier_name,ST.26 mandatory qualifier mol_type
 0,1,0,0,43,50,INSDQualifier_value,ST.26 mandatory qualifier mol_type
 400,1,6292,2214,37,775,INSDSeq_sequence,3-to-1 letter code
-210,2,10,1,37,38,sequenceIDNumber,-
+0,2,0,0,29,29,SequenceData,ST.26 specific element
+210,2,10,1,20,21,sequenceIDNumber,-
+0,2,0,0,19,19,INSDSeq,ST.26 specific element
 211,2,12,3,33,36,INSDSeq_length,-
 212,2,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,2,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,2,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,2,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,2,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,2,0,0,45,51,INSDFeature_location,ST.26 mandatory feature source
@@ -37,9 +50,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,2,0,0,41,49,INSDQualifier_name,ST.26 mandatory qualifier mol_type
 0,2,0,0,43,50,INSDQualifier_value,ST.26 mandatory qualifier mol_type
 400,2,4476,1575,37,562,INSDSeq_sequence,3-to-1 letter code
-210,3,10,1,37,38,sequenceIDNumber,-
+0,3,0,0,29,29,SequenceData,ST.26 specific element
+210,3,10,1,20,21,sequenceIDNumber,-
+0,3,0,0,19,19,INSDSeq,ST.26 specific element
 211,3,12,3,33,36,INSDSeq_length,-
 212,3,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,3,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,3,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,3,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,3,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,3,0,0,45,51,INSDFeature_location,ST.26 mandatory feature source
@@ -51,9 +68,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,3,0,0,41,49,INSDQualifier_name,ST.26 mandatory qualifier mol_type
 0,3,0,0,43,50,INSDQualifier_value,ST.26 mandatory qualifier mol_type
 400,3,5564,1959,37,690,INSDSeq_sequence,3-to-1 letter code
-210,4,10,1,37,38,sequenceIDNumber,-
+0,4,0,0,29,29,SequenceData,ST.26 specific element
+210,4,10,1,20,21,sequenceIDNumber,-
+0,4,0,0,19,19,INSDSeq,ST.26 specific element
 211,4,10,1,33,34,INSDSeq_length,-
 212,4,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,4,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,4,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,4,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,4,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,4,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -107,9 +128,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,4,0,0,41,45,INSDQualifier_name,-
 223,4,31,20,43,63,INSDQualifier_value,-
 400,4,60,15,37,42,INSDSeq_sequence,3-to-1 letter code
-210,5,10,1,37,38,sequenceIDNumber,-
+0,5,0,0,29,29,SequenceData,ST.26 specific element
+210,5,10,1,20,21,sequenceIDNumber,-
+0,5,0,0,19,19,INSDSeq,ST.26 specific element
 211,5,10,1,33,34,INSDSeq_length,-
 212,5,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,5,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,5,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,5,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,5,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,5,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -163,9 +188,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,5,0,0,41,45,INSDQualifier_name,-
 223,5,31,20,43,63,INSDQualifier_value,-
 400,5,60,15,37,42,INSDSeq_sequence,3-to-1 letter code
-210,6,10,1,37,38,sequenceIDNumber,-
+0,6,0,0,29,29,SequenceData,ST.26 specific element
+210,6,10,1,20,21,sequenceIDNumber,-
+0,6,0,0,19,19,INSDSeq,ST.26 specific element
 211,6,10,1,33,34,INSDSeq_length,-
 212,6,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,6,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,6,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,6,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,6,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,6,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -184,9 +213,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,6,0,0,41,45,INSDQualifier_name,-
 223,6,35,24,43,67,INSDQualifier_value,-
 400,6,52,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,7,10,1,37,38,sequenceIDNumber,-
+0,7,0,0,29,29,SequenceData,ST.26 specific element
+210,7,10,1,20,21,sequenceIDNumber,-
+0,7,0,0,19,19,INSDSeq,ST.26 specific element
 211,7,10,1,33,34,INSDSeq_length,-
 212,7,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,7,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,7,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,7,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,7,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,7,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -205,9 +238,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,7,0,0,41,45,INSDQualifier_name,-
 223,7,35,24,43,67,INSDQualifier_value,-
 400,7,52,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,8,10,1,37,38,sequenceIDNumber,-
+0,8,0,0,29,29,SequenceData,ST.26 specific element
+210,8,10,1,20,21,sequenceIDNumber,-
+0,8,0,0,19,19,INSDSeq,ST.26 specific element
 211,8,10,1,33,34,INSDSeq_length,-
 212,8,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,8,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,8,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,8,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,8,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,8,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -226,9 +263,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,8,0,0,41,45,INSDQualifier_name,-
 223,8,35,24,43,67,INSDQualifier_value,-
 400,8,52,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,9,10,1,37,38,sequenceIDNumber,-
+0,9,0,0,29,29,SequenceData,ST.26 specific element
+210,9,10,1,20,21,sequenceIDNumber,-
+0,9,0,0,19,19,INSDSeq,ST.26 specific element
 211,9,10,1,33,34,INSDSeq_length,-
 212,9,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,9,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,9,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,9,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,9,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,9,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -247,9 +288,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,9,0,0,41,45,INSDQualifier_name,-
 223,9,35,24,43,67,INSDQualifier_value,-
 400,9,60,15,37,42,INSDSeq_sequence,3-to-1 letter code
-210,10,11,2,37,39,sequenceIDNumber,-
+0,10,0,0,29,29,SequenceData,ST.26 specific element
+210,10,11,2,20,22,sequenceIDNumber,-
+0,10,0,0,19,19,INSDSeq,ST.26 specific element
 211,10,10,1,33,34,INSDSeq_length,-
 212,10,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,10,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,10,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,10,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,10,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,10,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -268,9 +313,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,10,0,0,41,45,INSDQualifier_name,-
 223,10,35,24,43,67,INSDQualifier_value,-
 400,10,53,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,11,11,2,37,39,sequenceIDNumber,-
+0,11,0,0,29,29,SequenceData,ST.26 specific element
+210,11,11,2,20,22,sequenceIDNumber,-
+0,11,0,0,19,19,INSDSeq,ST.26 specific element
 211,11,10,1,33,34,INSDSeq_length,-
 212,11,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,11,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,11,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,11,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,11,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,11,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -289,9 +338,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,11,0,0,41,45,INSDQualifier_name,-
 223,11,35,24,43,67,INSDQualifier_value,-
 400,11,53,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,12,11,2,37,39,sequenceIDNumber,-
+0,12,0,0,29,29,SequenceData,ST.26 specific element
+210,12,11,2,20,22,sequenceIDNumber,-
+0,12,0,0,19,19,INSDSeq,ST.26 specific element
 211,12,10,1,33,34,INSDSeq_length,-
 212,12,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,12,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,12,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,12,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,12,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,12,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -310,9 +363,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,12,0,0,41,45,INSDQualifier_name,-
 223,12,35,24,43,67,INSDQualifier_value,-
 400,12,53,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,13,11,2,37,39,sequenceIDNumber,-
+0,13,0,0,29,29,SequenceData,ST.26 specific element
+210,13,11,2,20,22,sequenceIDNumber,-
+0,13,0,0,19,19,INSDSeq,ST.26 specific element
 211,13,10,1,33,34,INSDSeq_length,-
 212,13,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,13,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,13,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,13,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,13,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,13,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -331,9 +388,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,13,0,0,41,45,INSDQualifier_name,-
 223,13,35,24,43,67,INSDQualifier_value,-
 400,13,61,15,37,42,INSDSeq_sequence,3-to-1 letter code
-210,14,11,2,37,39,sequenceIDNumber,-
+0,14,0,0,29,29,SequenceData,ST.26 specific element
+210,14,11,2,20,22,sequenceIDNumber,-
+0,14,0,0,19,19,INSDSeq,ST.26 specific element
 211,14,10,1,33,34,INSDSeq_length,-
 212,14,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,14,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,14,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,14,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,14,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,14,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -352,9 +413,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,14,0,0,41,45,INSDQualifier_name,-
 223,14,63,52,43,95,INSDQualifier_value,-
 400,14,53,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,15,11,2,37,39,sequenceIDNumber,-
+0,15,0,0,29,29,SequenceData,ST.26 specific element
+210,15,11,2,20,22,sequenceIDNumber,-
+0,15,0,0,19,19,INSDSeq,ST.26 specific element
 211,15,10,1,33,34,INSDSeq_length,-
 212,15,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,15,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,15,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,15,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,15,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,15,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -373,9 +438,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,15,0,0,41,45,INSDQualifier_name,-
 223,15,63,52,43,95,INSDQualifier_value,-
 400,15,69,18,37,43,INSDSeq_sequence,3-to-1 letter code
-210,16,11,2,37,39,sequenceIDNumber,-
+0,16,0,0,29,29,SequenceData,ST.26 specific element
+210,16,11,2,20,22,sequenceIDNumber,-
+0,16,0,0,19,19,INSDSeq,ST.26 specific element
 211,16,10,1,33,34,INSDSeq_length,-
 212,16,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,16,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,16,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,16,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,16,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,16,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -394,9 +463,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,16,0,0,41,45,INSDQualifier_name,-
 223,16,63,52,43,95,INSDQualifier_value,-
 400,16,61,15,37,42,INSDSeq_sequence,3-to-1 letter code
-210,17,11,2,37,39,sequenceIDNumber,-
+0,17,0,0,29,29,SequenceData,ST.26 specific element
+210,17,11,2,20,22,sequenceIDNumber,-
+0,17,0,0,19,19,INSDSeq,ST.26 specific element
 211,17,10,1,33,34,INSDSeq_length,-
 212,17,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,17,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,17,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,17,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,17,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,17,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -415,9 +488,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,17,0,0,41,45,INSDQualifier_name,-
 223,17,63,52,43,95,INSDQualifier_value,-
 400,17,77,21,37,44,INSDSeq_sequence,3-to-1 letter code
-210,18,11,2,37,39,sequenceIDNumber,-
+0,18,0,0,29,29,SequenceData,ST.26 specific element
+210,18,11,2,20,22,sequenceIDNumber,-
+0,18,0,0,19,19,INSDSeq,ST.26 specific element
 211,18,10,1,33,34,INSDSeq_length,-
 212,18,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,18,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,18,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,18,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,18,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,18,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -436,9 +513,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,18,0,0,41,45,INSDQualifier_name,-
 223,18,63,52,43,95,INSDQualifier_value,-
 400,18,53,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,19,11,2,37,39,sequenceIDNumber,-
+0,19,0,0,29,29,SequenceData,ST.26 specific element
+210,19,11,2,20,22,sequenceIDNumber,-
+0,19,0,0,19,19,INSDSeq,ST.26 specific element
 211,19,10,1,33,34,INSDSeq_length,-
 212,19,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,19,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,19,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,19,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,19,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,19,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -457,9 +538,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,19,0,0,41,45,INSDQualifier_name,-
 223,19,63,52,43,95,INSDQualifier_value,-
 400,19,53,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,20,11,2,37,39,sequenceIDNumber,-
+0,20,0,0,29,29,SequenceData,ST.26 specific element
+210,20,11,2,20,22,sequenceIDNumber,-
+0,20,0,0,19,19,INSDSeq,ST.26 specific element
 211,20,10,1,33,34,INSDSeq_length,-
 212,20,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,20,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,20,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,20,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,20,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,20,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -478,9 +563,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,20,0,0,41,45,INSDQualifier_name,-
 223,20,63,52,43,95,INSDQualifier_value,-
 400,20,53,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,21,11,2,37,39,sequenceIDNumber,-
+0,21,0,0,29,29,SequenceData,ST.26 specific element
+210,21,11,2,20,22,sequenceIDNumber,-
+0,21,0,0,19,19,INSDSeq,ST.26 specific element
 211,21,10,1,33,34,INSDSeq_length,-
 212,21,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,21,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,21,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,21,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,21,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,21,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -499,9 +588,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,21,0,0,41,45,INSDQualifier_name,-
 223,21,63,52,43,95,INSDQualifier_value,-
 400,21,53,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,22,11,2,37,39,sequenceIDNumber,-
+0,22,0,0,29,29,SequenceData,ST.26 specific element
+210,22,11,2,20,22,sequenceIDNumber,-
+0,22,0,0,19,19,INSDSeq,ST.26 specific element
 211,22,10,1,33,34,INSDSeq_length,-
 212,22,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,22,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,22,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,22,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,22,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,22,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -520,9 +613,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,22,0,0,41,45,INSDQualifier_name,-
 223,22,63,52,43,95,INSDQualifier_value,-
 400,22,53,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,23,11,2,37,39,sequenceIDNumber,-
+0,23,0,0,29,29,SequenceData,ST.26 specific element
+210,23,11,2,20,22,sequenceIDNumber,-
+0,23,0,0,19,19,INSDSeq,ST.26 specific element
 211,23,10,1,33,34,INSDSeq_length,-
 212,23,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,23,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,23,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,23,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,23,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,23,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -555,9 +652,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,23,0,0,41,45,INSDQualifier_name,-
 223,23,31,20,43,63,INSDQualifier_value,-
 400,23,69,18,37,43,INSDSeq_sequence,3-to-1 letter code
-210,24,11,2,37,39,sequenceIDNumber,-
+0,24,0,0,29,29,SequenceData,ST.26 specific element
+210,24,11,2,20,22,sequenceIDNumber,-
+0,24,0,0,19,19,INSDSeq,ST.26 specific element
 211,24,10,1,33,34,INSDSeq_length,-
 212,24,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,24,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,24,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,24,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,24,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,24,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -583,9 +684,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,24,0,0,41,45,INSDQualifier_name,-
 223,24,31,20,43,63,INSDQualifier_value,-
 400,24,69,18,37,43,INSDSeq_sequence,3-to-1 letter code
-210,25,11,2,37,39,sequenceIDNumber,-
+0,25,0,0,29,29,SequenceData,ST.26 specific element
+210,25,11,2,20,22,sequenceIDNumber,-
+0,25,0,0,19,19,INSDSeq,ST.26 specific element
 211,25,10,1,33,34,INSDSeq_length,-
 212,25,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,25,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,25,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,25,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,25,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,25,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -611,9 +716,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,25,0,0,41,45,INSDQualifier_name,-
 223,25,31,20,43,63,INSDQualifier_value,-
 400,25,69,18,37,43,INSDSeq_sequence,3-to-1 letter code
-210,26,11,2,37,39,sequenceIDNumber,-
+0,26,0,0,29,29,SequenceData,ST.26 specific element
+210,26,11,2,20,22,sequenceIDNumber,-
+0,26,0,0,19,19,INSDSeq,ST.26 specific element
 211,26,10,1,33,34,INSDSeq_length,-
 212,26,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,26,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,26,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,26,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,26,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,26,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -639,9 +748,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,26,0,0,41,45,INSDQualifier_name,-
 223,26,31,20,43,63,INSDQualifier_value,-
 400,26,61,15,37,42,INSDSeq_sequence,3-to-1 letter code
-210,27,11,2,37,39,sequenceIDNumber,-
+0,27,0,0,29,29,SequenceData,ST.26 specific element
+210,27,11,2,20,22,sequenceIDNumber,-
+0,27,0,0,19,19,INSDSeq,ST.26 specific element
 211,27,10,1,33,34,INSDSeq_length,-
 212,27,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,27,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,27,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,27,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,27,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,27,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -667,9 +780,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,27,0,0,41,45,INSDQualifier_name,-
 223,27,31,20,43,63,INSDQualifier_value,-
 400,27,77,21,37,44,INSDSeq_sequence,3-to-1 letter code
-210,28,11,2,37,39,sequenceIDNumber,-
+0,28,0,0,29,29,SequenceData,ST.26 specific element
+210,28,11,2,20,22,sequenceIDNumber,-
+0,28,0,0,19,19,INSDSeq,ST.26 specific element
 211,28,10,1,33,34,INSDSeq_length,-
 212,28,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,28,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,28,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,28,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,28,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,28,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -695,9 +812,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,28,0,0,41,45,INSDQualifier_name,-
 223,28,31,20,43,63,INSDQualifier_value,-
 400,28,77,21,37,44,INSDSeq_sequence,3-to-1 letter code
-210,29,11,2,37,39,sequenceIDNumber,-
+0,29,0,0,29,29,SequenceData,ST.26 specific element
+210,29,11,2,20,22,sequenceIDNumber,-
+0,29,0,0,19,19,INSDSeq,ST.26 specific element
 211,29,10,1,33,34,INSDSeq_length,-
 212,29,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,29,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,29,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,29,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,29,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,29,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -716,9 +837,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,29,0,0,41,45,INSDQualifier_name,-
 223,29,66,55,43,98,INSDQualifier_value,-
 400,29,77,21,37,44,INSDSeq_sequence,3-to-1 letter code
-210,30,11,2,37,39,sequenceIDNumber,-
+0,30,0,0,29,29,SequenceData,ST.26 specific element
+210,30,11,2,20,22,sequenceIDNumber,-
+0,30,0,0,19,19,INSDSeq,ST.26 specific element
 211,30,10,1,33,34,INSDSeq_length,-
 212,30,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,30,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,30,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,30,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,30,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,30,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -737,9 +862,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,30,0,0,41,45,INSDQualifier_name,-
 223,30,66,55,43,98,INSDQualifier_value,-
 400,30,61,15,37,42,INSDSeq_sequence,3-to-1 letter code
-210,31,11,2,37,39,sequenceIDNumber,-
+0,31,0,0,29,29,SequenceData,ST.26 specific element
+210,31,11,2,20,22,sequenceIDNumber,-
+0,31,0,0,19,19,INSDSeq,ST.26 specific element
 211,31,10,1,33,34,INSDSeq_length,-
 212,31,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,31,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,31,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,31,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,31,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,31,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -758,9 +887,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,31,0,0,41,45,INSDQualifier_name,-
 223,31,66,55,43,98,INSDQualifier_value,-
 400,31,69,18,37,43,INSDSeq_sequence,3-to-1 letter code
-210,32,11,2,37,39,sequenceIDNumber,-
+0,32,0,0,29,29,SequenceData,ST.26 specific element
+210,32,11,2,20,22,sequenceIDNumber,-
+0,32,0,0,19,19,INSDSeq,ST.26 specific element
 211,32,10,1,33,34,INSDSeq_length,-
 212,32,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,32,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,32,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,32,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,32,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,32,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -779,9 +912,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,32,0,0,41,45,INSDQualifier_name,-
 223,32,66,55,43,98,INSDQualifier_value,-
 400,32,77,21,37,44,INSDSeq_sequence,3-to-1 letter code
-210,33,11,2,37,39,sequenceIDNumber,-
+0,33,0,0,29,29,SequenceData,ST.26 specific element
+210,33,11,2,20,22,sequenceIDNumber,-
+0,33,0,0,19,19,INSDSeq,ST.26 specific element
 211,33,10,1,33,34,INSDSeq_length,-
 212,33,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,33,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,33,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,33,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,33,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,33,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -800,9 +937,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,33,0,0,41,45,INSDQualifier_name,-
 223,33,66,55,43,98,INSDQualifier_value,-
 400,33,77,21,37,44,INSDSeq_sequence,3-to-1 letter code
-210,34,11,2,37,39,sequenceIDNumber,-
+0,34,0,0,29,29,SequenceData,ST.26 specific element
+210,34,11,2,20,22,sequenceIDNumber,-
+0,34,0,0,19,19,INSDSeq,ST.26 specific element
 211,34,10,1,33,34,INSDSeq_length,-
 212,34,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,34,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,34,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,34,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,34,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,34,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -821,9 +962,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,34,0,0,41,45,INSDQualifier_name,-
 223,34,66,55,43,98,INSDQualifier_value,-
 400,34,77,21,37,44,INSDSeq_sequence,3-to-1 letter code
-210,35,11,2,37,39,sequenceIDNumber,-
+0,35,0,0,29,29,SequenceData,ST.26 specific element
+210,35,11,2,20,22,sequenceIDNumber,-
+0,35,0,0,19,19,INSDSeq,ST.26 specific element
 211,35,10,1,33,34,INSDSeq_length,-
 212,35,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,35,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,35,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,35,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,35,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,35,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -842,9 +987,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,35,0,0,41,45,INSDQualifier_name,-
 223,35,65,54,43,97,INSDQualifier_value,-
 400,35,77,21,37,44,INSDSeq_sequence,3-to-1 letter code
-210,36,11,2,37,39,sequenceIDNumber,-
+0,36,0,0,29,29,SequenceData,ST.26 specific element
+210,36,11,2,20,22,sequenceIDNumber,-
+0,36,0,0,19,19,INSDSeq,ST.26 specific element
 211,36,10,1,33,34,INSDSeq_length,-
 212,36,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,36,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,36,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,36,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,36,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,36,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -863,9 +1012,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,36,0,0,41,45,INSDQualifier_name,-
 223,36,93,73,43,116,INSDQualifier_value,-
 400,36,53,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,37,11,2,37,39,sequenceIDNumber,-
+0,37,0,0,29,29,SequenceData,ST.26 specific element
+210,37,11,2,20,22,sequenceIDNumber,-
+0,37,0,0,19,19,INSDSeq,ST.26 specific element
 211,37,10,1,33,34,INSDSeq_length,-
 212,37,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,37,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,37,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,37,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,37,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,37,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -884,9 +1037,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,37,0,0,41,45,INSDQualifier_name,-
 223,37,93,73,43,116,INSDQualifier_value,-
 400,37,61,15,37,42,INSDSeq_sequence,3-to-1 letter code
-210,38,11,2,37,39,sequenceIDNumber,-
+0,38,0,0,29,29,SequenceData,ST.26 specific element
+210,38,11,2,20,22,sequenceIDNumber,-
+0,38,0,0,19,19,INSDSeq,ST.26 specific element
 211,38,10,1,33,34,INSDSeq_length,-
 212,38,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,38,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,38,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,38,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,38,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,38,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -905,9 +1062,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,38,0,0,41,45,INSDQualifier_name,-
 223,38,66,55,43,98,INSDQualifier_value,-
 400,38,53,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,39,11,2,37,39,sequenceIDNumber,-
+0,39,0,0,29,29,SequenceData,ST.26 specific element
+210,39,11,2,20,22,sequenceIDNumber,-
+0,39,0,0,19,19,INSDSeq,ST.26 specific element
 211,39,10,1,33,34,INSDSeq_length,-
 212,39,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,39,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,39,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,39,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,39,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,39,0,0,45,49,INSDFeature_location,ST.26 mandatory feature source
@@ -926,9 +1087,13 @@ prio,0,43,23,188,211,EarliestPriorityApplicationIdentification,"only first ST.25
 0,39,0,0,41,45,INSDQualifier_name,-
 223,39,66,55,43,98,INSDQualifier_value,-
 400,39,53,12,37,41,INSDSeq_sequence,3-to-1 letter code
-210,40,11,2,37,39,sequenceIDNumber,-
+0,40,0,0,29,29,SequenceData,ST.26 specific element
+210,40,11,2,20,22,sequenceIDNumber,-
+0,40,0,0,19,19,INSDSeq,ST.26 specific element
 211,40,11,2,33,35,INSDSeq_length,-
 212,40,12,3,35,37,INSDSeq_moltype,PRT replaced by AA for protein sequences
+0,40,0,3,37,40,INSDSeq_division,ST.26 specific element
+0,40,0,0,47,47,INSDSeq_feature-table,ST.26 specific element
 0,40,0,0,27,27,INSDFeature,ST.26 mandatory feature source
 0,40,0,0,35,41,INSDFeature_key,ST.26 mandatory feature source
 0,40,0,0,45,50,INSDFeature_location,ST.26 mandatory feature source

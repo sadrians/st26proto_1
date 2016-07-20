@@ -107,7 +107,9 @@
                                                     type="xs:string"
                                                     fixed="PAT"/>
 
-                                        <xs:element name="INSDSeq_other-seqids">
+                                        <xs:element name="INSDSeq_other-seqids"
+                                                    maxOccurs="1"
+                                                    minOccurs="0">
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="INSDSeqid" type="xs:string"/>

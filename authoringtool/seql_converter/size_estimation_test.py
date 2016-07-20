@@ -196,7 +196,19 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['ApplicantName'], act[4])
         self.assertEqual(26 + cu.TAG_LENGTH_ST26['ApplicantName'], act[5])
         self.assertEqual('ApplicantName', act[6])
-        self.assertEqual('-', act[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
+        
+        act1 = [row for row in self.esc5.generalInformationRows if row[7] == 'ST.26 specific languageCode attribute for ApplicantName'][0]
+        self.assertEqual(0, act1[0])
+        self.assertEqual(0, act1[1])
+        self.assertEqual(0, act1[2])
+        self.assertEqual(len(cu.DEFAULT_CODE), act1[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['languageCode'], act1[4])
+        self.assertEqual(len(cu.DEFAULT_CODE) + cu.TAG_LENGTH_ST26['languageCode'], act1[5])
+        self.assertEqual('languageCode', act1[6])
+#         self.assertEqual(cu.BLANK_PLACEHOLDER, act1[7])
+        
+        
         
     def test_setRow_120(self):
         act = [row for row in self.esc5.generalInformationRows if row[0] == 120][0]
@@ -207,7 +219,16 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['InventionTitle'], act[4])
         self.assertEqual(78 + cu.TAG_LENGTH_ST26['InventionTitle'], act[5])
         self.assertEqual('InventionTitle', act[6])
-        self.assertEqual('-', act[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
+        
+        act1 = [row for row in self.esc5.generalInformationRows if row[7] == 'ST.26 specific languageCode attribute for InventionTitle'][0]
+        self.assertEqual(0, act1[0])
+        self.assertEqual(0, act1[1])
+        self.assertEqual(0, act1[2])
+        self.assertEqual(len(cu.DEFAULT_CODE), act1[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['languageCode'], act1[4])
+        self.assertEqual(len(cu.DEFAULT_CODE) + cu.TAG_LENGTH_ST26['languageCode'], act1[5])
+        self.assertEqual('languageCode', act1[6])
         
     def test_setRow_130(self):
         act = [row for row in self.esc5.generalInformationRows if row[0] == 130][0]
@@ -218,7 +239,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['ApplicantFileReference'], act[4])
         self.assertEqual(13 + cu.TAG_LENGTH_ST26['ApplicantFileReference'], act[5])
         self.assertEqual('ApplicantFileReference', act[6])
-        self.assertEqual('-', act[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
      
     def test_setRow_ApplicationIdentification(self):
         actApplicationIdentification_1 = [row for row in self.esc5.generalInformationRows if row[6] == 'ApplicationIdentification']
@@ -232,7 +253,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['ApplicationIdentification'], act[4])
         self.assertEqual(cu.TAG_LENGTH_ST26['ApplicationIdentification'], act[5])
         self.assertEqual('ApplicationIdentification', act[6])
-        self.assertEqual('-', act[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
         
     def test_setRow_IPOfficeCode(self):
         actIPOfficeCode_1 = [row for row in self.esc5.generalInformationRows if row[6] == 'IPOfficeCode']
@@ -260,7 +281,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['ApplicationNumberText'], act[4])
         self.assertEqual(19 + cu.TAG_LENGTH_ST26['ApplicationNumberText'], act[5])
         self.assertEqual('ApplicationNumberText', act[6])
-        self.assertEqual('-', act[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
         
     def test_setRow_141(self):
         act141_1 = [row for row in self.esc5.generalInformationRows if row[0] == 141]
@@ -274,7 +295,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['FilingDate'], act[4])
         self.assertEqual(10 + cu.TAG_LENGTH_ST26['FilingDate'], act[5])
         self.assertEqual('FilingDate', act[6])
-        self.assertEqual('-', act[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
     
     def test_setRow_prio(self):
         act_WO2012_001613 = [row for row in self.esc_WO2012_001613.generalInformationRows if row[6] == 'EarliestPriorityApplicationIdentification']
@@ -304,7 +325,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['SequenceTotalQuantity'], act[4])
         self.assertEqual(2 + cu.TAG_LENGTH_ST26['SequenceTotalQuantity'], act[5])
         self.assertEqual('SequenceTotalQuantity', act[6])
-        self.assertEqual('-', act[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
         
     def test_setRow_170(self):
         act = [row for row in self.esc5.generalInformationRows if row[0] == 170][0]
@@ -314,7 +335,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(20, act[3])
         self.assertEqual(0, act[4])
         self.assertEqual(0, act[5])
-        self.assertEqual('-', act[6])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act[6])
         self.assertEqual('information discarded in ST.26', act[7])
         
     def getElementRowsForSequence(self, aCalculator, tag, seqId):
@@ -333,7 +354,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['sequenceIDNumber'], act_seq1[4])
         self.assertEqual(1 + cu.TAG_LENGTH_ST26['sequenceIDNumber'], act_seq1[5])
         self.assertEqual('sequenceIDNumber', act_seq1[6])
-        self.assertEqual('-', act_seq1[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq1[7])
         
         act_seq40 = self.getElementRowsForSequence(self.esc5, 210, '40')[0]
 
@@ -341,6 +362,30 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual('40', act_seq40[1])
         self.assertEqual(11, act_seq40[2])
         self.assertEqual(2, act_seq40[3])
+    
+    def test_SequenceData(self):
+        act_seq1 = [row for row in self.esc5.sequenceRows if row[6] == 'SequenceData'][0]
+        
+        self.assertEqual(0, act_seq1[0])
+        self.assertEqual('1', act_seq1[1])
+        self.assertEqual(0, act_seq1[2])
+        self.assertEqual(0, act_seq1[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['SequenceData'], act_seq1[4])
+        self.assertEqual(cu.TAG_LENGTH_ST26['SequenceData'], act_seq1[5])
+        self.assertEqual('SequenceData', act_seq1[6])
+        self.assertEqual('ST.26 specific element', act_seq1[7])
+        
+    def test_INSDSeq(self):
+        act_seq1 = [row for row in self.esc5.sequenceRows if row[6] == 'INSDSeq'][0]
+        
+        self.assertEqual(0, act_seq1[0])
+        self.assertEqual('1', act_seq1[1])
+        self.assertEqual(0, act_seq1[2])
+        self.assertEqual(0, act_seq1[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDSeq'], act_seq1[4])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDSeq'], act_seq1[5])
+        self.assertEqual('INSDSeq', act_seq1[6])
+        self.assertEqual('ST.26 specific element', act_seq1[7])
         
     def test_row211(self):
         act_seq1 = self.getElementRowsForSequence(self.esc5, 211, '1')[0]
@@ -352,7 +397,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['INSDSeq_length'], act_seq1[4])
         self.assertEqual(3 + cu.TAG_LENGTH_ST26['INSDSeq_length'], act_seq1[5])
         self.assertEqual('INSDSeq_length', act_seq1[6])
-        self.assertEqual('-', act_seq1[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq1[7])
         
         act_seq40 = self.getElementRowsForSequence(self.esc5, 211, '40')[0]
 
@@ -386,8 +431,32 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(12, act_seq10[2])
         self.assertEqual(3, act_seq10[3])
         self.assertEqual(3 + cu.TAG_LENGTH_ST26['INSDSeq_moltype'], act_seq10[5])
-        self.assertEqual('-', act_seq10[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq10[7])
+
+    def test_INSDSeq_division(self):
+        act_seq1 = [row for row in self.esc5.sequenceRows if row[6] == 'INSDSeq_division'][0]
         
+        self.assertEqual(0, act_seq1[0])
+        self.assertEqual('1', act_seq1[1])
+        self.assertEqual(0, act_seq1[2])
+        self.assertEqual(3, act_seq1[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDSeq_division'], act_seq1[4])
+        self.assertEqual(3 + cu.TAG_LENGTH_ST26['INSDSeq_division'], act_seq1[5])
+        self.assertEqual('INSDSeq_division', act_seq1[6])
+        self.assertEqual('ST.26 specific element', act_seq1[7])
+    
+    def test_INSDSeq_feature_table(self):
+        act_seq1 = [row for row in self.esc5.sequenceRows if row[6] == 'INSDSeq_feature-table'][0]
+        
+        self.assertEqual(0, act_seq1[0])
+        self.assertEqual('1', act_seq1[1])
+        self.assertEqual(0, act_seq1[2])
+        self.assertEqual(0, act_seq1[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDSeq_feature-table'], act_seq1[4])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDSeq_feature-table'], act_seq1[5])
+        self.assertEqual('INSDSeq_feature-table', act_seq1[6])
+        self.assertEqual('ST.26 specific element', act_seq1[7])
+            
     def test_featureSource(self):
 #         pprint.pprint(self.esc5.sequenceRows)
         
@@ -523,7 +592,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['INSDFeature'], act_seq4_0[4])
         self.assertEqual(0 + cu.TAG_LENGTH_ST26['INSDFeature'], act_seq4_0[5])
         self.assertEqual('INSDFeature', act_seq4_0[6])
-        self.assertEqual('-', act_seq4_0[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq4_0[7])
         
         act_seq4_5 = rows220_4[5]
         
@@ -548,7 +617,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['INSDFeature_key'], act_seq4_0[4])
         self.assertEqual(0 + cu.TAG_LENGTH_ST26['INSDFeature_key'], act_seq4_0[5])
         self.assertEqual('INSDFeature_key', act_seq4_0[6])
-        self.assertEqual('-', act_seq4_0[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq4_0[7])
          
         act_seq4_5 = rows221_4[5]
          
@@ -573,7 +642,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['INSDFeature_location'], act_seq4_0[4])
         self.assertEqual(0 + cu.TAG_LENGTH_ST26['INSDFeature_location'], act_seq4_0[5])
         self.assertEqual('INSDFeature_location', act_seq4_0[6])
-        self.assertEqual('-', act_seq4_0[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq4_0[7])
          
         act_seq4_5 = rows222_4[5]
          
@@ -598,7 +667,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
 #         self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq4_0[4])
 #         self.assertEqual(15 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq4_0[5])
 #         self.assertEqual('INSDQualifier_value', act_seq4_0[6])
-#         self.assertEqual('-', act_seq4_0[7])
+#         self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq4_0[7])
 #          
 #         act_seq4_5 = rows223_4[5]
 #          
@@ -619,7 +688,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
 #         self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq39_0[4])
 #         self.assertEqual(55 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq39_0[5])
 #         self.assertEqual('INSDQualifier_value', act_seq39_0[6])
-#         self.assertEqual('-', act_seq39_0[7])
+#         self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq39_0[7])
          
     def test_row400(self):
         act_seq1 = self.getElementRowsForSequence(self.esc5, 400, '1')[0]
@@ -642,7 +711,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['INSDSeq_sequence'], act_seq10[4])
         self.assertEqual(30 + cu.TAG_LENGTH_ST26['INSDSeq_sequence'], act_seq10[5])
         self.assertEqual('INSDSeq_sequence', act_seq10[6])
-        self.assertEqual('-', act_seq10[7])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq10[7])
    
 
 if __name__ == "__main__":

@@ -235,19 +235,27 @@ class ElementSizeCalculator(object):
         self.generalInformationRows.append(self._getSt25St26Lengths(110, 0,
             self.seql_raw.applicant,
             self.seql_clean.generalInformation.applicant[0],
-            'ApplicantName', '-'))
-    
+            'ApplicantName', cu.BLANK_PLACEHOLDER))
+        
+        self.generalInformationRows.append(self._getSt25St26Lengths(0, 0,
+            '-', cu.DEFAULT_CODE,
+            'languageCode', 'ST.26 specific languageCode attribute for ApplicantName'))
+        
     def setRow_120(self):
         self.generalInformationRows.append(self._getSt25St26Lengths(120, 0,
             self.seql_raw.title,
             self.seql_clean.generalInformation.title,
-            'InventionTitle', '-'))
+            'InventionTitle', cu.BLANK_PLACEHOLDER))
+        
+        self.generalInformationRows.append(self._getSt25St26Lengths(0, 0,
+            '-', cu.DEFAULT_CODE,
+            'languageCode', 'ST.26 specific languageCode attribute for InventionTitle'))
         
     def setRow_130(self):
         self.generalInformationRows.append(self._getSt25St26Lengths(130, 0,
             self.seql_raw.reference,
             self.seql_clean.generalInformation.reference,
-            'ApplicantFileReference', '-'))
+            'ApplicantFileReference', cu.BLANK_PLACEHOLDER))
 #     TODO: include in calculation IPOffice element!
  
     def setRow_ApplicationIdentification(self):
@@ -257,7 +265,7 @@ class ElementSizeCalculator(object):
                 cu.TAG_LENGTH_ST26['ApplicationIdentification'],
                 cu.TAG_LENGTH_ST26['ApplicationIdentification'],
                 'ApplicationIdentification', 
-                '-']
+                cu.BLANK_PLACEHOLDER]
         
         self.generalInformationRows.append(r)
          
@@ -276,13 +284,13 @@ class ElementSizeCalculator(object):
         self.generalInformationRows.append(self._getSt25St26Lengths(140, 0, 
             self.seql_raw.applicationNumber,
             self.seql_clean.generalInformation.applicationNumber,
-            'ApplicationNumberText', '-'))
+            'ApplicationNumberText', cu.BLANK_PLACEHOLDER))
      
     def setRow_141(self):
         self.generalInformationRows.append(self._getSt25St26Lengths(141, 0, 
             self.seql_raw.filingDate,
             self.seql_clean.generalInformation.filingDate,
-            'FilingDate', '-'))
+            'FilingDate', cu.BLANK_PLACEHOLDER))
         
 #     TODO add code for prio
     
@@ -314,14 +322,15 @@ class ElementSizeCalculator(object):
         self.generalInformationRows.append(self._getSt25St26Lengths(160, 0, 
             self.seql_raw.quantity,
             self.seql_clean.generalInformation.quantity,
-            'SequenceTotalQuantity', '-'))
+            'SequenceTotalQuantity', cu.BLANK_PLACEHOLDER))
     
     def setRow_170(self):
         self.generalInformationRows.append(self._getSt25St26Lengths(170, 0, 
             self.seql_raw.software,
             self.seql_clean.generalInformation.software,
-            '-', 'information discarded in ST.26'))
+            cu.BLANK_PLACEHOLDER, 'information discarded in ST.26'))
 
+    
     def setSequenceRows(self):
         res = []
         
@@ -333,15 +342,29 @@ class ElementSizeCalculator(object):
             currentIndex = self.seql_raw.sequences.index(seq)
             parsedSequence = parsedSequences[currentIndex]
             currentSeqId = parsedSequence.seqIdNo
+# ====================== 210 ======================
+            currentRow_SequenceData = self._getSt25St26Lengths(0, currentSeqId, 
+                            '-', '-', 'SequenceData', 
+                            'ST.26 specific element')
+
+            res.append(currentRow_SequenceData)
+            
             currentRow210 = self._getSt25St26Lengths(210, currentSeqId, 
                             seq.seqIdNo, parsedSequence.seqIdNo, 'sequenceIDNumber', '-')
 
             res.append(currentRow210)
             
+            currentRow_INSDSeq = self._getSt25St26Lengths(0, currentSeqId, 
+                            '-', '-', 'INSDSeq', 'ST.26 specific element')
+
+            res.append(currentRow_INSDSeq)
+
+# ====================== 211 ======================            
             currentRow211 = self._getSt25St26Lengths(211, currentSeqId, 
-                            seq.length, parsedSequence.length, 'INSDSeq_length', '-')
+                            seq.length, parsedSequence.length, 'INSDSeq_length', cu.BLANK_PLACEHOLDER)
             res.append(currentRow211)
-            
+
+# ====================== 212 ======================            
             moltypeValue = 'AA' if parsedSequence.molType == 'PRT' else parsedSequence.molType 
 
             currentRow212 = [212, currentSeqId, cu.safeLength(seq.molType), 
@@ -349,10 +372,28 @@ class ElementSizeCalculator(object):
                             cu.TAG_LENGTH_ST26['INSDSeq_moltype'], 
                             cu.safeLength(moltypeValue) + cu.TAG_LENGTH_ST26['INSDSeq_moltype'],
                             'INSDSeq_moltype', 
-                            'PRT replaced by AA for protein sequences' if moltypeValue == 'AA' else '-']
+                            'PRT replaced by AA for protein sequences' if moltypeValue == 'AA' else cu.BLANK_PLACEHOLDER]
             
             res.append(currentRow212)
-                        
+
+# ====================== INSDSeq_division ======================            
+            INSDSeq_division_val = 'PAT'
+            currentRow_INSDSeq_division = self._getSt25St26Lengths(0, currentSeqId, 
+                            '-', INSDSeq_division_val, 'INSDSeq_division', 
+                            'ST.26 specific element')
+            res.append(currentRow_INSDSeq_division)
+
+# ====================== INSDSeq_other-seqids ======================
+# optional element, therefore not included in calculations
+
+# ====================== INSDSeq_feature-table ======================            
+            currentRow_INSDSeq_feature_table = self._getSt25St26Lengths(0, 
+                            currentSeqId, 
+                            '-', '-', 'INSDSeq_feature-table', 
+                            'ST.26 specific element')
+            res.append(currentRow_INSDSeq_feature_table)
+
+# ====================== 213 ======================                        
 #             create ST.26 feature source
             currentRow_INSDFeature = [0, currentSeqId, 0, 0, 
                             cu.TAG_LENGTH_ST26['INSDFeature'], 
@@ -433,48 +474,42 @@ class ElementSizeCalculator(object):
                     'INSDQualifier_value', 
                     'ST.26 mandatory qualifier mol_type'])
             
-            
-
-
 #             end create ST.26 feature source
-        
+
+# ====================== other features ======================        
             parsedFeatures = parsedSequence.features
             for feat in seq.features:
                 currentFeatureIndex = seq.features.index(feat)
                 parsedFeature = parsedFeatures[currentFeatureIndex]
-                
+# ====================== 220 ======================                
                 currentRow220 = self._getSt25St26Lengths(220, currentSeqId, 
                             feat.featureHeader, parsedFeature.featureHeader, 
-                            'INSDFeature', '-')
+                            'INSDFeature', cu.BLANK_PLACEHOLDER)
                 res.append(currentRow220)
-                
+
+# ====================== 221 ======================                
                 currentRow221 = self._getSt25St26Lengths(221, currentSeqId, 
                             feat.key, parsedFeature.key, 
-                            'INSDFeature_key', '-')
+                            'INSDFeature_key', cu.BLANK_PLACEHOLDER)
                 res.append(currentRow221)
-                
+
+# ====================== 222 ======================                
                 currentRow222 = self._getSt25St26Lengths(222, currentSeqId, 
                             feat.location, parsedFeature.location, 
-                            'INSDFeature_location', '-')
+                            'INSDFeature_location', cu.BLANK_PLACEHOLDER)
                 res.append(currentRow222)
                 
-                
+# ====================== 223 ======================                
 #                 add element INSDFeature_quals
-                append_INSDFeature_quals('-')
+                append_INSDFeature_quals(cu.BLANK_PLACEHOLDER)
                 
-                createQualifier('note', '-')
+                createQualifier('note', cu.BLANK_PLACEHOLDER)
                 
                 createQualifierValue(223, feat.description, 
                                 parsedFeature.description, 
-                                '-')
-                
-                
-#                 currentRow223 = self._getSt25St26Lengths(223, currentSeqId, 
-#                             feat.description, parsedFeature.description, 
-#                             'INSDQualifier_value', '-')
-#                 res.append(currentRow223)
-                
-        
+                                cu.BLANK_PLACEHOLDER)
+               
+# ====================== 400 ======================        
             if parsedSequence.molType == 'PRT':
                 parsedResidues = parsedSequence.residues_prt
                 currentRow400 = [400, currentSeqId, 
@@ -489,12 +524,17 @@ class ElementSizeCalculator(object):
                 parsedResidues = parsedSequence.residues_nuc
                 currentRow400 = self._getSt25St26Lengths(400, currentSeqId, 
                                 seq.residues, parsedResidues, 
-                                'INSDSeq_sequence', '-')
+                                'INSDSeq_sequence', cu.BLANK_PLACEHOLDER)
             res.append(currentRow400)
         
         return res 
-    
-    def writeSizes(self, outFilePath):
+        
+    def writeSizes(self, outDirPath):
+        bname = os.path.basename(self.filePath)
+        inFileName = bname.split('.')[0]
+        
+        outFilePath = os.path.join(outDirPath, '%s_element_size.csv' % inFileName)
+        
         with open(outFilePath, 'wb') as csvfile:
             wr = csv.writer(csvfile, delimiter=',')
             wr.writerow(['element_st25', 'seqIdNo', 
@@ -509,5 +549,4 @@ class ElementSizeCalculator(object):
                 wr.writerow(genInfoRow)
             for seqRow in self.sequenceRows:
                 wr.writerow(seqRow)
-        
 

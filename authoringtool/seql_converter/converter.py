@@ -113,12 +113,16 @@ class St25To26Converter(object):
                 molType_st26 = s25.molType
                 sourceKey = 'source'
                 organismQualifierName = 'organism'
+                mol_typeQualifierName = 'mol_type'
+                mol_typeQualifierValue = 'genomic %s' % s25.molType
                 noteQualifierName = 'note'
                 residues_st26 = s25.residues_nuc 
             else:
                 molType_st26 = 'AA'
                 sourceKey = 'SOURCE'
                 organismQualifierName = 'ORGANISM'
+                mol_typeQualifierName = 'MOL_TYPE'
+                mol_typeQualifierValue = 'protein'
                 noteQualifierName = 'NOTE'
                 residues_st26 = converter_util.oneLetterCode(s25.residues_prt)
             
@@ -141,6 +145,11 @@ class St25To26Converter(object):
                                           qualifierName=organismQualifierName,
                                           qualifierValue=s25.organism)
             organismQualifier.save()
+            
+            mol_typeQualifier = Qualifier(feature=sourceFeature,
+                                          qualifierName=mol_typeQualifierName,
+                                          qualifierValue=mol_typeQualifierValue)
+            mol_typeQualifier.save()
             
             for f in s25.features:
                 currentFeature = Feature(sequence=s26,

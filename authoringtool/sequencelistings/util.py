@@ -173,3 +173,6 @@ def generateXmlSchemaFeatureKeyValuesEnumeration():
 
 # generateXmlSchemaFeatureKeyValuesEnumeration()
 
+# <INSDSeq_other-seqids>
+#                     <INSDSeqid>{{seq.otherSeqId}}</INSDSeqid>
+#                 </INSDSeq_other-seqids>

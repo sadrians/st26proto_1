@@ -7,10 +7,15 @@ from converter import St25To26Converter
 import converter_util as cu 
 
 f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 'st25parser', 'testData', 'file5.txt') 
-sc = St25To26Converter(f5)
-# sc.generateXmlFile('.')
 
-f5conv = 'file5_converted.xml'
+def convertFile(inFile, outDir):
+    sc = St25To26Converter(inFile)
+    sc.generateXmlFile(outDir)
+    print 'Converted to xml file', inFile
+
+# convertFile(f5, '.')
+
+# f5conv = 'file5_converted.xml'
 
 # with open(f5conv, 'r') as f:
 #     print f.read().replace(os.linesep, '')
@@ -43,39 +48,3 @@ f5conv = 'file5_converted.xml'
 #     sc = St25To26Converter(fp)
 #     sc.generateXmlFile(d_out)
 # print 'Done'
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def multiple_replace(text, adict):
-# #     https://www.safaribooksonline.com/library/view/python-cookbook-2nd/0596007973/ch01s19.html
-#     rx = re.compile('|'.join(map(re.escape, adict)))
-#     def one_xlat(match):
-#         return adict[match.group(0)]
-#     return rx.sub(one_xlat, text)
-# 
-# s = 'Met Glu Thr Lys Ala Ile Ile'
-# 
-# 
-# PRT_REGEX = "Ala|Arg|Asn|Asp|Cys|Glu|Gln|Gly|His|Ile|Leu|Lys|Met|Phe|Pro|Ser|Thr|Trp|Tyr|Val|Xaa|Asx|Glx|Xle|Pyl|Sec"
-# aa = PRT_REGEX.split('|')
-# # print aa 
-# AMINO_ACIDS = {'Ala': 'A', 'Arg': 'R', 'Asn': 'N', 'Asp': 'D', 
-# 'Cys': 'C', 'Glu': 'E', 'Gln': 'Q', 'Gly': 'G', 
-# 'His': 'H', 'Ile': 'I', 'Leu': 'L', 'Lys': 'K', 
-# 'Met': 'M', 'Phe': 'F', 'Pro': 'P', 'Ser': 'S', 
-# 'Thr': 'T', 'Trp': 'W', 'Tyr': 'Y', 'Val': 'V', 
-# 'Xaa': 'X', 'Asx': 'B', 'Glx': 'Z', 'Xle': 'J', 
-# 'Pyl': 'O', 'Sec': 'U'}
-# 
-# # print multiple_replace(s.replace(' ', ''), AMINO_ACIDS)
-
