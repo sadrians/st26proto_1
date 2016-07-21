@@ -537,13 +537,7 @@ class ElementSizeCalculator(object):
         
         with open(outFilePath, 'wb') as csvfile:
             wr = csv.writer(csvfile, delimiter=',')
-            wr.writerow(['element_st25', 'seqIdNo', 
-                         'element_st25_length', 
-                         'value_length', 
-                         'tag_st26_length', 
-                         'element_st26_length', 
-                         'element_st26', 
-                         'comment'])
+            wr.writerow(cu.CSV_HEADER)
             
             for genInfoRow in self.generalInformationRows:
                 wr.writerow(genInfoRow)

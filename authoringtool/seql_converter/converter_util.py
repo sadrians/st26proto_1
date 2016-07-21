@@ -56,6 +56,13 @@ ELEMENT_DTD_LINE_PATTERN = re.compile(elementDtdLineRegex)
 DEFAULT_CODE = 'XX' # placeholder when IPOffice code or language code are missing
 DEFAULT_DATE_STRING = '1900-01-01'
 BLANK_PLACEHOLDER = '-'
+CSV_HEADER = ['element_st25', 'seqIdNo', 
+                         'element_st25_length', 
+                         'value_length', 
+                         'tag_st26_length', 
+                         'element_st26_length', 
+                         'element_st26', 
+                         'comment']
 
 # def safeLength(aStr):
 #     if aStr is not None:
