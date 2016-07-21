@@ -1,0 +1,1931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "resources/ST26SequenceListing_V1_0.dtd">
+<?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>
+<ST26SequenceListing dtdVersion="1" 
+                    fileName="file5_converted"
+                    softwareName="prototype" 
+                    softwareVersion="0.1"
+                    productionDate="July 20, 2016">
+    <ApplicationIdentification>
+        <IPOfficeCode>XX</IPOfficeCode>
+        <ApplicationNumberText>-</ApplicationNumberText>
+        <FilingDate>Jan. 1, 1900</FilingDate>
+    </ApplicationIdentification>
+    <ApplicantFileReference>BIOA-006/01WO</ApplicantFileReference>
+    <EarliestPriorityApplicationIdentification>
+        <IPOfficeCode>US</IPOfficeCode>
+        <ApplicationNumberText>61/677,959</ApplicationNumberText>
+        <FilingDate>July 31, 2012</FilingDate>
+    </EarliestPriorityApplicationIdentification>
+    <ApplicantName languageCode="XX">
+        biOasis Technologies, Inc.
+    </ApplicantName>
+    <ApplicantNameLatin>
+        biOasis Technologies, Inc.
+    </ApplicantNameLatin>
+    <InventorName languageCode="XX">
+        -
+    </InventorName>
+    <InventorNameLatin>
+        -
+    </InventorNameLatin>
+    
+        <InventionTitle languageCode="XX">
+            DEPHOSPHORYLATED LYSOSOMAL STORAGE DISEASE PROTEINS AND METHODS OF USE THEREOF
+        </InventionTitle>
+    
+    
+    <SequenceTotalQuantity>
+        40
+    </SequenceTotalQuantity>
+    
+        <SequenceData sequenceIDNumber="1">
+            <INSDSeq>
+                <INSDSeq_length>738</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..738</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MRGPSGALWLLLALRTVLGGMEVRWCATSDPEQHKCGNMSEAFREAGIQPSLLCVRGTSADHCVQLIAAQEADAITLDGGAIYEAGKEHGLKPVVGEVYDQEVGTSYYAVAVVRRSSHVTIDTLKGVKSCHTGINRTVGWNVPVGYLVESGRLSVMGCDVLKAVSDYFGGSCVPGAGETSYSESLCRLCRGDSSGEGVCDKSPLERYYDYSGAFRCLAEGAGDVAFVKHSTVLENTDGKTLPSWGQALLSQDFELLCRDGSRADVTEWRQCHLARVPAHAVVVRADTDGGLIFRLLNEGQRLFSHEGSSFQMFSSEAYGQKDLLFKDSTSELVPIATQTYEAWLGHEYLHAMKGLLCDPNRLPPYLRWCVLSTPEIQKCGDMAVAFRRQRLKPEIQCVSAKSPQHCMERIQAEQVDAVTLSGEDIYTAGKTYGLVPAAGEHYAPEDSSNSYYVVAVVRRDSSHAFTLDELRGKRSCHAGFGSPAGWDVPVGALIQRGFIRPKDCDVLTAVSEFFNASCVPVNNPKNYPSSLCALCVGDEQGRNKCVGNSQERYYGYRGAFRCLVENAGDVAFVRHTTVFDNTNGHNSEPWAAELRSEDYELLCPNGARAEVSQFAACNLAQIPPHAVMVRPDTNIFTVYGLLDKAQDLFGDDHNKNGFKMFDSSNYHGQDLLFKDATVRAVPVGEKTTYRGWLGLDYVAALEGMSSQQCSGAAAPAPGAPLLPLLLPALAARLLPPAL</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="2">
+            <INSDSeq>
+                <INSDSeq_length>525</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..525</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>SETQANSTTDALNVLLIIVDDLRPSLGCYGDKLVRSPNIDQLASHSLLFQNAFAQQAVCAPSRVSFLTGRRPDTTRLYDFNSYWRVHAGNFSTIPQYFKENGYVTMSVGKVFHPGISSNHTDDSPYSWSFPPYHPSSEKYENTKTCRGPDGELHANLLCPVDVLDVPEGTLPDKQSTEQAIQLLEKMKTSASPFFLAVGYHKPHIPFRYPKEFQKLYPLENITLAPDPEVPDGLPPVAYNPWMDIRQREDVQALNISVPYGPIPVDFQRKIRQSYFASVSYLDTQVGRLLSALDDLQLANSTIIAFTSDHGWALGEHGEWAKYSNFDVATHVPLIFYVPGRTASLPEAGEKLFPYLDPFDSASQLMEPGRQSMDLVELVSLFPTLAGLAGLQVPPRCPVPSFHVELCREGKNLLKHFRFRDLEEDPYLPGNPRELIAYSQYPRPSDIPQWNSDKPSLKDIKIMGYSIRTIDYRYTVWVGFNPDEFLANFSDIHAGELYFVDSDPLQDHNMYNDSQGGDLFQLLMP</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="3">
+            <INSDSeq>
+                <INSDSeq_length>653</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..653</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MRPLRPRAALLALLASLLAAPPVAPAEAPHLVQVDAARALWPLRRFWRSTGFCPPLPHSQADQYVLSWDQQLNLAYVGAVPHRGIKQVRTHWLLELVTTRGSTGRGLSYNFTHLDGYLDLLRENQLLPGFELMGSASGHFTDFEDKQQVFEWKDLVSSLARRYIGRYGLAHVSKWNFETWNEPDHHDFDNVSMTMQGFLNYYDACSEGLRAASPALRLGGPGDSFHTPPRSPLSWGLLRHCHDGTNFFTGEAGVRLDYISLHRKGARSSISILEQEKVVAQQIRQLFPKFADTPIYNDEADPLVGWSLPQPWRADVTYAAMVVKVIAQHQNLLLANTTSAFPYALLSNDNAFLSYHPHPFAQRTLTARFQVNNTRPPHVQLLRKPVLTAMGLLALLDEEQLWAEVSQAGTVLDSNHTVGVLASAHRPQGPADAWRAAVLIYASDDTRAHPNRSVAVTLRLRGVPPGPGLVYVTRYLDNGLCSPDGEWRRLGRPVFPTAEQFRRMRAAEDPVAAAPRPLPAGGRLTLRPALRLPSLLLVHVCARPEKPPGQVTRLRALPLTQGQLVLVWSDEHVGSKCLWTYEIQFSQDGKAYTPVSRKPSTFNLFVFSPDTGAVSGSYRVRALDYWARPGPFSDPVPYLEVPVPRGPPSPGNP</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="4">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Sulfatase motif</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(1)..(1)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Any amino acid or absent</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(2)..(2)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Cys or Ser</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(3)..(3)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(4)..(4)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Pro or Ala</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(5)..(5)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>XXXXX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="5">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Sulfatase motifs</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(1)..(1)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Any amino acid or absent</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MOD_RES</INSDFeature_key>
+                            <INSDFeature_location>(2)..(2)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Formylglycine</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(3)..(3)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Any amino acid or absent</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(4)..(4)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Pro or Ala second description line - test</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(5)..(5)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>XGXXX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="6">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Exemplary Gly Ser linker</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GSGS</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="7">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Exemplary Gly Ser linker</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGSG</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="8">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Exemplary Gly Ser linker</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGS</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="9">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Exemplary Gly Ser linker</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGGS</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="10">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Exemplary Gly Asn linker</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GNGN</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="11">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Exemplary Gly Asn linker</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGNG</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="12">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Exemplary Gly Asn linker</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGN</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="13">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Exemplary Gly Asn linker</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GGGGN</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="14">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - thrombin cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GRGD</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="15">
+            <INSDSeq>
+                <INSDSeq_length>6</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - thrombin cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GRGDNP</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="16">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - thrombin cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GRGDS</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="17">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - thrombin cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GRGDSPK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="18">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - elastase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>AAPV</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="19">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - elastase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>AAPL</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="20">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - elastase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>AAPF</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="21">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - elastase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>AAPA</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="22">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - elastase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>AYLV</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="23">
+            <INSDSeq>
+                <INSDSeq_length>6</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - matrix metalloproteinase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(3)..(3)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(6)..(6)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GPXGPX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="24">
+            <INSDSeq>
+                <INSDSeq_length>6</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - matrix metalloproteinase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(6)..(6)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GPLGPX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="25">
+            <INSDSeq>
+                <INSDSeq_length>6</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - matrix metalloproteinase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(6)..(6)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GPIGPX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="26">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - matrix metalloproteinase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(5)..(5)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>APGLX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="27">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - collagenase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(7)..(7)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>PLGPDRX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="28">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - collagenase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>MISC_FEATURE</INSDFeature_key>
+                            <INSDFeature_location>(7)..(7)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Xaa = Any amino acid</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>PLGLLGX</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="29">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - collagenase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>PQGIAGW</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="30">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - collagenase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>PLGCH</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="31">
+            <INSDSeq>
+                <INSDSeq_length>6</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..6</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - collagenase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>PLGLYA</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="32">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - collagenase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>PLALWAR</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="33">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - collagenase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>PLAYWAR</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="34">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - stromelysin cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>PYAYYMR</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="35">
+            <INSDSeq>
+                <INSDSeq_length>7</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..7</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - gelatinase cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>PLGMYSR</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="36">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - angiotensin converting enzyme cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GDKP</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="37">
+            <INSDSeq>
+                <INSDSeq_length>5</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..5</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - angiotensin converting enzyme cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GSDKP</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="38">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - cathepsin B cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>ALAL</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="39">
+            <INSDSeq>
+                <INSDSeq_length>4</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..4</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>-</INSDFeature_key>
+                            <INSDFeature_location>-</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Enzymatically degradable linker - cathepsin B cleavable</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>GFLG</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+    
+        <SequenceData sequenceIDNumber="40">
+            <INSDSeq>
+                <INSDSeq_length>29</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                    
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..29</INSDFeature_location>
+                            <INSDFeature_quals>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Chloroflexus aurantiacus</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                    
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MSGTGRLAGKIALITGGAGNIGSELTRRF</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+      
+</ST26SequenceListing>
