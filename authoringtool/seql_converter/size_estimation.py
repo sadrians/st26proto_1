@@ -494,6 +494,19 @@ class ElementSizeCalculator(object):
                             'INSDFeature_key', cu.BLANK_PLACEHOLDER)
                 res.append(currentRow221)
 
+# ====================== add row for mixed mode translation qualifier ======================                               
+                if parsedFeature.key == 'CDS':
+                    createQualifier('translation', 'ST.26 specific element translation')
+                    translationRow = [400, currentSeqId, 
+                            0, 
+                            cu.safeLength(parsedFeature.translation),
+                            cu.TAG_LENGTH_ST26['INSDQualifier_value'],
+                            (cu.TAG_LENGTH_ST26['INSDQualifier_value'] + 
+                            len(cu.oneLetterCode(parsedFeature.translation))),
+                            'INSDQualifier_value', '3-to-1 letter code']
+                    
+                    res.append(translationRow)
+
 # ====================== 222 ======================                
                 currentRow222 = self._getSt25St26Lengths(222, currentSeqId, 
                             feat.location, parsedFeature.location, 
@@ -506,18 +519,11 @@ class ElementSizeCalculator(object):
                 
                 createQualifier('note', cu.BLANK_PLACEHOLDER)
                 
+#                 TODO: do not add row if 223 missing!
                 createQualifierValue(223, feat.description, 
                                 parsedFeature.description, 
                                 cu.BLANK_PLACEHOLDER)
-# ====================== mixed mode translation ======================                
-# #                 add qualifier translation
-#                 append_INSDFeature_quals(cu.BLANK_PLACEHOLDER)
-#                 
-#                 createQualifier('note', cu.BLANK_PLACEHOLDER)
-#                 
-#                 createQualifierValue(223, feat.description, 
-#                                 parsedFeature.description, 
-#                                 cu.BLANK_PLACEHOLDER)               
+                                   
 # ====================== 400 ======================        
             if parsedSequence.molType == 'PRT':
                 parsedResidues = parsedSequence.residues_prt

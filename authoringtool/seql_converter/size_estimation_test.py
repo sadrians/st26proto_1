@@ -15,6 +15,7 @@ class Test(unittest.TestCase):
         self.f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 
                             'st25parser', 'testData', 'file5.txt')
         self.sl5 = RawSequenceListing(self.f5)
+        
 
     def testRawSequenceListing(self):
         seqlHeader_exp = '''                         SEQUENCE LISTING\r\n\r\n'''
@@ -72,6 +73,10 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.f_WO2012_001613 = os.path.join(settings.BASE_DIR, 'seql_converter', 
                             'st25parser', 'testData', 'WO2012-001613-001.zip.txt')
         self.esc_WO2012_001613 = ElementSizeCalculator(self.f_WO2012_001613)
+        
+        f1004 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+                            'st25parser', 'testData', 'WO2012-001004-001.zip.txt')
+        self.esc_1004 = ElementSizeCalculator(f1004)
  
     def test_setRow_xmlHeader(self):
         act = [row for row in self.esc5.generalInformationRows if row[6] == 'xmlHeader'][0]
@@ -690,23 +695,38 @@ class Test_ElementSizeCalculator(unittest.TestCase):
 #         self.assertEqual('INSDQualifier_value', act_seq39_0[6])
 #         self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq39_0[7])
 
-#     def test_rowTranslationQualifier(self):
-#         rows222_1 = self.getElementRowsForSequence(self.esc5, 222, '1')
-#         self.assertEqual([], rows222_1)
-#         
-#         rows222_4 = self.getElementRowsForSequence(self.esc5, 222, '4')
-#         self.assertEqual(6, len(rows222_4))
-#         
-#         act_seq4_0 = rows222_4[0]
-#          
-#         self.assertEqual(222, act_seq4_0[0])
-#         self.assertEqual('4', act_seq4_0[1])
-#         self.assertEqual(0, act_seq4_0[2])
-#         self.assertEqual(0, act_seq4_0[3])
-#         self.assertEqual(cu.TAG_LENGTH_ST26['INSDFeature_location'], act_seq4_0[4])
-#         self.assertEqual(0 + cu.TAG_LENGTH_ST26['INSDFeature_location'], act_seq4_0[5])
-#         self.assertEqual('INSDFeature_location', act_seq4_0[6])
-#         self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq4_0[7])
+    def test_rowTranslationQualifier(self):
+        
+        qualifierRows_seq1 = [row for row in self.esc_1004.sequenceRows 
+                    if row[1] == '1' and row[6] == 'INSDQualifier_value']
+        act_seq1 = qualifierRows_seq1[2]
+        
+        self.assertEqual(400, act_seq1[0])
+        self.assertEqual('1', act_seq1[1])
+        self.assertEqual(0, act_seq1[2])
+        self.assertEqual(900, act_seq1[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq1[4])
+        self.assertEqual(300 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq1[5])
+        self.assertEqual('INSDQualifier_value', act_seq1[6])
+        self.assertEqual('3-to-1 letter code', act_seq1[7])
+        
+        qualifierRows_seq7 = [row for row in self.esc_1004.sequenceRows 
+                    if row[1] == '7' and row[6] == 'INSDQualifier_value']
+        translation_qual_seq7_first = qualifierRows_seq7[3]
+        translation_qual_seq7_second = qualifierRows_seq7[5]
+        
+        self.assertEqual(400, translation_qual_seq7_first[0])
+        self.assertEqual('7', translation_qual_seq7_first[1])
+        self.assertEqual(0, translation_qual_seq7_first[2])
+        self.assertEqual(84, translation_qual_seq7_first[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], translation_qual_seq7_first[4])
+        self.assertEqual(28 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], translation_qual_seq7_first[5])
+        self.assertEqual('INSDQualifier_value', translation_qual_seq7_first[6])
+        self.assertEqual('3-to-1 letter code', translation_qual_seq7_first[7])
+        
+        self.assertEqual(138, translation_qual_seq7_second[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], translation_qual_seq7_second[4])
+        self.assertEqual(46 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], translation_qual_seq7_second[5])
          
     def test_row400(self):
         act_seq1 = self.getElementRowsForSequence(self.esc5, 400, '1')[0]
