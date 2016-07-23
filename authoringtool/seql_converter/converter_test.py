@@ -24,10 +24,12 @@ class Test_St25To26Converter(TestCase):
  
     def setUp(self):
         self.f1 = self.getAbsPath('file1.txt')
+        self.f1004 = self.getAbsPath('WO2012-001004-001.zip.txt')
         self.f33_1 = self.getAbsPath('file33_1.txt')
         self.f80 = self.getAbsPath('file80.txt')
          
         self.sc1 = St25To26Converter(self.f1)
+        self.sc1004 = St25To26Converter(self.f1004)
         self.sc33_1 = St25To26Converter(self.f33_1)
         self.sc80 = St25To26Converter(self.f80) 
  
@@ -97,6 +99,64 @@ class Test_St25To26Converter(TestCase):
          
         self.assertEqual("3'clip", features_s2[1].featureKey)
         self.assertEqual("1..30", features_s2[1].location)
+        
+
+        
+        sequences_1004 = self.sc1004.seql_st26.sequence_set.all()
+        sequence_1004_1 = sequences_1004.get(sequenceIdNo=1)
+        sequence_1004_7 = sequences_1004.get(sequenceIdNo=7)
+        
+        self.assertEqual(903, sequence_1004_1.length)
+        features_1004_1 = sequence_1004_1.feature_set.all()
+        
+        self.assertEqual("CDS", features_1004_1[1].featureKey)
+        self.assertEqual("(1)..(903)", features_1004_1[1].location)
+
+#         ============== tests for mixed mode ==================================   
+        translQualifier_seq1 = features_1004_1[1].qualifier_set.all()[1]
+        self.assertEqual("translation", translQualifier_seq1.qualifierName)
+        
+        translQualValue_exp = converter_util.oneLetterCode(self.sc1004.seql_st25.getSequenceFromFile(self.f1004, 1).residues_prt)
+        self.assertEqual(translQualValue_exp, translQualifier_seq1.qualifierValue)
+        
+        features_1004_7 = sequence_1004_7.feature_set.all()
+        
+        self.assertEqual("CDS", features_1004_7[2].featureKey)
+        self.assertEqual("(1)..(84)", features_1004_7[2].location)
+        
+        translQualifier7_1 = features_1004_7[2].qualifier_set.all()[1]
+        self.assertEqual("translation", translQualifier7_1.qualifierName)
+        
+        translQualifier7_2 = features_1004_7[3].qualifier_set.all()[1]
+        self.assertEqual("translation", translQualifier7_2.qualifierName)
+        
+        translation1 = converter_util.oneLetterCode('MetLysLysSerLeuValLeuLysAlaSerValAlaValAlaThrLeuValProMetLeuSerPheAlaAlaGluGlyGluPhe')
+        translation2 = converter_util.oneLetterCode('AspProAlaLysAlaAlaPheAspSerLeuGlnAlaSerAlaThrGluTyrIleGlyTyrAlaTrpAlaMetValValValIleValGlyAlaThrIleGlyIleLysLeuPheLysLysPheThrSerLysAlaSer')
+        
+        self.assertEqual(translation1, translQualifier7_1.qualifierValue)
+        self.assertEqual(translation2, translQualifier7_2.qualifierValue)
+    
+#     @withMethodName
+#     def test_getTranslations(self):
+#         sequence_1004_1 = self.sc1004.seql_st25.getSequenceFromFile(self.f1004, 1)
+#         sequence_1004_2 = self.sc1004.seql_st25.getSequenceFromFile(self.f1004, 2)
+#         sequence_1004_7 = self.sc1004.seql_st25.getSequenceFromFile(self.f1004, 7)
+#         
+#         t1_1_exp = r'MetLysArgValIleThrLeuPheAlaValLeuLeuMetGlyTrpSerValAsnAlaTrpSerPheAlaCysLysThrAlaAsnGlyThrAlaIleProIleGlyGlyGlySerAlaAsnValTyrValAsnLeuAlaProAlaValAsnValGlyGlnAsnLeuValValAspLeuSerThrGlnIlePheCysHisAsnAspTyrProGluThrIleThrAspTyrValThrLeuGlnArgGlyAlaAlaTyrGlyGlyValLeuSerSerPheSerGlyThrValLysTyrAsnGlySerSerTyrProPheProThrThrSerGluThrProArgValValTyrAsnSerArgThrAspLysProTrpProValAlaLeuTyrLeuThrProValSerSerAlaGlyGlyValAlaIleLysAlaGlySerLeuIleAlaValLeuIleLeuArgGlnThrAsnAsnTyrAsnSerAspAspPheGlnPheValTrpAsnIleTyrAlaAsnAsnAspValValValProThrGlyGlyCysAspValSerAlaArgAspValThrValThrLeuProAspTyrProGlySerValProIleProLeuThrValTyrCysAlaLysSerGlnAsnLeuGlyTyrTyrLeuSerGlyThrThrAlaAspAlaGlyAsnSerIlePheThrAsnThrAlaSerPheSerProAlaGlnGlyValGlyValGlnLeuThrArgAsnGlyThrIleIleProAlaAsnAsnThrValSerLeuGlyAlaValGlyThrSerAlaValSerLeuGlyLeuThrAlaAsnTyrAlaArgThrGlyGlyGlnValThrAlaGlyAsnValGlnSerIleIleGlyValThrPheValTyrGln'
+#         
+#         translations1_act = self.sc1004.getTranslations(sequence_1004_1)
+#         self.assertEqual(t1_1_exp, translations1_act[0])
+#         
+#         translations2_act = self.sc1004.getTranslations(sequence_1004_2)
+#         
+#         self.assertEqual([], translations2_act)
+#         
+#         t7_1_exp = r'MetLysLysSerLeuValLeuLysAlaSerValAlaValAlaThrLeuValProMetLeuSerPheAlaAlaGluGlyGluPhe'
+#         t7_2_exp = r'AspProAlaLysAlaAlaPheAspSerLeuGlnAlaSerAlaThrGluTyrIleGlyTyrAlaTrpAlaMetValValValIleValGlyAlaThrIleGlyIleLysLeuPheLysLysPheThrSerLysAlaSer'
+#         
+#         translations7_act = self.sc1004.getTranslations(sequence_1004_7)
+#         self.assertEqual(t7_1_exp, translations7_act[0])
+#         self.assertEqual(t7_2_exp, translations7_act[1])
          
     @withMethodName
     def test_generateXmlFile(self):

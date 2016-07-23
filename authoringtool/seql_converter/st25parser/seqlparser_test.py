@@ -47,6 +47,8 @@ class TestSequenceListing(unittest.TestCase):
         cls.sl6083_1 = getSeql('WO2012-006083_1.txt')
         cls.sl058291 = getSeql('WO2012-058291-001.zip.txt') # what's special with this sl?
         cls.sl_input_no_seql = getSeql('no_st25_example.txt') # not sequence listing file
+        
+        cls.sl1004 = getSeql('WO2012-001004-001.zip.txt')
                 
         infilename1 = getAbsPath('file1.txt')
         infilename2 = getAbsPath('file2.txt')
@@ -55,6 +57,7 @@ class TestSequenceListing(unittest.TestCase):
         infilename32 = getAbsPath('file32.txt')
         infilename33_1 = getAbsPath('file33_1.txt')
         f6083_1 = getAbsPath('WO2012-006083_1.txt')
+        infilename1004 = getAbsPath('WO2012-001004-001.zip.txt')
 
         cls.seq1_1 = SequenceListing.getSequenceFromFile(infilename1, 1)
         cls.seq1_2 = SequenceListing.getSequenceFromFile(infilename1, 2)
@@ -79,6 +82,8 @@ class TestSequenceListing(unittest.TestCase):
         cls.sl6083_1_seq_3 = SequenceListing.getSequenceFromFile(f6083_1, 3) # 212 is abc instead of RNA
         cls.sl6083_1_seq_4 = SequenceListing.getSequenceFromFile(f6083_1, 4) # 212 is missing
 
+        cls.seq1004_1 = SequenceListing.getSequenceFromFile(infilename1004, 1)
+        cls.seq1004_7 = SequenceListing.getSequenceFromFile(infilename1004, 7)
         # cls.seq016177_3 = cls.sl016177.sequences[2]
 
     @withMethodName
@@ -170,6 +175,7 @@ class TestSequenceListing(unittest.TestCase):
         self.assertEqual('RNA', self.sl6083_1_seq_1.actualMolType)
         self.assertEqual('PRT', self.seq5_5.actualMolType)
         self.assertTrue(self.seq5_5.successfullyParsed)
+        
 
     @withMethodName
     def test_feature(self):
@@ -207,12 +213,28 @@ class TestSequenceListing(unittest.TestCase):
     def test_mixedmode(self):
         #test that False is returned for a PRT seq
         self.assertTrue(not self.seq1_1.mixedMode)
+        self.assertEqual([], self.seq1_1.translations)
 #         #test that False is returned for a DNA seq without mixed mode
         self.assertTrue(not self.seq1_2.mixedMode)
 #         #test that False is returned for a RNA seq
         self.assertTrue(not self.seq2_3.mixedMode)
 #         #test that True is returned for a DNA seq with mixed mode
         self.assertTrue(self.seq32_5.mixedMode)
+        
+    @withMethodName
+    def test_translations(self):
+        self.assertEqual([], self.seq1_1.translations)
+#         translation1__0_exp = self.seq1004_1.residues_prt
+        translation1__0_exp = 'MetLysArgValIleThrLeuPheAlaValLeuLeuMetGlyTrpSerValAsnAlaTrpSerPheAlaCysLysThrAlaAsnGlyThrAlaIleProIleGlyGlyGlySerAlaAsnValTyrValAsnLeuAlaProAlaValAsnValGlyGlnAsnLeuValValAspLeuSerThrGlnIlePheCysHisAsnAspTyrProGluThrIleThrAspTyrValThrLeuGlnArgGlyAlaAlaTyrGlyGlyValLeuSerSerPheSerGlyThrValLysTyrAsnGlySerSerTyrProPheProThrThrSerGluThrProArgValValTyrAsnSerArgThrAspLysProTrpProValAlaLeuTyrLeuThrProValSerSerAlaGlyGlyValAlaIleLysAlaGlySerLeuIleAlaValLeuIleLeuArgGlnThrAsnAsnTyrAsnSerAspAspPheGlnPheValTrpAsnIleTyrAlaAsnAsnAspValValValProThrGlyGlyCysAspValSerAlaArgAspValThrValThrLeuProAspTyrProGlySerValProIleProLeuThrValTyrCysAlaLysSerGlnAsnLeuGlyTyrTyrLeuSerGlyThrThrAlaAspAlaGlyAsnSerIlePheThrAsnThrAlaSerPheSerProAlaGlnGlyValGlyValGlnLeuThrArgAsnGlyThrIleIleProAlaAsnAsnThrValSerLeuGlyAlaValGlyThrSerAlaValSerLeuGlyLeuThrAlaAsnTyrAlaArgThrGlyGlyGlnValThrAlaGlyAsnValGlnSerIleIleGlyValThrPheValTyrGln'
+        translation7__0_exp = 'MetLysLysSerLeuValLeuLysAlaSerValAlaValAlaThrLeuValProMetLeuSerPheAlaAlaGluGlyGluPhe'
+        translation7__1_exp = 'AspProAlaLysAlaAlaPheAspSerLeuGlnAlaSerAlaThrGluTyrIleGlyTyrAlaTrpAlaMetValValValIleValGlyAlaThrIleGlyIleLysLeuPheLysLysPheThrSerLysAlaSer'
+        
+        translations1 = self.seq1004_1.translations 
+        translations7 = self.seq1004_7.translations 
+        
+        self.assertEqual(translation1__0_exp, translations1[0])
+        self.assertEqual(translation7__0_exp, translations7[0])
+        self.assertEqual(translation7__1_exp, translations7[1])        
 
     @withMethodName
     def test_seqNo400(self):

@@ -135,6 +135,8 @@ def getRangeFromLocation(aLocation):
         startPos = m.group('startPos')
         endPos = m.group('endPos')
         res = (int(startPos), int(endPos))
+    else:
+        print 'The input location %s does not have the pattern %s' %(aLocation, RANGE_LOCATION_REGEX)
 
     return res
 

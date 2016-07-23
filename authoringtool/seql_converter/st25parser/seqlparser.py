@@ -192,6 +192,7 @@ class Sequence(object):
         self.features = []
         self.residues_nuc = '-'
         self.residues_prt = '-'
+        self.translations = []
 
         self.actualSeqIdNo = 0
         self.actualMolType = '-'
@@ -235,6 +236,17 @@ class Sequence(object):
                 self.mixedMode = True
             if self.residues_nuc == '' and self.residues_prt == '':
                 self.isSkipCode = True
+                
+            if self.mixedMode:
+                currentStart = 0
+                for f in self.features:
+                    if f.key == 'CDS':
+                        t = su.getRangeFromLocation(f.location)
+                        currentTranslationLength = t[1] - t[0]
+                        currentEnd = currentStart + currentTranslationLength +1
+                        currentTranslation = self.residues_prt[currentStart:currentEnd]
+                        currentStart = currentEnd 
+                        self.translations.append(currentTranslation)
 
             self.__setActualMolType__()
             self.__setActualLength__()

@@ -36,14 +36,6 @@ class TestConverterUtil(unittest.TestCase):
         self.assertEqual(47, cu.TAG_LENGTH_ST26['INSDSeq_feature-table'])
         self.assertEqual(20, cu.TAG_LENGTH_ST26['sequenceIDNumber'])
 
-    def test_removeSpaces(self):
-        s = '       <abc>x x x </abc>'
-        print s 
-        print cu.removeSpaces(s)
-        print s.replace(r'\s+<', '<')
-        import re 
-        print re.sub(r'\s+<', '<', s)
-
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
     unittest.main()

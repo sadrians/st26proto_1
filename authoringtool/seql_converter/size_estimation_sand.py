@@ -83,13 +83,15 @@ class FileSizeComparator(object):
                 print '%d in csv' %c, '%d in xml' %x 
 
 
-f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 'st25parser', 
-                  'testData', 'file5.txt') 
-
-outDirPath = r'/Users/ad/pyton/test/st26fileSize/stats'
-xmlOutDirPath = r'/Users/ad/pyton/test/st26fileSize/converter_out'
-
-fsc = FileSizeComparator(f5, outDirPath, xmlOutDirPath)
+# ==================== main =========================
+# f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 'st25parser', 
+#                   'testData', 'file5.txt') 
+# 
+# outDirPath = r'/Users/ad/pyton/test/st26fileSize/stats'
+# xmlOutDirPath = r'/Users/ad/pyton/test/st26fileSize/converter_out'
+# 
+# fsc = FileSizeComparator(f5, outDirPath, xmlOutDirPath)
+# =====================================================
 
 
 # d = r'/Users/ad/pyton/test/converter_in'
