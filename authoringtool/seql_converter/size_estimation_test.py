@@ -689,6 +689,24 @@ class Test_ElementSizeCalculator(unittest.TestCase):
 #         self.assertEqual(55 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq39_0[5])
 #         self.assertEqual('INSDQualifier_value', act_seq39_0[6])
 #         self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq39_0[7])
+
+#     def test_rowTranslationQualifier(self):
+#         rows222_1 = self.getElementRowsForSequence(self.esc5, 222, '1')
+#         self.assertEqual([], rows222_1)
+#         
+#         rows222_4 = self.getElementRowsForSequence(self.esc5, 222, '4')
+#         self.assertEqual(6, len(rows222_4))
+#         
+#         act_seq4_0 = rows222_4[0]
+#          
+#         self.assertEqual(222, act_seq4_0[0])
+#         self.assertEqual('4', act_seq4_0[1])
+#         self.assertEqual(0, act_seq4_0[2])
+#         self.assertEqual(0, act_seq4_0[3])
+#         self.assertEqual(cu.TAG_LENGTH_ST26['INSDFeature_location'], act_seq4_0[4])
+#         self.assertEqual(0 + cu.TAG_LENGTH_ST26['INSDFeature_location'], act_seq4_0[5])
+#         self.assertEqual('INSDFeature_location', act_seq4_0[6])
+#         self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq4_0[7])
          
     def test_row400(self):
         act_seq1 = self.getElementRowsForSequence(self.esc5, 400, '1')[0]

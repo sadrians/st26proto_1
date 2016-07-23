@@ -247,6 +247,7 @@ class Sequence(object):
                         currentTranslation = self.residues_prt[currentStart:currentEnd]
                         currentStart = currentEnd 
                         self.translations.append(currentTranslation)
+                        f.translation = currentTranslation
 
             self.__setActualMolType__()
             self.__setActualLength__()
@@ -309,6 +310,7 @@ class Feature(object):
         self.key = '-'
         self.location = '-'
         self.description = '-'
+        self.translation = su.DEFAULT_STRING
 
         self.featureHeader = safeStrip(m.group('featureHeader'))
         if m.group('key'):
@@ -319,6 +321,8 @@ class Feature(object):
             self.description = safeStrip(m.group('description'))
         if self.description:
             self.description = su.inOneLine(self.description)
+            
+        
 
     def printFeat(self):
         print '\tfeatureHeader:', self.featureHeader

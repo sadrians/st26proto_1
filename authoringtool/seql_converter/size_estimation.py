@@ -509,7 +509,15 @@ class ElementSizeCalculator(object):
                 createQualifierValue(223, feat.description, 
                                 parsedFeature.description, 
                                 cu.BLANK_PLACEHOLDER)
-               
+# ====================== mixed mode translation ======================                
+# #                 add qualifier translation
+#                 append_INSDFeature_quals(cu.BLANK_PLACEHOLDER)
+#                 
+#                 createQualifier('note', cu.BLANK_PLACEHOLDER)
+#                 
+#                 createQualifierValue(223, feat.description, 
+#                                 parsedFeature.description, 
+#                                 cu.BLANK_PLACEHOLDER)               
 # ====================== 400 ======================        
             if parsedSequence.molType == 'PRT':
                 parsedResidues = parsedSequence.residues_prt

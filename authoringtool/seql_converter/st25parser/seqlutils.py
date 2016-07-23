@@ -33,7 +33,7 @@ seqlElementPattern = re.compile(seqlElementRegex, re.DOTALL)
 # ================================================
 # regex
 # ================================================
-RANGE_LOCATION_REGEX = r'\(?(?P<startPos>\d+)\)?\.\.\(?(?P<endPos>\d+)\)?'
+RANGE_LOCATION_REGEX = r'\(?(?P<startPos>\d+)\)?\.\.\.?\(?(?P<endPos>\d+)\)?'
 RANGE_LOCATION_PATTERN = re.compile(RANGE_LOCATION_REGEX)
 
 # ================================================

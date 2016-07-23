@@ -152,9 +152,6 @@ class St25To26Converter(object):
                                           qualifierValue=mol_typeQualifierValue)
             mol_typeQualifier.save()
             
-            translations = s25.translations 
-            currentTranslationIndex = 0
-            
             for f in s25.features:
                 currentFeature = Feature(sequence=s26,
                                          featureKey = f.key,
@@ -165,17 +162,22 @@ class St25To26Converter(object):
                                           qualifierValue=f.description)
                 currentQualifier.save()
                 
-                
-                
                 if f.key == 'CDS':
-                    currentTranslation = translations[currentTranslationIndex]
-                    
-                    translationQualifierValue = converter_util.oneLetterCode(currentTranslation)
+                    translationQualifierValue = converter_util.oneLetterCode(f.translation)
                     translationQualifier = Qualifier(feature=currentFeature,
                                           qualifierName='translation',
                                           qualifierValue=translationQualifierValue)
                     translationQualifier.save()
-                    currentTranslationIndex += 1
+                    
+#                 if f.key == 'CDS':
+#                     currentTranslation = translations[currentTranslationIndex]
+#                     
+#                     translationQualifierValue = converter_util.oneLetterCode(currentTranslation)
+#                     translationQualifier = Qualifier(feature=currentFeature,
+#                                           qualifierName='translation',
+#                                           qualifierValue=translationQualifierValue)
+#                     translationQualifier.save()
+#                     currentTranslationIndex += 1
      
     def generateXmlFile(self, outputDir):
 #         strftime('%Y-%m-%d') dates are not in the prescribed ST.26 format!!!!!

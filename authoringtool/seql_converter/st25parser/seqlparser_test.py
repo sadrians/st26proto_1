@@ -209,6 +209,23 @@ class TestSequenceListing(unittest.TestCase):
         self.assertEqual('(20)..(1399)', self.seq32_5.features[1].location)
         self.assertEqual(seqlutils.DEFAULT_STRING, self.seq32_5.features[1].description)
 
+#         test for translation attribute
+        for f in self.seq1_1.features:
+            self.assertEqual(seqlutils.DEFAULT_STRING, f.translation)
+        
+        features1004_1 = self.seq1004_1.features
+
+        translation1__0_exp = 'MetLysArgValIleThrLeuPheAlaValLeuLeuMetGlyTrpSerValAsnAlaTrpSerPheAlaCysLysThrAlaAsnGlyThrAlaIleProIleGlyGlyGlySerAlaAsnValTyrValAsnLeuAlaProAlaValAsnValGlyGlnAsnLeuValValAspLeuSerThrGlnIlePheCysHisAsnAspTyrProGluThrIleThrAspTyrValThrLeuGlnArgGlyAlaAlaTyrGlyGlyValLeuSerSerPheSerGlyThrValLysTyrAsnGlySerSerTyrProPheProThrThrSerGluThrProArgValValTyrAsnSerArgThrAspLysProTrpProValAlaLeuTyrLeuThrProValSerSerAlaGlyGlyValAlaIleLysAlaGlySerLeuIleAlaValLeuIleLeuArgGlnThrAsnAsnTyrAsnSerAspAspPheGlnPheValTrpAsnIleTyrAlaAsnAsnAspValValValProThrGlyGlyCysAspValSerAlaArgAspValThrValThrLeuProAspTyrProGlySerValProIleProLeuThrValTyrCysAlaLysSerGlnAsnLeuGlyTyrTyrLeuSerGlyThrThrAlaAspAlaGlyAsnSerIlePheThrAsnThrAlaSerPheSerProAlaGlnGlyValGlyValGlnLeuThrArgAsnGlyThrIleIleProAlaAsnAsnThrValSerLeuGlyAlaValGlyThrSerAlaValSerLeuGlyLeuThrAlaAsnTyrAlaArgThrGlyGlyGlnValThrAlaGlyAsnValGlnSerIleIleGlyValThrPheValTyrGln'
+        self.assertEqual(translation1__0_exp, features1004_1[0].translation)
+        
+        features1004_7 = self.seq1004_7.features
+        
+        translation7_0_exp = 'MetLysLysSerLeuValLeuLysAlaSerValAlaValAlaThrLeuValProMetLeuSerPheAlaAlaGluGlyGluPhe'
+        translation7_1_exp = 'AspProAlaLysAlaAlaPheAspSerLeuGlnAlaSerAlaThrGluTyrIleGlyTyrAlaTrpAlaMetValValValIleValGlyAlaThrIleGlyIleLysLeuPheLysLysPheThrSerLysAlaSer'
+
+        self.assertEqual(translation7_0_exp, features1004_7[1].translation)
+        self.assertEqual(translation7_1_exp, features1004_7[2].translation)
+        
     @withMethodName
     def test_mixedmode(self):
         #test that False is returned for a PRT seq
