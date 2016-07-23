@@ -173,5 +173,7 @@ class St25To26Converter(object):
             gf.write(xml) 
             
         self.seql_st26.delete()
+        print 'Converted to xml file', xmlFilePath 
+        return xmlFilePath
 
         

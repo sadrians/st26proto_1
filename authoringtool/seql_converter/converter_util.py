@@ -146,6 +146,9 @@ def applicationNumberAsTuple(anApplicationNumber):
         
     return(iPOfficeCode, applicationNumberText)
 
-
+def removeSpaces(aString):
+    regex = r'\s+<'
+    p = re.compile(regex)
+    return p.sub('<', aString)
 
     

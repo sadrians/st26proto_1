@@ -56,7 +56,6 @@ class RawSequenceListing(object):
         m = GENERAL_INFORMATION_PATTERN.match(blocks[0])
           
         if m:
-            print 'General information match found.'
             self.seqlHeader = m.group('seqlHeader')
             self.applicant = m.group('applicant')
             self.title = m.group('title')
@@ -66,6 +65,8 @@ class RawSequenceListing(object):
             self.priorities = m.group('priorities')
             self.quantity = m.group('quantity')
             self.software = m.group('software')
+        else:
+            print 'RawSequenceListing: No match for general information pattern.'
             
         for s in blocks[1:]:
 #             print '='*50
@@ -543,4 +544,7 @@ class ElementSizeCalculator(object):
                 wr.writerow(genInfoRow)
             for seqRow in self.sequenceRows:
                 wr.writerow(seqRow)
+        print 'Generated file', outFilePath
+        
+        return outFilePath
 

@@ -12,6 +12,7 @@ def convertFile(inFile, outDir):
     sc = St25To26Converter(inFile)
     sc.generateXmlFile(outDir)
     print 'Converted to xml file', inFile
+    
 
 # convertFile(f5, '.')
 
