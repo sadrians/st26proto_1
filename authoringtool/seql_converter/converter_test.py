@@ -128,7 +128,7 @@ class Test_St25To26Converter(TestCase):
                 
 
 #         ============== tests for mixed mode ==================================   
-        translQualifier_seq1 = features_1004_1[1].qualifier_set.all()[1]
+        translQualifier_seq1 = features_1004_1[1].qualifier_set.all()[0]
         self.assertEqual("translation", translQualifier_seq1.qualifierName)
         
         translQualValue_exp = converter_util.oneLetterCode(self.sc1004.seql_st25.getSequenceFromFile(self.f1004, 1).residues_prt)
@@ -139,10 +139,10 @@ class Test_St25To26Converter(TestCase):
         self.assertEqual("CDS", features_1004_7[2].featureKey)
         self.assertEqual("(1)..(84)", features_1004_7[2].location)
         
-        translQualifier7_1 = features_1004_7[2].qualifier_set.all()[1]
+        translQualifier7_1 = features_1004_7[2].qualifier_set.all()[0]
         self.assertEqual("translation", translQualifier7_1.qualifierName)
         
-        translQualifier7_2 = features_1004_7[3].qualifier_set.all()[1]
+        translQualifier7_2 = features_1004_7[3].qualifier_set.all()[0]
         self.assertEqual("translation", translQualifier7_2.qualifierName)
         
         translation1 = converter_util.oneLetterCode('MetLysLysSerLeuValLeuLysAlaSerValAlaValAlaThrLeuValProMetLeuSerPheAlaAlaGluGlyGluPhe')

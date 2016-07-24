@@ -92,10 +92,10 @@ class FileSizeComparator(object):
 #                   'testData')
 # f5 = os.path.join(inputDir, 'file5.txt')
 # f1004 = os.path.join(inputDir, 'WO2012-001004-001.zip.txt')
-#  
+#    
 # outDirPath = r'/Users/ad/pyton/test/st26fileSize/stats'
 # xmlOutDirPath = r'/Users/ad/pyton/test/st26fileSize/out_ST26'
-# 
+#   
 # l = [f5, f1004]
 # for f in l:
 #     fsc = FileSizeComparator(f, outDirPath, xmlOutDirPath)

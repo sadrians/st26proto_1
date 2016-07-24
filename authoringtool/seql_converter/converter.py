@@ -158,7 +158,7 @@ class St25To26Converter(object):
                                          featureKey = f.key,
                                          location = f.location)
                 currentFeature.save()
-                if f.key != seqlutils.DEFAULT_STRING:
+                if f.description != seqlutils.DEFAULT_STRING:
                     currentQualifier = Qualifier(feature=currentFeature,
                                               qualifierName=noteQualifierName,
                                               qualifierValue=f.description)

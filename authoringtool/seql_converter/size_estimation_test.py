@@ -656,44 +656,45 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(17, act_seq4_5[2])
         self.assertEqual(8, act_seq4_5[3])
         
-#     def test_row223(self):
-#         rows223_1 = self.getElementRowsForSequence(self.esc5, 223, '1')
-#         self.assertEqual([], rows223_1)
-#         
-#         rows223_4 = self.getElementRowsForSequence(self.esc5, 223, '4')
-# #         self.assertEqual(6, len(rows223_4))
-#         
-#         act_seq4_0 = rows223_4[0]
-#          
-#         self.assertEqual(223, act_seq4_0[0])
-#         self.assertEqual('4', act_seq4_0[1])
-#         self.assertEqual(28, act_seq4_0[2])
-#         self.assertEqual(15, act_seq4_0[3])
-#         self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq4_0[4])
-#         self.assertEqual(15 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq4_0[5])
-#         self.assertEqual('INSDQualifier_value', act_seq4_0[6])
-#         self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq4_0[7])
-#          
-#         act_seq4_5 = rows223_4[5]
-#          
-#         self.assertEqual(223, act_seq4_5[0])
-#         self.assertEqual('4', act_seq4_5[1])
-#         self.assertEqual(31, act_seq4_5[2])
-#         self.assertEqual(20, act_seq4_5[3])
-#         
-#         rows223_39 = self.getElementRowsForSequence(self.esc5, 223, '39')
-#         self.assertEqual(1, len(rows223_39))
-#         
-#         act_seq39_0 = rows223_39[0]
-#          
-#         self.assertEqual(223, act_seq39_0[0])
-#         self.assertEqual('39', act_seq39_0[1])
-#         self.assertEqual(66, act_seq39_0[2])
-#         self.assertEqual(55, act_seq39_0[3])
-#         self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq39_0[4])
-#         self.assertEqual(55 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq39_0[5])
-#         self.assertEqual('INSDQualifier_value', act_seq39_0[6])
-#         self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq39_0[7])
+    def test_row223(self):
+#         count the number of rows corresponding to qualifiers others than org and molt
+        rows223_1 = self.getElementRowsForSequence(self.esc5, 223, '1')
+        self.assertEqual([], rows223_1)
+         
+        rows223_4 = self.getElementRowsForSequence(self.esc5, 223, '4')
+        self.assertEqual(6, len(rows223_4))
+         
+        act_seq4_0 = rows223_4[0]
+          
+        self.assertEqual(223, act_seq4_0[0])
+        self.assertEqual('4', act_seq4_0[1])
+        self.assertEqual(28, act_seq4_0[2])
+        self.assertEqual(15, act_seq4_0[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq4_0[4])
+        self.assertEqual(15 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq4_0[5])
+        self.assertEqual('INSDQualifier_value', act_seq4_0[6])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq4_0[7])
+          
+        act_seq4_5 = rows223_4[5]
+          
+        self.assertEqual(223, act_seq4_5[0])
+        self.assertEqual('4', act_seq4_5[1])
+        self.assertEqual(31, act_seq4_5[2])
+        self.assertEqual(20, act_seq4_5[3])
+         
+        rows223_39 = self.getElementRowsForSequence(self.esc5, 223, '39')
+        self.assertEqual(1, len(rows223_39))
+         
+        act_seq39_0 = rows223_39[0]
+          
+        self.assertEqual(223, act_seq39_0[0])
+        self.assertEqual('39', act_seq39_0[1])
+        self.assertEqual(66, act_seq39_0[2])
+        self.assertEqual(55, act_seq39_0[3])
+        self.assertEqual(cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq39_0[4])
+        self.assertEqual(55 + cu.TAG_LENGTH_ST26['INSDQualifier_value'], act_seq39_0[5])
+        self.assertEqual('INSDQualifier_value', act_seq39_0[6])
+        self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq39_0[7])
 
     def test_rowTranslationQualifier(self):
         
@@ -712,7 +713,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         
         qualifierRows_seq7 = [row for row in self.esc_1004.sequenceRows 
                     if row[1] == '7' and row[6] == 'INSDQualifier_value']
-        translation_qual_seq7_first = qualifierRows_seq7[2]
+        translation_qual_seq7_first = qualifierRows_seq7[3]
         translation_qual_seq7_second = qualifierRows_seq7[4]
         
         self.assertEqual(400, translation_qual_seq7_first[0])

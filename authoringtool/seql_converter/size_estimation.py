@@ -514,7 +514,7 @@ class ElementSizeCalculator(object):
                 res.append(currentRow222)
                 
 # ====================== 223 ======================                
-                if parsedFeature.key != cu.BLANK_PLACEHOLDER: #do not add row if 223 missing!
+                if parsedFeature.description != cu.BLANK_PLACEHOLDER: #do not add row if 223 missing!
                     createQualifier('note', cu.BLANK_PLACEHOLDER)
                     createQualifierValue(223, feat.description, 
                                         parsedFeature.description, 
