@@ -547,6 +547,7 @@ class ElementSizeCalculator(object):
                 
 # ====================== 223 ======================                
                 if parsedFeature.description != cu.BLANK_PLACEHOLDER: #do not add row if 223 missing!
+                    append_INSDFeature_quals('ST.26 mandatory element')
                     createQualifier('note', cu.BLANK_PLACEHOLDER)
                     createQualifierValue(223, feat.description, 
                                         parsedFeature.description, 

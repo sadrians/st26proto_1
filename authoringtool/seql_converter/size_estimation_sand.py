@@ -28,10 +28,11 @@ if __name__ == "__main__":
     l = [os.path.join(inDirPath, a) for a in os.listdir(inDirPath) if '.DS' not in a]
  
     totalsList = []
-    for f in l[1:2]:
+    for f in l:
+#     for f in l[1:2]:
         fsc = FileSizeComparator(f, outDirPath, xmlOutDirPath)
         totalsList.append(fsc.totals) 
-        fsc.compareElementsInCsvAndXmlFiles()
+#         fsc.compareElementsInCsvAndXmlFiles()
 #         pprint.pprint(fsc.totals)
     with open(statsFilePath, 'wb') as csvfile:
         wr = csv.writer(csvfile, delimiter=',')
