@@ -41,7 +41,7 @@ class Test_St25To26Converter(TestCase):
          
         self.assertEqual('file1', self.sc1.fileName)
          
-        self.assertEqual('file1_converted', self.sc1.seql_st26.fileName)
+        self.assertEqual('file1_ST26', self.sc1.seql_st26.fileName)
         self.assertEqual('34246761601', self.sc1.seql_st26.applicantFileReference)
          
         self.assertEqual(converter_util.DEFAULT_CODE, self.sc1.seql_st26.IPOfficeCode)

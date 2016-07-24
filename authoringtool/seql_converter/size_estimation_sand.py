@@ -11,6 +11,7 @@ from django.conf import settings
 from converter import St25To26Converter 
 from size_estimation import ElementSizeCalculator
 import converter_util as cu 
+import st25parser.seqlutils as su 
 
 class FileSizeComparator(object):
     def __init__(self, inFilePath, outDirPath, xmlOutDirPath):
@@ -37,17 +38,20 @@ class FileSizeComparator(object):
         return outFile 
     
     def listTotals(self):
+        su.printHeader(self.inFilePath)
         rows = self.esc.generalInformationRows + self.esc.sequenceRows 
         
         for i in range(2,6):
             print cu.CSV_HEADER[i], sum([r[i] for r in rows]) 
+        with open(self.inFilePath, 'r') as inf:
+            print 'chars in txt file:', len(inf.read())
         print 'ST.25 txt file size:', os.path.getsize(self.inFilePath)
         
-        f5convcl = 'file5_converted_clean.xml'
+#         f5convcl = 'file5_converted_clean.xml'
         with open(self.cleanXmlFilePath, 'r') as f:
             s = f.read()
             print 'chars in xml clean file:', len(s)
-        print 'ST.26 xml file size:', os.path.getsize(f5convcl) 
+        print 'ST.26 xml file size:', os.path.getsize(self.cleanXmlFilePath) 
              
     def compareElementsInCsvAndXmlFiles(self):
         def countSt26ElementsFromCsvFile(inFilePath):
@@ -84,13 +88,17 @@ class FileSizeComparator(object):
 
 
 # ==================== main =========================
-# f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 'st25parser', 
-#                   'testData', 'file5.txt') 
-# 
+# inputDir = os.path.join(settings.BASE_DIR, 'seql_converter', 'st25parser', 
+#                   'testData')
+# f5 = os.path.join(inputDir, 'file5.txt')
+# f1004 = os.path.join(inputDir, 'WO2012-001004-001.zip.txt')
+#  
 # outDirPath = r'/Users/ad/pyton/test/st26fileSize/stats'
-# xmlOutDirPath = r'/Users/ad/pyton/test/st26fileSize/converter_out'
+# xmlOutDirPath = r'/Users/ad/pyton/test/st26fileSize/out_ST26'
 # 
-# fsc = FileSizeComparator(f5, outDirPath, xmlOutDirPath)
+# l = [f5, f1004]
+# for f in l:
+#     fsc = FileSizeComparator(f, outDirPath, xmlOutDirPath)
 # =====================================================
 
 

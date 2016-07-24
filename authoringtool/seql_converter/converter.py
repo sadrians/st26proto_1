@@ -67,7 +67,7 @@ class St25To26Converter(object):
         
 #         create SequenceListing instance
         sl = Seql_st26(
-                fileName = '%s_converted' % self.fileName,
+                fileName = '%s_ST26' % self.fileName,
                 dtdVersion = '1',
                 softwareName = 'prototype',
                 softwareVersion = '0.1',
