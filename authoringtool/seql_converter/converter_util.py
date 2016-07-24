@@ -64,6 +64,38 @@ CSV_HEADER = ['element_st25', 'seqIdNo',
                          'element_st26', 
                          'comment']
 
+FILE = 'file'
+ELEMENT_ST25 = 'element_st25' 
+SEQ_ID_NO = 'seqIdNo'
+ELEMENT_ST25_LENGTH = 'element_st25_length'
+VALUE_LENGTH = 'value_length'
+TAG_ST26_LENGTH = 'tag_st26_length' 
+ELEMENT_ST26_LENGTH = 'element_st26_length' 
+ELEMENT_ST26 = 'element_st26'
+COMMENT = 'comment'
+CHARS_TXT_FILE = 'chars_txt_file'
+FILE_SIZE_TXT = 'file_size_in_bytes_txt'
+FILE_SIZE_XML_CLEAN = 'file_size_xml_clean'
+CHARS_XML_CLEAN_FILE = 'chars_xml_clean_in_bytes_file'
+QUANTITY = 'quantity'
+SEQUENCES_NUC = 'sequences_nuc'
+SEQUENCES_PRT = 'sequences_prt'
+MIXED_MODE = 'mixed_mode'
+
+STATS_HEADER = [FILE, QUANTITY, SEQUENCES_NUC, SEQUENCES_PRT, MIXED_MODE, 
+                ELEMENT_ST25_LENGTH, VALUE_LENGTH, TAG_ST26_LENGTH, 
+                ELEMENT_ST26_LENGTH, CHARS_TXT_FILE, FILE_SIZE_TXT, 
+                CHARS_XML_CLEAN_FILE, FILE_SIZE_XML_CLEAN]
+
+# CSV_HEADER_DICT = {'ELEMENT_ST25': 'element_st25', 
+#                 'SEQ_ID_NO': 'seqIdNo', 
+#                 'ELEMENT_ST25_LENGTH': 'element_st25_length', 
+#                 'VALUE_LENGTH': 'value_length', 
+#                 'TAG_ST26_LENGTH': 'tag_st26_length', 
+#                 'ELEMENT_ST26_LENGTH': 'element_st26_length', 
+#                 'ELEMENT_ST26': 'element_st26', 
+#                 'COMMENT': 'comment'}
+
 # def safeLength(aStr):
 #     if aStr is not None:
 #         return len(aStr)
@@ -108,9 +140,6 @@ OTHER_ELEMENTS_ST26 = {
 # ======================================================
 
 
-
-
-
 def multiple_replace(text, adict):
 #     https://www.safaribooksonline.com/library/view/python-cookbook-2nd/0596007973/ch01s19.html
     rx = re.compile('|'.join(map(re.escape, adict)))
@@ -124,7 +153,7 @@ def oneLetterCode(res):
 def applicationNumberAsTuple(anApplicationNumber):
     
     iPOfficeCode = '--'
-    applicationNumberText = '-'
+    applicationNumberText = ''
     
     if anApplicationNumber:
         if len(anApplicationNumber) > 1:

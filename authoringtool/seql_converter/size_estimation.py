@@ -8,6 +8,8 @@ import os
 import csv
 import pprint
 import converter_util as cu 
+from converter import St25To26Converter 
+import st25parser.seqlutils as su 
 
 import st25parser.seqlparser
 
@@ -52,7 +54,7 @@ class RawSequenceListing(object):
         with open(aFilePath, 'r') as f:
             blocks = f.read().split('<210>')
         
-    #     pprint.pprint(blocks)    
+#         pprint.pprint(blocks)    
         m = GENERAL_INFORMATION_PATTERN.match(blocks[0])
           
         if m:
@@ -100,7 +102,6 @@ class RawFeature(object):
         self.location = fm.group('location')
         self.description = fm.group('description')
 
-
 class ElementSizeCalculator(object):
     def __init__(self, aFilePath):
         self.filePath = aFilePath
@@ -118,13 +119,18 @@ class ElementSizeCalculator(object):
         self.setRow_softwareVersion()
         self.setRow_productionDate()
         self.setRow_110()
+        self.setRow_InventorName()
         self.setRow_120()
         self.setRow_130()
-        if self.seql_raw.applicationNumber and self.seql_raw.filingDate:
-            self.setRow_ApplicationIdentification()
-            self.setRow_IPOfficeCode()
-            self.setRow_140()
-            self.setRow_141()
+        self.setRow_ApplicationIdentification()
+        self.setRow_IPOfficeCode()
+        self.setRow_140()
+        self.setRow_141()
+#         if self.seql_raw.applicationNumber and self.seql_raw.filingDate:
+#             self.setRow_ApplicationIdentification()
+#             self.setRow_IPOfficeCode()
+#             self.setRow_140()
+#             self.setRow_141()
         if self.seql_raw.priorities:
             self.setRow_prio()
         self.setRow_160()
@@ -169,7 +175,6 @@ class ElementSizeCalculator(object):
                 len(cu.OTHER_ELEMENTS_ST26['styleSheetReference']),
                 'styleSheetReference', 
                 'ST.26 specific element'])
-
 
     def setRow_header(self):
         self.generalInformationRows.append([0, 0, 
@@ -241,6 +246,20 @@ class ElementSizeCalculator(object):
         self.generalInformationRows.append(self._getSt25St26Lengths(0, 0,
             '-', cu.DEFAULT_CODE,
             'languageCode', 'ST.26 specific languageCode attribute for ApplicantName'))
+
+    def setRow_InventorName(self):
+        r = [0, 0, 
+                0,
+                0,
+                cu.TAG_LENGTH_ST26['InventorName'],
+                1 + cu.TAG_LENGTH_ST26['InventorName'],
+                'InventorName', 
+                cu.BLANK_PLACEHOLDER]
+        self.generalInformationRows.append(r)
+        
+        self.generalInformationRows.append(self._getSt25St26Lengths(0, 0,
+            cu.BLANK_PLACEHOLDER, cu.DEFAULT_CODE,
+            'languageCode', 'ST.26 specific languageCode attribute for InventorName'))
         
     def setRow_120(self):
         self.generalInformationRows.append(self._getSt25St26Lengths(120, 0,
@@ -275,9 +294,9 @@ class ElementSizeCalculator(object):
                 0,
                 0,
                 cu.TAG_LENGTH_ST26['IPOfficeCode'],
-                cu.TAG_LENGTH_ST26['IPOfficeCode'],
+                2 + cu.TAG_LENGTH_ST26['IPOfficeCode'],
                 'IPOfficeCode', 
-                'Corresponding to 140. Empty for the purpose of this study']
+                'Corresponding to 140. XX placeholder for the purpose of this study']
         
         self.generalInformationRows.append(r)
         
@@ -288,13 +307,18 @@ class ElementSizeCalculator(object):
             'ApplicationNumberText', cu.BLANK_PLACEHOLDER))
      
     def setRow_141(self):
+        #         set filingDate
+        fd = self.seql_clean.generalInformation.filingDate
+        if fd != cu.BLANK_PLACEHOLDER:
+            filingDateAsString = fd 
+        else:
+            filingDateAsString = cu.DEFAULT_DATE_STRING
+        
         self.generalInformationRows.append(self._getSt25St26Lengths(141, 0, 
             self.seql_raw.filingDate,
-            self.seql_clean.generalInformation.filingDate,
+            filingDateAsString,
             'FilingDate', cu.BLANK_PLACEHOLDER))
         
-#     TODO add code for prio
-    
     def setRow_prio(self):
         
         res = ['prio', 0, cu.safeLength(self.seql_raw.priorities)]
@@ -338,8 +362,16 @@ class ElementSizeCalculator(object):
         parsedSequences = []
         for s in self.seql_clean.generateSequence():
             parsedSequences.append(s)
+#             TODO: test
+            if s.molType == 'PRT':
+                self.seql_clean.quantity_prt += 1 
+            else:
+                self.seql_clean.quantity_nuc += 1
+                if s.mixedMode:
+                    self.seql_clean.quantity_mix += 1
                 
         for seq in self.seql_raw.sequences:
+            
             currentIndex = self.seql_raw.sequences.index(seq)
             parsedSequence = parsedSequences[currentIndex]
             currentSeqId = parsedSequence.seqIdNo
@@ -557,4 +589,138 @@ class ElementSizeCalculator(object):
         print 'Generated file', outFilePath
         
         return outFilePath
+
+class FileSizeComparator(object):
+    def __init__(self, inFilePath, outDirPath, xmlOutDirPath):
+        self.inFilePath = inFilePath 
+        self.outDirPath = outDirPath
+        self.xmlOutDirPath = xmlOutDirPath
+        
+        self.esc = ElementSizeCalculator(self.inFilePath)
+        self.csvFilePath = self.esc.writeSizes(self.outDirPath)
+        
+        sc = St25To26Converter(self.inFilePath)
+        self.xmlFilePath = sc.generateXmlFile(self.xmlOutDirPath)
+
+        self.cleanXmlFilePath = self.cleanAndWriteXmlFile() 
+        
+        self.totals = {}
+        
+#         self.listTotals() 
+        self.setTotals()  
+    
+    def cleanAndWriteXmlFile(self):
+        outFile = self.xmlFilePath.replace('.xml', '_clean.xml')
+        with open(self.xmlFilePath, 'r') as f, open(outFile, 'w') as wr:
+            clean = re.sub(r'\s+<', '<', f.read()).replace(os.linesep, '')
+            wr.write(clean)
+        print 'Generated clean xml file', outFile 
+        return outFile 
+    
+    def listTotals(self):
+        su.printHeader(self.inFilePath)
+        rows = self.esc.generalInformationRows + self.esc.sequenceRows 
+        
+        for i in range(2,6):
+            print cu.CSV_HEADER[i], sum([r[i] for r in rows]) 
+        with open(self.inFilePath, 'r') as inf:
+            print 'chars in txt file:', len(inf.read())
+        print 'ST.25 txt file size:', os.path.getsize(self.inFilePath)
+        
+        with open(self.cleanXmlFilePath, 'r') as f:
+            s = f.read()
+            print 'chars in xml clean file:', len(s)
+        print 'ST.26 xml file size:', os.path.getsize(self.cleanXmlFilePath) 
+        
+    def setTotals(self):
+        rows = self.esc.generalInformationRows + self.esc.sequenceRows 
+        
+        self.totals[cu.FILE] = os.path.basename(self.inFilePath)
+        self.totals[cu.QUANTITY] = self.esc.seql_clean.generalInformation.quantity
+        self.totals[cu.SEQUENCES_NUC] = self.esc.seql_clean.quantity_nuc
+        self.totals[cu.SEQUENCES_PRT] = self.esc.seql_clean.quantity_prt
+        self.totals[cu.MIXED_MODE] = self.esc.seql_clean.quantity_mix  
+        self.totals[cu.ELEMENT_ST25_LENGTH] = sum([r[2] for r in rows])
+        self.totals[cu.VALUE_LENGTH] = sum([r[3] for r in rows])
+        self.totals[cu.TAG_ST26_LENGTH] = sum([r[4] for r in rows])
+        self.totals[cu.ELEMENT_ST26_LENGTH] = sum([r[5] for r in rows])
+        
+        with open(self.inFilePath, 'r') as inf:
+            self.totals[cu.CHARS_TXT_FILE] = len(inf.read())
+        self.totals[cu.FILE_SIZE_TXT] = os.path.getsize(self.inFilePath)
+         
+        with open(self.cleanXmlFilePath, 'r') as f:
+            self.totals[cu.CHARS_XML_CLEAN_FILE] = len(f.read())
+        self.totals[cu.FILE_SIZE_XML_CLEAN] = os.path.getsize(self.cleanXmlFilePath) 
+
+
+
+    def compareElementsInCsvAndXmlFiles(self):
+        
+        def countSt26ElementsFromCsvFile():
+            res = {}
+            rows = self.esc.generalInformationRows + self.esc.sequenceRows 
+            
+            for el in cu.TAG_LENGTH_ST26.keys():
+                currentRows = [r for r in rows if r[6] == el]
+                res[el] = len(currentRows)
+            return res 
+        
+        def countSt26ElementsFromXmlFile():
+            res = {}
+            with open(self.cleanXmlFilePath, 'r') as f:
+                xmlString = f.read()
+                for el in cu.TAG_LENGTH_ST26.keys():
+                    if el[0].islower():
+                        currentElement = el
+                    else:
+                        currentElement = '</%s>' % el 
+                    res[el] = xmlString.count(currentElement)
+            return res
+        
+        countCsv = countSt26ElementsFromCsvFile()
+        countXml = countSt26ElementsFromXmlFile()
+        
+        for el in cu.TAG_LENGTH_ST26:
+            c = countCsv[el]
+            x = countXml[el]
+            if c != x:
+                print el
+                print '%d in csv' %c, '%d in xml' %x 
+             
+#     helper just to make sure that csv and xml contain (mostly) the same elements
+    
+#     def compareElementsInCsvAndXmlFiles(self):
+#         
+#         def countSt26ElementsFromCsvFile(inFilePath):
+#             res = {}
+#             esc = ElementSizeCalculator(inFilePath)
+#             rows = esc.generalInformationRows + esc.sequenceRows 
+#             
+#             for el in cu.TAG_LENGTH_ST26.keys():
+#                 currentRows = [r for r in rows if r[6] == el]
+#                 res[el] = len(currentRows)
+#             return res 
+#         
+#         def countSt26ElementsFromXmlFile(inFilePath):
+#             res = {}
+#             with open(inFilePath, 'r') as f:
+#                 xmlString = f.read()
+#                 for el in cu.TAG_LENGTH_ST26.keys():
+#                     if el[0].islower():
+#                         currentElement = el
+#                     else:
+#                         currentElement = '</%s>' % el 
+#                     res[el] = xmlString.count(currentElement)
+#             return res
+#         
+#         countCsv = countSt26ElementsFromCsvFile(self.csvFilePath)
+# #         countXml = countSt26ElementsFromXmlFile(self.xmlFilePath)
+#         
+# #         for el in cu.TAG_LENGTH_ST26:
+# #             c = countCsv[el]
+# #             x = countXml[el]
+# #             if c != x:
+# #                 print el
+# #                 print '%d in csv' %c, '%d in xml' %x 
 

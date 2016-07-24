@@ -76,6 +76,10 @@ class SequenceListing(object):
         except IOError:
             # self.logger.exception("Invalid input file: %s" % self.in_file_name)
             print 'Invalid file name', inFile
+            
+        self.quantity_nuc = 0
+        self.quantity_prt = 0
+        self.quantity_mix = 0
 
     def generateSequence(self):
         '''
