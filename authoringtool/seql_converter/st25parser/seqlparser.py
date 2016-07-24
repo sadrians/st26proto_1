@@ -309,7 +309,7 @@ class Feature(object):
         self.featureHeader = '-'
         self.key = '-'
         self.location = '-'
-        self.description = '-'
+        self.description = su.DEFAULT_STRING
         self.translation = su.DEFAULT_STRING
 
         self.featureHeader = safeStrip(m.group('featureHeader'))

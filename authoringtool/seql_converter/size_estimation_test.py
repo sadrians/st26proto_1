@@ -712,8 +712,8 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         
         qualifierRows_seq7 = [row for row in self.esc_1004.sequenceRows 
                     if row[1] == '7' and row[6] == 'INSDQualifier_value']
-        translation_qual_seq7_first = qualifierRows_seq7[3]
-        translation_qual_seq7_second = qualifierRows_seq7[5]
+        translation_qual_seq7_first = qualifierRows_seq7[2]
+        translation_qual_seq7_second = qualifierRows_seq7[4]
         
         self.assertEqual(400, translation_qual_seq7_first[0])
         self.assertEqual('7', translation_qual_seq7_first[1])

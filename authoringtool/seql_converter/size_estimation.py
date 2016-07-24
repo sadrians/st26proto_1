@@ -514,15 +514,11 @@ class ElementSizeCalculator(object):
                 res.append(currentRow222)
                 
 # ====================== 223 ======================                
-#                 add element INSDFeature_quals
-                append_INSDFeature_quals(cu.BLANK_PLACEHOLDER)
-                
-                createQualifier('note', cu.BLANK_PLACEHOLDER)
-                
-#                 TODO: do not add row if 223 missing!
-                createQualifierValue(223, feat.description, 
-                                parsedFeature.description, 
-                                cu.BLANK_PLACEHOLDER)
+                if parsedFeature.key != cu.BLANK_PLACEHOLDER: #do not add row if 223 missing!
+                    createQualifier('note', cu.BLANK_PLACEHOLDER)
+                    createQualifierValue(223, feat.description, 
+                                        parsedFeature.description, 
+                                        cu.BLANK_PLACEHOLDER)
                                    
 # ====================== 400 ======================        
             if parsedSequence.molType == 'PRT':

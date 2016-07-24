@@ -99,9 +99,7 @@ class Test_St25To26Converter(TestCase):
          
         self.assertEqual("3'clip", features_s2[1].featureKey)
         self.assertEqual("1..30", features_s2[1].location)
-        
-
-        
+                
         sequences_1004 = self.sc1004.seql_st26.sequence_set.all()
         sequence_1004_1 = sequences_1004.get(sequenceIdNo=1)
         sequence_1004_7 = sequences_1004.get(sequenceIdNo=7)
@@ -111,6 +109,23 @@ class Test_St25To26Converter(TestCase):
         
         self.assertEqual("CDS", features_1004_1[1].featureKey)
         self.assertEqual("(1)..(903)", features_1004_1[1].location)
+        
+#         test that feature description missing is not converted to empty element
+        s1 = sequences.get(sequenceIdNo=1)
+        features_s1 = s1.feature_set.all()
+        for f in features_s1:
+            qualifiers = f.qualifier_set.all()
+            for q in qualifiers:
+                self.assertFalse(q.qualifierName in ['note', "NOTE"])
+        
+        features_s4 = s4.feature_set.all()
+        for f in features_s4:
+            qualifiers = f.qualifier_set.all()
+            for q in qualifiers:
+                if q.qualifierName == 'NOTE':
+                    exp = 'influenza virus A hemagglutinin subtype H9'
+                    self.assertEqual(exp, q.qualifierValue)
+                
 
 #         ============== tests for mixed mode ==================================   
         translQualifier_seq1 = features_1004_1[1].qualifier_set.all()[1]

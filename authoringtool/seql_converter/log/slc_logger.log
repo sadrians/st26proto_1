@@ -12428,3 +12428,1076 @@ Opening and ending tag mismatch: ApplicantNamex line 20 and ApplicantName, line 
 /Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml:42:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'SequenceData': This element is not expected. Expected is ( EarliestPriorityApplicationIdentification ).
 2016-07-24 08:32:14,488 - sequencelistings.views - INFO
 	Generated xml seql at sequencelistings/output/test_xmlsql.xml.
+2016-07-24 08:36:47,345 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params [])
+2016-07-24 08:36:47,425 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params [])
+2016-07-24 08:36:47,441 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, UNIQUE ("app_label", "model")); (params [])
+2016-07-24 08:36:47,442 - django.db.backends.schema - DEBUG
+	INSERT INTO "django_content_type__new" ("model", "app_label", "id", "name") SELECT "model", "app_label", "id", "name" FROM "django_content_type"; (params [])
+2016-07-24 08:36:47,442 - django.db.backends.schema - DEBUG
+	DROP TABLE "django_content_type"; (params [])
+2016-07-24 08:36:47,442 - django.db.backends.schema - DEBUG
+	ALTER TABLE "django_content_type__new" RENAME TO "django_content_type"; (params [])
+2016-07-24 08:36:47,460 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id"), "codename" varchar(100) NOT NULL, UNIQUE ("content_type_id", "codename")); (params [])
+2016-07-24 08:36:47,466 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params [])
+2016-07-24 08:36:47,467 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("group_id", "permission_id")); (params [])
+2016-07-24 08:36:47,478 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params [])
+2016-07-24 08:36:47,480 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), UNIQUE ("user_id", "group_id")); (params [])
+2016-07-24 08:36:47,481 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("user_id", "permission_id")); (params [])
+2016-07-24 08:36:47,482 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_permission_417f1b1c ON "auth_permission" ("content_type_id"); (params [])
+2016-07-24 08:36:47,482 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_0e939a4f ON "auth_group_permissions" ("group_id"); (params [])
+2016-07-24 08:36:47,482 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_8373b171 ON "auth_group_permissions" ("permission_id"); (params [])
+2016-07-24 08:36:47,482 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_e8701ad4 ON "auth_user_groups" ("user_id"); (params [])
+2016-07-24 08:36:47,483 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_0e939a4f ON "auth_user_groups" ("group_id"); (params [])
+2016-07-24 08:36:47,483 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_e8701ad4 ON "auth_user_user_permissions" ("user_id"); (params [])
+2016-07-24 08:36:47,483 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_8373b171 ON "auth_user_user_permissions" ("permission_id"); (params [])
+2016-07-24 08:36:47,515 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id"), "user_id" integer NOT NULL REFERENCES "auth_user" ("id")); (params [])
+2016-07-24 08:36:47,516 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_417f1b1c ON "django_admin_log" ("content_type_id"); (params [])
+2016-07-24 08:36:47,516 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_e8701ad4 ON "django_admin_log" ("user_id"); (params [])
+2016-07-24 08:36:47,546 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id")); (params [])
+2016-07-24 08:36:47,592 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id"), "activated" bool NOT NULL); (params [])
+2016-07-24 08:36:47,593 - django.db.backends.schema - DEBUG
+	INSERT INTO "registration_registrationprofile__new" ("activated", "activation_key", "user_id", "id") SELECT 0, "activation_key", "user_id", "id" FROM "registration_registrationprofile"; (params [])
+2016-07-24 08:36:47,593 - django.db.backends.schema - DEBUG
+	DROP TABLE "registration_registrationprofile"; (params [])
+2016-07-24 08:36:47,593 - django.db.backends.schema - DEBUG
+	ALTER TABLE "registration_registrationprofile__new" RENAME TO "registration_registrationprofile"; (params [])
+2016-07-24 08:36:47,647 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL); (params [])
+2016-07-24 08:36:47,651 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_qualifier" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "qualifierName" varchar(100) NOT NULL, "qualifierValue" varchar(1000) NOT NULL, "feature_id" integer NOT NULL REFERENCES "sequencelistings_feature" ("id")); (params [])
+2016-07-24 08:36:47,656 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL); (params [])
+2016-07-24 08:36:47,666 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL); (params [])
+2016-07-24 08:36:47,681 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_title" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "inventionTitle" varchar(200) NOT NULL, "inventionTitleLanguageCode" varchar(2) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-24 08:36:47,695 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-24 08:36:47,696 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:36:47,696 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:36:47,696 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:36:47,697 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_qualifier_86d175dd ON "sequencelistings_qualifier" ("feature_id"); (params [])
+2016-07-24 08:36:47,697 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_title_3c9ce7d7 ON "sequencelistings_title" ("sequenceListing_id"); (params [])
+2016-07-24 08:36:47,697 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:36:47,711 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL, "sequence_id" integer NOT NULL REFERENCES "sequencelistings_sequence" ("id")); (params [])
+2016-07-24 08:36:47,711 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_feature__new" ("location", "id", "featureKey") SELECT "location", "id", "featureKey" FROM "sequencelistings_feature"; (params [])
+2016-07-24 08:36:47,712 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_feature"; (params [])
+2016-07-24 08:36:47,712 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_feature__new" RENAME TO "sequencelistings_feature"; (params [])
+2016-07-24 08:36:47,712 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_feature_d9cd7378 ON "sequencelistings_feature" ("sequence_id"); (params [])
+2016-07-24 08:36:47,749 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-24 08:36:47,749 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:36:47,750 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:36:47,750 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:36:47,750 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:36:47,796 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-24 08:36:47,797 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:36:47,797 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:36:47,797 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:36:47,798 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:36:47,856 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-24 08:36:47,857 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", 0, "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:36:47,857 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:36:47,858 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:36:47,949 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-24 08:36:47,950 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:36:47,950 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:36:47,951 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:36:47,955 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params [])
+2016-07-24 08:36:47,955 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_session_de54fa62 ON "django_session" ("expire_date"); (params [])
+2016-07-24 08:48:44,261 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params [])
+2016-07-24 08:48:44,298 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params [])
+2016-07-24 08:48:44,302 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, UNIQUE ("app_label", "model")); (params [])
+2016-07-24 08:48:44,302 - django.db.backends.schema - DEBUG
+	INSERT INTO "django_content_type__new" ("model", "app_label", "id", "name") SELECT "model", "app_label", "id", "name" FROM "django_content_type"; (params [])
+2016-07-24 08:48:44,303 - django.db.backends.schema - DEBUG
+	DROP TABLE "django_content_type"; (params [])
+2016-07-24 08:48:44,303 - django.db.backends.schema - DEBUG
+	ALTER TABLE "django_content_type__new" RENAME TO "django_content_type"; (params [])
+2016-07-24 08:48:44,319 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id"), "codename" varchar(100) NOT NULL, UNIQUE ("content_type_id", "codename")); (params [])
+2016-07-24 08:48:44,326 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params [])
+2016-07-24 08:48:44,327 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("group_id", "permission_id")); (params [])
+2016-07-24 08:48:44,340 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params [])
+2016-07-24 08:48:44,342 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), UNIQUE ("user_id", "group_id")); (params [])
+2016-07-24 08:48:44,343 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("user_id", "permission_id")); (params [])
+2016-07-24 08:48:44,344 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_permission_417f1b1c ON "auth_permission" ("content_type_id"); (params [])
+2016-07-24 08:48:44,344 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_0e939a4f ON "auth_group_permissions" ("group_id"); (params [])
+2016-07-24 08:48:44,345 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_8373b171 ON "auth_group_permissions" ("permission_id"); (params [])
+2016-07-24 08:48:44,345 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_e8701ad4 ON "auth_user_groups" ("user_id"); (params [])
+2016-07-24 08:48:44,345 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_0e939a4f ON "auth_user_groups" ("group_id"); (params [])
+2016-07-24 08:48:44,346 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_e8701ad4 ON "auth_user_user_permissions" ("user_id"); (params [])
+2016-07-24 08:48:44,346 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_8373b171 ON "auth_user_user_permissions" ("permission_id"); (params [])
+2016-07-24 08:48:44,395 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id"), "user_id" integer NOT NULL REFERENCES "auth_user" ("id")); (params [])
+2016-07-24 08:48:44,395 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_417f1b1c ON "django_admin_log" ("content_type_id"); (params [])
+2016-07-24 08:48:44,396 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_e8701ad4 ON "django_admin_log" ("user_id"); (params [])
+2016-07-24 08:48:44,452 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id")); (params [])
+2016-07-24 08:48:44,526 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id"), "activated" bool NOT NULL); (params [])
+2016-07-24 08:48:44,526 - django.db.backends.schema - DEBUG
+	INSERT INTO "registration_registrationprofile__new" ("activated", "activation_key", "user_id", "id") SELECT 0, "activation_key", "user_id", "id" FROM "registration_registrationprofile"; (params [])
+2016-07-24 08:48:44,526 - django.db.backends.schema - DEBUG
+	DROP TABLE "registration_registrationprofile"; (params [])
+2016-07-24 08:48:44,527 - django.db.backends.schema - DEBUG
+	ALTER TABLE "registration_registrationprofile__new" RENAME TO "registration_registrationprofile"; (params [])
+2016-07-24 08:48:44,584 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL); (params [])
+2016-07-24 08:48:44,587 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_qualifier" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "qualifierName" varchar(100) NOT NULL, "qualifierValue" varchar(1000) NOT NULL, "feature_id" integer NOT NULL REFERENCES "sequencelistings_feature" ("id")); (params [])
+2016-07-24 08:48:44,593 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL); (params [])
+2016-07-24 08:48:44,613 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL); (params [])
+2016-07-24 08:48:44,630 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_title" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "inventionTitle" varchar(200) NOT NULL, "inventionTitleLanguageCode" varchar(2) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-24 08:48:44,644 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-24 08:48:44,644 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:48:44,644 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:48:44,645 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:48:44,645 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_qualifier_86d175dd ON "sequencelistings_qualifier" ("feature_id"); (params [])
+2016-07-24 08:48:44,645 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_title_3c9ce7d7 ON "sequencelistings_title" ("sequenceListing_id"); (params [])
+2016-07-24 08:48:44,646 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:48:44,661 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL, "sequence_id" integer NOT NULL REFERENCES "sequencelistings_sequence" ("id")); (params [])
+2016-07-24 08:48:44,661 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_feature__new" ("location", "id", "featureKey") SELECT "location", "id", "featureKey" FROM "sequencelistings_feature"; (params [])
+2016-07-24 08:48:44,661 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_feature"; (params [])
+2016-07-24 08:48:44,662 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_feature__new" RENAME TO "sequencelistings_feature"; (params [])
+2016-07-24 08:48:44,662 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_feature_d9cd7378 ON "sequencelistings_feature" ("sequence_id"); (params [])
+2016-07-24 08:48:44,701 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-24 08:48:44,701 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:48:44,702 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:48:44,702 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:48:44,702 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:48:44,748 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-24 08:48:44,749 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:48:44,749 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:48:44,750 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:48:44,750 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:48:44,809 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-24 08:48:44,810 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", 0, "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:48:44,810 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:48:44,810 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:48:44,900 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-24 08:48:44,900 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:48:44,901 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:48:44,901 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:48:44,905 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params [])
+2016-07-24 08:48:44,905 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_session_de54fa62 ON "django_session" ("expire_date"); (params [])
+2016-07-24 08:51:23,792 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params [])
+2016-07-24 08:51:23,829 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params [])
+2016-07-24 08:51:23,832 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, UNIQUE ("app_label", "model")); (params [])
+2016-07-24 08:51:23,833 - django.db.backends.schema - DEBUG
+	INSERT INTO "django_content_type__new" ("model", "app_label", "id", "name") SELECT "model", "app_label", "id", "name" FROM "django_content_type"; (params [])
+2016-07-24 08:51:23,833 - django.db.backends.schema - DEBUG
+	DROP TABLE "django_content_type"; (params [])
+2016-07-24 08:51:23,833 - django.db.backends.schema - DEBUG
+	ALTER TABLE "django_content_type__new" RENAME TO "django_content_type"; (params [])
+2016-07-24 08:51:23,848 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id"), "codename" varchar(100) NOT NULL, UNIQUE ("content_type_id", "codename")); (params [])
+2016-07-24 08:51:23,854 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params [])
+2016-07-24 08:51:23,855 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("group_id", "permission_id")); (params [])
+2016-07-24 08:51:23,867 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params [])
+2016-07-24 08:51:23,869 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), UNIQUE ("user_id", "group_id")); (params [])
+2016-07-24 08:51:23,870 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("user_id", "permission_id")); (params [])
+2016-07-24 08:51:23,870 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_permission_417f1b1c ON "auth_permission" ("content_type_id"); (params [])
+2016-07-24 08:51:23,870 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_0e939a4f ON "auth_group_permissions" ("group_id"); (params [])
+2016-07-24 08:51:23,871 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_8373b171 ON "auth_group_permissions" ("permission_id"); (params [])
+2016-07-24 08:51:23,871 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_e8701ad4 ON "auth_user_groups" ("user_id"); (params [])
+2016-07-24 08:51:23,871 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_0e939a4f ON "auth_user_groups" ("group_id"); (params [])
+2016-07-24 08:51:23,872 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_e8701ad4 ON "auth_user_user_permissions" ("user_id"); (params [])
+2016-07-24 08:51:23,872 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_8373b171 ON "auth_user_user_permissions" ("permission_id"); (params [])
+2016-07-24 08:51:23,904 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id"), "user_id" integer NOT NULL REFERENCES "auth_user" ("id")); (params [])
+2016-07-24 08:51:23,904 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_417f1b1c ON "django_admin_log" ("content_type_id"); (params [])
+2016-07-24 08:51:23,905 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_e8701ad4 ON "django_admin_log" ("user_id"); (params [])
+2016-07-24 08:51:23,938 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id")); (params [])
+2016-07-24 08:51:23,985 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id"), "activated" bool NOT NULL); (params [])
+2016-07-24 08:51:23,985 - django.db.backends.schema - DEBUG
+	INSERT INTO "registration_registrationprofile__new" ("activated", "activation_key", "user_id", "id") SELECT 0, "activation_key", "user_id", "id" FROM "registration_registrationprofile"; (params [])
+2016-07-24 08:51:23,985 - django.db.backends.schema - DEBUG
+	DROP TABLE "registration_registrationprofile"; (params [])
+2016-07-24 08:51:23,986 - django.db.backends.schema - DEBUG
+	ALTER TABLE "registration_registrationprofile__new" RENAME TO "registration_registrationprofile"; (params [])
+2016-07-24 08:51:24,038 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL); (params [])
+2016-07-24 08:51:24,042 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_qualifier" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "qualifierName" varchar(100) NOT NULL, "qualifierValue" varchar(1000) NOT NULL, "feature_id" integer NOT NULL REFERENCES "sequencelistings_feature" ("id")); (params [])
+2016-07-24 08:51:24,047 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL); (params [])
+2016-07-24 08:51:24,056 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL); (params [])
+2016-07-24 08:51:24,074 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_title" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "inventionTitle" varchar(200) NOT NULL, "inventionTitleLanguageCode" varchar(2) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-24 08:51:24,089 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-24 08:51:24,090 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:51:24,090 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:51:24,090 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:51:24,091 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_qualifier_86d175dd ON "sequencelistings_qualifier" ("feature_id"); (params [])
+2016-07-24 08:51:24,091 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_title_3c9ce7d7 ON "sequencelistings_title" ("sequenceListing_id"); (params [])
+2016-07-24 08:51:24,091 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:51:24,106 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL, "sequence_id" integer NOT NULL REFERENCES "sequencelistings_sequence" ("id")); (params [])
+2016-07-24 08:51:24,106 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_feature__new" ("location", "id", "featureKey") SELECT "location", "id", "featureKey" FROM "sequencelistings_feature"; (params [])
+2016-07-24 08:51:24,106 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_feature"; (params [])
+2016-07-24 08:51:24,107 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_feature__new" RENAME TO "sequencelistings_feature"; (params [])
+2016-07-24 08:51:24,107 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_feature_d9cd7378 ON "sequencelistings_feature" ("sequence_id"); (params [])
+2016-07-24 08:51:24,144 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-24 08:51:24,145 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:51:24,145 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:51:24,146 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:51:24,146 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:51:24,192 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-24 08:51:24,193 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:51:24,193 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:51:24,193 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:51:24,194 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:51:24,255 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-24 08:51:24,256 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", 0, "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:51:24,256 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:51:24,256 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:51:24,345 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-24 08:51:24,346 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:51:24,346 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:51:24,346 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:51:24,350 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params [])
+2016-07-24 08:51:24,351 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_session_de54fa62 ON "django_session" ("expire_date"); (params [])
+2016-07-24 08:54:02,874 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params [])
+2016-07-24 08:54:02,914 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params [])
+2016-07-24 08:54:02,917 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, UNIQUE ("app_label", "model")); (params [])
+2016-07-24 08:54:02,918 - django.db.backends.schema - DEBUG
+	INSERT INTO "django_content_type__new" ("model", "app_label", "id", "name") SELECT "model", "app_label", "id", "name" FROM "django_content_type"; (params [])
+2016-07-24 08:54:02,918 - django.db.backends.schema - DEBUG
+	DROP TABLE "django_content_type"; (params [])
+2016-07-24 08:54:02,918 - django.db.backends.schema - DEBUG
+	ALTER TABLE "django_content_type__new" RENAME TO "django_content_type"; (params [])
+2016-07-24 08:54:02,933 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id"), "codename" varchar(100) NOT NULL, UNIQUE ("content_type_id", "codename")); (params [])
+2016-07-24 08:54:02,939 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params [])
+2016-07-24 08:54:02,940 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("group_id", "permission_id")); (params [])
+2016-07-24 08:54:02,952 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params [])
+2016-07-24 08:54:02,954 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), UNIQUE ("user_id", "group_id")); (params [])
+2016-07-24 08:54:02,955 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("user_id", "permission_id")); (params [])
+2016-07-24 08:54:02,956 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_permission_417f1b1c ON "auth_permission" ("content_type_id"); (params [])
+2016-07-24 08:54:02,956 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_0e939a4f ON "auth_group_permissions" ("group_id"); (params [])
+2016-07-24 08:54:02,956 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_8373b171 ON "auth_group_permissions" ("permission_id"); (params [])
+2016-07-24 08:54:02,957 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_e8701ad4 ON "auth_user_groups" ("user_id"); (params [])
+2016-07-24 08:54:02,957 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_0e939a4f ON "auth_user_groups" ("group_id"); (params [])
+2016-07-24 08:54:02,957 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_e8701ad4 ON "auth_user_user_permissions" ("user_id"); (params [])
+2016-07-24 08:54:02,957 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_8373b171 ON "auth_user_user_permissions" ("permission_id"); (params [])
+2016-07-24 08:54:02,990 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id"), "user_id" integer NOT NULL REFERENCES "auth_user" ("id")); (params [])
+2016-07-24 08:54:02,990 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_417f1b1c ON "django_admin_log" ("content_type_id"); (params [])
+2016-07-24 08:54:02,991 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_e8701ad4 ON "django_admin_log" ("user_id"); (params [])
+2016-07-24 08:54:03,021 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id")); (params [])
+2016-07-24 08:54:03,068 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id"), "activated" bool NOT NULL); (params [])
+2016-07-24 08:54:03,068 - django.db.backends.schema - DEBUG
+	INSERT INTO "registration_registrationprofile__new" ("activated", "activation_key", "user_id", "id") SELECT 0, "activation_key", "user_id", "id" FROM "registration_registrationprofile"; (params [])
+2016-07-24 08:54:03,068 - django.db.backends.schema - DEBUG
+	DROP TABLE "registration_registrationprofile"; (params [])
+2016-07-24 08:54:03,069 - django.db.backends.schema - DEBUG
+	ALTER TABLE "registration_registrationprofile__new" RENAME TO "registration_registrationprofile"; (params [])
+2016-07-24 08:54:03,122 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL); (params [])
+2016-07-24 08:54:03,126 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_qualifier" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "qualifierName" varchar(100) NOT NULL, "qualifierValue" varchar(1000) NOT NULL, "feature_id" integer NOT NULL REFERENCES "sequencelistings_feature" ("id")); (params [])
+2016-07-24 08:54:03,131 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL); (params [])
+2016-07-24 08:54:03,141 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL); (params [])
+2016-07-24 08:54:03,157 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_title" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "inventionTitle" varchar(200) NOT NULL, "inventionTitleLanguageCode" varchar(2) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-24 08:54:03,171 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-24 08:54:03,172 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:54:03,172 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:54:03,172 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:54:03,173 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_qualifier_86d175dd ON "sequencelistings_qualifier" ("feature_id"); (params [])
+2016-07-24 08:54:03,173 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_title_3c9ce7d7 ON "sequencelistings_title" ("sequenceListing_id"); (params [])
+2016-07-24 08:54:03,173 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:54:03,187 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL, "sequence_id" integer NOT NULL REFERENCES "sequencelistings_sequence" ("id")); (params [])
+2016-07-24 08:54:03,188 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_feature__new" ("location", "id", "featureKey") SELECT "location", "id", "featureKey" FROM "sequencelistings_feature"; (params [])
+2016-07-24 08:54:03,188 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_feature"; (params [])
+2016-07-24 08:54:03,188 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_feature__new" RENAME TO "sequencelistings_feature"; (params [])
+2016-07-24 08:54:03,189 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_feature_d9cd7378 ON "sequencelistings_feature" ("sequence_id"); (params [])
+2016-07-24 08:54:03,226 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-24 08:54:03,227 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:54:03,227 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:54:03,227 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:54:03,228 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:54:03,274 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-24 08:54:03,274 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:54:03,275 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:54:03,275 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:54:03,275 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:54:03,334 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-24 08:54:03,335 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", 0, "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:54:03,335 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:54:03,336 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:54:03,424 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-24 08:54:03,424 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:54:03,425 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:54:03,425 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:54:03,429 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params [])
+2016-07-24 08:54:03,429 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_session_de54fa62 ON "django_session" ("expire_date"); (params [])
+2016-07-24 08:58:34,777 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params [])
+2016-07-24 08:58:34,809 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params [])
+2016-07-24 08:58:34,812 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_content_type__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, UNIQUE ("app_label", "model")); (params [])
+2016-07-24 08:58:34,813 - django.db.backends.schema - DEBUG
+	INSERT INTO "django_content_type__new" ("model", "app_label", "id", "name") SELECT "model", "app_label", "id", "name" FROM "django_content_type"; (params [])
+2016-07-24 08:58:34,813 - django.db.backends.schema - DEBUG
+	DROP TABLE "django_content_type"; (params [])
+2016-07-24 08:58:34,813 - django.db.backends.schema - DEBUG
+	ALTER TABLE "django_content_type__new" RENAME TO "django_content_type"; (params [])
+2016-07-24 08:58:34,828 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_permission" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL REFERENCES "django_content_type" ("id"), "codename" varchar(100) NOT NULL, UNIQUE ("content_type_id", "codename")); (params [])
+2016-07-24 08:58:34,834 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(80) NOT NULL UNIQUE); (params [])
+2016-07-24 08:58:34,835 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_group_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("group_id", "permission_id")); (params [])
+2016-07-24 08:58:34,849 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "password" varchar(128) NOT NULL, "last_login" datetime NOT NULL, "is_superuser" bool NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" bool NOT NULL, "is_active" bool NOT NULL, "date_joined" datetime NOT NULL); (params [])
+2016-07-24 08:58:34,850 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "group_id" integer NOT NULL REFERENCES "auth_group" ("id"), UNIQUE ("user_id", "group_id")); (params [])
+2016-07-24 08:58:34,851 - django.db.backends.schema - DEBUG
+	CREATE TABLE "auth_user_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "user_id" integer NOT NULL REFERENCES "auth_user" ("id"), "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id"), UNIQUE ("user_id", "permission_id")); (params [])
+2016-07-24 08:58:34,852 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_permission_417f1b1c ON "auth_permission" ("content_type_id"); (params [])
+2016-07-24 08:58:34,852 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_0e939a4f ON "auth_group_permissions" ("group_id"); (params [])
+2016-07-24 08:58:34,852 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_group_permissions_8373b171 ON "auth_group_permissions" ("permission_id"); (params [])
+2016-07-24 08:58:34,853 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_e8701ad4 ON "auth_user_groups" ("user_id"); (params [])
+2016-07-24 08:58:34,853 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_groups_0e939a4f ON "auth_user_groups" ("group_id"); (params [])
+2016-07-24 08:58:34,853 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_e8701ad4 ON "auth_user_user_permissions" ("user_id"); (params [])
+2016-07-24 08:58:34,854 - django.db.backends.schema - DEBUG
+	CREATE INDEX auth_user_user_permissions_8373b171 ON "auth_user_user_permissions" ("permission_id"); (params [])
+2016-07-24 08:58:34,886 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_admin_log" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "action_time" datetime NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint unsigned NOT NULL, "change_message" text NOT NULL, "content_type_id" integer NULL REFERENCES "django_content_type" ("id"), "user_id" integer NOT NULL REFERENCES "auth_user" ("id")); (params [])
+2016-07-24 08:58:34,887 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_417f1b1c ON "django_admin_log" ("content_type_id"); (params [])
+2016-07-24 08:58:34,887 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_admin_log_e8701ad4 ON "django_admin_log" ("user_id"); (params [])
+2016-07-24 08:58:34,917 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id")); (params [])
+2016-07-24 08:58:34,965 - django.db.backends.schema - DEBUG
+	CREATE TABLE "registration_registrationprofile__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "activation_key" varchar(40) NOT NULL, "user_id" integer NOT NULL UNIQUE REFERENCES "auth_user" ("id"), "activated" bool NOT NULL); (params [])
+2016-07-24 08:58:34,966 - django.db.backends.schema - DEBUG
+	INSERT INTO "registration_registrationprofile__new" ("activated", "activation_key", "user_id", "id") SELECT 0, "activation_key", "user_id", "id" FROM "registration_registrationprofile"; (params [])
+2016-07-24 08:58:34,966 - django.db.backends.schema - DEBUG
+	DROP TABLE "registration_registrationprofile"; (params [])
+2016-07-24 08:58:34,966 - django.db.backends.schema - DEBUG
+	ALTER TABLE "registration_registrationprofile__new" RENAME TO "registration_registrationprofile"; (params [])
+2016-07-24 08:58:35,050 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL); (params [])
+2016-07-24 08:58:35,054 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_qualifier" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "qualifierName" varchar(100) NOT NULL, "qualifierValue" varchar(1000) NOT NULL, "feature_id" integer NOT NULL REFERENCES "sequencelistings_feature" ("id")); (params [])
+2016-07-24 08:58:35,059 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL); (params [])
+2016-07-24 08:58:35,069 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL); (params [])
+2016-07-24 08:58:35,081 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_title" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "inventionTitle" varchar(200) NOT NULL, "inventionTitleLanguageCode" varchar(2) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-24 08:58:35,095 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "residues" text NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id")); (params [])
+2016-07-24 08:58:35,095 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:58:35,096 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:58:35,096 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:58:35,096 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_qualifier_86d175dd ON "sequencelistings_qualifier" ("feature_id"); (params [])
+2016-07-24 08:58:35,096 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_title_3c9ce7d7 ON "sequencelistings_title" ("sequenceListing_id"); (params [])
+2016-07-24 08:58:35,097 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:58:35,111 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_feature__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "featureKey" varchar(100) NOT NULL, "location" varchar(100) NOT NULL, "sequence_id" integer NOT NULL REFERENCES "sequencelistings_sequence" ("id")); (params [])
+2016-07-24 08:58:35,111 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_feature__new" ("location", "id", "featureKey") SELECT "location", "id", "featureKey" FROM "sequencelistings_feature"; (params [])
+2016-07-24 08:58:35,112 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_feature"; (params [])
+2016-07-24 08:58:35,112 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_feature__new" RENAME TO "sequencelistings_feature"; (params [])
+2016-07-24 08:58:35,112 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_feature_d9cd7378 ON "sequencelistings_feature" ("sequence_id"); (params [])
+2016-07-24 08:58:35,151 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-24 08:58:35,151 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:58:35,152 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:58:35,152 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:58:35,152 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:58:35,202 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequence__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "sequenceIdNo" integer NOT NULL, "length" integer NOT NULL, "moltype" varchar(3) NOT NULL, "division" varchar(3) NOT NULL, "otherSeqId" varchar(100) NOT NULL, "sequenceListing_id" integer NOT NULL REFERENCES "sequencelistings_sequencelisting" ("id"), "residues" text NOT NULL); (params [])
+2016-07-24 08:58:35,203 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequence__new" ("sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId") SELECT "sequenceIdNo", "sequenceListing_id", "division", "residues", "length", "moltype", "id", "otherSeqId" FROM "sequencelistings_sequence"; (params [])
+2016-07-24 08:58:35,203 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequence"; (params [])
+2016-07-24 08:58:35,203 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequence__new" RENAME TO "sequencelistings_sequence"; (params [])
+2016-07-24 08:58:35,204 - django.db.backends.schema - DEBUG
+	CREATE INDEX sequencelistings_sequence_3c9ce7d7 ON "sequencelistings_sequence" ("sequenceListing_id"); (params [])
+2016-07-24 08:58:35,257 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-24 08:58:35,258 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", 0, "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:58:35,258 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:58:35,259 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:58:35,322 - django.db.backends.schema - DEBUG
+	CREATE TABLE "sequencelistings_sequencelisting__new" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "fileName" varchar(100) NOT NULL, "dtdVersion" varchar(10) NOT NULL, "softwareName" varchar(50) NOT NULL, "softwareVersion" varchar(100) NOT NULL, "productionDate" date NOT NULL, "IPOfficeCode" varchar(2) NOT NULL, "applicationNumberText" varchar(20) NOT NULL, "filingDate" date NOT NULL, "applicantFileReference" varchar(30) NOT NULL, "earliestPriorityIPOfficeCode" varchar(2) NOT NULL, "earliestPriorityApplicationNumberText" varchar(20) NOT NULL, "earliestPriorityFilingDate" date NOT NULL, "applicantName" varchar(200) NOT NULL, "applicantNameLanguageCode" varchar(2) NOT NULL, "applicantNameLatin" varchar(200) NOT NULL, "inventorName" varchar(200) NOT NULL, "inventorNameLanguageCode" varchar(2) NOT NULL, "inventorNameLatin" varchar(200) NOT NULL, "sequenceTotalQuantity" integer NOT NULL, "isEditable" bool NOT NULL); (params [])
+2016-07-24 08:58:35,323 - django.db.backends.schema - DEBUG
+	INSERT INTO "sequencelistings_sequencelisting__new" ("earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity") SELECT "earliestPriorityFilingDate", "applicantNameLanguageCode", "filingDate", "isEditable", "earliestPriorityIPOfficeCode", "IPOfficeCode", "applicantNameLatin", "dtdVersion", "softwareName", "fileName", "earliestPriorityApplicationNumberText", "applicationNumberText", "softwareVersion", "inventorNameLanguageCode", "inventorName", "inventorNameLatin", "applicantFileReference", "applicantName", "productionDate", "id", "sequenceTotalQuantity" FROM "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:58:35,323 - django.db.backends.schema - DEBUG
+	DROP TABLE "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:58:35,323 - django.db.backends.schema - DEBUG
+	ALTER TABLE "sequencelistings_sequencelisting__new" RENAME TO "sequencelistings_sequencelisting"; (params [])
+2016-07-24 08:58:35,327 - django.db.backends.schema - DEBUG
+	CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params [])
+2016-07-24 08:58:35,328 - django.db.backends.schema - DEBUG
+	CREATE INDEX django_session_de54fa62 ON "django_session" ("expire_date"); (params [])
+2016-07-24 08:58:38,574 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54120/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2016-07-24 08:58:38,657 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:38,657 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54120/hub/session/40e64459-803a-8d4c-87c3-64fab208b35e/timeouts/implicit_wait {"sessionId": "40e64459-803a-8d4c-87c3-64fab208b35e", "ms": 3000.0}
+2016-07-24 08:58:38,679 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:38,679 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54120/hub/session/40e64459-803a-8d4c-87c3-64fab208b35e/url {"url": "http://localhost:8081/sequencelistings/about", "sessionId": "40e64459-803a-8d4c-87c3-64fab208b35e"}
+2016-07-24 08:58:38,807 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-24 08:58:38,988 - django.request - WARNING
+	Not Found: /static/images/rango.jpg
+2016-07-24 08:58:39,093 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:39,094 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:54120/hub/session/40e64459-803a-8d4c-87c3-64fab208b35e/title {"sessionId": "40e64459-803a-8d4c-87c3-64fab208b35e"}
+2016-07-24 08:58:39,125 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:39,126 - selenium.webdriver.remote.remote_connection - DEBUG
+	DELETE http://127.0.0.1:54120/hub/session/40e64459-803a-8d4c-87c3-64fab208b35e {"sessionId": "40e64459-803a-8d4c-87c3-64fab208b35e"}
+2016-07-24 08:58:39,132 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:42,437 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2016-07-24 08:58:42,506 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:42,507 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/timeouts/implicit_wait {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "ms": 3000.0}
+2016-07-24 08:58:42,515 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:42,515 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/url {"url": "http://localhost:8081/sequencelistings/", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7"}
+2016-07-24 08:58:42,597 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-24 08:58:42,800 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:42,801 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/elements {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "add_seql_link"}
+2016-07-24 08:58:45,822 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:45,823 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/url {"url": "http://localhost:8081/accounts/register/", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7"}
+2016-07-24 08:58:45,867 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-24 08:58:46,044 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:46,045 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_username"}
+2016-07-24 08:58:46,125 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:46,126 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_email"}
+2016-07-24 08:58:46,133 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:46,133 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_password1"}
+2016-07-24 08:58:46,139 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:46,139 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_password2"}
+2016-07-24 08:58:46,147 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:46,147 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{a83a2cda-0721-fe49-ba50-4c3bcb6a6739}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{a83a2cda-0721-fe49-ba50-4c3bcb6a6739}", "value": ["u", "s", "e", "r", "2", "0"]}
+2016-07-24 08:58:46,210 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:46,210 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{908cad73-1a18-524c-825d-f894affabc25}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{908cad73-1a18-524c-825d-f894affabc25}", "value": ["u", "s", "e", "r", "2", "0", "@", "e", "m", "a", "i", "l", ".", "c", "o", "m"]}
+2016-07-24 08:58:46,295 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:46,295 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{0096efa4-adcb-6f41-a11a-2ed605a1cf7d}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{0096efa4-adcb-6f41-a11a-2ed605a1cf7d}", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "2", "0"]}
+2016-07-24 08:58:46,362 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:46,363 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{753896cd-ca6a-344e-8ecc-b34cab510cb0}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{753896cd-ca6a-344e-8ecc-b34cab510cb0}", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "2", "0"]}
+2016-07-24 08:58:46,422 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:46,422 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "class name", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "btn"}
+2016-07-24 08:58:46,433 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:46,433 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{7498922d-0b76-034d-bb95-7086039e02f4}/click {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{7498922d-0b76-034d-bb95-7086039e02f4}"}
+2016-07-24 08:58:46,806 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-24 08:58:46,930 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:46,930 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/url {"url": "http://localhost:8081/sequencelistings/add_sequencelisting", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7"}
+2016-07-24 08:58:46,991 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-24 08:58:47,186 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,187 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "tag name", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "h2"}
+2016-07-24 08:58:47,195 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,196 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{de6527c9-075f-0841-8b3c-1b8d1e571656}/text {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{de6527c9-075f-0841-8b3c-1b8d1e571656}"}
+2016-07-24 08:58:47,207 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,207 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_inventionTitle"}
+2016-07-24 08:58:47,214 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,214 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_inventionTitleLanguageCode"}
+2016-07-24 08:58:47,220 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,221 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_fileName"}
+2016-07-24 08:58:47,227 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,228 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_applicantFileReference"}
+2016-07-24 08:58:47,234 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,234 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_IPOfficeCode"}
+2016-07-24 08:58:47,240 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,240 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_applicationNumberText"}
+2016-07-24 08:58:47,246 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,246 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_filingDate"}
+2016-07-24 08:58:47,252 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,253 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_earliestPriorityIPOfficeCode"}
+2016-07-24 08:58:47,259 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,259 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_earliestPriorityApplicationNumberText"}
+2016-07-24 08:58:47,265 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,265 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_earliestPriorityFilingDate"}
+2016-07-24 08:58:47,271 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,272 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_applicantName"}
+2016-07-24 08:58:47,277 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,278 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_applicantNameLanguageCode"}
+2016-07-24 08:58:47,285 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,285 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_applicantNameLatin"}
+2016-07-24 08:58:47,292 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,292 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_inventorName"}
+2016-07-24 08:58:47,298 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,298 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_inventorNameLanguageCode"}
+2016-07-24 08:58:47,304 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,304 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "id_inventorNameLatin"}
+2016-07-24 08:58:47,310 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,310 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{11272dd3-ace5-0248-a786-27b730ed1771}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{11272dd3-ace5-0248-a786-27b730ed1771}", "value": ["a"]}
+2016-07-24 08:58:47,351 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,351 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{2c67b36f-a53c-1a4a-880c-7dfdd60ccf13}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{2c67b36f-a53c-1a4a-880c-7dfdd60ccf13}", "value": ["b"]}
+2016-07-24 08:58:47,386 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,386 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{da3cf637-9752-214e-974d-7798433373df}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{da3cf637-9752-214e-974d-7798433373df}", "value": ["s", "e", "l", "e", "n", "i", "u", "m", "_", "t", "e", "s", "t", "_", "f", "i", "l", "e", "_", "n", "a", "m", "e"]}
+2016-07-24 08:58:47,482 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,483 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{8cc7f5e6-a7f5-6149-87f4-f96ab2e98cc0}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{8cc7f5e6-a7f5-6149-87f4-f96ab2e98cc0}", "value": ["d"]}
+2016-07-24 08:58:47,516 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,516 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{612c67c5-9bee-4a46-87d6-caf6cdcdd1c6}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{612c67c5-9bee-4a46-87d6-caf6cdcdd1c6}", "value": ["e"]}
+2016-07-24 08:58:47,547 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,548 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{c7f1c770-8888-2e4f-8275-f694166f60a2}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{c7f1c770-8888-2e4f-8275-f694166f60a2}", "value": ["f"]}
+2016-07-24 08:58:47,583 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,583 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{4df2015a-d16a-a546-9c24-3ee932633867}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{4df2015a-d16a-a546-9c24-3ee932633867}", "value": ["2", "0", "1", "0", "-", "1", "2", "-", "2", "0"]}
+2016-07-24 08:58:47,647 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,647 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{d91c28af-d45a-8c4d-8739-cba43a2ce0bd}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{d91c28af-d45a-8c4d-8739-cba43a2ce0bd}", "value": ["g"]}
+2016-07-24 08:58:47,683 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,683 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{96a5e601-7134-3f48-b25b-7c31806fd81e}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{96a5e601-7134-3f48-b25b-7c31806fd81e}", "value": ["h"]}
+2016-07-24 08:58:47,716 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,716 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{30c0d850-ddfc-8948-b574-b333f5fd4b26}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{30c0d850-ddfc-8948-b574-b333f5fd4b26}", "value": ["2", "0", "0", "9", "-", "1", "2", "-", "2", "0"]}
+2016-07-24 08:58:47,771 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,771 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{81f72a32-fa64-bb4f-9922-99e48ca48673}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{81f72a32-fa64-bb4f-9922-99e48ca48673}", "value": ["i"]}
+2016-07-24 08:58:47,805 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,805 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{7476bb0f-2f25-8d45-9cab-6733522fcc01}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{7476bb0f-2f25-8d45-9cab-6733522fcc01}", "value": ["j"]}
+2016-07-24 08:58:47,845 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,845 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{9036da22-2c9e-4c4e-941b-f1364e805eb8}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{9036da22-2c9e-4c4e-941b-f1364e805eb8}", "value": ["k"]}
+2016-07-24 08:58:47,880 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,880 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{f6ab6a9c-13b2-8546-9e26-8a6b54972d32}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{f6ab6a9c-13b2-8546-9e26-8a6b54972d32}", "value": ["l"]}
+2016-07-24 08:58:47,920 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,920 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{9d4e694a-8b58-9c4b-ac9d-2b60508a465c}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{9d4e694a-8b58-9c4b-ac9d-2b60508a465c}", "value": ["m"]}
+2016-07-24 08:58:47,950 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,950 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{24be257a-f1c8-cd40-aad2-69f08f7f14ab}/value {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{24be257a-f1c8-cd40-aad2-69f08f7f14ab}", "value": ["n"]}
+2016-07-24 08:58:47,981 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:47,982 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "xpath", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "//input[@value=\"Submit\"]"}
+2016-07-24 08:58:48,017 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:48,017 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{fb4ac161-063f-1b4d-8167-1d9acd5dbe5e}/click {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{fb4ac161-063f-1b4d-8167-1d9acd5dbe5e}"}
+2016-07-24 08:58:48,200 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-24 08:58:48,575 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:48,575 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/url {"url": "http://localhost:8081/sequencelistings/", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7"}
+2016-07-24 08:58:48,623 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-24 08:58:48,883 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:48,883 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element {"using": "id", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "value": "home_page_table"}
+2016-07-24 08:58:48,926 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:48,926 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{c373a6ac-b81b-5a47-b324-7dcedf05a2a8}/elements {"using": "tag name", "sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{c373a6ac-b81b-5a47-b324-7dcedf05a2a8}", "value": "td"}
+2016-07-24 08:58:48,936 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:48,936 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{cc95a506-08ad-5e4c-9dd6-c7640aab5951}/text {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{cc95a506-08ad-5e4c-9dd6-c7640aab5951}"}
+2016-07-24 08:58:48,951 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:48,951 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{d18c2ab0-dbc5-ba4f-b7d3-f2d546f348cc}/text {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{d18c2ab0-dbc5-ba4f-b7d3-f2d546f348cc}"}
+2016-07-24 08:58:48,963 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:48,963 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7/element/{7999ce07-94dc-db47-a04b-39be6a9c025f}/text {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7", "id": "{7999ce07-94dc-db47-a04b-39be6a9c025f}"}
+2016-07-24 08:58:48,976 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:48,977 - selenium.webdriver.remote.remote_connection - DEBUG
+	DELETE http://127.0.0.1:54151/hub/session/7044ced9-4758-dc4a-94a1-fefa78398ae7 {"sessionId": "7044ced9-4758-dc4a-94a1-fefa78398ae7"}
+2016-07-24 08:58:48,982 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:52,445 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54256/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2016-07-24 08:58:52,516 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:52,517 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54256/hub/session/e6f769f2-46f8-7049-aa83-d2ca9316abfa/timeouts/implicit_wait {"sessionId": "e6f769f2-46f8-7049-aa83-d2ca9316abfa", "ms": 3000.0}
+2016-07-24 08:58:52,524 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:52,525 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54256/hub/session/e6f769f2-46f8-7049-aa83-d2ca9316abfa/url {"url": "http://localhost:8081/sequencelistings/", "sessionId": "e6f769f2-46f8-7049-aa83-d2ca9316abfa"}
+2016-07-24 08:58:52,607 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-24 08:58:52,843 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:52,843 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:54256/hub/session/e6f769f2-46f8-7049-aa83-d2ca9316abfa/title {"sessionId": "e6f769f2-46f8-7049-aa83-d2ca9316abfa"}
+2016-07-24 08:58:52,853 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:52,853 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54256/hub/session/e6f769f2-46f8-7049-aa83-d2ca9316abfa/elements {"using": "tag name", "sessionId": "e6f769f2-46f8-7049-aa83-d2ca9316abfa", "value": "h2"}
+2016-07-24 08:58:52,928 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:52,928 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:54256/hub/session/e6f769f2-46f8-7049-aa83-d2ca9316abfa/element/{4ca10e3e-a452-e34b-aa51-cc1a4088a79a}/text {"sessionId": "e6f769f2-46f8-7049-aa83-d2ca9316abfa", "id": "{4ca10e3e-a452-e34b-aa51-cc1a4088a79a}"}
+2016-07-24 08:58:52,942 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:52,942 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:54256/hub/session/e6f769f2-46f8-7049-aa83-d2ca9316abfa/element/{86eebdcf-bd9c-f449-8da3-37179e887642}/text {"sessionId": "e6f769f2-46f8-7049-aa83-d2ca9316abfa", "id": "{86eebdcf-bd9c-f449-8da3-37179e887642}"}
+2016-07-24 08:58:52,957 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:52,957 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:54256/hub/session/e6f769f2-46f8-7049-aa83-d2ca9316abfa/element/{4ca10e3e-a452-e34b-aa51-cc1a4088a79a}/text {"sessionId": "e6f769f2-46f8-7049-aa83-d2ca9316abfa", "id": "{4ca10e3e-a452-e34b-aa51-cc1a4088a79a}"}
+2016-07-24 08:58:52,971 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:52,971 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:54256/hub/session/e6f769f2-46f8-7049-aa83-d2ca9316abfa/element/{86eebdcf-bd9c-f449-8da3-37179e887642}/text {"sessionId": "e6f769f2-46f8-7049-aa83-d2ca9316abfa", "id": "{86eebdcf-bd9c-f449-8da3-37179e887642}"}
+2016-07-24 08:58:52,982 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:52,983 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54256/hub/session/e6f769f2-46f8-7049-aa83-d2ca9316abfa/element {"using": "id", "sessionId": "e6f769f2-46f8-7049-aa83-d2ca9316abfa", "value": "no_seqls_par"}
+2016-07-24 08:58:52,992 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:52,992 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:54256/hub/session/e6f769f2-46f8-7049-aa83-d2ca9316abfa/element/{4f5b97f9-da45-3240-8b25-096e0cd64990}/text {"sessionId": "e6f769f2-46f8-7049-aa83-d2ca9316abfa", "id": "{4f5b97f9-da45-3240-8b25-096e0cd64990}"}
+2016-07-24 08:58:53,018 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:53,018 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54256/hub/session/e6f769f2-46f8-7049-aa83-d2ca9316abfa/elements {"using": "tag name", "sessionId": "e6f769f2-46f8-7049-aa83-d2ca9316abfa", "value": "table"}
+2016-07-24 08:58:56,031 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:56,031 - selenium.webdriver.remote.remote_connection - DEBUG
+	DELETE http://127.0.0.1:54256/hub/session/e6f769f2-46f8-7049-aa83-d2ca9316abfa {"sessionId": "e6f769f2-46f8-7049-aa83-d2ca9316abfa"}
+2016-07-24 08:58:56,037 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:59,374 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}
+2016-07-24 08:58:59,474 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:59,474 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/timeouts/implicit_wait {"sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346", "ms": 3000.0}
+2016-07-24 08:58:59,488 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:59,489 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/url {"url": "http://localhost:8081/accounts/register/", "sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346"}
+2016-07-24 08:58:59,568 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-24 08:58:59,833 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:59,833 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/element {"using": "id", "sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346", "value": "id_username"}
+2016-07-24 08:58:59,902 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:59,902 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/element {"using": "id", "sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346", "value": "id_email"}
+2016-07-24 08:58:59,910 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:59,911 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/element {"using": "id", "sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346", "value": "id_password1"}
+2016-07-24 08:58:59,917 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:59,918 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/element {"using": "id", "sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346", "value": "id_password2"}
+2016-07-24 08:58:59,925 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:58:59,926 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/element/{8e55ff25-c7f9-7e4d-b80a-c625321de858}/value {"sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346", "id": "{8e55ff25-c7f9-7e4d-b80a-c625321de858}", "value": ["u", "s", "e", "r", "2", "0"]}
+2016-07-24 08:59:00,001 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:59:00,002 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/element/{98b32e56-d575-4544-a7c1-a87274ed6ab0}/value {"sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346", "id": "{98b32e56-d575-4544-a7c1-a87274ed6ab0}", "value": ["u", "s", "e", "r", "2", "0", "@", "e", "m", "a", "i", "l", ".", "c", "o", "m"]}
+2016-07-24 08:59:00,128 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:59:00,128 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/element/{99caf5e4-bfeb-d94c-8d42-f512e4c991ce}/value {"sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346", "id": "{99caf5e4-bfeb-d94c-8d42-f512e4c991ce}", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "2", "0"]}
+2016-07-24 08:59:00,192 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:59:00,192 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/element/{1353b5a6-524c-5e4c-8885-b2a069d03d67}/value {"sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346", "id": "{1353b5a6-524c-5e4c-8885-b2a069d03d67}", "value": ["p", "a", "s", "s", "w", "o", "r", "d", "2", "0"]}
+2016-07-24 08:59:00,263 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:59:00,263 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/element {"using": "class name", "sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346", "value": "btn"}
+2016-07-24 08:59:00,278 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:59:00,279 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/element/{927aa6d2-82cf-b740-b6be-4a0967ad10ad}/click {"sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346", "id": "{927aa6d2-82cf-b740-b6be-4a0967ad10ad}"}
+2016-07-24 08:59:00,657 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-24 08:59:00,814 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:59:00,814 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/url {"url": "http://localhost:8081/sequencelistings/", "sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346"}
+2016-07-24 08:59:00,876 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-07-24 08:59:00,983 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:59:00,983 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/title {"sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346"}
+2016-07-24 08:59:01,018 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:59:01,018 - selenium.webdriver.remote.remote_connection - DEBUG
+	POST http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/element {"using": "class name", "sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346", "value": "page-header"}
+2016-07-24 08:59:01,029 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:59:01,029 - selenium.webdriver.remote.remote_connection - DEBUG
+	GET http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346/element/{109163f4-1f14-844e-baf0-5718ebc05fad}/text {"sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346", "id": "{109163f4-1f14-844e-baf0-5718ebc05fad}"}
+2016-07-24 08:59:01,054 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:59:01,055 - selenium.webdriver.remote.remote_connection - DEBUG
+	DELETE http://127.0.0.1:54297/hub/session/2b121585-b20d-5e4c-90fc-647bd6d5a346 {"sessionId": "2b121585-b20d-5e4c-90fc-647bd6d5a346"}
+2016-07-24 08:59:01,059 - selenium.webdriver.remote.remote_connection - DEBUG
+	Finished Request
+2016-07-24 08:59:04,055 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: ab(c.
+2016-07-24 08:59:04,055 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: a(b9c.
+2016-07-24 08:59:04,092 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test6.xml
+Opening and ending tag mismatch: ApplicantNamey line 21 and ApplicantName, line 23, column 34
+2016-07-24 08:59:04,093 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test7.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantsName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceTotalQuantity SequenceData SequenceData )
+2016-07-24 08:59:04,094 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceData SequenceData )
+2016-07-24 08:59:04,100 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test4.xml
+Opening and ending tag mismatch: ApplicantNamex line 20 and ApplicantName, line 22, column 34
+2016-07-24 08:59:04,102 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_ENUMERATION_VALID: Element 'INSDFeature_key': [facet 'enumeration'] The value 'SOURCxE' is not an element of the set {'allele', 'attenuator', 'C_region', 'CAAT_signal', 'CDS', 'conflict', 'D-loop', 'D_segment', 'enhancer', 'exon', 'GC_signal', 'gene', 'iDNA', 'intron', 'J_segment', 'LTR', 'mat_peptide', 'misc_binding', 'misc_difference', 'misc_feature', 'misc_recomb', 'misc_RNA', 'misc_signal', 'misc_structure', 'modified_base', 'mRNA', 'mutation', 'N_region', 'old_sequence', 'polyA_signal', 'polyA_site', 'precursor_RNA', 'prim_transcript', 'primer_bind', 'promoter', 'protein_bind', 'RBS', 'repeat_region', 'repeat_unit', 'rep_origin', 'rRNA', 'S_region', 'satellite', 'scRNA', 'sig_peptide', 'snRNA', 'source', 'stem_loop', 'STS', 'TATA_signal', 'terminator', 'transit_peptide', 'tRNA', 'unsure', 'V_region', 'V_segment', 'variation', '3'clip', '3'UTR', '5'clip', '5'UTR', '-10_signal', '-35_signal', 'ACT_SITE', 'BINDING', 'CA_BIND', 'CARBOHYD', 'CHAIN', 'COILED', 'COMPBIAS', 'CONFLICT', 'CROSSLNK', 'DISULFID', 'DNA_BIND', 'DOMAIN', 'HELIX', 'INIT_MET', 'INTRAMEM', 'LIPID', 'METAL', 'MOD_RES', 'MOTIF', 'MUTAGEN', 'NON_STD', 'NON_TER', 'NP_BIND', 'PEPTIDE', 'PROPEP', 'REGION', 'REPEAT', 'SIGNAL', 'SITE', 'SOURCE', 'STRAND', 'TOPO_DOM', 'TRANSMEM', 'TRANSIT', 'TURN', 'UNSURE', 'VARIANT', 'VAR_SEQ', 'ZN_FING'}.
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_1: Element 'INSDFeature_key': 'SOURCxE' is not a valid value of the atomic type 'featureKeyValue'.
+2016-07-24 08:59:04,106 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml:42:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'SequenceData': This element is not expected. Expected is ( EarliestPriorityApplicationIdentification ).
+2016-07-24 08:59:04,696 - sequencelistings.views - INFO
+	Generated xml seql at sequencelistings/output/test_xmlsql.xml.
