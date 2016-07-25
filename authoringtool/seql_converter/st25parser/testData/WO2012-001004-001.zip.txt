@@ -1,0 +1,670 @@
+                         SEQUENCE LISTING
+
+<110>  SIGMA-TAU Industrie Farmaceutiche Riunite S.p.A.
+       DE SANTIS, Rita
+       MINENKOVA, Olga
+ 
+<120>  Vaccine against Urinary Tract Infections (UTI)
+
+<130>  PCT 112435
+
+<150>  EP10168280.5
+<151>  2010-07-02
+
+<160>  17    
+
+<170>  PatentIn version 3.5
+
+<210>  1
+<211>  903
+<212>  DNA
+<213>  Escherichia coli
+
+
+<220>
+<221>  CDS
+<222>  (1)..(903)
+
+<400>  1
+atg aaa cga gtt att acc ctg ttt gct gta ctg ctg atg ggc tgg tcg         48
+Met Lys Arg Val Ile Thr Leu Phe Ala Val Leu Leu Met Gly Trp Ser           
+1               5                   10                  15                
+
+gta aat gcc tgg tca ttc gcc tgt aaa acc gcc aat ggt acc gca atc         96
+Val Asn Ala Trp Ser Phe Ala Cys Lys Thr Ala Asn Gly Thr Ala Ile           
+            20                  25                  30                    
+
+cct att ggc ggt ggc agc gcc aat gtt tat gta aac ctt gcg cct gcc        144
+Pro Ile Gly Gly Gly Ser Ala Asn Val Tyr Val Asn Leu Ala Pro Ala           
+        35                  40                  45                        
+
+gtg aat gtg ggg caa aac ctg gtc gta gat ctt tcg acg caa atc ttt        192
+Val Asn Val Gly Gln Asn Leu Val Val Asp Leu Ser Thr Gln Ile Phe           
+    50                  55                  60                            
+
+tgc cat aac gat tac cca gaa acc att aca gac tat gtc aca ctg caa        240
+Cys His Asn Asp Tyr Pro Glu Thr Ile Thr Asp Tyr Val Thr Leu Gln           
+65                  70                  75                  80            
+
+cga ggt gcg gct tat ggc ggc gtg tta tct agt ttt tcc ggg acc gta        288
+Arg Gly Ala Ala Tyr Gly Gly Val Leu Ser Ser Phe Ser Gly Thr Val           
+                85                  90                  95                
+
+aaa tat aat ggc agt agc tat cct ttc cct act acc agc gaa acg ccg        336
+Lys Tyr Asn Gly Ser Ser Tyr Pro Phe Pro Thr Thr Ser Glu Thr Pro           
+            100                 105                 110                   
+
+cgg gtt gtt tat aat tcg aga acg gat aag ccg tgg ccg gtg gcg ctt        384
+Arg Val Val Tyr Asn Ser Arg Thr Asp Lys Pro Trp Pro Val Ala Leu           
+        115                 120                 125                       
+
+tat ttg acg ccg gtg agc agt gcg ggg gga gtg gcg att aaa gct ggc        432
+Tyr Leu Thr Pro Val Ser Ser Ala Gly Gly Val Ala Ile Lys Ala Gly           
+    130                 135                 140                           
+
+tca tta att gcc gtg ctt att ttg cga cag acc aac aac tat aac agc        480
+Ser Leu Ile Ala Val Leu Ile Leu Arg Gln Thr Asn Asn Tyr Asn Ser           
+145                 150                 155                 160           
+
+gat gat ttc cag ttt gtg tgg aat att tac gcc aat aat gat gtg gtg        528
+Asp Asp Phe Gln Phe Val Trp Asn Ile Tyr Ala Asn Asn Asp Val Val           
+                165                 170                 175               
+
+gtg ccc act ggc ggc tgc gat gtt tct gct cgt gat gtc acc gtt act        576
+Val Pro Thr Gly Gly Cys Asp Val Ser Ala Arg Asp Val Thr Val Thr           
+            180                 185                 190                   
+
+ctg ccg gac tac cct ggt tca gtg ccg att cct ctt acc gtt tat tgt        624
+Leu Pro Asp Tyr Pro Gly Ser Val Pro Ile Pro Leu Thr Val Tyr Cys           
+        195                 200                 205                       
+
+gcg aaa agc caa aac ctg ggg tat tac ctc tcc ggc aca acc gca gat        672
+Ala Lys Ser Gln Asn Leu Gly Tyr Tyr Leu Ser Gly Thr Thr Ala Asp           
+    210                 215                 220                           
+
+gcg ggc aac tcg att ttc acc aat acc gcg tcg ttt tca ccc gcg cag        720
+Ala Gly Asn Ser Ile Phe Thr Asn Thr Ala Ser Phe Ser Pro Ala Gln           
+225                 230                 235                 240           
+
+ggc gtc ggc gta cag ttg acg cgc aac ggt acg att att cca gcg aat        768
+Gly Val Gly Val Gln Leu Thr Arg Asn Gly Thr Ile Ile Pro Ala Asn           
+                245                 250                 255               
+
+aac acg gta tcg tta gga gca gta ggg act tcg gcg gta agt ctg gga        816
+Asn Thr Val Ser Leu Gly Ala Val Gly Thr Ser Ala Val Ser Leu Gly           
+            260                 265                 270                   
+
+tta acg gca aat tac gca cgt acc gga ggg cag gtg act gca ggg aat        864
+Leu Thr Ala Asn Tyr Ala Arg Thr Gly Gly Gln Val Thr Ala Gly Asn           
+        275                 280                 285                       
+
+gtg caa tcg att att ggc gtg act ttt gtt tat caa taa                    903
+Val Gln Ser Ile Ile Gly Val Thr Phe Val Tyr Gln                           
+    290                 295                 300                           
+
+
+<210>  2
+<211>  300
+<212>  PRT
+<213>  Escherichia coli
+
+<400>  2
+
+Met Lys Arg Val Ile Thr Leu Phe Ala Val Leu Leu Met Gly Trp Ser 
+1               5                   10                  15      
+
+
+Val Asn Ala Trp Ser Phe Ala Cys Lys Thr Ala Asn Gly Thr Ala Ile 
+            20                  25                  30          
+
+
+Pro Ile Gly Gly Gly Ser Ala Asn Val Tyr Val Asn Leu Ala Pro Ala 
+        35                  40                  45              
+
+
+Val Asn Val Gly Gln Asn Leu Val Val Asp Leu Ser Thr Gln Ile Phe 
+    50                  55                  60                  
+
+
+Cys His Asn Asp Tyr Pro Glu Thr Ile Thr Asp Tyr Val Thr Leu Gln 
+65                  70                  75                  80  
+
+
+Arg Gly Ala Ala Tyr Gly Gly Val Leu Ser Ser Phe Ser Gly Thr Val 
+                85                  90                  95      
+
+
+Lys Tyr Asn Gly Ser Ser Tyr Pro Phe Pro Thr Thr Ser Glu Thr Pro 
+            100                 105                 110         
+
+
+Arg Val Val Tyr Asn Ser Arg Thr Asp Lys Pro Trp Pro Val Ala Leu 
+        115                 120                 125             
+
+
+Tyr Leu Thr Pro Val Ser Ser Ala Gly Gly Val Ala Ile Lys Ala Gly 
+    130                 135                 140                 
+
+
+Ser Leu Ile Ala Val Leu Ile Leu Arg Gln Thr Asn Asn Tyr Asn Ser 
+145                 150                 155                 160 
+
+
+Asp Asp Phe Gln Phe Val Trp Asn Ile Tyr Ala Asn Asn Asp Val Val 
+                165                 170                 175     
+
+
+Val Pro Thr Gly Gly Cys Asp Val Ser Ala Arg Asp Val Thr Val Thr 
+            180                 185                 190         
+
+
+Leu Pro Asp Tyr Pro Gly Ser Val Pro Ile Pro Leu Thr Val Tyr Cys 
+        195                 200                 205             
+
+
+Ala Lys Ser Gln Asn Leu Gly Tyr Tyr Leu Ser Gly Thr Thr Ala Asp 
+    210                 215                 220                 
+
+
+Ala Gly Asn Ser Ile Phe Thr Asn Thr Ala Ser Phe Ser Pro Ala Gln 
+225                 230                 235                 240 
+
+
+Gly Val Gly Val Gln Leu Thr Arg Asn Gly Thr Ile Ile Pro Ala Asn 
+                245                 250                 255     
+
+
+Asn Thr Val Ser Leu Gly Ala Val Gly Thr Ser Ala Val Ser Leu Gly 
+            260                 265                 270         
+
+
+Leu Thr Ala Asn Tyr Ala Arg Thr Gly Gly Gln Val Thr Ala Gly Asn 
+        275                 280                 285             
+
+
+Val Gln Ser Ile Ile Gly Val Thr Phe Val Tyr Gln 
+    290                 295                 300 
+
+
+<210>  3
+<211>  3738
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  Recombinant pSTM27 bacteriophage
+
+
+<220>
+<221>  CDS
+<222>  (268)..(909)
+<223>  fused pVIII-FimH
+
+<400>  3
+gcccaatacg caaaccgcct ctccccgcgc gttggccgat tcattaatgc agctggcacg       60
+
+acaggtttcc cgactggaaa gcgggcagtg agcgcaacgc aattaatgtg agttagctca      120
+
+ctcattaggc accccaggct ttacacttta tgcttccggc tcgtatgttg tgtggaattg      180
+
+tgagcggata acaatttcac acaagatcta gctattctag agattacgcc aagccccgta      240
+
+ttttacccgt ttaatggaaa cttcctc atg aaa aag tct tta gtc ctc aaa gcc      294
+                              Met Lys Lys Ser Leu Val Leu Lys Ala         
+                              1               5                           
+
+tct gta gcc gtt gct acc ctc gtt ccg atg ctg tct ttc gct gct gag        342
+Ser Val Ala Val Ala Thr Leu Val Pro Met Leu Ser Phe Ala Ala Glu           
+10                  15                  20                  25            
+
+ggt gaa ttc cat aac gat tat ccg gaa acc att aca gac tat gtc aca        390
+Gly Glu Phe His Asn Asp Tyr Pro Glu Thr Ile Thr Asp Tyr Val Thr           
+                30                  35                  40                
+
+ctg caa cga ggc tcg gct tat ggc ggc gtg tta tct aat ttt tcc ggg        438
+Leu Gln Arg Gly Ser Ala Tyr Gly Gly Val Leu Ser Asn Phe Ser Gly           
+            45                  50                  55                    
+
+acc gta aaa tat agt ggc agt agc tat cca ttt cct acc acc agc gaa        486
+Thr Val Lys Tyr Ser Gly Ser Ser Tyr Pro Phe Pro Thr Thr Ser Glu           
+        60                  65                  70                        
+
+acg ccg cgc gtt gtt tat aat tcg aga acg gat aag ccg tgg ccg gtg        534
+Thr Pro Arg Val Val Tyr Asn Ser Arg Thr Asp Lys Pro Trp Pro Val           
+    75                  80                  85                            
+
+gcg ctt tat ttg acg cct gtg agc agt gcg ggc ggg gtg gcg att aaa        582
+Ala Leu Tyr Leu Thr Pro Val Ser Ser Ala Gly Gly Val Ala Ile Lys           
+90                  95                  100                 105           
+
+gct ggc tca tta att gcc gtg ctt att ttg cga cag acc aac aac tat        630
+Ala Gly Ser Leu Ile Ala Val Leu Ile Leu Arg Gln Thr Asn Asn Tyr           
+                110                 115                 120               
+
+aac agc gat gat ttc cag ttt gtg tgg aat att tac gcc aat aat gat        678
+Asn Ser Asp Asp Phe Gln Phe Val Trp Asn Ile Tyr Ala Asn Asn Asp           
+            125                 130                 135                   
+
+gtg gtg gtg ccc act gga gac tac aaa gac gac gac gac aaa tca ggt        726
+Val Val Val Pro Thr Gly Asp Tyr Lys Asp Asp Asp Asp Lys Ser Gly           
+        140                 145                 150                       
+
+gga ggc ggt tca ggc gga ggt ggc tct ggc ggt ggc gga tcg gat ccc        774
+Gly Gly Gly Ser Gly Gly Gly Gly Ser Gly Gly Gly Gly Ser Asp Pro           
+    155                 160                 165                           
+
+gca aaa gcg gcc ttt gac tcc ctg caa gcc tca gcg acc gaa tat atc        822
+Ala Lys Ala Ala Phe Asp Ser Leu Gln Ala Ser Ala Thr Glu Tyr Ile           
+170                 175                 180                 185           
+
+ggt tat gcg tgg gcg atg gtt gtt gtc att gtc ggc gca act atc ggt        870
+Gly Tyr Ala Trp Ala Met Val Val Val Ile Val Gly Ala Thr Ile Gly           
+                190                 195                 200               
+
+atc aag ctg ttt aag aaa ttc acc tcg aaa gca agc taa gcggccgcag         919
+Ile Lys Leu Phe Lys Lys Phe Thr Ser Lys Ala Ser                           
+            205                 210                                       
+
+gagactacaa agacgacgac gacaaacacc accatcacca ccattaaggc cgctaatatt      979
+
+gttctggata ttaccagcaa ggccgatagt ttgagttctt ctactcaggc aagtgatgtt     1039
+
+attactaatc aaagaagtat tgcgacaacg gttaatttgc gtgatggaca gactctttta     1099
+
+ctcggtggcc tcactgatta taaaaacact tctcaggatt ctggcgtacc gttcctgtct     1159
+
+aaaatccctt taatcggcct cctgtttagc tcccgctctg attctaacga ggaaagcacg     1219
+
+ttatacgtgc tcgtcaaagc aaccatagta cgcgccctgt agcggcgcat taagcgcggc     1279
+
+gggtgtggtg gttacgcgca gcgtgaccgc tacacttgcc agcgccctag cgcccgctcc     1339
+
+tttcgctttc ttcccttcct ttctcgccac gttcgccggc tttccccgtc aagctctaaa     1399
+
+tcgggggctc cctttagggt tccgatttag tgctttacgg cacctcgacc ccaaaaaact     1459
+
+tgattagggt gatggttcac gtagtgggcc atcgccctga tagacggttt ttcgcccttt     1519
+
+gacgttggag tccacgttct ttaatagtgg actcttgttc caaactggaa caacactcaa     1579
+
+ccctatctcg gtctattctt ttgatttata agggattttg ccgatttcgg cctattggtt     1639
+
+aaaaaatgag ctgatttaac aaaaatttaa cgcgaatttt aacaaaatat taacgtttac     1699
+
+aatttaaata tttgcttata caatcttcct gtttttgggg cttttctgat tatcaaccgg     1759
+
+ggtacatatg attgacatgc tagttttacg attaccgttc atcgcaggtg gcacttttcg     1819
+
+gggaaatgtg cgcggaaccc ctatttgttt atttttctaa atacattcaa atatgtatcc     1879
+
+gctcatgaga caataaccct gataaatgct tcaataatat tgaaaaagga agagtatgag     1939
+
+tattcaacat ttccgtgtcg cccttattcc cttttttgcg gcattttgcc ttcctgtttt     1999
+
+tgctcaccca gaaacgctgg tgaaagtaaa agatgctgaa gatcagttgg gtgcacgagt     2059
+
+gggttacatc gaactggatc tcaacagcgg taagatcctt gagagttttc gccccgaaga     2119
+
+acgttttcca atgatgagca cttttaaagt tctgctatgt ggcgcggtat tatcccgtat     2179
+
+tgacgccggg caagagcaac tcggtcgccg catacactat tctcagaatg acttggttga     2239
+
+gtactcacca gtcacagaaa agcatcttac ggatggcatg acagtaagag aattatgcag     2299
+
+tgctgccata accatgagtg ataacactgc ggccaactta cttctgacaa cgatcggagg     2359
+
+accgaaggag ctaaccgctt ttttgcacaa catgggggat catgtaactc gccttgatcg     2419
+
+ttgggaaccg gagctgaatg aagccatacc aaacgacgag cgtgacacca cgatgcctgt     2479
+
+agcaatggca acaacgttgc gcaaactatt aactggcgaa ctacttactc tagcttcccg     2539
+
+gcaacaatta atagactgga tggaggcgga taaagttgca ggaccacttc tgcgctcggc     2599
+
+ccttccggct ggctggttta ttgctgataa atctggagcc ggtgagcgtg ggtctcgcgg     2659
+
+tatcattgca gcactggggc cagatggtaa gccctcccgt atcgtagtta tctacacgac     2719
+
+ggggagtcag gcaactatgg atgaacgaaa tagacagatc gctgagatag gtgcctcact     2779
+
+gattaagcat tggtaactgt cagaccaagt ttactcatat atactttaga ttgatttaaa     2839
+
+acttcatttt taatttaaaa ggatctaggt gaagatcctt tttgataatc tcatgaccaa     2899
+
+aatcccttaa cgtgagtttt cgttccactg agcgtcagac cccgtagaaa agatcaaagg     2959
+
+atcttcttga gatccttttt ttctgcgcgt aatctgctgc ttgcaaacaa aaaaaccacc     3019
+
+gctaccagcg gtggtttgtt tgccggatca agagctacca actctttttc cgaaggtaac     3079
+
+tggcttcagc agagcgcaga taccaaatac tgtccttcta gtgtagccgt agttaggcca     3139
+
+ccacttcaag aactctgtag caccgcctac atacctcgct ctgctaatcc tgttaccagt     3199
+
+ggctgctgcc agtggcgata agtcgtgtct taccgggttg gactcaagac gatagttacc     3259
+
+ggataaggcg cagcggtcgg gctgaacggg gggttcgtgc acacagccca gcttggagcg     3319
+
+aacgacctac accgaactga gatacctaca gcgtgagcta tgagaaagcg ccacgcttcc     3379
+
+cgaagggaga aaggcggaca ggtatccggt aagcggcagg gtcggaacag gagagcgcac     3439
+
+gagggagctt ccagggggaa acgcctggta tctttatagt cctgtcgggt ttcgccacct     3499
+
+ctgacttgag cgtcgatttt tgtgatgctc gtcagggggg cggagcctat ggaaaaacgc     3559
+
+cagcaacgcg gcctttttac ggttcctggc cttttgctgg ccttttgctc acatgttctt     3619
+
+tcctgcgtta tcccctgatt ctgtggataa ccgtattacc gcctttgagt gagctgatac     3679
+
+cgctcgccgc agccgaacga ccgagcgcag cgagtcagtg agcgaggaag cggaagagc      3738
+
+
+<210>  4
+<211>  213
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Synthetic Construct
+
+<400>  4
+
+Met Lys Lys Ser Leu Val Leu Lys Ala Ser Val Ala Val Ala Thr Leu 
+1               5                   10                  15      
+
+
+Val Pro Met Leu Ser Phe Ala Ala Glu Gly Glu Phe His Asn Asp Tyr 
+            20                  25                  30          
+
+
+Pro Glu Thr Ile Thr Asp Tyr Val Thr Leu Gln Arg Gly Ser Ala Tyr 
+        35                  40                  45              
+
+
+Gly Gly Val Leu Ser Asn Phe Ser Gly Thr Val Lys Tyr Ser Gly Ser 
+    50                  55                  60                  
+
+
+Ser Tyr Pro Phe Pro Thr Thr Ser Glu Thr Pro Arg Val Val Tyr Asn 
+65                  70                  75                  80  
+
+
+Ser Arg Thr Asp Lys Pro Trp Pro Val Ala Leu Tyr Leu Thr Pro Val 
+                85                  90                  95      
+
+
+Ser Ser Ala Gly Gly Val Ala Ile Lys Ala Gly Ser Leu Ile Ala Val 
+            100                 105                 110         
+
+
+Leu Ile Leu Arg Gln Thr Asn Asn Tyr Asn Ser Asp Asp Phe Gln Phe 
+        115                 120                 125             
+
+
+Val Trp Asn Ile Tyr Ala Asn Asn Asp Val Val Val Pro Thr Gly Asp 
+    130                 135                 140                 
+
+
+Tyr Lys Asp Asp Asp Asp Lys Ser Gly Gly Gly Gly Ser Gly Gly Gly 
+145                 150                 155                 160 
+
+
+Gly Ser Gly Gly Gly Gly Ser Asp Pro Ala Lys Ala Ala Phe Asp Ser 
+                165                 170                 175     
+
+
+Leu Gln Ala Ser Ala Thr Glu Tyr Ile Gly Tyr Ala Trp Ala Met Val 
+            180                 185                 190         
+
+
+Val Val Ile Val Gly Ala Thr Ile Gly Ile Lys Leu Phe Lys Lys Phe 
+        195                 200                 205             
+
+
+Thr Ser Lys Ala Ser 
+    210             
+
+
+<210>  5
+<211>  222
+<212>  DNA
+<213>  Bacteriophage M13mp18
+
+
+<220>
+<221>  CDS
+<222>  (1)..(222)
+
+<400>  5
+atg aaa aag tct tta gtc ctc aaa gcc tct gta gcc gtt gct acc ctc         48
+Met Lys Lys Ser Leu Val Leu Lys Ala Ser Val Ala Val Ala Thr Leu           
+1               5                   10                  15                
+
+gtt ccg atg ctg tct ttc gct gct gag ggt gac gat ccc gca aaa gcg         96
+Val Pro Met Leu Ser Phe Ala Ala Glu Gly Asp Asp Pro Ala Lys Ala           
+            20                  25                  30                    
+
+gcc ttt aac tcc ctg caa gcc tca gcg acc gaa tat atc ggt tat gcg        144
+Ala Phe Asn Ser Leu Gln Ala Ser Ala Thr Glu Tyr Ile Gly Tyr Ala           
+        35                  40                  45                        
+
+tgg gcg atg gtt gtt gtc att gtc ggc gca act atc ggt atc aag ctg        192
+Trp Ala Met Val Val Val Ile Val Gly Ala Thr Ile Gly Ile Lys Leu           
+    50                  55                  60                            
+
+ttt aag aaa ttc acc tcg aaa gca agc tga                                222
+Phe Lys Lys Phe Thr Ser Lys Ala Ser                                       
+65                  70                                                    
+
+
+<210>  6
+<211>  73
+<212>  PRT
+<213>  Bacteriophage M13mp18
+
+<400>  6
+
+Met Lys Lys Ser Leu Val Leu Lys Ala Ser Val Ala Val Ala Thr Leu 
+1               5                   10                  15      
+
+
+Val Pro Met Leu Ser Phe Ala Ala Glu Gly Asp Asp Pro Ala Lys Ala 
+            20                  25                  30          
+
+
+Ala Phe Asn Ser Leu Gln Ala Ser Ala Thr Glu Tyr Ile Gly Tyr Ala 
+        35                  40                  45              
+
+
+Trp Ala Met Val Val Val Ile Val Gly Ala Thr Ile Gly Ile Lys Leu 
+    50                  55                  60                  
+
+
+Phe Lys Lys Phe Thr Ser Lys Ala Ser 
+65                  70              
+
+
+<210>  7
+<211>  228
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  pc89 major coat protein PVIII
+
+
+<220>
+<221>  CDS
+<222>  (1)..(84)
+
+<220>
+<221>  CDS
+<222>  (88)..(225)
+
+<400>  7
+atg aaa aag tct tta gtc ctc aaa gcc tct gta gcc gtt gct acc ctc         48
+Met Lys Lys Ser Leu Val Leu Lys Ala Ser Val Ala Val Ala Thr Leu           
+1               5                   10                  15                
+
+gtt ccg atg ctg tct ttc gct gct gag ggt gaa ttc tag gat ccc gca         96
+Val Pro Met Leu Ser Phe Ala Ala Glu Gly Glu Phe     Asp Pro Ala           
+            20                  25                      30                
+
+aaa gcg gcc ttt gac tcc ctg caa gcc tca gcg acc gaa tat atc ggt        144
+Lys Ala Ala Phe Asp Ser Leu Gln Ala Ser Ala Thr Glu Tyr Ile Gly           
+            35                  40                  45                    
+
+tat gcg tgg gcg atg gtt gtt gtc att gtc ggc gca act atc ggt atc        192
+Tyr Ala Trp Ala Met Val Val Val Ile Val Gly Ala Thr Ile Gly Ile           
+        50                  55                  60                        
+
+aag ctg ttt aag aaa ttc acc tcg aaa gca agc tga                        228
+Lys Leu Phe Lys Lys Phe Thr Ser Lys Ala Ser                               
+    65                  70                                                
+
+
+<210>  8
+<211>  74
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  Synthetic Construct
+
+<400>  8
+
+Met Lys Lys Ser Leu Val Leu Lys Ala Ser Val Ala Val Ala Thr Leu 
+1               5                   10                  15      
+
+
+Val Pro Met Leu Ser Phe Ala Ala Glu Gly Glu Phe Asp Pro Ala Lys 
+            20                  25                  30          
+
+
+Ala Ala Phe Asp Ser Leu Gln Ala Ser Ala Thr Glu Tyr Ile Gly Tyr 
+        35                  40                  45              
+
+
+Ala Trp Ala Met Val Val Val Ile Val Gly Ala Thr Ile Gly Ile Lys 
+    50                  55                  60                  
+
+
+Leu Phe Lys Lys Phe Thr Ser Lys Ala Ser 
+65                  70                  
+
+
+<210>  9
+<211>  41
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  synthetic primer
+
+<400>  9
+ctgctgctgc catggtttgt aaaaccgcca atggtaccgc t                           41
+
+
+<210>  10
+<211>  40
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  synthetic primer
+
+<400>  10
+gtcgtctgcg gccgcagtgg gcaccaccac atcattattg                             40
+
+
+<210>  11
+<211>  39
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  synthetic primer
+
+<400>  11
+ctgctgctgg aattctgtaa aaccgccaat ggtaccgct                              39
+
+
+<210>  12
+<211>  113
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  synthetic primer
+
+<400>  12
+ctgctgctgg atccgatccg ccaccgccag agccacctcc gcctgaaccg cctccacctg       60
+
+atttgtcgtc gtcgtctttg tagtctccag tgggcaccac cacatcatta ttg             113
+
+
+<210>  13
+<211>  41
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  synthetic primer
+
+<400>  13
+ctgctgctgg aattccataa cgattatccg gaaaccatta c                           41
+
+
+<210>  14
+<211>  8
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  FLAG-tag
+
+<400>  14
+
+Asp Tyr Lys Asp Asp Asp Asp Lys 
+1               5               
+
+
+<210>  15
+<211>  16
+<212>  PRT
+<213>  Artificial Sequence
+
+<220>
+<223>  peptide linker
+
+<400>  15
+
+Ser Gly Gly Gly Gly Ser Gly Gly Gly Gly Ser Gly Gly Gly Gly Ser 
+1               5                   10                  15      
+
+
+<210>  16
+<211>  20
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  CpG oligonucleotide
+
+<400>  16
+tccatgacgt tcctgacgtt                                                   20
+
+
+<210>  17
+<211>  20
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  non CpG oligonucleotide
+
+<400>  17
+tccatgagct tcctgacgtt                                                   20
+
+
