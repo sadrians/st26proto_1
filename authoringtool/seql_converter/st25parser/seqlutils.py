@@ -2,6 +2,7 @@ import re
 # import datetime
 import os
 import logging
+import logging.handlers
 # import numpy as np
 
 currentDirectory = os.path.abspath(os.path.dirname(__file__))
@@ -19,6 +20,8 @@ logging.basicConfig(filename=logFile,
                 )
 
 logger = logging.getLogger('seqlutils')
+handler = logging.handlers.RotatingFileHandler(logFile, maxBytes=1000000)
+logger.addHandler(handler)
 # logger.info('seqlutils module loaded')
 
 # logFile = os.path.join(PROJECT_DIRECTORY, 'log/statslogger.log')

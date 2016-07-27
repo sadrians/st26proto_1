@@ -8,7 +8,9 @@ from django.template.loader import render_to_string
 from lxml import etree 
 
 logger = logging.getLogger(__name__)
-logger.level = logging.WARNING 
+logger.setLevel(logging.WARNING)
+# handler = logging.handlers.RotatingFileHandler(maxBytes=1000000)
+# logger.addHandler(handler)
 currentDirectory = os.path.abspath(os.path.dirname(__file__))
 PROJECT_DIRECTORY = os.path.abspath(os.path.join(currentDirectory, os.pardir))
 
