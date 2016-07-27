@@ -2,6 +2,7 @@ __author__ = 'ad'
 
 import re
 import os 
+import chardet 
 import seqlutils as su
 
 pa = '<210>'
@@ -64,10 +65,17 @@ class SequenceListing(object):
     def __init__(self, inFile):
 #         print inFile 
         self.isSeql = False
+        self.charEncoding = 'not known'
+        
         try:
+            with open(inFile, 'r') as f:
+                self.charEncoding = chardet.detect(f.read())['encoding']
+            
             self.seqlGenerator = su.generateChunks(inFile, pa)
             generalInformationString = self.seqlGenerator.next()['chunk']
-            self.generalInformation = GeneralInformation(generalInformationString)
+            generalInformationUnicode = generalInformationString.decode(self.charEncoding)
+#             self.generalInformation = GeneralInformation(generalInformationString)
+            self.generalInformation = GeneralInformation(generalInformationUnicode)
 
             if self.generalInformation.genInfoPatternFound:
                 self.isSeql = True
@@ -91,9 +99,12 @@ class SequenceListing(object):
         for elem in self.seqlGenerator:
             counter += 1
             chunk = elem['chunk']
+            chunkUnicode = chunk.decode(self.charEncoding)
             lineNumber = elem['lineNumber']
             try:
-                seq = Sequence(chunk)
+#                 seq = Sequence(chunk)
+                seq = Sequence(chunkUnicode)
+
                 seq.actualSeqIdNo = counter
                 yield seq
             except SeqlException as se:
@@ -115,7 +126,7 @@ class SequenceListing(object):
         :param aSeqIdNo: int representing the seq id no
         :return: Sequence
         '''
-        # TODO: test it
+        # TODO: test it, unicode it!
         listOfChunks = []
         for c in su.generateChunks(aFile, pa):
             listOfChunks.append(c)

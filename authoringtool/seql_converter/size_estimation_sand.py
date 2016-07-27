@@ -18,13 +18,17 @@ if __name__ == "__main__":
                   'testData')
     f5 = os.path.join(inputDir, 'file5.txt')
     f1004 = os.path.join(inputDir, 'WO2012-001004-001.zip.txt')
+    
         
-    inDirPath = r'/Users/ad/pyton/test/st26fileSize/in_ST25'
+    inDirPath = r'/Users/ad/pyton/test/st26fileSize/in_ST25_test'
     outDirPath = r'/Users/ad/pyton/test/st26fileSize/stats'
     xmlOutDirPath = r'/Users/ad/pyton/test/st26fileSize/out_ST26'
     statsFilePath = os.path.join(outDirPath, 'stats.csv')
+    
+    f6503 = os.path.join(inDirPath, 'WO2012-006503-001.zip.txt')# 170 missing
         
 #     l = [f5, f1004]
+#     l = [f6503]
     l = [os.path.join(inDirPath, a) for a in os.listdir(inDirPath) if '.DS' not in a]
  
     totalsList = []

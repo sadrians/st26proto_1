@@ -4,7 +4,8 @@ Created on Jul 2, 2016
 @author: ad
 '''
 import os
-import datetime 
+import re 
+import datetime
 from seql_converter.st25parser.seqlparser import SequenceListing
 # import converter_util as cu 
 
@@ -30,9 +31,13 @@ class St25To26Converter(object):
         self.fileName = os.path.splitext(base)[0]
         
         self.seql_st25 = Seql_st25(st25FilePath)
-        self.seql_st26 = self.getSequenceListingSt26(self.seql_st25)
-        self.setTitleSt26()
-        self.setSequencesSt26()
+        self.seql_st26 = None 
+        if self.seql_st25.isSeql:
+            self.seql_st26 = self.getSequenceListingSt26(self.seql_st25)
+            self.setTitleSt26()
+            self.setSequencesSt26()
+        else: 
+            print 'St25To26Converter: not able to process file', st25FilePath
         
     def getSequenceListingSt26(self, aSeql_st25):
 
@@ -48,7 +53,10 @@ class St25To26Converter(object):
 
 #         set filingDate
         fd = self.seql_st25.generalInformation.filingDate
-        if fd != seqlutils.DEFAULT_STRING:
+#         if fd not in ['', seqlutils.DEFAULT_STRING]:
+        dateRegex = r'\d\d\d\d-\d\d-\d\d'
+        datePattern = re.compile(dateRegex)
+        if datePattern.match(fd):
             filingDateAsString = fd 
         else:
             filingDateAsString = converter_util.DEFAULT_DATE_STRING

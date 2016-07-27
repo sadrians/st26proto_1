@@ -1,0 +1,278 @@
+                              Sequence Listing
+
+<110> GENENTECH, INC., et al.
+
+<120> ANTI-NEUROPILIN ANTIBODIES AND METHODS OF USE
+
+<130> P4462R1-WO
+
+
+<150> US 61/363,121
+<151> 2010-07-09
+
+<160> 10
+
+<210> 1
+<211> 441
+<212> PRT
+<213> Oryctolagus cuniculus
+
+<400> 1
+ Gln Leu Val Glu Glu Ser Gly Gly Gly Leu Val Thr Pro Gly Gly
+   1               5                  10                  15
+
+ Thr Leu Thr Leu Thr Cys Thr Ala Ser Gly Phe Thr Ile Ser Asn
+                  20                  25                  30
+
+ Tyr His Met Ser Trp Val Arg Gln Ala Pro Gly Lys Gly Leu Glu
+                  35                  40                  45
+
+ Trp Ile Gly Ile Ile Tyr Ala Val Ser Ala Ala Thr Trp Ser Ala
+                  50                  55                  60
+
+ Thr Trp Val Lys Gly Arg Phe Thr Ile Ser Lys Thr Leu Thr Thr
+                  65                  70                  75
+
+ Val Asp Leu Lys Met Thr Ser Leu Thr Ala Ala Asp Thr Ala Thr
+                  80                  85                  90
+
+ Tyr Phe Cys Ala Arg Val Arg Ala Pro Gly Asp Ser Thr Tyr Tyr
+                  95                 100                 105
+
+ Asp Leu Trp Gly Pro Gly Thr Leu Val Thr Val Ser Ser Gly Gln
+                 110                 115                 120
+
+ Pro Lys Ala Pro Ser Val Phe Pro Leu Ala Pro Cys Cys Gly Asp
+                 125                 130                 135
+
+ Thr Pro Ser Ser Thr Val Thr Leu Gly Cys Leu Val Lys Gly Tyr
+                 140                 145                 150
+
+ Leu Pro Glu Pro Val Thr Val Thr Trp Asn Ser Gly Thr Leu Thr
+                 155                 160                 165
+
+ Asn Gly Val Arg Thr Phe Pro Ser Val Arg Gln Ser Ser Gly Leu
+                 170                 175                 180
+
+ Tyr Ser Leu Ser Ser Val Val Ser Val Thr Ser Ser Ser Gln Pro
+                 185                 190                 195
+
+ Val Thr Cys Asn Val Ala His Pro Ala Thr Asn Thr Lys Val Asp
+                 200                 205                 210
+
+ Lys Thr Val Ala Pro Ser Thr Cys Ser Lys Pro Thr Cys Pro Pro
+                 215                 220                 225
+
+ Pro Glu Leu Leu Gly Gly Pro Ser Val Phe Ile Phe Pro Pro Lys
+                 230                 235                 240
+
+ Pro Lys Asp Thr Leu Met Ile Ser Arg Thr Pro Glu Val Thr Cys
+                 245                 250                 255
+
+ Val Val Val Asp Val Ser Gln Asp Asp Pro Glu Val Gln Phe Thr
+                 260                 265                 270
+
+ Trp Tyr Ile Asn Asn Glu Gln Val Arg Thr Ala Arg Pro Pro Leu
+                 275                 280                 285
+
+ Arg Glu Gln Gln Phe Asn Ser Thr Ile Arg Val Val Ser Thr Leu
+                 290                 295                 300
+
+ Pro Ile Ala His Gln Asp Trp Leu Arg Gly Lys Glu Phe Lys Cys
+                 305                 310                 315
+
+ Lys Val His Asn Lys Ala Leu Pro Ala Pro Ile Glu Lys Thr Ile
+                 320                 325                 330
+
+ Ser Lys Ala Arg Gly Gln Pro Leu Glu Pro Lys Val Tyr Thr Met
+                 335                 340                 345
+
+ Gly Pro Pro Arg Glu Glu Leu Ser Ser Arg Ser Val Ser Leu Thr
+                 350                 355                 360
+
+ Cys Met Ile Asn Gly Phe Tyr Pro Ser Asp Ile Ser Val Glu Trp
+                 365                 370                 375
+
+ Glu Lys Asn Gly Lys Ala Glu Asp Asn Tyr Lys Thr Thr Pro Ala
+                 380                 385                 390
+
+ Val Leu Asp Ser Asp Gly Ser Tyr Phe Leu Tyr Ser Lys Leu Ser
+                 395                 400                 405
+
+ Val Pro Thr Ser Glu Trp Gln Arg Gly Asp Val Phe Thr Cys Ser
+                 410                 415                 420
+
+ Val Met His Glu Ala Leu His Asn His Tyr Thr Gln Lys Ser Ile
+                 425                 430                 435
+
+ Ser Arg Ser Pro Gly Lys
+                 440    
+
+<210> 2
+<211> 118
+<212> PRT
+<213> Oryctolagus cuniculus
+
+<400> 2
+ Gln Leu Val Glu Glu Ser Gly Gly Gly Leu Val Thr Pro Gly Gly
+   1               5                  10                  15
+
+ Thr Leu Thr Leu Thr Cys Thr Ala Ser Gly Phe Thr Ile Ser Asn
+                  20                  25                  30
+
+ Tyr His Met Ser Trp Val Arg Gln Ala Pro Gly Lys Gly Leu Glu
+                  35                  40                  45
+
+ Trp Ile Gly Ile Ile Tyr Ala Val Ser Ala Ala Thr Trp Ser Ala
+                  50                  55                  60
+
+ Thr Trp Val Lys Gly Arg Phe Thr Ile Ser Lys Thr Leu Thr Thr
+                  65                  70                  75
+
+ Val Asp Leu Lys Met Thr Ser Leu Thr Ala Ala Asp Thr Ala Thr
+                  80                  85                  90
+
+ Tyr Phe Cys Ala Arg Val Arg Ala Pro Gly Asp Ser Thr Tyr Tyr
+                  95                 100                 105
+
+ Asp Leu Trp Gly Pro Gly Thr Leu Val Thr Val Ser Ser
+                 110                 115            
+
+<210> 3
+<211> 5
+<212> PRT
+<213> Oryctolagus cuniculus
+
+<400> 3
+ Asn Tyr His Met Ser
+   1               5
+
+<210> 4
+<211> 16
+<212> PRT
+<213> Oryctolagus cuniculus
+
+<400> 4
+ Ile Ile Tyr Ala Val Ser Ala Ala Thr Trp Ser Thr Trp Val Lys
+   1               5                  10                  15
+
+ Gly
+    
+
+<210> 5
+<211> 12
+<212> PRT
+<213> Oryctolagus cuniculus
+
+<400> 5
+ Val Arg Ala Pro Gly Asp Ser Thr Tyr Tyr Asp Leu
+   1               5                  10        
+
+<210> 6
+<211> 216
+<212> PRT
+<213> Oryctolagus cuniculus
+
+<400> 6
+ Ala Val Val Met Thr Gln Thr Ala Ser Pro Val Ser Ala Val Val
+   1               5                  10                  15
+
+ Gly Gly Thr Val Thr Ile Asn Cys Gln Ala Ser Gln Thr Ile Ser
+                  20                  25                  30
+
+ Asn Asn Trp Leu Ser Trp Tyr Gln Gln Lys Pro Gly Gln Pro Pro
+                  35                  40                  45
+
+ Lys Leu Leu Ile Tyr Lys Ala Ser Ile Leu Ala Ser Gly Val Pro
+                  50                  55                  60
+
+ Ser Arg Phe Ser Gly Ser Gly Ser Gly Thr Glu Phe Thr Leu Thr
+                  65                  70                  75
+
+ Ile Ser Gly Val Gln Cys Asp Asp Ala Ala Thr Tyr Tyr Cys Leu
+                  80                  85                  90
+
+ Tyr Gly His Tyr Ile Thr Thr Ser Ala His Asn Ala Phe Gly Gly
+                  95                 100                 105
+
+ Gly Thr Glu Val Val Val Lys Gly Asp Pro Val Ala Pro Thr Val
+                 110                 115                 120
+
+ Leu Ile Phe Pro Pro Ala Ala Asp Gln Val Ala Thr Gly Thr Val
+                 125                 130                 135
+
+ Thr Ile Val Cys Val Ala Asn Lys Tyr Phe Pro Asp Val Thr Val
+                 140                 145                 150
+
+ Thr Trp Glu Val Asp Gly Thr Thr Gln Thr Thr Gly Ile Glu Asn
+                 155                 160                 165
+
+ Ser Lys Thr Pro Gln Asn Ser Ala Asp Cys Thr Tyr Asn Leu Ser
+                 170                 175                 180
+
+ Ser Thr Leu Thr Leu Thr Ser Thr Gln Tyr Asn Ser His Lys Glu
+                 185                 190                 195
+
+ Tyr Thr Cys Lys Val Thr Gln Gly Thr Thr Ser Val Val Gln Ser
+                 200                 205                 210
+
+ Phe Asn Arg Gly Asp Cys
+                 215    
+
+<210> 7
+<211> 114
+<212> PRT
+<213> Oryctolagus cuniculus
+
+<400> 7
+ Ala Val Val Met Thr Gln Thr Ala Ser Pro Val Ser Ala Val Val
+   1               5                  10                  15
+
+ Gly Gly Thr Val Thr Ile Asn Cys Gln Ala Ser Gln Thr Ile Ser
+                  20                  25                  30
+
+ Asn Asn Trp Leu Ser Trp Tyr Gln Gln Lys Pro Gly Gln Pro Pro
+                  35                  40                  45
+
+ Lys Leu Leu Ile Tyr Lys Ala Ser Ile Leu Ala Ser Gly Val Pro
+                  50                  55                  60
+
+ Ser Arg Phe Ser Gly Ser Gly Ser Gly Thr Glu Phe Thr Leu Thr
+                  65                  70                  75
+
+ Ile Ser Gly Val Gln Cys Asp Asp Ala Ala Thr Tyr Tyr Cys Leu
+                  80                  85                  90
+
+ Tyr Gly His Tyr Ile Thr Thr Ser Ala His Asn Ala Phe Gly Gly
+                  95                 100                 105
+
+ Gly Thr Glu Val Val Val Lys Gly Asp
+                 110                
+
+<210> 8
+<211> 12
+<212> PRT
+<213> Oryctolagus cuniculus
+
+<400> 8
+ Gln Ala Ser Gln Thr Ile Ser Asn Asn Trp Leu Ser
+   1               5                  10        
+
+<210> 9
+<211> 7
+<212> PRT
+<213> Oryctolagus cuniculus
+
+<400> 9
+ Lys Ala Ser Ile Leu Ala Ser
+   1               5        
+
+<210> 10
+<211> 13
+<212> PRT
+<213> Oryctolagus cuniculus
+
+<400> 10
+ Leu Tyr Gly His Tyr Ile Thr Thr Ser Ala His Asn Ala
+   1               5                  10            
+

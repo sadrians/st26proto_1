@@ -6,7 +6,9 @@ Created on Jul 12, 2016
 import re 
 import os 
 import csv
+import io 
 import pprint
+import chardet
 import converter_util as cu 
 from converter import St25To26Converter 
 import st25parser.seqlutils as su 
@@ -22,7 +24,7 @@ GENERAL_INFORMATION_REGEX = r"""(?P<seqlHeader>[^<]+)?
                 (?P<priorities>(?P<priorityNumber><150>[^<]+)
                 (?P<priorityDate><151>[^<]+))*
                 (?P<quantity><160>[^<]+)
-                (?P<software><170>[^<]+)
+                (?P<software><170>[^<]+)?
                 """
  
 GENERAL_INFORMATION_PATTERN = re.compile(GENERAL_INFORMATION_REGEX, re.DOTALL | re.VERBOSE)
@@ -108,34 +110,35 @@ class ElementSizeCalculator(object):
         self.seql_raw = RawSequenceListing(self.filePath)
         self.seql_clean = st25parser.seqlparser.SequenceListing(self.filePath)
         self.generalInformationRows = []
-
-        self.setRow_xmlHeader()
-        self.setRow_doctypeDeclaration()
-        self.setRow_styleSheetReference()
-        self.setRow_header()
-        self.setRow_dtdVersion()
-        self.setRow_fileName()
-        self.setRow_softwareName()
-        self.setRow_softwareVersion()
-        self.setRow_productionDate()
-        self.setRow_110()
-        self.setRow_InventorName()
-        self.setRow_120()
-        self.setRow_130()
-        self.setRow_ApplicationIdentification()
-        self.setRow_IPOfficeCode()
-        self.setRow_140()
-        self.setRow_141()
-#         if self.seql_raw.applicationNumber and self.seql_raw.filingDate:
-#             self.setRow_ApplicationIdentification()
-#             self.setRow_IPOfficeCode()
-#             self.setRow_140()
-#             self.setRow_141()
-        if self.seql_raw.priorities:
-            self.setRow_prio()
-        self.setRow_160()
-        self.setRow_170()
-        self.sequenceRows = self.setSequenceRows()
+        self.sequenceRows = []
+        if self.seql_clean.isSeql:
+            self.setRow_xmlHeader()
+            self.setRow_doctypeDeclaration()
+            self.setRow_styleSheetReference()
+            self.setRow_header()
+            self.setRow_dtdVersion()
+            self.setRow_fileName()
+            self.setRow_softwareName()
+            self.setRow_softwareVersion()
+            self.setRow_productionDate()
+            self.setRow_110()
+            self.setRow_InventorName()
+            self.setRow_120()
+            self.setRow_130()
+            self.setRow_ApplicationIdentification()
+            self.setRow_IPOfficeCode()
+            self.setRow_140()
+            self.setRow_141()
+    #         if self.seql_raw.applicationNumber and self.seql_raw.filingDate:
+    #             self.setRow_ApplicationIdentification()
+    #             self.setRow_IPOfficeCode()
+    #             self.setRow_140()
+    #             self.setRow_141()
+            if self.seql_raw.priorities:
+                self.setRow_prio()
+            self.setRow_160()
+            self.setRow_170()
+            self.sequenceRows = self.setSequenceRows()
      
     def _getSt25St26Lengths(self,
                         element_st25_tag, 
@@ -598,23 +601,49 @@ class FileSizeComparator(object):
         self.xmlOutDirPath = xmlOutDirPath
         
         self.esc = ElementSizeCalculator(self.inFilePath)
-        self.csvFilePath = self.esc.writeSizes(self.outDirPath)
-        
-        sc = St25To26Converter(self.inFilePath)
-        self.xmlFilePath = sc.generateXmlFile(self.xmlOutDirPath)
-
-        self.cleanXmlFilePath = self.cleanAndWriteXmlFile() 
-        
-        self.totals = {}
-        
-#         self.listTotals() 
-        self.setTotals()  
+        if self.esc.seql_clean.isSeql:
+            self.csvFilePath = self.esc.writeSizes(self.outDirPath)
+            
+            
+            sc = St25To26Converter(self.inFilePath)
+            self.xmlFilePath = sc.generateXmlFile(self.xmlOutDirPath)
+    
+            self.cleanXmlFilePath = self.cleanAndWriteXmlFile() 
+            
+            self.totals = {}
+            
+    #         self.listTotals() 
+    #         self.setTotals() 
+            
+            self.setTotals() 
+        else:
+            print 'FileSizeComparator: not able to process', inFilePath
+#         self.esc = ElementSizeCalculator(self.inFilePath)
+#         self.csvFilePath = self.esc.writeSizes(self.outDirPath)
+#         
+#         
+#         sc = St25To26Converter(self.inFilePath)
+#         self.xmlFilePath = sc.generateXmlFile(self.xmlOutDirPath)
+# 
+#         self.cleanXmlFilePath = self.cleanAndWriteXmlFile() 
+#         
+#         self.totals = {}
+#         
+# #         self.listTotals() 
+# #         self.setTotals() 
+#         if self.esc.seql_clean.isSeql:
+#             self.setTotals() 
+#         else:
+#             print 'FileSizeComparator: not able to process', inFilePath
     
     def cleanAndWriteXmlFile(self):
         outFile = self.xmlFilePath.replace('.xml', '_clean.xml')
+#         with open(self.xmlFilePath, 'r') as f, io.open(outFile, 'w', encoding='utf8') as wr:
         with open(self.xmlFilePath, 'r') as f, open(outFile, 'w') as wr:
+
             clean = re.sub(r'\s+<', '<', f.read()).replace(os.linesep, '')
-            wr.write(clean)
+#             wr.write(unicode(clean))
+            wr.write(unicode(clean))
         print 'Generated clean xml file', outFile 
         return outFile 
     
@@ -647,13 +676,18 @@ class FileSizeComparator(object):
         self.totals[cu.ELEMENT_ST26_LENGTH] = sum([r[5] for r in rows])
         
         with open(self.inFilePath, 'r') as inf:
-            self.totals[cu.CHARS_TXT_FILE] = len(inf.read())
+            s_txt = inf.read()
+            self.totals[cu.CHARS_TXT_FILE] = len(s_txt)
+            self.totals[cu.ENCODING_TXT] = chardet.detect(s_txt)['encoding']
         self.totals[cu.FILE_SIZE_TXT] = os.path.getsize(self.inFilePath)
          
         with open(self.cleanXmlFilePath, 'r') as f:
-            self.totals[cu.CHARS_XML_CLEAN_FILE] = len(f.read())
+            s_xml = f.read()
+            self.totals[cu.CHARS_XML_CLEAN_FILE] = len(s_xml)
+            self.totals[cu.ENCODING_XML] = chardet.detect(s_xml)['encoding']
         self.totals[cu.FILE_SIZE_XML_CLEAN] = os.path.getsize(self.cleanXmlFilePath) 
-
+        print self.inFilePath
+        print 'encoding:', self.esc.seql_clean.charEncoding
 
 
     def compareElementsInCsvAndXmlFiles(self):

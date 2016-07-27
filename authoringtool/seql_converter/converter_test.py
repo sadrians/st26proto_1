@@ -27,12 +27,16 @@ class Test_St25To26Converter(TestCase):
         self.f1004 = self.getAbsPath('WO2012-001004-001.zip.txt')
         self.f33_1 = self.getAbsPath('file33_1.txt')
         self.f80 = self.getAbsPath('file80.txt')
+        self.f6550 = self.getAbsPath('WO2012-006550-001.zip.txt')
+        self.f63219 = self.getAbsPath('WO2012-063219-001.zip.txt')
          
         self.sc1 = St25To26Converter(self.f1)
         self.sc1004 = St25To26Converter(self.f1004)
         self.sc33_1 = St25To26Converter(self.f33_1)
-        self.sc80 = St25To26Converter(self.f80) 
- 
+        self.sc80 = St25To26Converter(self.f80)
+        self.sc6550 = St25To26Converter(self.f6550)
+        self.sc63219 = St25To26Converter(self.f63219)  
+        
     def tearDown(self):
         pass
  
@@ -57,6 +61,10 @@ class Test_St25To26Converter(TestCase):
         self.assertEqual(1900, self.sc33_1.seql_st26.filingDate.year)
         self.assertEqual(1, self.sc33_1.seql_st26.filingDate.month)
         self.assertEqual(1, self.sc33_1.seql_st26.filingDate.day)
+        
+        self.assertEqual(1900, self.sc6550.seql_st26.filingDate.year)
+        self.assertEqual(1, self.sc6550.seql_st26.filingDate.month)
+        self.assertEqual(1, self.sc6550.seql_st26.filingDate.day)
          
         self.assertEqual(converter_util.DEFAULT_CODE, self.sc1.seql_st26.earliestPriorityIPOfficeCode)
         self.assertEqual('61536558 - prio1', self.sc1.seql_st26.earliestPriorityApplicationNumberText)
@@ -73,6 +81,8 @@ class Test_St25To26Converter(TestCase):
         self.assertEqual('OPX Biotechnologies, Inc.', self.sc1.seql_st26.applicantNameLatin)
  
         self.assertEqual(4, self.sc1.seql_st26.sequenceTotalQuantity)
+        
+        self.assertEqual(11, self.sc63219.seql_st26.sequenceTotalQuantity)
          
     @withMethodName
     def test_setTitleSt26(self):

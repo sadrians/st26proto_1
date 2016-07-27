@@ -1,0 +1,212 @@
+
+                                SEQUENCE LISTING
+
+<110> THE ADMINISTRATORS OF THE TULANE EDUCATIONAL FUND
+      U.S. DEPARTMENT OF VETERANS AFFAIRS
+      ZADINA, James E.
+      HACKLER, Laszlo
+      
+      
+      
+
+<120> MU OPIOID RECEPTOR AGONIST ANALOGS OF
+  THE ENDOMORPHINS
+
+<130> TU-386-PCT
+
+<150> 61/363,039          
+<151> 2010-07-09  
+
+<160> 11
+
+<170> FastSEQ for Windows Version 4.0
+
+<210> 1
+<211> 5
+<212> PRT
+<213> Artificial Sequence
+
+<220> 
+<223> Cyclic peptide, side chain amide bond between
+      D-Lys2 and Glu5
+
+<221> VARIANT        
+<222> 2
+<223> Xaa=D-Lys
+
+<400> 1
+Tyr Xaa Trp Phe Glu
+ 1               5  
+
+
+<210> 2
+<211> 5
+<212> PRT
+<213> Artificial Sequence
+
+<220> 
+<223> Cyclic peptide, side chain amide bond between
+      D-Glu2 and Lys5
+
+<221> VARIANT        
+<222> 2
+<223> Xaa=D-Glu
+
+<400> 2
+Tyr Xaa Phe Phe Lys
+ 1               5  
+
+
+<210> 3
+<211> 6
+<212> PRT
+<213> Artificial Sequence
+
+<220> 
+<223> Cyclic peptide, side chain amide bond between
+      D-Lys2 and Glu5
+
+<221> VARIANT        
+<222> 2
+<223> Xaa=D-Lys
+
+<400> 3
+Tyr Xaa Trp Phe Glu Gly
+ 1               5      
+
+
+<210> 4
+<211> 6
+<212> PRT
+<213> Artificial Sequence
+
+<220> 
+<223> Cyclic peptide, side chain amide bond between
+      D-Glu2 and Lys5
+
+<221> VARIANT        
+<222> 2
+<223> Xaa=D-Glu
+
+<400> 4
+Tyr Xaa Phe Phe Lys Gly
+ 1               5      
+
+
+<210> 5
+<211> 5
+<212> PRT
+<213> Artificial Sequence
+
+<220> 
+<223> Cyclic peptide, side chain amide bond between
+      D-Lys2 and Asp5
+
+<221> VARIANT        
+<222> 2
+<223> Xaa=D-Lys
+
+<400> 5
+Tyr Xaa Trp Phe Asp
+ 1               5  
+
+
+<210> 6
+<211> 5
+<212> PRT
+<213> Artificial Sequence
+
+<220> 
+<223> Cyclic peptide, side chain amide bond between
+      D-Glu2 and Lys5
+
+<221> VARIANT        
+<222> 2
+<223> Xaa=D-Glu
+
+<221> VARIANT        
+<222> 3
+<223> Xaa=N-Methyl-Phe
+
+<400> 6
+Tyr Xaa Xaa Phe Lys
+ 1               5  
+
+
+<210> 7
+<211> 6
+<212> PRT
+<213> Artificial Sequence
+
+<220> 
+<223> Cyclic peptide, side chain amide bond between
+      D-Orn2 and Asp5
+
+<221> VARIANT        
+<222> 2
+<223> Xaa=D-Orn
+
+<221> VARIANT        
+<222> 4
+<223> Xaa=para-chloro-Phe
+
+<400> 7
+Tyr Xaa Phe Xaa Asp Val
+ 1               5      
+
+
+<210> 8
+<211> 4
+<212> PRT
+<213> Homo sapiens
+
+<400> 8
+Tyr Pro Trp Phe
+ 1              
+
+
+<210> 9
+<211> 4
+<212> PRT
+<213> Homo sapiens
+
+<400> 9
+Tyr Pro Phe Phe
+ 1              
+
+
+<210> 10
+<211> 4
+<212> PRT
+<213> Artificial Sequence
+
+<220> 
+<223> Cyclic peptide, amide bond between Phe4 and side
+      chain of D-Lys2
+
+<221> VARIANT        
+<222> 2
+<223> Xaa=D-Lys
+
+<400> 10
+Tyr Xaa Trp Phe
+ 1              
+
+
+<210> 11
+<211> 4
+<212> PRT
+<213> Artificial Sequence
+
+<220> 
+<223> Cyclic peptide, amide bond between Phe4 and side
+      chain of D-Lys2
+
+<221> VARIANT        
+<222> 2
+<223> Xaa=D-Lys
+
+<400> 11
+Tyr Xaa Phe Phe
+ 1              
+

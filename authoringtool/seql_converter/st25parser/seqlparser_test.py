@@ -49,6 +49,7 @@ class TestSequenceListing(unittest.TestCase):
         cls.sl_input_no_seql = getSeql('no_st25_example.txt') # not sequence listing file
         
         cls.sl1004 = getSeql('WO2012-001004-001.zip.txt')
+        cls.sl6503 = getSeql('WO2012-006503-001.zip.txt') # 170 missing 
                 
         infilename1 = getAbsPath('file1.txt')
         infilename2 = getAbsPath('file2.txt')
@@ -91,11 +92,12 @@ class TestSequenceListing(unittest.TestCase):
         self.assertTrue(self.sl1.isSeql)
         self.assertTrue(not self.sl_input_no_seql.isSeql)
         self.assertTrue(not SequenceListing('abc').isSeql)
-        print 'xxx'
+        
         # test if closing bracket missing from 120
         self.assertTrue(self.sl32_5.isSeql)
         # what's special with this sl? why do we need this test?
         self.assertTrue(self.sl058291.isSeql)
+        self.assertTrue(self.sl6503.isSeql)
 
 # ==========Tests for GeneralInformation===========================
     @withMethodName
