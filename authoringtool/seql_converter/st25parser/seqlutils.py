@@ -15,7 +15,7 @@ logFile = os.path.join(PROJECT_DIRECTORY, 'log/slc_logger.log')
 
 logging.basicConfig(filename=logFile,
                 format='%(asctime)s - %(name)s - %(levelname)s\n\t%(message)s',
-                level=logging.DEBUG
+                level=logging.WARNING
                 )
 
 logger = logging.getLogger('seqlutils')
