@@ -643,7 +643,9 @@ class FileSizeComparator(object):
 
             clean = re.sub(r'\s+<', '<', f.read()).replace(os.linesep, '')
 #             wr.write(unicode(clean))
-            wr.write(unicode(clean))
+            charEncoding = chardet.detect(clean)['encoding']
+            u = clean.decode(charEncoding)
+            wr.write(u.encode('utf-8'))
         print 'Generated clean xml file', outFile 
         return outFile 
     
