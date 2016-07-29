@@ -111,7 +111,7 @@ LOGGING = {
     },
     'handlers': {
         'file': {
-            'level': 'DEBUG',
+            'level': 'WARNING',
             'class': 'logging.FileHandler',
             'filename': os.path.join(BASE_DIR, 'log', 'authoringtool.log'),
             'formatter': 'verbose'
@@ -121,11 +121,11 @@ LOGGING = {
         'django': {
             'handlers':['file'],
             'propagate': True,
-            'level':'DEBUG',
+            'level':'WARNING',
         },
         'sequencelistings': {
             'handlers': ['file'],
-            'level': 'DEBUG',
+            'level': 'WARNING',
         },
     }
 }

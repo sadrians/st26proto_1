@@ -590,7 +590,7 @@ class ElementSizeCalculator(object):
                 wr.writerow(genInfoRow)
             for seqRow in self.sequenceRows:
                 wr.writerow(seqRow)
-        print 'Generated file', outFilePath
+#         print 'Generated file', outFilePath
         
         return outFilePath
 
@@ -611,30 +611,10 @@ class FileSizeComparator(object):
             self.cleanXmlFilePath = self.cleanAndWriteXmlFile() 
             
             self.totals = {}
-            
-    #         self.listTotals() 
-    #         self.setTotals() 
-            
+                        
             self.setTotals() 
         else:
             print 'FileSizeComparator: not able to process', inFilePath
-#         self.esc = ElementSizeCalculator(self.inFilePath)
-#         self.csvFilePath = self.esc.writeSizes(self.outDirPath)
-#         
-#         
-#         sc = St25To26Converter(self.inFilePath)
-#         self.xmlFilePath = sc.generateXmlFile(self.xmlOutDirPath)
-# 
-#         self.cleanXmlFilePath = self.cleanAndWriteXmlFile() 
-#         
-#         self.totals = {}
-#         
-# #         self.listTotals() 
-# #         self.setTotals() 
-#         if self.esc.seql_clean.isSeql:
-#             self.setTotals() 
-#         else:
-#             print 'FileSizeComparator: not able to process', inFilePath
     
     def cleanAndWriteXmlFile(self):
         outFile = self.xmlFilePath.replace('.xml', '_clean.xml')
@@ -646,7 +626,7 @@ class FileSizeComparator(object):
             charEncoding = chardet.detect(clean)['encoding']
             u = clean.decode(charEncoding)
             wr.write(u.encode('utf-8'))
-        print 'Generated clean xml file', outFile 
+#         print 'Generated clean xml file', outFile 
         return outFile 
     
     def listTotals(self):

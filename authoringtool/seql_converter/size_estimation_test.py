@@ -67,26 +67,48 @@ class Test(unittest.TestCase):
         self.assertEqual(residues40_exp, self.sl5.sequences[39].residues)
 
 class Test_ElementSizeCalculator(unittest.TestCase):
-    def setUp(self):
-        self.f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+    @classmethod
+    def setUpClass(cls):
+        cls.f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 
                             'st25parser', 'testData', 'file5.txt')
-        self.esc5 = ElementSizeCalculator(self.f5)
+        cls.esc5 = ElementSizeCalculator(cls.f5)
         
-        self.f_WO2013041670 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+        cls.f_WO2013041670 = os.path.join(settings.BASE_DIR, 'seql_converter', 
                             'st25parser', 'testData', 'WO2013041670.txt')
-        self.esc_WO2013041670 = ElementSizeCalculator(self.f_WO2013041670)
+        cls.esc_WO2013041670 = ElementSizeCalculator(cls.f_WO2013041670)
         
-        self.f_WO2012_001613 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+        cls.f_WO2012_001613 = os.path.join(settings.BASE_DIR, 'seql_converter', 
                             'st25parser', 'testData', 'WO2012-001613-001.zip.txt')
-        self.esc_WO2012_001613 = ElementSizeCalculator(self.f_WO2012_001613)
+        cls.esc_WO2012_001613 = ElementSizeCalculator(cls.f_WO2012_001613)
         
         f1004 = os.path.join(settings.BASE_DIR, 'seql_converter', 
                             'st25parser', 'testData', 'WO2012-001004-001.zip.txt')
-        self.esc_1004 = ElementSizeCalculator(f1004)
+        cls.esc_1004 = ElementSizeCalculator(f1004)
         
         f6550 = os.path.join(settings.BASE_DIR, 'seql_converter', 
                             'st25parser', 'testData', 'WO2012-006550-001.zip.txt')
-        self.esc_6550 = ElementSizeCalculator(f6550)
+        cls.esc_6550 = ElementSizeCalculator(f6550)
+        
+#     def setUp(self):
+#         self.f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+#                             'st25parser', 'testData', 'file5.txt')
+#         self.esc5 = ElementSizeCalculator(self.f5)
+#         
+#         self.f_WO2013041670 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+#                             'st25parser', 'testData', 'WO2013041670.txt')
+#         self.esc_WO2013041670 = ElementSizeCalculator(self.f_WO2013041670)
+#         
+#         self.f_WO2012_001613 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+#                             'st25parser', 'testData', 'WO2012-001613-001.zip.txt')
+#         self.esc_WO2012_001613 = ElementSizeCalculator(self.f_WO2012_001613)
+#         
+#         f1004 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+#                             'st25parser', 'testData', 'WO2012-001004-001.zip.txt')
+#         self.esc_1004 = ElementSizeCalculator(f1004)
+#         
+#         f6550 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+#                             'st25parser', 'testData', 'WO2012-006550-001.zip.txt')
+#         self.esc_6550 = ElementSizeCalculator(f6550)
  
     @withMethodName
     def test_setRow_xmlHeader(self):
