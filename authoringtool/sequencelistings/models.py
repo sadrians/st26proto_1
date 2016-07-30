@@ -20,22 +20,30 @@ class SequenceListing(models.Model):
 
 #     xml children (except sequences which are represented as a separate Model)
     
-    IPOfficeCode = models.CharField('IP office code', max_length=2)
+    IPOfficeCode = models.CharField('IP office code', max_length=2, 
+                                    help_text='Valid format: WIPO ST.3 code')
     applicationNumberText = models.CharField('Application number text', max_length=20)
-    filingDate = models.DateField('Filing date')
+    filingDate = models.DateField('Filing date', help_text='Valid date format: WIPO ST.2 YYYY-MM-DD')
 
     applicantFileReference = models.CharField('Applicant file reference', max_length=30)
     
-    earliestPriorityIPOfficeCode = models.CharField('Earliest priority IP office code', max_length=2)
+    earliestPriorityIPOfficeCode = models.CharField('Earliest priority IP office code', 
+                                        max_length=2, 
+                                        help_text='Valid format: WIPO ST.3 code')
     earliestPriorityApplicationNumberText = models.CharField('Earliest priority application number text', max_length=20)
-    earliestPriorityFilingDate = models.DateField('Earliest priority filing date')
+    earliestPriorityFilingDate = models.DateField('Earliest priority filing date', 
+                                                  help_text='Valid date format: WIPO ST.2 YYYY-MM-DD')
 
     applicantName = models.CharField('Applicant name', max_length=200)
-    applicantNameLanguageCode = models.CharField('Applicant name language code', max_length=2)
+    applicantNameLanguageCode = models.CharField('Applicant name language code', 
+                                    max_length=2, 
+                                    help_text='Valid format: ISO 639-1')
     applicantNameLatin = models.CharField('Applicant name Latin', max_length=200)
 
     inventorName = models.CharField('Inventor name', max_length=200)
-    inventorNameLanguageCode = models.CharField('Inventor name language code', max_length=2)
+    inventorNameLanguageCode = models.CharField('Inventor name language code', 
+                                                max_length=2, 
+                                                help_text='Valid format: ISO 639-1')
     inventorNameLatin = models.CharField('Inventor name Latin', max_length=200)
     
     sequenceTotalQuantity = models.IntegerField('Sequence total quantity', default=0)
@@ -52,7 +60,9 @@ class SequenceListing(models.Model):
 class Title(models.Model):
     sequenceListing = models.ForeignKey(SequenceListing) 
     inventionTitle = models.CharField('Invention title', max_length=200)
-    inventionTitleLanguageCode = models.CharField('Invention title language code', max_length=2)
+    inventionTitleLanguageCode = models.CharField('Invention title language code', 
+                                                  max_length=2, 
+                                                  help_text='Valid format: ISO 639-1')
 
     def __unicode__(self):
         return '%s / title %s (%s)' % (self.sequenceListing, 

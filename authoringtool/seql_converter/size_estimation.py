@@ -246,7 +246,7 @@ class ElementSizeCalculator(object):
             self.seql_clean.generalInformation.applicant[0],
             'ApplicantName', cu.BLANK_PLACEHOLDER))
         
-        self.generalInformationRows.append(self._getSt25St26Lengths(0, 0,
+        self.generalInformationRows.append(self._getSt25St26Lengths(110, 0,
             '-', cu.DEFAULT_CODE,
             'languageCode', 'ST.26 specific languageCode attribute for ApplicantName'))
 
@@ -260,7 +260,7 @@ class ElementSizeCalculator(object):
                 cu.BLANK_PLACEHOLDER]
         self.generalInformationRows.append(r)
         
-        self.generalInformationRows.append(self._getSt25St26Lengths(0, 0,
+        self.generalInformationRows.append(self._getSt25St26Lengths(110, 0,
             cu.BLANK_PLACEHOLDER, cu.DEFAULT_CODE,
             'languageCode', 'ST.26 specific languageCode attribute for InventorName'))
         
@@ -270,7 +270,7 @@ class ElementSizeCalculator(object):
             self.seql_clean.generalInformation.title,
             'InventionTitle', cu.BLANK_PLACEHOLDER))
         
-        self.generalInformationRows.append(self._getSt25St26Lengths(0, 0,
+        self.generalInformationRows.append(self._getSt25St26Lengths(120, 0,
             '-', cu.DEFAULT_CODE,
             'languageCode', 'ST.26 specific languageCode attribute for InventionTitle'))
         
@@ -622,6 +622,7 @@ class FileSizeComparator(object):
         with open(self.xmlFilePath, 'r') as f, open(outFile, 'w') as wr:
 
             clean = re.sub(r'\s+<', '<', f.read()).replace(os.linesep, '')
+            clean = re.sub(r'>\s+', '>', clean)
 #             wr.write(unicode(clean))
             charEncoding = chardet.detect(clean)['encoding']
             u = clean.decode(charEncoding)

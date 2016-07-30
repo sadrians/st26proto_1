@@ -88,27 +88,6 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         f6550 = os.path.join(settings.BASE_DIR, 'seql_converter', 
                             'st25parser', 'testData', 'WO2012-006550-001.zip.txt')
         cls.esc_6550 = ElementSizeCalculator(f6550)
-        
-#     def setUp(self):
-#         self.f5 = os.path.join(settings.BASE_DIR, 'seql_converter', 
-#                             'st25parser', 'testData', 'file5.txt')
-#         self.esc5 = ElementSizeCalculator(self.f5)
-#         
-#         self.f_WO2013041670 = os.path.join(settings.BASE_DIR, 'seql_converter', 
-#                             'st25parser', 'testData', 'WO2013041670.txt')
-#         self.esc_WO2013041670 = ElementSizeCalculator(self.f_WO2013041670)
-#         
-#         self.f_WO2012_001613 = os.path.join(settings.BASE_DIR, 'seql_converter', 
-#                             'st25parser', 'testData', 'WO2012-001613-001.zip.txt')
-#         self.esc_WO2012_001613 = ElementSizeCalculator(self.f_WO2012_001613)
-#         
-#         f1004 = os.path.join(settings.BASE_DIR, 'seql_converter', 
-#                             'st25parser', 'testData', 'WO2012-001004-001.zip.txt')
-#         self.esc_1004 = ElementSizeCalculator(f1004)
-#         
-#         f6550 = os.path.join(settings.BASE_DIR, 'seql_converter', 
-#                             'st25parser', 'testData', 'WO2012-006550-001.zip.txt')
-#         self.esc_6550 = ElementSizeCalculator(f6550)
  
     @withMethodName
     def test_setRow_xmlHeader(self):
@@ -236,7 +215,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
         
         act1 = [row for row in self.esc5.generalInformationRows if row[7] == 'ST.26 specific languageCode attribute for ApplicantName'][0]
-        self.assertEqual(0, act1[0])
+        self.assertEqual(110, act1[0])
         self.assertEqual(0, act1[1])
         self.assertEqual(0, act1[2])
         self.assertEqual(len(cu.DEFAULT_CODE), act1[3])
@@ -258,7 +237,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
         
         act1 = [row for row in self.esc5.generalInformationRows if row[7] == 'ST.26 specific languageCode attribute for InventorName'][0]
-        self.assertEqual(0, act1[0])
+        self.assertEqual(110, act1[0])
         self.assertEqual(0, act1[1])
         self.assertEqual(0, act1[2])
         self.assertEqual(len(cu.DEFAULT_CODE), act1[3])
@@ -278,7 +257,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
         
         act1 = [row for row in self.esc5.generalInformationRows if row[7] == 'ST.26 specific languageCode attribute for InventionTitle'][0]
-        self.assertEqual(0, act1[0])
+        self.assertEqual(120, act1[0])
         self.assertEqual(0, act1[1])
         self.assertEqual(0, act1[2])
         self.assertEqual(len(cu.DEFAULT_CODE), act1[3])

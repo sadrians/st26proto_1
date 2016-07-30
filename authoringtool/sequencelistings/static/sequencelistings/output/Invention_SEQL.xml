@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "ST26SequenceListing_V1_0.dtd">
+<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "resources/ST26SequenceListing_V1_0.dtd">
 <?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>
 <ST26SequenceListing dtdVersion="1" 
                     fileName="Invention_SEQL"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="June 20, 2016">
-<!-- <ST26SequenceListing dtdVersion="1" 
-                    fileName="Invention_SEQL"
-                    softwareName="prototype" 
-                    softwareVersion="0.1"
-                    productionDate="June 21, 2016, 12:47 a.m."
-                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                    xsi:noNamespaceSchemaLocation="st26.xsd"> -->
+                    productionDate="July 30, 2016">
     <ApplicationIdentification>
         <IPOfficeCode>US</IPOfficeCode>
         <ApplicationNumberText>14/999,999</ApplicationNumberText>
@@ -59,9 +52,6 @@
                 <INSDSeq_length>4</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -105,9 +95,6 @@
                 <INSDSeq_length>4</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -138,9 +125,6 @@
                 <INSDSeq_length>4</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -184,9 +168,6 @@
                 <INSDSeq_length>4</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -217,9 +198,6 @@
                 <INSDSeq_length>4</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -263,9 +241,6 @@
                 <INSDSeq_length>4</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -296,9 +271,6 @@
                 <INSDSeq_length>4</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -329,9 +301,6 @@
                 <INSDSeq_length>4</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -362,9 +331,6 @@
                 <INSDSeq_length>4</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -395,9 +361,6 @@
                 <INSDSeq_length>4</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -428,9 +391,6 @@
                 <INSDSeq_length>4</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -461,9 +421,6 @@
                 <INSDSeq_length>6</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -520,9 +477,6 @@
                 <INSDSeq_length>106</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -566,9 +520,6 @@
                 <INSDSeq_length>8</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -625,9 +576,6 @@
                 <INSDSeq_length>4</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                 </INSDSeq_feature-table>
@@ -640,9 +588,6 @@
                 <INSDSeq_length>6</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                 </INSDSeq_feature-table>
@@ -655,9 +600,6 @@
                 <INSDSeq_length>6</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -683,9 +625,6 @@
                 <INSDSeq_length>5</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -729,9 +668,6 @@
                 <INSDSeq_length>8</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -801,9 +737,6 @@
                 <INSDSeq_length>8</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -847,9 +780,6 @@
                 <INSDSeq_length>5</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -893,9 +823,6 @@
                 <INSDSeq_length>400</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2226,9 +2153,6 @@
                 <INSDSeq_length>52</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2324,9 +2248,6 @@
                 <INSDSeq_length>53</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2422,9 +2343,6 @@
                 <INSDSeq_length>74</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2520,9 +2438,6 @@
                 <INSDSeq_length>10</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2553,9 +2468,6 @@
                 <INSDSeq_length>10</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2586,9 +2498,6 @@
                 <INSDSeq_length>10</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2619,9 +2528,6 @@
                 <INSDSeq_length>10</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2652,9 +2558,6 @@
                 <INSDSeq_length>10</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2685,9 +2588,6 @@
                 <INSDSeq_length>10</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2718,9 +2618,6 @@
                 <INSDSeq_length>22</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2759,9 +2656,6 @@
                 <INSDSeq_length>22</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2792,9 +2686,6 @@
                 <INSDSeq_length>22</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2825,9 +2716,6 @@
                 <INSDSeq_length>22</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2858,9 +2746,6 @@
                 <INSDSeq_length>76</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2891,9 +2776,6 @@
                 <INSDSeq_length>85</INSDSeq_length>
                 <INSDSeq_moltype>RNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -2980,9 +2862,6 @@
                 <INSDSeq_length>4</INSDSeq_length>
                 <INSDSeq_moltype>AA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -3039,9 +2918,6 @@
                 <INSDSeq_length>28</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
@@ -3085,9 +2961,6 @@
                 <INSDSeq_length>31</INSDSeq_length>
                 <INSDSeq_moltype>DNA</INSDSeq_moltype>
                 <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_other-seqids>
-                    <INSDSeqid>-</INSDSeqid>
-                </INSDSeq_other-seqids>
                 <INSDSeq_feature-table>
                     
                         <INSDFeature>
