@@ -146,13 +146,13 @@ class Test_St25To26Converter(TestCase):
         
         features_1004_7 = sequence_1004_7.feature_set.all()
         
-        self.assertEqual("CDS", features_1004_7[2].featureKey)
-        self.assertEqual("(1)..(84)", features_1004_7[2].location)
+        self.assertEqual("CDS", features_1004_7[1].featureKey)
+        self.assertEqual("(1)..(84)", features_1004_7[1].location)
         
-        translQualifier7_1 = features_1004_7[2].qualifier_set.all()[0]
+        translQualifier7_1 = features_1004_7[1].qualifier_set.all()[0]
         self.assertEqual("translation", translQualifier7_1.qualifierName)
         
-        translQualifier7_2 = features_1004_7[3].qualifier_set.all()[0]
+        translQualifier7_2 = features_1004_7[2].qualifier_set.all()[0]
         self.assertEqual("translation", translQualifier7_2.qualifierName)
         
         translation1 = converter_util.oneLetterCode('MetLysLysSerLeuValLeuLysAlaSerValAlaValAlaThrLeuValProMetLeuSerPheAlaAlaGluGlyGluPhe')
@@ -160,6 +160,11 @@ class Test_St25To26Converter(TestCase):
         
         self.assertEqual(translation1, translQualifier7_1.qualifierValue)
         self.assertEqual(translation2, translQualifier7_2.qualifierValue)
+        
+#         ============== tests for simple feature conversion ==================================   
+        sourceFeature_1004_7 = features_1004_7[0]
+        noteQual = sourceFeature_1004_7.qualifier_set.get(qualifierName='note')
+        self.assertEqual('pc89 major coat protein PVIII', noteQual.qualifierValue)
     
 #     @withMethodName
 #     def test_getTranslations(self):

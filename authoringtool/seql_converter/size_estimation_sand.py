@@ -8,7 +8,7 @@ import pprint
 import csv 
 from django.conf import settings
 import re 
-
+from converter import St25To26Converter
 from size_estimation import FileSizeComparator
 import converter_util as cu 
 
@@ -68,7 +68,9 @@ if __name__ == "__main__":
     l = [os.path.join(inDirPath, a) for a in os.listdir(inDirPath) if '.DS' not in a]
     
 #     extractTotals(l, outDirPath, xmlOutDirPath, statsFilePath)
-    compareGeneralInformation(l, outDirPath, xmlOutDirPath)
+#     compareGeneralInformation(l, outDirPath, xmlOutDirPath)
+#     fc = St25To26Converter(f1004)
+#     print fc.generateXmlFile(xmlOutDirPath)
         
         
         

@@ -159,14 +159,6 @@
                                     <INSDQualifier_value>protein</INSDQualifier_value>
                                 </INSDQualifier>
                                 
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>-</INSDFeature_key>
-                            <INSDFeature_location>-</INSDFeature_location>
-                            <INSDFeature_quals>
-                                
                                 <INSDQualifier>
                                     <INSDQualifier_name>NOTE</INSDQualifier_name>
                                     <INSDQualifier_value>influenza virus A hemagglutinin subtype H9</INSDQualifier_value>
