@@ -50,27 +50,35 @@ def compareGeneralInformation(aList, outDirPath, xmlOutDirPath):
         
 # ==================== main =========================
 if __name__ == "__main__":
-    inputDir = os.path.join(settings.BASE_DIR, 'seql_converter', 'st25parser', 
-                  'testData')
-    f5 = os.path.join(inputDir, 'file5.txt')
-    f1004 = os.path.join(inputDir, 'WO2012-001004-001.zip.txt')
-    
         
-    inDirPath = r'/Users/ad/pyton/test/st26fileSize/in_ST25_test'
+    inDirPath = r'/Users/ad/pyton/test/st26fileSize/in_ST25'
     outDirPath = r'/Users/ad/pyton/test/st26fileSize/stats'
     xmlOutDirPath = r'/Users/ad/pyton/test/st26fileSize/out_ST26'
     statsFilePath = os.path.join(outDirPath, 'stats.csv')
     
-    f6503 = os.path.join(inDirPath, 'WO2012-006503-001.zip.txt')# 170 missing
-        
-#     l = [f5, f1004]
-#     l = [f6503]
+    f6503 = os.path.join(inDirPath, 'WO2012-006503.txt')# 170 missing
+    
     l = [os.path.join(inDirPath, a) for a in os.listdir(inDirPath) if '.DS' not in a]
     
-#     extractTotals(l, outDirPath, xmlOutDirPath, statsFilePath)
+    extractTotals(l, outDirPath, xmlOutDirPath, statsFilePath)
 #     compareGeneralInformation(l, outDirPath, xmlOutDirPath)
+
+
+
+
+
+
+
+
+
+
+
 #     fc = St25To26Converter(f1004)
 #     print fc.generateXmlFile(xmlOutDirPath)
+
+#     clean file names
+#     for fp in l:
+#         os.rename(fp, fp.replace('-001.zip', ''))
         
         
         

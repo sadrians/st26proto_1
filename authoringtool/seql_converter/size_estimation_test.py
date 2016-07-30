@@ -647,10 +647,10 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual([], rows220_1)
         
         rows220_4 = self.getElementRowsForSequence(self.esc5, 220, '4')
-        self.assertEqual(6, len(rows220_4))
+        self.assertEqual(5, len(rows220_4))
         
         act_seq4_0 = rows220_4[0]
-        
+         
         self.assertEqual(220, act_seq4_0[0])
         self.assertEqual('4', act_seq4_0[1])
         self.assertEqual(7, act_seq4_0[2])
@@ -660,7 +660,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual('INSDFeature', act_seq4_0[6])
         self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq4_0[7])
         
-        act_seq4_5 = rows220_4[5]
+        act_seq4_5 = rows220_4[4]
         
         self.assertEqual(220, act_seq4_5[0])
         self.assertEqual('4', act_seq4_5[1])
@@ -672,20 +672,20 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual([], rows221_1)
         
         rows221_4 = self.getElementRowsForSequence(self.esc5, 221, '4')
-        self.assertEqual(6, len(rows221_4))
+        self.assertEqual(5, len(rows221_4))
         
         act_seq4_0 = rows221_4[0]
-         
+          
         self.assertEqual(221, act_seq4_0[0])
         self.assertEqual('4', act_seq4_0[1])
-        self.assertEqual(0, act_seq4_0[2])
-        self.assertEqual(0, act_seq4_0[3])
+        self.assertEqual(21, act_seq4_0[2])
+        self.assertEqual(12, act_seq4_0[3])
         self.assertEqual(cu.TAG_LENGTH_ST26['INSDFeature_key'], act_seq4_0[4])
-        self.assertEqual(0 + cu.TAG_LENGTH_ST26['INSDFeature_key'], act_seq4_0[5])
+        self.assertEqual(12 + cu.TAG_LENGTH_ST26['INSDFeature_key'], act_seq4_0[5])
         self.assertEqual('INSDFeature_key', act_seq4_0[6])
         self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq4_0[7])
          
-        act_seq4_5 = rows221_4[5]
+        act_seq4_5 = rows221_4[4]
          
         self.assertEqual(221, act_seq4_5[0])
         self.assertEqual('4', act_seq4_5[1])
@@ -697,20 +697,20 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual([], rows222_1)
         
         rows222_4 = self.getElementRowsForSequence(self.esc5, 222, '4')
-        self.assertEqual(6, len(rows222_4))
+        self.assertEqual(5, len(rows222_4))
         
         act_seq4_0 = rows222_4[0]
-         
+          
         self.assertEqual(222, act_seq4_0[0])
         self.assertEqual('4', act_seq4_0[1])
-        self.assertEqual(0, act_seq4_0[2])
-        self.assertEqual(0, act_seq4_0[3])
+        self.assertEqual(17, act_seq4_0[2])
+        self.assertEqual(8, act_seq4_0[3])
         self.assertEqual(cu.TAG_LENGTH_ST26['INSDFeature_location'], act_seq4_0[4])
-        self.assertEqual(0 + cu.TAG_LENGTH_ST26['INSDFeature_location'], act_seq4_0[5])
+        self.assertEqual(8 + cu.TAG_LENGTH_ST26['INSDFeature_location'], act_seq4_0[5])
         self.assertEqual('INSDFeature_location', act_seq4_0[6])
         self.assertEqual(cu.BLANK_PLACEHOLDER, act_seq4_0[7])
          
-        act_seq4_5 = rows222_4[5]
+        act_seq4_5 = rows222_4[4]
          
         self.assertEqual(222, act_seq4_5[0])
         self.assertEqual('4', act_seq4_5[1])

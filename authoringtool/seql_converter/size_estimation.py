@@ -517,36 +517,40 @@ class ElementSizeCalculator(object):
             for feat in seq.features:
                 currentFeatureIndex = seq.features.index(feat)
                 parsedFeature = parsedFeatures[currentFeatureIndex]
-# ====================== 220 ======================                
-                currentRow220 = self._getSt25St26Lengths(220, currentSeqId, 
-                            feat.featureHeader, parsedFeature.featureHeader, 
-                            'INSDFeature', cu.BLANK_PLACEHOLDER)
-                res.append(currentRow220)
-
-# ====================== 221 ======================                
-                currentRow221 = self._getSt25St26Lengths(221, currentSeqId, 
-                            feat.key, parsedFeature.key, 
-                            'INSDFeature_key', cu.BLANK_PLACEHOLDER)
-                res.append(currentRow221)
-
-# ====================== add row for mixed mode translation qualifier ======================                               
-                if parsedFeature.key == 'CDS':
-                    createQualifier('translation', 'ST.26 specific element translation')
-                    translationRow = [400, currentSeqId, 
-                            0, 
-                            cu.safeLength(parsedFeature.translation),
-                            cu.TAG_LENGTH_ST26['INSDQualifier_value'],
-                            (cu.TAG_LENGTH_ST26['INSDQualifier_value'] + 
-                            len(cu.oneLetterCode(parsedFeature.translation))),
-                            'INSDQualifier_value', '3-to-1 letter code']
-                    
-                    res.append(translationRow)
-
-# ====================== 222 ======================                
-                currentRow222 = self._getSt25St26Lengths(222, currentSeqId, 
-                            feat.location, parsedFeature.location, 
-                            'INSDFeature_location', cu.BLANK_PLACEHOLDER)
-                res.append(currentRow222)
+                isSimpleFeature = False
+                if parsedFeature.key == cu.BLANK_PLACEHOLDER and parsedFeature.location == cu.BLANK_PLACEHOLDER:
+                    isSimpleFeature = True 
+                if not isSimpleFeature:
+                    # ====================== 220 ======================                
+                    currentRow220 = self._getSt25St26Lengths(220, currentSeqId, 
+                                feat.featureHeader, parsedFeature.featureHeader, 
+                                'INSDFeature', cu.BLANK_PLACEHOLDER)
+                    res.append(currentRow220)
+    
+                    # ====================== 221 ======================                
+                    currentRow221 = self._getSt25St26Lengths(221, currentSeqId, 
+                                feat.key, parsedFeature.key, 
+                                'INSDFeature_key', cu.BLANK_PLACEHOLDER)
+                    res.append(currentRow221)
+    
+                    # ====================== add row for mixed mode translation qualifier ======================                               
+                    if parsedFeature.key == 'CDS':
+                        createQualifier('translation', 'ST.26 specific element translation')
+                        translationRow = [400, currentSeqId, 
+                                0, 
+                                cu.safeLength(parsedFeature.translation),
+                                cu.TAG_LENGTH_ST26['INSDQualifier_value'],
+                                (cu.TAG_LENGTH_ST26['INSDQualifier_value'] + 
+                                len(cu.oneLetterCode(parsedFeature.translation))),
+                                'INSDQualifier_value', '3-to-1 letter code']
+                        
+                        res.append(translationRow)
+    
+                    # ====================== 222 ======================                
+                    currentRow222 = self._getSt25St26Lengths(222, currentSeqId, 
+                                feat.location, parsedFeature.location, 
+                                'INSDFeature_location', cu.BLANK_PLACEHOLDER)
+                    res.append(currentRow222)
                 
 # ====================== 223 ======================                
                 if parsedFeature.description != cu.BLANK_PLACEHOLDER: #do not add row if 223 missing!
@@ -603,8 +607,7 @@ class FileSizeComparator(object):
         self.esc = ElementSizeCalculator(self.inFilePath)
         if self.esc.seql_clean.isSeql:
             self.csvFilePath = self.esc.writeSizes(self.outDirPath)
-            
-            
+                        
             sc = St25To26Converter(self.inFilePath)
             self.xmlFilePath = sc.generateXmlFile(self.xmlOutDirPath)
     
@@ -630,20 +633,6 @@ class FileSizeComparator(object):
 #         print 'Generated clean xml file', outFile 
         return outFile 
     
-    def listTotals(self):
-        su.printHeader(self.inFilePath)
-        rows = self.esc.generalInformationRows + self.esc.sequenceRows 
-        
-        for i in range(2,6):
-            print cu.CSV_HEADER[i], sum([r[i] for r in rows]) 
-        with open(self.inFilePath, 'r') as inf:
-            print 'chars in txt file:', len(inf.read())
-        print 'ST.25 txt file size:', os.path.getsize(self.inFilePath)
-        
-        with open(self.cleanXmlFilePath, 'r') as f:
-            s = f.read()
-            print 'chars in xml clean file:', len(s)
-        print 'ST.26 xml file size:', os.path.getsize(self.cleanXmlFilePath) 
         
     def setTotals(self):
         rows = self.esc.generalInformationRows + self.esc.sequenceRows 
@@ -742,3 +731,17 @@ class FileSizeComparator(object):
 # #                 print el
 # #                 print '%d in csv' %c, '%d in xml' %x 
 
+#         def listTotals(self):
+#             su.printHeader(self.inFilePath)
+#             rows = self.esc.generalInformationRows + self.esc.sequenceRows 
+#             
+#             for i in range(2,6):
+#                 print cu.CSV_HEADER[i], sum([r[i] for r in rows]) 
+#             with open(self.inFilePath, 'r') as inf:
+#                 print 'chars in txt file:', len(inf.read())
+#             print 'ST.25 txt file size:', os.path.getsize(self.inFilePath)
+#             
+#             with open(self.cleanXmlFilePath, 'r') as f:
+#                 s = f.read()
+#                 print 'chars in xml clean file:', len(s)
+#             print 'ST.26 xml file size:', os.path.getsize(self.cleanXmlFilePath) 

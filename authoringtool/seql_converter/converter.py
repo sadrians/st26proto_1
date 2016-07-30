@@ -82,7 +82,6 @@ class St25To26Converter(object):
                 productionDate = timezone.now().date(),
                   
                 applicantFileReference = aSeql_st25.generalInformation.reference,
-#                 applicantFileReference = applicantFileReference,
                 
                 IPOfficeCode = applicationNumberAsTuple[0],
                 applicationNumberText = applicationNumberAsTuple[1],
@@ -184,25 +183,8 @@ class St25To26Converter(object):
                                               qualifierValue=translationQualifierValue)
                         translationQualifier.save()
                 
-#                 currentFeature = Feature(sequence=s26,
-#                                          featureKey = f.key,
-#                                          location = f.location)
-#                 currentFeature.save()
-#                 if f.description != seqlutils.DEFAULT_STRING:
-#                     currentQualifier = Qualifier(feature=currentFeature,
-#                                               qualifierName=noteQualifierName,
-#                                               qualifierValue=f.description)
-#                     currentQualifier.save()
-#                 
-#                 if f.key == 'CDS':
-#                     translationQualifierValue = converter_util.oneLetterCode(f.translation)
-#                     translationQualifier = Qualifier(feature=currentFeature,
-#                                           qualifierName='translation',
-#                                           qualifierValue=translationQualifierValue)
-#                     translationQualifier.save()
                          
     def generateXmlFile(self, outputDir):
-#         strftime('%Y-%m-%d') dates are not in the prescribed ST.26 format!!!!!
         self.seql_st26.productionDate = timezone.now()
         self.seql_st26.save()
         xml = render_to_string('xml_template.xml', 
