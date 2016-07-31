@@ -377,7 +377,7 @@ class Test_GeneralInformation(unittest.TestCase):
 
 <151>  2013-09-19
         """
-        res = GeneralInformation.parsePriority(p)
+        res = GeneralInformation.parsePriorities(p)
         self.assertListEqual([('61536558', '2011-09-19'), 
                               ('61536539', '2012-09-19'), 
                               ('61536580', '2013-09-19')], res)

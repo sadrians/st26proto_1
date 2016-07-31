@@ -51,7 +51,7 @@ FEATURE_PATTERN = re.compile(FEATURE_REGEX, re.DOTALL | re.VERBOSE)
 class RawSequenceListing(object):
     def __init__(self, aFilePath):
         blocks = []
-        self.sequences = []
+        self.raw_sequences = []
         
         with open(aFilePath, 'r') as f:
             blocks = f.read().split('<210>')
@@ -75,7 +75,7 @@ class RawSequenceListing(object):
         for s in blocks[1:]:
 #             print '='*50
             reconstructedString = '<210>%s' %s
-            self.sequences.append(RawSequence(reconstructedString))
+            self.raw_sequences.append(RawSequence(reconstructedString))
              
 class RawSequence(object):
     def __init__(self, aStr):
@@ -373,9 +373,9 @@ class ElementSizeCalculator(object):
                 if s.mixedMode:
                     self.seql_clean.quantity_mix += 1
                 
-        for seq in self.seql_raw.sequences:
+        for seq in self.seql_raw.raw_sequences:
             
-            currentIndex = self.seql_raw.sequences.index(seq)
+            currentIndex = self.seql_raw.raw_sequences.index(seq)
             parsedSequence = parsedSequences[currentIndex]
             currentSeqId = parsedSequence.seqIdNo
 # ====================== 210 ======================
@@ -408,7 +408,7 @@ class ElementSizeCalculator(object):
                             cu.TAG_LENGTH_ST26['INSDSeq_moltype'], 
                             cu.safeLength(moltypeValue) + cu.TAG_LENGTH_ST26['INSDSeq_moltype'],
                             'INSDSeq_moltype', 
-                            'PRT replaced by AA for protein sequences' if moltypeValue == 'AA' else cu.BLANK_PLACEHOLDER]
+                            'PRT replaced by AA for protein raw_sequences' if moltypeValue == 'AA' else cu.BLANK_PLACEHOLDER]
             
             res.append(currentRow212)
 

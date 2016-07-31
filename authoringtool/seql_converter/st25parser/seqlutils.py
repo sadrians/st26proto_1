@@ -143,6 +143,22 @@ def getRangeFromLocation(aLocation):
 
     return res
 
+def safeStrip(s):
+    if s is not None:
+        return s.strip()
+    else:
+        return DEFAULT_STRING
+    
+def parsePriorities(aString):
+    result = []
+    reg = r'<150>\s+(?P<priorityNumber>[^<]+)<151>\s+(?P<priorityDate>[^<]+)'
+    p = re.compile(reg, re.MULTILINE)
+    if aString:
+        for m in p.finditer(aString):
+            result.append((safeStrip(m.group('priorityNumber')), 
+                            safeStrip(m.group('priorityDate'))))         
+    return result
+
 # def getStopCodon(aString, aList):
 #     res = {}
 #     codons = [aString[i:i+3] for i in xrange(0, len(aString), 3)]

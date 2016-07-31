@@ -37,17 +37,17 @@ class Test(unittest.TestCase):
         priorities_exp = '<150>  US 61/677,959\r\n<151>  2012-07-31\r\n\r\n'
         self.assertEqual(priorities_exp, self.sl5.priorities)
         
-        self.assertEqual(40, len(self.sl5.sequences))
+        self.assertEqual(40, len(self.sl5.raw_sequences))
         
         organism1_exp = '<213>  Homo sapiens\r\n\r\n'
-        self.assertEqual(organism1_exp, self.sl5.sequences[0].organism)
+        self.assertEqual(organism1_exp, self.sl5.raw_sequences[0].organism)
         
         organism40_exp = '<213>  Chloroflexus aurantiacus\r\n\r\n'
-        self.assertEqual(organism40_exp, self.sl5.sequences[39].organism)
+        self.assertEqual(organism40_exp, self.sl5.raw_sequences[39].organism)
         
-        self.assertFalse(self.sl5.sequences[0].features)
+        self.assertFalse(self.sl5.raw_sequences[0].features)
         
-        features4 = self.sl5.sequences[3].features
+        features4 = self.sl5.raw_sequences[3].features
         
         self.assertEqual(6, len(features4))
         
@@ -64,7 +64,7 @@ class Test(unittest.TestCase):
          
         residues40_exp = '<400>  40\r\n\r\nMet Ser Gly Thr Gly Arg Leu Ala Gly Lys Ile Ala Leu Ile Thr Gly \r\n1               5                   10                  15      \r\n\r\n\r\nGly Ala Gly Asn Ile Gly Ser Glu Leu Thr Arg Arg Phe \r\n            20                  25         \r\n'
         
-        self.assertEqual(residues40_exp, self.sl5.sequences[39].residues)
+        self.assertEqual(residues40_exp, self.sl5.raw_sequences[39].residues)
 
 class Test_ElementSizeCalculator(unittest.TestCase):
     @classmethod
@@ -482,7 +482,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['INSDSeq_moltype'], act_seq1[4])
         self.assertEqual(2 + cu.TAG_LENGTH_ST26['INSDSeq_moltype'], act_seq1[5])
         self.assertEqual('INSDSeq_moltype', act_seq1[6])
-        self.assertEqual('PRT replaced by AA for protein sequences', act_seq1[7])
+        self.assertEqual('PRT replaced by AA for protein raw_sequences', act_seq1[7])
         
         act_seq40 = self.getElementRowsForSequence(self.esc5, 212, '40')[0]
 

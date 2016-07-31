@@ -170,14 +170,14 @@ class GeneralInformation(object):
 #             print 'pg'
 #             print pg
             if pg:
-                self.priority = self.parsePriority(safeStrip(pg[:-1]))
+                self.priority = self.parsePriorities(safeStrip(pg[:-1]))
             
             self.quantity = safeStrip(m.group('quantity'))
             self.software = safeStrip(m.group('software'))
             self.genInfoPatternFound = True
 
     @classmethod
-    def parsePriority(self, aString):
+    def parsePriorities(self, aString):
         result = []
 #         if aString != '':
         if aString not in (None, ''):
@@ -440,14 +440,14 @@ class Feature(object):
 # # #             print 'pg'
 # # #             print pg
 # #             if pg:
-# #                 self.priority = self.parsePriority(safeStrip(pg[:-1]))
+# #                 self.priority = self.parsePriorities(safeStrip(pg[:-1]))
 # #             
 # #             self.quantity = safeStrip(m.group('quantity'))
 # #             self.software = safeStrip(m.group('software'))
 # #             self.genInfoPatternFound = True
 # # 
 # #     @classmethod
-# #     def parsePriority(self, aString):
+# #     def parsePriorities(self, aString):
 # #         result = []
 # # #         if aString != '':
 # #         if aString not in (None, ''):
