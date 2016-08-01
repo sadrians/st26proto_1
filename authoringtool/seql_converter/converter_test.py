@@ -141,7 +141,7 @@ class Test_St25To26Converter(TestCase):
         translQualifier_seq1 = features_1004_1[1].qualifier_set.all()[0]
         self.assertEqual("translation", translQualifier_seq1.qualifierName)
         
-        translQualValue_exp = converter_util.oneLetterCode(self.sc1004.seql_st25.getSequenceFromFile(self.f1004, 1).residues_prt)
+        translQualValue_exp = converter_util.oneLetterCode(self.sc1004.seql_st25.sequences[0].residues_prt)
         self.assertEqual(translQualValue_exp, translQualifier_seq1.qualifierValue)
         
         features_1004_7 = sequence_1004_7.feature_set.all()

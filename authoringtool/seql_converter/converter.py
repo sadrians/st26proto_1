@@ -6,8 +6,6 @@ Created on Jul 2, 2016
 import os
 import re 
 import datetime
-from seql_converter.st25parser.seqlparser import SequenceListing
-# import converter_util as cu 
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'authoringtool.settings')
  
@@ -17,7 +15,7 @@ django.setup()
 from django.template.loader import render_to_string
 from django.utils import timezone
 
-from st25parser.seqlparser import SequenceListing as Seql_st25
+from st25parser.seqlparser_new import SequenceListing as Seql_st25
 from st25parser import seqlutils
 
 from sequencelistings.models import SequenceListing  as Seql_st26, Title, Sequence, Feature, Qualifier 
@@ -42,17 +40,17 @@ class St25To26Converter(object):
     def getSequenceListingSt26(self, aSeql_st25):
 
 #         set first applicant value
-        aSeql_st25_applicant = aSeql_st25.generalInformation.applicant
+        aSeql_st25_applicant = aSeql_st25.applicant
         if aSeql_st25_applicant:
             seql_st26_applicantName = aSeql_st25_applicant[0]
         else:
             seql_st26_applicantName = seqlutils.DEFAULT_STRING
 
 #         set applicationNumber as a tuple
-        applicationNumberAsTuple = converter_util.applicationNumberAsTuple(aSeql_st25.generalInformation.applicationNumber)
+        applicationNumberAsTuple = converter_util.applicationNumberAsTuple(aSeql_st25.applicationNumber)
 
 #         set filingDate
-        fd = self.seql_st25.generalInformation.filingDate
+        fd = self.seql_st25.filingDate
 #         if fd not in ['', seqlutils.DEFAULT_STRING]:
         dateRegex = r'\d\d\d\d-\d\d-\d\d'
         datePattern = re.compile(dateRegex)
@@ -65,7 +63,7 @@ class St25To26Converter(object):
         priorityNumberAsTuple = ('', '')
         priorityDate = converter_util.DEFAULT_DATE_STRING
                 
-        aSeql_st25_priority = aSeql_st25.generalInformation.priority
+        aSeql_st25_priority = aSeql_st25.priorities
         
         if aSeql_st25_priority:
             firstPriority = aSeql_st25_priority[0]
@@ -81,7 +79,7 @@ class St25To26Converter(object):
                 softwareVersion = '0.1',
                 productionDate = timezone.now().date(),
                   
-                applicantFileReference = aSeql_st25.generalInformation.reference,
+                applicantFileReference = aSeql_st25.reference,
                 
                 IPOfficeCode = applicationNumberAsTuple[0],
                 applicationNumberText = applicationNumberAsTuple[1],
@@ -98,13 +96,13 @@ class St25To26Converter(object):
                 inventorNameLanguageCode = converter_util.DEFAULT_CODE,
                 inventorNameLatin = '-', 
                 
-#                 sequenceTotalQuantity = aSeql_st25.generalInformation.quantity       
+#                 sequenceTotalQuantity = aSeql_st25.quantity       
                 ) 
         sl.save()
         return sl 
 
     def setTitleSt26(self):
-        seql_st25_title = self.seql_st25.generalInformation.title
+        seql_st25_title = self.seql_st25.title
 #         assuming is not None 
         seql_st25_titleOneLine = seql_st25_title.replace(r'\s', '')
         t = Title(sequenceListing = self.seql_st26, 
@@ -115,7 +113,7 @@ class St25To26Converter(object):
     
     def setSequencesSt26(self):
         
-        for s25 in self.seql_st25.generateSequence():
+        for s25 in self.seql_st25.sequences:
             residues_st26 = ''
             if s25.molType in ('DNA', 'RNA'):
                 molType_st26 = s25.molType
