@@ -172,7 +172,7 @@ class ElementSizeCalculator(object):
                 cu.BLANK_PLACEHOLDER]
         self.generalInformationRows.append(r)
         
-        self.generalInformationRows.append(self._getSt25St26Lengths(110, 0,
+        self.generalInformationRows.append(self._getSt25St26Lengths(0, 0,
             cu.BLANK_PLACEHOLDER, cu.DEFAULT_CODE,
             'languageCode', 'ST.26 specific languageCode attribute for InventorName'))
         
@@ -318,7 +318,7 @@ class ElementSizeCalculator(object):
                             cu.TAG_LENGTH_ST26['INSDSeq_moltype'], 
                             cu.safeLength(moltypeValue) + cu.TAG_LENGTH_ST26['INSDSeq_moltype'],
                             'INSDSeq_moltype', 
-                            'PRT replaced by AA for protein raw_sequences' if moltypeValue == 'AA' else cu.BLANK_PLACEHOLDER]
+                            'PRT replaced by AA for proteins' if moltypeValue == 'AA' else cu.BLANK_PLACEHOLDER]
             
             res.append(currentRow212)
 
@@ -531,19 +531,16 @@ class FileSizeComparator(object):
     
     def cleanAndWriteXmlFile(self):
         outFile = self.xmlFilePath.replace('.xml', '_clean.xml')
-#         with open(self.xmlFilePath, 'r') as f, io.open(outFile, 'w', encoding='utf8') as wr:
         with open(self.xmlFilePath, 'r') as f, open(outFile, 'w') as wr:
 
             clean = re.sub(r'\s+<', '<', f.read()).replace(os.linesep, '')
             clean = re.sub(r'>\s+', '>', clean)
-#             wr.write(unicode(clean))
             charEncoding = chardet.detect(clean)['encoding']
             u = clean.decode(charEncoding)
             wr.write(u.encode('utf-8'))
 #         print 'Generated clean xml file', outFile 
         return outFile 
-    
-        
+           
     def setTotals(self):
         rows = self.esc.generalInformationRows + self.esc.sequenceRows 
         
@@ -562,15 +559,29 @@ class FileSizeComparator(object):
             self.totals[cu.CHARS_TXT_FILE] = len(s_txt)
             self.totals[cu.ENCODING_TXT] = chardet.detect(s_txt)['encoding']
         self.totals[cu.FILE_SIZE_TXT] = os.path.getsize(self.inFilePath)
-         
+
+        with open(self.xmlFilePath, 'r') as f:
+            s_xml = f.read()
+            self.totals[cu.CHARS_XML_FILE] = len(s_xml)
+            
+        self.totals[cu.FILE_SIZE_XML] = os.path.getsize(self.xmlFilePath) 
+
         with open(self.cleanXmlFilePath, 'r') as f:
             s_xml = f.read()
             self.totals[cu.CHARS_XML_CLEAN_FILE] = len(s_xml)
             self.totals[cu.ENCODING_XML] = chardet.detect(s_xml)['encoding']
         self.totals[cu.FILE_SIZE_XML_CLEAN] = os.path.getsize(self.cleanXmlFilePath) 
+        
+        ratio = self.totals[cu.CHARS_XML_FILE]/float(self.totals[cu.CHARS_TXT_FILE])
+        
+        self.totals[cu.CHARS_XML_VS_TXT] = '%0.2f' % ratio
+        
+        ratio_clean = self.totals[cu.CHARS_XML_CLEAN_FILE]/float(self.totals[cu.CHARS_TXT_FILE])
+        
+        self.totals[cu.CHARS_XML_CLEAN_VS_TXT] = '%0.2f' % ratio_clean
+        
         print self.inFilePath
         print 'encoding:', self.esc.seql.charEncoding
-
 
     def compareElementsInCsvAndXmlFiles(self):
         

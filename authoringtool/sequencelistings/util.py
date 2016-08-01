@@ -128,7 +128,7 @@ def helper_generateXml(sl):
     xml = render_to_string('xml_template.xml', {'sequenceListing': sl,
                             'sequences': sl.sequence_set.all(),
                             }).encode('utf-8', 'strict')
-
+    
     outf = os.path.join(OUTPUT_DIR, '%s.xml' % sl.fileName)
     
     with open(outf, 'w') as gf:

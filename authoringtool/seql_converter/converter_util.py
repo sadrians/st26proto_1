@@ -65,29 +65,36 @@ CSV_HEADER = ['element_st25', 'seqIdNo',
                          'comment']
 
 FILE = 'file'
-ELEMENT_ST25 = 'element_st25' 
+ELEMENT_ST25 = 'st25_tag' 
 SEQ_ID_NO = 'seqIdNo'
-ELEMENT_ST25_LENGTH = 'element_st25_length'
-VALUE_LENGTH = 'value_length'
+ELEMENT_ST25_LENGTH = 'st25_raw'
+VALUE_LENGTH = 'st25_val'
 TAG_ST26_LENGTH = 'tag_st26_length' 
 ELEMENT_ST26_LENGTH = 'element_st26_length' 
 ELEMENT_ST26 = 'element_st26'
 COMMENT = 'comment'
-CHARS_TXT_FILE = 'chars_txt_file'
-FILE_SIZE_TXT = 'file_size_in_bytes_txt'
-FILE_SIZE_XML_CLEAN = 'file_size_xml_clean'
-CHARS_XML_CLEAN_FILE = 'chars_xml_clean_in_bytes_file'
-QUANTITY = 'quantity'
-SEQUENCES_NUC = 'sequences_nuc'
-SEQUENCES_PRT = 'sequences_prt'
-MIXED_MODE = 'mixed_mode'
+CHARS_TXT_FILE = 'chars_txt'
+FILE_SIZE_TXT = 'size_txt_B'
+FILE_SIZE_XML = 'size_xml_B'
+CHARS_XML_FILE = 'chars_xml'
+FILE_SIZE_XML_CLEAN = 'size_xml_clean_B'
+CHARS_XML_CLEAN_FILE = 'chars_xml_clean'
+QUANTITY = 'q_tot'
+SEQUENCES_NUC = 'q_nuc'
+SEQUENCES_PRT = 'q_prt'
+MIXED_MODE = 'q_mix'
 ENCODING_TXT = 'encoding_txt'
 ENCODING_XML = 'encoding_xml'
+CHARS_XML_CLEAN_VS_TXT = 'chars_xml_clean_vs_txt_ratio'
+CHARS_XML_VS_TXT = 'chars_xml_vs_txt_ratio'
 
 STATS_HEADER = [FILE, QUANTITY, SEQUENCES_NUC, SEQUENCES_PRT, MIXED_MODE, 
                 ELEMENT_ST25_LENGTH, VALUE_LENGTH, TAG_ST26_LENGTH, 
                 ELEMENT_ST26_LENGTH, CHARS_TXT_FILE, FILE_SIZE_TXT, ENCODING_TXT,
-                CHARS_XML_CLEAN_FILE, FILE_SIZE_XML_CLEAN, ENCODING_XML]
+                CHARS_XML_FILE, FILE_SIZE_XML, CHARS_XML_VS_TXT,
+                CHARS_XML_CLEAN_FILE, FILE_SIZE_XML_CLEAN, CHARS_XML_CLEAN_VS_TXT, 
+                ENCODING_XML
+                ]
 
 # CSV_HEADER_DICT = {'ELEMENT_ST25': 'element_st25', 
 #                 'SEQ_ID_NO': 'seqIdNo', 

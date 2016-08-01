@@ -9,7 +9,7 @@ import csv
 from django.conf import settings
 import re 
 from converter import St25To26Converter
-from size_estimation import FileSizeComparator
+from size_estimation_new import FileSizeComparator
 import converter_util as cu 
 
 def extractTotals(aList, outDirPath, xmlOutDirPath, statsFilePath):
@@ -26,7 +26,7 @@ def extractTotals(aList, outDirPath, xmlOutDirPath, statsFilePath):
         for t in totalsList:
             currentRow = [t[col] for col in cu.STATS_HEADER]
             wr.writerow(currentRow)
-
+            
 def compareGeneralInformation(aList, outDirPath, xmlOutDirPath):
     outf = os.path.join(outDirPath, 'genInfo_comparison.csv')
     with open(outf, 'wb') as csvfile:

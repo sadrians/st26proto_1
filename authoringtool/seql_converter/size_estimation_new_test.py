@@ -187,7 +187,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
         
         act1 = [row for row in self.esc5.generalInformationRows if row[7] == 'ST.26 specific languageCode attribute for InventorName'][0]
-        self.assertEqual(110, act1[0])
+        self.assertEqual(0, act1[0])
         self.assertEqual(0, act1[1])
         self.assertEqual(0, act1[2])
         self.assertEqual(len(cu.DEFAULT_CODE), act1[3])
@@ -441,7 +441,7 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.TAG_LENGTH_ST26['INSDSeq_moltype'], act_seq1[4])
         self.assertEqual(2 + cu.TAG_LENGTH_ST26['INSDSeq_moltype'], act_seq1[5])
         self.assertEqual('INSDSeq_moltype', act_seq1[6])
-        self.assertEqual('PRT replaced by AA for protein raw_sequences', act_seq1[7])
+        self.assertEqual('PRT replaced by AA for proteins', act_seq1[7])
         
         act_seq40 = self.getElementRowsForSequence(self.esc5, 212, '40')[0]
 

@@ -190,9 +190,13 @@ class St25To26Converter(object):
         xml = render_to_string('xml_template.xml', 
                                {'sequenceListing': self.seql_st26,
                                 }).encode('utf-8', 'strict')
+        
+        lines = xml.splitlines(True)
+        onlyValidLines = [line for line in lines if not line.isspace()] 
+        cleanXml = ''.join(onlyValidLines)
         xmlFilePath = os.path.join(outputDir, '%s.xml' % self.seql_st26.fileName)
         with open(xmlFilePath, 'w') as gf:
-            gf.write(xml) 
+            gf.write(cleanXml) 
             
         self.seql_st26.delete()
 #         print 'Converted to xml file', xmlFilePath 
