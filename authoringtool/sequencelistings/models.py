@@ -3,6 +3,7 @@ import util
 from django.core.exceptions import ObjectDoesNotExist, ValidationError 
 from django.core.validators import RegexValidator 
 import re 
+import datetime 
 
 regex_nuc = '^[a,c,g,t,u,n,v,k,r,s,b,h,d]{10,}$' #TODO: add the full set of valid chars
 regex_prt = '^[A,C,D,E,F,G,H,I,K,L,M,N,O,P,Q,R,S,T,U,V,W,Y,X,J]{4,}$'
@@ -21,9 +22,14 @@ class SequenceListing(models.Model):
 #     xml children (except sequences which are represented as a separate Model)
     
     IPOfficeCode = models.CharField('IP office code', max_length=2, 
+                                    blank=True,
                                     help_text='Valid format: WIPO ST.3 code')
-    applicationNumberText = models.CharField('Application number text', max_length=20)
-    filingDate = models.DateField('Filing date', help_text='Valid date format: WIPO ST.2 YYYY-MM-DD')
+    applicationNumberText = models.CharField('Application number text', 
+                                    max_length=20,
+                                    blank=True)
+    filingDate = models.DateField('Filing date', 
+                                  blank=True, null=True,
+                                  help_text='Valid date format: WIPO ST.2 YYYY-MM-DD')
 
     applicantFileReference = models.CharField('Applicant file reference', max_length=30)
     
@@ -56,6 +62,15 @@ class SequenceListing(models.Model):
     
     def getFirstTitle(self):
         return self.title_set.all()[0].inventionTitle
+    
+    def getFormattedProductionDate(self):
+        return datetime.datetime.strftime(self.productionDate, '%Y-%m-%d')
+    
+    def getFormattedFilingDate(self):
+        return datetime.datetime.strftime(self.filingDate, '%Y-%m-%d')
+    
+    def getFormattedEarliestPriorityFilingDate(self):
+        return datetime.datetime.strftime(self.earliestPriorityFilingDate, '%Y-%m-%d')
 
     
 class Title(models.Model):

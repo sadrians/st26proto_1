@@ -180,5 +180,61 @@ class VisitorTest(LiveServerTestCase):
         cells = table.find_elements_by_tag_name('td')
         self.assertIn('selenium_test_file_name_no_inventor', [cell.text for cell in cells])
          
-    
+    def test_add_sequencelisting_no_application_identification_functionality(self):
+        print 'Selenium: Running %s ...' % self._testMethodName
+         
+        self.browser.get('%s%s' %(self.live_server_url, '/sequencelistings/')) 
+        # unregistered visitors are not allowed to add seqls i.e. there is no link to add seql
+        self.assertEqual(0, len(self.browser.find_elements_by_id('add_seql_link'))) 
+         
+        self.register()
+        self.browser.get('%s%s' %(self.live_server_url, '/sequencelistings/add_sequencelisting')) 
+        self.assertIn('Create a sequence listing', self.browser.find_element_by_tag_name('h2').text)
+ 
+         
+#         =======add seql no inventor=================
+        inventionTitle = self.browser.find_element_by_id('id_inventionTitle')
+        inventionTitleLanguageCode = self.browser.find_element_by_id('id_inventionTitleLanguageCode')
+        fileName = self.browser.find_element_by_id('id_fileName')
+        applicantFileReference = self.browser.find_element_by_id('id_applicantFileReference')
+#         IPOfficeCode = self.browser.find_element_by_id('id_IPOfficeCode')
+#         applicationNumberText = self.browser.find_element_by_id('id_applicationNumberText')
+        filingDate = self.browser.find_element_by_id('id_filingDate')
+        earliestPriorityIPOfficeCode = self.browser.find_element_by_id('id_earliestPriorityIPOfficeCode')
+        earliestPriorityApplicationNumberText = self.browser.find_element_by_id('id_earliestPriorityApplicationNumberText')
+        earliestPriorityFilingDate = self.browser.find_element_by_id('id_earliestPriorityFilingDate')
+        applicantName = self.browser.find_element_by_id('id_applicantName')
+        applicantNameLanguageCode = self.browser.find_element_by_id('id_applicantNameLanguageCode')
+        applicantNameLatin = self.browser.find_element_by_id('id_applicantNameLatin')
+         
+        inventionTitle.send_keys('axx')
+        inventionTitleLanguageCode.send_keys('b')
+        fileName.send_keys('selenium_test_file_name_no_applIdentification')
+        applicantFileReference.send_keys('d')
+#         IPOfficeCode.send_keys('e')
+#         applicationNumberText.send_keys('f')
+#         filingDate.send_keys('2010-12-20')
+        earliestPriorityIPOfficeCode.send_keys('g')
+        earliestPriorityApplicationNumberText.send_keys('h')
+        earliestPriorityFilingDate.send_keys('2009-12-20')
+        applicantName.send_keys('i')
+        applicantNameLanguageCode.send_keys('j')
+        applicantNameLatin.send_keys('k')
+         
+#         time.sleep(10)
+        self.browser.find_element_by_xpath('//input[@value="Submit"]').click()
+        time.sleep(10)
+# =================
+         
+#         self.browser.find_element_by_link_text('Sequence listings').click()
+        self.browser.get('%s%s' %(self.live_server_url, '/sequencelistings/')) 
+#         print 'browser.page_source', self.browser.page_source
+          
+#         time.sleep(10)
+        table = self.browser.find_element_by_id('home_page_table')
+#         self.assertEqual(1, len(table), 'There should be a table if a seql added.')
+        cells = table.find_elements_by_tag_name('td')
+        self.assertIn('selenium_test_file_name_no_applIdentification', [cell.text for cell in cells])
+          
+     
 

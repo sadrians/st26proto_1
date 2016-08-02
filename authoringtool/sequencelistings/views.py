@@ -52,6 +52,10 @@ def add_sequencelisting(request):
         title_form = TitleForm(request.POST)
 
         if form.is_valid() and title_form.is_valid():
+            filingDateFromForm = request.POST.get('filingDate')
+#             set to None bc the model does not handle properly empty string from form
+            fd = filingDateFromForm if filingDateFromForm else None
+            
             sl_instance = SequenceListing.objects.create(
             fileName = request.POST.get('fileName'),
             dtdVersion = '1',
@@ -63,8 +67,9 @@ def add_sequencelisting(request):
      
             IPOfficeCode = request.POST.get('IPOfficeCode'),
             applicationNumberText = request.POST.get('applicationNumberText'),
-            filingDate = request.POST.get('filingDate'),
-         
+#             filingDate = request.POST.get('filingDate'),
+            filingDate = fd,
+            
             earliestPriorityIPOfficeCode = request.POST.get('earliestPriorityIPOfficeCode'),
             earliestPriorityApplicationNumberText = request.POST.get('earliestPriorityApplicationNumberText'),
             earliestPriorityFilingDate = request.POST.get('earliestPriorityFilingDate'),

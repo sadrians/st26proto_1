@@ -524,6 +524,35 @@ class ModelsTests(TestCase):
         self.assertEqual('', second_saved_seql.inventorName)
         self.assertEqual('', second_saved_seql.inventorNameLanguageCode)
         self.assertEqual('', second_saved_seql.inventorNameLatin)
+    
+    def test_saving_and_retrieving_seql_no_applicationIdentification(self):
+        sl = SequenceListing.objects.create(
+            fileName = 'test_xmlsql_no_applicationIdentification',
+            dtdVersion = '1',
+            softwareName = 'prototype',
+            softwareVersion = '0.1',
+            productionDate = timezone.now().date(),
+              
+            applicantFileReference = '123',
+            
+            earliestPriorityIPOfficeCode = 'US',
+            earliestPriorityApplicationNumberText = '998877',
+            earliestPriorityFilingDate = timezone.now().date(),
+           
+            applicantName = 'John Smith',
+            applicantNameLanguageCode = 'EN',
+            applicantNameLatin = 'same',
+                   
+            )
+        
+        saved_seqls = SequenceListing.objects.all()
+        self.assertEqual(2, saved_seqls.count())
+        
+        second_saved_seql = saved_seqls[1]
+        self.assertEqual('test_xmlsql_no_applicationIdentification', second_saved_seql.fileName)
+        self.assertEqual('', second_saved_seql.IPOfficeCode)
+        self.assertEqual('', second_saved_seql.applicationNumberText)
+        self.assertEqual(None, second_saved_seql.filingDate)
         
     def test_saving_and_retrieving_sequences(self):
         print 'Running %s ...' % getName()

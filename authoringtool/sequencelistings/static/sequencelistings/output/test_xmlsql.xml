@@ -5,12 +5,14 @@
                     fileName="test_xmlsql"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="Aug. 2, 2016">
+                    productionDate="2016-08-02">
+    
     <ApplicationIdentification>
         <IPOfficeCode>EP</IPOfficeCode>
         <ApplicationNumberText>2015123456</ApplicationNumberText>
-        <FilingDate>Aug. 2, 2016</FilingDate>
+        <FilingDate>2016-08-02</FilingDate>
     </ApplicationIdentification>
+    
     <ApplicantFileReference>123</ApplicantFileReference>
     <EarliestPriorityApplicationIdentification>
         <IPOfficeCode>US</IPOfficeCode>

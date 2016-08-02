@@ -5,17 +5,19 @@
                     fileName="{{sequenceListing.fileName}}"
                     softwareName="{{sequenceListing.softwareName}}" 
                     softwareVersion="{{sequenceListing.softwareVersion}}"
-                    productionDate="{{sequenceListing.productionDate.date}}">
+                    productionDate="{{sequenceListing.getFormattedProductionDate}}">
+    {% if sequenceListing.applicationNumberText %}
     <ApplicationIdentification>
         <IPOfficeCode>{{sequenceListing.IPOfficeCode}}</IPOfficeCode>
         <ApplicationNumberText>{{sequenceListing.applicationNumberText}}</ApplicationNumberText>
-        <FilingDate>{{sequenceListing.filingDate}}</FilingDate>
+        <FilingDate>{{sequenceListing.getFormattedFilingDate}}</FilingDate>
     </ApplicationIdentification>
+    {% endif %}
     <ApplicantFileReference>{{sequenceListing.applicantFileReference}}</ApplicantFileReference>
     <EarliestPriorityApplicationIdentification>
         <IPOfficeCode>{{sequenceListing.earliestPriorityIPOfficeCode}}</IPOfficeCode>
         <ApplicationNumberText>{{sequenceListing.earliestPriorityApplicationNumberText}}</ApplicationNumberText>
-        <FilingDate>{{sequenceListing.earliestPriorityFilingDate}}</FilingDate>
+        <FilingDate>{{sequenceListing.getFormattedEarliestPriorityFilingDate}}</FilingDate>
     </EarliestPriorityApplicationIdentification>
     <ApplicantName languageCode="{{sequenceListing.applicantNameLanguageCode}}">
         {{sequenceListing.applicantName}}

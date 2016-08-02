@@ -84,6 +84,7 @@ class St25To26Converter(object):
                 IPOfficeCode = applicationNumberAsTuple[0],
                 applicationNumberText = applicationNumberAsTuple[1],
                 filingDate = datetime.datetime.strptime(filingDateAsString, '%Y-%m-%d').date(),
+                 
                 earliestPriorityIPOfficeCode = priorityNumberAsTuple[0],
                 earliestPriorityApplicationNumberText = priorityNumberAsTuple[1],
                 earliestPriorityFilingDate = priorityDate,
@@ -99,6 +100,12 @@ class St25To26Converter(object):
 #                 sequenceTotalQuantity = aSeql_st25.quantity       
                 ) 
         sl.save()
+        
+#         if applicationNumberAsTuple != ('--', ''):
+#             sl.IPOfficeCode = applicationNumberAsTuple[0],
+#             sl.applicationNumberText = applicationNumberAsTuple[1],
+#             sl.filingDate = datetime.datetime.strptime(filingDateAsString, '%Y-%m-%d').date(),
+#             sl.save()
         return sl 
 
     def setTitleSt26(self):
