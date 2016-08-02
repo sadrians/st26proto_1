@@ -11,11 +11,7 @@ import pprint
 import chardet
 import converter_util as cu 
 from converter import St25To26Converter 
-import st25parser.seqlutils as su 
-
 import st25parser.seqlparser_new 
-
-
 
 class ElementSizeCalculator(object):
     def __init__(self, aFilePath):
@@ -47,7 +43,7 @@ class ElementSizeCalculator(object):
                 self.setRow_IPOfficeCode150()
                 self.setRow_150()
                 self.setRow_151()
-#                 self.setRow_prio()
+
             self.setRow_160()
             self.setRow_170()
             self.sequenceRows = self.setSequenceRows()
@@ -594,6 +590,7 @@ class FileSizeComparator(object):
                 res[el] = len(currentRows)
             return res 
         
+        #     helper just to make sure that csv and xml contain (mostly) the same elements
         def countSt26ElementsFromXmlFile():
             res = {}
             with open(self.cleanXmlFilePath, 'r') as f:
@@ -616,20 +613,229 @@ class FileSizeComparator(object):
                 print el
                 print '%d in csv' %c, '%d in xml' %x 
              
-#     helper just to make sure that csv and xml contain (mostly) the same elements
+
+class FileSizeEstimator(object):
+    def __init__(self, inFilePath):
+        self.inFilePath = inFilePath
+        base = os.path.basename(self.inFilePath)
+        self.fileName = os.path.splitext(base)[0]
+        
+        self.seql = st25parser.seqlparser_new.SequenceListing(self.inFilePath)
+        
+        self.sequenceListingEstimatedSize = 0
+        self.generalInformationEstimatedSize = 0
+        self.sequencesEstimatedSize = 0
+        
+        self.sequenceSizeEstimators = []
+        
+        if self.seql.isSeql: 
+        
+            self.xmlHeaderLength = len(cu.OTHER_ELEMENTS_ST26['xmlHeader'])
+            self.doctypeDeclaration = len(cu.OTHER_ELEMENTS_ST26['doctypeDeclaration'])
+            self.styleSheetReference = len(cu.OTHER_ELEMENTS_ST26['styleSheetReference'])
+            self.rootLength = self.getRootLength()
+            self.applicationIdentificationLength = self.getApplicationIdentificationLength()
+            self.applicantFileReferenceLength = self.getApplicantFileReferenceLength()
+            self.earliestPriorityApplicationIdentificationLength = self.getEarliestPriorityApplicationIdentification()
+            self.applicantNameLength = self.getApplicantNameLength()
+            self.applicantNameLatinLength = self.getApplicantNameLatinLength()
+            self.inventorNameLength = self.getInventorNameLength()
+            self.inventorNameLatinLength = self.getInventorNameLatinLength()
+            self.inventionTitleLength = self.getInventionTitleLength()
+            self.sequenceTotalQuantityLength = self.getSequenceTotalQuantityLength()
+
+            self.generalInformationEstimatedSize = sum([self.xmlHeaderLength,
+                    self.doctypeDeclaration,
+                    self.styleSheetReference,
+                    self.rootLength,
+                    self.applicationIdentificationLength,
+                    self.applicantFileReferenceLength,
+                    self.earliestPriorityApplicationIdentificationLength,
+                    self.applicantNameLength,
+                    self.applicantNameLatinLength,
+                    self.inventorNameLength,
+                    self.inventorNameLatinLength,
+                    self.inventionTitleLength,
+                    self.sequenceTotalQuantityLength
+                    ])
+            
+            self.sequenceSizeEstimators = [SequenceSizeEstimator(seq) for seq in self.seql.sequences]
+            self.sequencesEstimatedSize = sum([sse.sequenceEstimatedSize for sse in self.sequenceSizeEstimators])
+
+            self.sequenceListingEstimatedSize = self.generalInformationEstimatedSize + self.sequencesEstimatedSize
+                
+    def getRootLength(self):
+        versionPlaceholder = 'd.d'
+        lenSoftwareNameValue = 10
+        productionDatePlaceholder = 'YYYY-MM-DD'
+        return sum([cu.TAG_LENGTH_ST26['ST26SequenceListing'], 
+                    len(versionPlaceholder) + cu.TAG_LENGTH_ST26['dtdVersion'],
+                    len(self.fileName) + cu.TAG_LENGTH_ST26['fileName'],
+                    lenSoftwareNameValue + cu.TAG_LENGTH_ST26['softwareName'],
+                    len(versionPlaceholder) + cu.TAG_LENGTH_ST26['softwareVersion'],
+                    len(productionDatePlaceholder) + cu.TAG_LENGTH_ST26['productionDate'],
+                    ])
+    def getApplicationIdentificationLength(self):
+        res = 0 
+        if self.seql.applicant and self.seql.filingDate != cu.BLANK_PLACEHOLDER:
+            res = sum([cu.TAG_LENGTH_ST26['ApplicationIdentification'],
+                       2 + cu.TAG_LENGTH_ST26['IPOfficeCode'], 
+                       len(self.seqlapplicationNumber) - 2 + cu.TAG_LENGTH_ST26['ApplicationNumberText'], 
+                       len(self.seql.filingDate) + cu.TAG_LENGTH_ST26['FilingDate']
+                       ])
+        return res
     
-#     def compareElementsInCsvAndXmlFiles(self):
-#         
-#         def countSt26ElementsFromCsvFile(inFilePath):
-#             res = {}
-#             esc = ElementSizeCalculator(inFilePath)
-#             rows = esc.generalInformationRows + esc.sequenceRows 
-#             
-#             for el in cu.TAG_LENGTH_ST26.keys():
-#                 currentRows = [r for r in rows if r[6] == el]
-#                 res[el] = len(currentRows)
-#             return res 
-#         
+    def getApplicantFileReferenceLength(self):
+        res = 0 
+        if self.seql.reference != cu.BLANK_PLACEHOLDER:
+            res = len(self.seql.reference) + cu.TAG_LENGTH_ST26['ApplicantFileReference']
+        
+        return res 
+    
+    def getEarliestPriorityApplicationIdentification(self):
+        res = 0 
+        if self.seql.priorities:
+            firstPriority = self.seql.priorities[0]
+            res = sum([cu.TAG_LENGTH_ST26['EarliestPriorityApplicationIdentification'],
+                       2 + cu.TAG_LENGTH_ST26['IPOfficeCode'], 
+                       len(firstPriority[0]) - 2 + cu.TAG_LENGTH_ST26['ApplicationNumberText'], 
+                       len(firstPriority[1]) + cu.TAG_LENGTH_ST26['FilingDate']
+                       ]) 
+        return res
+    
+    def getApplicantNameLength(self):
+        return sum([len(self.seql.applicant[0]),
+                    2 + cu.TAG_LENGTH_ST26['languageCode'], 
+                    cu.TAG_LENGTH_ST26['ApplicantName']
+                    ])
+    
+    def getApplicantNameLatinLength(self):
+        return sum([len(self.seql.applicant[0]),
+                    cu.TAG_LENGTH_ST26['ApplicantNameLatin']
+                    ])
+
+    def getInventorNameLength(self):
+        return sum([len(cu.BLANK_PLACEHOLDER),
+                    2 + cu.TAG_LENGTH_ST26['languageCode'], 
+                    cu.TAG_LENGTH_ST26['InventorName']
+                    ])
+    
+    def getInventorNameLatinLength(self):
+        return sum([len(cu.BLANK_PLACEHOLDER),
+                    cu.TAG_LENGTH_ST26['InventorNameLatin']
+                    ])
+    
+    def getInventionTitleLength(self):
+        return sum([len(self.seql.title),
+                    2 + cu.TAG_LENGTH_ST26['languageCode'], 
+                    cu.TAG_LENGTH_ST26['InventionTitle']
+                    ])
+    
+    def getSequenceTotalQuantityLength(self):
+        return sum([len(self.seql.quantity),
+                    cu.TAG_LENGTH_ST26['SequenceTotalQuantity']
+                    ])
+           
+class SequenceSizeEstimator(object):
+    def __init__(self, seq):
+        self.seq = seq 
+        self.featureSizeEstimators = []
+        self.sequenceEstimatedSize = 0
+        
+        self.sequenceDataLength = sum([cu.TAG_LENGTH_ST26['SequenceData'], 
+                    len(seq.seqIdNo) + cu.TAG_LENGTH_ST26['sequenceIDNumber'],
+                    cu.TAG_LENGTH_ST26['INSDSeq']])
+        
+        self.INSDSeq_lengthLength = len(seq.length) + cu.TAG_LENGTH_ST26['INSDSeq_length']
+        self.INSDSeq_moltypeLength = len('AA' if seq.molType == 'PRT' else seq.molType) + cu.TAG_LENGTH_ST26['INSDSeq_moltype']
+        self.INSDSeq_divisionLength = len("PAT") + cu.TAG_LENGTH_ST26['INSDSeq_division']
+        self.INSDSeq_feature_tableLength = cu.TAG_LENGTH_ST26['INSDSeq_feature-table']
+        
+        sourceFeatureSizeEstimator = self.getSourceFeatureSizeEstimator(seq)
+        self.featureSizeEstimators.append(sourceFeatureSizeEstimator)
+        
+        residues = seq.residues_nuc 
+        if seq.molType == 'PRT':
+            residues = cu.oneLetterCode(seq.residues_prt)
+        self.INSDSeq_sequenceLength = len(residues) + cu.TAG_LENGTH_ST26['INSDSeq_sequence']
+        
+        for f in self.seq.features:
+            if f.key == cu.BLANK_PLACEHOLDER and f.location == cu.BLANK_PLACEHOLDER:
+                noteQ = {'INSDQualifierLength': cu.TAG_LENGTH_ST26['INSDQualifier'], 
+                         'INSDQualifier_nameLength': len('note') + cu.TAG_LENGTH_ST26['INSDQualifier_name'],
+                         'INSDQualifier_valueLength': len(f.description) + cu.TAG_LENGTH_ST26['INSDQualifier_value']
+                         }
+                sourceFeatureSizeEstimator['qualifiers'].append(noteQ)
+            else:
+                self.featureSizeEstimators.append(self.getOtherFeatureSizeEstimator(f))
+        
+        featuresEstimatedSize = 0
+        for fse in self.featureSizeEstimators:
+            qualsSize = sum(sum([q['INSDQualifierLength'], 
+                             q['INSDQualifier_nameLength'], 
+                             q['INSDQualifier_valueLength']]) for q in fse['qualifiers'])
+            res = sum([fse['INSDFeatureLength'], 
+                       fse['INSDFeature_keyLength'], 
+                       fse['INSDFeature_locationLength'], 
+                       fse['INSDFeature_qualsLength'], 
+                       qualsSize])
+            featuresEstimatedSize += res 
+        
+        self.sequenceEstimatedSize = sum([self.sequenceDataLength, 
+                                         self.INSDSeq_lengthLength, 
+                                         self.INSDSeq_moltypeLength, 
+                                         self.INSDSeq_divisionLength,
+                                         self.INSDSeq_feature_tableLength, 
+                                        featuresEstimatedSize, 
+                                        self.INSDSeq_sequenceLength])
+                  
+    def getSourceFeatureSizeEstimator(self, seq):
+        return {
+        'INSDFeatureLength': cu.TAG_LENGTH_ST26['INSDFeature'],
+        'INSDFeature_keyLength': len('source') + cu.TAG_LENGTH_ST26['INSDFeature_key'],          
+        'INSDFeature_locationLength': len('1..%s' % seq.length) + cu.TAG_LENGTH_ST26['INSDFeature_location'],            
+        'INSDFeature_qualsLength': cu.TAG_LENGTH_ST26['INSDFeature_quals'],
+        'qualifiers': 
+        [
+         {'INSDQualifierLength': cu.TAG_LENGTH_ST26['INSDQualifier'], 
+          'INSDQualifier_nameLength': len('organism') + cu.TAG_LENGTH_ST26['INSDQualifier_name'],
+           'INSDQualifier_valueLength': len(seq.organism) + cu.TAG_LENGTH_ST26['INSDQualifier_value']
+           }, 
+         {'INSDQualifierLength': cu.TAG_LENGTH_ST26['INSDQualifier'], 
+          'INSDQualifier_nameLength': len('mol_type') + cu.TAG_LENGTH_ST26['INSDQualifier_name'],
+           'INSDQualifier_valueLength': len('protein' if seq.molType == 'PRT' else 'genomic DNA') + cu.TAG_LENGTH_ST26['INSDQualifier_value']
+          }],
+        }
+        
+    def getOtherFeatureSizeEstimator(self, feat):
+        qualsLength = 0
+        quals = []
+        if feat.description != cu.BLANK_PLACEHOLDER:
+            qualsLength = cu.TAG_LENGTH_ST26['INSDFeature_quals']
+            quals = [{'INSDQualifierLength': cu.TAG_LENGTH_ST26['INSDQualifier'], 
+          'INSDQualifier_nameLength': len('note') + cu.TAG_LENGTH_ST26['INSDQualifier_name'],
+           'INSDQualifier_valueLength': len(feat.description) + cu.TAG_LENGTH_ST26['INSDQualifier_value']
+           }]
+            
+        if feat.key == 'CDS':
+            qualsLength = cu.TAG_LENGTH_ST26['INSDFeature_quals']
+            quals = [{'INSDQualifierLength': cu.TAG_LENGTH_ST26['INSDQualifier'], 
+                      'INSDQualifier_nameLength': len('translation') + cu.TAG_LENGTH_ST26['INSDQualifier_name'],
+                      'INSDQualifier_valueLength': len(cu.oneLetterCode(feat.translation)) + cu.TAG_LENGTH_ST26['INSDQualifier_value']
+           }]
+        
+        return {
+        'INSDFeatureLength': cu.TAG_LENGTH_ST26['INSDFeature'],
+        'INSDFeature_keyLength': len(feat.key) + cu.TAG_LENGTH_ST26['INSDFeature_key'],          
+        'INSDFeature_locationLength': len(feat.location) + cu.TAG_LENGTH_ST26['INSDFeature_location'],            
+        'INSDFeature_qualsLength': qualsLength,
+        'qualifiers': quals
+        }
+
+     
+        
+        
+        
 #         def countSt26ElementsFromXmlFile(inFilePath):
 #             res = {}
 #             with open(inFilePath, 'r') as f:
@@ -651,18 +857,3 @@ class FileSizeComparator(object):
 # #             if c != x:
 # #                 print el
 # #                 print '%d in csv' %c, '%d in xml' %x 
-
-#         def listTotals(self):
-#             su.printHeader(self.inFilePath)
-#             rows = self.esc.generalInformationRows + self.esc.sequenceRows 
-#             
-#             for i in range(2,6):
-#                 print cu.CSV_HEADER[i], sum([r[i] for r in rows]) 
-#             with open(self.inFilePath, 'r') as inf:
-#                 print 'chars in txt file:', len(inf.read())
-#             print 'ST.25 txt file size:', os.path.getsize(self.inFilePath)
-#             
-#             with open(self.cleanXmlFilePath, 'r') as f:
-#                 s = f.read()
-#                 print 'chars in xml clean file:', len(s)
-#             print 'ST.26 xml file size:', os.path.getsize(self.cleanXmlFilePath) 
