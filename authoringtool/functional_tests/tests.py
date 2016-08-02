@@ -223,7 +223,7 @@ class VisitorTest(LiveServerTestCase):
          
 #         time.sleep(10)
         self.browser.find_element_by_xpath('//input[@value="Submit"]').click()
-        time.sleep(10)
+#         time.sleep(10)
 # =================
          
 #         self.browser.find_element_by_link_text('Sequence listings').click()

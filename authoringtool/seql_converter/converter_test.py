@@ -58,9 +58,7 @@ class Test_St25To26Converter(TestCase):
         self.assertEqual(9, self.sc1.seql_st26.filingDate.month)
         self.assertEqual(19, self.sc1.seql_st26.filingDate.day)
         
-        self.assertEqual(1900, self.sc33_1.seql_st26.filingDate.year)
-        self.assertEqual(1, self.sc33_1.seql_st26.filingDate.month)
-        self.assertEqual(1, self.sc33_1.seql_st26.filingDate.day)
+        self.assertEqual(None, self.sc33_1.seql_st26.filingDate)
         
         self.assertEqual(1900, self.sc6550.seql_st26.filingDate.year)
         self.assertEqual(1, self.sc6550.seql_st26.filingDate.month)

@@ -14,11 +14,13 @@
     </ApplicationIdentification>
     
     <ApplicantFileReference>123</ApplicantFileReference>
+    
     <EarliestPriorityApplicationIdentification>
         <IPOfficeCode>US</IPOfficeCode>
         <ApplicationNumberText>998877</ApplicationNumberText>
-        <FilingDate>Aug. 2, 2016</FilingDate>
+        <FilingDate>2016-08-02</FilingDate>
     </EarliestPriorityApplicationIdentification>
+    
     <ApplicantName languageCode="EN">
         John Smith
     </ApplicantName>

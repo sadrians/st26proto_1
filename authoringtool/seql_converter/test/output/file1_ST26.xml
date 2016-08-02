@@ -5,17 +5,17 @@
                     fileName="file1_ST26"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="Aug. 2, 2016">
+                    productionDate="2016-08-02">
     <ApplicationIdentification>
         <IPOfficeCode>XX</IPOfficeCode>
         <ApplicationNumberText>61536464</ApplicationNumberText>
-        <FilingDate>2012-9-19</FilingDate>
+        <FilingDate>2012-09-19</FilingDate>
     </ApplicationIdentification>
     <ApplicantFileReference>34246761601</ApplicantFileReference>
     <EarliestPriorityApplicationIdentification>
         <IPOfficeCode>XX</IPOfficeCode>
         <ApplicationNumberText>61536558 - prio1</ApplicationNumberText>
-        <FilingDate>Jan. 1, 2001</FilingDate>
+        <FilingDate>2001-01-01</FilingDate>
     </EarliestPriorityApplicationIdentification>
     <ApplicantName languageCode="XX">
         OPX Biotechnologies, Inc.

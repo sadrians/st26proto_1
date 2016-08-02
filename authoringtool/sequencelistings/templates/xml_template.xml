@@ -14,11 +14,13 @@
     </ApplicationIdentification>
     {% endif %}
     <ApplicantFileReference>{{sequenceListing.applicantFileReference}}</ApplicantFileReference>
+    {% if sequenceListing.earliestPriorityApplicationNumberText %}
     <EarliestPriorityApplicationIdentification>
         <IPOfficeCode>{{sequenceListing.earliestPriorityIPOfficeCode}}</IPOfficeCode>
         <ApplicationNumberText>{{sequenceListing.earliestPriorityApplicationNumberText}}</ApplicationNumberText>
         <FilingDate>{{sequenceListing.getFormattedEarliestPriorityFilingDate}}</FilingDate>
     </EarliestPriorityApplicationIdentification>
+    {% endif %}
     <ApplicantName languageCode="{{sequenceListing.applicantNameLanguageCode}}">
         {{sequenceListing.applicantName}}
     </ApplicantName>

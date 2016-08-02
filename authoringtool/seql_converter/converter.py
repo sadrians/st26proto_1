@@ -81,13 +81,13 @@ class St25To26Converter(object):
                   
                 applicantFileReference = aSeql_st25.reference,
                 
-                IPOfficeCode = applicationNumberAsTuple[0],
-                applicationNumberText = applicationNumberAsTuple[1],
-                filingDate = datetime.datetime.strptime(filingDateAsString, '%Y-%m-%d').date(),
+#                 IPOfficeCode = applicationNumberAsTuple[0],
+#                 applicationNumberText = applicationNumberAsTuple[1],
+#                 filingDate = datetime.datetime.strptime(filingDateAsString, '%Y-%m-%d').date(),
                  
-                earliestPriorityIPOfficeCode = priorityNumberAsTuple[0],
-                earliestPriorityApplicationNumberText = priorityNumberAsTuple[1],
-                earliestPriorityFilingDate = priorityDate,
+#                 earliestPriorityIPOfficeCode = priorityNumberAsTuple[0],
+#                 earliestPriorityApplicationNumberText = priorityNumberAsTuple[1],
+#                 earliestPriorityFilingDate = priorityDate,
                
                 applicantName = seql_st26_applicantName,
                 applicantNameLanguageCode = converter_util.DEFAULT_CODE,
@@ -101,11 +101,34 @@ class St25To26Converter(object):
                 ) 
         sl.save()
         
-#         if applicationNumberAsTuple != ('--', ''):
-#             sl.IPOfficeCode = applicationNumberAsTuple[0],
-#             sl.applicationNumberText = applicationNumberAsTuple[1],
-#             sl.filingDate = datetime.datetime.strptime(filingDateAsString, '%Y-%m-%d').date(),
-#             sl.save()
+        if aSeql_st25.applicationNumber != converter_util.BLANK_PLACEHOLDER:
+            sl.IPOfficeCode = applicationNumberAsTuple[0]
+            sl.applicationNumberText = applicationNumberAsTuple[1]
+            sl.filingDate = datetime.datetime.strptime(filingDateAsString, '%Y-%m-%d').date()
+            sl.save()
+        
+        #         set earliest priority 
+        priorityNumberAsTuple = ('', '')
+        priorityDate = converter_util.DEFAULT_DATE_STRING
+                
+        aSeql_st25_priority = aSeql_st25.priorities
+        
+        if aSeql_st25_priority:
+            print 'prio found'
+            firstPriority = aSeql_st25_priority[0]
+            print firstPriority
+            priorityNumberAsTuple = converter_util.applicationNumberAsTuple(firstPriority[0])
+            priorityDateAsString = firstPriority[1]
+            priorityDate = datetime.datetime.strptime(priorityDateAsString, '%Y-%m-%d').date()
+            
+            sl.earliestPriorityIPOfficeCode = priorityNumberAsTuple[0]
+            sl.earliestPriorityApplicationNumberText = priorityNumberAsTuple[1]
+            sl.earliestPriorityFilingDate = priorityDate
+            sl.save()
+            
+            print sl.earliestPriorityIPOfficeCode
+            print sl.earliestPriorityApplicationNumberText
+        
         return sl 
 
     def setTitleSt26(self):

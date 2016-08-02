@@ -35,9 +35,13 @@ class SequenceListing(models.Model):
     
     earliestPriorityIPOfficeCode = models.CharField('Earliest priority IP office code', 
                                         max_length=2, 
+                                        blank=True, 
                                         help_text='Valid format: WIPO ST.3 code')
-    earliestPriorityApplicationNumberText = models.CharField('Earliest priority application number text', max_length=20)
+    earliestPriorityApplicationNumberText = models.CharField('Earliest priority application number text', 
+                                                             max_length=20, 
+                                                             blank=True)
     earliestPriorityFilingDate = models.DateField('Earliest priority filing date', 
+                                                  blank=True, null=True,
                                                   help_text='Valid date format: WIPO ST.2 YYYY-MM-DD')
 
     applicantName = models.CharField('Applicant name', max_length=200)

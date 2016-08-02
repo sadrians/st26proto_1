@@ -60,7 +60,7 @@ if __name__ == "__main__":
     
     l = [os.path.join(inDirPath, a) for a in os.listdir(inDirPath) if '.DS' not in a]
     
-    extractTotals(l[:2], outDirPath, xmlOutDirPath, statsFilePath)
+    extractTotals(l, outDirPath, xmlOutDirPath, statsFilePath)
 #     compareGeneralInformation(l, outDirPath, xmlOutDirPath)
 
 

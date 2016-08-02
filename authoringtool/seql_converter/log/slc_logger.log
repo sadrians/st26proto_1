@@ -888,3 +888,453 @@ Opening and ending tag mismatch: ApplicantNamex line 20 and ApplicantName, line 
 2016-08-02 19:16:43,363 - sequencelistings.util - ERROR
 	
 /Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml:42:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'SequenceData': This element is not expected. Expected is ( EarliestPriorityApplicationIdentification ).
+2016-08-02 20:11:52,392 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:11:52,433 - django.request - WARNING
+	Not Found: /static/images/rango.jpg
+2016-08-02 20:11:57,246 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:00,813 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:01,765 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:01,980 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:03,329 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:03,581 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:07,454 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:10,859 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:11,905 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:12,113 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:13,257 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:23,517 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:27,509 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:30,962 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:31,887 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:32,099 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:33,402 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:33,695 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:37,488 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:44,455 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:45,613 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:45,855 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:12:51,314 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: ab(c.
+2016-08-02 20:12:51,315 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: a(b9c.
+2016-08-02 20:12:51,365 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test6.xml
+Opening and ending tag mismatch: ApplicantNamey line 21 and ApplicantName, line 23, column 34
+2016-08-02 20:12:51,366 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test7.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantsName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceTotalQuantity SequenceData SequenceData )
+2016-08-02 20:12:51,366 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceData SequenceData )
+2016-08-02 20:12:51,372 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test4.xml
+Opening and ending tag mismatch: ApplicantNamex line 20 and ApplicantName, line 22, column 34
+2016-08-02 20:12:51,374 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_ENUMERATION_VALID: Element 'INSDFeature_key': [facet 'enumeration'] The value 'SOURCxE' is not an element of the set {'allele', 'attenuator', 'C_region', 'CAAT_signal', 'CDS', 'conflict', 'D-loop', 'D_segment', 'enhancer', 'exon', 'GC_signal', 'gene', 'iDNA', 'intron', 'J_segment', 'LTR', 'mat_peptide', 'misc_binding', 'misc_difference', 'misc_feature', 'misc_recomb', 'misc_RNA', 'misc_signal', 'misc_structure', 'modified_base', 'mRNA', 'mutation', 'N_region', 'old_sequence', 'polyA_signal', 'polyA_site', 'precursor_RNA', 'prim_transcript', 'primer_bind', 'promoter', 'protein_bind', 'RBS', 'repeat_region', 'repeat_unit', 'rep_origin', 'rRNA', 'S_region', 'satellite', 'scRNA', 'sig_peptide', 'snRNA', 'source', 'stem_loop', 'STS', 'TATA_signal', 'terminator', 'transit_peptide', 'tRNA', 'unsure', 'V_region', 'V_segment', 'variation', '3'clip', '3'UTR', '5'clip', '5'UTR', '-10_signal', '-35_signal', 'ACT_SITE', 'BINDING', 'CA_BIND', 'CARBOHYD', 'CHAIN', 'COILED', 'COMPBIAS', 'CONFLICT', 'CROSSLNK', 'DISULFID', 'DNA_BIND', 'DOMAIN', 'HELIX', 'INIT_MET', 'INTRAMEM', 'LIPID', 'METAL', 'MOD_RES', 'MOTIF', 'MUTAGEN', 'NON_STD', 'NON_TER', 'NP_BIND', 'PEPTIDE', 'PROPEP', 'REGION', 'REPEAT', 'SIGNAL', 'SITE', 'SOURCE', 'STRAND', 'TOPO_DOM', 'TRANSMEM', 'TRANSIT', 'TURN', 'UNSURE', 'VARIANT', 'VAR_SEQ', 'ZN_FING'}.
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_1: Element 'INSDFeature_key': 'SOURCxE' is not a valid value of the atomic type 'featureKeyValue'.
+2016-08-02 20:12:51,379 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml:42:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'SequenceData': This element is not expected. Expected is ( EarliestPriorityApplicationIdentification ).
+2016-08-02 20:25:14,278 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:15,408 - django.request - WARNING
+	Not Found: /static/images/rango.jpg
+2016-08-02 20:25:19,096 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:22,394 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:23,312 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:23,496 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:24,715 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:25,039 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:28,734 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:32,019 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:32,928 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:33,114 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:34,169 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:44,383 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:48,109 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:51,434 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:52,318 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:52,519 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:53,723 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:53,941 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:25:57,629 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:26:04,602 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:26:05,710 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:26:05,910 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:26:11,308 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: ab(c.
+2016-08-02 20:26:11,308 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: a(b9c.
+2016-08-02 20:26:11,346 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test6.xml
+Opening and ending tag mismatch: ApplicantNamey line 21 and ApplicantName, line 23, column 34
+2016-08-02 20:26:11,348 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test7.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantsName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceTotalQuantity SequenceData SequenceData )
+2016-08-02 20:26:11,349 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceData SequenceData )
+2016-08-02 20:26:11,356 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test4.xml
+Opening and ending tag mismatch: ApplicantNamex line 20 and ApplicantName, line 22, column 34
+2016-08-02 20:26:11,358 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_ENUMERATION_VALID: Element 'INSDFeature_key': [facet 'enumeration'] The value 'SOURCxE' is not an element of the set {'allele', 'attenuator', 'C_region', 'CAAT_signal', 'CDS', 'conflict', 'D-loop', 'D_segment', 'enhancer', 'exon', 'GC_signal', 'gene', 'iDNA', 'intron', 'J_segment', 'LTR', 'mat_peptide', 'misc_binding', 'misc_difference', 'misc_feature', 'misc_recomb', 'misc_RNA', 'misc_signal', 'misc_structure', 'modified_base', 'mRNA', 'mutation', 'N_region', 'old_sequence', 'polyA_signal', 'polyA_site', 'precursor_RNA', 'prim_transcript', 'primer_bind', 'promoter', 'protein_bind', 'RBS', 'repeat_region', 'repeat_unit', 'rep_origin', 'rRNA', 'S_region', 'satellite', 'scRNA', 'sig_peptide', 'snRNA', 'source', 'stem_loop', 'STS', 'TATA_signal', 'terminator', 'transit_peptide', 'tRNA', 'unsure', 'V_region', 'V_segment', 'variation', '3'clip', '3'UTR', '5'clip', '5'UTR', '-10_signal', '-35_signal', 'ACT_SITE', 'BINDING', 'CA_BIND', 'CARBOHYD', 'CHAIN', 'COILED', 'COMPBIAS', 'CONFLICT', 'CROSSLNK', 'DISULFID', 'DNA_BIND', 'DOMAIN', 'HELIX', 'INIT_MET', 'INTRAMEM', 'LIPID', 'METAL', 'MOD_RES', 'MOTIF', 'MUTAGEN', 'NON_STD', 'NON_TER', 'NP_BIND', 'PEPTIDE', 'PROPEP', 'REGION', 'REPEAT', 'SIGNAL', 'SITE', 'SOURCE', 'STRAND', 'TOPO_DOM', 'TRANSMEM', 'TRANSIT', 'TURN', 'UNSURE', 'VARIANT', 'VAR_SEQ', 'ZN_FING'}.
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_1: Element 'INSDFeature_key': 'SOURCxE' is not a valid value of the atomic type 'featureKeyValue'.
+2016-08-02 20:26:11,362 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml:42:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'SequenceData': This element is not expected. Expected is ( EarliestPriorityApplicationIdentification ).
+2016-08-02 20:26:51,681 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:26:51,733 - django.request - WARNING
+	Not Found: /static/images/rango.jpg
+2016-08-02 20:26:55,491 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:26:58,779 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:26:59,684 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:26:59,862 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:01,028 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:01,286 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:05,017 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:08,341 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:09,287 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:09,471 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:10,421 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:10,689 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:14,372 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:17,665 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:18,580 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:18,759 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:19,830 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:20,102 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:23,822 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:30,940 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:32,054 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:32,263 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:27:37,891 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: ab(c.
+2016-08-02 20:27:37,891 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: a(b9c.
+2016-08-02 20:27:37,929 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test6.xml
+Opening and ending tag mismatch: ApplicantNamey line 21 and ApplicantName, line 23, column 34
+2016-08-02 20:27:37,930 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test7.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantsName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceTotalQuantity SequenceData SequenceData )
+2016-08-02 20:27:37,931 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceData SequenceData )
+2016-08-02 20:27:37,937 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test4.xml
+Opening and ending tag mismatch: ApplicantNamex line 20 and ApplicantName, line 22, column 34
+2016-08-02 20:27:37,939 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_ENUMERATION_VALID: Element 'INSDFeature_key': [facet 'enumeration'] The value 'SOURCxE' is not an element of the set {'allele', 'attenuator', 'C_region', 'CAAT_signal', 'CDS', 'conflict', 'D-loop', 'D_segment', 'enhancer', 'exon', 'GC_signal', 'gene', 'iDNA', 'intron', 'J_segment', 'LTR', 'mat_peptide', 'misc_binding', 'misc_difference', 'misc_feature', 'misc_recomb', 'misc_RNA', 'misc_signal', 'misc_structure', 'modified_base', 'mRNA', 'mutation', 'N_region', 'old_sequence', 'polyA_signal', 'polyA_site', 'precursor_RNA', 'prim_transcript', 'primer_bind', 'promoter', 'protein_bind', 'RBS', 'repeat_region', 'repeat_unit', 'rep_origin', 'rRNA', 'S_region', 'satellite', 'scRNA', 'sig_peptide', 'snRNA', 'source', 'stem_loop', 'STS', 'TATA_signal', 'terminator', 'transit_peptide', 'tRNA', 'unsure', 'V_region', 'V_segment', 'variation', '3'clip', '3'UTR', '5'clip', '5'UTR', '-10_signal', '-35_signal', 'ACT_SITE', 'BINDING', 'CA_BIND', 'CARBOHYD', 'CHAIN', 'COILED', 'COMPBIAS', 'CONFLICT', 'CROSSLNK', 'DISULFID', 'DNA_BIND', 'DOMAIN', 'HELIX', 'INIT_MET', 'INTRAMEM', 'LIPID', 'METAL', 'MOD_RES', 'MOTIF', 'MUTAGEN', 'NON_STD', 'NON_TER', 'NP_BIND', 'PEPTIDE', 'PROPEP', 'REGION', 'REPEAT', 'SIGNAL', 'SITE', 'SOURCE', 'STRAND', 'TOPO_DOM', 'TRANSMEM', 'TRANSIT', 'TURN', 'UNSURE', 'VARIANT', 'VAR_SEQ', 'ZN_FING'}.
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_1: Element 'INSDFeature_key': 'SOURCxE' is not a valid value of the atomic type 'featureKeyValue'.
+2016-08-02 20:27:37,944 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml:42:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'SequenceData': This element is not expected. Expected is ( EarliestPriorityApplicationIdentification ).
+2016-08-02 20:31:44,114 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:31:44,303 - django.request - WARNING
+	Not Found: /static/images/rango.jpg
+2016-08-02 20:31:47,956 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:31:51,243 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:31:52,150 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:31:52,337 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:31:53,559 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:31:53,772 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:31:57,508 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:00,815 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:01,725 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:01,910 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:02,888 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:03,136 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:06,862 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:10,153 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:11,043 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:11,220 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:13,041 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:13,263 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:16,926 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:23,892 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:24,952 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:25,135 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 20:32:30,554 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: ab(c.
+2016-08-02 20:32:30,555 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: a(b9c.
+2016-08-02 20:32:30,593 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test6.xml
+Opening and ending tag mismatch: ApplicantNamey line 21 and ApplicantName, line 23, column 34
+2016-08-02 20:32:30,594 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test7.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantsName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceTotalQuantity SequenceData SequenceData )
+2016-08-02 20:32:30,595 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceData SequenceData )
+2016-08-02 20:32:30,601 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test4.xml
+Opening and ending tag mismatch: ApplicantNamex line 20 and ApplicantName, line 22, column 34
+2016-08-02 20:32:30,603 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_ENUMERATION_VALID: Element 'INSDFeature_key': [facet 'enumeration'] The value 'SOURCxE' is not an element of the set {'allele', 'attenuator', 'C_region', 'CAAT_signal', 'CDS', 'conflict', 'D-loop', 'D_segment', 'enhancer', 'exon', 'GC_signal', 'gene', 'iDNA', 'intron', 'J_segment', 'LTR', 'mat_peptide', 'misc_binding', 'misc_difference', 'misc_feature', 'misc_recomb', 'misc_RNA', 'misc_signal', 'misc_structure', 'modified_base', 'mRNA', 'mutation', 'N_region', 'old_sequence', 'polyA_signal', 'polyA_site', 'precursor_RNA', 'prim_transcript', 'primer_bind', 'promoter', 'protein_bind', 'RBS', 'repeat_region', 'repeat_unit', 'rep_origin', 'rRNA', 'S_region', 'satellite', 'scRNA', 'sig_peptide', 'snRNA', 'source', 'stem_loop', 'STS', 'TATA_signal', 'terminator', 'transit_peptide', 'tRNA', 'unsure', 'V_region', 'V_segment', 'variation', '3'clip', '3'UTR', '5'clip', '5'UTR', '-10_signal', '-35_signal', 'ACT_SITE', 'BINDING', 'CA_BIND', 'CARBOHYD', 'CHAIN', 'COILED', 'COMPBIAS', 'CONFLICT', 'CROSSLNK', 'DISULFID', 'DNA_BIND', 'DOMAIN', 'HELIX', 'INIT_MET', 'INTRAMEM', 'LIPID', 'METAL', 'MOD_RES', 'MOTIF', 'MUTAGEN', 'NON_STD', 'NON_TER', 'NP_BIND', 'PEPTIDE', 'PROPEP', 'REGION', 'REPEAT', 'SIGNAL', 'SITE', 'SOURCE', 'STRAND', 'TOPO_DOM', 'TRANSMEM', 'TRANSIT', 'TURN', 'UNSURE', 'VARIANT', 'VAR_SEQ', 'ZN_FING'}.
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_1: Element 'INSDFeature_key': 'SOURCxE' is not a valid value of the atomic type 'featureKeyValue'.
+2016-08-02 20:32:30,608 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml:42:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'SequenceData': This element is not expected. Expected is ( EarliestPriorityApplicationIdentification ).
+2016-08-02 21:33:15,480 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:15,549 - django.request - WARNING
+	Not Found: /static/images/rango.jpg
+2016-08-02 21:33:19,326 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:22,596 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:23,512 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:23,692 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:24,900 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:25,119 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:28,872 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:32,155 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:33,040 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:33,218 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:34,180 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:34,434 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:38,172 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:41,493 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:42,377 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:42,572 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:43,699 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:43,948 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:47,679 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:54,602 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:55,674 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:33:55,870 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:34:01,231 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: ab(c.
+2016-08-02 21:34:01,232 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: a(b9c.
+2016-08-02 21:34:01,271 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test6.xml
+Opening and ending tag mismatch: ApplicantNamey line 21 and ApplicantName, line 23, column 34
+2016-08-02 21:34:01,272 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test7.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantsName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceTotalQuantity SequenceData SequenceData )
+2016-08-02 21:34:01,273 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceData SequenceData )
+2016-08-02 21:34:01,279 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test4.xml
+Opening and ending tag mismatch: ApplicantNamex line 20 and ApplicantName, line 22, column 34
+2016-08-02 21:34:01,282 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_ENUMERATION_VALID: Element 'INSDFeature_key': [facet 'enumeration'] The value 'SOURCxE' is not an element of the set {'allele', 'attenuator', 'C_region', 'CAAT_signal', 'CDS', 'conflict', 'D-loop', 'D_segment', 'enhancer', 'exon', 'GC_signal', 'gene', 'iDNA', 'intron', 'J_segment', 'LTR', 'mat_peptide', 'misc_binding', 'misc_difference', 'misc_feature', 'misc_recomb', 'misc_RNA', 'misc_signal', 'misc_structure', 'modified_base', 'mRNA', 'mutation', 'N_region', 'old_sequence', 'polyA_signal', 'polyA_site', 'precursor_RNA', 'prim_transcript', 'primer_bind', 'promoter', 'protein_bind', 'RBS', 'repeat_region', 'repeat_unit', 'rep_origin', 'rRNA', 'S_region', 'satellite', 'scRNA', 'sig_peptide', 'snRNA', 'source', 'stem_loop', 'STS', 'TATA_signal', 'terminator', 'transit_peptide', 'tRNA', 'unsure', 'V_region', 'V_segment', 'variation', '3'clip', '3'UTR', '5'clip', '5'UTR', '-10_signal', '-35_signal', 'ACT_SITE', 'BINDING', 'CA_BIND', 'CARBOHYD', 'CHAIN', 'COILED', 'COMPBIAS', 'CONFLICT', 'CROSSLNK', 'DISULFID', 'DNA_BIND', 'DOMAIN', 'HELIX', 'INIT_MET', 'INTRAMEM', 'LIPID', 'METAL', 'MOD_RES', 'MOTIF', 'MUTAGEN', 'NON_STD', 'NON_TER', 'NP_BIND', 'PEPTIDE', 'PROPEP', 'REGION', 'REPEAT', 'SIGNAL', 'SITE', 'SOURCE', 'STRAND', 'TOPO_DOM', 'TRANSMEM', 'TRANSIT', 'TURN', 'UNSURE', 'VARIANT', 'VAR_SEQ', 'ZN_FING'}.
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_1: Element 'INSDFeature_key': 'SOURCxE' is not a valid value of the atomic type 'featureKeyValue'.
+2016-08-02 21:34:01,286 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml:42:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'SequenceData': This element is not expected. Expected is ( EarliestPriorityApplicationIdentification ).
+2016-08-02 21:38:18,235 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:18,298 - django.request - WARNING
+	Not Found: /static/images/rango.jpg
+2016-08-02 21:38:21,998 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:25,415 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:26,341 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:26,528 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:27,751 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:27,943 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:31,619 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:35,359 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:36,734 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:36,922 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:37,909 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:38,158 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:41,828 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:45,120 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:46,053 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:46,229 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:47,348 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:47,619 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:51,324 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:58,271 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:59,411 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:38:59,606 - django.request - WARNING
+	Not Found: /static/sequencelistings/output/resources/style.css
+2016-08-02 21:39:05,011 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: ab(c.
+2016-08-02 21:39:05,012 - sequencelistings.util - ERROR
+	The residues string contains "(" but does not match formula pattern. Residues: a(b9c.
+2016-08-02 21:39:05,049 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test6.xml
+Opening and ending tag mismatch: ApplicantNamey line 21 and ApplicantName, line 23, column 34
+2016-08-02 21:39:05,050 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test7.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantsName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceTotalQuantity SequenceData SequenceData )
+2016-08-02 21:39:05,051 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml
+<string>:8:0:ERROR:VALID:DTD_CONTENT_MODEL: Element ST26SequenceListing content does not follow the DTD, expecting ((ApplicantFileReference | (ApplicationIdentification , ApplicantFileReference?)) , EarliestPriorityApplicationIdentification? , (ApplicantName , ApplicantNameLatin?)? , (InventorName , InventorNameLatin?)? , InventionTitle+ , SequenceTotalQuantity , SequenceData+), got (ApplicationIdentification ApplicantFileReference EarliestPriorityApplicationIdentification ApplicantName ApplicantNameLatin InventorName InventorNameLatin InventionTitle InventionTitle SequenceData SequenceData )
+2016-08-02 21:39:05,057 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test4.xml
+Opening and ending tag mismatch: ApplicantNamex line 20 and ApplicantName, line 22, column 34
+2016-08-02 21:39:05,058 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_ENUMERATION_VALID: Element 'INSDFeature_key': [facet 'enumeration'] The value 'SOURCxE' is not an element of the set {'allele', 'attenuator', 'C_region', 'CAAT_signal', 'CDS', 'conflict', 'D-loop', 'D_segment', 'enhancer', 'exon', 'GC_signal', 'gene', 'iDNA', 'intron', 'J_segment', 'LTR', 'mat_peptide', 'misc_binding', 'misc_difference', 'misc_feature', 'misc_recomb', 'misc_RNA', 'misc_signal', 'misc_structure', 'modified_base', 'mRNA', 'mutation', 'N_region', 'old_sequence', 'polyA_signal', 'polyA_site', 'precursor_RNA', 'prim_transcript', 'primer_bind', 'promoter', 'protein_bind', 'RBS', 'repeat_region', 'repeat_unit', 'rep_origin', 'rRNA', 'S_region', 'satellite', 'scRNA', 'sig_peptide', 'snRNA', 'source', 'stem_loop', 'STS', 'TATA_signal', 'terminator', 'transit_peptide', 'tRNA', 'unsure', 'V_region', 'V_segment', 'variation', '3'clip', '3'UTR', '5'clip', '5'UTR', '-10_signal', '-35_signal', 'ACT_SITE', 'BINDING', 'CA_BIND', 'CARBOHYD', 'CHAIN', 'COILED', 'COMPBIAS', 'CONFLICT', 'CROSSLNK', 'DISULFID', 'DNA_BIND', 'DOMAIN', 'HELIX', 'INIT_MET', 'INTRAMEM', 'LIPID', 'METAL', 'MOD_RES', 'MOTIF', 'MUTAGEN', 'NON_STD', 'NON_TER', 'NP_BIND', 'PEPTIDE', 'PROPEP', 'REGION', 'REPEAT', 'SIGNAL', 'SITE', 'SOURCE', 'STRAND', 'TOPO_DOM', 'TRANSMEM', 'TRANSIT', 'TURN', 'UNSURE', 'VARIANT', 'VAR_SEQ', 'ZN_FING'}.
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test5.xml:103:0:ERROR:SCHEMASV:SCHEMAV_CVC_DATATYPE_VALID_1_2_1: Element 'INSDFeature_key': 'SOURCxE' is not a valid value of the atomic type 'featureKeyValue'.
+2016-08-02 21:39:05,063 - sequencelistings.util - ERROR
+	
+/Users/ad/pyton/projects/st26proto/authoringtool/sequencelistings/testData/test8.xml:42:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'SequenceData': This element is not expected. Expected is ( EarliestPriorityApplicationIdentification ).
