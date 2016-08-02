@@ -23,12 +23,16 @@
     <ApplicantNameLatin>
         same
     </ApplicantNameLatin>
-    <InventorName languageCode="FR">
-        Mary Dupont
-    </InventorName>
-    <InventorNameLatin>
-        Mary Dupont
-    </InventorNameLatin>
+    
+        <InventorName languageCode="FR">
+            Mary Dupont
+        </InventorName>
+    
+    
+        <InventorNameLatin>
+            Mary Dupont
+        </InventorNameLatin>
+    
     
         <InventionTitle languageCode="EN">
             Invention 1

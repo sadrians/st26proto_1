@@ -92,9 +92,9 @@ class St25To26Converter(object):
                 applicantNameLanguageCode = converter_util.DEFAULT_CODE,
                 applicantNameLatin = seql_st26_applicantName,
                 
-                inventorName = '-',
-                inventorNameLanguageCode = converter_util.DEFAULT_CODE,
-                inventorNameLatin = '-', 
+#                 inventorName = '-',
+#                 inventorNameLanguageCode = converter_util.DEFAULT_CODE,
+#                 inventorNameLatin = '-', 
                 
 #                 sequenceTotalQuantity = aSeql_st25.quantity       
                 ) 

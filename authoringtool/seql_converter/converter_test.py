@@ -79,6 +79,10 @@ class Test_St25To26Converter(TestCase):
         self.assertEqual('OPX Biotechnologies, Inc.', self.sc1.seql_st26.applicantName)
         self.assertEqual(converter_util.DEFAULT_CODE, self.sc1.seql_st26.applicantNameLanguageCode)
         self.assertEqual('OPX Biotechnologies, Inc.', self.sc1.seql_st26.applicantNameLatin)
+        
+        self.assertEqual('', self.sc1.seql_st26.inventorName)
+        self.assertEqual('', self.sc1.seql_st26.inventorNameLanguageCode)
+        self.assertEqual('', self.sc1.seql_st26.inventorNameLatin)
  
         self.assertEqual(4, self.sc1.seql_st26.sequenceTotalQuantity)
         

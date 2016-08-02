@@ -23,12 +23,16 @@
     <ApplicantNameLatin>
         {{sequenceListing.applicantNameLatin}}
     </ApplicantNameLatin>
-    <InventorName languageCode="{{sequenceListing.inventorNameLanguageCode}}">
-        {{sequenceListing.inventorName}}
-    </InventorName>
-    <InventorNameLatin>
-        {{sequenceListing.inventorNameLatin}}
-    </InventorNameLatin>
+    {% if sequenceListing.inventorName %}
+        <InventorName languageCode="{{sequenceListing.inventorNameLanguageCode}}">
+            {{sequenceListing.inventorName}}
+        </InventorName>
+    {% endif %}
+    {% if sequenceListing.inventorName %}
+        <InventorNameLatin>
+            {{sequenceListing.inventorNameLatin}}
+        </InventorNameLatin>
+    {% endif %}
     {% for t in sequenceListing.title_set.all %}
         <InventionTitle languageCode="{{t.inventionTitleLanguageCode}}">
             {{t.inventionTitle}}
