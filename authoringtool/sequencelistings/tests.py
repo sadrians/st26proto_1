@@ -1,5 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import django
+django.setup()
+
 from django.test import TestCase
 # from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from django.core.urlresolvers import resolve, reverse
@@ -125,6 +128,7 @@ class ViewsTests(TestCase):
         self.assertContains(response, "Invention 1")
         self.assertQuerysetEqual(response.context['sequencelistings'], 
                                  ['<SequenceListing: Sequence listing test_xmlsql>'])
+    
     
     def test_add_sequencelisting_view(self):
         print 'Running %s ...' % getName()
@@ -487,6 +491,39 @@ class ModelsTests(TestCase):
         self.assertEqual('abc', second_saved_seql.fileName)
         
         self.assertTrue(self.sequenceListing.isEditable, 'By default, a seql is editable.')
+
+    def test_saving_and_retrieving_seql_no_inventor(self):
+        sl = SequenceListing.objects.create(
+            fileName = 'test_xmlsql_no_inventor',
+            dtdVersion = '1',
+            softwareName = 'prototype',
+            softwareVersion = '0.1',
+            productionDate = timezone.now().date(),
+              
+            applicantFileReference = '123',
+       
+            IPOfficeCode = 'EP',
+            applicationNumberText = '2015123456',
+            filingDate = timezone.now().date(),
+           
+            earliestPriorityIPOfficeCode = 'US',
+            earliestPriorityApplicationNumberText = '998877',
+            earliestPriorityFilingDate = timezone.now().date(),
+           
+            applicantName = 'John Smith',
+            applicantNameLanguageCode = 'EN',
+            applicantNameLatin = 'same',
+                   
+            )
+        
+        saved_seqls = SequenceListing.objects.all()
+        self.assertEqual(2, saved_seqls.count())
+        
+        second_saved_seql = saved_seqls[1]
+        self.assertEqual('test_xmlsql_no_inventor', second_saved_seql.fileName)
+        self.assertEqual('', second_saved_seql.inventorName)
+        self.assertEqual('', second_saved_seql.inventorNameLanguageCode)
+        self.assertEqual('', second_saved_seql.inventorNameLatin)
         
     def test_saving_and_retrieving_sequences(self):
         print 'Running %s ...' % getName()

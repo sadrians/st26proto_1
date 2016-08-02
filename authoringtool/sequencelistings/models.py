@@ -40,11 +40,12 @@ class SequenceListing(models.Model):
                                     help_text='Valid format: ISO 639-1')
     applicantNameLatin = models.CharField('Applicant name Latin', max_length=200)
 
-    inventorName = models.CharField('Inventor name', max_length=200)
+    inventorName = models.CharField('Inventor name', max_length=200, blank=True)
     inventorNameLanguageCode = models.CharField('Inventor name language code', 
-                                                max_length=2, 
+                                                max_length=2,
+                                                blank=True, 
                                                 help_text='Valid format: ISO 639-1')
-    inventorNameLatin = models.CharField('Inventor name Latin', max_length=200)
+    inventorNameLatin = models.CharField('Inventor name Latin', max_length=200, blank=True)
     
     sequenceTotalQuantity = models.IntegerField('Sequence total quantity', default=0)
     
