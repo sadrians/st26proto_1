@@ -24,9 +24,11 @@
     <ApplicantName languageCode="EN">
         John Smith
     </ApplicantName>
+    
     <ApplicantNameLatin>
         same
     </ApplicantNameLatin>
+    
     
         <InventorName languageCode="FR">
             Mary Dupont

@@ -33,10 +33,11 @@ class ElementSizeCalculator(object):
             self.setRow_InventorName()
             self.setRow_120()
             self.setRow_130()
-            self.setRow_ApplicationIdentification()
-            self.setRow_IPOfficeCode140()
-            self.setRow_140()
-            self.setRow_141()
+            if self.seql.applicationNumber != cu.BLANK_PLACEHOLDER:
+                self.setRow_ApplicationIdentification()
+                self.setRow_IPOfficeCode140()
+                self.setRow_140()
+                self.setRow_141()
     
             if self.seql.priorities:
                 self.setRow_EarliestPriorityApplicationIdentification()

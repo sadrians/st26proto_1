@@ -24,15 +24,17 @@
     <ApplicantName languageCode="{{sequenceListing.applicantNameLanguageCode}}">
         {{sequenceListing.applicantName}}
     </ApplicantName>
+    {% if sequenceListing.applicantNameLatin %}
     <ApplicantNameLatin>
         {{sequenceListing.applicantNameLatin}}
     </ApplicantNameLatin>
+    {% endif %}
     {% if sequenceListing.inventorName %}
         <InventorName languageCode="{{sequenceListing.inventorNameLanguageCode}}">
             {{sequenceListing.inventorName}}
         </InventorName>
     {% endif %}
-    {% if sequenceListing.inventorName %}
+    {% if sequenceListing.inventorNameLatin %}
         <InventorNameLatin>
             {{sequenceListing.inventorNameLatin}}
         </InventorNameLatin>

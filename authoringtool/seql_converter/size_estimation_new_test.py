@@ -227,16 +227,8 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
     @withMethodName 
     def test_setRow_ApplicationIdentification(self):
-        actApplicationIdentification_1 = [row for row in self.esc5.generalInformationRows if row[6] == 'ApplicationIdentification'][0]
-        
-        self.assertEqual(0, actApplicationIdentification_1[0])
-        self.assertEqual(0, actApplicationIdentification_1[1])
-        self.assertEqual(0, actApplicationIdentification_1[2])
-        self.assertEqual(0, actApplicationIdentification_1[3])
-        self.assertEqual(cu.TAG_LENGTH_ST26['ApplicationIdentification'], actApplicationIdentification_1[4])
-        self.assertEqual(cu.TAG_LENGTH_ST26['ApplicationIdentification'], actApplicationIdentification_1[5])
-        self.assertEqual('ApplicationIdentification', actApplicationIdentification_1[6])
-        self.assertEqual(cu.BLANK_PLACEHOLDER, actApplicationIdentification_1[7])
+        actApplicationIdentification_1 = [row for row in self.esc5.generalInformationRows if row[6] == 'ApplicationIdentification']
+        self.assertEqual([], actApplicationIdentification_1)
         
         act = [row for row in self.esc_WO2013041670.generalInformationRows if row[6] == 'ApplicationIdentification'][0]
         self.assertEqual(0, act[0])
@@ -249,15 +241,9 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
     @withMethodName    
     def test_setRow_IPOfficeCode(self):
-        actIPOfficeCode_1 = [row for row in self.esc5.generalInformationRows if row[6] == 'IPOfficeCode'][0]
-        self.assertEqual(0, actIPOfficeCode_1[0])
-        self.assertEqual(0, actIPOfficeCode_1[1])
-        self.assertEqual(0, actIPOfficeCode_1[2])
-        self.assertEqual(0, actIPOfficeCode_1[3])
-        self.assertEqual(cu.TAG_LENGTH_ST26['IPOfficeCode'], actIPOfficeCode_1[4])
-        self.assertEqual(2+cu.TAG_LENGTH_ST26['IPOfficeCode'], actIPOfficeCode_1[5])
-        self.assertEqual('IPOfficeCode', actIPOfficeCode_1[6])
-        self.assertEqual('Corresponding to 140. XX placeholder for the purpose of this study', actIPOfficeCode_1[7])
+        actIPOfficeCode_1 = [row for row in self.esc5.generalInformationRows if row[6] == 'IPOfficeCode']
+#         there is only 1 IPOfficeCode (the one from priority)
+        self.assertEqual(1, len(actIPOfficeCode_1))
         
         act = [row for row in self.esc_WO2013041670.generalInformationRows if row[6] == 'IPOfficeCode'][0]
         self.assertEqual(0, act[0])
@@ -271,17 +257,10 @@ class Test_ElementSizeCalculator(unittest.TestCase):
     
     @withMethodName    
     def test_setRow_140(self):
-        act140_1 = [row for row in self.esc5.generalInformationRows if row[0] == 140][0]
+        act140_1 = [row for row in self.esc5.generalInformationRows if row[0] == 140]
 #         print act140_1
-        self.assertEqual(140, act140_1[0])
-        self.assertEqual(0, act140_1[1])
-        self.assertEqual(0, act140_1[2])
-        self.assertEqual(0, act140_1[3])
-        self.assertEqual(cu.TAG_LENGTH_ST26['ApplicationNumberText'], act140_1[4])
-        self.assertEqual(cu.TAG_LENGTH_ST26['ApplicationNumberText'], act140_1[5])
-        self.assertEqual('ApplicationNumberText', act140_1[6])
-        self.assertEqual(cu.BLANK_PLACEHOLDER, act140_1[7])
-        
+        self.assertEqual([], act140_1)
+
         act = [row for row in self.esc_WO2013041670.generalInformationRows if row[0] == 140][0]
         self.assertEqual(140, act[0])
         self.assertEqual(0, act[1])
@@ -293,16 +272,16 @@ class Test_ElementSizeCalculator(unittest.TestCase):
         self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
     @withMethodName    
     def test_setRow_141(self):
-        act141_1 = [row for row in self.esc5.generalInformationRows if row[0] == 141][0]
-#         self.assertEqual([], act141_1)
-        self.assertEqual(141, act141_1[0])
-        self.assertEqual(0, act141_1[1])
-        self.assertEqual(0, act141_1[2])
-        self.assertEqual(10, act141_1[3])
-        self.assertEqual(cu.TAG_LENGTH_ST26['FilingDate'], act141_1[4])
-        self.assertEqual(10 + cu.TAG_LENGTH_ST26['FilingDate'], act141_1[5])
-        self.assertEqual('FilingDate', act141_1[6])
-        self.assertEqual(cu.BLANK_PLACEHOLDER, act141_1[7])
+        act141_1 = [row for row in self.esc5.generalInformationRows if row[0] == 141]
+        self.assertEqual([], act141_1)
+#         self.assertEqual(141, act141_1[0])
+#         self.assertEqual(0, act141_1[1])
+#         self.assertEqual(0, act141_1[2])
+#         self.assertEqual(10, act141_1[3])
+#         self.assertEqual(cu.TAG_LENGTH_ST26['FilingDate'], act141_1[4])
+#         self.assertEqual(10 + cu.TAG_LENGTH_ST26['FilingDate'], act141_1[5])
+#         self.assertEqual('FilingDate', act141_1[6])
+#         self.assertEqual(cu.BLANK_PLACEHOLDER, act141_1[7])
         
         act = [row for row in self.esc_WO2013041670.generalInformationRows if row[0] == 141][0]
         self.assertEqual(141, act[0])

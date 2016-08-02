@@ -24,6 +24,8 @@ if __name__ == "__main__":
         
         un = u.encode('utf-8')
         print chardet.detect(un)
+        
+    s = '上海市第一人民医院'
 
 # s = 'hi猫'
 # s = 'abc'

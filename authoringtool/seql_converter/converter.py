@@ -91,7 +91,7 @@ class St25To26Converter(object):
                
                 applicantName = seql_st26_applicantName,
                 applicantNameLanguageCode = converter_util.DEFAULT_CODE,
-                applicantNameLatin = seql_st26_applicantName,
+#                 applicantNameLatin = seql_st26_applicantName,
                 
 #                 inventorName = '-',
 #                 inventorNameLanguageCode = converter_util.DEFAULT_CODE,
@@ -114,9 +114,7 @@ class St25To26Converter(object):
         aSeql_st25_priority = aSeql_st25.priorities
         
         if aSeql_st25_priority:
-            print 'prio found'
             firstPriority = aSeql_st25_priority[0]
-            print firstPriority
             priorityNumberAsTuple = converter_util.applicationNumberAsTuple(firstPriority[0])
             priorityDateAsString = firstPriority[1]
             priorityDate = datetime.datetime.strptime(priorityDateAsString, '%Y-%m-%d').date()
@@ -126,9 +124,6 @@ class St25To26Converter(object):
             sl.earliestPriorityFilingDate = priorityDate
             sl.save()
             
-            print sl.earliestPriorityIPOfficeCode
-            print sl.earliestPriorityApplicationNumberText
-        
         return sl 
 
     def setTitleSt26(self):

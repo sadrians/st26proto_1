@@ -63,6 +63,14 @@ class Test_St25To26Converter(TestCase):
         self.assertEqual(1900, self.sc6550.seql_st26.filingDate.year)
         self.assertEqual(1, self.sc6550.seql_st26.filingDate.month)
         self.assertEqual(1, self.sc6550.seql_st26.filingDate.day)
+        
+        self.assertEqual('', self.sc1004.seql_st26.IPOfficeCode)
+        self.assertEqual('', self.sc1004.seql_st26.applicationNumberText)
+        self.assertEqual(None, self.sc1004.seql_st26.filingDate)
+        
+        self.assertEqual('', self.sc63219.seql_st26.IPOfficeCode)
+        self.assertEqual('', self.sc63219.seql_st26.applicationNumberText)
+        self.assertEqual(None, self.sc63219.seql_st26.filingDate)
          
         self.assertEqual(converter_util.DEFAULT_CODE, self.sc1.seql_st26.earliestPriorityIPOfficeCode)
         self.assertEqual('61536558 - prio1', self.sc1.seql_st26.earliestPriorityApplicationNumberText)
@@ -73,10 +81,14 @@ class Test_St25To26Converter(TestCase):
         self.assertEqual(2001, self.sc1.seql_st26.earliestPriorityFilingDate.year)
         self.assertEqual(1, self.sc1.seql_st26.earliestPriorityFilingDate.month)
         self.assertEqual(1, self.sc1.seql_st26.earliestPriorityFilingDate.day)
+        
+        self.assertEqual('', self.sc63219.seql_st26.earliestPriorityIPOfficeCode)
+        self.assertEqual('', self.sc63219.seql_st26.earliestPriorityApplicationNumberText)
+        self.assertEqual(None, self.sc63219.seql_st26.earliestPriorityFilingDate)
  
         self.assertEqual('OPX Biotechnologies, Inc.', self.sc1.seql_st26.applicantName)
         self.assertEqual(converter_util.DEFAULT_CODE, self.sc1.seql_st26.applicantNameLanguageCode)
-        self.assertEqual('OPX Biotechnologies, Inc.', self.sc1.seql_st26.applicantNameLatin)
+        self.assertEqual('', self.sc1.seql_st26.applicantNameLatin)
         
         self.assertEqual('', self.sc1.seql_st26.inventorName)
         self.assertEqual('', self.sc1.seql_st26.inventorNameLanguageCode)
