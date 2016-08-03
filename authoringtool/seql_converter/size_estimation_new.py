@@ -428,6 +428,9 @@ class ElementSizeCalculator(object):
                 if parsedFeature.key == cu.BLANK_PLACEHOLDER and parsedFeature.location == cu.BLANK_PLACEHOLDER:
                     isSimpleFeature = True 
                 if not isSimpleFeature:
+                    if parsedFeature.description != cu.BLANK_PLACEHOLDER or parsedFeature.key == 'CDS':
+                        append_INSDFeature_quals('ST.26 mandatory element') 
+                    
                     # ====================== 220 ======================                
                     currentRow220 = self._getSt25St26Lengths(220, seq.seqIdNo, 
                                 feat.featureHeader_raw, parsedFeature.featureHeader, 
@@ -452,7 +455,8 @@ class ElementSizeCalculator(object):
                                 'INSDQualifier_value', '3-to-1 letter code']
                         
                         res.append(translationRow)
-    
+#                         if parsedFeature.description == cu.BLANK_PLACEHOLDER: 
+#                             append_INSDFeature_quals('ST.26 mandatory element')
                     # ====================== 222 ======================                
                     currentRow222 = self._getSt25St26Lengths(222, seq.seqIdNo, 
                                 feat.location_raw, parsedFeature.location, 
@@ -460,8 +464,14 @@ class ElementSizeCalculator(object):
                     res.append(currentRow222)
                 
 # ====================== 223 ======================                
+#                     if parsedFeature.description != cu.BLANK_PLACEHOLDER: #do not add row if 223 missing!
+#                         append_INSDFeature_quals('ST.26 mandatory element')
+#                         createQualifier('note', cu.BLANK_PLACEHOLDER)
+#                         createQualifierValue(223, feat.description_raw, 
+#                                             parsedFeature.description, 
+#                                             cu.BLANK_PLACEHOLDER)
                 if parsedFeature.description != cu.BLANK_PLACEHOLDER: #do not add row if 223 missing!
-                    append_INSDFeature_quals('ST.26 mandatory element')
+#                     append_INSDFeature_quals('ST.26 mandatory element')
                     createQualifier('note', cu.BLANK_PLACEHOLDER)
                     createQualifierValue(223, feat.description_raw, 
                                         parsedFeature.description, 
@@ -505,11 +515,92 @@ class ElementSizeCalculator(object):
         
         return outFilePath
 
+class SimpleFileSizeComparator(object):
+    def __init__(self, inFilePath, outDirPath, xmlOutDirPath):
+        self.inFilePath = inFilePath 
+        self.outDirPath = outDirPath
+        self.xmlOutDirPath = xmlOutDirPath
+        
+        self.totals = {}
+        
+        seql = st25parser.seqlparser_new.SequenceListing(inFilePath)
+        if seql.isSeql:
+            sc = St25To26Converter(self.inFilePath)
+            self.xmlFilePath = sc.generateXmlFile(self.xmlOutDirPath)
+    
+            self.cleanXmlFilePath = self.cleanAndWriteXmlFile() 
+                        
+            self.setTotals() 
+        else:
+            print 'FileSizeComparator: not able to process', inFilePath
+    
+    def cleanAndWriteXmlFile(self):
+        outFile = self.xmlFilePath.replace('.xml', '_clean.xml')
+        with open(self.xmlFilePath, 'r') as f, open(outFile, 'w') as wr:
+
+            clean = re.sub(r'\s+<', '<', f.read()).replace(os.linesep, '')
+            clean = re.sub(r'>\s+', '>', clean)
+            charEncoding = chardet.detect(clean)['encoding']
+            u = clean.decode(charEncoding)
+            wr.write(u.encode('utf-8'))
+#         print 'Generated clean xml file', outFile 
+        return outFile 
+           
+    def setTotals(self):
+        
+        self.totals[cu.FILE] = os.path.basename(self.inFilePath)
+        self.totals[cu.SEQUENCES_TOT] = self.esc.seql.quantity
+        self.totals[cu.SEQUENCES_NUC] = self.esc.seql.quantity_nuc
+        self.totals[cu.SEQUENCES_PRT] = self.esc.seql.quantity_prt
+        self.totals[cu.SEQUENCES_MIX] = self.esc.seql.quantity_mix  
+        
+        with open(self.inFilePath, 'r') as inf:
+            s_st25 = inf.read()
+            enc_st25 = chardet.detect(s_st25)['encoding']
+            self.totals[cu.ENCODING_TXT] = enc_st25
+            u = s_st25.decode(enc_st25)
+            self.totals[cu.CDP_TXT] = len(u)
+        self.totals[cu.SIZE_TXT] = os.path.getsize(self.inFilePath)
+
+        with open(self.xmlFilePath, 'r') as f:
+            s_xml = f.read()
+            u_st26 = s_xml.decode('utf-8')
+            self.totals[cu.CDP_XML] = len(u_st26)
+            
+        self.totals[cu.SIZE_XML] = os.path.getsize(self.xmlFilePath) 
+
+        with open(self.cleanXmlFilePath, 'r') as f:
+            s_xml = f.read()
+            self.totals[cu.CDP_XML_CLEAN] = len(s_xml)
+            self.totals[cu.ENCODING_XML] = chardet.detect(s_xml)['encoding']
+        self.totals[cu.SIZE_XML_CLEAN] = os.path.getsize(self.cleanXmlFilePath) 
+        
+        ratio = self.totals[cu.SIZE_XML]/float(self.totals[cu.SIZE_TXT])
+        
+        self.totals[cu.SIZE_XML_VS_TXT_RATIO] = '%0.2f' % ratio
+        
+        ratio_clean = self.totals[cu.SIZE_XML_CLEAN]/float(self.totals[cu.SIZE_TXT])
+        
+        self.totals[cu.SIZE_XML_CLEAN_VS_TXT_RATIO] = '%0.2f' % ratio_clean
+        
+#         ratio = self.totals[cu.CDP_XML]/float(self.totals[cu.CDP_TXT])
+#         
+#         self.totals[cu.CHARS_XML_VS_TXT] = '%0.2f' % ratio
+#         
+#         ratio_clean = self.totals[cu.CDP_XML_CLEAN]/float(self.totals[cu.CDP_TXT])
+#         
+#         self.totals[cu.CHARS_XML_CLEAN_VS_TXT] = '%0.2f' % ratio_clean
+        
+        print self.inFilePath
+        print 'encoding:', self.esc.seql.charEncoding
+
 class FileSizeComparator(object):
     def __init__(self, inFilePath, outDirPath, xmlOutDirPath):
         self.inFilePath = inFilePath 
         self.outDirPath = outDirPath
         self.xmlOutDirPath = xmlOutDirPath
+        
+        self.totals = {}
         
         self.esc = ElementSizeCalculator(self.inFilePath)
         if self.esc.seql.isSeql:
@@ -519,8 +610,6 @@ class FileSizeComparator(object):
             self.xmlFilePath = sc.generateXmlFile(self.xmlOutDirPath)
     
             self.cleanXmlFilePath = self.cleanAndWriteXmlFile() 
-            
-            self.totals = {}
                         
             self.setTotals() 
         else:
@@ -542,10 +631,10 @@ class FileSizeComparator(object):
         rows = self.esc.generalInformationRows + self.esc.sequenceRows 
         
         self.totals[cu.FILE] = os.path.basename(self.inFilePath)
-        self.totals[cu.QUANTITY] = self.esc.seql.quantity
+        self.totals[cu.SEQUENCES_TOT] = self.esc.seql.quantity
         self.totals[cu.SEQUENCES_NUC] = self.esc.seql.quantity_nuc
         self.totals[cu.SEQUENCES_PRT] = self.esc.seql.quantity_prt
-        self.totals[cu.MIXED_MODE] = self.esc.seql.quantity_mix  
+        self.totals[cu.SEQUENCES_MIX] = self.esc.seql.quantity_mix  
         self.totals[cu.ELEMENT_ST25_LENGTH] = sum([r[2] for r in rows])
         self.totals[cu.VALUE_LENGTH] = sum([r[3] for r in rows])
         self.totals[cu.TAG_ST26_LENGTH] = sum([r[4] for r in rows])
@@ -556,28 +645,37 @@ class FileSizeComparator(object):
             enc_st25 = chardet.detect(s_st25)['encoding']
             self.totals[cu.ENCODING_TXT] = enc_st25
             u = s_st25.decode(enc_st25)
-            self.totals[cu.CHARS_TXT_FILE] = len(u)
-        self.totals[cu.FILE_SIZE_TXT] = os.path.getsize(self.inFilePath)
+            self.totals[cu.CDP_TXT] = len(u)
+        self.totals[cu.SIZE_TXT] = os.path.getsize(self.inFilePath)
 
         with open(self.xmlFilePath, 'r') as f:
             s_xml = f.read()
-            self.totals[cu.CHARS_XML_FILE] = len(s_xml)
+            u_st26 = s_xml.decode('utf-8')
+            self.totals[cu.CDP_XML] = len(u_st26)
             
-        self.totals[cu.FILE_SIZE_XML] = os.path.getsize(self.xmlFilePath) 
+        self.totals[cu.SIZE_XML] = os.path.getsize(self.xmlFilePath) 
 
         with open(self.cleanXmlFilePath, 'r') as f:
             s_xml = f.read()
-            self.totals[cu.CHARS_XML_CLEAN_FILE] = len(s_xml)
+            self.totals[cu.CDP_XML_CLEAN] = len(s_xml)
             self.totals[cu.ENCODING_XML] = chardet.detect(s_xml)['encoding']
-        self.totals[cu.FILE_SIZE_XML_CLEAN] = os.path.getsize(self.cleanXmlFilePath) 
+        self.totals[cu.SIZE_XML_CLEAN] = os.path.getsize(self.cleanXmlFilePath) 
         
-        ratio = self.totals[cu.CHARS_XML_FILE]/float(self.totals[cu.CHARS_TXT_FILE])
+        ratio = self.totals[cu.SIZE_XML]/float(self.totals[cu.SIZE_TXT])
         
-        self.totals[cu.CHARS_XML_VS_TXT] = '%0.2f' % ratio
+        self.totals[cu.SIZE_XML_VS_TXT_RATIO] = '%0.2f' % ratio
         
-        ratio_clean = self.totals[cu.CHARS_XML_CLEAN_FILE]/float(self.totals[cu.CHARS_TXT_FILE])
+        ratio_clean = self.totals[cu.SIZE_XML_CLEAN]/float(self.totals[cu.SIZE_TXT])
         
-        self.totals[cu.CHARS_XML_CLEAN_VS_TXT] = '%0.2f' % ratio_clean
+        self.totals[cu.SIZE_XML_CLEAN_VS_TXT_RATIO] = '%0.2f' % ratio_clean
+        
+#         ratio = self.totals[cu.CDP_XML]/float(self.totals[cu.CDP_TXT])
+#         
+#         self.totals[cu.CHARS_XML_VS_TXT] = '%0.2f' % ratio
+#         
+#         ratio_clean = self.totals[cu.CDP_XML_CLEAN]/float(self.totals[cu.CDP_TXT])
+#         
+#         self.totals[cu.CHARS_XML_CLEAN_VS_TXT] = '%0.2f' % ratio_clean
         
         print self.inFilePath
         print 'encoding:', self.esc.seql.charEncoding

@@ -1,0 +1,6 @@
+/Users/ad/pyton/projects/ftp/wipo/extracted/WO2012-021500-001.zip.txt
+seq 6
+loc (1)...(299)
+/Users/ad/pyton/projects/ftp/wipo/extracted/WO2012-021500-001.zip.txt
+seq 8
+loc (1)...(212)

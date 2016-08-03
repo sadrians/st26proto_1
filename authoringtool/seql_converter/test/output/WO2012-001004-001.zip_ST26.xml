@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "resources/ST26SequenceListing_V1_0.dtd">
+<?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>
+<ST26SequenceListing dtdVersion="1" 
+                    fileName="WO2012-001004-001.zip_ST26"
+                    softwareName="prototype" 
+                    softwareVersion="0.1"
+                    productionDate="2016-08-03">
+    <ApplicantFileReference>PCT 112435</ApplicantFileReference>
+    <EarliestPriorityApplicationIdentification>
+        <IPOfficeCode>EP</IPOfficeCode>
+        <ApplicationNumberText>10168280.5</ApplicationNumberText>
+        <FilingDate>2010-07-02</FilingDate>
+    </EarliestPriorityApplicationIdentification>
+    <ApplicantName languageCode="XX">
+        SIGMA-TAU Industrie Farmaceutiche Riunite S.p.A.
+    </ApplicantName>
+        <InventionTitle languageCode="XX">
+            Vaccine against Urinary Tract Infections (UTI)
+        </InventionTitle>
+    <SequenceTotalQuantity>
+        17
+    </SequenceTotalQuantity>
+        <SequenceData sequenceIDNumber="1">
+            <INSDSeq>
+                <INSDSeq_length>903</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..903</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Escherichia coli</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                        <INSDFeature>
+                            <INSDFeature_key>CDS</INSDFeature_key>
+                            <INSDFeature_location>(1)..(903)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>translation</INSDQualifier_name>
+                                    <INSDQualifier_value>MKRVITLFAVLLMGWSVNAWSFACKTANGTAIPIGGGSANVYVNLAPAVNVGQNLVVDLSTQIFCHNDYPETITDYVTLQRGAAYGGVLSSFSGTVKYNGSSYPFPTTSETPRVVYNSRTDKPWPVALYLTPVSSAGGVAIKAGSLIAVLILRQTNNYNSDDFQFVWNIYANNDVVVPTGGCDVSARDVTVTLPDYPGSVPIPLTVYCAKSQNLGYYLSGTTADAGNSIFTNTASFSPAQGVGVQLTRNGTIIPANNTVSLGAVGTSAVSLGLTANYARTGGQVTAGNVQSIIGVTFVYQ</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>atgaaacgagttattaccctgtttgctgtactgctgatgggctggtcggtaaatgcctggtcattcgcctgtaaaaccgccaatggtaccgcaatccctattggcggtggcagcgccaatgtttatgtaaaccttgcgcctgccgtgaatgtggggcaaaacctggtcgtagatctttcgacgcaaatcttttgccataacgattacccagaaaccattacagactatgtcacactgcaacgaggtgcggcttatggcggcgtgttatctagtttttccgggaccgtaaaatataatggcagtagctatcctttccctactaccagcgaaacgccgcgggttgtttataattcgagaacggataagccgtggccggtggcgctttatttgacgccggtgagcagtgcggggggagtggcgattaaagctggctcattaattgccgtgcttattttgcgacagaccaacaactataacagcgatgatttccagtttgtgtggaatatttacgccaataatgatgtggtggtgcccactggcggctgcgatgtttctgctcgtgatgtcaccgttactctgccggactaccctggttcagtgccgattcctcttaccgtttattgtgcgaaaagccaaaacctggggtattacctctccggcacaaccgcagatgcgggcaactcgattttcaccaataccgcgtcgttttcacccgcgcagggcgtcggcgtacagttgacgcgcaacggtacgattattccagcgaataacacggtatcgttaggagcagtagggacttcggcggtaagtctgggattaacggcaaattacgcacgtaccggagggcaggtgactgcagggaatgtgcaatcgattattggcgtgacttttgtttatcaataa</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="2">
+            <INSDSeq>
+                <INSDSeq_length>300</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..300</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Escherichia coli</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MKRVITLFAVLLMGWSVNAWSFACKTANGTAIPIGGGSANVYVNLAPAVNVGQNLVVDLSTQIFCHNDYPETITDYVTLQRGAAYGGVLSSFSGTVKYNGSSYPFPTTSETPRVVYNSRTDKPWPVALYLTPVSSAGGVAIKAGSLIAVLILRQTNNYNSDDFQFVWNIYANNDVVVPTGGCDVSARDVTVTLPDYPGSVPIPLTVYCAKSQNLGYYLSGTTADAGNSIFTNTASFSPAQGVGVQLTRNGTIIPANNTVSLGAVGTSAVSLGLTANYARTGGQVTAGNVQSIIGVTFVYQ</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="3">
+            <INSDSeq>
+                <INSDSeq_length>3738</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..3738</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>Recombinant pSTM27 bacteriophage</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                        <INSDFeature>
+                            <INSDFeature_key>CDS</INSDFeature_key>
+                            <INSDFeature_location>(268)..(909)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>fused pVIII-FimH</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>translation</INSDQualifier_name>
+                                    <INSDQualifier_value>MKKSLVLKASVAVATLVPMLSFAAEGEFHNDYPETITDYVTLQRGSAYGGVLSNFSGTVKYSGSSYPFPTTSETPRVVYNSRTDKPWPVALYLTPVSSAGGVAIKAGSLIAVLILRQTNNYNSDDFQFVWNIYANNDVVVPTGDYKDDDDKSGGGGSGGGGSGGGGSDPAKAAFDSLQASATEYIGYAWAMVVVIVGATIGIKLFKKFTSKAS</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>gcccaatacgcaaaccgcctctccccgcgcgttggccgattcattaatgcagctggcacgacaggtttcccgactggaaagcgggcagtgagcgcaacgcaattaatgtgagttagctcactcattaggcaccccaggctttacactttatgcttccggctcgtatgttgtgtggaattgtgagcggataacaatttcacacaagatctagctattctagagattacgccaagccccgtattttacccgtttaatggaaacttcctcatgaaaaagtctttagtcctcaaagcctctgtagccgttgctaccctcgttccgatgctgtctttcgctgctgagggtgaattccataacgattatccggaaaccattacagactatgtcacactgcaacgaggctcggcttatggcggcgtgttatctaatttttccgggaccgtaaaatatagtggcagtagctatccatttcctaccaccagcgaaacgccgcgcgttgtttataattcgagaacggataagccgtggccggtggcgctttatttgacgcctgtgagcagtgcgggcggggtggcgattaaagctggctcattaattgccgtgcttattttgcgacagaccaacaactataacagcgatgatttccagtttgtgtggaatatttacgccaataatgatgtggtggtgcccactggagactacaaagacgacgacgacaaatcaggtggaggcggttcaggcggaggtggctctggcggtggcggatcggatcccgcaaaagcggcctttgactccctgcaagcctcagcgaccgaatatatcggttatgcgtgggcgatggttgttgtcattgtcggcgcaactatcggtatcaagctgtttaagaaattcacctcgaaagcaagctaagcggccgcaggagactacaaagacgacgacgacaaacaccaccatcaccaccattaaggccgctaatattgttctggatattaccagcaaggccgatagtttgagttcttctactcaggcaagtgatgttattactaatcaaagaagtattgcgacaacggttaatttgcgtgatggacagactcttttactcggtggcctcactgattataaaaacacttctcaggattctggcgtaccgttcctgtctaaaatccctttaatcggcctcctgtttagctcccgctctgattctaacgaggaaagcacgttatacgtgctcgtcaaagcaaccatagtacgcgccctgtagcggcgcattaagcgcggcgggtgtggtggttacgcgcagcgtgaccgctacacttgccagcgccctagcgcccgctcctttcgctttcttcccttcctttctcgccacgttcgccggctttccccgtcaagctctaaatcgggggctccctttagggttccgatttagtgctttacggcacctcgaccccaaaaaacttgattagggtgatggttcacgtagtgggccatcgccctgatagacggtttttcgccctttgacgttggagtccacgttctttaatagtggactcttgttccaaactggaacaacactcaaccctatctcggtctattcttttgatttataagggattttgccgatttcggcctattggttaaaaaatgagctgatttaacaaaaatttaacgcgaattttaacaaaatattaacgtttacaatttaaatatttgcttatacaatcttcctgtttttggggcttttctgattatcaaccggggtacatatgattgacatgctagttttacgattaccgttcatcgcaggtggcacttttcggggaaatgtgcgcggaacccctatttgtttatttttctaaatacattcaaatatgtatccgctcatgagacaataaccctgataaatgcttcaataatattgaaaaaggaagagtatgagtattcaacatttccgtgtcgcccttattcccttttttgcggcattttgccttcctgtttttgctcacccagaaacgctggtgaaagtaaaagatgctgaagatcagttgggtgcacgagtgggttacatcgaactggatctcaacagcggtaagatccttgagagttttcgccccgaagaacgttttccaatgatgagcacttttaaagttctgctatgtggcgcggtattatcccgtattgacgccgggcaagagcaactcggtcgccgcatacactattctcagaatgacttggttgagtactcaccagtcacagaaaagcatcttacggatggcatgacagtaagagaattatgcagtgctgccataaccatgagtgataacactgcggccaacttacttctgacaacgatcggaggaccgaaggagctaaccgcttttttgcacaacatgggggatcatgtaactcgccttgatcgttgggaaccggagctgaatgaagccataccaaacgacgagcgtgacaccacgatgcctgtagcaatggcaacaacgttgcgcaaactattaactggcgaactacttactctagcttcccggcaacaattaatagactggatggaggcggataaagttgcaggaccacttctgcgctcggcccttccggctggctggtttattgctgataaatctggagccggtgagcgtgggtctcgcggtatcattgcagcactggggccagatggtaagccctcccgtatcgtagttatctacacgacggggagtcaggcaactatggatgaacgaaatagacagatcgctgagataggtgcctcactgattaagcattggtaactgtcagaccaagtttactcatatatactttagattgatttaaaacttcatttttaatttaaaaggatctaggtgaagatcctttttgataatctcatgaccaaaatcccttaacgtgagttttcgttccactgagcgtcagaccccgtagaaaagatcaaaggatcttcttgagatcctttttttctgcgcgtaatctgctgcttgcaaacaaaaaaaccaccgctaccagcggtggtttgtttgccggatcaagagctaccaactctttttccgaaggtaactggcttcagcagagcgcagataccaaatactgtccttctagtgtagccgtagttaggccaccacttcaagaactctgtagcaccgcctacatacctcgctctgctaatcctgttaccagtggctgctgccagtggcgataagtcgtgtcttaccgggttggactcaagacgatagttaccggataaggcgcagcggtcgggctgaacggggggttcgtgcacacagcccagcttggagcgaacgacctacaccgaactgagatacctacagcgtgagctatgagaaagcgccacgcttcccgaagggagaaaggcggacaggtatccggtaagcggcagggtcggaacaggagagcgcacgagggagcttccagggggaaacgcctggtatctttatagtcctgtcgggtttcgccacctctgacttgagcgtcgatttttgtgatgctcgtcaggggggcggagcctatggaaaaacgccagcaacgcggcctttttacggttcctggccttttgctggccttttgctcacatgttctttcctgcgttatcccctgattctgtggataaccgtattaccgcctttgagtgagctgataccgctcgccgcagccgaacgaccgagcgcagcgagtcagtgagcgaggaagcggaagagc</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="4">
+            <INSDSeq>
+                <INSDSeq_length>213</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..213</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Synthetic Construct</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MKKSLVLKASVAVATLVPMLSFAAEGEFHNDYPETITDYVTLQRGSAYGGVLSNFSGTVKYSGSSYPFPTTSETPRVVYNSRTDKPWPVALYLTPVSSAGGVAIKAGSLIAVLILRQTNNYNSDDFQFVWNIYANNDVVVPTGDYKDDDDKSGGGGSGGGGSGGGGSDPAKAAFDSLQASATEYIGYAWAMVVVIVGATIGIKLFKKFTSKAS</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="5">
+            <INSDSeq>
+                <INSDSeq_length>222</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..222</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Bacteriophage M13mp18</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                        <INSDFeature>
+                            <INSDFeature_key>CDS</INSDFeature_key>
+                            <INSDFeature_location>(1)..(222)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>translation</INSDQualifier_name>
+                                    <INSDQualifier_value>MKKSLVLKASVAVATLVPMLSFAAEGDDPAKAAFNSLQASATEYIGYAWAMVVVIVGATIGIKLFKKFTSKAS</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>atgaaaaagtctttagtcctcaaagcctctgtagccgttgctaccctcgttccgatgctgtctttcgctgctgagggtgacgatcccgcaaaagcggcctttaactccctgcaagcctcagcgaccgaatatatcggttatgcgtgggcgatggttgttgtcattgtcggcgcaactatcggtatcaagctgtttaagaaattcacctcgaaagcaagctga</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="6">
+            <INSDSeq>
+                <INSDSeq_length>73</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..73</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Bacteriophage M13mp18</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MKKSLVLKASVAVATLVPMLSFAAEGDDPAKAAFNSLQASATEYIGYAWAMVVVIVGATIGIKLFKKFTSKAS</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="7">
+            <INSDSeq>
+                <INSDSeq_length>228</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..228</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>pc89 major coat protein PVIII</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                        <INSDFeature>
+                            <INSDFeature_key>CDS</INSDFeature_key>
+                            <INSDFeature_location>(1)..(84)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>translation</INSDQualifier_name>
+                                    <INSDQualifier_value>MKKSLVLKASVAVATLVPMLSFAAEGEF</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                        <INSDFeature>
+                            <INSDFeature_key>CDS</INSDFeature_key>
+                            <INSDFeature_location>(88)..(225)</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>translation</INSDQualifier_name>
+                                    <INSDQualifier_value>DPAKAAFDSLQASATEYIGYAWAMVVVIVGATIGIKLFKKFTSKAS</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>atgaaaaagtctttagtcctcaaagcctctgtagccgttgctaccctcgttccgatgctgtctttcgctgctgagggtgaattctaggatcccgcaaaagcggcctttgactccctgcaagcctcagcgaccgaatatatcggttatgcgtgggcgatggttgttgtcattgtcggcgcaactatcggtatcaagctgtttaagaaattcacctcgaaagcaagctga</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="8">
+            <INSDSeq>
+                <INSDSeq_length>74</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..74</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>Synthetic Construct</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>MKKSLVLKASVAVATLVPMLSFAAEGEFDPAKAAFDSLQASATEYIGYAWAMVVVIVGATIGIKLFKKFTSKAS</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="9">
+            <INSDSeq>
+                <INSDSeq_length>41</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..41</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>synthetic primer</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>ctgctgctgccatggtttgtaaaaccgccaatggtaccgct</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="10">
+            <INSDSeq>
+                <INSDSeq_length>40</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..40</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>synthetic primer</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>gtcgtctgcggccgcagtgggcaccaccacatcattattg</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="11">
+            <INSDSeq>
+                <INSDSeq_length>39</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..39</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>synthetic primer</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>ctgctgctggaattctgtaaaaccgccaatggtaccgct</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="12">
+            <INSDSeq>
+                <INSDSeq_length>113</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..113</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>synthetic primer</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>ctgctgctggatccgatccgccaccgccagagccacctccgcctgaaccgcctccacctgatttgtcgtcgtcgtctttgtagtctccagtgggcaccaccacatcattattg</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="13">
+            <INSDSeq>
+                <INSDSeq_length>41</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..41</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>synthetic primer</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>ctgctgctggaattccataacgattatccggaaaccattac</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="14">
+            <INSDSeq>
+                <INSDSeq_length>8</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..8</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>FLAG-tag</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>DYKDDDDK</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="15">
+            <INSDSeq>
+                <INSDSeq_length>16</INSDSeq_length>
+                <INSDSeq_moltype>AA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>SOURCE</INSDFeature_key>
+                            <INSDFeature_location>1..16</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                                    <INSDQualifier_value>protein</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
+                                    <INSDQualifier_value>peptide linker</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>SGGGGSGGGGSGGGGS</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="16">
+            <INSDSeq>
+                <INSDSeq_length>20</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..20</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>CpG oligonucleotide</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>tccatgacgttcctgacgtt</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+        <SequenceData sequenceIDNumber="17">
+            <INSDSeq>
+                <INSDSeq_length>20</INSDSeq_length>
+                <INSDSeq_moltype>DNA</INSDSeq_moltype>
+                <INSDSeq_division>PAT</INSDSeq_division>
+                <INSDSeq_feature-table>
+                        <INSDFeature>
+                            <INSDFeature_key>source</INSDFeature_key>
+                            <INSDFeature_location>1..20</INSDFeature_location>
+                            <INSDFeature_quals>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>organism</INSDQualifier_name>
+                                    <INSDQualifier_value>Artificial Sequence</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
+                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                                </INSDQualifier>
+                                <INSDQualifier>
+                                    <INSDQualifier_name>note</INSDQualifier_name>
+                                    <INSDQualifier_value>non CpG oligonucleotide</INSDQualifier_value>
+                                </INSDQualifier>
+                            </INSDFeature_quals>
+                        </INSDFeature>
+                </INSDSeq_feature-table>
+                <INSDSeq_sequence>tccatgagcttcctgacgtt</INSDSeq_sequence>
+            </INSDSeq>
+        </SequenceData>
+</ST26SequenceListing>

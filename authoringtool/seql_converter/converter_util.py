@@ -73,28 +73,53 @@ TAG_ST26_LENGTH = 'tag_st26_length'
 ELEMENT_ST26_LENGTH = 'element_st26_length' 
 ELEMENT_ST26 = 'element_st26'
 COMMENT = 'comment'
-CHARS_TXT_FILE = 'chars_txt'
-FILE_SIZE_TXT = 'size_txt_B'
-FILE_SIZE_XML = 'size_xml_B'
-CHARS_XML_FILE = 'chars_xml'
-FILE_SIZE_XML_CLEAN = 'size_xml_clean_B'
-CHARS_XML_CLEAN_FILE = 'chars_xml_clean'
-QUANTITY = 'q_tot'
+
+CDP_TXT = 'cdp_txt'
+SIZE_TXT = 'size_txt_B'
+CDP_XML = 'cdp_xml'
+SIZE_XML = 'size_xml_B'
+CDP_XML_CLEAN = 'cdp_xml_clean'
+SIZE_XML_CLEAN = 'size_xml_clean_B'
+
+SEQUENCES_TOT = 'q_tot'
 SEQUENCES_NUC = 'q_nuc'
 SEQUENCES_PRT = 'q_prt'
-MIXED_MODE = 'q_mix'
+SEQUENCES_MIX = 'q_mix'
+
 ENCODING_TXT = 'encoding_txt'
 ENCODING_XML = 'encoding_xml'
+
 CHARS_XML_CLEAN_VS_TXT = 'chars_xml_clean_vs_txt_ratio'
 CHARS_XML_VS_TXT = 'chars_xml_vs_txt_ratio'
 
-STATS_HEADER = [FILE, QUANTITY, SEQUENCES_NUC, SEQUENCES_PRT, MIXED_MODE, 
-                ELEMENT_ST25_LENGTH, VALUE_LENGTH, TAG_ST26_LENGTH, 
-                ELEMENT_ST26_LENGTH, CHARS_TXT_FILE, FILE_SIZE_TXT, ENCODING_TXT,
-                CHARS_XML_FILE, FILE_SIZE_XML, CHARS_XML_VS_TXT,
-                CHARS_XML_CLEAN_FILE, FILE_SIZE_XML_CLEAN, CHARS_XML_CLEAN_VS_TXT, 
+SIZE_XML_VS_TXT_RATIO = 'size_xml_vs_txt_ratio'
+SIZE_XML_CLEAN_VS_TXT_RATIO = 'size_xml_clean_vs_txt_ratio'
+
+STATS_HEADER = [FILE, SEQUENCES_TOT, SEQUENCES_NUC, SEQUENCES_PRT, SEQUENCES_MIX, 
+                CDP_TXT, SIZE_TXT, 
+                ENCODING_TXT,
+                CDP_XML, SIZE_XML, SIZE_XML_VS_TXT_RATIO,
+                CDP_XML_CLEAN, SIZE_XML_CLEAN, SIZE_XML_CLEAN_VS_TXT_RATIO, 
                 ENCODING_XML
                 ]
+
+# STATS_HEADER = [FILE, SEQUENCES_TOT, SEQUENCES_NUC, SEQUENCES_PRT, SEQUENCES_MIX, 
+#                 ELEMENT_ST25_LENGTH, VALUE_LENGTH, TAG_ST26_LENGTH, 
+#                 ELEMENT_ST26_LENGTH, 
+#                 CDP_TXT, SIZE_TXT, 
+#                 ENCODING_TXT,
+#                 CDP_XML, SIZE_XML, SIZE_XML_VS_TXT_RATIO,
+#                 CDP_XML_CLEAN, SIZE_XML_CLEAN, SIZE_XML_CLEAN_VS_TXT_RATIO, 
+#                 ENCODING_XML
+#                 ]
+
+# STATS_HEADER = [FILE, SEQUENCES_TOT, SEQUENCES_NUC, SEQUENCES_PRT, SEQUENCES_MIX, 
+#                 ELEMENT_ST25_LENGTH, VALUE_LENGTH, TAG_ST26_LENGTH, 
+#                 ELEMENT_ST26_LENGTH, CDP_TXT, SIZE_TXT, ENCODING_TXT,
+#                 CDP_XML, SIZE_XML, CHARS_XML_VS_TXT,
+#                 CDP_XML_CLEAN, SIZE_XML_CLEAN, CHARS_XML_CLEAN_VS_TXT, 
+#                 ENCODING_XML
+#                 ]
 
 # CSV_HEADER_DICT = {'ELEMENT_ST25': 'element_st25', 
 #                 'SEQ_ID_NO': 'seqIdNo', 

@@ -130,14 +130,16 @@ class SequenceListing(object):
             for s in blocks[1:]:
                 reconstructedString = '<210>%s' %s
                 currentSeq = Sequence(reconstructedString)
-                currentSeq.actualSeqIdNo = blocks.index(s)
-                self.sequences.append(currentSeq)
-                if currentSeq.molType == 'PRT':
-                    self.quantity_prt += 1
-                elif currentSeq.molType in ('DNA', 'RNA'):
-                    self.quantity_nuc += 1
-                    if currentSeq.mixedMode:
-                        self.quantity_mix += 1 
+                if currentSeq.successfullyParsed:
+                    currentSeq.actualSeqIdNo = blocks.index(s)
+                    
+                    self.sequences.append(currentSeq)
+                    if currentSeq.molType == 'PRT':
+                        self.quantity_prt += 1
+                    elif currentSeq.molType in ('DNA', 'RNA'):
+                        self.quantity_nuc += 1
+                        if currentSeq.mixedMode:
+                            self.quantity_mix += 1 
                         
         except IOError:
             # self.logger.exception("Invalid input file: %s" % self.in_file_name)
@@ -246,6 +248,7 @@ class Sequence(object):
                         f.translation = currentTranslation
             self.__setActualMolType__()
             self.__setActualLength__()
+            self.successfullyParsed = True 
         else:
 #             print 'File', self.filePath
             print 'Sequence: No match for sequence pattern for input:', aStr 

@@ -9,6 +9,8 @@ import csv
 from django.conf import settings
 import re 
 from converter import St25To26Converter
+from st25parser.seqlparser_new import SequenceListing
+from st25parser import seqlutils as su 
 from size_estimation_new import FileSizeComparator
 import converter_util as cu 
 
@@ -20,6 +22,7 @@ def extractTotals(aList, outDirPath, xmlOutDirPath, statsFilePath):
         totalsList.append(fsc.totals) 
 #         fsc.compareElementsInCsvAndXmlFiles()
 #         pprint.pprint(fsc.totals)
+    
     with open(statsFilePath, 'wb') as csvfile:
         wr = csv.writer(csvfile, delimiter=',')
         wr.writerow(cu.STATS_HEADER)
@@ -49,9 +52,23 @@ def compareGeneralInformation(aList, outDirPath, xmlOutDirPath):
                 wr.writerow([bn, len(genInfo25), len(genInfo25_clean), len(genInfo26)])
 
 def compareElementsInCsvAndXmlFiles(aList, outDirPath, xmlOutDirPath):
-    for fp in l:
+    for fp in aList:
         fsc = FileSizeComparator(fp, outDirPath, xmlOutDirPath)
         fsc.compareElementsInCsvAndXmlFiles()
+
+def findCdsNotDivByThree(aList, outfp):
+    with open(outfp, 'w') as wr:
+        for fp in aList:
+            print fp
+            seql = SequenceListing(fp)
+            for seq in seql.sequences:
+                for f in seq.features:
+                    if f.key == 'CDS':
+                        locationRange = su.getRangeFromLocation(f.location) 
+                        if (locationRange[1] - locationRange[0] + 1)%3 != 0:
+                            wr.write('%s\n' % fp)
+                            wr.write('seq %s\n' % seq.seqIdNo)
+                            wr.write('loc %s\n' % f.location)
         
 # ==================== main =========================
 if __name__ == "__main__":
@@ -61,15 +78,31 @@ if __name__ == "__main__":
     xmlOutDirPath = r'/Users/ad/pyton/test/st26fileSize/out_ST26'
     statsFilePath = os.path.join(outDirPath, 'stats.csv')
     
+    f6_1 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+                        'st25parser', 'testdata', 'file6_1.txt') # seq 1 cds not div by 3
     f6503 = os.path.join(inDirPath, 'WO2012-006503.txt')# 170 missing
     
     l = [os.path.join(inDirPath, a) for a in os.listdir(inDirPath) if '.DS' not in a]
     
-#     extractTotals(l[:3], outDirPath, xmlOutDirPath, statsFilePath)
+    extractTotals(l, outDirPath, xmlOutDirPath, statsFilePath)
 #     compareGeneralInformation(l, outDirPath, xmlOutDirPath)
-    compareElementsInCsvAndXmlFiles(l, outDirPath, xmlOutDirPath)
+#     compareElementsInCsvAndXmlFiles(l, outDirPath, xmlOutDirPath)
+    
+    ex = r'/Users/ad/pyton/projects/ftp/wipo/extracted'
+    exl = [os.path.join(ex, a) for a in os.listdir(ex) if '.DS' not in a]
+#     findCdsNotDivByThree(exl, 'cdsNotDivThree.txt')
+#     extractTotals(exl[:100], outDirPath, xmlOutDirPath, statsFilePath)
 
-
+#     for fp in exl:
+#         sz = os.path.getsize(fp)
+#         if sz > 1000000:
+#             print fp 
+#             print sz
+#         seql = SequenceListing(fp)
+#         if seql.isSeql:
+#             if int(seql.quantity) > 500:
+#                 print fp
+#                 print seql.quantity
 
 
 

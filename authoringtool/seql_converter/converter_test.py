@@ -223,20 +223,54 @@ class Test_St25To26Converter(TestCase):
          
         self.sc1.generateXmlFile(od)
         filePath1 = os.path.join(od, '%s.xml' % self.sc1.seql_st26.fileName)
+        
+        self.sc1004.generateXmlFile(od)
+        filePath1004 = os.path.join(od, '%s.xml' % self.sc1004.seql_st26.fileName)
          
         self.assertTrue(os.path.isfile(filePath1))
         self.assertTrue(slsu.validateDocumentWithDtd(filePath1, slsu.XML_DTD_PATH))
         
-        with open(filePath1, 'r') as f:
-            s = f.read()
-            self.assertEqual(1, s.count('<ST26SequenceListing'))
-            self.assertEqual(4, s.count('<SequenceData'))
-            self.assertEqual(4, s.count('<INSDSeq_feature-table>'))
-            self.assertEqual(5, s.count('<INSDFeature>'))
-            self.assertEqual(4, s.count('<INSDFeature_quals>'))
-            self.assertEqual(9, s.count('<INSDQualifier>'))
-            
-#             self.assertEqual(, s.count('<'))
+        with open(filePath1, 'r') as f1:
+            s1 = f1.read()
+            self.assertEqual(1, s1.count('<ST26SequenceListing'))
+            self.assertEqual(4, s1.count('<SequenceData'))
+            self.assertEqual(4, s1.count('<INSDSeq_feature-table>'))
+            self.assertEqual(5, s1.count('<INSDFeature>'))
+            self.assertEqual(4, s1.count('<INSDFeature_quals>'))
+            self.assertEqual(9, s1.count('<INSDQualifier>'))
+        with open(filePath1004, 'r') as f1004:
+            s1004 = f1004.read()    
+            self.assertEqual(0, s1004.count('<ApplicationIdentification>'))
+            self.assertEqual(1, s1004.count('<ApplicationNumberText'))
+            self.assertEqual(1, s1004.count('<FilingDate>'))
+#             f1_0 2q
+#             f1_1 1q
+#             f2_0 2q
+#             f3_0 3q
+#             f3_1 2q
+#             f4_0 3q
+#             f5_0 2q
+#             f5_1 1q
+#             f6_0 2q
+#             f7_0 3q
+#             f7_1 1q
+#             f7_2 1q
+#             f8_0 3q
+#             f9_0 3q
+#             f10_0 3q
+#             f11_0 3q
+#             f12_0 3q
+#             f13_0 3q
+#             f14_0 3q
+#             f15_0 3q
+#             f16_0 3q
+#             f17_0 3q
+            self.assertEqual(22, s1004.count('<INSDFeature>'))
+            self.assertEqual(22, s1004.count('<INSDFeature_quals>'))
+            self.assertEqual(53, s1004.count('<INSDQualifier>'))
+#             no empty elements
+            self.assertEqual(0, s1004.count('></'))
+
 #             self.assertEqual(, s.count('<'))
 #             self.assertEqual(, s.count('<'))
 #             self.assertEqual(, s.count('<'))

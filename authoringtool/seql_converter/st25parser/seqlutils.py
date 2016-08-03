@@ -159,6 +159,7 @@ def parsePriorities(aString):
                             safeStrip(m.group('priorityDate'))))         
     return result
 
+
 # def getStopCodon(aString, aList):
 #     res = {}
 #     codons = [aString[i:i+3] for i in xrange(0, len(aString), 3)]
