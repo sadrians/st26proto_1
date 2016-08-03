@@ -43,30 +43,39 @@ class TestSequenceListing(unittest.TestCase):
         cls.sl1004 = SequenceListing(getAbsPath('WO2012-001004-001.zip.txt'))
         cls.sl6083_1 = SequenceListing(getAbsPath('WO2012-006083_1.txt'))
         
-        cls.seq1_1 = cls.sl1.sequences[0]
-        cls.seq1_2 = cls.sl1.sequences[1]
-        cls.seq1_3 = cls.sl1.sequences[2]
         
-        cls.seq2_3 = cls.sl2.sequences[2]
+        sequences1 = [seq for seq in cls.sl1.generateSequence()]
+        cls.seq1_1 = sequences1[0]
+        cls.seq1_2 = sequences1[1]
+        cls.seq1_3 = sequences1[2]
         
-        cls.seq5_5 = cls.sl5.sequences[4]
-        cls.seq5_37 = cls.sl5.sequences[36]
-        cls.seq5_40 = cls.sl5.sequences[39]
+        sequences2 = [seq for seq in cls.sl2.generateSequence()]
+        cls.seq2_3 = sequences2[2]
+
+        sequences5 = [seq for seq in cls.sl5.generateSequence()]
+        cls.seq5_5 = sequences5[4]
+        cls.seq5_37 = sequences5[36]
+        cls.seq5_40 = sequences5[39]
         
-        cls.seq6_4 = cls.sl6.sequences[3]
+        sequences6 = [seq for seq in cls.sl6.generateSequence()]
+        cls.seq6_4 = sequences6[3]
         
-        cls.seq32_5 = cls.sl32.sequences[4]
+        sequences32 = [seq for seq in cls.sl32.generateSequence()]
+        cls.seq32_5 = sequences32[4]
         
-        cls.seq33_1_1 = cls.sl33_1.sequences[0]
-        cls.seq33_1_2 = cls.sl33_1.sequences[1]
+        sequences33_1 = [seq for seq in cls.sl33_1.generateSequence()]
+        cls.seq33_1_1 = sequences33_1[0]
+        cls.seq33_1_2 = sequences33_1[1]
         
-        cls.seq1004_1 = cls.sl1004.sequences[0]
-        cls.seq1004_7 = cls.sl1004.sequences[6]
+        sequences1004 = [seq for seq in cls.sl1004.generateSequence()]
+        cls.seq1004_1 = sequences1004[0]
+        cls.seq1004_7 = sequences1004[6]
         
-        cls.sl6083_1_seq_1 = cls.sl6083_1.sequences[0] # 212 is RNA
-        cls.sl6083_1_seq_2 = cls.sl6083_1.sequences[1] # 212 is DNA instead of RNA
-        cls.sl6083_1_seq_3 = cls.sl6083_1.sequences[2] # 212 is abc instead of RNA
-        cls.sl6083_1_seq_4 = cls.sl6083_1.sequences[3] # 212 is missing
+        sequences6083_1 = [seq for seq in cls.sl6083_1.generateSequence()]
+        cls.sl6083_1_seq_1 = sequences6083_1[0] # 212 is RNA
+        cls.sl6083_1_seq_2 = sequences6083_1[1] # 212 is DNA instead of RNA
+        cls.sl6083_1_seq_3 = sequences6083_1[2] # 212 is abc instead of RNA
+        cls.sl6083_1_seq_4 = sequences6083_1[3] # 212 is missing
 
 #         cls.seq6_1 = SequenceListing.getSequenceFromFile(infilename6, 1)
 #         cls.seq6_4 = SequenceListing.getSequenceFromFile(infilename6, 4) # skip code

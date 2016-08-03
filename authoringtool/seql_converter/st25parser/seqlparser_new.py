@@ -98,6 +98,10 @@ def safeStrip(s):
 class SequenceListing(object):
     def __init__(self, aFilePath):
         blocks = []
+        
+        self.seqlGenerator = su.generateChunks(aFilePath, '<210>')
+        generalInformationString = self.seqlGenerator.next()['chunk']
+        
         self.filePath = aFilePath
         self.seqlHeader = '-'
         self.applicant = []
@@ -124,7 +128,8 @@ class SequenceListing(object):
 #                 print self.charEncoding
                 u = rawString.decode(self.charEncoding)
                 blocks = u.split('<210>')
-            self.setGeneralInformation(blocks[0])
+#             self.setGeneralInformation(blocks[0])
+            self.setGeneralInformation(generalInformationString)
 #                 pprint.pprint(blocks) 
                 
             for s in blocks[1:]:
@@ -175,6 +180,32 @@ class SequenceListing(object):
             print 'File', self.filePath
             print 'SequenceListing: No match for general information pattern.'
     
+    def generateSequence(self):
+        '''
+        Yield one Sequence at a time.
+        :return: Sequence
+        '''
+        # try:
+        counter = 0
+        for elem in self.seqlGenerator:
+            counter += 1
+            chunk = elem['chunk']
+            chunkUnicode = chunk.decode(self.charEncoding)
+            lineNumber = elem['lineNumber']
+            try:
+#                 seq = Sequence(chunk)
+                seq = Sequence(chunkUnicode)
+ 
+                seq.actualSeqIdNo = counter
+                yield seq
+            except SeqlException as se:
+                # self.logger.exception(
+                #     '*Input file: %s\n\t*ParseException (while parsing sequence) in line number %s, column %s. The line is: %s' % (
+                #         self.in_file_name,
+                #         pe.__getattr__('lineno') + lineNumber - 1,
+                #         pe.__getattr__('col'), pe.__getattr__('line')))
+                su.logger.exception('Exception in line %s' % lineNumber)
+                su.logger.exception(se)
              
 class Sequence(object):
     def __init__(self, aStr):
@@ -308,3 +339,9 @@ class Feature(object):
         print '\tdescription:%s\n' %self.description
         print '\ttranslation:%s\n' %self.translation
 
+class SeqlException(Exception):
+    def __init__(self, msg):
+        self.msg = msg
+
+    def __repr__(self):
+        return self.msg
