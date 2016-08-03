@@ -30,7 +30,7 @@ class ElementSizeCalculator(object):
             self.setRow_softwareVersion()
             self.setRow_productionDate()
             self.setRow_110()
-            self.setRow_InventorName()
+#             self.setRow_InventorName()
             self.setRow_120()
             self.setRow_130()
             if self.seql.applicationNumber != cu.BLANK_PLACEHOLDER:
@@ -552,9 +552,11 @@ class FileSizeComparator(object):
         self.totals[cu.ELEMENT_ST26_LENGTH] = sum([r[5] for r in rows])
         
         with open(self.inFilePath, 'r') as inf:
-            s_txt = inf.read()
-            self.totals[cu.CHARS_TXT_FILE] = len(s_txt)
-            self.totals[cu.ENCODING_TXT] = chardet.detect(s_txt)['encoding']
+            s_st25 = inf.read()
+            enc_st25 = chardet.detect(s_st25)['encoding']
+            self.totals[cu.ENCODING_TXT] = enc_st25
+            u = s_st25.decode(enc_st25)
+            self.totals[cu.CHARS_TXT_FILE] = len(u)
         self.totals[cu.FILE_SIZE_TXT] = os.path.getsize(self.inFilePath)
 
         with open(self.xmlFilePath, 'r') as f:

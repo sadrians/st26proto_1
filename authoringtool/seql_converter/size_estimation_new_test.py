@@ -175,25 +175,27 @@ class Test_ElementSizeCalculator(unittest.TestCase):
 #         self.assertEqual(cu.BLANK_PLACEHOLDER, act1[7])
     @withMethodName
     def test_setRow_InventorName(self):
-        act = [row for row in self.esc5.generalInformationRows if row[6] == 'InventorName'][0]
+        act = [row for row in self.esc5.generalInformationRows if row[6] == 'InventorName']
+        self.assertEqual([], act)
         
-        self.assertEqual(0, act[0])
-        self.assertEqual(0, act[1])
-        self.assertEqual(0, act[2])
-        self.assertEqual(0, act[3])
-        self.assertEqual(cu.TAG_LENGTH_ST26['InventorName'], act[4])
-        self.assertEqual(1+cu.TAG_LENGTH_ST26['InventorName'], act[5])
-        self.assertEqual('InventorName', act[6])
-        self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
+#         self.assertEqual(0, act[0])
+#         self.assertEqual(0, act[1])
+#         self.assertEqual(0, act[2])
+#         self.assertEqual(0, act[3])
+#         self.assertEqual(cu.TAG_LENGTH_ST26['InventorName'], act[4])
+#         self.assertEqual(1+cu.TAG_LENGTH_ST26['InventorName'], act[5])
+#         self.assertEqual('InventorName', act[6])
+#         self.assertEqual(cu.BLANK_PLACEHOLDER, act[7])
         
-        act1 = [row for row in self.esc5.generalInformationRows if row[7] == 'ST.26 specific languageCode attribute for InventorName'][0]
-        self.assertEqual(0, act1[0])
-        self.assertEqual(0, act1[1])
-        self.assertEqual(0, act1[2])
-        self.assertEqual(len(cu.DEFAULT_CODE), act1[3])
-        self.assertEqual(cu.TAG_LENGTH_ST26['languageCode'], act1[4])
-        self.assertEqual(len(cu.DEFAULT_CODE) + cu.TAG_LENGTH_ST26['languageCode'], act1[5])
-        self.assertEqual('languageCode', act1[6])
+        act1 = [row for row in self.esc5.generalInformationRows if row[7] == 'ST.26 specific languageCode attribute for InventorName']
+        self.assertEqual([], act1)
+#         self.assertEqual(0, act1[0])
+#         self.assertEqual(0, act1[1])
+#         self.assertEqual(0, act1[2])
+#         self.assertEqual(len(cu.DEFAULT_CODE), act1[3])
+#         self.assertEqual(cu.TAG_LENGTH_ST26['languageCode'], act1[4])
+#         self.assertEqual(len(cu.DEFAULT_CODE) + cu.TAG_LENGTH_ST26['languageCode'], act1[5])
+#         self.assertEqual('languageCode', act1[6])
     @withMethodName    
     def test_setRow_120(self):
         act = [row for row in self.esc5.generalInformationRows if row[0] == 120][0]

@@ -5,7 +5,7 @@
                     fileName="file1_ST26"
                     softwareName="prototype" 
                     softwareVersion="0.1"
-                    productionDate="2016-08-02">
+                    productionDate="2016-08-03">
     <ApplicationIdentification>
         <IPOfficeCode>XX</IPOfficeCode>
         <ApplicationNumberText>61536464</ApplicationNumberText>
@@ -73,8 +73,6 @@
                         <INSDFeature>
                             <INSDFeature_key>3&#39;clip</INSDFeature_key>
                             <INSDFeature_location>1..30</INSDFeature_location>
-                            <INSDFeature_quals>
-                            </INSDFeature_quals>
                         </INSDFeature>
                 </INSDSeq_feature-table>
                 <INSDSeq_sequence>ttgaccaagctggggaccccggtcccttgggaccagtggcagaggagtc</INSDSeq_sequence>

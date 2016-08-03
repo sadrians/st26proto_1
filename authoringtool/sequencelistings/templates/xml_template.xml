@@ -59,6 +59,7 @@
                         <INSDFeature>
                             <INSDFeature_key>{{f.featureKey}}</INSDFeature_key>
                             <INSDFeature_location>{{f.location}}</INSDFeature_location>
+                            {% if f.qualifier_set.all %}
                             <INSDFeature_quals>
                                 {% for q in f.qualifier_set.all %}
                                 <INSDQualifier>
@@ -67,6 +68,7 @@
                                 </INSDQualifier>
                                 {% endfor %}
                             </INSDFeature_quals>
+                            {% endif %}
                         </INSDFeature>
                     {% endfor %}
                 </INSDSeq_feature-table>

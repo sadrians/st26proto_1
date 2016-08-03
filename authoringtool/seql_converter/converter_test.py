@@ -21,7 +21,6 @@ class Test_St25To26Converter(TestCase):
     def getAbsPath(cls, aFileName):
         return os.path.join(settings.BASE_DIR, 'seql_converter', 
                             'st25parser', 'testData', aFileName)
- 
     def setUp(self):
         self.f1 = self.getAbsPath('file1.txt')
         self.f1004 = self.getAbsPath('WO2012-001004-001.zip.txt')
@@ -35,7 +34,23 @@ class Test_St25To26Converter(TestCase):
         self.sc33_1 = St25To26Converter(self.f33_1)
         self.sc80 = St25To26Converter(self.f80)
         self.sc6550 = St25To26Converter(self.f6550)
-        self.sc63219 = St25To26Converter(self.f63219)  
+        self.sc63219 = St25To26Converter(self.f63219) 
+        
+#     @classmethod
+#     def setUpClass(cls):
+#         cls.f1 = cls.getAbsPath('file1.txt')
+#         cls.f1004 = cls.getAbsPath('WO2012-001004-001.zip.txt')
+#         cls.f33_1 = cls.getAbsPath('file33_1.txt')
+#         cls.f80 = cls.getAbsPath('file80.txt')
+#         cls.f6550 = cls.getAbsPath('WO2012-006550-001.zip.txt')
+#         cls.f63219 = cls.getAbsPath('WO2012-063219-001.zip.txt')
+#          
+#         cls.sc1 = St25To26Converter(cls.f1)
+#         cls.sc1004 = St25To26Converter(cls.f1004)
+#         cls.sc33_1 = St25To26Converter(cls.f33_1)
+#         cls.sc80 = St25To26Converter(cls.f80)
+#         cls.sc6550 = St25To26Converter(cls.f6550)
+#         cls.sc63219 = St25To26Converter(cls.f63219)  
         
     def tearDown(self):
         pass
@@ -211,5 +226,24 @@ class Test_St25To26Converter(TestCase):
          
         self.assertTrue(os.path.isfile(filePath1))
         self.assertTrue(slsu.validateDocumentWithDtd(filePath1, slsu.XML_DTD_PATH))
+        
+        with open(filePath1, 'r') as f:
+            s = f.read()
+            self.assertEqual(1, s.count('<ST26SequenceListing'))
+            self.assertEqual(4, s.count('<SequenceData'))
+            self.assertEqual(4, s.count('<INSDSeq_feature-table>'))
+            self.assertEqual(5, s.count('<INSDFeature>'))
+            self.assertEqual(4, s.count('<INSDFeature_quals>'))
+            self.assertEqual(9, s.count('<INSDQualifier>'))
+            
+#             self.assertEqual(, s.count('<'))
+#             self.assertEqual(, s.count('<'))
+#             self.assertEqual(, s.count('<'))
+#             self.assertEqual(, s.count('<'))
+#             self.assertEqual(, s.count('<'))
+#             self.assertEqual(, s.count('<'))
+#             self.assertEqual(, s.count('<'))
+#             self.assertEqual(, s.count('<'))
+            
 
 #         self.assertTrue(slsu.validateDocumentWithSchema(filePath1, slsu.XML_SCHEMA_PATH))

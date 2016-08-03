@@ -47,6 +47,11 @@ def compareGeneralInformation(aList, outDirPath, xmlOutDirPath):
                 genInfo26 = f26.read().split('<SequenceData sequenceIDNumber="1">')[0]
 #                 print genInfo26
                 wr.writerow([bn, len(genInfo25), len(genInfo25_clean), len(genInfo26)])
+
+def compareElementsInCsvAndXmlFiles(aList, outDirPath, xmlOutDirPath):
+    for fp in l:
+        fsc = FileSizeComparator(fp, outDirPath, xmlOutDirPath)
+        fsc.compareElementsInCsvAndXmlFiles()
         
 # ==================== main =========================
 if __name__ == "__main__":
@@ -60,9 +65,9 @@ if __name__ == "__main__":
     
     l = [os.path.join(inDirPath, a) for a in os.listdir(inDirPath) if '.DS' not in a]
     
-    extractTotals(l, outDirPath, xmlOutDirPath, statsFilePath)
+#     extractTotals(l[:3], outDirPath, xmlOutDirPath, statsFilePath)
 #     compareGeneralInformation(l, outDirPath, xmlOutDirPath)
-
+    compareElementsInCsvAndXmlFiles(l, outDirPath, xmlOutDirPath)
 
 
 
