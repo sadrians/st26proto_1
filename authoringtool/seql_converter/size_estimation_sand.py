@@ -84,7 +84,11 @@ if __name__ == "__main__":
     
     l = [os.path.join(inDirPath, a) for a in os.listdir(inDirPath) if '.DS' not in a]
     
-    extractTotals(l, outDirPath, xmlOutDirPath, statsFilePath)
+    f18754 = os.path.join(inDirPath, 'WO2012-018754.txt')
+    
+    extractTotals([f18754], outDirPath, xmlOutDirPath, statsFilePath)
+
+#     extractTotals(l, outDirPath, xmlOutDirPath, statsFilePath)
 #     compareGeneralInformation(l, outDirPath, xmlOutDirPath)
 #     compareElementsInCsvAndXmlFiles(l, outDirPath, xmlOutDirPath)
     

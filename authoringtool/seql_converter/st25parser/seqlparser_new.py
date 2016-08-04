@@ -97,10 +97,10 @@ def safeStrip(s):
 
 class SequenceListing(object):
     def __init__(self, aFilePath):
-        blocks = []
+#         blocks = []
         
-        self.seqlGenerator = su.generateChunks(aFilePath, '<210>')
-        generalInformationString = self.seqlGenerator.next()['chunk']
+        self.seqlGenerator = None #su.generateChunks(aFilePath, '<210>')
+#         generalInformationString = self.seqlGenerator.next()['chunk']
         
         self.filePath = aFilePath
         self.seqlHeader = '-'
@@ -113,7 +113,7 @@ class SequenceListing(object):
         self.quantity = 0
         self.software = '-'
         
-        self.sequences = []
+#         self.sequences = []
         
         self.quantity_nuc = 0
         self.quantity_prt = 0
@@ -128,23 +128,24 @@ class SequenceListing(object):
 #                 print self.charEncoding
                 u = rawString.decode(self.charEncoding)
                 blocks = u.split('<210>')
+                self.seqlGenerator = su.generateChunksFromString(u, '<210>')
 #             self.setGeneralInformation(blocks[0])
-            self.setGeneralInformation(generalInformationString)
+            self.setGeneralInformation(self.seqlGenerator.next()['chunk'])
 #                 pprint.pprint(blocks) 
                 
-            for s in blocks[1:]:
-                reconstructedString = '<210>%s' %s
-                currentSeq = Sequence(reconstructedString)
-                if currentSeq.successfullyParsed:
-                    currentSeq.actualSeqIdNo = blocks.index(s)
-                    
-                    self.sequences.append(currentSeq)
-                    if currentSeq.molType == 'PRT':
-                        self.quantity_prt += 1
-                    elif currentSeq.molType in ('DNA', 'RNA'):
-                        self.quantity_nuc += 1
-                        if currentSeq.mixedMode:
-                            self.quantity_mix += 1 
+#             for s in blocks[1:]:
+#                 reconstructedString = '<210>%s' %s
+#                 currentSeq = Sequence(reconstructedString)
+#                 if currentSeq.successfullyParsed:
+#                     currentSeq.actualSeqIdNo = blocks.index(s)
+#                     
+#                     self.sequences.append(currentSeq)
+#                     if currentSeq.molType == 'PRT':
+#                         self.quantity_prt += 1
+#                     elif currentSeq.molType in ('DNA', 'RNA'):
+#                         self.quantity_nuc += 1
+#                         if currentSeq.mixedMode:
+#                             self.quantity_mix += 1 
                         
         except IOError:
             # self.logger.exception("Invalid input file: %s" % self.in_file_name)
@@ -190,13 +191,20 @@ class SequenceListing(object):
         for elem in self.seqlGenerator:
             counter += 1
             chunk = elem['chunk']
-            chunkUnicode = chunk.decode(self.charEncoding)
+#             chunkUnicode = chunk.decode(self.charEncoding)
             lineNumber = elem['lineNumber']
             try:
-#                 seq = Sequence(chunk)
-                seq = Sequence(chunkUnicode)
+                seq = Sequence(chunk)
+#                 seq = Sequence(chunkUnicode)
  
                 seq.actualSeqIdNo = counter
+                if seq.molType == 'PRT':
+                    self.quantity_prt += 1
+                elif seq.molType in ('DNA', 'RNA'):
+                    self.quantity_nuc += 1
+                    if seq.mixedMode:
+                        self.quantity_mix += 1 
+                            
                 yield seq
             except SeqlException as se:
                 # self.logger.exception(

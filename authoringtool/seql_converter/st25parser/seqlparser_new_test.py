@@ -44,18 +44,18 @@ class TestSequenceListing(unittest.TestCase):
         cls.sl6083_1 = SequenceListing(getAbsPath('WO2012-006083_1.txt'))
         
         
-        sequences1 = [seq for seq in cls.sl1.generateSequence()]
-        cls.seq1_1 = sequences1[0]
-        cls.seq1_2 = sequences1[1]
-        cls.seq1_3 = sequences1[2]
+        cls.sequences1 = [seq for seq in cls.sl1.generateSequence()]
+        cls.seq1_1 = cls.sequences1[0]
+        cls.seq1_2 = cls.sequences1[1]
+        cls.seq1_3 = cls.sequences1[2]
         
         sequences2 = [seq for seq in cls.sl2.generateSequence()]
         cls.seq2_3 = sequences2[2]
 
-        sequences5 = [seq for seq in cls.sl5.generateSequence()]
-        cls.seq5_5 = sequences5[4]
-        cls.seq5_37 = sequences5[36]
-        cls.seq5_40 = sequences5[39]
+        cls.sequences5 = [seq for seq in cls.sl5.generateSequence()]
+        cls.seq5_5 = cls.sequences5[4]
+        cls.seq5_37 = cls.sequences5[36]
+        cls.seq5_40 = cls.sequences5[39]
         
         sequences6 = [seq for seq in cls.sl6.generateSequence()]
         cls.seq6_4 = sequences6[3]
@@ -63,19 +63,21 @@ class TestSequenceListing(unittest.TestCase):
         sequences32 = [seq for seq in cls.sl32.generateSequence()]
         cls.seq32_5 = sequences32[4]
         
-        sequences33_1 = [seq for seq in cls.sl33_1.generateSequence()]
-        cls.seq33_1_1 = sequences33_1[0]
-        cls.seq33_1_2 = sequences33_1[1]
+        cls.sequences32_8 = [seq for seq in cls.sl32_8.generateSequence()]
+        
+        cls.sequences33_1 = [seq for seq in cls.sl33_1.generateSequence()]
+        cls.seq33_1_1 = cls.sequences33_1[0]
+        cls.seq33_1_2 = cls.sequences33_1[1]
         
         sequences1004 = [seq for seq in cls.sl1004.generateSequence()]
         cls.seq1004_1 = sequences1004[0]
         cls.seq1004_7 = sequences1004[6]
         
-        sequences6083_1 = [seq for seq in cls.sl6083_1.generateSequence()]
-        cls.sl6083_1_seq_1 = sequences6083_1[0] # 212 is RNA
-        cls.sl6083_1_seq_2 = sequences6083_1[1] # 212 is DNA instead of RNA
-        cls.sl6083_1_seq_3 = sequences6083_1[2] # 212 is abc instead of RNA
-        cls.sl6083_1_seq_4 = sequences6083_1[3] # 212 is missing
+        cls.sequences6083_1 = [seq for seq in cls.sl6083_1.generateSequence()]
+        cls.sl6083_1_seq_1 = cls.sequences6083_1[0] # 212 is RNA
+        cls.sl6083_1_seq_2 = cls.sequences6083_1[1] # 212 is DNA instead of RNA
+        cls.sl6083_1_seq_3 = cls.sequences6083_1[2] # 212 is abc instead of RNA
+        cls.sl6083_1_seq_4 = cls.sequences6083_1[3] # 212 is missing
 
 #         cls.seq6_1 = SequenceListing.getSequenceFromFile(infilename6, 1)
 #         cls.seq6_4 = SequenceListing.getSequenceFromFile(infilename6, 4) # skip code
@@ -223,31 +225,31 @@ class TestSequenceListing(unittest.TestCase):
     
     @withMethodName
     def test_Sequence(self):    
-        self.assertEqual(40, len(self.sl5.sequences))
+        self.assertEqual(40, len(self.sequences5))
         
         seqIdNo1_exp = '<210>  1\r\n'
-        self.assertEqual(seqIdNo1_exp, self.sl5.sequences[0].seqIdNo_raw)
-        self.assertEqual('1', self.sl5.sequences[0].seqIdNo)
+        self.assertEqual(seqIdNo1_exp, self.sequences5[0].seqIdNo_raw)
+        self.assertEqual('1', self.sequences5[0].seqIdNo)
         
         length2_exp = '<211>  525\r\n'
-        self.assertEqual(length2_exp, self.sl5.sequences[1].length_raw)
-        self.assertEqual('525', self.sl5.sequences[1].length)
+        self.assertEqual(length2_exp, self.sequences5[1].length_raw)
+        self.assertEqual('525', self.sequences5[1].length)
         
         molt3_exp = '<212>  PRT\r\n'
-        self.assertEqual(molt3_exp, self.sl5.sequences[2].molType_raw)
-        self.assertEqual('PRT', self.sl5.sequences[2].molType)
+        self.assertEqual(molt3_exp, self.sequences5[2].molType_raw)
+        self.assertEqual('PRT', self.sequences5[2].molType)
         
         organism1_exp = '<213>  Homo sapiens\r\n\r\n'
-        self.assertEqual(organism1_exp, self.sl5.sequences[0].organism_raw)
-        self.assertEqual('Homo sapiens', self.sl5.sequences[0].organism)
+        self.assertEqual(organism1_exp, self.sequences5[0].organism_raw)
+        self.assertEqual('Homo sapiens', self.sequences5[0].organism)
         
         organism40_exp = '<213>  Chloroflexus aurantiacus\r\n\r\n'
-        self.assertEqual(organism40_exp, self.sl5.sequences[39].organism_raw)
-        self.assertEqual('Chloroflexus aurantiacus', self.sl5.sequences[39].organism)
+        self.assertEqual(organism40_exp, self.sequences5[39].organism_raw)
+        self.assertEqual('Chloroflexus aurantiacus', self.sequences5[39].organism)
            
-        self.assertFalse(self.sl5.sequences[0].features)
+        self.assertFalse(self.sequences5[0].features)
            
-        features4 = self.sl5.sequences[3].features
+        features4 = self.sequences5[3].features
            
         self.assertEqual(6, len(features4))
            
@@ -272,11 +274,11 @@ class TestSequenceListing(unittest.TestCase):
             
         residues40_exp = '<400>  40\r\n\r\nMet Ser Gly Thr Gly Arg Leu Ala Gly Lys Ile Ala Leu Ile Thr Gly \r\n1               5                   10                  15      \r\n\r\n\r\nGly Ala Gly Asn Ile Gly Ser Glu Leu Thr Arg Arg Phe \r\n            20                  25         \r\n'
            
-        self.assertEqual(residues40_exp, self.sl5.sequences[39].residues_raw)
+        self.assertEqual(residues40_exp, self.sequences5[39].residues_raw)
 
-        seq1_2 = self.sl1.sequences[1]
-        seq5_5 = self.sl5.sequences[4]
-        sl6083_1_seq_1 = self.sl6083_1.sequences[0]
+        seq1_2 = self.sequences1[1]
+        seq5_5 = self.sequences5[4]
+        sl6083_1_seq_1 = self.sequences6083_1[0]
         
         self.assertEqual('2', seq1_2.seqIdNo)
         self.assertEqual('5', seq5_5.seqIdNo)
@@ -297,7 +299,7 @@ class TestSequenceListing(unittest.TestCase):
     @withMethodName
     def test_seqNo400(self):
         exp_items400 = [str(a) for a in range(1,41)]
-        act_items400 = [seq.seqNo400 for seq in self.sl5.sequences]
+        act_items400 = [seq.seqNo400 for seq in self.sequences5]
 
         self.assertEqual(act_items400, exp_items400)
  
@@ -418,7 +420,9 @@ class TestSequenceListing(unittest.TestCase):
         correctly parsed.
         '''
         
-        self.assertEqual(3, len(self.sl33_1.sequences))
+#         self.assertEqual(3, len(self.sl33_1.sequences))
+        self.assertEqual(3, len(self.sequences33_1))
+
         self.assertEqual('2', self.seq33_1_2.seqIdNo)
         self.assertEqual(seqlutils.DEFAULT_STRING, self.seq33_1_2.length)
         self.assertEqual('DNA', self.seq33_1_2.molType)
@@ -458,11 +462,11 @@ class TestSequenceListing(unittest.TestCase):
         self.assertEqual(4, self.seq6_4.actualSeqIdNo)
 
 #         #seq 2 has actualSeqIdNo correct
-        self.assertEqual(2, self.sl32_8.sequences[1].actualSeqIdNo)
+        self.assertEqual(2, self.sequences32_8[1].actualSeqIdNo)
 #         #seq 4 has seq_id_no correct
-        self.assertEqual('4', self.sl32_8.sequences[2].seqIdNo)
+        self.assertEqual('4', self.sequences32_8[2].seqIdNo)
 #         # but actualSeqIdNo is not equal to seq_id_no
-        self.assertEqual(3, self.sl32_8.sequences[2].actualSeqIdNo)
+        self.assertEqual(3, self.sequences32_8[2].actualSeqIdNo)
 
     @withMethodName
     def test_quantities(self):

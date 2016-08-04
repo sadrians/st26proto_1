@@ -9,6 +9,7 @@ from django.conf import settings
 from converter import St25To26Converter 
 import sequencelistings.util as slsu
 import converter_util
+from st25parser.seqlparser_new import SequenceListing
 
 def withMethodName(func):
     def inner(*args, **kwargs):
@@ -36,6 +37,7 @@ class Test_St25To26Converter(TestCase):
         self.sc6550 = St25To26Converter(self.f6550)
         self.sc63219 = St25To26Converter(self.f63219) 
         
+        self.sc1004_seql_st25_sequences = [s for s in SequenceListing(self.f1004).generateSequence()]
 #     @classmethod
 #     def setUpClass(cls):
 #         cls.f1 = cls.getAbsPath('file1.txt')
@@ -170,7 +172,7 @@ class Test_St25To26Converter(TestCase):
         translQualifier_seq1 = features_1004_1[1].qualifier_set.all()[0]
         self.assertEqual("translation", translQualifier_seq1.qualifierName)
         
-        translQualValue_exp = converter_util.oneLetterCode(self.sc1004.seql_st25.sequences[0].residues_prt)
+        translQualValue_exp = converter_util.oneLetterCode(self.sc1004_seql_st25_sequences[0].residues_prt)
         self.assertEqual(translQualValue_exp, translQualifier_seq1.qualifierValue)
         
         features_1004_7 = sequence_1004_7.feature_set.all()

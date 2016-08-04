@@ -281,7 +281,7 @@ class ElementSizeCalculator(object):
     def setSequenceRows(self):
         res = []
         
-        sequences = self.seql.sequences
+        sequences = [s for s in self.seql.generateSequence()]
                 
         for seq in sequences:
             
@@ -760,7 +760,9 @@ class FileSizeEstimator(object):
                     self.sequenceTotalQuantityLength
                     ])
             
-            self.sequenceSizeEstimators = [SequenceSizeEstimator(seq) for seq in self.seql.sequences]
+#             TODO: not efficient!!!!! still loads all seq in memory!!!!
+            sequences = [s for s in self.seql.generateSequence()]
+            self.sequenceSizeEstimators = [SequenceSizeEstimator(seq) for seq in sequences]
             self.sequencesEstimatedSize = sum([sse.sequenceEstimatedSize for sse in self.sequenceSizeEstimators])
 
             self.sequenceListingEstimatedSize = self.generalInformationEstimatedSize + self.sequencesEstimatedSize

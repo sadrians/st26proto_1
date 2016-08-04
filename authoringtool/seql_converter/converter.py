@@ -138,7 +138,9 @@ class St25To26Converter(object):
     
     def setSequencesSt26(self):
         
-        for s25 in self.seql_st25.sequences:
+#         for s25 in self.seql_st25.sequences:
+        for s25 in self.seql_st25.generateSequence():
+            print 'seq', s25.seqIdNo
             residues_st26 = ''
             if s25.molType in ('DNA', 'RNA'):
                 molType_st26 = s25.molType
