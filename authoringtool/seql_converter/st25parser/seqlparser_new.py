@@ -119,6 +119,7 @@ class SequenceListing(object):
         try:
             with open(aFilePath, 'r') as f:
                 rawString = f.read()
+#                 TODO: to declare it above
                 self.charEncoding = chardet.detect(rawString)['encoding']
 #                 print self.charEncoding
                 u = rawString.decode(self.charEncoding)

@@ -27,6 +27,7 @@ class St25To26Converter(object):
     def __init__(self, st25FilePath):
         base = os.path.basename(st25FilePath)
         self.fileName = os.path.splitext(base)[0]
+        self.successful = False
         
         self.seql_st25 = Seql_st25(st25FilePath)
         self.seql_st26 = None 
@@ -208,7 +209,9 @@ class St25To26Converter(object):
                                               qualifierValue=translationQualifierValue)
                         translationQualifier.save()
                 
-                         
+         
+        self.successful = True                
+    
     def generateXmlFile(self, outputDir):
         self.seql_st26.productionDate = timezone.now()
         self.seql_st26.save()

@@ -17,10 +17,8 @@ import converter_util as cu
 def extractTotals(aList, outDirPath, xmlOutDirPath, statsFilePath):
     totalsList = []
     for f in aList:
-#     for f in l[1:2]:
         fsc = FileSizeComparator(f, outDirPath, xmlOutDirPath)
         totalsList.append(fsc.totals) 
-#         fsc.compareElementsInCsvAndXmlFiles()
 #         pprint.pprint(fsc.totals)
     
     with open(statsFilePath, 'wb') as csvfile:
@@ -56,19 +54,6 @@ def compareElementsInCsvAndXmlFiles(aList, outDirPath, xmlOutDirPath):
         fsc = FileSizeComparator(fp, outDirPath, xmlOutDirPath)
         fsc.compareElementsInCsvAndXmlFiles()
 
-def findCdsNotDivByThree(aList, outfp):
-    with open(outfp, 'w') as wr:
-        for fp in aList:
-            print fp
-            seql = SequenceListing(fp)
-            for seq in seql.sequences:
-                for f in seq.features:
-                    if f.key == 'CDS':
-                        locationRange = su.getRangeFromLocation(f.location) 
-                        if (locationRange[1] - locationRange[0] + 1)%3 != 0:
-                            wr.write('%s\n' % fp)
-                            wr.write('seq %s\n' % seq.seqIdNo)
-                            wr.write('loc %s\n' % f.location)
         
 # ==================== main =========================
 if __name__ == "__main__":
@@ -86,35 +71,14 @@ if __name__ == "__main__":
     
     f18754 = os.path.join(inDirPath, 'WO2012-018754.txt')
     
-    extractTotals([f18754], outDirPath, xmlOutDirPath, statsFilePath)
+#     extractTotals([f18754], outDirPath, xmlOutDirPath, statsFilePath)
 
-#     extractTotals(l, outDirPath, xmlOutDirPath, statsFilePath)
+    extractTotals(l[:5], outDirPath, xmlOutDirPath, statsFilePath)
 #     compareGeneralInformation(l, outDirPath, xmlOutDirPath)
 #     compareElementsInCsvAndXmlFiles(l, outDirPath, xmlOutDirPath)
     
-    ex = r'/Users/ad/pyton/projects/ftp/wipo/extracted'
-    exl = [os.path.join(ex, a) for a in os.listdir(ex) if '.DS' not in a]
-#     findCdsNotDivByThree(exl, 'cdsNotDivThree.txt')
-#     extractTotals(exl[:100], outDirPath, xmlOutDirPath, statsFilePath)
-
-#     for fp in exl:
-#         sz = os.path.getsize(fp)
-#         if sz > 1000000:
-#             print fp 
-#             print sz
-#         seql = SequenceListing(fp)
-#         if seql.isSeql:
-#             if int(seql.quantity) > 500:
-#                 print fp
-#                 print seql.quantity
-
-
-
-
-
-
-#     fc = St25To26Converter(f1004)
-#     print fc.generateXmlFile(xmlOutDirPath)
+#     ex = r'/Users/ad/pyton/projects/ftp/wipo/extracted'
+#     exl = [os.path.join(ex, a) for a in os.listdir(ex) if '.DS' not in a]
 
 #     clean file names
 #     for fp in l:

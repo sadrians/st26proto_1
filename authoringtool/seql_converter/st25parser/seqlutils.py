@@ -159,7 +159,20 @@ def parsePriorities(aString):
                             safeStrip(m.group('priorityDate'))))         
     return result
 
-
+# def findCdsNotDivByThree(aList, outfp):
+#     with open(outfp, 'w') as wr:
+#         for fp in aList:
+#             print fp
+#             seql = SequenceListing(fp)
+#             for seq in seql.sequences:
+#                 for f in seq.features:
+#                     if f.key == 'CDS':
+#                         locationRange = su.getRangeFromLocation(f.location) 
+#                         if (locationRange[1] - locationRange[0] + 1)%3 != 0:
+#                             wr.write('%s\n' % fp)
+#                             wr.write('seq %s\n' % seq.seqIdNo)
+#                             wr.write('loc %s\n' % f.location)
+#                             
 # def getStopCodon(aString, aList):
 #     res = {}
 #     codons = [aString[i:i+3] for i in xrange(0, len(aString), 3)]

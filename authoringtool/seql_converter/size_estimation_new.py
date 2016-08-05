@@ -515,7 +515,6 @@ class ElementSizeCalculator(object):
         
         return outFilePath
 
-
 class FileSizeComparator(object):
     def __init__(self, inFilePath, outDirPath, xmlOutDirPath):
         self.inFilePath = inFilePath 
@@ -524,12 +523,9 @@ class FileSizeComparator(object):
         
         self.totals = {}
         
-        self.esc = ElementSizeCalculator(self.inFilePath)
-        if self.esc.seql.isSeql:
-            self.csvFilePath = self.esc.writeSizes(self.outDirPath)
-                        
-            sc = St25To26Converter(self.inFilePath)
-            self.xmlFilePath = sc.generateXmlFile(self.xmlOutDirPath)
+        self.converter = St25To26Converter(self.inFilePath) 
+        if self.converter.successful:
+            self.xmlFilePath = self.converter.generateXmlFile(self.xmlOutDirPath)
     
             self.cleanXmlFilePath = self.cleanAndWriteXmlFile() 
                         
@@ -550,17 +546,11 @@ class FileSizeComparator(object):
         return outFile 
            
     def setTotals(self):
-        rows = self.esc.generalInformationRows + self.esc.sequenceRows 
-        
         self.totals[cu.FILE] = os.path.basename(self.inFilePath)
-        self.totals[cu.SEQUENCES_TOT] = self.esc.seql.quantity
-        self.totals[cu.SEQUENCES_NUC] = self.esc.seql.quantity_nuc
-        self.totals[cu.SEQUENCES_PRT] = self.esc.seql.quantity_prt
-        self.totals[cu.SEQUENCES_MIX] = self.esc.seql.quantity_mix  
-        self.totals[cu.ELEMENT_ST25_LENGTH] = sum([r[2] for r in rows])
-        self.totals[cu.VALUE_LENGTH] = sum([r[3] for r in rows])
-        self.totals[cu.TAG_ST26_LENGTH] = sum([r[4] for r in rows])
-        self.totals[cu.ELEMENT_ST26_LENGTH] = sum([r[5] for r in rows])
+        self.totals[cu.SEQUENCES_TOT] = self.converter.seql_st25.quantity
+        self.totals[cu.SEQUENCES_NUC] = self.converter.seql_st25.quantity_nuc
+        self.totals[cu.SEQUENCES_PRT] = self.converter.seql_st25.quantity_prt
+        self.totals[cu.SEQUENCES_MIX] = self.converter.seql_st25.quantity_mix  
         
         with open(self.inFilePath, 'r') as inf:
             s_st25 = inf.read()
@@ -590,51 +580,9 @@ class FileSizeComparator(object):
         ratio_clean = self.totals[cu.SIZE_XML_CLEAN]/float(self.totals[cu.SIZE_TXT])
         
         self.totals[cu.SIZE_XML_CLEAN_VS_TXT_RATIO] = '%0.2f' % ratio_clean
-        
-#         ratio = self.totals[cu.CDP_XML]/float(self.totals[cu.CDP_TXT])
-#         
-#         self.totals[cu.CHARS_XML_VS_TXT] = '%0.2f' % ratio
-#         
-#         ratio_clean = self.totals[cu.CDP_XML_CLEAN]/float(self.totals[cu.CDP_TXT])
-#         
-#         self.totals[cu.CHARS_XML_CLEAN_VS_TXT] = '%0.2f' % ratio_clean
-        
+                
         print self.inFilePath
-        print 'encoding:', self.esc.seql.charEncoding
-
-    def compareElementsInCsvAndXmlFiles(self):
-        
-        def countSt26ElementsFromCsvFile():
-            res = {}
-            rows = self.esc.generalInformationRows + self.esc.sequenceRows 
-            
-            for el in cu.TAG_LENGTH_ST26.keys():
-                currentRows = [r for r in rows if r[6] == el]
-                res[el] = len(currentRows)
-            return res 
-        
-        #     helper just to make sure that csv and xml contain (mostly) the same elements
-        def countSt26ElementsFromXmlFile():
-            res = {}
-            with open(self.cleanXmlFilePath, 'r') as f:
-                xmlString = f.read()
-                for el in cu.TAG_LENGTH_ST26.keys():
-                    if el[0].islower():
-                        currentElement = el
-                    else:
-                        currentElement = '</%s>' % el 
-                    res[el] = xmlString.count(currentElement)
-            return res
-        
-        countCsv = countSt26ElementsFromCsvFile()
-        countXml = countSt26ElementsFromXmlFile()
-        
-        for el in cu.TAG_LENGTH_ST26:
-            c = countCsv[el]
-            x = countXml[el]
-            if c != x:
-                print el
-                print '%d in csv' %c, '%d in xml' %x 
+        print 'encoding:', self.converter.seql_st25.charEncoding
              
 
 class FileSizeEstimator(object):
@@ -859,7 +807,161 @@ class SequenceSizeEstimator(object):
 
      
         
-        
+#     def compareElementsInCsvAndXmlFiles(self):
+#         
+#         def countSt26ElementsFromCsvFile():
+#             res = {}
+#             rows = self.esc.generalInformationRows + self.esc.sequenceRows 
+#             
+#             for el in cu.TAG_LENGTH_ST26.keys():
+#                 currentRows = [r for r in rows if r[6] == el]
+#                 res[el] = len(currentRows)
+#             return res 
+#         
+#         #     helper just to make sure that csv and xml contain (mostly) the same elements
+#         def countSt26ElementsFromXmlFile():
+#             res = {}
+#             with open(self.cleanXmlFilePath, 'r') as f:
+#                 xmlString = f.read()
+#                 for el in cu.TAG_LENGTH_ST26.keys():
+#                     if el[0].islower():
+#                         currentElement = el
+#                     else:
+#                         currentElement = '</%s>' % el 
+#                     res[el] = xmlString.count(currentElement)
+#             return res
+#         
+#         countCsv = countSt26ElementsFromCsvFile()
+#         countXml = countSt26ElementsFromXmlFile()
+#         
+#         for el in cu.TAG_LENGTH_ST26:
+#             c = countCsv[el]
+#             x = countXml[el]
+#             if c != x:
+#                 print el
+#                 print '%d in csv' %c, '%d in xml' %x 
+
+# class FileSizeComparator(object):
+#     def __init__(self, inFilePath, outDirPath, xmlOutDirPath):
+#         self.inFilePath = inFilePath 
+#         self.outDirPath = outDirPath
+#         self.xmlOutDirPath = xmlOutDirPath
+#         
+#         self.totals = {}
+#         
+# #         self.esc = ElementSizeCalculator(self.inFilePath)
+#         self.converter = None 
+#         if self.esc.seql.isSeql:
+#             self.csvFilePath = self.esc.writeSizes(self.outDirPath)
+#                         
+#             self.converter = St25To26Converter(self.inFilePath)
+#             
+#             self.xmlFilePath = self.converter.generateXmlFile(self.xmlOutDirPath)
+#     
+#             self.cleanXmlFilePath = self.cleanAndWriteXmlFile() 
+#                         
+#             self.setTotals() 
+#         else:
+#             print 'FileSizeComparator: not able to process', inFilePath
+#     
+#     def cleanAndWriteXmlFile(self):
+#         outFile = self.xmlFilePath.replace('.xml', '_clean.xml')
+#         with open(self.xmlFilePath, 'r') as f, open(outFile, 'w') as wr:
+# 
+#             clean = re.sub(r'\s+<', '<', f.read()).replace(os.linesep, '')
+#             clean = re.sub(r'>\s+', '>', clean)
+#             charEncoding = chardet.detect(clean)['encoding']
+#             u = clean.decode(charEncoding)
+#             wr.write(u.encode('utf-8'))
+# #         print 'Generated clean xml file', outFile 
+#         return outFile 
+#            
+#     def setTotals(self):
+#         rows = self.esc.generalInformationRows + self.esc.sequenceRows 
+#         
+#         self.totals[cu.FILE] = os.path.basename(self.inFilePath)
+#         self.totals[cu.SEQUENCES_TOT] = self.esc.seql.quantity
+#         self.totals[cu.SEQUENCES_NUC] = self.esc.seql.quantity_nuc
+#         self.totals[cu.SEQUENCES_PRT] = self.esc.seql.quantity_prt
+#         self.totals[cu.SEQUENCES_MIX] = self.esc.seql.quantity_mix  
+#         self.totals[cu.ELEMENT_ST25_LENGTH] = sum([r[2] for r in rows])
+#         self.totals[cu.VALUE_LENGTH] = sum([r[3] for r in rows])
+#         self.totals[cu.TAG_ST26_LENGTH] = sum([r[4] for r in rows])
+#         self.totals[cu.ELEMENT_ST26_LENGTH] = sum([r[5] for r in rows])
+#         
+#         with open(self.inFilePath, 'r') as inf:
+#             s_st25 = inf.read()
+#             enc_st25 = chardet.detect(s_st25)['encoding']
+#             self.totals[cu.ENCODING_TXT] = enc_st25
+#             u = s_st25.decode(enc_st25)
+#             self.totals[cu.CDP_TXT] = len(u)
+#         self.totals[cu.SIZE_TXT] = os.path.getsize(self.inFilePath)
+# 
+#         with open(self.xmlFilePath, 'r') as f:
+#             s_xml = f.read()
+#             u_st26 = s_xml.decode('utf-8')
+#             self.totals[cu.CDP_XML] = len(u_st26)
+#             
+#         self.totals[cu.SIZE_XML] = os.path.getsize(self.xmlFilePath) 
+# 
+#         with open(self.cleanXmlFilePath, 'r') as f:
+#             s_xml = f.read()
+#             self.totals[cu.CDP_XML_CLEAN] = len(s_xml)
+#             self.totals[cu.ENCODING_XML] = chardet.detect(s_xml)['encoding']
+#         self.totals[cu.SIZE_XML_CLEAN] = os.path.getsize(self.cleanXmlFilePath) 
+#         
+#         ratio = self.totals[cu.SIZE_XML]/float(self.totals[cu.SIZE_TXT])
+#         
+#         self.totals[cu.SIZE_XML_VS_TXT_RATIO] = '%0.2f' % ratio
+#         
+#         ratio_clean = self.totals[cu.SIZE_XML_CLEAN]/float(self.totals[cu.SIZE_TXT])
+#         
+#         self.totals[cu.SIZE_XML_CLEAN_VS_TXT_RATIO] = '%0.2f' % ratio_clean
+#         
+# #         ratio = self.totals[cu.CDP_XML]/float(self.totals[cu.CDP_TXT])
+# #         
+# #         self.totals[cu.CHARS_XML_VS_TXT] = '%0.2f' % ratio
+# #         
+# #         ratio_clean = self.totals[cu.CDP_XML_CLEAN]/float(self.totals[cu.CDP_TXT])
+# #         
+# #         self.totals[cu.CHARS_XML_CLEAN_VS_TXT] = '%0.2f' % ratio_clean
+#         
+#         print self.inFilePath
+#         print 'encoding:', self.esc.seql.charEncoding
+# 
+#     def compareElementsInCsvAndXmlFiles(self):
+#         
+#         def countSt26ElementsFromCsvFile():
+#             res = {}
+#             rows = self.esc.generalInformationRows + self.esc.sequenceRows 
+#             
+#             for el in cu.TAG_LENGTH_ST26.keys():
+#                 currentRows = [r for r in rows if r[6] == el]
+#                 res[el] = len(currentRows)
+#             return res 
+#         
+#         #     helper just to make sure that csv and xml contain (mostly) the same elements
+#         def countSt26ElementsFromXmlFile():
+#             res = {}
+#             with open(self.cleanXmlFilePath, 'r') as f:
+#                 xmlString = f.read()
+#                 for el in cu.TAG_LENGTH_ST26.keys():
+#                     if el[0].islower():
+#                         currentElement = el
+#                     else:
+#                         currentElement = '</%s>' % el 
+#                     res[el] = xmlString.count(currentElement)
+#             return res
+#         
+#         countCsv = countSt26ElementsFromCsvFile()
+#         countXml = countSt26ElementsFromXmlFile()
+#         
+#         for el in cu.TAG_LENGTH_ST26:
+#             c = countCsv[el]
+#             x = countXml[el]
+#             if c != x:
+#                 print el
+#                 print '%d in csv' %c, '%d in xml' %x         
         
 #         def countSt26ElementsFromXmlFile(inFilePath):
 #             res = {}
