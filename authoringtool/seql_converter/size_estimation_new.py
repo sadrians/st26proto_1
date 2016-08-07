@@ -564,13 +564,15 @@ class FileSizeComparator(object):
             s_xml = f.read()
             u_st26 = s_xml.decode('utf-8')
             self.totals[cu.CDP_XML] = len(u_st26)
+            self.totals[cu.ENCODING_XML] = chardet.detect(s_xml)['encoding']
             
         self.totals[cu.SIZE_XML] = os.path.getsize(self.xmlFilePath) 
 
         with open(self.cleanXmlFilePath, 'r') as f:
-            s_xml = f.read()
-            self.totals[cu.CDP_XML_CLEAN] = len(s_xml)
-            self.totals[cu.ENCODING_XML] = chardet.detect(s_xml)['encoding']
+            s_xml_clean = f.read()
+            u_st26_clean = s_xml_clean.decode('utf-8')
+            self.totals[cu.CDP_XML_CLEAN] = len(u_st26_clean)
+            
         self.totals[cu.SIZE_XML_CLEAN] = os.path.getsize(self.cleanXmlFilePath) 
         
         ratio = self.totals[cu.SIZE_XML]/float(self.totals[cu.SIZE_TXT])

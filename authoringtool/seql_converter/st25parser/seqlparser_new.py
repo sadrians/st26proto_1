@@ -113,6 +113,7 @@ class SequenceListing(object):
         self.quantity_nuc = 0
         self.quantity_prt = 0
         self.quantity_mix = 0
+        self.quantity_ftr = 0
 
         self.isSeql = False
         
@@ -181,6 +182,7 @@ class SequenceListing(object):
                     self.quantity_nuc += 1
                     if seq.mixedMode:
                         self.quantity_mix += 1 
+                self.quantity_ftr += len(seq.features)
                             
                 yield seq
             except SeqlException as se:
@@ -220,12 +222,12 @@ class Sequence(object):
             self.organism = safeStrip(sm.group('organism'))
             
             featuresString = sm.group('features_raw')
+#             print featuresString
             if featuresString:
                 featureMatchers = FEATURE_PATTERN.finditer(featuresString)
-                
                 for fm in featureMatchers:
                     self.features.append(Feature(fm))
-
+            
             self.residues_raw = sm.group('residues_raw')
             self.seqNo400 = safeStrip(sm.group('seqNo400'))
             
@@ -265,6 +267,7 @@ class Sequence(object):
             self.__setActualMolType__()
             self.__setActualLength__()
             self.successfullyParsed = True 
+            
         else:
 #             print 'File', self.filePath
             print 'Sequence: No match for sequence pattern for input:', aStr 

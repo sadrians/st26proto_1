@@ -3,6 +3,12 @@ Created on Jul 2, 2016
 
 @author: ad
 '''
+import os 
+import django
+django.setup()
+
+from django.conf import settings
+
 import unittest
 import converter_util as cu 
 
@@ -35,6 +41,13 @@ class TestConverterUtil(unittest.TestCase):
         self.assertEqual(43, cu.TAG_LENGTH_ST26['ST26SequenceListing'])
         self.assertEqual(47, cu.TAG_LENGTH_ST26['INSDSeq_feature-table'])
         self.assertEqual(20, cu.TAG_LENGTH_ST26['sequenceIDNumber'])
+        
+    def test_getNumberOfCharsFromFile(self):
+        f1004 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+                            'st25parser', 'testData', 'WO2012-001004-001.zip.txt')
+#         cu.getNumberOfCharsFromFile(f1004)
+        
+        self.assertEqual(21983 + 670, cu.getNumberOfCharsFromFile(f1004))
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']

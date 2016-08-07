@@ -42,6 +42,7 @@ class TestSequenceListing(unittest.TestCase):
         cls.sl33_1 = SequenceListing(getAbsPath('file33_1.txt'))
         cls.sl1004 = SequenceListing(getAbsPath('WO2012-001004-001.zip.txt'))
         cls.sl6083_1 = SequenceListing(getAbsPath('WO2012-006083_1.txt'))
+        cls.sltest_1_feature = SequenceListing(getAbsPath('test_1_feature.txt'))
         
         
         cls.sequences1 = [seq for seq in cls.sl1.generateSequence()]
@@ -78,6 +79,8 @@ class TestSequenceListing(unittest.TestCase):
         cls.sl6083_1_seq_2 = cls.sequences6083_1[1] # 212 is DNA instead of RNA
         cls.sl6083_1_seq_3 = cls.sequences6083_1[2] # 212 is abc instead of RNA
         cls.sl6083_1_seq_4 = cls.sequences6083_1[3] # 212 is missing
+        
+        cls.sltest_1_feature_sequences = [seq for seq in cls.sltest_1_feature.generateSequence()]
 
 #         cls.seq6_1 = SequenceListing.getSequenceFromFile(infilename6, 1)
 #         cls.seq6_4 = SequenceListing.getSequenceFromFile(infilename6, 4) # skip code
@@ -117,6 +120,7 @@ class TestSequenceListing(unittest.TestCase):
     def test_isSeql(self):
         self.assertTrue(self.sl1.isSeql)
         self.assertTrue(self.sl5.isSeql)
+        self.assertTrue(self.sltest_1_feature.isSeql)
 #         self.assertTrue(not self.sl_input_no_seql.isSeql)
 #         self.assertTrue(not SequenceListing('abc').isSeql)
          
@@ -226,6 +230,7 @@ class TestSequenceListing(unittest.TestCase):
     @withMethodName
     def test_Sequence(self):    
         self.assertEqual(40, len(self.sequences5))
+        self.assertEqual(1, len(self.sltest_1_feature_sequences))
         
         seqIdNo1_exp = '<210>  1\r\n'
         self.assertEqual(seqIdNo1_exp, self.sequences5[0].seqIdNo_raw)
@@ -250,8 +255,13 @@ class TestSequenceListing(unittest.TestCase):
         self.assertFalse(self.sequences5[0].features)
            
         features4 = self.sequences5[3].features
-           
         self.assertEqual(6, len(features4))
+        
+#         this test file was created on mac. features are not properly parsed, 
+#         not clear why????????????
+#         f_test = self.sltest_1_feature_sequences[0].features 
+#         self.assertEqual(1, len(f_test))
+        
            
         self.assertEqual('<220>\r\n', features4[0].featureHeader_raw)
         self.assertEqual('', features4[0].featureHeader)
@@ -473,11 +483,15 @@ class TestSequenceListing(unittest.TestCase):
         self.assertEqual(11, self.sl1004.quantity_nuc)
         self.assertEqual(6, self.sl1004.quantity_prt)
         self.assertEqual(4, self.sl1004.quantity_mix)
+        self.assertEqual(18, self.sl1004.quantity_ftr)
+        
         
 #         sl with skip code
         self.assertEqual(1, self.sl6.quantity_nuc)
         self.assertEqual(2, self.sl6.quantity_prt)
         self.assertEqual(1, self.sl6.quantity_mix)
+        self.assertEqual(2, self.sl6.quantity_ftr)
+        
 
 #     #test publication for sequence with no feature
 #     def test_publication1(self):

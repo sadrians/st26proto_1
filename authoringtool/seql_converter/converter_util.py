@@ -5,6 +5,8 @@ Created on Jul 2, 2016
 '''
 import re
 import os
+import csv 
+import chardet 
 from django.conf import settings 
 
 import sequencelistings.util as slsu 
@@ -215,5 +217,55 @@ def removeSpaces(aString):#is it used?
     return p.sub('<', aString) 
             
             
+def compareGeneralInformation(aList, outDirPath, xmlOutDirPath):
+    outf = os.path.join(outDirPath, 'genInfo_comparison.csv')
+    with open(outf, 'wb') as csvfile:
+        wr = csv.writer(csvfile, delimiter=',')
+        wr.writerow(['file', 'chars_gi_st25', 
+                     'chars_gi_st25_clean',
+                     'chars_gi_st25_value',
+                      'chars_gi_st26', 
+                      'chars_tot_st26_clean'])
+        for fp in aList:
+            bn = os.path.basename(fp)
+            fileName = bn[:-4]
+            print fileName
+            xmlFileName = '%s_ST26_clean.xml' % fileName 
+            print xmlFileName
+            xmlFileNamePath = os.path.join(xmlOutDirPath, xmlFileName)
+            
+            with open(fp, 'r') as f25, open(xmlFileNamePath, 'r') as f26:
+                genInfo25 = f25.read().split('<210>')[0]
+#                 print genInfo25
+#                 remove end of line chars
+                cleanLines = [l.strip() for l in genInfo25.splitlines()]
+                
+#                 genInfo25_clean = re.sub(r'\s', '', genInfo25)
+                genInfo25_clean = ''.join(cleanLines)
+#                 print 'st25 clean', genInfo25_clean
+                genInfo25_value = re.sub(r'<\d\d\d>\s', '', genInfo25_clean)
+#                 print genInfo25_value
+                string_st26 = f26.read()
+                genInfo26 = string_st26.split('<SequenceData sequenceIDNumber="1">')[0]
+#                 print genInfo26
+                wr.writerow([bn, len(genInfo25), 
+                             len(genInfo25_clean), 
+                             len(genInfo25_value), 
+                             len(genInfo26), 
+                             len(string_st26)])
 
-    
+def getNumberOfCharsFromFile(aFilePath):
+    with open(aFilePath, 'r') as f:
+        return len(f.read())    
+
+def cleanAndWriteXmlFile(anXmlFilePath):
+    outFile = anXmlFilePath.replace('.xml', '_clean.xml')
+    with open(anXmlFilePath, 'r') as f, open(outFile, 'w') as wr:
+
+        clean = re.sub(r'\s+<', '<', f.read()).replace(os.linesep, '')
+        clean = re.sub(r'>\s+', '>', clean)
+        charEncoding = chardet.detect(clean)['encoding']
+        u = clean.decode(charEncoding)
+        wr.write(u.encode('utf-8'))
+#         print 'Generated clean xml file', outFile 
+    return outFile 

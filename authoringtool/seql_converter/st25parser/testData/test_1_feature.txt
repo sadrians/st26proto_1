@@ -1,0 +1,31 @@
+                         SEQUENCE LISTING
+
+<110>  Dow Agrosciences LLC
+       Yau, Kerrm Y.
+       Samuel, Jayakumar P
+       Burroughs, Frank G.
+       Samboju, Narasimha C.
+       Webb, Steven R.
+ 
+<120>  PRODUCTION OF FUNCTIONALIZED LINEAR DNA CASSETTE AND QUANTUM 
+       DOT/NANOPARTICLE MEDIATED DELIVERY IN PLANTS
+
+<130>  2971 10045.1PC (68330-WO-PCT)
+
+<150>  61/362,222
+<151>  2010-07-07
+
+<160>  1    
+
+<170>  PatentIn version 3.5
+
+<210>  1
+<211>  20
+<212>  DNA
+<213>  Artificial Sequence
+
+<220>
+<223>  Forward primer for plasmid pDAB3831
+
+<400>  1
+tgaaagtgta catcaacgaa                                                   20
