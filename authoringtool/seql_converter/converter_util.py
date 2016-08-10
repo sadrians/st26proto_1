@@ -88,6 +88,11 @@ SEQUENCES_NUC = 'q_nuc'
 SEQUENCES_PRT = 'q_prt'
 SEQUENCES_MIX = 'q_mix'
 
+FEATURES_TOT = 'q_ftr'
+
+RESIDUES_NUC = 'r_nuc'
+RESIDUES_PRT = 'r_prt'
+
 ENCODING_TXT = 'encoding_txt'
 ENCODING_XML = 'encoding_xml'
 
@@ -97,7 +102,9 @@ CHARS_XML_VS_TXT = 'chars_xml_vs_txt_ratio'
 SIZE_XML_VS_TXT_RATIO = 'size_xml_vs_txt_ratio'
 SIZE_XML_CLEAN_VS_TXT_RATIO = 'size_xml_clean_vs_txt_ratio'
 
-STATS_HEADER = [FILE, SEQUENCES_TOT, SEQUENCES_NUC, SEQUENCES_PRT, SEQUENCES_MIX, 
+STATS_HEADER = [FILE, SEQUENCES_TOT, SEQUENCES_NUC, SEQUENCES_PRT, SEQUENCES_MIX,
+                FEATURES_TOT, 
+                RESIDUES_NUC, RESIDUES_PRT,
                 CDP_TXT, SIZE_TXT, 
                 ENCODING_TXT,
                 CDP_XML, SIZE_XML, SIZE_XML_VS_TXT_RATIO,
@@ -172,6 +179,12 @@ OTHER_ELEMENTS_ST26 = {
     'doctypeDeclaration': '<!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "resources/ST26SequenceListing_V1_0.dtd">',
     'styleSheetReference': '<?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>',  
     }
+ 
+GENERAL_INFORMATION_SIZE = 1000
+SEQUENCE_MARKUP_SIZE = 210
+FEATURE_SIZE = 30  
+FEATURE_SOURCE_SIZE = 399 + 34
+FEATURE_SIZE = 300
     
 # ======================================================
 

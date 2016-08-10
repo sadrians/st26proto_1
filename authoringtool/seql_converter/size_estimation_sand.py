@@ -11,7 +11,7 @@ import re
 from converter import St25To26Converter
 from st25parser.seqlparser_new import SequenceListing
 from st25parser import seqlutils as su 
-from size_estimation_new import FileSizeComparator
+from size_estimation_new import FileSizeComparator, DirectEstimator
 import converter_util as cu 
 
 def extractTotals(aList, outDirPath, xmlOutDirPath, statsFilePath):
@@ -53,34 +53,6 @@ def compareElementsInCsvAndXmlFiles(aList, outDirPath, xmlOutDirPath):
     for fp in aList:
         fsc = FileSizeComparator(fp, outDirPath, xmlOutDirPath)
         fsc.compareElementsInCsvAndXmlFiles()
-
-
-
-def test_dependency_on_feature(inDir, outDir, statDir):
-    with open(os.path.join(statDir, 'stat_feature.csv'), 'w') as wr:
-        for f in os.listdir(inDir):
-            if '.DS' not in f:
-                fp = os.path.join(inDir, f)
-                c = St25To26Converter(fp)
-                xmlPath = c.generateXmlFile(outDir)
-                
-    #             seql = SequenceListing(fp)
-    # #             print seql.quantity
-    #             s = seql.generateSequence().next()
-    # #             print s.printSeq()
-    #             
-    #             print 'features', len(s.features)
-                
-                with open(fp, 'r') as fr:
-                    s = fr.read()
-                    feature_count = s.count('<220>')
-                
-                
-                wr.write('%s,%i,%i,%i\n' %(f, feature_count, 
-                                           os.path.getsize(fp),
-                                           os.path.getsize(xmlPath)))
-        
-        
         
 # ==================== main =========================
 if __name__ == "__main__":
@@ -90,22 +62,28 @@ if __name__ == "__main__":
     xmlOutDirPath = r'/Users/ad/pyton/test/st26fileSize/out_ST26'
     statsFilePath = os.path.join(outDirPath, 'stats.csv')
     
-    f6_1 = os.path.join(settings.BASE_DIR, 'seql_converter', 
-                        'st25parser', 'testdata', 'file6_1.txt') # seq 1 cds not div by 3
-    f6503 = os.path.join(inDirPath, 'WO2012-006503.txt')# 170 missing
-    
     l = [os.path.join(inDirPath, a) for a in os.listdir(inDirPath) if '.DS' not in a]
-    largeFiles = ['WO2012-018754.txt', 'WO2012-028993.txt']
+#     largeFiles = ['WO2012-018754.txt', 'WO2012-028993.txt']
+    largeFiles = ['WO2012-015765.txt', 'WO2012-018754.txt', 'WO2012-028993.txt'] 
     
     testList = [fp for fp in l if os.path.basename(fp) not in largeFiles]
 #     pprint.pprint(testList)
     
-    f18754 = os.path.join(inDirPath, 'WO2012-018754.txt')
-    
-#     extractTotals([f18754], outDirPath, xmlOutDirPath, statsFilePath)
+#     extractTotals(l[:5], outDirPath, xmlOutDirPath, statsFilePath)  
+    extractTotals(testList, outDirPath, xmlOutDirPath, statsFilePath)
 
-#     extractTotals(l[:5], outDirPath, xmlOutDirPath, statsFilePath)
-#     extractTotals(testList, outDirPath, xmlOutDirPath, statsFilePath)
+#     for f in testList:
+#         de = DirectEstimator(f)
+#         print f 
+#         print de.estimatedSize
+#         print de.foundSize
+#     
+
+
+
+#     f6_1 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+#                         'st25parser', 'testdata', 'file6_1.txt') # seq 1 cds not div by 3
+#     f6503 = os.path.join(inDirPath, 'WO2012-006503.txt')# 170 missing
 
 #     cu.compareGeneralInformation(testList, outDirPath, xmlOutDirPath)
 #     compareElementsInCsvAndXmlFiles(l, outDirPath, xmlOutDirPath)
@@ -117,11 +95,11 @@ if __name__ == "__main__":
 #     for fp in l:
 #         os.rename(fp, fp.replace('-001.zip', ''))
 
-    inDir = r'/Users/ad/pyton/test/st26fileSize/test/in_ST25'
-    statsDir = r'/Users/ad/pyton/test/st26fileSize/test/stats'
-    outDir = r'/Users/ad/pyton/test/st26fileSize/test/out_ST26'
-        
-    test_dependency_on_feature(inDir, outDir, statsDir)
+#     inDir = r'/Users/ad/pyton/test/st26fileSize/test/in_ST25'
+#     statsDir = r'/Users/ad/pyton/test/st26fileSize/test/stats'
+#     outDir = r'/Users/ad/pyton/test/st26fileSize/test/out_ST26'
+#         
+#     test_dependency_on_feature(inDir, outDir, statsDir)
 #     fp = os.path.join(inDirPath, 'WO2012-006443.txt')
 #     
 #     with open(fp, 'r') as f:

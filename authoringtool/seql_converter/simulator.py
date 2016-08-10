@@ -150,22 +150,61 @@ tgttccacgg                                               10\n\r\n\r"""
 # ==================== main =========================
 if __name__ == "__main__":
         
-    inDirPath = r'/Users/ad/pyton/test/st26fileSize/in_ST25'
-    outDirPath = r'/Users/ad/pyton/test/st26fileSize/stats'
-    xmlOutDirPath = r'/Users/ad/pyton/test/st26fileSize/out_ST26'
-    statsFilePath = os.path.join(outDirPath, 'stats.csv')
+    inDir = r'/Users/ad/pyton/test/st26fileSize/test/in_ST25'
+    statsDir = r'/Users/ad/pyton/test/st26fileSize/test/stats'
+    outDir = r'/Users/ad/pyton/test/st26fileSize/test/out_ST26'
     
-    f6_1 = os.path.join(settings.BASE_DIR, 'seql_converter', 
-                        'st25parser', 'testdata', 'file6_1.txt') # seq 1 cds not div by 3
-    f6503 = os.path.join(inDirPath, 'WO2012-006503.txt')# 170 missing
+    inDirFixture = r'/Users/ad/pyton/test/st26fileSize/test/fixtureTest'
     
-    l = [os.path.join(inDirPath, a) for a in os.listdir(inDirPath) if '.DS' not in a]
-    largeFiles = ['WO2012-018754.txt', 'WO2012-028993.txt']
-    
-    testList = [fp for fp in l if os.path.basename(fp) not in largeFiles]
-#     pprint.pprint(testList)
-    
-    f18754 = os.path.join(inDirPath, 'WO2012-018754.txt')
+    sim = Simulator(inDir, outDir, statsDir)
+    sim.createFeatureTestData(20)
+    sim.createSequenceTestData(20)
+    sim.test_dependency('f_', '<220>')
+#     sim.test_dependency('s_', '<210>')
+#     sim.test_residues_dependency('r_')
+#     sim.test_residues_dependency('p_')
+#     sim.test_residues_dependency('m_')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#     inDirPath = r'/Users/ad/pyton/test/st26fileSize/in_ST25'
+#     outDirPath = r'/Users/ad/pyton/test/st26fileSize/stats'
+#     xmlOutDirPath = r'/Users/ad/pyton/test/st26fileSize/out_ST26'
+#     statsFilePath = os.path.join(outDirPath, 'stats.csv')
+#     
+#     f6_1 = os.path.join(settings.BASE_DIR, 'seql_converter', 
+#                         'st25parser', 'testdata', 'file6_1.txt') # seq 1 cds not div by 3
+#     f6503 = os.path.join(inDirPath, 'WO2012-006503.txt')# 170 missing
+#     
+#     l = [os.path.join(inDirPath, a) for a in os.listdir(inDirPath) if '.DS' not in a]
+#     largeFiles = ['WO2012-018754.txt', 'WO2012-028993.txt']
+#     
+#     testList = [fp for fp in l if os.path.basename(fp) not in largeFiles]
+# #     pprint.pprint(testList)
+#     
+#     f18754 = os.path.join(inDirPath, 'WO2012-018754.txt')
     
 #     extractTotals([f18754], outDirPath, xmlOutDirPath, statsFilePath)
 
@@ -180,23 +219,7 @@ if __name__ == "__main__":
 
 #     clean file names
 #     for fp in l:
-#         os.rename(fp, fp.replace('-001.zip', ''))
-
-    inDir = r'/Users/ad/pyton/test/st26fileSize/test/in_ST25'
-    statsDir = r'/Users/ad/pyton/test/st26fileSize/test/stats'
-    outDir = r'/Users/ad/pyton/test/st26fileSize/test/out_ST26'
-    
-    inDirFixture = r'/Users/ad/pyton/test/st26fileSize/test/fixtureTest'
-    
-    sim = Simulator(inDir, outDir, statsDir)
-#     sim.createFeatureTestData(20)
-#     sim.createSequenceTestData(20)
-#     sim.test_dependency('f_', '<220>')
-#     sim.test_dependency('s_', '<210>')
-#     sim.test_residues_dependency('r_')
-#     sim.test_residues_dependency('p_')
-#     sim.test_residues_dependency('m_')
-        
+#         os.rename(fp, fp.replace('-001.zip', ''))        
 #     fp = os.path.join(inDirPath, 'WO2012-006443.txt')
 #     
 #     with open(fp, 'r') as f:

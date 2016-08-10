@@ -114,7 +114,9 @@ class SequenceListing(object):
         self.quantity_prt = 0
         self.quantity_mix = 0
         self.quantity_ftr = 0
-
+        self.quantity_res_nuc = 0
+        self.quantity_res_prt = 0
+        
         self.isSeql = False
         
         try:
@@ -183,6 +185,8 @@ class SequenceListing(object):
                     if seq.mixedMode:
                         self.quantity_mix += 1 
                 self.quantity_ftr += len(seq.features)
+                self.quantity_res_nuc += len(seq.residues_nuc)
+                self.quantity_res_prt += len(seq.residues_prt)
                             
                 yield seq
             except SeqlException as se:

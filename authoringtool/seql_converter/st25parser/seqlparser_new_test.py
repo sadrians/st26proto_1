@@ -492,6 +492,11 @@ class TestSequenceListing(unittest.TestCase):
         self.assertEqual(1, self.sl6.quantity_mix)
         self.assertEqual(2, self.sl6.quantity_ftr)
         
+        self.assertEqual(49+61, self.sl1.quantity_res_nuc)
+        self.assertEqual(29+32, self.sl1.quantity_res_prt/3)
+        
+        self.assertEqual(389, self.sl6.quantity_res_nuc)
+        self.assertEqual(37+37+11, self.sl6.quantity_res_prt/3)
 
 #     #test publication for sequence with no feature
 #     def test_publication1(self):

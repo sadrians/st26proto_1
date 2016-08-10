@@ -539,6 +539,7 @@ class FileSizeComparator(object):
 
             clean = re.sub(r'\s+<', '<', f.read()).replace(os.linesep, '')
             clean = re.sub(r'>\s+', '>', clean)
+            clean = re.sub(r'"\s+', '" ', clean)
             charEncoding = chardet.detect(clean)['encoding']
             u = clean.decode(charEncoding)
             wr.write(u.encode('utf-8'))
@@ -550,7 +551,10 @@ class FileSizeComparator(object):
         self.totals[cu.SEQUENCES_TOT] = self.converter.seql_st25.quantity
         self.totals[cu.SEQUENCES_NUC] = self.converter.seql_st25.quantity_nuc
         self.totals[cu.SEQUENCES_PRT] = self.converter.seql_st25.quantity_prt
-        self.totals[cu.SEQUENCES_MIX] = self.converter.seql_st25.quantity_mix  
+        self.totals[cu.SEQUENCES_MIX] = self.converter.seql_st25.quantity_mix 
+        self.totals[cu.FEATURES_TOT] = self.converter.seql_st25.quantity_ftr 
+        self.totals[cu.RESIDUES_NUC] = self.converter.seql_st25.quantity_res_nuc
+        self.totals[cu.RESIDUES_PRT] = self.converter.seql_st25.quantity_res_prt 
         
         with open(self.inFilePath, 'r') as inf:
             s_st25 = inf.read()
@@ -807,7 +811,33 @@ class SequenceSizeEstimator(object):
         'qualifiers': quals
         }
 
-     
+class DirectEstimator(object):
+    def __init__(self, inFilePath):
+        self.inFilePath = inFilePath
+        base = os.path.basename(self.inFilePath)
+        self.fileName = os.path.splitext(base)[0]
+        
+        self.correspondingXmlCleanFilePath = os.path.join(r'/Users/ad/pyton/test/st26fileSize/out_ST26', '%s_ST26_clean.xml' % self.fileName)
+        self.foundSize = os.path.getsize(self.correspondingXmlCleanFilePath)
+        self.seql = st25parser.seqlparser_new.SequenceListing(self.inFilePath)
+        
+        self.sequenceListingEstimatedSize = 0
+        self.generalInformationEstimatedSize = 0
+        self.sequencesEstimatedSize = 0 
+        
+        self.estimatedSequencesSize = 0 
+        
+        for seq in self.seql.generateSequence():
+            
+            self.estimatedSequencesSize += sum([cu.SEQUENCE_MARKUP_SIZE,
+                    cu.FEATURE_SOURCE_SIZE,
+                    len(seq.features) * cu.FEATURE_SIZE,
+                    len(seq.residues_nuc) + len(seq.residues_prt)/3
+                    ])
+        
+        self.estimatedSize = sum([cu.GENERAL_INFORMATION_SIZE, 
+                                 self.estimatedSequencesSize]) 
+                        
         
 #     def compareElementsInCsvAndXmlFiles(self):
 #         
