@@ -52,9 +52,10 @@ class St25To26Converter(object):
 
 #         set filingDate
         fd = self.seql_st25.filingDate
-#         if fd not in ['', seqlutils.DEFAULT_STRING]:
+
         dateRegex = r'\d\d\d\d-\d\d-\d\d'
         datePattern = re.compile(dateRegex)
+        
         if datePattern.match(fd):
             filingDateAsString = fd 
         else:
@@ -81,24 +82,10 @@ class St25To26Converter(object):
                 productionDate = timezone.now().date(),
                   
                 applicantFileReference = aSeql_st25.reference,
-                
-#                 IPOfficeCode = applicationNumberAsTuple[0],
-#                 applicationNumberText = applicationNumberAsTuple[1],
-#                 filingDate = datetime.datetime.strptime(filingDateAsString, '%Y-%m-%d').date(),
-                 
-#                 earliestPriorityIPOfficeCode = priorityNumberAsTuple[0],
-#                 earliestPriorityApplicationNumberText = priorityNumberAsTuple[1],
-#                 earliestPriorityFilingDate = priorityDate,
-               
+                               
                 applicantName = seql_st26_applicantName,
                 applicantNameLanguageCode = converter_util.DEFAULT_CODE,
-#                 applicantNameLatin = seql_st26_applicantName,
-                
-#                 inventorName = '-',
-#                 inventorNameLanguageCode = converter_util.DEFAULT_CODE,
-#                 inventorNameLatin = '-', 
-                
-#                 sequenceTotalQuantity = aSeql_st25.quantity       
+
                 ) 
         sl.save()
         

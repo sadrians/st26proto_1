@@ -8,10 +8,19 @@ import chardet
 import codecs
 import io
 import os 
+import converter_util as cu 
 
 if __name__ == "__main__":
     tf = 'combined_lengths.csv'
     wf = 'encoding_test.txt'
+    
+    d = r'/Users/ad/pyton/projects/test'
+    fp = os.path.join(d, 'Guidance_Document_SEQL-2.xml')
+    fp_out = os.path.join(d, 'Guidance_Document_SEQL-2_clean.xml')
+    
+    with open(fp, 'r') as f, open(fp_out, 'w') as wr:
+#         print cu.removeEmptyLinesFromString(f) 
+        wr.write(cu.removeEmptyLinesFromString(f))
     
 #     f63219 = 'st25parser/testData/WO2012-063219-001.zip.txt'
 #     
@@ -26,21 +35,21 @@ if __name__ == "__main__":
 #         un = u.encode('utf-8')
 #         print chardet.detect(un)
         
-    s = '上海市第一人民医院'
-    
-    print 'length of s', len(s)
-    enc = chardet.detect(s)['encoding']
-    print 'encoding of s', enc 
-    u = s.decode(enc)
-    print 'length of u', len(u)
-    fp = 'sand.txt'
-    with open(fp, 'w') as wr:
-        wr.write(u.encode('utf-8'))
-        
-    print 'file size', os.path.getsize(fp)
-    
-    with open(fp, 'r') as f:
-        print 'length of string in file', len(f.read())
+#     s = '上海市第一人民医院'
+#     
+#     print 'length of s', len(s)
+#     enc = chardet.detect(s)['encoding']
+#     print 'encoding of s', enc 
+#     u = s.decode(enc)
+#     print 'length of u', len(u)
+#     fp = 'sand.txt'
+#     with open(fp, 'w') as wr:
+#         wr.write(u.encode('utf-8'))
+#         
+#     print 'file size', os.path.getsize(fp)
+#     
+#     with open(fp, 'r') as f:
+#         print 'length of string in file', len(f.read())
 
 # s = 'hi猫'
 # s = 'abc'

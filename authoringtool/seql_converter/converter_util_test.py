@@ -48,6 +48,17 @@ class TestConverterUtil(unittest.TestCase):
 #         cu.getNumberOfCharsFromFile(f1004)
         
         self.assertEqual(21983 + 670, cu.getNumberOfCharsFromFile(f1004))
+        
+    def test_getMarkupLength(self):
+        s1 = '<abc>def</abc>'
+        s2 = '<abc attr1="1" attr2="2">def</abc>'
+        s3 = '<abc>def</abc><ghi attr="1">jkl</ghi>'
+        
+        
+        
+        self.assertEqual(11, cu.getMarkupLength(s1))
+        self.assertEqual(31, cu.getMarkupLength(s2))
+        self.assertEqual(31, cu.getMarkupLength(s3))
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "resources/ST26SequenceListing_V1_0.dtd">
 <?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>
-<ST26SequenceListing dtdVersion="1" 
-                    fileName="file1_ST26"
-                    softwareName="prototype" 
-                    softwareVersion="0.1"
-                    productionDate="2016-08-10">
+<ST26SequenceListing dtdVersion="1" fileName="file1_ST26" softwareName="prototype" softwareVersion="0.1" productionDate="2016-08-18">
     <ApplicationIdentification>
         <IPOfficeCode>XX</IPOfficeCode>
         <ApplicationNumberText>61536464</ApplicationNumberText>
@@ -17,117 +13,111 @@
         <ApplicationNumberText>61536558 - prio1</ApplicationNumberText>
         <FilingDate>2001-01-01</FilingDate>
     </EarliestPriorityApplicationIdentification>
-    <ApplicantName languageCode="XX">
-        OPX Biotechnologies, Inc.
-    </ApplicantName>
-        <InventionTitle languageCode="XX">
-            COMPOSITIONS AND METHODS REGARDING DIRECT NADH UTILIZATION TO PRODUCE 3-HYDROXYPROPIONIC ACID AND RELATED CHEMICALS AND PRODUCTS
-        </InventionTitle>
-    <SequenceTotalQuantity>
-        4
-    </SequenceTotalQuantity>
-        <SequenceData sequenceIDNumber="1">
-            <INSDSeq>
-                <INSDSeq_length>29</INSDSeq_length>
-                <INSDSeq_moltype>AA</INSDSeq_moltype>
-                <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_feature-table>
-                        <INSDFeature>
-                            <INSDFeature_key>SOURCE</INSDFeature_key>
-                            <INSDFeature_location>1..29</INSDFeature_location>
-                            <INSDFeature_quals>
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>Chloroflexus aurantiacus</INSDQualifier_value>
-                                </INSDQualifier>
-                                <INSDQualifier>
-                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
-                                    <INSDQualifier_value>protein</INSDQualifier_value>
-                                </INSDQualifier>
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                </INSDSeq_feature-table>
-                <INSDSeq_sequence>MSGTGRLAGKIALITGGAGNIGSELTRRF</INSDSeq_sequence>
-            </INSDSeq>
-        </SequenceData>
-        <SequenceData sequenceIDNumber="2">
-            <INSDSeq>
-                <INSDSeq_length>49</INSDSeq_length>
-                <INSDSeq_moltype>DNA</INSDSeq_moltype>
-                <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_feature-table>
-                        <INSDFeature>
-                            <INSDFeature_key>source</INSDFeature_key>
-                            <INSDFeature_location>1..49</INSDFeature_location>
-                            <INSDFeature_quals>
-                                <INSDQualifier>
-                                    <INSDQualifier_name>organism</INSDQualifier_name>
-                                    <INSDQualifier_value>homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                <INSDQualifier>
-                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
-                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
-                                </INSDQualifier>
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                        <INSDFeature>
-                            <INSDFeature_key>3&#39;clip</INSDFeature_key>
-                            <INSDFeature_location>1..30</INSDFeature_location>
-                        </INSDFeature>
-                </INSDSeq_feature-table>
-                <INSDSeq_sequence>ttgaccaagctggggaccccggtcccttgggaccagtggcagaggagtc</INSDSeq_sequence>
-            </INSDSeq>
-        </SequenceData>
-        <SequenceData sequenceIDNumber="3">
-            <INSDSeq>
-                <INSDSeq_length>61</INSDSeq_length>
-                <INSDSeq_moltype>DNA</INSDSeq_moltype>
-                <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_feature-table>
-                        <INSDFeature>
-                            <INSDFeature_key>source</INSDFeature_key>
-                            <INSDFeature_location>1..61</INSDFeature_location>
-                            <INSDFeature_quals>
-                                <INSDQualifier>
-                                    <INSDQualifier_name>organism</INSDQualifier_name>
-                                    <INSDQualifier_value>homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                <INSDQualifier>
-                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
-                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
-                                </INSDQualifier>
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                </INSDSeq_feature-table>
-                <INSDSeq_sequence>atgatgatgatgatgatgtacctgcagaccccgtttccctggtgccagtggcagaggagtc</INSDSeq_sequence>
-            </INSDSeq>
-        </SequenceData>
-        <SequenceData sequenceIDNumber="4">
-            <INSDSeq>
-                <INSDSeq_length>32</INSDSeq_length>
-                <INSDSeq_moltype>AA</INSDSeq_moltype>
-                <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_feature-table>
-                        <INSDFeature>
-                            <INSDFeature_key>SOURCE</INSDFeature_key>
-                            <INSDFeature_location>1..32</INSDFeature_location>
-                            <INSDFeature_quals>
-                                <INSDQualifier>
-                                    <INSDQualifier_name>ORGANISM</INSDQualifier_name>
-                                    <INSDQualifier_value>Influenza virus A</INSDQualifier_value>
-                                </INSDQualifier>
-                                <INSDQualifier>
-                                    <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
-                                    <INSDQualifier_value>protein</INSDQualifier_value>
-                                </INSDQualifier>
-                                <INSDQualifier>
-                                    <INSDQualifier_name>NOTE</INSDQualifier_name>
-                                    <INSDQualifier_value>influenza virus A hemagglutinin subtype H9</INSDQualifier_value>
-                                </INSDQualifier>
-                            </INSDFeature_quals>
-                        </INSDFeature>
-                </INSDSeq_feature-table>
-                <INSDSeq_sequence>METKAIIAALLMVTAANADKICIGYQSTNSTE</INSDSeq_sequence>
-            </INSDSeq>
-        </SequenceData>
+    <ApplicantName languageCode="XX">OPX Biotechnologies, Inc.</ApplicantName>
+    <InventionTitle languageCode="XX">COMPOSITIONS AND METHODS REGARDING DIRECT NADH UTILIZATION TO PRODUCE 3-HYDROXYPROPIONIC ACID AND RELATED CHEMICALS AND PRODUCTS</InventionTitle>
+    <SequenceTotalQuantity>4</SequenceTotalQuantity>
+    <SequenceData sequenceIDNumber="1">
+        <INSDSeq>
+            <INSDSeq_length>29</INSDSeq_length>
+            <INSDSeq_moltype>AA</INSDSeq_moltype>
+            <INSDSeq_division>PAT</INSDSeq_division>
+            <INSDSeq_feature-table>
+                <INSDFeature>
+                    <INSDFeature_key>SOURCE</INSDFeature_key>
+                    <INSDFeature_location>1..29</INSDFeature_location>
+                    <INSDFeature_quals>
+                        <INSDQualifier>
+                            <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                            <INSDQualifier_value>Chloroflexus aurantiacus</INSDQualifier_value>
+                        </INSDQualifier>
+                        <INSDQualifier>
+                            <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                            <INSDQualifier_value>protein</INSDQualifier_value>
+                        </INSDQualifier>
+                    </INSDFeature_quals>
+                </INSDFeature>
+            </INSDSeq_feature-table>
+            <INSDSeq_sequence>MSGTGRLAGKIALITGGAGNIGSELTRRF</INSDSeq_sequence>
+        </INSDSeq>
+    </SequenceData>
+    <SequenceData sequenceIDNumber="2">
+        <INSDSeq>
+            <INSDSeq_length>49</INSDSeq_length>
+            <INSDSeq_moltype>DNA</INSDSeq_moltype>
+            <INSDSeq_division>PAT</INSDSeq_division>
+            <INSDSeq_feature-table>
+                <INSDFeature>
+                    <INSDFeature_key>source</INSDFeature_key>
+                    <INSDFeature_location>1..49</INSDFeature_location>
+                    <INSDFeature_quals>
+                        <INSDQualifier>
+                            <INSDQualifier_name>organism</INSDQualifier_name>
+                            <INSDQualifier_value>homo sapiens</INSDQualifier_value>
+                        </INSDQualifier>
+                        <INSDQualifier>
+                            <INSDQualifier_name>mol_type</INSDQualifier_name>
+                            <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                        </INSDQualifier>
+                    </INSDFeature_quals>
+                </INSDFeature>
+                <INSDFeature>
+                    <INSDFeature_key>3&#39;clip</INSDFeature_key>
+                    <INSDFeature_location>1..30</INSDFeature_location>
+                </INSDFeature>
+            </INSDSeq_feature-table>
+            <INSDSeq_sequence>ttgaccaagctggggaccccggtcccttgggaccagtggcagaggagtc</INSDSeq_sequence>
+        </INSDSeq>
+    </SequenceData>
+    <SequenceData sequenceIDNumber="3">
+        <INSDSeq>
+            <INSDSeq_length>61</INSDSeq_length>
+            <INSDSeq_moltype>DNA</INSDSeq_moltype>
+            <INSDSeq_division>PAT</INSDSeq_division>
+            <INSDSeq_feature-table>
+                <INSDFeature>
+                    <INSDFeature_key>source</INSDFeature_key>
+                    <INSDFeature_location>1..61</INSDFeature_location>
+                    <INSDFeature_quals>
+                        <INSDQualifier>
+                            <INSDQualifier_name>organism</INSDQualifier_name>
+                            <INSDQualifier_value>homo sapiens</INSDQualifier_value>
+                        </INSDQualifier>
+                        <INSDQualifier>
+                            <INSDQualifier_name>mol_type</INSDQualifier_name>
+                            <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                        </INSDQualifier>
+                    </INSDFeature_quals>
+                </INSDFeature>
+            </INSDSeq_feature-table>
+            <INSDSeq_sequence>atgatgatgatgatgatgtacctgcagaccccgtttccctggtgccagtggcagaggagtc</INSDSeq_sequence>
+        </INSDSeq>
+    </SequenceData>
+    <SequenceData sequenceIDNumber="4">
+        <INSDSeq>
+            <INSDSeq_length>32</INSDSeq_length>
+            <INSDSeq_moltype>AA</INSDSeq_moltype>
+            <INSDSeq_division>PAT</INSDSeq_division>
+            <INSDSeq_feature-table>
+                <INSDFeature>
+                    <INSDFeature_key>SOURCE</INSDFeature_key>
+                    <INSDFeature_location>1..32</INSDFeature_location>
+                    <INSDFeature_quals>
+                        <INSDQualifier>
+                            <INSDQualifier_name>ORGANISM</INSDQualifier_name>
+                            <INSDQualifier_value>Influenza virus A</INSDQualifier_value>
+                        </INSDQualifier>
+                        <INSDQualifier>
+                            <INSDQualifier_name>MOL_TYPE</INSDQualifier_name>
+                            <INSDQualifier_value>protein</INSDQualifier_value>
+                        </INSDQualifier>
+                        <INSDQualifier>
+                            <INSDQualifier_name>NOTE</INSDQualifier_name>
+                            <INSDQualifier_value>influenza virus A hemagglutinin subtype H9</INSDQualifier_value>
+                        </INSDQualifier>
+                    </INSDFeature_quals>
+                </INSDFeature>
+            </INSDSeq_feature-table>
+            <INSDSeq_sequence>METKAIIAALLMVTAANADKICIGYQSTNSTE</INSDSeq_sequence>
+        </INSDSeq>
+    </SequenceData>
 </ST26SequenceListing>

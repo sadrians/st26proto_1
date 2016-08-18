@@ -836,7 +836,33 @@ class DirectEstimator(object):
                     ])
         
         self.estimatedSize = sum([cu.GENERAL_INFORMATION_SIZE, 
-                                 self.estimatedSequencesSize]) 
+                                 self.estimatedSequencesSize])
+        
+#     def __init__(self, inFilePath):
+#         self.inFilePath = inFilePath
+#         base = os.path.basename(self.inFilePath)
+#         self.fileName = os.path.splitext(base)[0]
+#         
+#         self.correspondingXmlCleanFilePath = os.path.join(r'/Users/ad/pyton/test/st26fileSize/out_ST26', '%s_ST26_clean.xml' % self.fileName)
+#         self.foundSize = os.path.getsize(self.correspondingXmlCleanFilePath)
+#         self.seql = st25parser.seqlparser_new.SequenceListing(self.inFilePath)
+#         
+#         self.sequenceListingEstimatedSize = 0
+#         self.generalInformationEstimatedSize = 0
+#         self.sequencesEstimatedSize = 0 
+#         
+#         self.estimatedSequencesSize = 0 
+#         
+#         for seq in self.seql.generateSequence():
+#             
+#             self.estimatedSequencesSize += sum([cu.SEQUENCE_MARKUP_SIZE,
+#                     cu.FEATURE_SOURCE_SIZE,
+#                     len(seq.features) * cu.FEATURE_SIZE,
+#                     len(seq.residues_nuc) + len(seq.residues_prt)/3
+#                     ])
+#         
+#         self.estimatedSize = sum([cu.GENERAL_INFORMATION_SIZE, 
+#                                  self.estimatedSequencesSize]) 
                         
         
 #     def compareElementsInCsvAndXmlFiles(self):

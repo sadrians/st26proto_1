@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "resources/ST26SequenceListing_V1_0.dtd">
 <?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>
-<ST26SequenceListing dtdVersion="{{sequenceListing.dtdVersion}}" 
-                    fileName="{{sequenceListing.fileName}}"
-                    softwareName="{{sequenceListing.softwareName}}" 
-                    softwareVersion="{{sequenceListing.softwareVersion}}"
-                    productionDate="{{sequenceListing.getFormattedProductionDate}}">
+<ST26SequenceListing dtdVersion="{{sequenceListing.dtdVersion}}" fileName="{{sequenceListing.fileName}}" softwareName="{{sequenceListing.softwareName}}" softwareVersion="{{sequenceListing.softwareVersion}}" productionDate="{{sequenceListing.getFormattedProductionDate}}">
     {% if sequenceListing.applicationNumberText %}
     <ApplicationIdentification>
         <IPOfficeCode>{{sequenceListing.IPOfficeCode}}</IPOfficeCode>
@@ -21,59 +17,46 @@
         <FilingDate>{{sequenceListing.getFormattedEarliestPriorityFilingDate}}</FilingDate>
     </EarliestPriorityApplicationIdentification>
     {% endif %}
-    <ApplicantName languageCode="{{sequenceListing.applicantNameLanguageCode}}">
-        {{sequenceListing.applicantName}}
-    </ApplicantName>
+    <ApplicantName languageCode="{{sequenceListing.applicantNameLanguageCode}}">{{sequenceListing.applicantName}}</ApplicantName>
     {% if sequenceListing.applicantNameLatin %}
-    <ApplicantNameLatin>
-        {{sequenceListing.applicantNameLatin}}
-    </ApplicantNameLatin>
+    <ApplicantNameLatin>{{sequenceListing.applicantNameLatin}}</ApplicantNameLatin>
     {% endif %}
     {% if sequenceListing.inventorName %}
-        <InventorName languageCode="{{sequenceListing.inventorNameLanguageCode}}">
-            {{sequenceListing.inventorName}}
-        </InventorName>
+    <InventorName languageCode="{{sequenceListing.inventorNameLanguageCode}}">{{sequenceListing.inventorName}}</InventorName>
     {% endif %}
     {% if sequenceListing.inventorNameLatin %}
-        <InventorNameLatin>
-            {{sequenceListing.inventorNameLatin}}
-        </InventorNameLatin>
+    <InventorNameLatin>{{sequenceListing.inventorNameLatin}}</InventorNameLatin>
     {% endif %}
     {% for t in sequenceListing.title_set.all %}
-        <InventionTitle languageCode="{{t.inventionTitleLanguageCode}}">
-            {{t.inventionTitle}}
-        </InventionTitle>
+    <InventionTitle languageCode="{{t.inventionTitleLanguageCode}}">{{t.inventionTitle}}</InventionTitle>
     {% endfor %}
-    
-    <SequenceTotalQuantity>
-        {{sequenceListing.sequenceTotalQuantity}}
-    </SequenceTotalQuantity>
+    <SequenceTotalQuantity>{{sequenceListing.sequenceTotalQuantity}}</SequenceTotalQuantity>
     {% for seq in sequenceListing.sequence_set.all %}
-        <SequenceData sequenceIDNumber="{{seq.sequenceIdNo}}">
-            <INSDSeq>
-                <INSDSeq_length>{{seq.length}}</INSDSeq_length>
-                <INSDSeq_moltype>{{seq.moltype}}</INSDSeq_moltype>
-                <INSDSeq_division>{{seq.division}}</INSDSeq_division>
-                <INSDSeq_feature-table>
-                    {% for f in seq.feature_set.all %}
-                        <INSDFeature>
-                            <INSDFeature_key>{{f.featureKey}}</INSDFeature_key>
-                            <INSDFeature_location>{{f.location}}</INSDFeature_location>
-                            {% if f.qualifier_set.all %}
-                            <INSDFeature_quals>
-                                {% for q in f.qualifier_set.all %}
-                                <INSDQualifier>
-                                    <INSDQualifier_name>{{q.qualifierName}}</INSDQualifier_name>
-                                    <INSDQualifier_value>{{q.qualifierValue}}</INSDQualifier_value>
-                                </INSDQualifier>
-                                {% endfor %}
-                            </INSDFeature_quals>
-                            {% endif %}
-                        </INSDFeature>
-                    {% endfor %}
-                </INSDSeq_feature-table>
-                <INSDSeq_sequence>{{seq.residues}}</INSDSeq_sequence>
-            </INSDSeq>
-        </SequenceData>
+    <SequenceData sequenceIDNumber="{{seq.sequenceIdNo}}">
+        <INSDSeq>
+            <INSDSeq_length>{{seq.length}}</INSDSeq_length>
+            <INSDSeq_moltype>{{seq.moltype}}</INSDSeq_moltype>
+            <INSDSeq_division>{{seq.division}}</INSDSeq_division>
+            <INSDSeq_feature-table>
+                {% for f in seq.feature_set.all %}
+                <INSDFeature>
+                    <INSDFeature_key>{{f.featureKey}}</INSDFeature_key>
+                    <INSDFeature_location>{{f.location}}</INSDFeature_location>
+                    {% if f.qualifier_set.all %}
+                    <INSDFeature_quals>
+                        {% for q in f.qualifier_set.all %}
+                        <INSDQualifier>
+                            <INSDQualifier_name>{{q.qualifierName}}</INSDQualifier_name>
+                            <INSDQualifier_value>{{q.qualifierValue}}</INSDQualifier_value>
+                        </INSDQualifier>
+                        {% endfor %}
+                    </INSDFeature_quals>
+                    {% endif %}
+                </INSDFeature>
+                {% endfor %}
+            </INSDSeq_feature-table>
+            <INSDSeq_sequence>{{seq.residues}}</INSDSeq_sequence>
+        </INSDSeq>
+    </SequenceData>
     {% endfor %}  
 </ST26SequenceListing>

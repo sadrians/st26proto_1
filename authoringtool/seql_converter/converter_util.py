@@ -180,11 +180,47 @@ OTHER_ELEMENTS_ST26 = {
     'styleSheetReference': '<?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>',  
     }
  
-GENERAL_INFORMATION_SIZE = 1000
-SEQUENCE_MARKUP_SIZE = 210
-FEATURE_SIZE = 30  
-FEATURE_SOURCE_SIZE = 399 + 34
-FEATURE_SIZE = 300
+GENERAL_INFORMATION_SIZE = 900
+
+SEQUENCE_MARKUP_SIZE = sum([TAG_LENGTH_ST26['SequenceData'],
+                            TAG_LENGTH_ST26['sequenceIDNumber'],
+                            TAG_LENGTH_ST26['INSDSeq'],
+                            TAG_LENGTH_ST26['INSDSeq_length'],
+                            TAG_LENGTH_ST26['INSDSeq_moltype'],
+                            TAG_LENGTH_ST26['INSDSeq_division'],
+                            TAG_LENGTH_ST26['INSDSeq_sequence']]) #210
+
+SEQUENCE_SIZE = sum([SEQUENCE_MARKUP_SIZE, 
+                            len('DNA'), 
+                            len("PAT")]) # ignore value of sequenceIdNumber, length
+
+QUALIFIER_MARKUP_SIZE = sum([TAG_LENGTH_ST26['INSDQualifier'],
+                    TAG_LENGTH_ST26['INSDQualifier_name'],
+                    TAG_LENGTH_ST26['INSDQualifier_value']])
+
+FEATURE_MARKUP_SIZE = sum([TAG_LENGTH_ST26['INSDFeature'], 
+                    TAG_LENGTH_ST26['INSDFeature_key'],
+                    TAG_LENGTH_ST26['INSDFeature_location'],
+                    TAG_LENGTH_ST26['INSDFeature_quals']]
+                    )
+
+# longest feature key is misc_difference 15 chars
+FEATURE_VALUE_SIZE = sum([len('misc_difference'), 
+                          len('1..1000'), 
+                          len('note'),
+                          130]) 
+
+FEATURE_SOURCE_SIZE = sum([FEATURE_MARKUP_SIZE,
+                           2*QUALIFIER_MARKUP_SIZE,
+                           len('source'),
+                           len('1..1000'), 
+                           len('organism'),
+                           20, #some value for organism value length
+                           len('mol_type'),
+                           len('genomic DNA')
+                           ]) #399 + 34
+
+FEATURE_SIZE = FEATURE_MARKUP_SIZE + QUALIFIER_MARKUP_SIZE + FEATURE_VALUE_SIZE #300
     
 # ======================================================
 
@@ -282,3 +318,17 @@ def cleanAndWriteXmlFile(anXmlFilePath):
         wr.write(u.encode('utf-8'))
 #         print 'Generated clean xml file', outFile 
     return outFile 
+
+def getMarkupLength(aString):
+    reg = '<.*?>'
+    p = re.compile(reg)
+    
+    li = p.findall(aString)
+    
+    return sum([len(el) for el in li])
+
+def removeEmptyLinesFromString(aString):
+    return ''.join(line for line in aString if not line.isspace())
+    
+    
+    

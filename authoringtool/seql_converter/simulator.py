@@ -4,14 +4,8 @@ Created on Aug 7, 2016
 @author: ad
 '''
 import os 
-import pprint
-import csv 
-from django.conf import settings
 import re 
 from converter import St25To26Converter
-from st25parser.seqlparser_new import SequenceListing
-from st25parser import seqlutils as su 
-from size_estimation_new import FileSizeComparator
 import converter_util as cu 
 
 class Simulator(object):
@@ -68,6 +62,18 @@ tgttccacgg                                               10\n\r\n\r"""
             
             self.sequenceTestFiles.append(newfp)
     
+    def createFile78Test(self, fileName, sequenceString, howManySequences):
+       
+        toBeAdded = []
+        with open(os.path.join(self.inDir, 'len_nuc_test1.txt'), 'r') as f:
+            genInfo = f.read().split('<210>  1')[0] 
+        for i in range(1, howManySequences+1):
+            
+            toBeAdded.append(sequenceString %(i,i))
+        newfp = os.path.join(self.inDir, fileName)
+        with open(newfp, 'w') as swr:
+            swr.write(genInfo.replace('<160>  1', '<160>  %i' % howManySequences))
+            swr.write(''.join(toBeAdded))    
     
     def test_dependency(self, aToken, aTag):
         with open(os.path.join(self.statDir, '%sstat.csv' % aToken), 'w') as wr:
@@ -92,6 +98,46 @@ tgttccacgg                                               10\n\r\n\r"""
             elif aToken == 's_':
                 currentList = self.sequenceTestFiles
             for fp in currentList:
+#                 fp = os.path.join(self.inDir, f)
+                with open(fp, 'r') as fr:
+                    s = fr.read()
+                    feature_count = s.count(aTag)
+                
+                currentSize_st25 = os.path.getsize(fp)
+                bn = os.path.basename(fp)
+                currentSize_st26 = os.path.getsize(di[bn])
+                 
+                wr.write('%s,%i,%i,%i,%s,%i,%i\n' %(bn, 
+                                            feature_count, 
+                                           currentSize_st25,
+                                           currentSize_st26, 
+                                           '%0.1f' % (float(currentSize_st26)/currentSize_st25),
+                                           currentSize_st25 - prev_size_st25, 
+                                           currentSize_st26 - prev_size_st26))
+                 
+                prev_size_st25 = currentSize_st25
+                prev_size_st26 = currentSize_st26 
+    
+    def test_dependencyList(self, aToken, aTag):
+        with open(os.path.join(self.statDir, '%sstat.csv' % aToken), 'w') as wr:
+            wr.write('%s\n' %('file,%s_count,size_st25,size_st26,r26vs25,incr_st25,incr_st26' % aTag))
+            
+            files = [f for f in os.listdir(self.inDir) if '.DS' not in f and f.startswith(aToken)]
+            di = {}
+            for f in files:
+                c = St25To26Converter(os.path.join(self.inDir, f))
+                xmlPath_large = c.generateXmlFile(self.outDir)
+                xmlPath = cu.cleanAndWriteXmlFile(xmlPath_large)
+                di[f] = xmlPath
+            
+            initialFile = files[0]
+            
+            prev_size_st25 = os.path.getsize(os.path.join(self.inDir, initialFile))
+            prev_size_st26 = os.path.getsize(di[initialFile])
+            
+#             for f in sorted(di.keys(), key=lambda x: os.path.getsize(os.path.join(self.inDir, f))):
+            aListOfFiles = [os.path.join(inDir, f) for f in os.listdir(inDir) if f.startswith(aToken)]
+            for fp in sorted(aListOfFiles, key=os.path.getsize):
 #                 fp = os.path.join(self.inDir, f)
                 with open(fp, 'r') as fr:
                     s = fr.read()
@@ -157,13 +203,41 @@ if __name__ == "__main__":
     inDirFixture = r'/Users/ad/pyton/test/st26fileSize/test/fixtureTest'
     
     sim = Simulator(inDir, outDir, statsDir)
-    sim.createFeatureTestData(20)
-    sim.createSequenceTestData(20)
-    sim.test_dependency('f_', '<220>')
+#     sim.createFeatureTestData(20)
+#     sim.createSequenceTestData(20)
+#     sim.test_dependency('f_', '<220>')
+    sim.test_dependencyList('f_', '<220>')
 #     sim.test_dependency('s_', '<210>')
+    sim.test_dependencyList('s_', '<210>')
 #     sim.test_residues_dependency('r_')
 #     sim.test_residues_dependency('p_')
 #     sim.test_residues_dependency('m_')
+#     lFiles = [os.path.join(inDir, f) for f in os.listdir(inDir) if f.startswith('l_')]
+#     sim.test_dependencyList('f_', '<220>')
+    
+    sequenceStringNuc = """<210>  %i\n\r
+<211>  10\n\r
+<212>  DNA\n\r
+<213>  Eubacterium oxidoreducens\n\r
+\n\r
+<400>  %i\n\r
+atggtaccat                                                              10\n\r\n\r"""
+    
+#     sim.createFile78Test('len_nuc_test78.txt', sequenceStringNuc, 78)
+#     sim.test_dependencyList('len_nuc_', '<210>')
+    
+    sequenceStringPrt = """<210>  %i\n\r
+<211>  10\n\r
+<212>  PRT\n\r
+<213>  Eubacterium oxidoreducens\n\r
+\n\r
+<400>  %i\n\r
+Met Ser Lys Asn\n\r
+1      
+\n\r\n\r"""
+    
+#     sim.createFile78Test('len_prt_test16.txt', sequenceStringPrt, 16)
+#     sim.test_dependencyList('len_prt_', '<210>')
 
 
 

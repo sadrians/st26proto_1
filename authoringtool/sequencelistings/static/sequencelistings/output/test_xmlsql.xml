@@ -1,84 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "resources/ST26SequenceListing_V1_0.dtd">
 <?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>
-<ST26SequenceListing dtdVersion="1" 
-                    fileName="test_xmlsql"
-                    softwareName="prototype" 
-                    softwareVersion="0.1"
-                    productionDate="2016-08-10">
-    
+<ST26SequenceListing dtdVersion="1" fileName="test_xmlsql" softwareName="prototype" softwareVersion="0.1" productionDate="2016-08-18">
     <ApplicationIdentification>
         <IPOfficeCode>EP</IPOfficeCode>
         <ApplicationNumberText>2015123456</ApplicationNumberText>
-        <FilingDate>2016-08-10</FilingDate>
+        <FilingDate>2016-08-18</FilingDate>
     </ApplicationIdentification>
-    
     <ApplicantFileReference>123</ApplicantFileReference>
-    
     <EarliestPriorityApplicationIdentification>
         <IPOfficeCode>US</IPOfficeCode>
         <ApplicationNumberText>998877</ApplicationNumberText>
-        <FilingDate>2016-08-10</FilingDate>
+        <FilingDate>2016-08-18</FilingDate>
     </EarliestPriorityApplicationIdentification>
-    
-    <ApplicantName languageCode="EN">
-        John Smith
-    </ApplicantName>
-    
-    <ApplicantNameLatin>
-        same
-    </ApplicantNameLatin>
-    
-    
-        <InventorName languageCode="FR">
-            Mary Dupont
-        </InventorName>
-    
-    
-        <InventorNameLatin>
-            Mary Dupont
-        </InventorNameLatin>
-    
-    
-        <InventionTitle languageCode="EN">
-            Invention 1
-        </InventionTitle>
-    
-    
-    <SequenceTotalQuantity>
-        1
-    </SequenceTotalQuantity>
-    
-        <SequenceData sequenceIDNumber="1">
-            <INSDSeq>
-                <INSDSeq_length>18</INSDSeq_length>
-                <INSDSeq_moltype>DNA</INSDSeq_moltype>
-                <INSDSeq_division>PAT</INSDSeq_division>
-                <INSDSeq_feature-table>
-                    
-                        <INSDFeature>
-                            <INSDFeature_key>source</INSDFeature_key>
-                            <INSDFeature_location>1..18</INSDFeature_location>
-                            
-                            <INSDFeature_quals>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>organism</INSDQualifier_name>
-                                    <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                                <INSDQualifier>
-                                    <INSDQualifier_name>mol_type</INSDQualifier_name>
-                                    <INSDQualifier_value>genomic DNA</INSDQualifier_value>
-                                </INSDQualifier>
-                                
-                            </INSDFeature_quals>
-                            
-                        </INSDFeature>
-                    
-                </INSDSeq_feature-table>
-                <INSDSeq_sequence>catcatcatcatcatcat</INSDSeq_sequence>
-            </INSDSeq>
-        </SequenceData>
-      
+    <ApplicantName languageCode="EN">John Smith</ApplicantName>
+    <ApplicantNameLatin>same</ApplicantNameLatin>
+    <InventorName languageCode="FR">Mary Dupont</InventorName>
+    <InventorNameLatin>Mary Dupont</InventorNameLatin>
+    <InventionTitle languageCode="EN">Invention 1</InventionTitle>
+    <SequenceTotalQuantity>1</SequenceTotalQuantity>
+    <SequenceData sequenceIDNumber="1">
+        <INSDSeq>
+            <INSDSeq_length>18</INSDSeq_length>
+            <INSDSeq_moltype>DNA</INSDSeq_moltype>
+            <INSDSeq_division>PAT</INSDSeq_division>
+            <INSDSeq_feature-table>
+                <INSDFeature>
+                    <INSDFeature_key>source</INSDFeature_key>
+                    <INSDFeature_location>1..18</INSDFeature_location>
+                    <INSDFeature_quals>
+                        <INSDQualifier>
+                            <INSDQualifier_name>organism</INSDQualifier_name>
+                            <INSDQualifier_value>Homo sapiens</INSDQualifier_value>
+                        </INSDQualifier>
+                        <INSDQualifier>
+                            <INSDQualifier_name>mol_type</INSDQualifier_name>
+                            <INSDQualifier_value>genomic DNA</INSDQualifier_value>
+                        </INSDQualifier>
+                    </INSDFeature_quals>
+                </INSDFeature>
+            </INSDSeq_feature-table>
+            <INSDSeq_sequence>catcatcatcatcatcat</INSDSeq_sequence>
+        </INSDSeq>
+    </SequenceData>
 </ST26SequenceListing>

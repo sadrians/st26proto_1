@@ -129,10 +129,13 @@ def helper_generateXml(sl):
                             'sequences': sl.sequence_set.all(),
                             }).encode('utf-8', 'strict')
     
+    clean_xml = os.linesep.join(line for line in xml.splitlines() if not line.isspace())
+    
     outf = os.path.join(OUTPUT_DIR, '%s.xml' % sl.fileName)
     
     with open(outf, 'w') as gf:
-        gf.write(xml) 
+        gf.write(clean_xml) 
+#         gf.write(xml) 
     
 def validateDocumentWithSchema(aFilePath, aSchemaPath):
     result = False
@@ -146,6 +149,7 @@ def validateDocumentWithSchema(aFilePath, aSchemaPath):
         if xmlschema.validate(doc):
             result = True
         else:
+            logger.error('\nfile: %s' % aFilePath)
             logger.error('\n%s' % xmlschema.error_log)
     except etree.XMLSyntaxError as syntErr:
         logger.error('\n%s\n%s' % (aFilePath, syntErr))
