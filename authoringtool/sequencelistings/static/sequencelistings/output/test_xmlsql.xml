@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ST26SequenceListing PUBLIC "-//WIPO//DTD Sequence Listing 1.0//EN" "resources/ST26SequenceListing_V1_0.dtd">
 <?xml-stylesheet type="text/xsl" href="resources/st26.xsl"?>
-<ST26SequenceListing dtdVersion="1" fileName="test_xmlsql" softwareName="prototype" softwareVersion="0.1" productionDate="2016-09-26">
+<ST26SequenceListing dtdVersion="1" fileName="test_xmlsql" softwareName="prototype" softwareVersion="0.1" productionDate="2016-10-02">
     <ApplicationIdentification>
         <IPOfficeCode>EP</IPOfficeCode>
         <ApplicationNumberText>2015123456</ApplicationNumberText>
-        <FilingDate>2016-09-26</FilingDate>
+        <FilingDate>2016-10-02</FilingDate>
     </ApplicationIdentification>
     <ApplicantFileReference>123</ApplicantFileReference>
     <EarliestPriorityApplicationIdentification>
         <IPOfficeCode>US</IPOfficeCode>
         <ApplicationNumberText>998877</ApplicationNumberText>
-        <FilingDate>2016-09-26</FilingDate>
+        <FilingDate>2016-10-02</FilingDate>
     </EarliestPriorityApplicationIdentification>
     <ApplicantName languageCode="EN">John Smith</ApplicantName>
     <ApplicantNameLatin>same</ApplicantNameLatin>
